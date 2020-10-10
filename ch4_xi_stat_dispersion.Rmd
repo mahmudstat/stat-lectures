@@ -231,5 +231,24 @@ X = `r v`
 source('r/dispersion.R')
 ```
 
-CR = `r cr(v)`
+> - CR = `r cr(v)`
+> - $CMD(\bar x)$ = `r round(cmdm(v),3)`
+> - CV = `r round(cv(v),3)`
+> - CQD = `r round(cqd(v),3)`
 
+## SD vs CV
+
+<div class="container">
+<div class="col">
+- 60 students earned GPA 5 from VNC
+- 45 students earned GPA 5 from Udayan college. 
+
+ Which college is better?
+</div>
+<div class="col">
+- Average batting score of Soumya = 35
+- Average batting score of Mushfiq = 34
+
+Who is better?
+</div>
+</div>

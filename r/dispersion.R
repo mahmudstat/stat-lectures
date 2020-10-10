@@ -16,3 +16,8 @@ cmdm <- function(x) mdm(x)/mean(x)*100
 
 cv <- function(x) sd(x)/mean(x)*100
 
+## Coefficient of Quartile Deviation
+
+cqd <- function(x) {
+  (quantile(x)[4]-quantile(x)[2])/(quantile(x)[4]+quantile(x)[2])*100
+}

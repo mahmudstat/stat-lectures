@@ -489,8 +489,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-fb0f2bf45c35215ab4da" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fb0f2bf45c35215ab4da">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-720d15e1af697c4ac39a" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-720d15e1af697c4ac39a">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -668,9 +668,33 @@ Can work with open-ended distribution</li>
 <li class="fragment">Coefficient of Quartile Deviation, <span class="math inline">\(CQD=\frac{Q_3-Q_1}{Q_3+Q_1} \times 100\)</span></li>
 </ul>
 <p></small></p>
-<h3 id="compute-coefficients">Compute Coefficients</h3>
+</section><section id="compute-coefficients" class="slide level2">
+<h2>Compute Coefficients</h2>
 <p>X = 29, 32, 21, 34, 31, 35, 30, 22</p>
-<p>CR = 25</p>
+<ul>
+<li class="fragment">CR = 25</li>
+<li class="fragment"><span class="math inline">\(CMD(\bar x)\)</span> = 13.462</li>
+<li class="fragment">CV = 17.694</li>
+<li class="fragment">CQD = 8.787</li>
+</ul>
+</section><section id="sd-vs-cv" class="slide level2">
+<h2>SD vs CV</h2>
+<div class="container">
+<div class="col">
+<ul>
+<li>60 students earned GPA 5 from VNC</li>
+<li>45 students earned GPA 5 from Udayan college.</li>
+</ul>
+<p>Which college is better?</p>
+</div>
+<div class="col">
+<ul>
+<li>Average batting score of Soumya = 35</li>
+<li>Average batting score of Mushfiq = 34</li>
+</ul>
+<p>Who is better?</p>
+</div>
+</div>
 </section></section>
     </div>
   </div>
