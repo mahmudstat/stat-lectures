@@ -40,7 +40,7 @@ DiagrammeR::grViz("digraph {
 
 graph [layout = dot, rankdir = TB]
 
-node [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white, shape = rectangle]
+node [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white]
 msr [label = 'Measures of Dispersion']
 abs [label = 'Absolute Measure']
 rel [label = 'Relative Measure']
