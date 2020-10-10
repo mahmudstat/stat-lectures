@@ -13,7 +13,7 @@ output:
 ---
 # Concept of dispersion
 
-## What is Dispersion
+## What is Dispersion?
 
 ## Why?
 
@@ -40,7 +40,7 @@ DiagrammeR::grViz("digraph {
 
 graph [layout = dot, rankdir = TB]
 
-node [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white]
+node [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]
 msr [label = 'Measures of Dispersion']
 abs [label = 'Absolute Measure']
 rel [label = 'Relative Measure']
@@ -50,7 +50,7 @@ sd [label = 'Stanard Deviation']
 qd [label= 'Quartile deviation']
 abt [label= 'About']
 coef [label ='Coefficient of']
-var [label ='Variation']
+var [label ='Variance']
 med [label ='Median']
 mean [label = 'Mean']
 mod [label ='Mode']
@@ -71,20 +71,20 @@ abt -> {mean, med, mod}
 <div class="container">
 <div class="col">
 Ungrouped Data
-Range, $R = R_H - R_L$
+Range, $R = X_H - X_L$
 </div>
 <div class="col">
 Grouped Data
 Range, $R = R_u - R_l$
 
-$R_u$ = Upper boundary of the highest class
+$L_u$ = Upper boundary of the highest class
 
-$R_u$ = Lower boundary of the lowest class
+$L_l$ = Lower boundary of the lowest class
 
 </div>
 </div>
 
-$X=$ `r set.seed(300);(x=sample(30,20))`
+$X=$ `r set.seed(300);(x=sample(30,15))`
 
 > - Range = `r range(x)[2]-range(x)[1]`
 
@@ -116,6 +116,11 @@ $MD(k)=\frac{\sum_{i=1}^n f_i|x_i-k|} n$
 Mo, & \text{for MD about Mode}
 \end{cases}
 
+## Compute MD 
+
+Compute about mean, median and mode 
+> - X = `r x`
+
 ## Dis(advantages) of MD
 
 - [x] Simple
@@ -142,10 +147,11 @@ $\quad$ =  Mean of square - square of mean
 Positive square root of variance
 
 > - $$\sigma  = \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}$$
+> - For grouped data? 
 </div>
 </div>
 
-## Table for estimation
+## Variance Estimation
 
 | $x$ | $x^2$ |
 |------:|:-----:|
@@ -160,3 +166,70 @@ $\quad$ =$\bar {x^2}-{\bar x}^2$
 
 > - $\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =$ `r (x=c(3,11,12)); round(var(x),3)`
 > - $\sigma =$ `r round(sd(x),3)`
+
+## Why Variance?
+
+### <span style="color: blue;">Think</span>
+
+- What is the unit of variance
+- What is the unit of sd?
+- Why is variance determined before sd? 
+- What do variance and sd mean?
+
+## Dis(advantages) of SD
+
+- [x] Well-defined
+- [x] Less affected by sample fluctuation
+- [x] Useful for further mathematical analysis
+- [x] Measures consistency
+- [ ] <span style="color: red;">Difficult to compute</span>
+- [ ] <span style="color: red;">Affected by outliers</span>
+
+## Variance Example
+
+X = `r set.seed(30); (v=sample(20:35,8))`
+
+Find variance and stand deviation
+
+> - Variance, $\sigma^2=$ `r round(var(v),3)`
+> - SD, $\sigma$ = `r round(sd(v),3)`
+
+## Quartile Deviation(QD)
+
+<div class="container">
+<div class="col">
+$QD=\frac{Q_3-Q_1} 2$
+
+$Q_3-Q_1$ is called Interquartile range. 
+</div>
+<div class="col">
+### Dis(advantages)
+
+- [x] Simple
+- [x] Unaffected by outliers
+- [x] Can work with open-ended distribution
+- [ ] <span style="color: red;">Not based on all observations</span>
+- [ ] <span style="color: red;">Not suitable for for further mathematical analysis</span>
+</div>
+</div>
+
+## Coefficients 
+<small>
+- Coefficient of Range,$CR=\frac{X_H-X_L}{X_H+X_L}\times 100= \frac{\text{Range}}{X_H+X_L}\times 100=\frac{X_u-X_l}{X_u+X_l}\times 100$ (grouped)
+
+> - Coefficient of Mean Deviation, $CMD=\frac{MD(\bar x)}{\bar x} \times 100$ (about mean, median and mode similarly)
+> - Coefficient of Variance, $CV=\frac{\sigma}{\bar x} \times 100$
+> - Coefficient of Quartile Deviation, $CQD=\frac{Q_3-Q_1}{Q_3+Q_1} \times 100$
+
+</small>
+
+## Compute Coefficients
+
+X = `r v`
+
+```{r, echo=F}
+source('r/dispersion.R')
+```
+
+CR = `r cr(v)`
+

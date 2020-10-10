@@ -467,7 +467,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 
 <section><section id="concept-of-dispersion" class="title-slide slide level1"><h1>Concept of dispersion</h1></section><section id="what-is-dispersion" class="slide level2">
-<h2>What is Dispersion</h2>
+<h2>What is Dispersion?</h2>
 </section><section id="why" class="slide level2">
 <h2>Why?</h2>
 <p>To</p>
@@ -489,23 +489,23 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-f5085c4f2973ff995cfe" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f5085c4f2973ff995cfe">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variation\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fb0f2bf45c35215ab4da" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fb0f2bf45c35215ab4da">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
 <div class="col">
-<p>Ungrouped Data Range, <span class="math inline">\(R = R_H - R_L\)</span></p>
+<p>Ungrouped Data Range, <span class="math inline">\(R = X_H - X_L\)</span></p>
 </div>
 <div class="col">
 <p>Grouped Data Range, <span class="math inline">\(R = R_u - R_l\)</span></p>
-<p><span class="math inline">\(R_u\)</span> = Upper boundary of the highest class</p>
-<p><span class="math inline">\(R_u\)</span> = Lower boundary of the lowest class</p>
+<p><span class="math inline">\(L_u\)</span> = Upper boundary of the highest class</p>
+<p><span class="math inline">\(L_l\)</span> = Lower boundary of the lowest class</p>
 </div>
 </div>
-<p><span class="math inline">\(X=\)</span> 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17, 5, 1, 6, 24, 15</p>
+<p><span class="math inline">\(X=\)</span> 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</p>
 <ul>
-<li class="fragment">Range = 26</li>
+<li class="fragment">Range = 25</li>
 </ul>
 </section><section id="disadvantages-of-range" class="slide level2">
 <h2>Dis(advantages) of Range</h2>
@@ -536,6 +536,9 @@ k =
 \tilde x, &amp; \text{for MD about median} \\
 Mo, &amp; \text{for MD about Mode}
 \end{cases}\]</span>
+</section><section id="compute-md" class="slide level2">
+<h2>Compute MD</h2>
+<p>Compute about mean, median and mode &gt; - X = 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</p>
 </section><section id="disadvantages-of-md" class="slide level2">
 <h2>Dis(advantages) of MD</h2>
 <ul>
@@ -562,11 +565,12 @@ Unaffected by outliers</li>
 <p>Positive square root of variance</p>
 <ul>
 <li class="fragment"><span class="math display">\[\sigma  = \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}\]</span></li>
+<li class="fragment">For grouped data?</li>
 </ul>
 </div>
 </div>
-</section><section id="table-for-estimation" class="slide level2">
-<h2>Table for estimation</h2>
+</section><section id="variance-estimation" class="slide level2">
+<h2>Variance Estimation</h2>
 <table>
 <thead>
 <tr class="header">
@@ -599,6 +603,74 @@ Unaffected by outliers</li>
 <li class="fragment"><span class="math inline">\(\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =\)</span> 24.333</li>
 <li class="fragment"><span class="math inline">\(\sigma =\)</span> 4.933</li>
 </ul>
+</section><section id="why-variance" class="slide level2">
+<h2>Why Variance?</h2>
+<h3 id="think"><span style="color: blue;">Think</span></h3>
+<ul>
+<li>What is the unit of variance</li>
+<li>What is the unit of sd?</li>
+<li>Why is variance determined before sd?</li>
+<li>What do variance and sd mean?</li>
+</ul>
+</section><section id="disadvantages-of-sd" class="slide level2">
+<h2>Dis(advantages) of SD</h2>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+Well-defined</li>
+<li><input type="checkbox" disabled="" checked="" />
+Less affected by sample fluctuation</li>
+<li><input type="checkbox" disabled="" checked="" />
+Useful for further mathematical analysis</li>
+<li><input type="checkbox" disabled="" checked="" />
+Measures consistency</li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Difficult to compute</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Affected by outliers</span></li>
+</ul>
+</section><section id="variance-example" class="slide level2">
+<h2>Variance Example</h2>
+<p>X = 29, 32, 21, 34, 31, 35, 30, 22</p>
+<p>Find variance and stand deviation</p>
+<ul>
+<li class="fragment">Variance, <span class="math inline">\(\sigma^2=\)</span> 26.786</li>
+<li class="fragment">SD, <span class="math inline">\(\sigma\)</span> = 5.175</li>
+</ul>
+</section><section id="quartile-deviationqd" class="slide level2">
+<h2>Quartile Deviation(QD)</h2>
+<div class="container">
+<div class="col">
+<p><span class="math inline">\(QD=\frac{Q_3-Q_1} 2\)</span></p>
+<p><span class="math inline">\(Q_3-Q_1\)</span> is called Interquartile range.</p>
+</div>
+<div class="col">
+<h3 id="disadvantages">Dis(advantages)</h3>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+Simple</li>
+<li><input type="checkbox" disabled="" checked="" />
+Unaffected by outliers</li>
+<li><input type="checkbox" disabled="" checked="" />
+Can work with open-ended distribution</li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Not based on all observations</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+</ul>
+</div>
+</div>
+</section><section id="coefficients" class="slide level2">
+<h2>Coefficients</h2>
+<p><small> - Coefficient of Range,<span class="math inline">\(CR=\frac{X_H-X_L}{X_H+X_L}\times 100= \frac{\text{Range}}{X_H+X_L}\times 100=\frac{X_u-X_l}{X_u+X_l}\times 100\)</span> (grouped)</p>
+<ul>
+<li class="fragment">Coefficient of Mean Deviation, <span class="math inline">\(CMD=\frac{MD(\bar x)}{\bar x} \times 100\)</span> (about mean, median and mode similarly)</li>
+<li class="fragment">Coefficient of Variance, <span class="math inline">\(CV=\frac{\sigma}{\bar x} \times 100\)</span></li>
+<li class="fragment">Coefficient of Quartile Deviation, <span class="math inline">\(CQD=\frac{Q_3-Q_1}{Q_3+Q_1} \times 100\)</span></li>
+</ul>
+<p></small></p>
+<h3 id="compute-coefficients">Compute Coefficients</h3>
+<p>X = 29, 32, 21, 34, 31, 35, 30, 22</p>
+<p>CR = 25</p>
 </section></section>
     </div>
   </div>
