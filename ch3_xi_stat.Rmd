@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 # Chapter 03 (Central Tendency)

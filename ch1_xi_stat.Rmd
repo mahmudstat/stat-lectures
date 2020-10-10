@@ -5,11 +5,11 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["notes", "search", "chalkboard", "menu"]
+    reveal_plugins: ["notes", "chalkboard", "menu"]
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 # Statistics: What & How

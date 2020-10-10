@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 # Concept of dispersion
 
@@ -33,19 +33,14 @@ To
 - Less affected by sample fluctuation
 - Unaffected by outliers
 
-## Types of Measure
-
-- Absolute
-- Relative
-
-## Measure Classification
+## Types of Measure{data-background=white}
 
 ```{r, echo=FALSE}
 DiagrammeR::grViz("digraph {
 
 graph [layout = dot, rankdir = TB]
 
-node [shape = rectangle, fontcolor = blue, shape = rectangle]
+node [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white, shape = rectangle]
 msr [label = 'Measures of Dispersion']
 abs [label = 'Absolute Measure']
 rel [label = 'Relative Measure']
