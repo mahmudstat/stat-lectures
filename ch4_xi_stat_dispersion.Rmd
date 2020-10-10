@@ -65,3 +65,98 @@ md -> abt
 abt -> {mean, med, mod}
 }")
 ```
+
+## Range
+
+<div class="container">
+<div class="col">
+Ungrouped Data
+Range, $R = R_H - R_L$
+</div>
+<div class="col">
+Grouped Data
+Range, $R = R_u - R_l$
+
+$R_u$ = Upper boundary of the highest class
+
+$R_u$ = Lower boundary of the lowest class
+
+</div>
+</div>
+
+$X=$ `r set.seed(300);(x=sample(30,20))`
+
+> - Range = `r range(x)[2]-range(x)[1]`
+
+## Dis(advantages) of Range
+
+- [x] Simple & quick
+- [ ] <span style="color: red;">Influenced by outliers</span>
+- [ ] <span style="color: red;">Not suitable for for further mathematical analysis</span>
+- [ ] <span style="color: red;">Cannot be computed for open-ended distribution</span>
+
+## Mean Deviation (MD)
+
+<div class="container">
+<div class="col">
+Ungrouped Data
+
+$MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n$
+
+</div>
+<div class="col">
+Grouped Data
+$MD(k)=\frac{\sum_{i=1}^n f_i|x_i-k|} n$ 
+</div>
+</div>
+ k =
+\begin{cases}
+\bar x, & \text{for MD about mean} \\
+\tilde x, & \text{for MD about median} \\
+Mo, & \text{for MD about Mode}
+\end{cases}
+
+## Dis(advantages) of MD
+
+- [x] Simple
+- [x] Unaffected by outliers 
+- [ ] <span style="color: red;">Useful for symmetric data only</span>
+- [ ] <span style="color: red;">Not suitable for for further mathematical analysis</span>
+
+## Variance and SD
+
+
+<div class="container">
+<div class="col">
+### Variance 
+
+$$\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$$
+
+$\quad$ = $\sum \frac{x_i^2}{n}-(\frac{\sum x_i}{n})^2$
+
+$\quad$ =  Mean of square - square of mean
+</div>
+<div class="col">
+### *Standard Deviation* ($\sigma$)
+
+Positive square root of variance
+
+> - $$\sigma  = \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}$$
+</div>
+</div>
+
+## Table for estimation
+
+| $x$ | $x^2$ |
+|------:|:-----:|
+|   12  |  144  |  
+|  11  |  121 |  
+|  3   |    9 |  
+|$\sum x = 26$ |$\sum x^2 = 274$|
+
+$\sigma^2$=Mean of square - square of mean
+
+$\quad$ =$\bar {x^2}-{\bar x}^2$
+
+> - $\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =$ `r (x=c(3,11,12)); round(var(x),3)`
+> - $\sigma =$ `r round(sd(x),3)`

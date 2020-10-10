@@ -489,8 +489,116 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-9bc2f17ab09d0ac18ab8" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9bc2f17ab09d0ac18ab8">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white, shape = rectangle]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variation\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f5085c4f2973ff995cfe" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f5085c4f2973ff995cfe">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variation\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</section><section id="range" class="slide level2">
+<h2>Range</h2>
+<div class="container">
+<div class="col">
+<p>Ungrouped Data Range, <span class="math inline">\(R = R_H - R_L\)</span></p>
+</div>
+<div class="col">
+<p>Grouped Data Range, <span class="math inline">\(R = R_u - R_l\)</span></p>
+<p><span class="math inline">\(R_u\)</span> = Upper boundary of the highest class</p>
+<p><span class="math inline">\(R_u\)</span> = Lower boundary of the lowest class</p>
+</div>
+</div>
+<p><span class="math inline">\(X=\)</span> 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17, 5, 1, 6, 24, 15</p>
+<ul>
+<li class="fragment">Range = 26</li>
+</ul>
+</section><section id="disadvantages-of-range" class="slide level2">
+<h2>Dis(advantages) of Range</h2>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+Simple &amp; quick</li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Influenced by outliers</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Cannot be computed for open-ended distribution</span></li>
+</ul>
+</section><section id="mean-deviation-md" class="slide level2">
+<h2>Mean Deviation (MD)</h2>
+<div class="container">
+<div class="col">
+<p>Ungrouped Data</p>
+<p><span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n\)</span></p>
+</div>
+<div class="col">
+<p>Grouped Data <span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n f_i|x_i-k|} n\)</span></p>
+</div>
+</div>
+k =
+<span class="math display">\[\begin{cases}
+\bar x, &amp; \text{for MD about mean} \\
+\tilde x, &amp; \text{for MD about median} \\
+Mo, &amp; \text{for MD about Mode}
+\end{cases}\]</span>
+</section><section id="disadvantages-of-md" class="slide level2">
+<h2>Dis(advantages) of MD</h2>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+Simple</li>
+<li><input type="checkbox" disabled="" checked="" />
+Unaffected by outliers</li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Useful for symmetric data only</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+</ul>
+</section><section id="variance-and-sd" class="slide level2">
+<h2>Variance and SD</h2>
+<div class="container">
+<div class="col">
+<h3 id="variance">Variance</h3>
+<p><span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></p>
+<p><span class="math inline">\(\quad\)</span> = <span class="math inline">\(\sum \frac{x_i^2}{n}-(\frac{\sum x_i}{n})^2\)</span></p>
+<p><span class="math inline">\(\quad\)</span> = Mean of square - square of mean</p>
+</div>
+<div class="col">
+<h3 id="standard-deviation-sigma"><em>Standard Deviation</em> (<span class="math inline">\(\sigma\)</span>)</h3>
+<p>Positive square root of variance</p>
+<ul>
+<li class="fragment"><span class="math display">\[\sigma  = \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}\]</span></li>
+</ul>
+</div>
+</div>
+</section><section id="table-for-estimation" class="slide level2">
+<h2>Table for estimation</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(x^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: center;">144</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11</td>
+<td style="text-align: center;">121</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(\sum x = 26\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum x^2 = 274\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\sigma^2\)</span>=Mean of square - square of mean</p>
+<p><span class="math inline">\(\quad\)</span> =<span class="math inline">\(\bar {x^2}-{\bar x}^2\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =\)</span> 24.333</li>
+<li class="fragment"><span class="math inline">\(\sigma =\)</span> 4.933</li>
+</ul>
 </section></section>
     </div>
   </div>

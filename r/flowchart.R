@@ -32,7 +32,7 @@ a -> b -> c -> d
 
 }
 
-[1]: paste0('Raw Data (n = ', data$a, ')')
+[1]: expression(x^2)
 [2]: paste0('Remove Errors (n = ', data$b, ')')
 [3]: paste0('Identify Potential Customers (n = ', data$c, ')')
 [4]: paste0('Select Top Priorities (n = ', data$d, ')')
