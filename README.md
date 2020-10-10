@@ -1,2 +1,2 @@
-# college-stat
-Tracks R Lectures on College (Intermediate Statistics)
+# Statistics Lectures
+Tracks Lectures made with R and Rmarkdown.
