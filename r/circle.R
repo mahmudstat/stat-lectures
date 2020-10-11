@@ -16,7 +16,7 @@ plot(f(t), type="b", pch=20, main = "Circle Using Euler Formula")
 n <- 30
 f <- function(t) exp(1i*t)  # makes a unit circle
 t <- seq(0,360, length.out = n)*pi/180
-plot(f(t), type="b", pch=20, main = "Circle Using Euler Formula")
+plot(f(t), type="p", pch=20, main = "Circle Using Euler Formula")
 r <- seq(0,1, length.out = 10)
 for (i in r){
   points(f(t)*i+rnorm(n=n, mean = 0, sd = 0.15), pch=20)
@@ -26,67 +26,24 @@ for (i in r){
 # Let's automate it with another for loop.
 
 par(mfrow=c(2,2))
-for (n in c(10, 20, 30, 40, 50)){
+for (n in c(10, 20, 35, 50)){
   f <- function(t) exp(1i*t)
-  t <- seq(0,360, length.out = n)*pi/180
-  plot(f(t), type="b", pch=20, main = "Circle Using Euler Formula")
+  t <- seq(0, 360, length.out = n)*pi/180
+  plot(f(t), type="p", pch=20, 
+       main = "Circle Using Euler Formula",
+       xlab = "", ylab = "")
   r <- seq(0,1, length.out = n)
   for (i in r){
-    points(f(t)*i+rnorm(n=n, mean = 0, sd = 0.15), pch=20)
+    points(f(t)*i+rnorm(n=n, mean = 0, sd = 0.1), pch=20)
   }
 }
 
-
-### Circle using discrete angles
-
-t <- seq(0,360, 10)*pi/180
-x <- cos(t)
-y <- sin(t)
-
-par(mfrow=c(2,2))
-plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "p",
-     main = "Trogonometric Circle")
+## Now let's put his inside a function
+# Both radius (r) and number of points (n) would be used as arguments.
+# Also  use sd (for scattering) as an argument. 
 
 
-## Manual 
-par(mfrow=c(2,2))
-plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "p",
-     main = "Trogonometric Circle")
-## Take different lengths to change number of points
-r <- seq(0,1, length.out = 10)
-for (i in r){
-  points(i*x+rnorm(50, 0, 0.12), i*y+rnorm(50,0, 0.12), pch=20)
-}
 
-plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "p",
-     main = "Trogonometric Circle")
-r <- seq(0,1, length.out = 20)
-for (i in r){
-  points(i*x+rnorm(50, 0, 0.12), i*y+rnorm(50,0, 0.12), pch=20)
-}
-
-plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "p",
-     main = "Trogonometric Circle")
-r <- seq(0,1, length.out = 35)
-for (i in r){
-  points(i*x+rnorm(50, 0, 0.12), i*y+rnorm(50,0, 0.12), pch=20)
-}
-
-plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "p",
-     main = "Trogonometric Circle")
-r <- seq(0,1, length.out = 50)
-for (i in r){
-  points(i*x+rnorm(50, 0, 0.12), i*y+rnorm(50,0, 0.12), pch=20)
-}
-
-## Automated; two loops
-
-for (n in c(10, 25, 35, 50)){
-  r <- seq(0,1, length.out = n)
-  for (i in r){
-    points(i*x+rnorm(50, 0, 0.12), i*y+rnorm(50,0, 0.12), pch=20)
-  }
-}
 
 
 
