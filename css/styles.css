@@ -150,10 +150,10 @@ img {
 list-style-type: none;
 }
 
-.noborder .reveal section img {
+.reveal section img { 
   background:none; 
   border:none; 
-  box-shadow:none;
+  box-shadow:none; 
   }
 
 /* layout ends  */
