@@ -8,6 +8,8 @@
 # ncircle: number of circles
 # sd: deviation from circumference of circle
 
+# For a unit circle, npoints = 100, ncircle = 1, sd = 0
+
 sketch_circle <- function(npoints=c(15, 25, 35, 50), 
                           r1=0, r2=1, ncircle=20, sd=0.1){
   nplots = length(npoints) 
