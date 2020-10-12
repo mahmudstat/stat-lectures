@@ -1,3 +1,13 @@
+# A function to draw different circle with different density of points. 
+
+# npoints: number of points to plot; a vector with length a square number; 
+# like 1, 4, 9, or 16.
+# nplots: length of npoints; 
+# r1: radius of smallest circle
+# r2: radius of largest circle
+# ncircle: number of circles
+# sd: deviation from circumference of circle
+
 sketch_circle <- function(npoints=c(15, 25, 35, 50), 
                           r1=0, r2=1, ncircle=20, sd=0.1){
   nplots = length(npoints) 
