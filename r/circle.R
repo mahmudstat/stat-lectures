@@ -54,7 +54,7 @@ sketch_circle <- function(npoints=c(10, 25, 35, 50),
   par(mfrow=c(sqrt(nplots), sqrt(nplots)))
   for (n in npoints){
     t <- seq(0, 360, length.out = n)*pi/180
-    plot(exp(r2*1i*t), type="p", pch=20, 
+    plot(exp(1i*t)*r2, type="p", pch=20, 
          main = "Circle Using Euler Formula",
          xlab = "", ylab = "")
     r <- seq(r1, r2, length.out = ncircle)
@@ -64,3 +64,4 @@ sketch_circle <- function(npoints=c(10, 25, 35, 50),
   }
 }
 
+sketch_circle(sd=0.15, r2=2)
