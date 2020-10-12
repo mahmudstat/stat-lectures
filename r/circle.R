@@ -48,7 +48,7 @@ for (n in c(15, 25, 35, 50)){
 # ncircle: number of circles
 # sd: deviation from circumference
 
-sketch_circle <- function(npoints=c(10, 25, 35, 50), 
+sketch_circle <- function(npoints=c(15, 25, 35, 50), 
                           r1=0, r2=1, ncircle=10, sd=0.1){
   nplots = length(npoints) 
   par(mfrow=c(sqrt(nplots), sqrt(nplots)))
@@ -64,4 +64,4 @@ sketch_circle <- function(npoints=c(10, 25, 35, 50),
   }
 }
 
-sketch_circle(sd=0.15, r2=2)
+sketch_circle(sd=0.15, r2=2, ncircle = 20)
