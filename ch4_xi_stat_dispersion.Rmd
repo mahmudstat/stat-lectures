@@ -15,6 +15,25 @@ output:
 
 ## What is Dispersion?
 
+
+
+<div class="container">
+<div class="col">
+```{r, echo=F, fig.width=6, fig.height=6}
+source('r/sketch_circle.R')
+sketch_circle()
+``` 
+</div>
+<div class="col">
+</br>
+</br>
+
+- Which plot has the largest dispersion?
+- Which plot has the smallest dispersion?
+
+</div>
+</div>
+
 ## Why?
 
 To
