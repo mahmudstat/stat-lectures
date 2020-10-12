@@ -26,15 +26,14 @@ for (i in r){
 # Let's automate it with another for loop.
 
 par(mfrow=c(2,2))
-for (n in c(10, 20, 35, 50)){
-  f <- function(t) exp(1i*t)
+for (n in c(15, 25, 35, 50)){
   t <- seq(0, 360, length.out = n)*pi/180
-  plot(f(t), type="p", pch=20, 
+  plot(exp(1i*t), type="p", pch=20, 
        main = "Circle Using Euler Formula",
        xlab = "", ylab = "")
   r <- seq(0,1, length.out = n)
   for (i in r){
-    points(f(t)*i+rnorm(n=n, mean = 0, sd = 0.1), pch=20)
+    points(exp(1i*t)*i+rnorm(n=n, mean = 0, sd = 0.1), pch=20)
   }
 }
 
@@ -43,7 +42,16 @@ for (n in c(10, 20, 35, 50)){
 # Also  use sd (for scattering) as an argument. 
 
 
-
-
-
+sketch_circle <- function(npoints, r, sd){
+  for (n in npoints){
+    t <- seq(0, 360, length.out = n)*pi/180
+    plot(exp(1i*t), type="p", pch=20, 
+         main = "Circle Using Euler Formula",
+         xlab = "", ylab = "")
+    r <- seq(0,1, length.out = n)
+    for (i in r){
+      points(exp(1i*t)*i+rnorm(n=n, mean = 0, sd = sd), pch=20)
+    }
+  }
+}
 
