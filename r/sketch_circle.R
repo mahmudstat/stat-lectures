@@ -6,12 +6,15 @@
 # r1: radius of smallest circle
 # r2: radius of largest circle
 # ncircle: number of circles
+# mean: mean of random numbers for making deviation from- 
+# circumference of circle
 # sd: deviation from circumference of circle
+# Adjust mean and sd according to radius
 
 # For a unit circle, npoints = 100, ncircle = 1, sd = 0
 
 sketch_circle <- function(npoints=c(15, 25, 35, 50), 
-                          r1=0, r2=1, ncircle=20, sd=0.1){
+                          r1=0, r2=1, ncircle=20, mean = 0, sd=0.1){
   nplots = length(npoints) 
   par(mfrow=c(sqrt(nplots), sqrt(nplots)))
   for (n in npoints){
