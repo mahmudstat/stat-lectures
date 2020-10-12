@@ -7,6 +7,9 @@ output:
     theme: sky
     reveal_plugins: ["menu", "chalkboard", "zoom"]
     self_contained: false
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -20,6 +23,7 @@ output:
 <div class="container">
 <div class="col">
 ```{r, echo=F, fig.width=6, fig.height=6}
+par(bg="blue")
 source('r/sketch_circle.R')
 sketch_circle()
 ``` 
@@ -271,3 +275,7 @@ source('r/dispersion.R')
 Who is better?
 </div>
 </div>
+
+## Image{.noborder}
+
+<img src="img/stat/venn.png")

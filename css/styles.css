@@ -138,14 +138,18 @@ td, th {
 }
 
 img {
-  border: 0px solid #ddd;
+  border: none;
 }
 
 .nob ul {
 list-style-type: none;
 }
 
-
+.noborder .reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
 
 /* layout ends  */
 
