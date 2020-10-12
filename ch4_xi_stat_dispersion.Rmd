@@ -276,6 +276,6 @@ Who is better?
 </div>
 </div>
 
-## Image{.noborder}
+## Image {data-background=white}
 
-<img src="img/stat/venn.png")
+<img src="img/stat/venn.png">
