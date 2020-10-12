@@ -137,6 +137,9 @@ td, th {
     border: 1px solid grey;
 }
 
+  /* Use html img tag instead of ~[]() */
+  /* For slide with img, place {data-background=white} after slide title */
+
 img {
  background:none; 
  border:none; 
