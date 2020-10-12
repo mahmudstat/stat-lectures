@@ -41,11 +41,20 @@ for (n in c(15, 25, 35, 50)){
 # Both radius (r) and number of points (n) would be used as arguments.
 # Also  use sd (for scattering) as an argument. 
 
+# nplots: length of npoints; must be a square number, like 1, 4, 9, or 16. 
+# npoints: number of points to plot; a vector 
+# r1: radius of smallest circle
+# r2: radius of largest circle
+# ncircle: number of circles
+# sd: deviation from circumference
 
-sketch_circle <- function(npoints, r1, r2, ncircle, sd){
+sketch_circle <- function(npoints=c(10, 25, 35, 50), 
+                          r1=0, r2=1, ncircle=10, sd=0.1){
+  nplots = length(npoints) 
+  par(mfrow=c(sqrt(nplots), sqrt(nplots)))
   for (n in npoints){
     t <- seq(0, 360, length.out = n)*pi/180
-    plot(exp(1i*t), type="p", pch=20, 
+    plot(exp(r2*1i*t), type="p", pch=20, 
          main = "Circle Using Euler Formula",
          xlab = "", ylab = "")
     r <- seq(r1, r2, length.out = ncircle)
