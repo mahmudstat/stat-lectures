@@ -16,14 +16,13 @@ output:
 ---
 # Concept of dispersion
 
-## What is Dispersion?
-
+## What is Dispersion? {data-background=white}
 
 
 <div class="container">
 <div class="col">
 ```{r, echo=F, fig.width=6, fig.height=6}
-par(bg="blue")
+par(bg="white")
 source('r/sketch_circle.R')
 sketch_circle()
 ``` 
