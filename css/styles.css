@@ -3,7 +3,8 @@
 
 
 body {
-        background: linear-gradient(to bottom, #538cc6, #00cc7a);
+  background-image: conic-gradient(#ffe6e6, yellow, green, #d580ff, #ffe6e6);
+  border-radius: 50%;
     }
     
 span {
