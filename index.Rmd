@@ -1,0 +1,24 @@
+---
+title: "Statistics Lectures"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# About
+
+# Lectures
+
+Statistics lectures are divided into two parts
+
+- First Paper
+- Second Paper
+

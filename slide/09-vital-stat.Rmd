@@ -1,0 +1,124 @@
+---
+title: "Vital Statistics"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Rates & Ratios
+
+<div class="container">
+<div class="col">
+- Dependency Ratio 
+- Sex ratio
+- Population density
+- Crude Birth Rate (CBR)
+- General Fertility Rate (GFR)
+- Age-Specific Fertility Rate (ASFR)
+- Total Fertility Rate (TFR)
+</div>
+<div class="col">
+- Gross Reproduction Rate (GRR)
+- Net Reproduction Rate (NRR)
+- Net Fertility Rate (NFR)
+- Crude Death Rate (CDR)
+- Age-Specific Death Rate (ASDR)
+</div>
+</div>
+
+## Dependency Ratio 
+
+$$d = \frac{P_{0-14}+P_{65+}}{P_{15-64}}\times100$$
+Where
+
+- $P_{0-14}$ = The no. of children aged between 0 & 14
+- $P_{65+}$ = The no. of people aged 65 or older
+- $P_{15-64}$ = The no. of people aged between 15 and 64
+
+# Numerical Problem
+
+## Find CBR, GFR, ASFR, TFR, GRR, & NRR
+
+|  Age  | # Women | # Newborn | # Baby boys | Survival probability |
+|:-----:|:-------:|:---------:|:-----------:|:--------------------:|
+| 15-19 |   7806  |   521435  |    272342   |         0.980        |
+| 20-24 |   6781  |   846256  |    422247   |         0.977        |
+| 25-29 |   5840  |   412342  |    206122   |         0.972        |
+| 30-34 |   5434  |   326268  |    183134   |         0.960        |
+| 35-39 |   5675  |   211810  |    111440   |         0.942        |
+| 40-44 |   6083  |   69750   |    34380    |         0.895        |
+| 45-49 |   5361  |   42354   |    22462    |         0.854        |
+
+Total population = 109,027,142
+
+## Solutio to Rates
+
+<small>
+
+| Age Group | # Women $F_i$ | # Newborn $B_i$ | # Baby boys | # Baby girls $G_i$ | Survival probability $S_i$ | $ASFR_i =$ $\frac{B_i}{F_i}\times 100$ | $\frac{G_i}{F_i}$ | $\frac{G_i}{F_i}\times S_i$ |
+|:---------:|:-------------:|:---------------:|:-----------:|--------------------|:--------------------------:|----------------------------------------|-------------------|-----------------------------|
+|   15-19   |      7806     |      521435     |    272342   |                    |            0.980           |                                        |                   |                             |
+|   20-24   |      6781     |      846256     |    422247   |                    |            0.977           |                                        |                   |                             |
+|   25-29   |      5840     |      412342     |    206122   |                    |            0.972           |                                        |                   |                             |
+|   30-34   |      5434     |      326268     |    183134   |                    |            0.960           |                                        |                   |                             |
+|   35-39   |      5675     |      211810     |    111440   |                    |            0.942           |                                        |                   |                             |
+|   40-44   |      6083     |      69750      |    34380    |                    |            0.895           |                                        |                   |                             |
+|   45-49   |      5361     |      42354      |    22462    |                    |            0.854           |                                        |                   |                             |
+</small>
+
+## Implications
+
+> - GRR > 1: Number of potent women increasing
+> - GRR = 1: Number of potent women remains constant. There is no change in population
+> - NRR > 1: The number of potent women more than that of previous year; population increasing
+> - NRR = 1: No change in population
+> - GRR = NRR: No new-born girls dies before reaching last potent age
+
+# Natural Growth Rate (NGR)
+
+NGR = CBR - CDR
+
+$\displaystyle \frac BP \times 1000-\frac DP \times 1000 = \frac {B-D}P \times 1000$
+
+# Growths
+
+## Geometric Growth
+
+$P_o =$ Initial population
+
+$P_n =$ Final population
+
+$n =$ Number of period (year, month, etc)
+
+$r =$ Rate of increase
+
+> - Population after 1 year, $P_1 = P_o + P_or = P_o(1+r)$
+> - Population after 2 years, $P_2 = P_1 + P_1r = P_1(1+r) = P_o(1+r)^2$
+> - Population after n years, $P_n = P_o(1+r)^n$
+
+## Growth Problems
+
+- Time required for population to get doubled/tripled in certain rate
+- Rate required for population to get doubled/tripled in certain time
+
+## Exponential Growth 
+
+Geometric: $P_n = P_o(1+r)^n$
+
+If n is fragmented in smaller periods
+
+Like 100 % in 1 year $\rightarrow$ 50 % in each half-year
+
+$P_n = P_o(1+\frac{r}{n})^{rn}$
