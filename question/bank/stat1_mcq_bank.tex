@@ -1,0 +1,390 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics MCQ Question Bank}
+            
+        \vspace{0.5cm}
+        \LARGE
+        First Paper \\
+         \textbf{Statistics, Variable and Concepts of Different Symbols}
+            
+        \vspace{1.5cm}
+            
+        \textbf{Abdullah Al Mahmud}
+            
+        \vfill
+            
+            
+        \vspace{0.8cm}
+            
+            
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+
+\begin{questions}
+
+\section{Basic Concept of Statistics}
+
+\question \textbf{In which scale of measurement, zero is regarded as true zero?}
+\choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
+
+\question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
+\choice{26}{106}{206}{216}{c}
+
+\question \textbf{Which one falls in the category of interval scale?}
+\choice {Temperature}{Speed}{Distance}{Film rating}{a}
+
+\question \textbf{Which one is product of square?}
+\choice {$\prod x_i^2$}{$(\prod x_i)^2$}{$\sum x_i^2 \times \sum x$}{$\sum x_i^2$}{a}
+
+\question \textbf{For which variable, determining number of terms is not possible?}
+\choice{Discrete variable}{Continuous variable}{Quantitative variable}{Qualitative variable}{b}
+
+\textbf{Answer the next three question based on the following information.}
+
+\textbf{A farmer collects growth (in cm) of 10 plants in a month and finds that \\ $\sum x_i = 7$ and $\sum x_i^2=15$}
+
+\question \textbf{What is the value of $\sum (x_i+4)$?}
+\choice{23}{$\sum x_i +4n$}{22}{11}{a}
+
+\question \textbf{What is the value of $\sum (x_i-4)^2$?}
+\choice{23}{135}{484}{121}{a}
+
+\question \textbf{If the square of summation is subtracted the sum of square, the value is - }
+\choice{-8}{34}{8}{-34}{d}
+
+\question \textbf{Which one is not an example of ratio scale?}
+\choice{Room no.}{Income}{Number of accidents}{Weight}{a}
+
+\section{Collection, Organization, and Presentation of Data}
+
+\section{Measures of Central Tendency}
+
+\question \textbf{Which measure of central tendencyis suitable for qualitative variable?}
+\choice{Arithmetic Mean}{Harmonic Mean}{Quadratic Mean}{Mode}{d}
+
+\question \textbf{In presence of negative values, which measure is not usable?}
+\choice{Arithmetic Mean}{Geometric Mean}{Quadratic Mean}{Harmonic Mean}{b}
+
+\question \textbf{What is the arithmetic mean of first n odd natural numbers?}
+\choice{$\frac{n+1}{n}$}{n}{n+1}{$\frac{n+1}{2}$}{b}
+
+\question \textbf{Inappropriate for algebraic analysis--}
+
+i. Median \\
+ii. Mode \\
+iii. Geometric Mean
+
+Which one is true?
+
+\choice{i}{ii}{i \& ii}{ii \& iii}{c}
+
+\textbf{Answer the next two questions based on the following information}
+
+  \begin{table}[h]
+\centering
+\begin{tabular}{cccccc}
+Accident     & 4 & 6 & 7 & 8 & 9\\ \hline
+Frequency & 2   & 0    & 4     & 4     & 1   
+\end{tabular}
+\end{table}
+\question \textbf{Fifth Decile is --}
+\choice{0}{8}{7}{6}{c}
+
+\question \textbf{Which of the following is mode?}
+\choice{4}{8}{0}{7}{b}
+
+\question \textbf{Which measure gives a value from within the values?}
+\choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{d}
+
+\question \textbf{Which one is not a proper measure of central tendency?}
+\choice{2nd Quartile}{Third Decile}{3rd Quintile}{110th Percentile}{d}
+
+\question \textbf{Which measure is not used in determining skewness?}
+\choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{b}
+
+\question \textbf{The arithmetic mean of first n natural numbers-}
+\choice {$\frac{n}{2}$}{$\frac{n+1}{2}$}{$\frac{n^2}{2}$}{$\frac{n^2-1}{2}$}{b}
+
+\question \textbf{When is the relationship $AM = HM = GM$ true?}
+\choice {All values are equal}{The values form a geometric progression}{ The values form an arithmetic progression}{All values are distinct}{a}
+
+\question \textbf{In the presence of outlier(s), which measure of central tendency is suitable?}
+\choice {Arithmetic mean}{Median}{Quadratic mean}{Power mean}{b}
+
+\question \textbf{If a rate is defined as $R = \frac cd$, where c is constant, then which measure is perfect?}
+\choice {Weighted arithmetic mean}{Harmonic mean}{Quadratic mean}{Weighted geometric mean}{b}
+
+\textbf{Answer the next two questions as per the following information.}
+
+42 44 59 64 70 72 74 91 94 are 9 values.
+
+\question \textbf{What is the 50th percentile?}
+\choice {64}{70}{72}{71}{b}
+
+\question \textbf{Below which value lie 70 percent values?}
+\choice {42}{44}{59}{74}{d}
+
+\question \textbf{Which measure might have more than one value?}
+\choice{Arithmetic mean}{Geometric mean}{Quadratic mean}{Mode}{d}
+
+\question \textbf{Above which value lie 30\% observations?}
+\choice{3rd Quartile}{Median}{30th Percentile}{70th percentile}{d}
+
+\question \textbf{Arithmetic means of three groups having equal no. of items are 30, 32, and 34. What is the combined mean?}
+\choice{30.33}{32.67}{32.00}{33.00}{c}
+
+\question \textbf{In which scale of measurement, zero is regarded as true zero?}
+\choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
+
+\question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
+\choice{26}{106}{206}{216}{c}
+
+\question \textbf{Which one falls in the category of interval scale?}
+\choice {Temperature}{Speed}{Distance}{Film rating}{a}
+
+\question \textbf{Which one is product of square?}
+\choice {$\prod x_i^2$}{$(\prod x_i)^2$}{$\sum x_i^2 \times \sum x$}{$\sum x_i^2$}{a}
+
+\question \textbf{For which variable, determining number of terms is not possible?}
+\choice{Discrete variable}{Continuous variable}{Quantitative variable}{Qualitative variable}{b}
+
+\textbf{Answer the next three question based on the following information.}
+
+\textbf{A farmer collects growth (in cm) of 10 plants in a month and finds that \\ $\sum x_i = 7$ and $\sum x_i^2=15$}
+
+\question \textbf{What is the value of $\sum (x_i+4)$?}
+\choice{23}{$\sum x_i +4n$}{22}{11}{a}
+
+\question \textbf{What is the value of $\sum (x_i-4)^2$?}
+\choice{23}{135}{484}{121}{a}
+
+\question \textbf{If the square of summation is subtracted the sum of square, the value is - }
+\choice{-8}{34}{8}{-34}{d}
+
+\question \textbf{Which one is not an example of ratio scale?}
+\choice{Room no.}{Income}{Number of accidents}{Weight}{a}
+
+\section{Measures of Dispersion}
+
+\section{Moments, Skewness, and Kurtosis}
+
+\question \textbf{Which can be used to measure dispersion?}
+\choice{$\mu_2'$}{$\mu_1$}{$\mu_2$}{$\mu_1'$}{c}
+
+\question \textbf{The formula of coefficient of variance (CV) is --}
+\choice{$\frac{\mu_2}{n}\times 100$}{$\frac{\mu_2}{\mu_1}\times 100$}{$\frac{\mu_2}{\bar x}\times 100$}{$\frac{\mu_3}{\sigma}\times 100$}{c}
+
+\question \textbf{First moment around zero is --}
+\choice{0}{1}{-1}{Arithmetic Mean}{a}
+
+\question \textbf{Which values are used in constructing Box \& Whisker Plot?}
+\choice{Mode}{$X_L$}{$Q_1 \& Q_3$}{$Q_1, Q_2 \& Q_3$}{a}
+
+\question \textbf{Which might have a negative value?}
+\choice{$\mu_4$}{$\mu_3$}{$\mu_2'$}{$\mu_2$}{b}
+
+\question \textbf{In a symmatric distribution--}
+
+i. Arithmetic Mean = Mode = Median \\
+ii. $Q_2-Q_1 = Q_3-Q_2$  \\
+iii. $Q_1-X_L = X_H-Q_3$
+
+Which one is true?
+
+\choice{i \& ii}{ii \& iii}{i \&iii}{i, ii \&iii}{d}
+
+\question \textbf{For a data, $Q_3=41.6, Q_1=17.2, Median = 29, \& AM = 30$; What is Coefficient of skewness?}
+\choice{24.4}{1}{0.03}{29.45}{d}
+
+\question \textbf{$\sqrt{\beta_1}=-0.23$ implies--}
+\choice{Left Skew}{Symmetry}{Right Skew}{Mesokurtic}{a}
+
+\question \textbf{Which is not included in five number summary?}
+\choice{Arithmetic Mean}{$X_H$}{$Q_2$}{$Q_3$}{a}
+
+\question \textbf{$\beta_2 = \sqrt 9$ implies data are--}
+\choice{Leptokurtic}{Platykurtic}{Mesokurtic}{Symmetric}{c}
+
+\question \textbf{2nd Central Moment is --}
+\choice{$\mu_2-\mu_1'$}{$\mu_2+\mu_1'$}{$\mu_2-\mu_1'^2$}{$\mu_2'-\mu_1'^2$}{d}
+
+\section{Correlation and Regression}
+
+\section{Time Series}
+
+\question \textbf{A company is constantly getting greater revenue than previous year; this is--}
+\choice{Seasonal Variation}{General Trend}{Irregular Variation}{Cyclic Variation}{b}
+
+\question \textbf{Which is not a method of finding general trend?}
+\choice{Graphical Method}{Moving Average}{Semi-Average}{Moving Median}{d}
+
+\textbf{Answer the next two questions based on the following table:}
+
+  \begin{table}[h]
+\centering
+\begin{tabular}{ccccccc}
+Year     & 2007 & 2008 & 2009 & 2010 & 2011 & 2012\\ \hline
+Sales & 5   & 35    & 34     & 40     & 42  & 204 
+\end{tabular}
+\end{table}
+
+\question \textbf{In Semi-Average method, what is the 2nd average?}
+\choice{74}{24.67}{95.33}{28}{c}
+
+\question \textbf{For this data, which method would give the best measure of trend?}
+\choice{3-yearly Moving Average}{4-yearly Moving Average}{Semi-Average}{Graphical Method}{a}
+
+\question \textbf{which component of time series represents a natural disaster?}
+\choice{Seasonal Variation}{General Trend}{Irregular Variation}{Cyclic Variation}{c}
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+\newpage  %Uncomment to put on new age
+\bigskip
+
+\begin{multicols}{4}
+[
+Answer Key: 
+]
+\showallanswers % Phil Hirschorn
+\end{multicols}
+
+
+\end{document}

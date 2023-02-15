@@ -1,0 +1,18 @@
+ \item
+	  \textbf{Statement} 
+  
+  \begin{enumerate}
+    \item
+	Question \hfill 1
+    \item
+	Question \hfill 2
+    \item  
+	Question \hfill 3
+    \item
+	Question \hfill 4
+  \end{enumerate}
+
+MCQ
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}

@@ -5,6 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
+    highlight: pygments
     reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
     lib_dir: libs
@@ -13,18 +14,47 @@ output:
       in_header: css/header.html
 ---
 
-DO
-
 # About
+
+This websites contains lectures on statistics. 
+
+All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. 
 
 # Lectures
 
 Statistics lectures are divided into two parts
 
-- First Paper
-- Second Paper
+- [First Paper](#/first-paper)
+- [Second Paper](#/second-paper)
 
 ## First Paper
 
-- Introduction to Statistics
+- [Introduction to Statistics](slide/01-probability-intro.html)
+- [Data Collection, Organization & Presentation](slide/02-data-collection-organization-presentation.html)
+- [Measures of Central Tendency](slide/03-central-tendency.html)
+- [Measures of Dispersion](slide/04-dispersion.html)
+- [Moments, Skewness & Kurtosis](slide/05-moments-skewness-kurtosis.html)
+- [Correlation & Regression](slide/06-correlation-regression.html)
+- [Time Series](slide/07-time_series.html)
 
+## Second Paper
+
+- [ Introduction to probability](slide/01-probability-intro.html)
+- [Random variable and Probability Distributions](slide/02-random-variable.html)
+- [Mathematical Expectation](slide/03-expectation.html)
+- [Binomial Distribution](slide/04-binomial_dist.html)
+- [Poisson Distribution](slide/05-poisson_dist.html)
+- [Vital Statistics](slide/09-vital-stat.html)
+
+More to come...
+
+# Question Bank
+
+|              | Creative Questions | MCQ Questions |
+|:------------:|:------------------:|:-------------:|
+|  First Paer  |      [Link](question/stat1_cq_bank.pdf)      |    [Link](question/stat1_mcq_bank.pdf)   |
+| Second Paper |      [Link](question/stat2_cq_bank.pdf)      |    [Link](question/stat2_mcq_bank.pdf)   |
+
+# Contact
+
+[www.thinkermahmud.com](https://www.thinkermahmud.com)
