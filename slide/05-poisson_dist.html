@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Statistics Lectures</title>
+  <title>Poisson Distribution</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | www.statmania.info | </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -459,33 +459,197 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Statistics Lectures</h1>
+    <h1 class="title">Poisson Distribution</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section class="slide level2">
-
-<p>DO</p>
+<section id="concept" class="slide level2">
+<h2>Concept</h2>
+<p>Used in situation where some events occur at certain place or
+time.</p>
+<p><a
+href="https://en.wikipedia.org/wiki/Poisson_distribution#Occurrence_and_applications">See
+applications</a></p>
 </section>
-<section id="about" class="title-slide slide level1">
-<h1>About</h1>
-
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+<ul>
+<li class="fragment">No. of car accidents in a month</li>
+<li class="fragment">No. of sixes in an innings</li>
+<li class="fragment">No. of calls in an hour in a call center</li>
+<li class="fragment">No. of bacteria in a <span
+class="math inline">\(mm^2\)</span></li>
+<li class="fragment">No. of defective bolts in a lot (in statistical
+quality control)</li>
+<li class="fragment">No. of particles in a radioactive decay</li>
+<li class="fragment">No. of rats in cultivable land</li>
+<li class="fragment">No. of meteorites greater than 1 meter diameter
+that strike Earth in a year</li>
+<li class="fragment">No. of patients arriving in an emergency room
+between 10 and 11 pm</li>
+<li class="fragment">No. of laser photons hitting a detector in a
+particular time interval</li>
+</ul>
 </section>
-
+<section id="function" class="slide level2">
+<h2>Function</h2>
+<p><span class="math inline">\(\displaystyle P(x) =
+\frac{e^{-\lambda}\lambda^x}{x!}\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(e=2.718\)</span>
+(constant)</li>
+<li class="fragment">x: number of occurrences (success)</li>
+<li class="fragment"><span class="math inline">\(\lambda\)</span>:
+average no. of events</li>
+</ul>
+</section>
+<section id="poisson-process" class="slide level2">
+<h2>Poisson Process</h2>
+<p>A process involving ..</p>
+</section>
+<section id="assumptions" class="slide level2">
+<h2>Assumptions</h2>
+<ul>
+<li class="fragment">Occurrences are independent</li>
+<li class="fragment"><span class="math inline">\(p \space
+\propto\)</span>Interval</li>
+<li class="fragment">another</li>
+</ul>
+</section>
+<section id="properties" class="slide level2">
+<h2>Properties</h2>
+<ul>
+<li class="fragment">Mean and variance are same (<span
+class="math inline">\(\lambda\)</span>)</li>
+<li class="fragment">mgf: <span class="math inline">\(e^\lambda
+e(^t-1)\)</span></li>
+<li class="fragment">If <span class="math inline">\(x_1 \sim
+Poisson(\lambda_1)\)</span> &amp; <span class="math inline">\(x_2 \sim
+Poisson(\lambda_1)\)</span>, then <span class="math inline">\((x_1+x_2)
+\sim Poisson(\lambda_1+\lambda_2)\)</span></li>
+<li class="fragment">skewness: <span class="math inline">\(\frac 1
+\lambda\)</span> (-ve skew)</li>
+<li class="fragment">kurtosis: platykurtic (<span
+class="math inline">\(1+\frac 1 {\sqrt{\lambda}}\)</span>)</li>
+</ul>
+</section>
 <section>
-<section id="lectures" class="title-slide slide level1">
-<h1>Lectures</h1>
-<p>Statistics lectures are divided into two parts</p>
+<section id="theorems" class="title-slide slide level1">
+<h1>Theorems</h1>
+
+</section>
+<section id="summation" class="slide level2">
+<h2>Summation</h2>
+<p><span class="math inline">\(\displaystyle \sum_{i=1}^{\infty}
+\frac{e^{-\lambda}\lambda^x}{x!}=1\)</span></p>
+<p>Prove</p>
+</section>
+<section id="recurrence" class="slide level2">
+<h2>Recurrence</h2>
+<p>P(x+1)</p>
+</section>
+<section id="poisson-to-normal" class="slide level2">
+<h2>Poisson to Normal</h2>
+<p>If <span class="math inline">\(\lambda\)</span> is very large.</p>
+</section>
+<section id="bionomial-to-poisson" class="slide level2">
+<h2>Bionomial to Poisson</h2>
 <ul>
-<li>First Paper</li>
-<li>Second Paper</li>
+<li>Number of trials, n, is very large: <span class="math inline">\(n
+\to \infty\)</span></li>
+<li>Probability of success, p, is very low: <span
+class="math inline">\(p \to 0\)</span></li>
+<li>Mean, <span class="math inline">\(np=\lambda\)</span> finite</li>
 </ul>
 </section>
-<section id="first-paper" class="slide level2">
-<h2>First Paper</h2>
+<section id="when-to-use" class="slide level2">
+<h2>When to Use</h2>
 <ul>
-<li>Introduction to Statistics</li>
+<li>Events that can happen a very large number of time, but happen
+rarely.</li>
+<li>That is, they are used in situations that would be more properly
+represented by a Binomial distribution with a very large n and small p,
+especially when the exact values of n and p are unknown.</li>
 </ul>
+</section>
+<section id="difference-with-binomial" class="slide level2">
+<h2>Difference with Binomial</h2>
+<div class="container">
+<div class="col">
+<p><img src="05-poisson_dist_files/figure-revealjs/unnamed-chunk-1-1.png" width="768" /></p>
+</div>
+<div class="col">
+<p><small></p>
+<ul>
+<li class="fragment">Binomial counts discrete occurrences among discrete
+trials (finite attempts)</li>
+<li class="fragment">Poisson counts discrete occurrences among
+continuous trials (infinite attempts)</li>
+<li class="fragment">In Poisson, success can occur at any point of time
+(or space)</li>
+<li class="fragment">Accidents in road (anywhere anytime), knots on a
+rope</li>
+</ul>
+<p></small></p>
+</div>
+</div>
+</section>
+<section id="difference-with-binomial-contd." class="slide level2">
+<h2>Difference with Binomial (Contd.)</h2>
+<ul>
+<li>Both measure the number of certain random events (or “successes”)
+within a certain frame - Binomial is based on discrete events, while the
+Poisson is based on continuous events.</li>
+<li>In a Binomial distribution you have a certain number, n, of
+“attempts,” each of which has probability of success p. </li>
+<li>With a Poisson distribution, you essentially have infinite attempts,
+with infinitesimal chance of success.</li>
+<li>Given a Binomial distribution with some n,p, if you let n→∞ and p→0
+in such a way that np→λ, then that distribution approaches a Poisson
+distribution with parameter λ.</li>
+</ul>
+</section></section>
+<section>
+<section id="problems" class="title-slide slide level1">
+<h1>Problems</h1>
+
+</section>
+<section id="problem-01" class="slide level2">
+<h2>Problem 01</h2>
+<p>If P(x = 2) = P(x = 3), find</p>
+<ol type="i">
+<li>parameters</li>
+<li><span class="math inline">\(P(x&gt;0)\)</span></li>
+<li><span class="math inline">\(P(x\le 2)\)</span></li>
+<li><span class="math inline">\(P(x\ge 2)\)</span></li>
+</ol>
+</section>
+<section id="problem-02" class="slide level2">
+<h2>Problem 02</h2>
+<p>Standard deviation of a Poisson distribution is 4. Find mean and the
+probabilities in problem 01.</p>
+</section>
+<section id="problem-03" class="slide level2">
+<h2>Problem 03</h2>
+<p>If <span class="math inline">\(\frac{k\mu^x}{x!}; x = 0, 1, 2,
+\cdots, \infty,\)</span></p>
+<p>k=?</p>
+</section>
+<section id="problem-04" class="slide level2">
+<h2>Problem 04</h2>
+<p>Overflow floods occur once every 100 years on average. Calculate the
+probability of k = 0, 1, 2, 3, 4, 5, or 6 overflow floods in a 100-year
+interval, assuming the Poisson model is appropriate.</p>
+<ul>
+<li class="fragment">Because the average event rate is one overflow
+flood per 100 years, λ = 1</li>
+</ul>
+</section>
+<section id="problem-05" class="slide level2">
+<h2>problem 05</h2>
+<p>Ugarte and colleagues report that the average number of goals in a
+World Cup soccer match is approximately 2.5 and the Poisson model is
+appropriate. Estimate probability of k goals and then k = 0,1,2,3..</p>
 </section></section>
     </div>
   </div>
@@ -524,7 +688,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
         // Transition style
-        transition: 'default', // none/fade/slide/convex/concave/zoom
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
         // Transition speed
         transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
@@ -549,6 +713,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 
         chalkboard: {
+          theme: 'whiteboard',
         },
 
         keyboard: {

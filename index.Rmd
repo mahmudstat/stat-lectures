@@ -13,6 +13,8 @@ output:
       in_header: css/header.html
 ---
 
+DO
+
 # About
 
 # Lectures
@@ -21,4 +23,8 @@ Statistics lectures are divided into two parts
 
 - First Paper
 - Second Paper
+
+## First Paper
+
+- Introduction to Statistics
 

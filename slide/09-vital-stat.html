@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Statistics Lectures</title>
+  <title>Vital Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | www.statmania.info | </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -459,33 +459,293 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Statistics Lectures</h1>
+    <h1 class="title">Vital Statistics</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section class="slide level2">
-
-<p>DO</p>
+<section>
+<section id="rates-ratios" class="title-slide slide level1">
+<h1>Rates &amp; Ratios</h1>
+<div class="container">
+<div class="col">
+<ul>
+<li>Dependency Ratio</li>
+<li>Sex ratio</li>
+<li>Population density</li>
+<li>Crude Birth Rate (CBR)</li>
+<li>General Fertility Rate (GFR)</li>
+<li>Age-Specific Fertility Rate (ASFR)</li>
+<li>Total Fertility Rate (TFR)</li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li>Gross Reproduction Rate (GRR)</li>
+<li>Net Reproduction Rate (NRR)</li>
+<li>Net Fertility Rate (NFR)</li>
+<li>Crude Death Rate (CDR)</li>
+<li>Age-Specific Death Rate (ASDR)</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="about" class="title-slide slide level1">
-<h1>About</h1>
+<section id="dependency-ratio" class="slide level2">
+<h2>Dependency Ratio</h2>
+<p><span class="math display">\[d =
+\frac{P_{0-14}+P_{65+}}{P_{15-64}}\times100\]</span> Where</p>
+<ul>
+<li><span class="math inline">\(P_{0-14}\)</span> = The no. of children
+aged between 0 &amp; 14</li>
+<li><span class="math inline">\(P_{65+}\)</span> = The no. of people
+aged 65 or older</li>
+<li><span class="math inline">\(P_{15-64}\)</span> = The no. of people
+aged between 15 and 64</li>
+</ul>
+</section></section>
+<section>
+<section id="numerical-problem" class="title-slide slide level1">
+<h1>Numerical Problem</h1>
 
+</section>
+<section id="find-cbr-gfr-asfr-tfr-grr-nrr" class="slide level2">
+<h2>Find CBR, GFR, ASFR, TFR, GRR, &amp; NRR</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Age</th>
+<th style="text-align: center;"># Women</th>
+<th style="text-align: center;"># Newborn</th>
+<th style="text-align: center;"># Baby boys</th>
+<th style="text-align: center;">Survival probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">15-19</td>
+<td style="text-align: center;">7806</td>
+<td style="text-align: center;">521435</td>
+<td style="text-align: center;">272342</td>
+<td style="text-align: center;">0.980</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20-24</td>
+<td style="text-align: center;">6781</td>
+<td style="text-align: center;">846256</td>
+<td style="text-align: center;">422247</td>
+<td style="text-align: center;">0.977</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">25-29</td>
+<td style="text-align: center;">5840</td>
+<td style="text-align: center;">412342</td>
+<td style="text-align: center;">206122</td>
+<td style="text-align: center;">0.972</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">5434</td>
+<td style="text-align: center;">326268</td>
+<td style="text-align: center;">183134</td>
+<td style="text-align: center;">0.960</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">35-39</td>
+<td style="text-align: center;">5675</td>
+<td style="text-align: center;">211810</td>
+<td style="text-align: center;">111440</td>
+<td style="text-align: center;">0.942</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">40-44</td>
+<td style="text-align: center;">6083</td>
+<td style="text-align: center;">69750</td>
+<td style="text-align: center;">34380</td>
+<td style="text-align: center;">0.895</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">45-49</td>
+<td style="text-align: center;">5361</td>
+<td style="text-align: center;">42354</td>
+<td style="text-align: center;">22462</td>
+<td style="text-align: center;">0.854</td>
+</tr>
+</tbody>
+</table>
+<p>Total population = 109,027,142</p>
+</section>
+<section id="solutio-to-rates" class="slide level2">
+<h2>Solutio to Rates</h2>
+<p><small></p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Age Group</th>
+<th style="text-align: center;"># Women <span
+class="math inline">\(F_i\)</span></th>
+<th style="text-align: center;"># Newborn <span
+class="math inline">\(B_i\)</span></th>
+<th style="text-align: center;"># Baby boys</th>
+<th># Baby girls <span class="math inline">\(G_i\)</span></th>
+<th style="text-align: center;">Survival probability <span
+class="math inline">\(S_i\)</span></th>
+<th><span class="math inline">\(ASFR_i =\)</span> <span
+class="math inline">\(\frac{B_i}{F_i}\times 100\)</span></th>
+<th><span class="math inline">\(\frac{G_i}{F_i}\)</span></th>
+<th><span class="math inline">\(\frac{G_i}{F_i}\times S_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">15-19</td>
+<td style="text-align: center;">7806</td>
+<td style="text-align: center;">521435</td>
+<td style="text-align: center;">272342</td>
+<td></td>
+<td style="text-align: center;">0.980</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">20-24</td>
+<td style="text-align: center;">6781</td>
+<td style="text-align: center;">846256</td>
+<td style="text-align: center;">422247</td>
+<td></td>
+<td style="text-align: center;">0.977</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">25-29</td>
+<td style="text-align: center;">5840</td>
+<td style="text-align: center;">412342</td>
+<td style="text-align: center;">206122</td>
+<td></td>
+<td style="text-align: center;">0.972</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">5434</td>
+<td style="text-align: center;">326268</td>
+<td style="text-align: center;">183134</td>
+<td></td>
+<td style="text-align: center;">0.960</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">35-39</td>
+<td style="text-align: center;">5675</td>
+<td style="text-align: center;">211810</td>
+<td style="text-align: center;">111440</td>
+<td></td>
+<td style="text-align: center;">0.942</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">40-44</td>
+<td style="text-align: center;">6083</td>
+<td style="text-align: center;">69750</td>
+<td style="text-align: center;">34380</td>
+<td></td>
+<td style="text-align: center;">0.895</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">45-49</td>
+<td style="text-align: center;">5361</td>
+<td style="text-align: center;">42354</td>
+<td style="text-align: center;">22462</td>
+<td></td>
+<td style="text-align: center;">0.854</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p></small></p>
+</section>
+<section id="implications" class="slide level2">
+<h2>Implications</h2>
+<ul>
+<li class="fragment">GRR &gt; 1: Number of potent women increasing</li>
+<li class="fragment">GRR = 1: Number of potent women remains constant.
+There is no change in population</li>
+<li class="fragment">NRR &gt; 1: The number of potent women more than
+that of previous year; population increasing</li>
+<li class="fragment">NRR = 1: No change in population</li>
+<li class="fragment">GRR = NRR: No new-born girls dies before reaching
+last potent age</li>
+</ul>
+</section></section>
+<section id="natural-growth-rate-ngr" class="title-slide slide level1">
+<h1>Natural Growth Rate (NGR)</h1>
+<p>NGR = CBR - CDR</p>
+<p><span class="math inline">\(\displaystyle \frac BP \times 1000-\frac
+DP \times 1000 = \frac {B-D}P \times 1000\)</span></p>
 </section>
 
 <section>
-<section id="lectures" class="title-slide slide level1">
-<h1>Lectures</h1>
-<p>Statistics lectures are divided into two parts</p>
+<section id="growths" class="title-slide slide level1">
+<h1>Growths</h1>
+
+</section>
+<section id="geometric-growth" class="slide level2">
+<h2>Geometric Growth</h2>
+<p><span class="math inline">\(P_o =\)</span> Initial population</p>
+<p><span class="math inline">\(P_n =\)</span> Final population</p>
+<p><span class="math inline">\(n =\)</span> Number of period (year,
+month, etc)</p>
+<p><span class="math inline">\(r =\)</span> Rate of increase</p>
 <ul>
-<li>First Paper</li>
-<li>Second Paper</li>
+<li class="fragment">Population after 1 year, <span
+class="math inline">\(P_1 = P_o + P_or = P_o(1+r)\)</span></li>
+<li class="fragment">Population after 2 years, <span
+class="math inline">\(P_2 = P_1 + P_1r = P_1(1+r) =
+P_o(1+r)^2\)</span></li>
+<li class="fragment">Population after n years, <span
+class="math inline">\(P_n = P_o(1+r)^n\)</span></li>
 </ul>
 </section>
-<section id="first-paper" class="slide level2">
-<h2>First Paper</h2>
+<section id="growth-problems" class="slide level2">
+<h2>Growth Problems</h2>
 <ul>
-<li>Introduction to Statistics</li>
+<li>Time required for population to get doubled/tripled in certain
+rate</li>
+<li>Rate required for population to get doubled/tripled in certain
+time</li>
 </ul>
+</section>
+<section id="exponential-growth" class="slide level2">
+<h2>Exponential Growth</h2>
+<p>Geometric: <span class="math inline">\(P_n = P_o(1+r)^n\)</span></p>
+<p>If n is fragmented in smaller periods</p>
+<p>Like 100 % in 1 year <span class="math inline">\(\rightarrow\)</span>
+50 % in each half-year</p>
+<p><span class="math inline">\(P_n =
+P_o(1+\frac{r}{n})^{rn}\)</span></p>
 </section></section>
     </div>
   </div>
@@ -524,7 +784,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
         // Transition style
-        transition: 'default', // none/fade/slide/convex/concave/zoom
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
         // Transition speed
         transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
@@ -549,6 +809,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 
         chalkboard: {
+          theme: 'whiteboard',
         },
 
         keyboard: {

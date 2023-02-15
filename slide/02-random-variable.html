@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Abdullah Al Mahmud" />
+  <title>Probability (Random Variable)</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="css/styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <div id="header-footer">
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+    </div>
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Probability (Random Variable)</h1>
+    <h2 class="author">Abdullah Al Mahmud</h2>
+</section>
+
+<section id="previous-chapter" class="slide level2">
+<h2>Previous Chapter</h2>
+<p><a href="prob_ch1_intro.html">Introduction to Probability</a></p>
+</section>
+<section>
+<section id="concepts" class="title-slide slide level1">
+<h1>Concepts</h1>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section>
+<section id="random-variable" class="slide level2">
+<h2>Random Variable</h2>
+<ul>
+<li>Discrete</li>
+<li>Continuous</li>
+</ul>
+<p>Guess which</p>
+<ul>
+<li class="fragment">No. of people dying each day</li>
+<li class="fragment">Number of heads in successive tosses.</li>
+<li class="fragment">Heights of people in Bangladesh</li>
+<li class="fragment">GPA of students</li>
+<li class="fragment">Grade of students in individual subjects</li>
+<li class="fragment">Income tax paid by people</li>
+</ul>
+</section>
+<section id="integration" class="slide level2">
+<h2>Integration</h2>
+<ul>
+<li><span class="math inline">\(\int x^3+2x\)</span></li>
+<li><span class="math inline">\(\int_2^3 x^2+x\)</span></li>
+<li>Relationship between integration (I) and differentiation(D).</li>
+</ul>
+<div onclick="klikaj(&#39;intd&#39;)">
+<span>Answer</span>
+</div>
+<div id="intd" style="visibility: hidden">
+<p><span class="math inline">\(f(x) \to I \to D \to f(x)\)</span></p>
+<p>Test with <span class="math inline">\(f(x) = x^2\)</span></p>
+</div>
+</section></section>
+<section id="probability-distribution" class="title-slide slide level1">
+<h1>Probability Distribution</h1>
+
+</section>
+
+<section>
+<section id="example" class="title-slide slide level1">
+<h1>Example</h1>
+<p>Results of an unbiased die throw</p>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">P</td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+6\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Biased</p>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">P</td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 2
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="number-of-heads-in-coin-toss" class="slide level2">
+<h2>Number of Heads in Coin Toss</h2>
+<p>Two coins are tossed successively.</p>
+<p><strong>N:B: X is variable &amp; x is value</strong></p>
+<p>X = number of heads in the coin toss</p>
+<p>x = 0, 1, 2</p>
+<ul>
+<li class="fragment">P(x=0) = ?</li>
+<li class="fragment">P(x=1)=?, P(x=2)=?</li>
+</ul>
+</section>
+<section id="probability-function" class="slide level2">
+<h2>Probability Function</h2>
+<p>Given, <span class="math inline">\(P(x) = \frac{2x+k}{56}; x = -3,
+-2, -1, 0, 1, 2, 3\)</span></p>
+<p>Discrete or Continuous?</p>
+<ol type="a">
+<li>k = ?</li>
+<li>Find probability of each value of x</li>
+<li>Find <span class="math inline">\(P(-2 \le x \le 2)\)</span></li>
+</ol>
+<p>Clue: If <span class="math inline">\(S=\{H,T\}, P(H) + P(T) =
+1\)</span>,</p>
+<p>i.e. <span class="math inline">\(\sum\)</span> P(All possible values)
+= 1</p>
+</section>
+<section id="pdf-and-pmf" class="slide level2">
+<h2>pdf and pmf</h2>
+<div class="container">
+<div class="col">
+<p>Probability Density Function (continuous)</p>
+<ul>
+<li class="fragment"><span class="math inline">\(f\left( x \right) \ge
+0\)</span> for all x</li>
+<li class="fragment"><span class="math inline">\(\displaystyle \int_{{\,
+- \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1\)</span></li>
+<li class="fragment"><span class="math inline">\(P\left( {a \le X \le b}
+\right) = \int_{{\,a}}^{{\,b}}{{f\left( x \right)\,dx}}\)</span></li>
+<li class="fragment"><span class="math inline">\(P(X=x)=0\)</span>
+(theoretically, why?)</li>
+</ul>
+</div>
+<div class="col">
+<p>Probability Mass Function (discrete)</p>
+<ul>
+<li class="fragment"><span class="math inline">\(P\left( x \right) \ge
+0\)</span> for all x</li>
+<li class="fragment"><span class="math inline">\(\displaystyle \sum_{{\,
+- \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1\)</span></li>
+<li class="fragment"><span class="math inline">\(P_x(X) =
+P(X=x)\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="pdf-vs-pmf-curves" class="slide level2">
+<h2>pdf vs pmf curves</h2>
+</section>
+<section id="pdf-problem-01" class="slide level2">
+<h2>Pdf problem 01</h2>
+<p><span class="math inline">\(f\left( x \right) =
+\frac{{{x^3}}}{{5000}}\left( {10 - x} \right)\)</span> <span
+class="math inline">\(for 0 \le x \le 10\)</span> and <span
+class="math inline">\(f\left( x \right) = 0\)</span> for all other
+values.</p>
+<ol type="a">
+<li>Show that <span class="math inline">\(f\left( x \right)\)</span> is
+a probability density function.</li>
+<li>Find <span class="math inline">\(P\left( {1 \le X \le 4}
+\right)\)</span></li>
+<li>Find <span class="math inline">\(P\left( {x \ge 6}
+\right)\)</span></li>
+</ol>
+<ul>
+<li class="fragment">is it <span class="math inline">\(\displaystyle
+\int_{7}^{10} f(x) dx\)</span>?</li>
+</ul>
+</section>
+<section id="pdf-problem-02" class="slide level2">
+<h2>Pdf problem 02</h2>
+<p><span class="math inline">\(f(x) = k(x+1); 0\lt x \lt 1\)</span></p>
+<ol type="i">
+<li><span class="math inline">\(P(X=2)=?\)</span></li>
+<li><span class="math inline">\(k=?\)</span></li>
+<li><span class="math inline">\(P(0.4 \lt X \lt 2)=?\)</span></li>
+</ol>
+<ul>
+<li class="fragment"><span class="math inline">\(\int_{0.4}^1 f(x) +
+\int_{1}^2 f(x) \to 0\)</span></li>
+</ul>
+</section>
+<section id="cumuluative-distribution-function" class="slide level2">
+<h2>Cumuluative Distribution Function</h2>
+<p><strong>F(x)</strong> or cdf accumulates all of the probability less
+than or equal to.</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">P (x)</td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F (x)</td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 2
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 4
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 5
+7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 6
+7\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Find</p>
+<ol type="1">
+<li><span class="math inline">\(P(X&lt;4)\)</span></li>
+<li><span class="math inline">\(P(3&lt;X&lt;6)\)</span></li>
+</ol>
+</section>
+<section id="cdf-definition" class="slide level2">
+<h2>cdf definition</h2>
+<p><span class="math inline">\(F_X(x) = P(X\le x)\)</span></p>
+<div class="container">
+<div class="col">
+<p>Discrete</p>
+<p><span class="math display">\[F(x) = \sum_{X\le x} P(x)\]</span></p>
+</div>
+<div class="col">
+<p>Continuous <small></p>
+<ul>
+<li class="fragment"><span class="math display">\[F_{X}(x) =
+\int_{-\infty}^x f_X(t)dt\]</span></li>
+<li class="fragment">Find cdf for <span class="math inline">\(f(x) = 2x;
+0\le x \le 1\)</span></li>
+<li class="fragment"><span class="math inline">\(\int \to
+x^2\)</span></li>
+</ul>
+<div onclick="klikaj(&#39;Fx&#39;)">
+<span>Answer</span>
+</div>
+<div id="Fx" style="visibility: hidden">
+<p><span class="math display">\[\begin{eqnarray}
+F(x) =
+\begin{cases}
+x^2/2,  &amp; 0\le x \le 1 \\
+0, &amp; \text{otherwise}
+\end{cases}
+\end{eqnarray}\]</span> </small></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cdf-properties" class="slide level2">
+<h2>cdf properties</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(P(a\le x \le b) =
+F(b)-F(a)\)</span>for <span class="math inline">\(a\lt b\)</span>; what
+if <span class="math inline">\(a \lt x \lt b?\)</span></li>
+<li class="fragment">For continuous x, <span class="math inline">\(f(x)
+= \frac{d}{dx}[F(x)]\)</span></li>
+<li class="fragment"><span class="math inline">\(F(-\infty) =0 ,
+F(+\infty) = 1\)</span></li>
+</ul>
+</section>
+<section id="joint-probability-function" class="slide level2">
+<h2>Joint Probability Function</h2>
+<p>Let, <span class="math inline">\(I = Infected\)</span>, and <span
+class="math inline">\(V = Vaccinated\)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><span
+class="math inline">\(I\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\bar
+I\)</span></th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(V\)</span></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">276</td>
+<td style="text-align: center;">279</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bar
+V\)</span></td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">473</td>
+<td style="text-align: center;">539</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">749</td>
+<td style="text-align: center;">818</td>
+</tr>
+</tbody>
+</table>
+<p>Find the probability that</p>
+<ol type="1">
+<li>a vaccinated person is infected</li>
+<li>a non-vaccinated person is uninfected</li>
+</ol>
+<ul>
+<li class="fragment">These are joint probabilities <span
+class="math inline">\(\to\)</span> P(x,y)</li>
+<li class="fragment"><span class="math inline">\(P(x,y) =P(x) \cdot
+P(y)\)</span> if <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> are independent.</li>
+</ul>
+</section>
+<section id="joint-marginal-conditional" class="slide level2">
+<h2>Joint-Marginal-Conditional</h2>
+<p><small></p>
+<p>Let, <span class="math inline">\(I = Infected\)</span>, and <span
+class="math inline">\(V = Vaccinated\)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><span
+class="math inline">\(I\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\bar
+I\)</span></th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(V\)</span></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">276</td>
+<td style="text-align: center;">279</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bar
+V\)</span></td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">473</td>
+<td style="text-align: center;">539</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">749</td>
+<td style="text-align: center;">818</td>
+</tr>
+</tbody>
+</table>
+Find the probabilities that
+<div class="container">
+<div class="col">
+<div onclick="klikaj(&#39;jmc1&#39;)">
+<ol type="1">
+<li>a vaccinated person is infected
+</div>
+<div onclick="klikaj('jmc2')">
+<ol start="2" type="1">
+<li>a non-vaccinated person is uninfected
+</div>
+<div onclick="klikaj('jmc3')">
+<ol start="3" type="1">
+<li>vaccinated if infected
+</div>
+<div onclick="klikaj('jmc4')">
+<ol start="4" type="1">
+<li>infected if not vaccinated
+</div>
+<div onclick="klikaj('jmc5')">
+<ol start="5" type="1">
+<li>vaccinated
+</div>
+<div onclick="klikaj('jmc6')">
+<ol start="6" type="1">
+<li>uninfected
+</div></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+<div class="col">
+<p><u>Answers</u></p>
+<div id="jmc1" style="visibility: hidden">
+<ol type="1">
+<li>Joint <span class="math inline">\(\to P(V\cap I)\)</span></li>
+</ol>
+</div>
+<div id="jmc2" style="visibility: hidden">
+<ol start="2" type="1">
+<li>Joint <span class="math inline">\(\to P(\bar V\cap \bar
+I)\)</span></li>
+</ol>
+</div>
+<div id="jmc3" style="visibility: hidden">
+<ol start="3" type="1">
+<li>Conditional <span class="math inline">\(\to P(V | I)=\frac{P(V \cap
+I)}{P(I)}\)</span></li>
+</ol>
+</div>
+<div id="jmc4" style="visibility: hidden">
+<ol start="4" type="1">
+<li>Conditional</li>
+</ol>
+</div>
+<div id="jmc5" style="visibility: hidden">
+<ol start="5" type="1">
+<li>Marginal <span class="math inline">\(\to P(V)\)</span></li>
+</ol>
+</div>
+<div id="jmc6" style="visibility: hidden">
+<ol start="6" type="1">
+<li>Marginal <span class="math inline">\(\to P(\bar I)\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<p></small></p>
+</section>
+<section id="joind-pf-properties" class="slide level2">
+<h2>Joind PF Properties</h2>
+<ul>
+<li><span class="math inline">\(P(x,y) \ge 0\)</span></li>
+<li><span class="math inline">\(\Sigma\Sigma P(x,y)=1\)</span></li>
+</ul>
+</section>
+<section id="coin-die" class="slide level2">
+<h2>Coin-Die</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Die/Coin</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">H (1)</td>
+<td style="text-align: center;">H1</td>
+<td style="text-align: center;">H2</td>
+<td style="text-align: center;">H3</td>
+<td style="text-align: center;">H4</td>
+<td style="text-align: center;">H5</td>
+<td style="text-align: center;">H6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T (0)</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: center;">T5</td>
+<td style="text-align: center;">T6</td>
+</tr>
+</tbody>
+</table>
+<p>X = Outcome of coin toss</p>
+<p>Y = Outcome of die throw</p>
+<p>x = 0, 1; y = 1, 2, 3, 4, 5, 6</p>
+<p>Construct the distribution.</p>
+</section>
+<section id="joint-marginal-conditional-revisited" class="slide level2">
+<h2>Joint-Marginal-Conditional Revisited</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Exam (X) <span
+class="math inline">\(\to\)</span><br>Result (Y) <span
+class="math inline">\(\downarrow\)</span></th>
+<th style="text-align: center;">PSC</th>
+<th style="text-align: center;">JSC</th>
+<th style="text-align: center;">SSC</th>
+<th style="text-align: center;">HSC</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Passed</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"><strong>104</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Failed</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;"><strong>49</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Absent</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><strong>14</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>47</strong></td>
+<td style="text-align: center;"><strong>41</strong></td>
+<td style="text-align: center;"><strong>36</strong></td>
+<td style="text-align: center;"><strong>43</strong></td>
+<td style="text-align: center;"><strong>167</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">Marginal: <span class="math inline">\(P(Pass) =
+P(x_1)=P(x_1,y_1)+P(x_1,y_2)+P(x_1,y_3)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(Absent) = P(x_3) =
+P(x_3,y_1)+P(x_3,y_2)+P(x_3,y_3)\)</span></li>
+</ul>
+</section>
+<section id="marginal-probability" class="slide level2">
+<h2>Marginal Probability</h2>
+<p>Consider the previous table</p>
+<p>Joint probability: <span class="math inline">\(P(x_i, y_j); i = 1,2,
+\cdots m; j = 1,2, \cdots n\)</span></p>
+<p>Marginal probability <span class="math inline">\(\to P(x_i)
+\leftarrow P(x_i, y_j)\)</span></p>
+<ul>
+<li class="fragment">For x: <span class="math inline">\(\displaystyle
+P(x_i) = \sum_{j=1}^n P(x_i, y_j); i = 1,2, \cdots m\)</span></li>
+<li class="fragment">For y: <span class="math inline">\(\displaystyle
+P(y_i) = \sum_{i=1}^m P(x_i, y_j); j = 1,2, \cdots n\)</span></li>
+<li class="fragment">What about continuous x?</li>
+</ul>
+</section>
+<section id="marginal-probability-properties" class="slide level2">
+<h2>Marginal Probability Properties</h2>
+<ul>
+<li><span class="math inline">\(P(x_i) \ge 0\)</span> and <span
+class="math inline">\(P(y_i) \ge 0\)</span></li>
+<li><span class="math display">\[\sum_{i=1}^m P(x_i)=\sum_{j=1}^n
+P(y_j)=1\]</span></li>
+</ul>
+<p>Summing marginal probabilities will give 1.</p>
+</section>
+<section id="joint-marginal-example" class="slide level2">
+<h2>Joint-Marginal Example</h2>
+<p><span class="math inline">\(P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0,
+1\)</span></p>
+<ul>
+<li>Find marginal probabilities</li>
+<li>Check properties (sum)</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(P(x) =
+\frac{2x+1}{9}\)</span></li>
+</ul>
+</section>
+<section id="conditional-probability-function" class="slide level2">
+<h2>Conditional Probability Function</h2>
+<p>Like Bayes Theorem</p>
+<p><span class="math inline">\(P(X_i|y_j) = \frac{P(x_i,y_j)}{P(y_j)};
+P(y_j) \gt 0\)</span></p>
+<p>Properties</p>
+<ul>
+<li class="fragment"><span class="math inline">\(\sum_{j=1}^m
+P(x_i|y_j)=\sum_{i=1}^m P(y_j|x_i)=1\)</span></li>
+</ul>
+</section>
+<section id="conditional-probability-example" class="slide level2">
+<h2>Conditional Probability Example</h2>
+<p><span class="math inline">\(P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0,
+1\)</span></p>
+<p>Find <span class="math inline">\(P(X|Y)\)</span> and <span
+class="math inline">\(P(Y|X)\)</span></p>
+<p>Find for continuous X as well.</p>
+</section>
+<section id="find-k-for-pdf" class="slide level2">
+<h2>Find k for pdf</h2>
+<p><span class="math inline">\(f(x) = kx^2+kx+\frac 1 8; 0 \lt x \lt
+2\)</span></p>
+<ol type="1">
+<li>Find k</li>
+<li>Find <span class="math inline">\(P(1 \lt X \lt 2)\)</span></li>
+</ol>
+</section>
+<section id="next-chapter" class="slide level2">
+<h2>Next Chapter</h2>
+<p><a href="prob_ch3_expectation.html">Mathematical Expectation</a></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Transition style
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        chalkboard: {
+          theme: 'whiteboard',
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

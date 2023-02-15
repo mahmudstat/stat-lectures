@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Statistics Lectures</title>
+  <title>Time Series</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | www.statmania.info | </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -459,33 +459,313 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Statistics Lectures</h1>
+    <h1 class="title">Time Series</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section class="slide level2">
-
-<p>DO</p>
-</section>
-<section id="about" class="title-slide slide level1">
-<h1>About</h1>
-
-</section>
-
 <section>
-<section id="lectures" class="title-slide slide level1">
-<h1>Lectures</h1>
-<p>Statistics lectures are divided into two parts</p>
+<section id="time-series" class="title-slide slide level1">
+<h1>Time Series</h1>
+
+</section>
+<section id="what-is-time-series-data" class="slide level2">
+<h2>What is Time Series Data?</h2>
+<div class="container">
+<div class="col">
+<p>Data arranged chronologically</p>
+<p><span class="math inline">\(Y_t = f(t); t = t_1, t_2, t_3, \cdots,
+t_n\)</span></p>
+</div>
+<div class="col">
+<p>Example</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="components-of-time-series" class="slide level2">
+<h2>Components of Time Series</h2>
+<p>Four Components</p>
 <ul>
-<li>First Paper</li>
-<li>Second Paper</li>
+<li class="fragment">Trend (increase/decrease)</li>
+<li class="fragment">Seasonal variation</li>
+<li class="fragment">Cyclic variation</li>
+<li class="fragment">Irregular/Random variation</li>
 </ul>
 </section>
-<section id="first-paper" class="slide level2">
-<h2>First Paper</h2>
+<section id="uses" class="slide level2">
+<h2>Uses</h2>
 <ul>
-<li>Introduction to Statistics</li>
+<li class="fragment">Analyze past behavior</li>
+<li class="fragment">Forecasting</li>
+<li class="fragment">Comparison by time/place</li>
+<li class="fragment">Segregation of components</li>
+<li class="fragment">Performance measure</li>
 </ul>
+</section>
+<section id="symbols" class="slide level2">
+<h2>Symbols</h2>
+<p><span class="math inline">\(Y_t =\)</span> Values of series at time
+t</p>
+<p><span class="math inline">\(T_t =\)</span> Trend</p>
+<p><span class="math inline">\(S_t =\)</span> Seasonal</p>
+<p><span class="math inline">\(C_t =\)</span> Cyclic</p>
+<p><span class="math inline">\(R_t =\)</span> Random/irregular</p>
+</section>
+<section id="models" class="slide level2">
+<h2>Models</h2>
+<div class="container">
+<div class="col">
+<p><strong>Additive Model</strong></p>
+<p><span class="math inline">\(Y_t = T_t + S_t + C_t + R_t\)</span></p>
+<ul>
+<li><span class="math inline">\(C_t\)</span> and <span
+class="math inline">\(S_t\)</span> can be <span
+class="math inline">\(\pm\)</span>ve</li>
+<li><span class="math inline">\(R_t\)</span> can also be <span
+class="math inline">\(\pm\)</span>ve, but in the long run, <span
+class="math inline">\(\sum R_t = 0\)</span></li>
+</ul>
+</div>
+<div class="col">
+<p><strong>Multiplicative Model</strong></p>
+<ul>
+<li class="fragment"><span class="math inline">\(Y_t = T_t \times S_t
+\times C_t \times R_t\)</span></li>
+<li class="fragment"><span class="math inline">\(S_t, C_t, R_t\)</span>
+refer to deviation from unit</li>
+<li class="fragment"><span class="math inline">\(S_t\)</span> equals
+unity in 1 year, <span class="math inline">\(C_t\)</span> in a cycle,
+and GM of <span class="math inline">\(R_t\)</span> is unity (1).</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="comparison-of-models" class="slide level2">
+<h2>Comparison of Models</h2>
+<ul>
+<li>Components in additive models are independent.</li>
+<li>In multiplicative models, components are interwined.</li>
+</ul>
+</section></section>
+<section>
+<section id="measuring-trend" class="title-slide slide level1">
+<h1>Measuring Trend</h1>
+
+</section>
+<section id="graphicalfree-hand-method" class="slide level2">
+<h2>Graphical/Free-hand Method</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p><img src="07-time_series_files/figure-revealjs/unnamed-chunk-3-1.png" width="768" /></p>
+</div>
+</div>
+</section>
+<section id="sem-average" class="slide level2">
+<h2>Sem-average</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p><strong>Steps</strong></p>
+<ol type="1">
+<li>Separate the data into two equal parts (if odd-numbered, omit
+middle-most)</li>
+<li>Estimate averages of each group</li>
+<li>Put these two values on the scatter plot and extend</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="moving-average" class="slide level2">
+<h2>Moving Average</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Year</th>
+<th style="text-align: center;">Production</th>
+<th style="text-align: center;">3-Yearly Moving Average</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2001</td>
+<td style="text-align: center;">412</td>
+<td style="text-align: center;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2002</td>
+<td style="text-align: center;">438</td>
+<td style="text-align: center;"><span
+class="math inline">\({412+438+446}\over{3}=432\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2003</td>
+<td style="text-align: center;">446</td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{438+446+454}3=446\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2004</td>
+<td style="text-align: center;">454</td>
+<td style="text-align: center;">457</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2005</td>
+<td style="text-align: center;">470</td>
+<td style="text-align: center;">469</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2006</td>
+<td style="text-align: center;">483</td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{470+483+490}3=481\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2007</td>
+<td style="text-align: center;">490</td>
+<td style="text-align: center;">NA</td>
+</tr>
+</tbody>
+</table>
+<div class="container">
+<div class="col">
+
+</div>
+<div class="col">
+
+</div>
+</div>
 </section></section>
     </div>
   </div>
