@@ -52,8 +52,8 @@ More to come...
 
 |              | Creative Questions | MCQ Questions |
 |:------------:|:------------------:|:-------------:|
-|  First Paer  |      [Link](question/stat1_cq_bank.pdf)      |    [Link](question/stat1_mcq_bank.pdf)   |
-| Second Paper |      [Link](question/stat2_cq_bank.pdf)      |    [Link](question/stat2_mcq_bank.pdf)   |
+|  First Paer  |      [Link](question/bank/stat1_cqbank.pdf)      |    [Link](question/bank/stat1_mcq_bank.pdf)   |
+| Second Paper |      [Link](question/bank/stat2_cqbank.pdf)      |    [Link](question/bank/stat2_mcq_bank.pdf)   |
 
 # Contact
 
