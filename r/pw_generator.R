@@ -8,4 +8,25 @@ for (i in 1:54){
 }
 pw
 
+
+
 write.csv(pw, file = "pw.csv")
+
+
+paste(sample(c(LETTERS, letters, 0:9), 5), collapse = " ")
+
+
+
+Lld <- c(LETTERS, letters, 0:9)
+
+pw_matrix <- matrix(sample(Lld, size=1000, replace = TRUE), ncol = 5)
+
+dim(pw_matrix)
+
+## 200 rows of passwords generated, each having 5 columns (characters)
+
+tail(pw_matrix)
+
+apply(pw_matrix,1,paste,collapse=" ")
+
+# DONE! 
