@@ -18,7 +18,17 @@ output:
 
 This websites contains lectures on statistics. 
 
-All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. 
+All the lectures are made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE]()https://posit.co/download/rstudio-desktop/. The presentations were made using the [revealjs](https://revealjs.com/) package. 
+
+Questions are made using $\LaTeX$ inside Rstudio. 
+
+# How to Use
+
+- Press `space` or down-arrow ($\downarrow$) to go the next slide or see hidden contents.
+- Press up-arrow ($\uparrow$) or `P` to go the previous slide.
+- Press right arrow or left arrow to see next/previous chapter
+
+See more [here](https://defkey.com/reveal-js-shortcuts)
 
 # Lectures
 
@@ -52,9 +62,53 @@ More to come...
 
 |              | Creative Questions | MCQ Questions |
 |:------------:|:------------------:|:-------------:|
-|  First Paer  |      [Link](question/bank/stat1_cqbank.pdf)      |    [Link](question/bank/stat1_mcq_bank.pdf)   |
+|  First Paper  |      [Link](question/bank/stat1_cqbank.pdf)      |    [Link](question/bank/stat1_mcq_bank.pdf)   |
 | Second Paper |      [Link](question/bank/stat2_cqbank.pdf)      |    [Link](question/bank/stat2_mcq_bank.pdf)   |
+
+# Question Archive
+
+- [2022](#/q-2022)
+- [2023](#/q-2023)
+
+## Q-2022
+
+<div class="container">
+<div class="col">
+**First Paper**
+
+- [Model Test 2 CQ](question/2022/stat1_hsc_model_test2_2022.pdf)
+- [Model Test 2 MCQ](question/2022/stat1_hsc_model_test2_mcq_2022.pdf)
+- [Model Test CQ](question/2022/stat1_model_test_cq_2022.pdf)
+- [Model Test MCQ](question/2022/stat1_model_test_mcq_2022.pdf)
+- [Pretest CQ](question/2022/stat1_pretest_2022.pdf)
+- [Pretest MCQ](question/2022/stat1_pretest_mcq_2022.pdf)
+- [2nd Term Fortnightly 1](question/2022/stat1_t2_f1_2022.pdf)
+- [2nd Term Fortnightly 2](question/2022/stat1_t2_f2_20222.pdf)
+- [Year-Final CQ](question/2022/stat1_yr_final_2022.pdf)
+- [Year-Final MCQ](question/2022/stat1_yr_final_mcq_2022.pdf)
+</div>
+<div class="col">
+**Second Paper**
+
+- [Model Test 2 CQ](question/2022/stat2_hsc_model_test2_cq2022.pdf)
+- [Model Test CQ](question/2022/stat2_model_test_cq_2022.pdf)
+- [Model Test MCQ](question/2022/stat2_model_test_mcq_2022.pdf)
+- [Pretest CQ](question/2022/stat2_pretest_cq_2022.pdf)
+- [Pretest NCQ](question/2022/stat2_pretest_mcq_2022.pdf)
+- [Third Term Fortnightly](question/2022/stat2_t3_f1_2022.pdf)
+</div>
+</div>
+
+## Q-2023
+
+- []()
+
+# Blogs and Website
+
+Blog: [Stat Mania in Bangla](https://www.statmania.info)
+
 
 # Contact
 
 [www.thinkermahmud.com](https://www.thinkermahmud.com)
+
