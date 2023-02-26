@@ -2,9 +2,11 @@
 %\documentclass[11pt,a4paper]{exam}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
 \usepackage{ifthen}
-\usepackage[legalpaper, total={7.27in, 12.3in}]{geometry}
+\usepackage[legalpaper, total={7.00in, 11.31in}]{geometry}
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{multicol}
+
+
 
 % Accumulate the answers. Unmodified from Phil Hirschorn's answer
 % https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
@@ -123,11 +125,9 @@
   Sylhet Cadet College
 
 \normalsize
-  Pre-Test Examination - 2022
+  Model Test Examination - 2023
 
-  Class: XII
-  
-    Set - C
+  Class: HSC
 
   Subject: Statistics First Paper (MCQ)
 
@@ -141,54 +141,64 @@
 
 \begin{questions}
 
-\question \textbf{Which measure of central tendencyis suitable for qualitative variable?}
-\choice{Arithmetic Mean}{Harmonic Mean}{Quadratic Mean}{Mode}{d}
+\question \textbf{For which variable, determining number of terms is not possible?}
+\choice{Discrete variable}{Continuous variable}{Quantitative variable}{Qualitative variable}{b}
+
+\question \textbf{In which scale of measurement, zero is regarded as true zero?}
+\choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
+
+\question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
+\choice{26}{106}{206}{216}{c}
+
+\question \textbf{Which one falls in the category of interval scale?}
+\choice {Temperature}{Speed}{Distance}{Film rating}{a}
 
 \question \textbf{In presence of negative values, which measure is not usable?}
 \choice{Arithmetic Mean}{Geometric Mean}{Quadratic Mean}{Harmonic Mean}{b}
 
-\question \textbf{What is the arithmetic mean of first n odd natural numbers?}
-\choice{$\frac{n+1}{n}$}{n}{n+1}{$\frac{n+1}{2}$}{b}
+\question \textbf{Which one is not a proper measure of central tendency?}
+\choice{2nd Quartile}{Third Decile}{3rd Quintile}{110th Percentile}{d}
+
+\question \textbf{When is the relationship $AM = HM = GM$ true?}
+\choice {All values are equal}{The values form a geometric progression}{ The values form an arithmetic progression}{All values are distinct}{a}
+
+\question \textbf{In the presence of outlier(s), which measure of central tendency is suitable?}
+\choice {Arithmetic mean}{Median}{Quadratic mean}{Power mean}{b}
+
+\question \textbf{If a rate is defined as $R = \frac cd$, where c is constant, then which measure is perfect?}
+\choice {Weighted arithmetic mean}{Harmonic mean}{Quadratic mean}{Weighted geometric mean}{b}
 
 \question \textbf{Which measure is not used in determining skewness?}
 \choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{b}
 
-\question \textbf{Inappropriate for algebraic analysis--}
+\question \textbf{The arithmetic mean of first n natural numbers-}
+\choice {$\frac{n}{2}$}{$\frac{n+1}{2}$}{$\frac{n^2}{2}$}{$\frac{n^2-1}{2}$}{b}
 
-i. Median \\
-ii. Mode \\
-iii. Geometric Mean
+\textbf{Answer the next two questions as per the following information.}
 
-Which one is true?
+42 44 59 64 70 72 74 91 94 are 9 values.
 
-\choice{i}{ii}{i \& ii}{ii \& iii}{a}
+\question \textbf{What is the 50th percentile?}
+\choice {64}{70}{72}{71}{b}
 
-\textbf{Answer the next two questions based on the following information}
-
-  \begin{table}[h]
-\centering
-\begin{tabular}{cccccc}
-Accident     & 4 & 6 & 7 & 8 & 9\\ \hline
-Frequency & 2   & 0    & 4     & 4     & 1   
-\end{tabular}
-\end{table}
-\question \textbf{Fifth Decile is --}
-\choice{0}{8}{7}{6}{c}
-
-\question \textbf{Which of the following is mode?}
-\choice{4}{8}{0}{7}{b}
-
-\question \textbf{Which measure gives a value from within the values?}
-\choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{d}
-
-\question \textbf{Which one is not a proper measure of central tendency?}
-\choice{2nd Quartile}{Third Decile}{3rd Quintile}{110th Percentile}{d}
-
-\question \textbf{Which can be used to measure dispersion?}
-\choice{$\mu_2'$}{$\mu_1$}{$\mu_2$}{$\mu_1'$}{c}
+\question \textbf{Below which value lie 70 percent values?}
+\choice {42}{44}{59}{74}{d}
 
 \question \textbf{The formula of coefficient of variance (CV) is --}
 \choice{$\frac{\mu_2}{n}\times 100$}{$\frac{\mu_2}{\mu_1}\times 100$}{$\frac{\mu_2}{\bar x}\times 100$}{$\frac{\mu_3}{\sigma}\times 100$}{c}
+
+\question \textbf{In a symmatric distribution--}
+
+i. Arithmetic Mean = Mode = Median \\
+ii. $Q_2-Q_1 = Q_3-Q_2$  \\
+iii. $Q_1-X_L = X_H-Q_3$
+
+Which one is true?
+
+\choice{i \& ii}{ii \& iii}{i \&iii}{i, ii \&iii}{d}
 
 \question \textbf{First moment around zero is --}
 \choice{0}{1}{-1}{Arithmetic Mean}{a}
@@ -199,33 +209,11 @@ Frequency & 2   & 0    & 4     & 4     & 1
 \question \textbf{Which might have a negative value?}
 \choice{$\mu_4$}{$\mu_3$}{$\mu_2'$}{$\mu_2$}{b}
 
-\question \textbf{In a symmatric distribution--}
-
-i. Arithmetic Mean = Mode = Median \\
-ii. $Q_2-Q_1 = Q_3-Q_2$  \\
-iii. $Q_1-X_H = X_H-Q_3$
-
-Which one is true?
-
-\choice{i \& ii}{ii \& iii}{i \&iii}{i, ii \&iii}{d}
-
 \question \textbf{For a data, $Q_3=41.6, Q_1=17.2, Median = 29, \& AM = 30$; What is Coefficient of skewness?}
 \choice{24.4}{1}{0.03}{29.45}{d}
 
 \question \textbf{$\sqrt{\beta_1}=-0.23$ implies--}
 \choice{Left Skew}{Symmetry}{Right Skew}{Mesokurtic}{a}
-
-\question \textbf{Which is not included in five number summary?}
-\choice{Arithmetic Mean}{$X_H$}{$Q_2$}{$Q_3$}{a}
-
-\question \textbf{$\beta_2 = \sqrt 9$ implies data are--}
-\choice{Leptokurtic}{Platykurtic}{Mesokurtic}{Symmetric}{c}
-
-\question \textbf{2nd Central Moment is --}
-\choice{$\mu_2-\mu_1'$}{$\mu_2+\mu_1'$}{$\mu_2-\mu_1'^2$}{$\mu_2'-\mu_1^2$}{c}
-
-\question \textbf{A company is constantly getting greater revenue than previous year; this is--}
-\choice{Seasonal Variation}{General Trend}{Irregular Variation}{Cyclic Variation}{b}
 
 \question \textbf{Which is not a method of finding general trend?}
 \choice{Graphical Method}{Moving Average}{Semi-Average}{Moving Median}{d}
@@ -258,12 +246,12 @@ Sales & 5   & 35    & 34     & 40     & 42  & 204
 %\newpage  %Uncomment to put on new age
 \bigskip
 
-\begin{multicols}{3}
-[
-Answer Key: (Correction required)
-]
-\showallanswers % Phil Hirschorn
-\end{multicols}
+%\begin{multicols}{3}
+%[
+%Answer Key: (Correction required)
+%]
+%\showallanswers % Phil Hirschorn
+%\end{multicols}
 
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.26)  2 FEB 2023 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.26)  26 FEB 2023 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -263,9 +263,16 @@ Chapter 2.
 
 ]
 Chapter 3.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [4
 
-] [5] [6]
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6]
 Chapter 4.
 [7
 
@@ -301,18 +308,18 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 
 ] (./stat1_cqbank.aux) ) 
 Here is how much of TeX's memory you used:
- 9184 strings out of 478053
- 147601 string characters out of 5840701
- 1867793 words of memory out of 5000000
+ 9199 strings out of 478053
+ 147721 string characters out of 5840701
+ 1868793 words of memory out of 5000000
  29044 multiletter control sequences out of 15000+600000
  515711 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,14n,77p,813b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,14n,77p,813b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/mahmud/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1000.600pk></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stat1_cqbank.pdf (16 pages, 171639 bytes).
+Output written on stat1_cqbank.pdf (16 pages, 174325 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 197 named destinations out of 1000 (max. 500000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 212 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

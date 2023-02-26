@@ -1,0 +1,268 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage[legalpaper, total={7.00in, 11.31in}]{geometry}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+\begin{document}
+
+\begin{center}
+  \bfseries\large
+  Sylhet Cadet College
+
+\normalsize
+  Model Test Examination - 2023
+
+  Class: HSC
+
+  Subject: Statistics Second Paper (MCQ)
+
+  Time: 25 minutes \qquad \qquad \qquad \qquad Subject Code: 130   \qquad \qquad \qquad  \qquad Full Marks: 25
+
+%  \normalfont\normalsize
+ % 11.45a.m.~--~1.45p.m.
+\end{center}
+
+\textbf{Answer all the questions. Each question is worth one (1) mark.}  
+
+\begin{questions}
+
+\question \textbf{Tossing a coin twice generates how many outcomes?}
+\choice{4}{16}{8}{2}{a}
+
+\textbf{Answer the next three questions based on the following information.}
+
+A card is drawn from of pack of playing cards.
+
+\question \textbf{What is the probability that the card is a King?}
+\choice{0.0192}{0.25}{0.5}{0.0769}{d}
+
+\question \textbf{P(The card is not from Diamonds)--}
+\choice{$\frac12$}{$0$}{$\frac34$}{$\frac14$}{c}
+
+\question \textbf{P(The card is red or Clubs)}
+\choice{$\frac14$}{$\frac12$}{$\frac23$}{$\frac34$}{d}
+
+\question \textbf{If a neutral die is thrown, the probability of having a digit greater than 6 is}
+\choice{$\frac 1 6$}{$\frac 0 6$}{$\frac 2 3$}{$\frac 3 6$}{b}
+
+\question \textbf{Tossing a coin twice generates how many outcomes?}
+\choice{4}{16}{8}{2}{a}
+
+\question \textbf{How many conditions does a probability density function have?}
+\choice{2}{3}{4}{5}{b}
+
+\question \textbf{The conditions of a probability distribution are--}
+
+i. $\sum P(X) = 1$
+
+ii. $\sum P(X) = 0$
+
+iii. $0 \le P(X) \le 1$
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
+
+\textbf{Answer the next two questions using the following information}
+
+\begin{table}[h]
+	    \centering
+\begin{tabular}{ccccccl}
+x    & 1 & 2  & 3  & 4  & 5  & 6  \\ \hline
+P(x) & k & 2k & 3k & 4k & 5k & 6k
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the value of k?}
+\choice{$\frac{7}{21}$}{$\frac{5}{21}$}{$\frac{1}{21}$}{$1$}{a}
+
+\question \textbf{What is the type of variable X?}
+\choice{Discrete}{Discrete random}{Continuous}{Continuous random}{b}
+
+\question \textbf{What is $F(\infty)$ for a distribution function $F(x)$?}
+\choice{$-\infty$}{-1}{0}{1}{d}
+
+\question \textbf{The example of a discrete random variable is--}
+
+i. Binomial variate 
+
+ii. Poisson variate
+
+iii. Normal variate 
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a} 
+
+\question \textbf{What is the expected value of of the squared deviation of the value of the random variable from their mean?}
+\choice{Arithmetic Mean}{Expectation}{Variance}{Co-variance}{c}
+
+\question \textbf{Expected value of a constant a is --}
+\choice{1}{Variance}{a}{a+1}{c}
+
+\question \textbf{What is the minimum value of variance a random variable?}
+\choice{$-\infty$}{1}{0}{-1}{c}
+
+\question \textbf{If $y=ax+b$, what is the value of $E(y)?$}
+\choice{$aE(X) + b$}{$a^2E(X)$}{$E(X)$}{$b$}{a}
+
+\question \textbf{What is the value of $V(5)$?}
+\choice{0}{25}{5}{1}{a}
+
+\question \textbf{If $P(x) = \frac 1n; x = 1,2,3,\cdots ,n$, what is the value of $E(X)?$}
+\choice{$\frac n2$}{$\frac{n-1}{2}$}{$\frac{n+1}{2}$}{$n+1$}{c}
+
+\question \textbf{If $P(x)= \frac{4-|5-x|}{k}; x=2,3,4, \cdots 8$, what is the value of k?}
+\choice{5}{8}{16}{24}{c}
+
+\question \textbf{How many parameters are there in a binomial distribution?}
+\choice{1}{2}{3}{4}{b}
+
+\question \textbf{In a Binomial distribution, how are mean and variance related?}
+\choice{$Mean > Variance$}{$Mean < Variance$}{$Mean = Variance$}{$Mean =2 \times Variance$}{a}
+
+\question \textbf{When does Binomial distribution tend to Poisson distribution?}
+\choice{$n \rightarrow \infty$ and $p \rightarrow \infty$}{$n \rightarrow 0$ and $p \rightarrow 0$}{$n \rightarrow \infty$ and $p \rightarrow 0$}{$n \rightarrow 0$ and $p \rightarrow \infty$}{a}
+
+\question \textbf{What is the mean of Poisson distribution?}
+\choice{$\frac 1{\sqrt m}$}{$m$}{$\frac 1m$}{$1+\frac 1m$}{a}
+
+\question \textbf{The parameter of a Poisson variate is 2. What is its variance?}
+\choice{0}{4}{$\sqrt 2$}{2}{d}
+
+\question \textbf{The number of people living per unit area is called--}
+\choice{Population Index}{Population Density}{Human Development Index}{Dependency Ratio}{b}
+
+\question \textbf{Which formula of GFR is accurate?}
+\choice{$GFR = \frac{B}{P}\times 1000$}{$GFR = \frac{B}{F_{15-49}}\times 1000$}{$GFR = \frac{B_i}{F_i}\times 1000$}{$GFR = \frac{G_i}{F{15-49}}\times 1000$}{b}
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+%\newpage  %Uncomment to put on new age
+\bigskip
+
+%\begin{multicols}{3}
+%[
+%Answer Key: (Correction required)
+%]
+%\showallanswers % Phil Hirschorn
+%\end{multicols}
+
+
+\end{document}

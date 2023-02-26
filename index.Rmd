@@ -9,7 +9,7 @@ output:
     reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
     lib_dir: libs
-    css: css/styles.css
+    css: css/styles.css 
     includes:
       in_header: css/header.html
 ---
@@ -60,10 +60,10 @@ More to come...
 
 # Question Bank
 
-|              | Creative Questions | MCQ Questions |
+| Paper        |  Questions        |          Questions |
 |:------------:|:------------------:|:-------------:|
-|  First Paper  |      [Link](question/bank/stat1_cqbank.pdf)      |    [Link](question/bank/stat1_mcq_bank.pdf)   |
-| Second Paper |      [Link](question/bank/stat2_cqbank.pdf)      |    [Link](question/bank/stat2_mcq_bank.pdf)   |
+|  First Paper  |      [Creative](question/bank/stat1_cqbank.pdf)      |    [MCQ](question/bank/stat1_mcq_bank.pdf)   |
+| Second Paper |      [Creative](question/bank/stat2_cqbank.pdf)      |    [MCQ](question/bank/stat2_mcq_bank.pdf)   |
 
 # Question Archive
 

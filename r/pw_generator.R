@@ -13,7 +13,7 @@ pw
 write.csv(pw, file = "pw.csv")
 
 
-paste(sample(c(LETTERS, letters, 0:9), 5), collapse = " ")
+paste(sample(c(LETTERS, letters, 0:9), 5), collapse = "")
 
 
 
@@ -27,6 +27,7 @@ dim(pw_matrix)
 
 tail(pw_matrix)
 
-apply(pw_matrix,1,paste,collapse=" ")
+pws <- apply(pw_matrix,1,paste,collapse=" ")
 
 # DONE! 
+

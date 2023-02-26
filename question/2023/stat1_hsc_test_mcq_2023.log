@@ -1,18 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.29)  3 NOV 2022 08:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.26)  26 FEB 2023 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**stat1.1_mcq.tex
-(./stat1.1_mcq.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-10-26> (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/exam/exam.cls
+**stat1_hsc_test_mcq_2023.tex
+(./stat1_hsc_test_mcq_2023.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17> (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/exam/exam.cls
 Document Class: exam 2021/02/26 Version 2.7 by Philip Hirschhorn
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -22,22 +22,22 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-\@extrawidth=\skip49
-\@rightmargin=\skip50
-\@extrahead=\skip51
-\@extrafoot=\skip52
-\run@exhd=\skip53
-\fp@exhd=\skip54
-\run@exft=\skip55
-\fp@exft=\skip56
-\covrun@exhd=\skip57
-\covfp@exhd=\skip58
-\covrun@exft=\skip59
-\covfp@exft=\skip60
+\@extrawidth=\skip50
+\@rightmargin=\skip51
+\@extrahead=\skip52
+\@extrafoot=\skip53
+\run@exhd=\skip54
+\fp@exhd=\skip55
+\run@exft=\skip56
+\fp@exft=\skip57
+\covrun@exhd=\skip58
+\covfp@exhd=\skip59
+\covrun@exft=\skip60
+\covfp@exft=\skip61
 \c@num@coverpages=\count193
 \c@latest@ques=\count194
 \c@ques@end=\count195
@@ -72,21 +72,21 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \pagepoint@commands=\toks18
 \point@toks=\toks19
 \c@ques@object=\count288
-\marginpointssep=\skip61
-\rightpointsmargin=\skip62
+\marginpointssep=\skip62
+\rightpointsmargin=\skip63
 \choice@toks=\toks20
-\answerlinelength=\skip63
-\answerskip=\skip64
-\answerclearance=\skip65
-\fillinlinelength=\skip66
-\linefillheight=\skip67
-\linefillthickness=\skip68
-\dottedlinefillheight=\skip69
-\gridsize=\skip70
-\gridlinewidth=\skip71
-\minboxheight=\skip72
+\answerlinelength=\skip64
+\answerskip=\skip65
+\answerclearance=\skip66
+\fillinlinelength=\skip67
+\linefillheight=\skip68
+\linefillthickness=\skip69
+\dottedlinefillheight=\skip70
+\gridsize=\skip71
+\gridlinewidth=\skip72
+\minboxheight=\skip73
 \c@@iterator=\count289
-\@cellwidth=\skip73
+\@cellwidth=\skip74
 \c@tbl@points=\count290
 \c@tbl@bonuspoints=\count291
 \c@pq@index=\count292
@@ -97,13 +97,13 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@current@row=\count297
 \c@cols@done=\count298
 \exam@box=\box51
-\saved@totalleftmargin=\dimen139
+\saved@totalleftmargin=\dimen141
 \@sollistdepth=\count299
-\exam@FrameRule=\dimen140
-\exam@FrameSep=\dimen141
+\exam@FrameRule=\dimen142
+\exam@FrameSep=\dimen143
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip74
+\@mathmargin=\skip75
 
 For additional information on amsmath, use the `?' option.
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -111,10 +111,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen142
+\ex@=\dimen144
 )) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen143
+\pmbraise@=\dimen145
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -135,7 +135,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen144
+\big@size=\dimen146
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count305
@@ -153,15 +153,15 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count310
 \maxfields@=\count311
 \andhelp@=\toks23
-\eqnshift@=\dimen145
-\alignsep@=\dimen146
-\tagshift@=\dimen147
-\tagwidth@=\dimen148
-\totwidth@=\dimen149
-\lineht@=\dimen150
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
 \@envbody=\toks24
-\multlinegap=\skip75
-\multlinetaggap=\skip76
+\multlinegap=\skip76
+\multlinetaggap=\skip77
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -172,9 +172,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks28
 \thm@notefont=\toks29
 \thm@headpunct=\toks30
-\thm@preskip=\skip77
-\thm@postskip=\skip78
-\thm@headsep=\skip79
+\thm@preskip=\skip78
+\thm@postskip=\skip79
+\thm@headsep=\skip80
 \dth@everypar=\toks31
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -187,28 +187,50 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks32
+) (/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count312
+\Gm@cntv=\count313
+\c@Gm@tempcnt=\count314
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks33
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks32
+\@enLab=\toks34
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count312
+\c@tracingmulticols=\count315
 \mult@box=\box54
-\multicol@leftmargin=\dimen151
-\c@unbalance=\count313
-\c@collectmore=\count314
-\doublecol@number=\count315
-\multicoltolerance=\count316
-\multicolpretolerance=\count317
-\full@width=\dimen152
-\page@free=\dimen153
-\premulticols=\dimen154
-\postmulticols=\dimen155
-\multicolsep=\skip80
-\multicolbaselineskip=\skip81
+\multicol@leftmargin=\dimen161
+\c@unbalance=\count316
+\c@collectmore=\count317
+\doublecol@number=\count318
+\multicoltolerance=\count319
+\multicolpretolerance=\count320
+\full@width=\dimen162
+\page@free=\dimen163
+\premulticols=\dimen164
+\postmulticols=\dimen165
+\multicolsep=\skip81
+\multicolbaselineskip=\skip82
 \partial@page=\box55
 \last@line=\box56
-\maxbalancingoverflow=\dimen156
+\maxbalancingoverflow=\dimen166
 \mult@rightbox=\box57
 \mult@grightbox=\box58
 \mult@firstbox=\box59
@@ -249,31 +271,31 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box94
 \@tempa=\box95
 \@tempa=\box96
-\c@minrows=\count318
-\c@columnbadness=\count319
-\c@finalcolumnbadness=\count320
-\last@try=\dimen157
-\multicolovershoot=\dimen158
-\multicolundershoot=\dimen159
+\c@minrows=\count321
+\c@columnbadness=\count322
+\c@finalcolumnbadness=\count323
+\last@try=\dimen167
+\multicolovershoot=\dimen168
+\multicolundershoot=\dimen169
 \mult@nat@firstbox=\box97
 \colbreak@box=\box98
-\mc@col@check@num=\count321
+\mc@col@check@num=\count324
 )
 \allanswers=\box99
-\widthcha=\skip82
-\widthchb=\skip83
-\widthchc=\skip84
-\widthchd=\skip85
-\widthch=\skip86
-\tabmaxwidth=\skip87
-\fourthtabwidth=\skip88
-\halftabwidth=\skip89
+\widthcha=\skip83
+\widthchb=\skip84
+\widthchc=\skip85
+\widthchd=\skip86
+\widthch=\skip87
+\tabmaxwidth=\skip88
+\fourthtabwidth=\skip89
+\halftabwidth=\skip90
  (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count322
+\l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box100
-) (./stat1.1_mcq.aux)
-\openout1 = `stat1.1_mcq.aux'.
+) (./stat1_hsc_test_mcq_2023.aux)
+\openout1 = `stat1_hsc_test_mcq_2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
@@ -289,29 +311,63 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
- [1
 
-{/home/mahmud/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
- (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: legalpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(77.76257pt, 817.37352pt, 116.6439pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=505.89pt
+* \textheight=817.37352pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-24.50742pt
+* \headheight=15.0pt
+* \headsep=15.0pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=36.135pt
+* \marginparsep=5.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 145.
+(/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 145.
  (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1]
-This exam contains 10 questions with 0 parts, 0 subparts, and 0 subsubparts.
-(./stat1.1_mcq.aux) ) 
+) [1
+
+{/home/mahmud/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+This exam contains 25 questions with 0 parts, 0 subparts, and 0 subsubparts.
+(./stat1_hsc_test_mcq_2023.aux) ) 
 Here is how much of TeX's memory you used:
- 3142 strings out of 477026
- 46337 string characters out of 5827891
- 408747 words of memory out of 5000000
- 24316 multiletter control sequences out of 15000+600000
- 472776 words of font info for 42 fonts, out of 8000000 for 9000
+ 3816 strings out of 478053
+ 57222 string characters out of 5840701
+ 1878793 words of memory out of 5000000
+ 23951 multiletter control sequences out of 15000+600000
+ 514601 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 54i,10n,62p,226b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stat1.1_mcq.pdf (2 pages, 115729 bytes).
+ 55i,12n,62p,238b,356s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on stat1_hsc_test_mcq_2023.pdf (2 pages, 123071 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
