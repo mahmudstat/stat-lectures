@@ -103,6 +103,10 @@ More to come...
 
 - []()
 
+# Resources
+
+[Special Tips](slide/stat2_tips.html)
+
 # Blogs and Website
 
 Blog: [Stat Mania in Bangla](https://www.statmania.info)
