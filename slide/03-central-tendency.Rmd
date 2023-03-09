@@ -229,6 +229,14 @@ function klikaj(i) {
 > - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
 > - AM of first n natural numbers = $\frac{n+1}{2}$
 
+## Arithmetic Mean of Series
+
+$11,13,15, \cdots, 57$
+
+Tip: Let $c=2nd \space Term - 1st \space Term$ and $a=1st \space Term -c$
+
+$U = \frac{X-a}{c}$
+
 ## (Dis)advantages of AM
 
 > - Well-defined
@@ -238,7 +246,7 @@ function klikaj(i) {
 > - <span>Suitable for further analysis.<span>
 > - <span style="color:red;">Affected by outliers
 
-## Geometric Mean (GM)
+# Geometric Mean (GM)
 
 $GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}$ or
 $GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}$
@@ -433,6 +441,17 @@ w <- c(10,5,4)
 ```
 
 > - HM = `r round(sum(w)/sum(w/x),3)`
+
+# Median
+
+Find Median and AM
+
+1,3,5,6,7,8
+
+1,3,5,6,7,8,120
+
+> - Median is a better measure
+> - What now: 10,12,15,15,20, 50, 70,75,80
 
 ## Quadratic Mean
 
