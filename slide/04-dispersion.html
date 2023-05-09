@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | www.statmania.info | </p>
+      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | docs.statmania.info | </p>
     </div>
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -512,8 +512,8 @@ data-background="white">
 <section id="types-of-measure" class="slide level2"
 data-background="white">
 <h2 data-background="white">Types of Measure</h2>
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d52b2f2fc0de645e2daf" style="width:768px;height:576px;"></div>
-<script type="application/json" data-for="htmlwidget-d52b2f2fc0de645e2daf">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c955d7779a7961e59d1d" style="width:768px;height:576px;"></div>
+<script type="application/json" data-for="htmlwidget-c955d7779a7961e59d1d">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section>
 <section id="range" class="slide level2">
 <h2>Range</h2>
@@ -596,26 +596,26 @@ suitable for for further mathematical analysis</span></li>
 <section id="variance-and-sd" class="slide level2">
 <h2>Variance and SD</h2>
 <div class="container">
-<section id="variance" class="col">
-<h3>Variance</h3>
-<p><span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar
+<div class="col">
+<p><em>Variance</em> (<span class="math inline">\(\sigma^2\)</span>)
+<span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar
 x)^2}{n}\]</span></p>
 <p><span class="math inline">\(\quad\)</span> = <span
 class="math inline">\(\sum \frac{x_i^2}{n}-(\frac{\sum
 x_i}{n})^2\)</span></p>
 <p><span class="math inline">\(\quad\)</span> = Mean of square - square
 of mean</p>
-</section>
-<section id="standard-deviation-sigma" class="col">
-<h3><em>Standard Deviation</em> (<span
-class="math inline">\(\sigma\)</span>)</h3>
+</div>
+<div class="col">
+<p><em>Standard Deviation</em> (<span
+class="math inline">\(\sigma\)</span>)</p>
 <p>Positive square root of variance</p>
 <ul>
 <li class="fragment"><span class="math display">\[\sigma  =
 \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}\]</span></li>
 <li class="fragment">For grouped data?</li>
 </ul>
-</section>
+</div>
 </div>
 </section>
 <section id="variance-estimation" class="slide level2">
@@ -663,7 +663,9 @@ class="math inline">\(\bar {x^2}-{\bar x}^2\)</span></p>
 </section>
 <section id="thoughts-on-variance" class="slide level2">
 <h2>Thoughts on Variance?</h2>
-<h3 id="think"><span style="color: blue;">Think</span></h3>
+</section>
+<section id="think" class="slide level2">
+<h2><span style="color: blue;">Think</span></h2>
 <ul>
 <li>What is the unit of variance</li>
 <li>What is the unit of sd?</li>
@@ -700,14 +702,12 @@ class="math inline">\(\sigma^2=\)</span> 26.786</li>
 </section>
 <section id="quartile-deviationqd" class="slide level2">
 <h2>Quartile Deviation(QD)</h2>
-<div class="container">
-<div class="col">
 <p><span class="math inline">\(QD=\frac{Q_3-Q_1} 2\)</span></p>
 <p><span class="math inline">\(Q_3-Q_1\)</span> is called Interquartile
 range.</p>
-</div>
-<section id="disadvantages" class="col">
-<h3>Dis(advantages)</h3>
+</section>
+<section id="disadvantages" class="slide level2">
+<h2>Dis(advantages)</h2>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />Simple</li>
 <li><input type="checkbox" disabled="" checked="" />Unaffected by
@@ -719,8 +719,6 @@ based on all observations</span></li>
 <li><input type="checkbox" disabled="" /><span style="color: red;">Not
 suitable for for further mathematical analysis</span></li>
 </ul>
-</section>
-</div>
 </section>
 <section id="coefficients" class="slide level2">
 <h2>Coefficients</h2>

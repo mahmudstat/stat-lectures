@@ -16,7 +16,22 @@ output:
 
 ## Chapter 01: Introduction to Probability
 
-- Use calculator to find permutations and combinations like $^6C_3$ to save time (don't forget manual method) 
+- $^6C_3 = \frac{6!}{3!(6-3)!}$; use calculator to save time 
 
 ## Random Variable
 
+- Random variable: a variable whose outcomes are associated with probability (having no sure-fire outcome) 
+- Marginal vs joint events ([see here](https://docs.statmania.info/slide/02-random-variable.html#/joint-marginal-conditional-revisited))
+- Marginals probabilities (P(X)) are obtained by adding joint probabilities (P(x,y))
+- If conditional probability is $P(X|Y), P(X|0) = P(X|y=0)$
+- $P(X|0)$ means if y = 0, what is probability of x?
+
+
+## Expetation
+
+- $V(X) < SD(X)$ if $0 \lt V(X) \lt 1$ or $V(X)$ is greater
+
+
+## Binomial Distribution
+
+- - To find $P(X\ge 3); n=15$, use $1-P(X \lt3)$ or calculator (if you don't have computer with you)

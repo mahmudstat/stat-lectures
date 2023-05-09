@@ -152,19 +152,18 @@ Compute about mean, median and mode
 
 ## Variance and SD
 
-
 <div class="container">
 <div class="col">
-### Variance 
-
+*Variance* ($\sigma^2$)
 $$\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$$
 
 $\quad$ = $\sum \frac{x_i^2}{n}-(\frac{\sum x_i}{n})^2$
 
 $\quad$ =  Mean of square - square of mean
 </div>
+
 <div class="col">
-### *Standard Deviation* ($\sigma$)
+*Standard Deviation* ($\sigma$)
 
 Positive square root of variance
 
@@ -191,7 +190,7 @@ $\quad$ =$\bar {x^2}-{\bar x}^2$
 
 ## Thoughts on Variance?
 
-### <span style="color: blue;">Think</span>
+## <span style="color: blue;">Think</span>
 
 - What is the unit of variance
 - What is the unit of sd?
@@ -218,24 +217,22 @@ Find variance and stand deviation
 
 ## Quartile Deviation(QD)
 
-<div class="container">
-<div class="col">
 $QD=\frac{Q_3-Q_1} 2$
 
 $Q_3-Q_1$ is called Interquartile range. 
-</div>
-<div class="col">
-### Dis(advantages)
+
+
+## Dis(advantages)
 
 - [x] Simple
 - [x] Unaffected by outliers
 - [x] Can work with open-ended distribution
 - [ ] <span style="color: red;">Not based on all observations</span>
 - [ ] <span style="color: red;">Not suitable for for further mathematical analysis</span>
-</div>
-</div>
+
 
 ## Coefficients 
+
 <small>
 - Coefficient of Range,$CR=\frac{X_H-X_L}{X_H+X_L}\times 100= \frac{\text{Range}}{X_H+X_L}\times 100=\frac{X_u-X_l}{X_u+X_l}\times 100$ (grouped)
 

@@ -350,4 +350,4 @@ $f(x) = kx^2+kx+\frac 1 8; 0 \lt x \lt 2$
 
 ## Next Chapter
 
-[Mathematical Expectation](prob_ch3_expectation.html)
+[Mathematical Expectation](03-expectation.html)
