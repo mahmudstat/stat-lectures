@@ -56,36 +56,7 @@ To
 
 ## Types of Measure{data-background=white}
 
-```{r, echo=FALSE}
-DiagrammeR::grViz("digraph {
 
-graph [layout = dot, rankdir = TB]
-
-node [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]
-msr [label = 'Measures of Dispersion']
-abs [label = 'Absolute Measure']
-rel [label = 'Relative Measure']
-md [label =  'Mean \n Deviation']
-rng [label = 'Range']
-sd [label = 'Stanard Deviation']
-qd [label= 'Quartile deviation']
-abt [label= 'About']
-coef [label ='Coefficient of']
-var [label ='Variance']
-med [label ='Median']
-mean [label = 'Mean']
-mod [label ='Mode']
-
-
-{msr}  -> {abs, rel} 
-abs -> rng
-abs -> {md, sd, qd}
-rel -> coef
-coef -> {rng, md, qd, var}
-md -> abt
-abt -> {mean, med, mod}
-}")
-```
 
 ## Range
 

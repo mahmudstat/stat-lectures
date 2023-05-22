@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.26)  26 FEB 2023 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.26)  22 MAY 2023 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,69 +347,69 @@ Chapter 1.
 [1
 
 
-] [2]
+] [2] [3]
 Chapter 2.
-[3
+[4
 
-] [4]
+] [5] [6]
 Chapter 3.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5
-
-] [6]
-Chapter 4.
 [7
 
-]
-Chapter 5.
-[8
-
-]
-Chapter 6.
+] [8]
+Chapter 4.
 [9
 
 ]
-Chapter 7.
+Chapter 5.
 [10
 
 ]
-Chapter 8.
+Chapter 6.
 [11
 
 ]
-Chapter 9.
+Chapter 7.
 [12
+
+]
+Chapter 8.
+[13
+
+]
+Chapter 9.
+[14
 
 ]
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'english' will be used instead.
 
-[13
+[15
 
 
 ] (./stat2_cqbank.toc)
 \tf@toc=\write4
 \openout4 = `stat2_cqbank.toc'.
 
- [14
+ [16
 
 ] (./stat2_cqbank.aux) ) 
 Here is how much of TeX's memory you used:
- 10421 strings out of 478053
- 165724 string characters out of 5840701
- 1866793 words of memory out of 5000000
- 30238 multiletter control sequences out of 15000+600000
+ 10444 strings out of 478053
+ 165889 string characters out of 5840701
+ 1867793 words of memory out of 5000000
+ 30234 multiletter control sequences out of 15000+600000
  515219 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,9n,77p,662b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,9n,77p,662b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on stat2_cqbank.pdf (16 pages, 189281 bytes).
+Output written on stat2_cqbank.pdf (18 pages, 193078 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 223 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
