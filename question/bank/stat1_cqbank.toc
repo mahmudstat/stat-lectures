@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {3.2.2}Arithmetic Mean}{7}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Geometric Mean}{8}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Harmonic Mean}{8}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Median}{8}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Mode}{8}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.5}Median}{9}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Mode}{9}{subsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.2.7}Quadratic Mean}{9}{subsection.3.2.7}%
 \contentsline {subsection}{\numberline {3.2.8}Partition Values}{9}{subsection.3.2.8}%
 \contentsline {chapter}{\numberline {4}Measures of Dispersion}{10}{chapter.4}%
