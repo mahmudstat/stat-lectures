@@ -4,6 +4,7 @@
 \usepackage{ifthen}
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{multicol}
+\usepackage{graphicx}
 
 
 
@@ -129,7 +130,7 @@
         \vspace{0.5cm}
         \LARGE
         First Paper \\
-         \textbf{Statistics, Variable and Concepts of Different Symbols}
+
             
         \vspace{1.5cm}
             
@@ -139,7 +140,8 @@
             
             
         \vspace{0.8cm}
-            
+        
+             \includegraphics[width=1cm]{logo}
             
         \Large
         www.statmania.info\\
@@ -152,6 +154,21 @@
 
 \section{Basic Concept of Statistics}
 
+\question \textbf{Who is known as the Father of modern statistics?}
+\choice{P.C. Mahalanobis}{Kazi Motaher Hossain}{Karl Pearson}{R.A. Fisher}{d}
+
+\question \textbf{If $\displaystyle \sum_{i=1}^{20} x_i^2=20$ and $\displaystyle \sum_{i=1}^{20} x_i=30$, what is the value of $\displaystyle \sum_{i=1}^{20} x_i^2 + \sum_{i=1}^{20} x_i + 100$?}
+\choice{130}{200}{230}{2130}{c}
+
+\question \textbf{A subset of a population is called--}
+\choice{Constant}{Variable}{Sample}{Scale}{c}
+
+\question \textbf{How many measurement scales are there?}
+\choice{2}{3}{4}{5}{c}
+
+\question \textbf{Which of the following is a continuous variable?}
+\choice{Number of goals}{Natural number}{Summation of Fibonacci series}{Success rate}{d}
+
 \question \textbf{In which scale of measurement, zero is regarded as true zero?}
 \choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
 
@@ -163,6 +180,12 @@
 
 \question \textbf{Which one falls in the category of interval scale?}
 \choice {Temperature}{Speed}{Distance}{Film rating}{a}
+
+\question \textbf{In which scale of measurement, zero is regarded as true zero?}
+\choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
 
 \question \textbf{Which one is product of square?}
 \choice {$\prod x_i^2$}{$(\prod x_i)^2$}{$\sum x_i^2 \times \sum x$}{$\sum x_i^2$}{a}
@@ -188,16 +211,33 @@
 
 \section{Collection, Organization, and Presentation of Data}
 
+\question \textbf{How many sources of data are there?}
+\choice{5}{4}{3}{2}{d}
+
+\question \textbf{Data obtained through direct observation is called--}
+\choice{Primary data}{Secondary data}{Original Data}{Informal data}{a}
+
+\question \textbf{Who invented Stem and Leaf plot?}
+\choice{Karl Pearson}{R.A. Fisher}{David Cox}{John Tukey}{d}
+
+\question \textbf{Which rule is suggested by H.G. Sturges for determining number of class (k)?}
+\choice{$K=1+3.322logN$}{$K=1+3.222logN$}{$K=1-3.222logN$}{$K=1+2.332logN$}{a}
+
+\question \textbf{To show runs per over in a cricket match, which diagram can be used?}
+\choice{Histogram}{Bar Diagram}{Ogive}{Frequency polygon}{b}
+
 \section{Measures of Central Tendency}
+
+\subsection{General Questions}
+
+\question \textbf{How many measure of central tendency are there?}
+\choice{2}{3}{4}{5}{d}
 
 \question \textbf{Which measure of central tendencyis suitable for qualitative variable?}
 \choice{Arithmetic Mean}{Harmonic Mean}{Quadratic Mean}{Mode}{d}
 
 \question \textbf{In presence of negative values, which measure is not usable?}
 \choice{Arithmetic Mean}{Geometric Mean}{Quadratic Mean}{Harmonic Mean}{b}
-
-\question \textbf{What is the arithmetic mean of first n odd natural numbers?}
-\choice{$\frac{n+1}{n}$}{n}{n+1}{$\frac{n+1}{2}$}{b}
 
 \question \textbf{Inappropriate for algebraic analysis--}
 
@@ -233,9 +273,6 @@ Frequency & 2   & 0    & 4     & 4     & 1
 \question \textbf{Which measure is not used in determining skewness?}
 \choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{b}
 
-\question \textbf{The arithmetic mean of first n natural numbers-}
-\choice {$\frac{n}{2}$}{$\frac{n+1}{2}$}{$\frac{n^2}{2}$}{$\frac{n^2-1}{2}$}{b}
-
 \question \textbf{When is the relationship $AM = HM = GM$ true?}
 \choice {All values are equal}{The values form a geometric progression}{ The values form an arithmetic progression}{All values are distinct}{a}
 
@@ -244,6 +281,53 @@ Frequency & 2   & 0    & 4     & 4     & 1
 
 \question \textbf{If a rate is defined as $R = \frac cd$, where c is constant, then which measure is perfect?}
 \choice {Weighted arithmetic mean}{Harmonic mean}{Quadratic mean}{Weighted geometric mean}{b}
+
+\question \textbf{Which measure might have more than one value?}
+\choice{Arithmetic mean}{Geometric mean}{Quadratic mean}{Mode}{d}
+
+\subsection{Arithmetic Mean}
+
+\question \textbf{For grouped data, which formula is correct for Arithmetic Mean?}
+\choice{$\displaystyle \bar x = \frac{\sum f_ix_i}{\sum f_i}$}{$\displaystyle \bar x = \frac{\sum x_i}{N}$}{$\displaystyle \bar x = \frac{\sum f_ix_i}{n}$}{$ \displaystyle\bar x = \frac{\sum f_i}{N}$}{a}
+
+\question \textbf{Arithmetic mean of the series 2, 12, 22, $\cdots$, 92 is--}
+\choice{45}{46}{47}{55}{c}
+
+\question \textbf{What is the arithmetic mean of first n odd natural numbers?}
+\choice{$\frac{n+1}{n}$}{n}{n+1}{$\frac{n+1}{2}$}{b}
+
+\question \textbf{What is the arithmetic mean of first n even natural numbers?}
+\choice{$\frac{n+1}{2}$}{$n+1$}{$n$}{$\frac{n-1}{2}$}{b}
+
+\question \textbf{The arithmetic mean of first n natural numbers-}
+\choice {$\frac{n}{2}$}{$\frac{n+1}{2}$}{$\frac{n^2}{2}$}{$\frac{n^2-1}{2}$}{b}
+
+\question \textbf{Arithmetic means of three groups having equal no. of items are 30, 32, and 34. What is the combined mean?}
+\choice{30.33}{32.67}{32.00}{33.00}{c}
+
+\subsection{Median}
+
+\question \textbf{Median can be determined from the--}
+\choice{Histogram}{Frequency curve}{Ogive}{Pie Chart}{c}
+
+\textbf{Answer the next two (2) questions based on the following information}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c}
+Class                                                           & $\le 20$ & 20-25 & 25-50 & 50-60 & 69-70 & $\ge 70$ \\ \hline
+Frequency                                                       & 5        & 10    & 10    & 7     & 5     & 3        \\ \hline
+\begin{tabular}[c]{@{}c@{}}Cumulative \\ Frequency\end{tabular} & 5        & 15    & 25    & 32    & 37    & 40      
+\end{tabular}
+\end{table}
+
+\question \textbf{How many values are between 20 and 70?}
+\choice{20}{32}{35}{37}{b}
+
+\question \textbf{Which one is the median class?}
+\choice{20-25}{25-50}{50-60}{60-70}{b}
+
+\subsection{Partition Values}
 
 \textbf{Answer the next two questions as per the following information.}
 
@@ -255,48 +339,10 @@ Frequency & 2   & 0    & 4     & 4     & 1
 \question \textbf{Below which value lie 70 percent values?}
 \choice {42}{44}{59}{74}{d}
 
-\question \textbf{Which measure might have more than one value?}
-\choice{Arithmetic mean}{Geometric mean}{Quadratic mean}{Mode}{d}
-
 \question \textbf{Above which value lie 30\% observations?}
 \choice{3rd Quartile}{Median}{30th Percentile}{70th percentile}{d}
 
-\question \textbf{Arithmetic means of three groups having equal no. of items are 30, 32, and 34. What is the combined mean?}
-\choice{30.33}{32.67}{32.00}{33.00}{c}
 
-\question \textbf{In which scale of measurement, zero is regarded as true zero?}
-\choice{Nominal scale}{Interval scale}{Ratio scale}{Ordinal scale}{c}
-
-\question \textbf{Which is a discrete variable?}
-\choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
-
-\question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
-\choice{26}{106}{206}{216}{c}
-
-\question \textbf{Which one falls in the category of interval scale?}
-\choice {Temperature}{Speed}{Distance}{Film rating}{a}
-
-\question \textbf{Which one is product of square?}
-\choice {$\prod x_i^2$}{$(\prod x_i)^2$}{$\sum x_i^2 \times \sum x$}{$\sum x_i^2$}{a}
-
-\question \textbf{For which variable, determining number of terms is not possible?}
-\choice{Discrete variable}{Continuous variable}{Quantitative variable}{Qualitative variable}{b}
-
-\textbf{Answer the next three question based on the following information.}
-
-\textbf{A farmer collects growth (in cm) of 10 plants in a month and finds that \\ $\sum x_i = 7$ and $\sum x_i^2=15$}
-
-\question \textbf{What is the value of $\sum (x_i+4)$?}
-\choice{23}{$\sum x_i +4n$}{22}{11}{a}
-
-\question \textbf{What is the value of $\sum (x_i-4)^2$?}
-\choice{23}{135}{484}{121}{a}
-
-\question \textbf{If the square of summation is subtracted the sum of square, the value is - }
-\choice{-8}{34}{8}{-34}{d}
-
-\question \textbf{Which one is not an example of ratio scale?}
-\choice{Room no.}{Income}{Number of accidents}{Weight}{a}
 
 \section{Measures of Dispersion}
 
@@ -370,6 +416,20 @@ Sales & 5   & 35    & 34     & 40     & 42  & 204
 
 \question \textbf{which component of time series represents a natural disaster?}
 \choice{Seasonal Variation}{General Trend}{Irregular Variation}{Cyclic Variation}{c}
+
+\section{Published Statistics in Bangladesh}
+
+\question \textbf{Bangladesh Bureau of Statistics collect -- }
+\choice{Official statistics}{Non-official statistics}{Semi-official statistics}{None of the above}{a}
+
+\question \textbf{Which statistics are published by an NGO?}
+\choice{Official statistics}{Non-official statistics}{Semi-official statistics}{None of the above}{c}
+
+\question \textbf{The primary source of official statistics in Bangladesh is --}
+\choice{WHO}{BBS}{CPD}{UNDP}{b}
+
+\question \textbf{In Bangladesh, a census is usually done every -- years}
+\choice{20}{15}{10}{12}{c}
 
 %\question \textbf{To complete the song, the last answer should be
 %\choice{a}{b}{c}{d}{e} % Invalid answer choice
