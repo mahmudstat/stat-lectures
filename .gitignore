@@ -1,4 +1,4 @@
 *_files
 .Rproj.user
-*gz
+*.gz
 *log
