@@ -39,40 +39,9 @@ Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
  
  $\mu_1'=\frac{\sum(x_i-a)}{n}=\frac{\sum x_i}{n}-\frac{na}{n}=\bar x-a$
  
-## Raw & Central Moments: Relationship
+## Value of 1st Central Moment
 
-- $\mu_2 = \mu_2'-\mu_1'^2$
-- $\mu_3 = \mu_3'-3\mu_2'\mu_1'+2\mu_1'^3$
-- $\mu_4 = \mu_4'-4\mu_3'\mu_1' + 6 \mu_2'\mu_1'^2-3\mu_1'^4$
-
-How to Remember??
-
-$\downarrow$
-
-## How to Remember (Skip)
-
-<small>
-
-<div class="container">
-<div class="col">
-$(a-b)^3=a^3-3a^2b+3ab^2-b^3$
-
-$(a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4$ (Pascal triangle can be used)
- 
-$a^r=\mu_r'$
-
-$b^r=\mu_1'^r$
-</div>
-<div class="col">
-Now,
-
-$\mu_3 = \mu_3'-3\mu_2'\mu_1'+2\mu_1'^3$ 
-
-- Remove the penultimate term and let coefficient of it is k
-- Use (-k) as the coefficient of the last term. 
-</div>
-</div>
-</small>
+$\displaystyle \mu_1=\frac{\sum (x_i-\bar x)}{n}=\frac{\sum x_i}{n}=\bar x - \bar x = 0$
 
 ## Changing Origin of Moments
 
@@ -105,16 +74,94 @@ Use $k = \bar x$
 
 That's it! DO NOT MEMORIZE!
 
+## Chracteristics of Moments
+
+<p style="font-size=13px;">
+
+> - Used for testing for symmetry, normality, and skewness
+> - First raw moment around zero is Arithmetic Mean ($\mu_1'=\frac{\sum (x_i)}{n}=\bar x$)
+> - Second central moment is equal to variance ($\sigma^2 = \frac{\sum (x_i-\bar x)^2 )}{n}$)
+> - 2nd and 3rd central moments are used to measure skewness (detailed later)
+> - 2nd and 4th central moments are used to measure kurtosis
+
+</p>
+
+## Can Moments Be Negative?
+
+$\displaystyle \mu_r = \frac{\sum(x_i-\bar x)^r )}{n}; r=1,2,3, \cdots$
+
+> - 0 if all values are equal to origin
+> - Negative if r is an Odd number
+> - Positive if r is Even number
+
 ## Skewness
 
 Lack of symmetry
 
-<img src="img/skewness.jpg" style="width:84%">
+<img class="plain" src="img/skewness.png" style="width:95%">
 
-
-- -Ve Skew $\rightarrow \bar X \lt Me \lt Mode$
 - +Ve Skew $\rightarrow \bar X \gt Me \gt Mode$
+- -Ve Skew $\rightarrow \bar X \lt Me \lt Mode$
 - No Skew $\rightarrow \bar X = Me = Mode$
+
+## Positive Skewness{data-background=#ffffff}
+
+<div class="container">
+<div class="col plain">
+```{r, echo=FALSE}
+set.seed(5)
+xright <- rbeta(100000,1,100)*1000
+hist(xright, prob = TRUE, ylim = c(0,0.1), main = "Histogram & Density Curve")
+lines(density(xright), col = "red")
+```
+</div>
+<div class="col">
+- Low values have high frequency
+- High values have low frequency
+- As the value increases, the frequency decreases
+</div>
+</div>
+
+Most students score low, very few get good scores.
+
+## Negative Skewness
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+set.seed(5)
+xleft <- rbeta(100000,100,1)*100
+hist(xleft, prob = TRUE, main = "Histogram & Density Curve")
+lines(density(xleft), col = "red")
+```
+</div>
+<div class="col">
+- Low values have low frequency
+- High values have high frequency
+- As the value increases, so does the frequency
+
+Very few students get low marks, most get high marks. 
+</div>
+</div>
+
+## Symmetric 
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+set.seed(25)
+x = round(rnorm(10000, 70, 10))
+hist(x, prob = TRUE, main = "Histogram & Density Curve",
+     xlab = "") 
+lines(density(x), col = "red")
+```
+</div>
+<div class="col">
+- Average values have maximum frequency
+- Low values have low frequency and high values have high frequency
+- As the value go farther from mean, their frequency gradually decreases.
+</div>
+</div>
 
 ## Kurtosis
 
@@ -124,7 +171,6 @@ Normal distribution $\rightarrow$
 
 - Most students get average marks 
 - Higher and lower marks are obtained by lesser number of students
-
 
 ## Measures of SKewness
 
@@ -149,10 +195,22 @@ Estimate Skewness
 </div>
 </div> 
 
+## Skewness Working Formula
+
+Coefficient of skewness, $\gamma_1 = \sqrt{\beta_1} = \sqrt{\frac{\mu_3^2}{\mu_2^3}} = \frac{\mu_3}{\sqrt{\mu_2^3}}$
+
+If $\gamma_1 < 0 \rightarrow$ Negative Skew
+
+If $\gamma_1 > 0 \rightarrow$  Positive Skew
+
+If $\gamma_1 = 0 \rightarrow$  No Skew (Symmetric Distribution)
+
 ## Measures of Kurtosis
 
 - Pearsons's Coefficient of Moments, $\beta_2 = \frac{\mu_4}{\mu_2^2}$
 - Percentile Coefficient, $K=\frac{\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}$
+
+## Kurtosis Working Formula
 
 $\gamma_2=\beta_2-3$
 
@@ -164,13 +222,31 @@ $\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow$ Platykurtik
 
 ## Five Number Summary
 
+<div class="container">
+<div class="col">
 - Minimum
 - Maximum
-- $Q_1, Q_2, Q_3$
+- Quartiles: $Q_1, Q_2, Q_3$
+</div>
+<div class="col">
+- $Q_1 - X_L<X_H-Q_3 \rightarrow$ Positive Skew
+- $Q_1 - X_L>X_H-Q_3 \rightarrow$ Negative Skew
+</div>
+</div>
 
-## Box and Whisker Plot
+## Example of Five Number Summary
 
-![Box Plot](img/box_plot.jpg)
+2, 1, 0, 5, -6, 7, -4
+
+Solution
+
+| Minimum | $Q_1$ | $Q_2$ | $Q_3$ | Maximum |
+|:-------:|:-----:|:-----:|:-----:|:-------:|
+|    -6   |   -4  |   1   |   5   |    7    |
+
+## Box and Whisker Plot {data-background=#ffffff}
+
+<img class="plain" src="img/box_plot.jpg" style="width:95%">
 
 ## Problems
 

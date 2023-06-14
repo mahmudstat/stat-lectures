@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | www.statmania.info | </p>
+      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | docs.statmania.info | </p>
     </div>
     <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -500,42 +500,10 @@ arbitrary number</p>
 class="math inline">\(\mu_1&#39;=\frac{\sum(x_i-a)}{n}=\frac{\sum
 x_i}{n}-\frac{na}{n}=\bar x-a\)</span></p>
 </section>
-<section id="raw-central-moments-relationship" class="slide level2">
-<h2>Raw &amp; Central Moments: Relationship</h2>
-<ul>
-<li><span class="math inline">\(\mu_2 =
-\mu_2&#39;-\mu_1&#39;^2\)</span></li>
-<li><span class="math inline">\(\mu_3 =
-\mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></li>
-<li><span class="math inline">\(\mu_4 = \mu_4&#39;-4\mu_3&#39;\mu_1&#39;
-+ 6 \mu_2&#39;\mu_1&#39;^2-3\mu_1&#39;^4\)</span></li>
-</ul>
-<p>How to Remember??</p>
-<p><span class="math inline">\(\downarrow\)</span></p>
-</section>
-<section id="how-to-remember-skip" class="slide level2">
-<h2>How to Remember (Skip)</h2>
-<p><small></p>
-<div class="container">
-<div class="col">
-<p><span class="math inline">\((a-b)^3=a^3-3a^2b+3ab^2-b^3\)</span></p>
-<p><span
-class="math inline">\((a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4\)</span>
-(Pascal triangle can be used)</p>
-<p><span class="math inline">\(a^r=\mu_r&#39;\)</span></p>
-<p><span class="math inline">\(b^r=\mu_1&#39;^r\)</span></p>
-</div>
-<div class="col">
-<p>Now,</p>
-<p><span class="math inline">\(\mu_3 =
-\mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></p>
-<ul>
-<li>Remove the penultimate term and let coefficient of it is k</li>
-<li>Use (-k) as the coefficient of the last term.</li>
-</ul>
-</div>
-</div>
-<p></small></p>
+<section id="value-of-1st-central-moment" class="slide level2">
+<h2>Value of 1st Central Moment</h2>
+<p><span class="math inline">\(\displaystyle \mu_1=\frac{\sum (x_i-\bar
+x)}{n}=\frac{\sum x_i}{n}=\bar x - \bar x = 0\)</span></p>
 </section>
 <section id="changing-origin-of-moments" class="slide level2">
 <h2>Changing Origin of Moments</h2>
@@ -582,18 +550,97 @@ class="math inline">\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\)</span></li>
 <p>Use <span class="math inline">\(k = \bar x\)</span></p>
 <p>That’s it! DO NOT MEMORIZE!</p>
 </section>
+<section id="chracteristics-of-moments" class="slide level2">
+<h2>Chracteristics of Moments</h2>
+<p style="font-size=13px;">
+<ul>
+<li class="fragment">Used for testing for symmetry, normality, and
+skewness</li>
+<li class="fragment">First raw moment around zero is Arithmetic Mean
+(<span class="math inline">\(\mu_1&#39;=\frac{\sum (x_i)}{n}=\bar
+x\)</span>)</li>
+<li class="fragment">Second central moment is equal to variance (<span
+class="math inline">\(\sigma^2 = \frac{\sum (x_i-\bar x)^2
+)}{n}\)</span>)</li>
+<li class="fragment">2nd and 3rd central moments are used to measure
+skewness (detailed later)</li>
+<li class="fragment">2nd and 4th central moments are used to measure
+kurtosis</li>
+</ul>
+</p>
+</section>
+<section id="can-moments-be-negative" class="slide level2">
+<h2>Can Moments Be Negative?</h2>
+<p><span class="math inline">\(\displaystyle \mu_r = \frac{\sum(x_i-\bar
+x)^r )}{n}; r=1,2,3, \cdots\)</span></p>
+<ul>
+<li class="fragment">0 if all values are equal to origin</li>
+<li class="fragment">Negative if r is an Odd number</li>
+<li class="fragment">Positive if r is Even number</li>
+</ul>
+</section>
 <section id="skewness" class="slide level2">
 <h2>Skewness</h2>
 <p>Lack of symmetry</p>
-<p><img src="img/skewness.jpg" style="width:84%"></p>
+<p><img class="plain" src="img/skewness.png" style="width:95%"></p>
 <ul>
-<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt
-Mode\)</span></li>
 <li>+Ve Skew <span class="math inline">\(\rightarrow \bar X \gt Me \gt
+Mode\)</span></li>
+<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt
 Mode\)</span></li>
 <li>No Skew <span class="math inline">\(\rightarrow \bar X = Me =
 Mode\)</span></li>
 </ul>
+</section>
+<section id="positive-skewness" class="slide level2"
+data-background="#ffffff">
+<h2 data-background="#ffffff">Positive Skewness</h2>
+<div class="container">
+<div class="col plain">
+<p><img src="05-moments-skewness-kurtosis_files/figure-revealjs/unnamed-chunk-1-1.png" width="768" /></p>
+</div>
+<div class="col">
+<ul>
+<li>Low values have high frequency</li>
+<li>High values have low frequency</li>
+<li>As the value increases, the frequency decreases</li>
+</ul>
+</div>
+</div>
+<p>Most students score low, very few get good scores.</p>
+</section>
+<section id="negative-skewness" class="slide level2">
+<h2>Negative Skewness</h2>
+<div class="container">
+<div class="col">
+<p><img src="05-moments-skewness-kurtosis_files/figure-revealjs/unnamed-chunk-2-1.png" width="768" /></p>
+</div>
+<div class="col">
+<ul>
+<li>Low values have low frequency</li>
+<li>High values have high frequency</li>
+<li>As the value increases, so does the frequency</li>
+</ul>
+<p>Very few students get low marks, most get high marks.</p>
+</div>
+</div>
+</section>
+<section id="symmetric" class="slide level2">
+<h2>Symmetric</h2>
+<div class="container">
+<div class="col">
+<p><img src="05-moments-skewness-kurtosis_files/figure-revealjs/unnamed-chunk-3-1.png" width="768" /></p>
+</div>
+<div class="col">
+<ul>
+<li>Average values have maximum frequency</li>
+<li>Low values have low frequency and high values have high
+frequency</li>
+<li>As the value go farther from mean, their frequency gradually
+decreases.</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="kurtosis" class="slide level2">
 <h2>Kurtosis</h2>
@@ -634,6 +681,18 @@ class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
 </div>
 </div>
 </section>
+<section id="skewness-working-formula" class="slide level2">
+<h2>Skewness Working Formula</h2>
+<p>Coefficient of skewness, <span class="math inline">\(\gamma_1 =
+\sqrt{\beta_1} = \sqrt{\frac{\mu_3^2}{\mu_2^3}} =
+\frac{\mu_3}{\sqrt{\mu_2^3}}\)</span></p>
+<p>If <span class="math inline">\(\gamma_1 &lt; 0 \rightarrow\)</span>
+Negative Skew</p>
+<p>If <span class="math inline">\(\gamma_1 &gt; 0 \rightarrow\)</span>
+Positive Skew</p>
+<p>If <span class="math inline">\(\gamma_1 = 0 \rightarrow\)</span> No
+Skew (Symmetric Distribution)</p>
+</section>
 <section id="measures-of-kurtosis" class="slide level2">
 <h2>Measures of Kurtosis</h2>
 <ul>
@@ -642,6 +701,9 @@ class="math inline">\(\beta_2 = \frac{\mu_4}{\mu_2^2}\)</span></li>
 <li>Percentile Coefficient, <span class="math inline">\(K=\frac{\frac 1
 2 (Q_3-Q_1)}{P_{90}-P_{10}}\)</span></li>
 </ul>
+</section>
+<section id="kurtosis-working-formula" class="slide level2">
+<h2>Kurtosis Working Formula</h2>
 <p><span class="math inline">\(\gamma_2=\beta_2-3\)</span></p>
 <p><span class="math inline">\(\gamma_2=0 \space or \space \beta_2=3)
 \rightarrow\)</span> Mesokurtik <span class="math inline">\(\gamma_2\gt0
@@ -653,15 +715,56 @@ kurtosis</p>
 </section>
 <section id="five-number-summary" class="slide level2">
 <h2>Five Number Summary</h2>
+<div class="container">
+<div class="col">
 <ul>
 <li>Minimum</li>
 <li>Maximum</li>
-<li><span class="math inline">\(Q_1, Q_2, Q_3\)</span></li>
+<li>Quartiles: <span class="math inline">\(Q_1, Q_2, Q_3\)</span></li>
 </ul>
+</div>
+<div class="col">
+<ul>
+<li><span class="math inline">\(Q_1 - X_L&lt;X_H-Q_3
+\rightarrow\)</span> Positive Skew</li>
+<li><span class="math inline">\(Q_1 - X_L&gt;X_H-Q_3
+\rightarrow\)</span> Negative Skew</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="box-and-whisker-plot" class="slide level2">
-<h2>Box and Whisker Plot</h2>
-<p><img data-src="img/box_plot.jpg" alt="Box Plot" /></p>
+<section id="example-of-five-number-summary" class="slide level2">
+<h2>Example of Five Number Summary</h2>
+<p>2, 1, 0, 5, -6, 7, -4</p>
+<p>Solution</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Minimum</th>
+<th style="text-align: center;"><span
+class="math inline">\(Q_1\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(Q_2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(Q_3\)</span></th>
+<th style="text-align: center;">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-6</td>
+<td style="text-align: center;">-4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="box-and-whisker-plot" class="slide level2"
+data-background="#ffffff">
+<h2 data-background="#ffffff">Box and Whisker Plot</h2>
+<p><img class="plain" src="img/box_plot.jpg" style="width:95%"></p>
 </section>
 <section id="problems" class="slide level2">
 <h2>Problems</h2>
