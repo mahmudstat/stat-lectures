@@ -5,11 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    transition: zoom
     reveal_plugins: ["chalkboard", "zoom", "menu"]
-    reveal_options:
-      chalkboard:
-        theme: whiteboard
     self_contained: false
     lib_dir: libs
     css: css/styles.css
@@ -93,7 +89,7 @@ If $\lambda$ is very large.
 ## Difference with Binomial
 
 <div class="container">
-<div class="col">
+<div class="col plain">
 ```{r, echo=FALSE}
 set.seed(10)
 plot(sample(100,80), main="Rats on a filed", xlab = "", ylab = "", axes = F, pch=19, sub = "Could be anywhere, not just on some specific points")
