@@ -3,11 +3,16 @@
 
 
 body {
-        background: conic-gradient(at 85% 45%, pink, tomato, pink);
+  /* 
+ background:  conic-gradient(at 85% 45%, pink, tomato, pink);
+  
+  */
+        background-image: radial-gradient(circle, 
+        white, white, green);
     }
     
 span {
-color:  #ffe6ff;
+color:  #6666ff;
 }
 
 /*

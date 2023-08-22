@@ -73,7 +73,7 @@ Binomial Formulae
 3. $(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4$
 </div>
 <div class="col">
-> - 1. $\mu_1'(k) = \mu_r'(a) + b$
+> - 1. $\mu_1'(k) = \mu_1'(a) + b$
 > - 2. $\mu_2'(k) = \mu_2'(a) + 2 \mu_1'(a)b + b^2$
 > - 3. ?
 > - 4. ?
@@ -88,6 +88,15 @@ Binomial Formulae
 Use $k = \bar x$
 
 That's it! DO NOT MEMORIZE!
+
+## 2nd Central Moment
+
+$\mu_2=\mu_2' - \mu_1'^2$
+
+> - $\mu_2=\mu_2'(a)+2\mu_1'(a)(a-\bar x)+(a-\bar x)^2$ [From [here](#/changing-origin-of-moments)]
+> - $\mu_2'-2(a-\bar x)^2+(a-\bar x)^2$ [since $\mu_1'(a) = \bar x-a$]
+> - $\mu_2'-(a-\bar x)^2$
+> - $\mu_2' - \mu_1'^2$
 
 ## Chracteristics of Moments
 
@@ -267,13 +276,21 @@ Solution
 
 <img class="plain" src="img/box_plot.jpg" style="width:95%">
 
-## Problems
+# Problems
+
+## Misc
 
 > - 1. $\bar X = 65, Me = 70, SK_P = -0.5$; Mod = ? CV = ?
 > - 2. GM & HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.
 > - 3. Mean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, & median. 
 > - 4. Variance of a mesokurtik distribution is 4. Find $\mu_4$.
 
+
+## Skewness Problems
+
+$\bar X = 400, CV = 8\%$, and $SK_P = 0.40$. 
+
+Find Mode and Median. 
 
 ## Moments Conversion Problems
 
@@ -290,4 +307,26 @@ Solution
 </div>
 </div>
 
+# Story: Statistical Father!
 
+## Background
+
+Year: 1946
+
+Maj Hadlam (British Army)
+
+> - Son born 349 Days after departure
+> - Usual gestational period: 9 Months 10 Days = 280 Days
+> - Sued
+> - Verdict: He is the Father!
+> - Other instances: 340 (Father Lost), 331 (Father Won)
+
+## Study
+
+<img class="plain" src="img/empirical-rule.jpg" width="680">
+
+Sample: 13634 Female individuals
+
+Mean duration: 280 days
+
+> - Highest Duraion: 360 Days
