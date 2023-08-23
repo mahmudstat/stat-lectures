@@ -17,4 +17,13 @@ MCQ
 \question \textbf{Question}
 \choice{Choice}{Choice}{Choice}{Choice}{a}
 
+
+\question \textbf{Statement}
+
+i. option \\
+ii. option \\
+iii. option
+
+\textbf{Which one is correct?}
+
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
