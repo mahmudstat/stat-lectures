@@ -85,6 +85,16 @@ Can take any values between any other values
 - Diameter of trees
 - Room no. 
 
+## More Examples
+
+> - Income of a regular employee
+> - Income of a freelancer
+> - Any unchanging number, e.g, $\pi$  
+> - Result of a die throw
+> - Father's name
+> - Mark of a subject
+> - GPA of a student
+
 ## Frequency Distribution
 
 Three things required
@@ -117,7 +127,9 @@ When Used?
 > - Small no. of categories
 > - Each category is part of a whole
 
-## Pie Chart Table
+# Problems
+
+## Pie/Bar Chart 
 
 | Grade | Frequency | Angle | Percentage |
 |:---:|:---:|:---:|:---:|
@@ -134,3 +146,37 @@ When Used?
 47 85 31 45 36 75 77 58 30 68 52 56 49 79 54 
 
 86 37 76 64 39 55 50 72 53 51 60 35 69 78 90
+
+## Make a Histogram
+
+Table 01:
+
+| Marks | 0-20 | 20-30 | 30-40 | 40-50 | 50-60 | 60-70 | 70-80 | 80-100 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Frequency | 3 | 5 | 7 | 15 | 12 | 7 | 4 | 2 |
+
+Table 2:
+
+| Marks | 1-5 | 6-10 | 11-15 | 16-20 | 21-25 | 26-30 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Frequency | 2 | 5 | 10 | 9 | 4 | 3 |
+
+# Assignment Format
+An Assignment on --
+
+<div style="text-align: left;">
+
+Submitted by: Cadet X
+
+Cadet No.: 
+
+Class:
+
+Form:
+
+Submitted to: Mr./Mrs. X, Designation
+
+Date of Submission: 
+</div>
+
+Sylhet Cadet College
