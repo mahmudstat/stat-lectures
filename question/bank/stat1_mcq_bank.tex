@@ -5,8 +5,7 @@
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{multicol}
 \usepackage{graphicx}
-
-
+\usepackage{float}
 
 % Accumulate the answers. Unmodified from Phil Hirschorn's answer
 % https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
@@ -123,7 +122,9 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Statistics MCQ Question Bank}
+        \textbf{Statistics MCQ Question Bank} \\
+        
+       
             
         \vspace{0.5cm}
         \LARGE
@@ -136,7 +137,7 @@
             
         \vfill
             
-            
+            \textbf{Last updated: \today}
         \vspace{0.8cm}
         
              \includegraphics[width=1cm]{logo}
@@ -176,6 +177,19 @@
 \question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
 \choice{26}{106}{206}{216}{c}
 
+\question \textbf{$If x_1=2, x_2=3, x_3=4, x_4=6$, and $x_5=5, \displaystyle \sum_{i=1}^4 x_i^2=?$}
+\choice{80}{87}{90}{105}{c}
+
+\question \textbf{Capital and profit belong to a variable which is--}
+
+i. Bivariate \\
+ii. Quantitative \\
+iii. Qualitative
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a}
+
 \question \textbf{Which one falls in the category of interval scale?}
 \choice {Temperature}{Speed}{Distance}{Film rating}{a}
 
@@ -207,6 +221,12 @@
 \question \textbf{Which one is not an example of ratio scale?}
 \choice{Room no.}{Income}{Number of accidents}{Weight}{a}
 
+\question \textbf{Which one is discrete?}
+\choice{Weight}{Amount of rainfall}{Temperature}{No. of member in a family}{d}
+
+\question \textbf{Which type of scale of measurement are religion and blood group?}
+\choice{Interval}{Ratio}{Nominal}{Ordinal}{c}
+
 \section{Collection, Organization, and Presentation of Data}
 
 \question \textbf{How many sources of data are there?}
@@ -227,6 +247,9 @@
 \section{Measures of Central Tendency}
 
 \subsection{General Questions}
+
+\question \textbf{If a value is zero, which measure is not usable?}
+\choice{Arithmetic Mean}{Harmonic Mean}{Geometrtic Mean}{Mode}{c}
 
 \question \textbf{How many measure of central tendency are there?}
 \choice{2}{3}{4}{5}{d}
@@ -289,7 +312,29 @@ Frequency & 2   & 0    & 4     & 4     & 1
 \question \textbf{Which relationship is correct?}
 \choice{$AM \times GM = HM^2$}{$AM \times HM = GM^2$}{$AM \times HM = GM^3$}{$AM \div GM = HM^2$}{b}
 
+\question \textbf{With negative observations, which cannot be used}
+
+i. Arithmetic Mean \\
+ii. Geometric Mean \\
+iii. Harmonic Mean
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}
+
 \subsection{Arithmetic Mean}
+
+\question \textbf{Arithmetic Mean of first 25 natural numbers is --}
+\choice{12}{13}{14}{26}{b}
+
+\question \textbf{Arithmetic Mean of two numbers is 25. If a number is 40, what is the other number?}
+\choice{40}{50}{25}{10}{d}
+
+\question \textbf{Number of students in two classes are 50 and 55 and their combined arithmetic mean (AM) of marks is 82. If AM of the first class is 75, what is the AM of the other class? }
+\choice{88.36}{88.40}{84.55}{78.33}{a}
+
+\question \textbf{The summation of deviation of each value from their arithmetic mean is --}
+\choice{0}{1}{2}{4}{a}
 
 \question \textbf{For grouped data, which formula is correct for Arithmetic Mean?}
 \choice{$\displaystyle \bar x = \frac{\sum f_ix_i}{\sum f_i}$}{$\displaystyle \bar x = \frac{\sum x_i}{N}$}{$\displaystyle \bar x = \frac{\sum f_ix_i}{n}$}{$ \displaystyle\bar x = \frac{\sum f_i}{N}$}{a}
@@ -378,6 +423,13 @@ Frequency                                                       & 5        & 10 
 
 \subsection{Moments}
 
+\question \textbf{Which quantity uniquely characterizes a distribution?}
+\choice{Median}{Quantile}{Moments}{Trend}{c}
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}
+
 \question \textbf{Which can be used to measure dispersion?}
 \choice{$\mu_2'$}{$\mu_1$}{$\mu_2$}{$\mu_1'$}{c}
 
@@ -414,6 +466,15 @@ iii. positive or negative
 
 \subsection{Skewness}
 
+\question \textbf{Characteristics of a skewed distributon are --}
+
+i. $Mean \ne Median \ne Mode$ \\
+ii. Differences of upper and lower quartiles from median are unequal\\
+iii. Frequency curve is asymmetric
+
+\question \textbf{In a distribution, $\mu_2=25, \mu_3=20$, and $\mu_4=2200$; the distribution is --}
+\choice{Negativelky skewed}{leptokurtic}{Platykurtic}{Symmetric}{b}
+
 \question \textbf{For a data, $Q_3=41.6, Q_1=17.2, Median = 29, \& AM = 30$; What is Coefficient of skewness?}
 \choice{24.4}{1}{0.03}{29.45}{d}
 
@@ -426,7 +487,19 @@ iii. positive or negative
 \question \textbf{$\sqrt{\beta_1}=-0.23$ implies--}
 \choice{Left Skew}{Symmetry}{Right Skew}{Mesokurtic}{a}
 
+\question \textbf{First 3 moments about 2 are 1, 2 and 8, respectively. What is the arithmetic mena?}
+\choice{1}{2}{3}{4}{c}
+
+\question \textbf{What is the second central moments of first 10 natural numbers?}
+\choice{9.90}{9.09}{8.25}{5.67}{c}
+
+\question \textbf{Frequencies of higher values are smaller in -- distribution}
+\choice{Positively skewed}{Negatively skewed}{Symmetric}{Mesokurtic}{a}
+
 \subsection{Kurtosis}
+
+\question \textbf{How many types of kurtosis are there?}
+\choice{2}{3}{4}{5}{b}
 
 \question \textbf{The standard deviation of a mesokurtik distribution is 2. What is the value of the 4th central moment?}
 \choice{4}{8}{16}{48}{d}
@@ -490,11 +563,45 @@ Sales & 5   & 35    & 34     & 40     & 42  & 204
 \question \textbf{What is the last  value of 3-yearly moving average?}
 \choice{93.55}{95.53}{95.33}{59.33}{c}
 
+\question \textbf{Which component of time series is affected by economic changes due to war?}
+\choice{Trend}{Seasonal Variation}{Irregular Variation}{Cyclic Variation}{c}
+
+\question \textbf{Demand for warm clothes is higher in winter season ans less in summer. Which component of time series deals with this change?}
+\choice{Trend}{Seasonal Variation}{Irregular Variation}{Cyclic Variation}{b}
+
+\question \textbf{Death rates of a country for 7 years are given below:}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|l}
+Year & 2009 & 2010 & 2011 & 2012 & 2013 & 2014 & 2015 \\ \hline
+Rate & 5    & 7    & 6    & 8    & 7    & 12   & 13  
+\end{tabular}
+\end{table}
+
+\textbf{In semi-average method, which year will be excluded?}
+\choice{2012}{2013}{ 2015}{2009}{b}
 
 \question \textbf{Which component of time series represents a natural disaster?}
 \choice{Seasonal Variation}{General Trend}{Irregular Variation}{Cyclic Variation}{c}
 
+\question \textbf{How many models of time series are there to combine the components?}
+\choice{2}{3}{4}{5}{a}
+
 \section{Published Statistics in Bangladesh}
+
+\question \textbf{Limitations of published statistics in Bangladesh are --}
+
+i. Wrong data collection method \\
+ii. Insufficient data \\
+iii. Lack of proper training
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}
+
+\question \textbf{How many sources of published statistics are there in Bangladesh?}
+\choice{2}{3}{4}{6}{b}
 
 \question \textbf{Bangladesh Bureau of Statistics collect -- }
 \choice{Official statistics}{Non-official statistics}{Semi-official statistics}{None of the above}{a}
