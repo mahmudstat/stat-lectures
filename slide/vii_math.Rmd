@@ -1,0 +1,60 @@
+---
+title: "Mathematics (VII"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Linear Equations in One Variable
+
+## Topics
+
+- Equations
+- Linear Equations
+
+## Linear Equations
+
+- ax + by  = c (two variables)
+- ax + by + cz = d (3 variables)
+
+## Visual Equations
+
+<img class="plain" src="img/math/visual_eqn.png" width="800">
+
+
+## Rules of Equation
+
+<div class="container">
+<div class="col">
+Same amount can be 
+
+- added
+- subtracted
+- multiplied
+- divided
+
+on both side
+</div>
+<div class="col">
+<img class="plain" src="img/math/rules_eqn.png" width="800">
+</div>
+</div>
+
+## Examples of Rules
+
+- x + 2 = 6
+- x - 4 = 1
+- 4x + 10 = 22
+

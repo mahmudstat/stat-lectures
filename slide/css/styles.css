@@ -5,10 +5,10 @@
 body {
   /* 
  background:  conic-gradient(at 85% 45%, pink, tomato, pink);
-  
+ background-image: linear-gradient(red, yellow);
+ radial-gradient(circle, white, white, green)
   */
-        background-image: radial-gradient(circle, 
-        white, white, green);
+        background-image: conic-gradient(at 85% 45%, #ffffff, #66ff66, #ffffff);
     }
     
 span {
