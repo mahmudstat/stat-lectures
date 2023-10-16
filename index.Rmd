@@ -39,7 +39,7 @@ Statistics lectures are divided into two parts
 
 ## First Paper
 
-- [Introduction to Statistics](slide/01-probability-intro.html)
+- [Introduction to Statistics](slide/01-stat-intro.html)
 - [Data Collection, Organization & Presentation](slide/02-data-collection-organization-presentation.html)
 - [Measures of Central Tendency](slide/03-central-tendency.html)
 - [Measures of Dispersion](slide/04-dispersion.html)
