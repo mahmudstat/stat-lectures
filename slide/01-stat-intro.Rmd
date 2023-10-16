@@ -161,6 +161,19 @@ Match as per suitable scale
 | Awesome, Amazing, Mind-blowing, Stunning | nominal |
 | **In a scale of 0 to 10:** 0, 5, 8, 10 | ordinal      | 
 
+## Examples of Interval Scale
+
+Multiplication/division cannot be carried out
+
+> - Temperature (Celsius scale)
+> - Dates (AD)
+> - Location in Cartesian coordinates
+> - Direction measured in degrees
+
+
+
+For more see [here](https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale)
+
 ## Operation with scales
 <img src="img/scale.png" alt="drawing" width="600"/>
 
