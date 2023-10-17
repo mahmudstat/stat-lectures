@@ -1,9 +1,13 @@
 /********** Customise logo, and footer disclaimer **********/
 /* Position the corporate logo in the top right of the page */
 
+/*
+background-image: conic-gradient(at 85% 45%, #ffffff, #66ff66, #ffffff);
+background-image: conic-gradient(WhiteSmoke, tomato, WhiteSmoke);
+*/
 
 body {
-  background-image: conic-gradient(WhiteSmoke, tomato, WhiteSmoke);
+  background-image: conic-gradient(#ffffff, #66ff66, #ffffff);
   border-radius: 0%;
     }
     

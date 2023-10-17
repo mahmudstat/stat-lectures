@@ -46,6 +46,8 @@ Same amount can be
 - divided
 
 on both side
+
+$3x-7=15 \rightarrow$
 </div>
 <div class="col">
 <img class="plain" src="img/math/rules_eqn.png" width="800">
