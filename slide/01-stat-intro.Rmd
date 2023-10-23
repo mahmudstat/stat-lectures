@@ -255,7 +255,7 @@ $\displaystyle \sum_{i=1}^m \sum_{i=1}^n x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n
 > - $\displaystyle \sum_{i=1}^m x_i(y_1+y_2+\cdots+y_n)$
 > - $\displaystyle \sum_{i=1}^m x_i \sum_{i=1}^n y_i$
 
-## Example
+## Problem -01
 
 Given 
 
@@ -269,30 +269,46 @@ i. $\sum f_ix_i$
 ii. $\sum f_ix_i^2$
 iii. $\sum f_i(x_i-5)^2$
 
-## Textbook Exercise -01
+
+## Problem - 02
 
 13. Find the value of $\sum_{i=1}^{10} (x_i-4)$
 
 where $\sum_{i=1}^{10} x_i = 20$
 
 
-## Exercise-01
+## Problem - 03
 
-> - 7. Discrete vs continuous variable
-> - 10. Prove 
+> - Discrete vs continuous variable
+> - Prove 
 $$\sum_{i=1}^k abx_i = ab \sum_{i=1}^k x_i$$
 
-## Exercise - 02
+## Problem - 04
 Prove 
 $$\prod_{i=1}^n c =c^n$$
 
-## Exercise - 03
+## Problem - 05
 
 13. Find the value of 
 
 $$\sum_{i=1}^{10} (x_i-4)$$
 where
 $$\sum_{i=1}^{10}=20$$
+
+## Problem - 06
+
+$\displaystyle \sum_{i=1}^{10} x_i = 20, \sum_{i=1}^{10} x_i^2 = 400$
+
+Find the value of $\displaystyle \sum_{i=1}^{10} (x_i^2+5x_i+10)$
+
+## Problem - 07
+
+| X | 20 | 25 |
+|:-:|:--:|:--:|
+| Y | 15 | 30 |
+
+i. Prove Sum of Square $\ne$ Square of Sum
+ii. Prove $\displaystyle \sum X_iY_i \ne \sum \sum X_iY_i$
 
 ## Creative Question - 01
 
