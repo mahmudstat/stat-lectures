@@ -8,11 +8,11 @@ body {
  background-image: linear-gradient(red, yellow);
  radial-gradient(circle, white, white, green)
   */
-        background-image: conic-gradient(at 85% 45%, #cc66ff, #0080ff, #cc66ff);
+        background-image: conic-gradient(at 85% 45%, #ffff99, #0099cc, #ffff99);
     }
     
 span {
-color:  #6666ff;
+color:  #336600;
 }
 
 /*
