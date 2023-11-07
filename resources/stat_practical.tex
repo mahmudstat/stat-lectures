@@ -1,0 +1,109 @@
+\documentclass[a4paper,oneside, margin=1.4in]{book}
+
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titletoc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\titlecontents*{chapter}
+  [0pt]% <left>
+  {}
+  {\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}    
+
+\usepackage{bookmark}
+\usepackage{etoolbox}
+
+\makeatletter
+\newcommand*{\AddChapterPrefixInBookmarks}{%
+  \if@mainmatter
+    \ifnum\bookmarkget{level}=0 %
+      \preto\bookmark@text{\@chapapp\space}%
+    \fi
+  \fi
+}
+\makeatother
+
+\bookmarksetup{
+  numbered,
+  addtohook=\AddChapterPrefixInBookmarks,
+}
+
+% Workaround for numbered sections in unnumbered
+% chapter "Introduction" to avoid chapter number
+% zero.
+\renewcommand*{\thesection}{%
+  \ifcase\value{chapter}%
+  \else
+    \thechapter.%
+  \fi
+  \arabic{section}%
+}
+
+\title{My document}
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics Practical Works}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Paper
+            
+        \vspace{1.5cm}
+            
+        \textbf{Abdullah Al Mahmud}
+            
+        \vfill
+            
+            
+        \vspace{0.8cm}
+            
+            
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+
+\mainmatter
+
+\part{First Paper}
+\chapter{Chapter} 
+\section{Construction of Frequency Distribution}
+
+\subsection{Problem}
+
+The following information represent amount of rainfall in 30 districts in Bangladesh. \\
+
+360 442 452 438 449 387 383 348 315 347 308 313 494 477 413 \\
+335 495 420 424 396 322 398 327 349 316 488 496 443 337 460 \\
+
+Make a frequency distribution from the data and interpret. 
+
+\subsection{Solution}
+\subsection{Theory}
+
+To make a frequency distribution, we require three things. 
+
+i. Range, R = Highest Value - Lowest value \\
+ii. Number of class, $k=1+3.322log_{10}N$ \\
+iii. Class Interval, $CI = \frac{R}{k}$
+
+\backmatter
+\chapter{Conclusion}
+\lipsum[8]
+
+\tableofcontents
+\end{document}

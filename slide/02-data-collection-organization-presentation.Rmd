@@ -252,3 +252,21 @@ pie(x, c(1996:1999),
 > - Curve: Smoothed corners
 
 ## Bar Diagram vs Histogram
+
+# Example Charts
+
+## Bar Chart
+
+<img class="plain" src="img/fastest_ton.png" width="700">
+
+## Pie Chart
+
+<img class="plain" src="img/tmp_pie5.png" width="580">
+
+## Donut Chart
+
+<img class="plain" src="img/us_races_donut.png" width="580">
+
+## Rose Plot
+
+<img class="plain" src="img/rose.png" width="580">
