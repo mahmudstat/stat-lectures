@@ -348,6 +348,10 @@ function klikaj(i) {
 - [ ] <span style="color:ff1a1a;">What if one or some x < 0? </span>
 
 
+## Velocity Paradox
+
+<img class="plain" src="img/velocity_paradox.png" width="1100">
+
 ## Story of oil scam 
 <div class="container">
 <div class="col">
