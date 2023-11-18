@@ -1,0 +1,215 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage[legalpaper, total={177.8mm, 290mm}]{geometry}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+\begin{document}
+
+\begin{center}
+  \bfseries\large
+  Sylhet Cadet College
+
+\normalsize
+  First Term-End Examination - 2023
+
+  Class: XI
+
+  Subject: Statistics First Paper (MCQ)  \fbox{Set: A}
+
+  Time: 20 minutes \qquad \qquad \qquad \qquad Subject Code: 129   \qquad \qquad \qquad  \qquad Full Marks: 20
+
+%  \normalfont\normalsize
+ % 11.45a.m.~--~1.45p.m.
+\end{center}
+
+\noindent
+\begin{tabular}{p{\dimexpr\linewidth-2\tabcolsep}}
+ Answer all the questions. Each question is worth one (1) mark.\\
+  \hline
+\end{tabular}
+
+\begin{questions}
+
+\question \textbf{If $\displaystyle x_1=2, x_2=3, x_3=5, x_4=7$ and $\displaystyle y_1=3, y_2=4, y_3=5, y_4=8; 
+ \sum_{i=2}^4 x_iy_i=?$}
+\choice{14}{201}{93}{109}{c}
+
+\question \textbf{If $\displaystyle \sum_{i=1}^{20} x_i^2=20$ and $\displaystyle \sum_{i=1}^{20} x_i=30$, what is the value of $\displaystyle \sum_{i=1}^{20} x_i^2 + \sum_{i=1}^{20} x_i + 100$?}
+\choice{130}{200}{250}{2130}{c}
+
+\question \textbf{A subset of a population is called--}
+\choice{Constant}{Variable}{Sample}{Scale}{c}
+
+\textbf{Answer the next 2 question based on the following information.}
+
+\textbf{A farmer collects growth (in cm) of 10 plants in a month and finds that \\ $\sum x_i = 7$ and $\sum x_i^2=15$}
+
+\question \textbf{What is the value of $\sum (x_i+4)$?}
+\choice{23}{$47$}{22}{11}{b}
+
+\question \textbf{What is the value of $\sum (x_i-4)^2$?}
+\choice{23}{135}{484}{119}{d}
+
+\question \textbf{Which of the following is a continuous variable?}
+\choice{Number of goals}{Natural number}{Summation of Fibonacci series}{Success rate}{d}
+
+
+\question \textbf{How many sources of data are there?}
+\choice{5}{4}{3}{2}{d}
+
+\question \textbf{What is the raw material of research?}
+\choice{Data}{Theory}{Graph}{Mean}{a}
+
+\question \textbf{Data obtained through direct observation is called--}
+\choice{Primary data}{Secondary data}{Original Data}{Informal data}{a}
+
+\question \textbf{Who invented Stem and Leaf plot?}
+\choice{Karl Pearson}{R.A. Fisher}{David Cox}{John Tukey}{d}
+
+\question \textbf{How many measure of central tendency are there?}
+\choice{2}{3}{4}{5}{d}
+
+\question \textbf{Which measure of central tendencyis suitable for qualitative variable?}
+\choice{Arithmetic Mean}{Harmonic Mean}{Quadratic Mean}{Mode}{d}
+
+\question \textbf{In presence of negative values, which measure is not usable?}
+\choice{Arithmetic Mean}{Geometric Mean}{Quadratic Mean}{Harmonic Mean}{b}
+
+\question \textbf{For grouped data, which formula is correct for Arithmetic Mean?}
+\choice{$\displaystyle \bar x = \frac{\sum f_ix_i}{\sum f_i}$}{$\displaystyle \bar x = \frac{\sum x_i}{N}$}{$\displaystyle \bar x = \frac{\sum f_ix_i}{n}$}{$ \displaystyle\bar x = \frac{\sum f_i}{N}$}{a}
+
+
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+\pagebreak
+%\newpage  %Uncomment to put on new age
+\bigskip
+
+\begin{multicols}{3}
+[
+Answer Key
+]
+\showallanswers % Phil Hirschorn
+\end{multicols}
+
+
+\end{document}

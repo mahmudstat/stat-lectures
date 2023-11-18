@@ -211,6 +211,15 @@ plot(intervals, cf, type = "b", col = "blue", pch = 20)
 - How to calculate angles? 
 - Can we draw on 180 degrees?
 
+## Draw Suitable Chart
+
+Favorite colors of 30 individuals are noted down.
+
+	  Brown Red   Pink  Green Green Green Brown Pink  Brown Red   
+	  
+    Brown Red   Green Pink  White Red   Brown Green White Brown 
+    
+    White Brown Pink  Red   White Brown Green Red   Pink  Red  
 
 ## Choose Diagram
 

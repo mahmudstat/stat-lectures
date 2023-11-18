@@ -248,8 +248,8 @@ $U = \frac{X-a}{c}$
 
 # Geometric Mean (GM)
 
-$GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}$ or
-$GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}$
+$GM=(x_1 \times x_2 \times \cdots \times x_n)^{(1/n)}$ or
+$GM=(x_1^{f_1} \times x_2^{f_2} \times \cdots \times x_n^{f_n})^{(1/\sum f_i)}$
 
 Find GM: 2, 4, 6
 `r x = c(2, 4, 6)`
@@ -280,7 +280,11 @@ Try this one: 20020, 30080, 50086, 40130
 - $log_24=?$
 - if $log_2x=3$, then x=?
 
+## GM using Log
 
+> - $GM=(x_1 \times x_2 \times \cdots \times x_n)^{(1/n)}$
+> - $log (GM) = \frac 1n \{log(x_1)+log(x_2) + \cdots + log(x_n)\} = A (suppose)$
+> - $\therefore GM = Antilog (A)$
 
 ## GM Easier Formula
 
