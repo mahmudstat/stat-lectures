@@ -18,6 +18,8 @@ MCQ
 \choice{Choice}{Choice}{Choice}{Choice}{a}
 
 
+\textbf{Answer the next two questions based on the following information}
+
 \question \textbf{Statement}
 
 i. option \\
@@ -27,3 +29,14 @@ iii. option
 \textbf{Which one is correct?}
 
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
+
+
+Table
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\begin{tabular}[c]{@{}c@{}}Radius (cm)\end{tabular} & 0-10 & 10-20 & 20-30 & 30-40 \\ \hline
+No. of Trees & 20 & 15 & 21 & 24
+\end{tabular}
+\end{table}
