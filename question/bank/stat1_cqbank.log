@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.15)  17 NOV 2023 08:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.15)  21 NOV 2023 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,67 +358,70 @@ l.81 \mainmatter
 
 ]
 Chapter 1.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [1
 
 
-] [2]
+] [2] [3]
 Chapter 2.
-[3
+[4
 
 ]
 Chapter 3.
-[4
-
-] [5] [6] [7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9]
+[5
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7] [8] [9] [10] [11]
 Chapter 4.
-[10
+[12
 
 ]
 Chapter 5.
-[11
-
-] [12]
-Chapter 6.
 [13
+
+] [14]
+Chapter 6.
+[15
 
 ]
 Chapter 7.
-[14
+[16
 
 ]
 Chapter 8.
-[15
+[17
 
 ]
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'english' will be used instead.
 
-[16
+[18
 
 
 ] (./stat1_cqbank.toc)
 \tf@toc=\write4
 \openout4 = `stat1_cqbank.toc'.
 
- [17
+ [19
 
 ] (./stat1_cqbank.aux) ) 
 Here is how much of TeX's memory you used:
- 10185 strings out of 480129
- 160474 string characters out of 5893408
- 547498 words of memory out of 5000000
+ 10212 strings out of 480129
+ 160688 string characters out of 5893408
+ 549498 words of memory out of 5000000
  27691 multiletter control sequences out of 15000+600000
  473288 words of font info for 41 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 68i,14n,77p,813b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,14n,77p,813b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/mahmud/.texlive2021/texmf-var/fonts/pk/ljfour/j
 knappen/ec/tcbx1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
@@ -431,10 +434,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stat1_cqbank.pdf (19 pages, 203073 bytes).
+Output written on stat1_cqbank.pdf (21 pages, 207109 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 640 compressed objects within 7 object streams
- 351 named destinations out of 1000 (max. 500000)
+ 740 PDF objects out of 1000 (max. 8388607)
+ 676 compressed objects within 7 object streams
+ 378 named destinations out of 1000 (max. 500000)
  270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
