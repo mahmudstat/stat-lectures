@@ -26,9 +26,9 @@
 \contentsline {section}{\numberline {6.2}Short Questions}{15}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Time Series}{16}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Creative Questions}{16}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Short Questions}{16}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Published Statistics in Bangladesh}{17}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Creative Questions}{17}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Short Questions}{17}{section.8.2}%
-\contentsline {chapter}{Conclusion}{18}{chapter*.2}%
+\contentsline {section}{\numberline {7.2}Short Questions}{17}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Published Statistics in Bangladesh}{18}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Creative Questions}{18}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Short Questions}{18}{section.8.2}%
+\contentsline {chapter}{Conclusion}{19}{chapter*.2}%
 \contentsfinish 

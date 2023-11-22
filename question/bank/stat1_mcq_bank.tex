@@ -156,6 +156,18 @@
 \question \textbf{Who is known as the Father of modern statistics?}
 \choice{P.C. Mahalanobis}{Kazi Motaher Hossain}{Karl Pearson}{R.A. Fisher}{d}
 
+\question \textbf{Which of the following is correct?}
+\choice{$\displaystyle \sum_{i=1}^{20} cx_i = nc \sum_{i=1}^{20} x_i$}{$\displaystyle \sum_{i=1}^{20} cx_i = nc \sum_{i=1}^{20} x_i$}{$\displaystyle \sum_{i=1}^{20} cx_i = c \sum_{i=1}^{20} x_i$}{$\displaystyle \sum_{i=1}^{20} cx_i = c^2 \sum_{i=1}^{20} x_i$}{b}
+
+\question \textbf{Which cannot be performed using Univariate data?}
+\choice{Central tendency}{Dispersion}{Skewness}{Regression}{d}
+
+\question \textbf{Cities ranked according to habitability level show -- measurement scale}
+\choice{Nominal}{Ratio}{Interval}{Ordinal}{d}
+
+\question \textbf{Which is not an example of shift of scale?}
+\choice{$y_i = \frac{x_i}{a}$}{$y_i = cx_i$}{$y_i = x_i-2$}{$y_i = \frac{cx_i}{d}$}{a}
+
 \question \textbf{If $\displaystyle \sum_{i=1}^{20} x_i^2=20$ and $\displaystyle \sum_{i=1}^{20} x_i=30$, what is the value of $\displaystyle \sum_{i=1}^{20} x_i^2 + \sum_{i=1}^{20} x_i + 100$?}
 \choice{130}{200}{150}{2130}{c}
 
@@ -220,8 +232,9 @@ iii. Qualitative
 \question \textbf{From the following table, $\displaystyle \sum_{i=1}^4 x_iy_i=?$}
 
 \begin{table}[h]
-\begin{tabular}{cclcl}
-X & 1  & 5  & 3 & 2  \\
+\centering
+\begin{tabular}{c|c|l|c|l}
+X & 1  & 5  & 3 & 2  \\ \hline
 Y & 20 & 12 & 3 & 14
 \end{tabular}
 \end{table}
@@ -296,7 +309,12 @@ No. of Trees & 20 & 15 & 21 & 24
 
 \section{Measures of Central Tendency}
 
+%-----------------------------------------------------------------------
 \subsection{General Questions}
+%-----------------------------------------------------------------------
+
+\question \textbf{Which statement is correct}
+\choice{Quartiles are well defined}{Outliers affect Median}{Median is always present in data}{Quadratic mean is widely used}{a}
 
 \question \textbf{If a value is zero, which measure is not usable?}
 \choice{Arithmetic Mean}{Harmonic Mean}{Geometrtic Mean}{Mode}{c}
@@ -373,7 +391,19 @@ iii. Harmonic Mean
 
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}
 
+%---------------------------------------------------------
 \subsection{Arithmetic Mean}
+%---------------------------------------------------------
+
+\question \textbf{Arithmetic Mean is --}
+
+i. Rigidly defined \\
+ii. Unaffected by sample fluctuation \\
+iii. Suitable for algebraic analysis
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
 
 \question \textbf{Arithmetic Mean of first 25 natural numbers is --}
 \choice{12}{13}{14}{26}{b}
@@ -504,6 +534,12 @@ Frequency                                                       & 5        & 10 
 
 \subsection{Moments}
 
+\question \textbf{Which is not a type of Moments}
+\choice{Central Moments}{Raw Moments}{Corrected Moments}{Rectified Moments}{d}
+
+\question \textbf{The second moment around w is --}
+\choice{$\frac{\sum (x_i-\bar x)^n}{w}$}{$\frac{\sum (x_i-\bar x)^2}{w}$}{$\frac{\sum (x_i-w)^2}{n}$}{$\frac{\sum (x_i-w)^n}{2}$}{a}
+
 \question \textbf{Which quantity uniquely characterizes a distribution?}
 \choice{Median}{Quantile}{Moments}{Trend}{c}
 
@@ -545,7 +581,17 @@ iii. positive or negative
 
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
 
+%------------------------------------------------------------------------------
 \subsection{Skewness}
+%------------------------------------------------------------------------------
+
+\question \textbf{The image is an example of --}
+
+\begin{center}
+   \includegraphics[width=0.2\textwidth]{../img/neg_skew.png}
+\end{center}
+
+\choice{Positive Skew}{Negative Skew}{No Skew}{Not detectable}{a}
 
 \question \textbf{Characteristics of a skewed distributon are --}
 
@@ -576,6 +622,9 @@ iii. Frequency curve is asymmetric
 
 \question \textbf{Frequencies of higher values are smaller in -- distribution}
 \choice{Positively skewed}{Negatively skewed}{Symmetric}{Mesokurtic}{a}
+
+\question \textbf{Which formula is correct for determining skewness?}
+\choice{$\gamma_1 = \sqrt{\frac{\mu_3^2}{\mu_2^3}}$}{$\gamma_1=\sqrt{\beta_1^2}$}{$\gamma_1 = \sqrt{\frac{\mu_3}{\mu_2^3}}$}{$\frac{\mu_2}{\sqrt{\mu_3^2}}$}{a}
 
 \subsection{Kurtosis}
 
@@ -611,7 +660,13 @@ Which one is true?
 
 \section{Correlation and Regression}
 
+
+%------------------------------------------------------------------------------
 \section{Time Series}
+%------------------------------------------------------------------------------
+
+\question \textbf{A linear trend goes along a -- }
+\choice{a curved line}{a wave}{straight line}{circle}{a}
 
 \question \textbf{Time Series has how many components?}
 \choice{2}{3}{4}{5}{c}
