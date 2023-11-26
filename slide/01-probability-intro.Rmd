@@ -600,6 +600,16 @@ An urn contains 6 white and 8 black balls. Another urn contains 5 white and 10 b
 
 $P(B|A)=\frac{P(A \cap B)}{P(A)}$
 
+## Law of Total Probability
+
+See also [this table](02-random-variable.html#/joint-marginal-conditional-revisited)
+
+${\displaystyle P(A)=\sum _{i}^nP(A\cap B_{i})}$
+
+or, alternatively, 
+
+${\displaystyle P(A)=\sum _{i}^nP(A\mid B_{i})P(B_{i})}$
+
 ## Conditional Problem # 01
 
 Probability that it rains today is 40%, that tomorrow is 50%, and that on both days is 30%. If it rains today, what is the probability that it would rain tomorrow? 
