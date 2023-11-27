@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.15)  23 NOV 2023 07:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.15)  27 NOV 2023 09:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,7 +397,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7] [8] [9] [10] [11]
+[6] [7] [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10] [11]
 Chapter 4.
 [12
 
@@ -436,8 +440,8 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 
 ] (./stat1_cqbank.aux) ) 
 Here is how much of TeX's memory you used:
- 10685 strings out of 480129
- 166316 string characters out of 5893408
+ 10690 strings out of 480129
+ 166356 string characters out of 5893408
  564673 words of memory out of 5000000
  28140 multiletter control sequences out of 15000+600000
  473288 words of font info for 41 fonts, out of 8000000 for 9000
@@ -455,10 +459,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stat1_cqbank.pdf (22 pages, 211000 bytes).
+Output written on stat1_cqbank.pdf (22 pages, 211655 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
- 395 named destinations out of 1000 (max. 500000)
+ 771 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 400 named destinations out of 1000 (max. 500000)
  270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -115,18 +115,32 @@ Frequency & 30 & 32 & 40 & 28 & 20 \\ \hline
 	Explain the relationship between independency and mutual excluvity in the light of the stem. \hfill 4
   \end{enumerate}
   
+   \item
+	  \textbf{It is observed that 50\% of mails are spam. A software filters spam mail before reaching the inbox. Its accuracy for detecting a spam mail is 99\% and chances of tagging a non-spam mail as spam mail is 5\%.} 
+  
+  \begin{enumerate}
+    \item
+	What is a disjoint event? \hfill 1
+    \item
+	For two independent events, what does the Bayes' theorem reduce to? \hfill 2
+    \item  
+	What is the probability that a mail is tagged as spam?  \hfill 3
+    \item
+	If a certain mail is tagged as spam find the probability that it is not a spam mail. \hfill 4
+  \end{enumerate}
+  
   \item
-	  \textbf{In a dope test, the proability of correct identification of drug use is 0.90 and that of correct identification of non-use for non-users is 0.80. The probability of drug use is 0.05 and of detection 0.235. } 
+	  \textbf{A dope test correctly identifies a drug user as positive 90\%  of the time, but incorrectly identifes 20\% non-users as users. The probability of drug use is 0.05.} 
   
   \begin{enumerate}
     \item
 	Write down the formula of conditional probability. \hfill 1
     \item
-	Write down $P(A|B)$ in terms of $P(B|A)$. \hfill 2
+	Express $P(A|B)$ in terms of $P(B|A)$. \hfill 2
     \item  
-	Question \hfill 3
+	Find the probability of testing positive in the test. \hfill 3
     \item
-	Question \hfill 4
+	If the test shows a user positive, what is the probability that the person is actually a user? \hfill 4
   \end{enumerate}
 
  \item
@@ -300,16 +314,34 @@ Frequency & 30 & 32 & 40 & 28 & 20 \\ \hline
 	Question \hfill 4
   \end{enumerate}
 
+%---------------------------------------------------------------------------------------
 \chapter{Random Variable and Probability Function} 
+%---------------------------------------------------------------------------------------
+
 \section{Creative Questions}
 
   \begin{enumerate}
   
+ \item
+	  \textbf{A deck of 52 card is well-shuffled and three cards are drawn from them at random. The number of kings obtained is denoted by x.} 
+  
+  \begin{enumerate}
+    \item
+	What are equaly likely events? \hfill 1
+    \item
+	Differentiate between with replacement and without replacement. \hfill 2
+    \item  
+	Form the probability fucntion using the above information and then form the distribution.\hfill 3
+    \item
+	Examine the statement: $P(1 \le x \le 3) = F(3)-F(1)$ \hfill 4
+  \end{enumerate}
+  
      \item
   \textbf{The joint probability function of two random variables X and Y is given below:}
   
+  \begin{center}
   $\displaystyle P(X,Y) = \frac {x+2y}{16}; x = 0, 1; y = 0 ,1,2,3$
- 
+ \end{center}
   \begin{enumerate}
     \item
 	Write down the formula of conditional proibability. \hfill 1
@@ -356,6 +388,23 @@ P(x) & 0.20 & 0.10 & 0.30 & 0.50 & 0.20
   \end{enumerate}
   
    \item
+	  \textbf{A continuos random variable X follows the following probability density function (pdf).} 
+	  \begin{center}
+	  $f(x) = 6x(x-1); 0\le x\le 1$
+  \end{center}
+  
+  \begin{enumerate}
+    \item
+	Give an example of a continous random variable. \hfill 1
+    \item
+	Examine whether the given function is a pdf. \hfill 2
+    \item  
+	If $P(X>a) = P(X<a)$, find the value of a. \hfill 3
+    \item
+	Should $P(0.5 \le X \le 1)$  be equal to 0.5? \hfill 4
+  \end{enumerate}
+  
+   \item
 	  \textbf{A fair coin is tossed five times. Number of heads appearing are noted, considering it a discrete random variable.} 
   
   \begin{enumerate}
@@ -390,6 +439,29 @@ $$
      \item
      	What is the probability that X is greater than 0.8?  \hfill 4
   \end{enumerate}
+  
+    \item
+  \textbf{The probability density function of a continuous random variable is}
+
+$$
+  f(x) =
+\begin{cases}
+kx(x-1),  & 1 \le x \le 4 \\
+0, & otherwise
+\end{cases}
+$$
+
+  \begin{enumerate}
+    \item
+	What is the range of probability? \hfill 1
+    \item
+    	Find the value of k \hfill 2
+    \item
+    	Justify the pdf property of the fucntion. \hfill 3
+     \item
+     	What is the probability that X is greater than 3?  \hfill 4
+  \end{enumerate}
+
 
  \item
 	  \textbf{The probability distribution of a discrete random variable X is given below:} 
@@ -417,7 +489,9 @@ P(x) & 0.1 & k & 2k & 3k & 4k & 0.2
  \item
 	  \textbf{The joint probability function of two random variables X \& Y is given below:}
 
+\begin{center}
 $P(x,y) = \frac{1}{21}(x+y); x=1,2,3$ \& $y = 1,2$ 
+\end{center}
   
   \begin{enumerate}
     \item
@@ -482,12 +556,40 @@ $$
 	Question \hfill 1
   \end{enumerate}
 
+%---------------------------------------------------------------------------
 \chapter{Mathematical Expectation} 
+%---------------------------------------------------------------------------
+
 \section{Creative Questions}
   \begin{enumerate}
   
+   \item
+	  \textbf{The probability distribution of a random X is provided below:} 
+	  
+	  \begin{table}[h]
+	  \centering
+\begin{tabular}{c|ccccc}
+X & -1 & 0 & 1 & 2 & 3 \\ \hline
+P(x) & $\frac 3{20}$ & $\frac 15$ & $\frac 14$ & $\frac 14$ & $\frac 3{20}$
+\end{tabular}
+\end{table}
+  
+  \begin{enumerate}
+    \item
+	What is the expectation of a constant m? \hfill 1
+    \item
+	Find $E(X).$ \hfill 2
+    \item  
+	Find $E(Y)$, where $Y = \frac X2$  \hfill 3
+    \item
+	Find Variance of (2X+3). \hfill 4
+  \end{enumerate}
+  
         \item
+        
+        \begin{center}
   \textbf{$P(X) = \frac{3-\vert 4-x\vert}{k}; x=2,3,4,5,6$}
+  \end{center}
 
   \begin{enumerate}
     \item
@@ -501,14 +603,14 @@ $$
   \end{enumerate}
   
    \item
-	  \textbf{The probability distributions of demand of mobile phones of two operating systems (OS) Android (X) and iPhone (Y) are:} 
+	  \textbf{The probability distributions of demand of mobile phones of two operating systems (OS) Android (X) and iPhone OS (iOS) (Y) are:} 
 	  
 	    \begin{table}[h]
 	    	  \begin{center}
 \begin{tabular}{c|c|c|c|c|c}
 Demand & 100  & 200  & 300  & 400  & 500  \\ \hline
 P(X)   & 0.1  & 0.4  & m    & 0.15 & 0.1  \\ \hline
-P(X)   & 0.09 & 0.45 & 0.32 & 0.11 & 0.03
+P(Y)   & 0.09 & 0.45 & 0.32 & 0.11 & 0.03
 \end{tabular}
 	  \end{center}
 \end{table}
@@ -579,7 +681,10 @@ p(x) & 0.1 & a & 0.3 & b & 0.2
        \item
 	  \textbf{X is a random variable having the below functional form:} 
   
+  \begin{center}
   $P(X) = \frac{6-|7-x|}{k}; x = 1, 2, \cdots,10$ \\
+  \end{center}  
+  
   Y is another variable having the relationship y = 3x+5
   
   \begin{enumerate}

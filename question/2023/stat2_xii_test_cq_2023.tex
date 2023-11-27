@@ -1,6 +1,11 @@
 \documentclass{article}
-\usepackage{geometry}
 \usepackage{amsfonts}
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titletoc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
 
 \geometry{
 legalpaper, total={177.8mm, 290mm},left=20mm,
@@ -15,7 +20,7 @@ top=27mm, bottom=27mm,
 \textbf{\large SYLHET CADET COLLEGE} &  &  &  &  \\ \cline{4-5} 
 PRE-TEST EXAMINATION - 2023 &  & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{D} \\ \cline{4-5} 
 CLASS: XII &  &  &  &  \\ \cline{3-5} 
-STATISTICS (CREATIVE)& \multicolumn{1}{l|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{9} \\ \cline{3-5} 
+STATISTICS (CREATIVE)& \multicolumn{1}{l|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{0} \\ \cline{3-5} 
  SECOND PAPER &  &  &  &  \\
 TIME – 2 hours \& 35 minutes &  &  &  &  \\
 FULL MARKS – 50 &  &  &  & 
@@ -37,34 +42,145 @@ FULL MARKS – 50 &  &  &  &
   
   \begin{enumerate}
   
- \item
-	  \textbf{A quality control analyst in an industry tracks the no. of defective items produced per day. He observes 150 successive days and then prepares a table.} 
-	  
-	  \begin{table}[h]
-	  \centering
-\begin{tabular}{c|c|c|c|c|c} \hline
-No. of items & 0 & 1 & 2 & 3 & 4 \\ \hline
-Frequency & 30 & 32 & 40 & 28 & 20 \\ \hline
-\end{tabular}
-\end{table}
+     \item
+	  \textbf{It is observed that 50\% of mails are spam. A software filters spam mail before reaching the inbox. Its accuracy for detecting a spam mail is 99\% and chances of tagging a non-spam mail as spam mail is 5\%.} 
   
   \begin{enumerate}
     \item
-	What is the formula of classical probability? \hfill 1
+	What is a disjoint event? \hfill 1
     \item
-	Explain the difference between Priori Approach and Empirical Approach of probability. \hfill 2
+	For two independent events, what does the Bayes' theorem reduce to? \hfill 2
     \item  
-	What is the probability that less than 2 defective items would be produced on a particular day? \hfill 3
+	What is the probability that a mail is tagged as spam?  \hfill 3
     \item
-	Explain the relationship between independency and mutual excluvity in the light of the stem. \hfill 4
+	If a certain mail is tagged as spam find the probability that it is not a spam mail. \hfill 4
+  \end{enumerate}
+
+ \item
+	  \textbf{Two dice are thrown together. The dice are named A and B.} 
+  
+  \begin{enumerate}
+    \item
+	What is P(A=7)? \hfill 1
+    \item
+	Create the sample space. \hfill 2
+    \item  
+	What is the probability that the outcomes of A \& B are different? \hfill 3
+    \item
+	Determine the probability that the summation of outcome of two dice is a prime number. \hfill 4
+  \end{enumerate}
+  
+   \item
+	  \textbf{$P(A) = \frac{3}{10}, P(B) = \frac 25, P(B\cup A) = \frac12$} 
+  
+  \begin{enumerate}
+    \item
+	What is an independent event? \hfill 1
+    \item
+	What is the relationship between independency and mutual excluvity? \hfill 2
+    \item  
+	Find $P(A \vert B)$ and $P(B \vert A)$ \hfill 3
+    \item
+	Verify the equality mathematically \& empirically: $P(B) = P(A) \cdot P(B \vert A) + P(\bar A) \cdot P(B \vert \bar A)$ \hfill 4
+  \end{enumerate}
+  
+  
+   \item
+	  \textbf{A magician draws two cards from a pack (i) with replacement and then (ii) without replacement. The cards were well-shuffled before drawing.} 
+  
+  \begin{enumerate}
+    \item
+	What is the probability of an impossible event? \hfill 1
+    \item
+	How to determine the probability of a joint event?  \hfill 2
+    \item  
+	As per (i), what is the probability that the cards have different color? \hfill 3
+    \item
+	As per (ii), what is the probability that the cardsare aces of same color?  \hfill 4
   \end{enumerate}
   
     \begin{center}
   \textbf{Group--B}
   \end{center}
   
+      \item
+  \textbf{The probability density function of a continuous random variable is}
 
+$$
+  f(x) =
+\begin{cases}
+kx(x-1),  & 1 \le x \le 4 \\
+0, & otherwise
+\end{cases}
+$$
 
+  \begin{enumerate}
+    \item
+	What is the range of probability? \hfill 1
+    \item
+    	Find the value of k \hfill 2
+    \item
+    	Justify the pdf property of the fucntion. \hfill 3
+     \item
+     	What is the probability that X is greater than 3?  \hfill 4
+  \end{enumerate}
+
+  
+     \item
+	  \textbf{The probability distribution of a random X is provided below:} 
+	  
+	  \begin{table}[h]
+	  \centering
+\begin{tabular}{c|ccccc}
+X & -1 & 0 & 1 & 2 & 3 \\ \hline
+P(x) & $\frac 3{20}$ & $\frac 15$ & $\frac 14$ & $\frac 14$ & $\frac 3{20}$
+\end{tabular}
+\end{table}
+  
+  \begin{enumerate}
+    \item
+	What is the expectation of a constant m? \hfill 1
+    \item
+	Find $E(X).$ \hfill 2
+    \item  
+	Find $E(Y)$, where $Y = \frac X2$  \hfill 3
+    \item
+	Find Variance of (2X+3). \hfill 4
+  \end{enumerate}
+
+  
+ \item
+	  \textbf{A deck of 52 card is well-shuffled and three cards are drawn from them at random. The number of kings obtained is denoted by x.} 
+  
+  \begin{enumerate}
+    \item
+	What are equaly likely events? \hfill 1
+    \item
+	Differentiate between with replacement and without replacement. \hfill 2
+    \item  
+	Form the probability fucntion using the above information and then form the distribution.\hfill 3
+    \item
+	Examine the statement: $P(1 \le x \le 3) = F(3)-F(1)$ \hfill 4
+  \end{enumerate}
+  
+     \item
+  \textbf{The joint probability function of two random variables X and Y is given below:}
+  
+  $\displaystyle P(X,Y) = \frac {x+2y}{16}; x = 0, 1; y = 0 ,1,2,3$
+ 
+  \begin{enumerate}
+    \item
+	Write down the formula of conditional proibability. \hfill 1
+    \item
+    	What is the relationship between marginal and joint probability? \hfill 2
+    \item
+    	Find P(X). \hfill 3
+     \item
+     	Find $P(X\vert Y)$ and $P(X\vert 0)$. \hfill 4
+  \end{enumerate}
+
+ \vspace{2.5cm}
+ 
 \begin{center}
 \textbf{\textit{“It is a capital mistake to theorize before one has data.”} – Sir Arthur Conan Doyle}
 \end{center}
