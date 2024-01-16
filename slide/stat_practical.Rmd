@@ -105,3 +105,14 @@ Construction of Box and Whisker Plot and Five Number Summary and Analyses of The
 # Time Series
 
 Determination of General Trend of Time Series and Prediction
+
+# Practice Problems
+
+
+## Freq Distr
+
+Waiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below. 
+
+
+
+`r set.seed(10) sample(40:60, 15)`
