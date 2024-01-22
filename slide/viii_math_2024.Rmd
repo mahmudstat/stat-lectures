@@ -30,9 +30,7 @@ Total Session: 10
 - Subtraction
 - Multiplication
 
-# Session 01
-
-## Concept
+# Session 01 (Concept)
 
 <img class="plain" src="img/math/binary_joke.png" width="480">
 
@@ -83,7 +81,7 @@ Groups of 4
 
 What is the use of Binary Numbers?
 
-# Session 02
+# Session 02 (Characteristics)
 
 ## Recap
 
@@ -153,9 +151,7 @@ Example
 > - 6. [Why o, 1 in Digital Machine](https://www.quora.com/Why-do-computers-understand-only-0-1-logic)
 
 
-# Session 03
-
-## Conversion 
+# Session 03 (Conversion)
 
 <img class="plain" src="img/math/dectobin.png" width="500">
 
@@ -167,7 +163,37 @@ Integer: Divide $\rightarrow$ $MSB \to LSB$
 
 Fraction: Multiply $\to LSB \to MSB$
 
-## Alternative 
+## D-B Alternative 
 
 14 $\to$
+
+## Binary to Decimal
+
+<img class="plain" src="img/math/bintodec.png" width="700">
+
+## B-D Alternative
+
+| 1 | 2 | 4 | 8 | 16 | 32 | 64 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 0 | 1 | 0 | 1 | 0 | 1 | 0 |
+
+What number do we have?
+
+## Make Number
+
+Make a binary number of your choice 
+
+Individual task
+
+| 1 | 2 | 4 | 8 | 16 | 32 | 64 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| - | - | - | - | - | - | - |
+
+## Conversion Tasks
+
+- $(976)_{10}$
+- Your CADET NO.
+- 
+
+# Session 04 (Addition)
 
