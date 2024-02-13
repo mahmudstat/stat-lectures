@@ -1,11 +1,10 @@
 ---
-title: "Statistics Practical Works"
+title: "Mathematics (VIII)"
 author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    transition: zoom
     reveal_plugins: ["chalkboard", "zoom", "menu"]
     reveal_options:
       chalkboard:
@@ -108,11 +107,8 @@ Determination of General Trend of Time Series and Prediction
 
 # Practice Problems
 
-
 ## Freq Distr
 
 Waiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below. 
-
-
 
 `r set.seed(10) sample(40:60, 15)`

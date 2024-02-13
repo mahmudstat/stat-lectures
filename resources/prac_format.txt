@@ -1,0 +1,17 @@
+\section{Title}
+\subsection{Problem}
+
+
+\subsection{Solution}
+
+\subsubsection{Theory}
+
+\subsubsection{Equipment/Tools}
+
+\subsubsection{Computation}
+
+\subsubsection{Construction}
+
+\subsubsection{Interpretation}
+
+\subsubsection{Precaution}

@@ -163,6 +163,13 @@ Integer: Divide $\rightarrow$ $MSB \to LSB$
 
 Fraction: Multiply $\to LSB \to MSB$
 
+| Multiplication | Integer | Decimal |
+|:---:|:---:|:---:|
+| 0.8125 x 2 | 1 | 0.625 |
+| 0.625 x 2 | 1 | 0.250 |
+| 0.250 x 2 | 0 | 0.50 |
+| 0.50 x 2 | 1 | - |
+
 ## D-B Alternative 
 
 14 $\to$
@@ -189,6 +196,16 @@ Individual task
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | - | - | - | - | - | - | - |
 
+## Decimal to Binary (Fraction)
+
+Keep multiplying fractional part by 2 until the product is 1.0
+
+<img class="plain" src="img/math/dec_bin_frc.png" width="900">
+
+## Binary to Decimal (Fraction)
+
+<img class="plain" src="img/math/bin_dec_frc.png" width="800">
+
 ## Conversion Tasks
 
 - $(976)_{10}$
@@ -196,4 +213,16 @@ Individual task
 - 
 
 # Session 04 (Addition)
+
+## Addition Rules
+
+<img class="plain" src="img/math/bin_add_rule.png" width="800">
+
+## Additon Example 
+
+<img class="plain" src="img/math/bin_add_exm.png" width="800">
+
+## Additon of Fraction
+
+<img class="plain" src="img/math/bin_add_frc.png" width="600">
 
