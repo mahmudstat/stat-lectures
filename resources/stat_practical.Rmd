@@ -1,0 +1,55 @@
+---
+title: "Statistics Practical"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: false
+  word_document:
+    toc: true
+    toc_depth: '3'
+documentclass: report
+geometry: margin=2cm
+---
+
+\newpage
+
+\begingroup
+\fontfamily{ppl}\fontsize{12}{16}\selectfont
+
+# Determination of Arithmetic Mean, Combined Arithmetic Mean, Geometrci Mean, and Harmonic Mean from Grouped and Ungrouped Data.
+
+# Construction of Histogram and Ogive
+
+## Problem
+
+Given below are daily wages of 30 workers in an agency. 
+
+\begin{center}
+\textbf{515, 833, 938, 511, 960, 968, 542, 842, 767, 694, 674, 955, 675, 972, 501, 987, 708, 846, 568, 721, 592, 867, 644, 966, 663, 551, 746, 942, 760, 601}
+\end{center}
+
+Draw a Histogram and an Ogive from the data and interpret.
+
+## Solution
+
+### Theory
+
+A histogram is constructed from a frequency distribution with continuous class intervals. The frequencies corresponding to different classes are shown on the axis as bars, leaving no space or gap between the bars. 
+
+# Determination of Quartiles, Deciles, and Percentiles
+
+# Solution of Different Types of Problems Using Histogram and Ogive
+
+# Determination of First Four Moments from Data
+
+# Determination of Skewness and Kurtosis and Their Types
+
+# Construction of Box \& Whisker Plot and Five Numbers Summary And Analysis of Their Properties
+
+# Determination of General Trend of Time Series and Prediction 
+
+
+\endgroup

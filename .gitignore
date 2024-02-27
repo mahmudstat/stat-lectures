@@ -2,3 +2,4 @@
 .Rproj.user
 *.gz
 *log
+*aux

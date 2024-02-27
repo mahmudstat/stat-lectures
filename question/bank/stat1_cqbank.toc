@@ -20,15 +20,17 @@
 \contentsline {section}{\numberline {4.2}Short Questions}{12}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Moments, SKewness, and Kurtosis}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Creative Questions}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Short Questions}{14}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Correlation and Regression}{15}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Creative Questions}{15}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Short Questions}{15}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Time Series}{16}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Creative Questions}{16}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Short Questions}{17}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Published Statistics in Bangladesh}{18}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Creative Questions}{18}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Short Questions}{18}{section.8.2}%
-\contentsline {chapter}{Conclusion}{19}{chapter*.2}%
+\contentsline {section}{\numberline {5.2}Short Questions}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Short Questions}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Broad Questions}{16}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Correlation and Regression}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Creative Questions}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Short Questions}{17}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Time Series}{18}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Creative Questions}{18}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Short Questions}{19}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Published Statistics in Bangladesh}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Creative Questions}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Short Questions}{20}{section.8.2}%
+\contentsline {chapter}{Conclusion}{21}{chapter*.2}%
 \contentsfinish 

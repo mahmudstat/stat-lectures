@@ -1,0 +1,84 @@
+---
+title: "Nice Math"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: false
+  word_document:
+    toc: true
+    toc_depth: '3'
+documentclass: report
+geometry: margin=2cm
+---
+
+\newpage
+
+\begingroup
+\fontfamily{ppl}\fontsize{12}{16}\selectfont
+
+# Notes
+
+## Indeterminate vs undefined
+
+When something is **undefined**, this means that there are no solutions.
+
+\[
+\frac10 = ?
+\]
+
+\[
+0 \times ? = 1
+\]
+
+Which number is to be multiplied with 0 to get 1? There is no such number. That's why $\frac10 = ?$ is undefined. 
+
+However, when something in **indeterminate**, this means that there are infinitely many solutions to the question.
+
+\[
+\frac00 = ?
+\]
+
+\[
+0 \times ? =0
+\]
+
+Which number is to be multiplied with 0 to get 0. You can multiply any number, including 0.
+There are infinite solutions. So it is indeterminate. 
+
+
+# e Alternate Expansion
+
+\[
+e = \left (1+ \frac 1n \right )^n = 1 + n \cdot \left (\frac 1n \right) + \frac{n \cdot (n-1)}{2!} \cdot \left (\frac 1n \right)^2 + \frac{n \cdot (n-1) \cdot (n-2)}{3!} \cdot \left (\frac 1n \right)^3 + \cdots + \left (\frac 1n \right)^n
+\]
+
+Then
+
+\[
+e = 1 + 1 + \frac{(1-\frac1n)}{2!} + \frac{(1-\frac1n) \cdot (1-\frac2n)}{3!} + \cdots + \frac{1}{n^n}
+\]
+
+Using limit, 
+
+\[
+ \lim_{x \to 2} \left (1+ \frac 1n \right )^n = 1 + 1 + \frac{1}{2!} + \frac{1}{3!}+ \cdots
+\]
+
+Not only is it much easier to compute the terms of this infinite series and add as many of them as we please, but the sum will approach its limiting value much faster than when computing $(1 + \frac1n)^n$ directly
+
+# Alternative to Pascal's Triangle
+
+\[
+^nC_k = \frac{n!}{k!(n-k)!}
+\]
+
+one way to understand which is in how many ways can we get k items out of n items. 
+
+A coin is tossed 4 items. We can 3 heads in $^4C_3$ ways. 
+
+HHTH or HTHH etc. 
+
+\endgroup

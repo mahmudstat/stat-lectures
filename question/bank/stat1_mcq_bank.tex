@@ -4,6 +4,7 @@
 \usepackage{ifthen}
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{multicol}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
 
@@ -174,6 +175,9 @@
 \question \textbf{A subset of a population is called--}
 \choice{Constant}{Variable}{Sample}{Scale}{c}
 
+\question \textbf{What is $\displaystyle \sum_{i=1}^n bx_i$ equal to?}
+\choice{$\displaystyle b \sum_{i=1}^n nx_i$}{$\displaystyle b \sum_{i=1}^n x_i$}{$\displaystyle \sum_{i=1}^n nx_i$}{$\displaystyle bn \sum_{i=1}^n x_i$}{b}
+
 \question \textbf{How many measurement scales are there?}
 \choice{2}{3}{4}{5}{c}
 
@@ -185,6 +189,9 @@
 
 \question \textbf{Which is a discrete variable?}
 \choice{Weight}{Amount of rainfall}{Distance}{Grade in a subject}{d}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Length of a rope}{Weight of books in a library}{Distance}{No. of particles in atoms}{d}
 
 \question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
 \choice{26}{106}{206}{216}{c}
@@ -255,6 +262,18 @@ Y & 20 & 12 & 3 & 14
 
 \question \textbf{Which type of scale of measurement are religion and blood group?}
 \choice{Interval}{Ratio}{Nominal}{Ordinal}{c}
+
+\textbf{Answer the next two questions based on the following information}
+
+\begin{center}
+$X = 20, 25, 30, 40$
+\end{center}
+
+\question \textbf{Find $\sum (X_i + 10)$}
+\choice{150}{155}{125}{250}{b}
+
+\question \textbf{$\displaystyle \sum (X_i-30)^2$}
+\choice{25}{30}{40}{35}{a}
 
 %-----------------------------------Section 2
 
@@ -354,7 +373,7 @@ Frequency & 2   & 0    & 4     & 5     & 1
 \question \textbf{Which of the following is mode?}
 \choice{4}{8}{0}{7}{b}
 
-\question \textbf{Which measure gives a value from within the values?}
+\question \textbf{Which measure always gives a value from within the values?}
 \choice{Arithmetic Mean}{Geometric Mean}{Median}{Mode}{d}
 
 \question \textbf{Which one is not a proper measure of central tendency?}
@@ -404,6 +423,9 @@ iii. Suitable for algebraic analysis
 \textbf{Which one is correct?}
 
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
+
+\question \textbf{Find the arithmetic mean: $6, 9, 12, \cdots, 84$}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
 
 \question \textbf{Arithmetic Mean of first 25 natural numbers is --}
 \choice{12}{13}{14}{26}{b}
@@ -470,10 +492,16 @@ iii. Harmonic Mean
 \question \textbf{Which data set is suitable for Geometric Mean?}
 \choice{$1,-1,2,4,6,7$}{$1,2,4,8,16,32$}{$0,1,2,3,4,6$}{$1,1,2,3,4,4,5$}{b}
 
+\question \textbf{Find geometric mean: 2, 4, 8, 16}
+\choice{6.65}{6.56}{5.66}{5.56}{c}
+
 \subsection{Mode}
 
 \question \textbf{Which of the following may be used to determine mode?}
 \choice{Histogram}{Frequency Curve}{Ogive}{Frequency Polygon}{a}
+
+\question \textbf{What is the mode the set: 7, 8, 8, 9, 9, 13, 17, 9, 8, 8}
+\choice{17}{9}{8}{Cqannot be determined}{c}
 
 \subsection{Median}
 
@@ -496,6 +524,9 @@ Frequency                                                       & 5        & 10 
 
 \question \textbf{Which one is the median class?}
 \choice{20-25}{25-50}{50-60}{60-70}{b}
+
+\question \textbf{What is the median of the following values: 4, 5, 2, 1, 8, 3}
+\choice{1.5}{2}{3.5}{4}{c}
 
 \subsection{Partition Values}
 
@@ -555,6 +586,9 @@ Frequency                                                       & 5        & 10 
 
 \question \textbf{First moment around zero is --}
 \choice{0}{1}{-1}{Arithmetic Mean}{d}
+
+\question \textbf{Which moment is equal to zero?}
+\choice{First raw moment around 1}{Second central moment}{First central moment}{Second raw moment around 0}{c}
 
 \question \textbf{Which might have a negative value?}
 \choice{$\mu_4$}{$\mu_3$}{$\mu_2'$}{$\mu_2$}{b}
@@ -640,6 +674,9 @@ iii. Frequency curve is asymmetric
 \question \textbf{For a mesokurtik distribution, $\beta_2 = --$}
 \choice{0}{-3}{3}{1}{c}
 
+\question \textbf{What is the relationship between $\gamma_2$ and $\beta_2$?}
+\choice{$\gamma_2 = \beta_2 + 3$}{$\gamma_2 = 2\beta_2 - 3$}{$\gamma_2 = \beta_2 - 1$}{$\gamma_2 = \beta_2 - 3$}{d}
+
 \subsection{Misc}
 
 \question \textbf{Which is not used in constructing Box \& Whisker Plot?}
@@ -665,8 +702,34 @@ Which one is true?
 \section{Time Series}
 %------------------------------------------------------------------------------
 
+\question \textbf{Which is the multipliative time series model?}
+\choice{$Y_t = T_t \times S_t \times C_t \times R_t$}{$Y_t = T_t \times D_t \times C_t \times R_t$}{$Y_t = T_t \times P_t \times C_t \times R_t$}{$Y_t = T_t \times G_t \times C_t \times R_t$}{a}
+
+\textbf{Answer the next two questions based on the following information}
+
+Commodity wise export shipments (In million US\$) of Frozen and live fish in Bangladesh are given below. 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c}
+Months & 2022-23 (July-Dec) & 2023-24 (Jan-Jun) & 2022-23 (July-Dec) \\ \hline
+Amount & 246.38 & 175.19 & 215.13
+\end{tabular}
+\caption{\label{usdrate}Source:\href{https://www.bb.org.bd/econdata/bop/exp_rcpt_merchandise.php}{BB} }
+\end{table}
+
+\question \textbf{Which component of time series is most evident?}
+\choice{Irregular variation}{Cyclic variation}{Trend}{Seasonal variation}{d}
+
+\question \textbf{Which value is most probable in the next period?}
+\choice{200}{190}{130}{220}{b}
+
 \question \textbf{A linear trend goes along a -- }
 \choice{a curved line}{a wave}{straight line}{circle}{a}
+
+\question \textbf{A non-linear trend goes along a --}
+\choice{a curved line}{a wave}{a cubic pattern}{Any of the above}{d}
 
 \textbf{Answer the next THREE questions based on the following information}
 
@@ -742,6 +805,9 @@ Rate & 5    & 7    & 6    & 8    & 7    & 12   & 13
 
 \question \textbf{How many models of time series are there to combine the components?}
 \choice{2}{3}{4}{5}{a}
+
+\question \textbf{Which one reflects an irregular variation?}
+\choice{Fluctuation in production due to war}{Price hike due to famine}{Rise of Temperature to drought}{Any of the above}{d}
 
 %-------------------------------------------------------------------------------
 \section{Published Statistics in Bangladesh}

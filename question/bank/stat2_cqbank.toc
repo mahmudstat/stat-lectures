@@ -12,18 +12,18 @@
 \contentsline {section}{\numberline {4.2}Short Questions}{9}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Poisson Distribution}{10}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Creative Questions}{10}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Short Questions}{10}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Normal Distribution}{11}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Creative Questions}{11}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Short Questions}{11}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Index Number}{12}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Creative Questions}{12}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Short Questions}{12}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Sampling}{13}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Creative Questions}{13}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Short Questions}{13}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Vital Statistics}{14}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Creative Questions}{14}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Short Questions}{14}{section.9.2}%
-\contentsline {chapter}{Conclusion}{15}{chapter*.2}%
+\contentsline {section}{\numberline {5.2}Short Questions}{11}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Normal Distribution}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Creative Questions}{12}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Short Questions}{12}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Index Number}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Creative Questions}{13}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Short Questions}{13}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Sampling}{14}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Creative Questions}{14}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Short Questions}{14}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Vital Statistics}{15}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Creative Questions}{15}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Short Questions}{16}{section.9.2}%
+\contentsline {chapter}{Conclusion}{17}{chapter*.2}%
 \contentsfinish 

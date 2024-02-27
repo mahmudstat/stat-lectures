@@ -1,0 +1,284 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage[legalpaper, total={177.8mm, 290mm}]{geometry}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage[table]{xcolor}
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+\begin{document}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lllll}
+\textbf{\large SYLHET CADET COLLEGE} &  &  &  &  \\ \cline{4-5} 
+FIRST TERM-END EXAMINATION - 2024 &  & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{:A} \\ \cline{4-5} 
+CLASS: XII &  &  &  &  \\ \cline{3-5} 
+MULTIPLE CHOICE QUESTIONS & \multicolumn{1}{l|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{0} \\ \cline{3-5} 
+STATISTICS FIRST PAPER &  &  &  &  \\
+TIME – 25 minutes &  &  &  &  \\
+FULL MARKS – 25 &  &  &  & 
+\end{tabular}
+\end{table}
+%  \normalfont\normalsize
+ % 11.45a.m.~--~1.45p.m.
+\hrule
+
+\begin{center}
+[N.B. – Answer all the questions. Each question carries ONE mark. Block fully, with a black ball- point pen, the circle of the letter that stands for the correct/best answer in the “Answer sheet” for the Multiple Choice Questions Examination.]\\
+
+  
+  \textbf{Candidates are asked not to leave any mark or spot on the question paper.}
+\end{center}
+\begin{questions}
+
+\question \textbf{The third axiom of probability is --}
+\choice{$0 \le P(A) \le 1$}{$P(S) = 1$}{$\displaystyle P(A_1 U A_2 U \cdots U
+A_n) = \sum_{i=1}^{\infty}P(A_i)$}{$P(A) = 1 - P(A)$}{c}
+
+\question \textbf{In how many ways can a team of 2 be formed from 4 people?}
+\choice{4}{6}{8}{12}{b}
+
+\textbf{Answer the next three questions based on the following information.}
+
+A card is drawn from of pack of playing cards.
+
+\question \textbf{What is the probability that the card is a King?}
+\choice{0.0192}{0.25}{0.5}{0.0769}{d}
+
+\question \textbf{P(The card is not from Diamonds)--}
+\choice{$\frac12$}{$0$}{$\frac34$}{$\frac14$}{c}
+
+\question \textbf{P(The card is red or Clubs)}
+\choice{$\frac14$}{$\frac12$}{$\frac23$}{$\frac34$}{d}
+
+\question \textbf{$f(x) = 2x; 0 <X<3$; What is F(3)?}
+\choice{3}{0}{1}{0}{c}
+
+\textbf{Answer the next two questions using the following information}
+
+\begin{table}[h]
+	    \centering
+\begin{tabular}{ccccccl}
+x    & 1 & 2  & 3  & 4  & 5  & 6  \\ \hline
+P(x) & k & 2k & 3k & 4k & 5k & 6k
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the value of k?}
+\choice{$\frac{7}{21}$}{$\frac{5}{21}$}{$\frac{1}{21}$}{$1$}{c}
+
+\question \textbf{What is the type of variable X?}
+\choice{Discrete}{Discrete random}{Continuous}{Continuous random}{b}
+
+\question \textbf{The example of a discrete random variable is--}
+
+i. Binomial variate 
+
+ii. Poisson variate
+
+iii. Normal variate 
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a} 
+
+
+\question \textbf{What is the expected value of of the squared deviation of the value of the random variable from their mean?}
+\choice{Arithmetic Mean}{Expectation}{Variance}{Co-variance}{c}
+
+\question \textbf{What is the minimum value of variance a random variable?}
+\choice{$-\infty$}{1}{0}{-1}{c}
+
+\question \textbf{If $y=ax+b$, what is the value of $V(y)?$}
+\choice{$aV(X)$}{$a^2V(X)$}{$V(X)$}{$a^2$}{b}
+
+\question \textbf{How many parameters are there in a binomial distribution?}
+\choice{1}{2}{3}{4}{b}
+
+\question \textbf{What is the Standard Deviation of Binomial Distribution?}
+\choice{np}{npq}{nq}{$\sqrt{npq}$}{d}
+
+\question \textbf{In a Binomial distribution, how are mean and variance related?}
+\choice{$Mean > Variance$}{$Mean < Variance$}{$Mean = Variance$}{$Mean =2 \times Variance$}{a}
+
+\textbf{Answer the next two questions based on the following information.}
+
+X is a binomial variate with expectation 4 and standard deviation $\sqrt 3$.
+
+\question \textbf{What are the values of the parameters (mean and probability)?}
+\choice{$16, \frac 14$}{$16, \frac 34$}{$15, \frac 14$}{$10, \frac 14$}{a}
+
+\question \textbf{What is $P(X \neq 0)?$}
+\choice{0}{0.01}{0.99}{1}{c}
+
+\question \textbf{Which relationship between mean and variance of Poisson Distribution is correct?}
+\choice{$Mean > Variance$}{$Mean < Variance$}{$Mean = Variance$}{$Mean \ne Variance$}{c}
+
+\question \textbf{Which one is true of the parameter (m) of Poisson Distribution?}
+\choice{$m=0$}{$m<0$}{$m>0$}{$m=1$}{c}
+
+\question \textbf{The parameter of a Poisson Distribution is 5. What is its mean?}
+\choice{2}{5}{2.24}{25}{b}
+
+\question \textbf{X is a Poisson variate. P(2) = P(4). What is the value of the parameter?}
+\choice{12}{3.46}{3.6}{4}{b}
+
+\question \textbf{What is the called the ratio of the dependent population to the earning population?}
+\choice{Dependency ratio}{Sex ration}{Population density}{Growth rate}{a}
+
+\question \textbf{What is the formula of population density?}
+\choice{$\frac{M}{F}\times 100$}{$\frac{F}{M}\times 100$}{$\frac{B}{P}\times 100$}{$\frac{P}{A}$}{d}
+
+\question \textbf{In the following data, what is the dependency ratio?}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|ccccccc}
+Age          & 0-14   & 15-24  & 25-34  & 35-44  & 45-54  & 55-64  & 65+    \\ \hline
+Populatation & 31,500 & 40,000 & 48,000 & 41,000 & 32,000 & 25,000 & 16,000
+\end{tabular}
+\end{table}
+
+\choice{35.54\%}{25.54\%}{23.24\%}{31.25\%}{b}
+
+\question \textbf{Crude Birth Rate (CBR) is:}
+\choice{$\frac BP \times 100$}{$\frac BP \times 1000$}{$\frac PB \times 100$}{$\frac FP \times 100$}{b}
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+ \vspace{2.5cm}
+
+\begin{center}
+“Without data, you’re just another person with an opinion.” - William Edwards Deming
+\end{center}
+
+\pagebreak
+%\newpage  %Uncomment to put on new age
+\bigskip
+
+\begin{multicols}{3}
+[
+Answer Key
+]
+\showallanswers % Phil Hirschorn
+\end{multicols}
+
+
+\end{document}
