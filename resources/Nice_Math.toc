@@ -1,4 +1,9 @@
 \contentsline {chapter}{Notes}{2}{chapter*.2}%
 \contentsline {section}{Indeterminate vs undefined}{2}{section*.3}%
-\contentsline {chapter}{e Alternate Expansion}{3}{chapter*.4}%
-\contentsline {chapter}{Alternative to Pascal's Triangle}{4}{chapter*.5}%
+\contentsline {chapter}{\(e^x\)}{3}{chapter*.4}%
+\contentsline {section}{\(e^x\) derivative}{3}{section*.5}%
+\contentsline {subsection}{Using series}{3}{section*.6}%
+\contentsline {subsection}{Using fundamental principle}{3}{section*.7}%
+\contentsline {subsection}{Intuitive Derivation}{3}{section*.8}%
+\contentsline {section}{e Alternate Expansion}{4}{section*.9}%
+\contentsline {chapter}{Alternative to Pascal's Triangle}{5}{chapter*.10}%
