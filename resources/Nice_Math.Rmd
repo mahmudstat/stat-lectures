@@ -50,6 +50,34 @@ There are infinite solutions. So it is indeterminate.
 
 # $e^x$
 
+## Euler Formula 
+
+\[
+{\displaystyle e^{ix}=\cos x+i\sin x,}
+\]
+
+***Proof***
+
+\[
+f(\theta) = \frac{cos \theta + isin \theta}{e^{\theta}} = e^{-i \theta}(cos \theta + isin \theta)
+\]
+
+Now, differentiating, 
+
+\[
+f'(\theta) = e^{-i \theta}(icos \theta - sin \theta) - ie^{-i \theta}(icos \theta + sin \theta) = 0
+\]
+
+Thus, $f(\theta)$ is a constant.
+
+Now, $f(0) = 1$, so $f(\theta) = 1$ for all real $\theta$, and thus 
+
+\[
+{\displaystyle e^{i \theta}=\cos \theta+i\sin \theta,}
+\]
+
+## Euler Identity
+
 ## $e^x$ derivative
 
 ### Using series
@@ -131,6 +159,8 @@ Using limit,
 \]
 
 Not only is it much easier to compute the terms of this infinite series and add as many of them as we please, but the sum will approach its limiting value much faster than when computing $(1 + \frac1n)^n$ directly
+
+...
 
 # Alternative to Pascal's Triangle
 

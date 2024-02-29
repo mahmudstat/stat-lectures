@@ -41,6 +41,51 @@ A histogram is constructed from a frequency distribution with continuous class i
 
 # Determination of Quartiles, Deciles, and Percentiles
 
+## Problem
+
+Given below are temperatures (in degree Celsius) of a city in 30 random days in a year. 
+
+\begin{center}
+33.86, 34.83, 35.59, 31.66, 26.31, 26.90, 33.10, 26.52, 35.17, 25.21, 25.28, 28.38, 29.62, 30.69, 32.72, 30.00, 30.14, 27.97, 28.45, 35.93, 33.34, 29.07, 34.00, 27.55, 34.03, 33.76, 29.48, 31.24, 33.79, 33.41
+\end{center}
+
+Find the quartiles, 4th and 7th Decile, and 35th \& 87th Percentiles from the data and interpret. 
+
+## Solution
+
+### Theory
+
+Determination of First Quartile
+
+Let n = no. of observations
+
+If n = odd
+
+Location of first quartile = $\frac{n+1}{4}$th item 
+
+Location of 2nd quartile = $\frac{2(n+1)}{4}$th item 
+
+Other quantiles are determined in the same way. 
+
+If n = even
+
+Location of first quartile = $\frac{\frac n4 th + \frac{(n+1)}4th}{2}$
+
+Location of 2nd quartile = $\frac{\frac {2n}4 th + \frac{2(n+1)}4th}{2}$
+
+Other quantiles are determined similarly. 
+
+The general formula to find the ith quantile, which divides the dataset into k parts.
+
+\[
+Q_i = \frac{i(n+1)}{k}th; \text{if n is odd}
+\]
+
+\[
+Q_i = \frac{\frac{in}{k}th+(\frac{in}{k}+1)th}{2}; \text{if n is even}
+\]
+
+
 # Solution of Different Types of Problems Using Histogram and Ogive
 
 # Determination of First Four Moments from Data
