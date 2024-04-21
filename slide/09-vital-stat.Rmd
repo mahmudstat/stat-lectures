@@ -17,6 +17,16 @@ output:
       in_header: css/header.html
 ---
 
+# Concept of Vital Statistics
+
+That branch of biometry which deals with data and laws of human mortality, morbidity, and demography.
+
+**Arthur Newsholme** $\downarrow$
+
+<blockquote>
+the whole study of mankind as affected by heredity or environment in so far as the results of this study can be arithmetically stated.
+</blockquote>
+
 # Rates & Ratios
 
 <div class="container">
@@ -38,6 +48,8 @@ output:
 </div>
 </div>
 
+## Rate vs Ratio
+
 ## Dependency Ratio 
 
 $$d = \frac{P_{0-14}+P_{65+}}{P_{15-64}}\times100$$
@@ -46,6 +58,26 @@ Where
 - $P_{0-14}$ = The no. of children aged between 0 & 14
 - $P_{65+}$ = The no. of people aged 65 or older
 - $P_{15-64}$ = The no. of people aged between 15 and 64
+
+## Sex Ratio 
+
+$SR = \frac MF \times 100$
+
+## Population Density
+
+$D = \frac PA$
+
+P = Density
+
+A = Area
+
+## Crude Birth Rate
+
+$CBR = \frac BP\times 100$
+
+B = Total no. of alive children in a year
+
+P = Average population of that region in that time
 
 # Numerical Problem
 

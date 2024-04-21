@@ -88,6 +88,21 @@ Q_i = \frac{\frac{in}{k}th+(\frac{in}{k}+1)th}{2}; \text{if n is even}
 
 # Solution of Different Types of Problems Using Histogram and Ogive
 
+## Problem 
+
+The following are the scores of 80 applicants in a screening test given by an institution. 
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+Score & 45-49 & 50-54 & 55-59 & 60-64 & 65-69 & 70-74 & 75-79 & 80-84 & 84-89 & 90-94 \\ \hline
+Frequency & 3 & 5 & 11 & 15 & 20 & 8 & 7 & 5 & 4 & 2
+\end{tabular}
+\end{table}
+
+
+i. Draw an Ogive and therefrom find $Q3, D_4, and \space P_{47}$ and interpret.
+ii. Construct a histogram from the data and find Mode. 
+
 # Determination of First Four Moments from Data
 
 # Determination of Skewness and Kurtosis and Their Types

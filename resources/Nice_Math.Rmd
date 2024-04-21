@@ -80,6 +80,8 @@ Now, $f(0) = 1$, so $f(\theta) = 1$ for all real $\theta$, and thus
 
 ## $e^x$ derivative
 
+[Source: Quora](https://www.quora.com/Can-you-prove-that-e-x-is-the-derivative-of-itself)
+
 ### Using series
 
 \[
