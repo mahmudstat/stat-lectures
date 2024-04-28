@@ -105,6 +105,54 @@ ii. Construct a histogram from the data and find Mode.
 
 # Determination of First Four Moments from Data
 
+## Problem
+
+Temperature (in degree ceslsius) in Sylhet in first 10 days in May are given below:
+
+29, 31, 30, 32, 30, 31, 28, 29, 34, 33
+
+Find the first four central moments and the corresponding raw moments around 5. 
+
+## Solution
+
+### Theory
+
+rth raw moment around a, $\displaystyle \mu_r'(a) = \frac{\sum_{i=1}^n (x_i-a)^r}{n}$
+
+If we denote $d_i = x_i - a$, then
+
+$\displaystyle \mu_r'(a) = \frac{\sum d^r}{n}$
+
+rth central moment, $\displaystyle \mu_r = \frac{\sum_{i=1}^n (x_i-\bar x)^r}{n}$
+
+#### Conversion from raw moments to central moments
+
+We can use the binomial expansion. 
+
+For the first moment, we use $(a+b)^1 = a+b$
+
+For the second moment, We use $(a+b)^2 = a^2+2ab+b^2$
+
+Similarly the subsequent moments are used to convert the origin moments. We can get the coefficients of binomial expansion from the pascal triangle.
+
+To convert an origin `a` to another origin `k`, i.e. to convert $\mu_r'(a) \space to \space \mu_r'(k)$ 
+
+we let $a^r = \mu_r'(a)$ and $b=a-k$
+
+Thus, to, for example, convert $\mu_2(5)$ to $\mu_2'(8)$ we have
+
+$b=a-k=5-8=-3$
+
+$\mu_2'(8) = \mu_2'(5) + 2\mu_1'(5)b + b^2$
+
+### Calculation
+
+Make a table
+
+### Central Moments
+
+We find using the conversion 
+
 # Determination of Skewness and Kurtosis and Their Types
 
 # Construction of Box \& Whisker Plot and Five Numbers Summary And Analysis of Their Properties

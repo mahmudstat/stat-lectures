@@ -79,6 +79,57 @@ B = Total no. of alive children in a year
 
 P = Average population of that region in that time
 
+## General Fertility Rate
+
+$\displaystyle GFR = \frac{B}{F_{15-49}}\times 1000$
+
+B = Total number of live births in a year
+
+$F_{15-49}$ = Total number of women in reproductive age group (15-49)
+
+## Age-Specific Fertility Rate
+
+$\displaystyle ASFR_i = \frac{B_i}{F_i}\times 1000$
+
+$B_i$ = Total number of live births in a year by the women in ith age group
+
+$F_i$ = No. of women in ith age group
+
+## Total Fertility Rate
+
+Total Fertility Rate (TFR) of a population is the average number of children that are born to a woman over her lifetime if:
+
+i. they were to experience the exact current age-specific fertility rates (ASFRs) through their lifetime.
+ii. they were to live from birth until the end of their reproductive life.
+
+$\displaystyle TFR = 5 \sum_{i=1}^7ASFR_i = 5 \sum_{i=1}^7 \frac{B_i}{F_i}\times 1000$
+
+5 for class interval
+
+## Gross Reproduction Rate
+
+$\displaystyle GRR = 5 \sum_{i=1}^7\frac{G_i}{F_i}\times 1000$
+
+$G_i =$ Total number of girl babies born in a year by the women in ith age group
+
+## Net Reproduction Rate
+
+$\displaystyle NRR = 5 \sum_{i=1}^7\frac{G_i}{F_i}\times S_i\times 1000$
+
+$S_i =$ Survival rate of women of reproductive age group (15-49)
+
+## Net Fertility Rate
+
+$\displaystyle NFR = 5 \sum_{i=1}^7\frac{B_i}{F_i}\times S_i\times 1000$
+
+## Implications
+
+> - GRR > 1: Number of potent women increasing
+> - GRR = 1: Number of potent women remains constant. There is no change in population
+> - NRR > 1: The number of potent women more than that of previous year; population increasing
+> - NRR = 1: No change in population
+> - GRR = NRR: No new-born girls dies before reaching last potent age
+
 # Numerical Problem
 
 ## Find CBR, GFR, ASFR, TFR, GRR, & NRR
@@ -109,14 +160,6 @@ Total population = 109,027,142
 |   40-44   |      6083     |      69750      |    34380    |                    |            0.895           |                                        |                   |                             |
 |   45-49   |      5361     |      42354      |    22462    |                    |            0.854           |                                        |                   |                             |
 </small>
-
-## Implications
-
-> - GRR > 1: Number of potent women increasing
-> - GRR = 1: Number of potent women remains constant. There is no change in population
-> - NRR > 1: The number of potent women more than that of previous year; population increasing
-> - NRR = 1: No change in population
-> - GRR = NRR: No new-born girls dies before reaching last potent age
 
 # Natural Growth Rate (NGR)
 
