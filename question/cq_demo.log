@@ -1,40 +1,40 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  2 NOV 2023 11:53
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.16)  30 APR 2024 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cq_demo.tex
-(./cq_demo.tex
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-10-23>
+**/home/mahmud/Documents/Workspace/stat-lectures/question/cq_demo.tex
+(/home/mahmud/Documents/Workspace/stat-lectures/question/cq_demo.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
+\c@part=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/mahmud/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+(/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count194
-\Gm@cntv=\count195
-\c@Gm@tempcnt=\count196
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -52,10 +52,18 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count197
+)
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (825.12991pt) is ignored.
+
+(/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
+\g__graphics_track_int=\count195
 \l__pdf_internal_box=\box51
+\g__pdf_backend_object_int=\count196
+\g__pdf_backend_annotation_int=\count197
+\g__pdf_backend_link_int=\count198
 ) (./cq_demo.aux)
 \openout1 = `cq_demo.aux'.
 
@@ -68,29 +76,34 @@ LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 10.
+(/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
+* driver: xetex
+* paper: legalpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=483.69684pt
-* \textheight=731.23582pt
+* h-part:(L,W,R)=(56.9055pt, 505.89pt, 51.4995pt)
+* v-part:(T,H,B)=(76.82243pt, 858.13513pt, 76.82243pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=505.89pt
+* \textheight=858.13513pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
+* \topmargin=-32.44756pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -108,34 +121,28 @@ LaTeX Font Info:    ... okay on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
- (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+(/home/mahmud/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/home/mahmud/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./cq_demo.aux)
+] (./cq_demo.aux)
  ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-10-23>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1151 strings out of 476364
- 19437 string characters out of 5799571
- 1935033 words of memory out of 5000000
- 23021 multiletter control sequences out of 15000+600000
- 560383 words of font info for 46 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 57i,8n,65p,156b,258s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/mahmud/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on cq_demo.pdf (2 pages, 46617 bytes).
-PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1187 strings out of 476717
+ 21032 string characters out of 5801063
+ 1924145 words of memory out of 5000000
+ 23267 multiletter control sequences out of 15000+600000
+ 559792 words of font info for 47 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 57i,9n,65p,304b,284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on cq_demo.pdf (1 page).
