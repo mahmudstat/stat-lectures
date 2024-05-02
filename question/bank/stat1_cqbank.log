@@ -1,25 +1,25 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.16)  30 APR 2024 13:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.5.2)  2 MAY 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **/home/mahmud/Documents/Workspace/stat-lectures/question/bank/stat1_cqbank.tex
 (/home/mahmud/Documents/Workspace/stat-lectures/question/bank/stat1_cqbank.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-04-11>
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count184
-\c@chapter=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -41,12 +41,11 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ) (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/lipsum/lipsum.sty (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-03-14 L3 programming layer (loader) 
+Package: expl3 2024-04-11 L3 programming layer (loader) 
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
-\g__graphics_track_int=\count193
+File: l3backend-xetex.def 2024-04-11 L3 backend support: XeTeX
+\g__graphics_track_int=\count194
 \l__pdf_internal_box=\box51
-\g__pdf_backend_object_int=\count194
 \g__pdf_backend_annotation_int=\count195
 \g__pdf_backend_link_int=\count196
 ))
@@ -302,7 +301,11 @@ Chapter 2.
 Chapter 3.
 [6
 
-] [7] [8] [9] [10] [11] [12]
+] [7] [8] [9] [10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12]
 Chapter 4.
 [13
 
@@ -343,14 +346,14 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 ] (./stat1_cqbank.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-04-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9928 strings out of 476717
- 158937 string characters out of 5801063
- 1941145 words of memory out of 5000000
- 31857 multiletter control sequences out of 15000+600000
+ 9927 strings out of 476662
+ 158912 string characters out of 5799843
+ 1941403 words of memory out of 5000000
+ 31911 multiletter control sequences out of 15000+600000
  558533 words of font info for 50 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  79i,14n,93p,495b,500s stack positions out of 10000i,1000n,20000p,200000b,200000s
