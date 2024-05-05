@@ -1,24 +1,24 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.16)  30 APR 2024 13:11
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.5.2)  5 MAY 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **/home/mahmud/Documents/Workspace/stat-lectures/question/cq_demo.tex
 (/home/mahmud/Documents/Workspace/stat-lectures/question/cq_demo.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-04-11>
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count184
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
-\c@figure=\count190
-\c@table=\count191
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -32,9 +32,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/home/mahmud/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count192
-\Gm@cntv=\count193
-\c@Gm@tempcnt=\count194
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -58,10 +58,9 @@ Package geometry Warning: Over-specification in `v'-direction.
     `height' (825.12991pt) is ignored.
 
 (/home/mahmud/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
-\g__graphics_track_int=\count195
+File: l3backend-xetex.def 2024-04-11 L3 backend support: XeTeX
+\g__graphics_track_int=\count196
 \l__pdf_internal_box=\box51
-\g__pdf_backend_object_int=\count196
 \g__pdf_backend_annotation_int=\count197
 \g__pdf_backend_link_int=\count198
 ) (./cq_demo.aux)
@@ -133,15 +132,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] (./cq_demo.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-04-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1187 strings out of 476717
- 21032 string characters out of 5801063
- 1924145 words of memory out of 5000000
- 23267 multiletter control sequences out of 15000+600000
- 559792 words of font info for 47 fonts, out of 8000000 for 9000
+ 1189 strings out of 476662
+ 21102 string characters out of 5799843
+ 1924403 words of memory out of 5000000
+ 23322 multiletter control sequences out of 15000+600000
+ 559800 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  57i,9n,65p,304b,284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
