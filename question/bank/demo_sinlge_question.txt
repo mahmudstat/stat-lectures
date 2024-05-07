@@ -20,6 +20,10 @@ MCQ
 
 \textbf{Answer the next two questions based on the following information}
 
+\begin{center}
+Statement
+\end{center}
+
 \question \textbf{Statement}
 
 i. option \\
