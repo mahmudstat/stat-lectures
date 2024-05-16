@@ -155,6 +155,26 @@ We find using the conversion
 
 # Determination of Skewness and Kurtosis and Their Types
 
+## Problem
+
+A shrimp producer wanted to get an insight into his shrimp production. To do so, he randomly collected weights of different shrimps in his farm.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c}
+Weight of shrimp (gm) & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 \\ \hline
+Frequency & 5 & 8 & 10 & 9 & 4
+\end{tabular}
+\end{table}
+
+## Solution
+
+### Theory
+
+Coefficient of skewness, $\gamma_1 = \frac{\mu_3}{\sqrt{\mu_2^3}}$
+
+Coefficient of kurtosis, $\gamma_2 = \beta_2 - 3 =  \frac{\mu_4}{\mu_2^2}-3$
+
 # Construction of Box \& Whisker Plot and Five Numbers Summary And Analysis of Their Properties
 
 # Determination of General Trend of Time Series and Prediction 

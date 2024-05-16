@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.5.2)  8 MAY 2024 10:52
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.5.2)  16 MAY 2024 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,9 +355,6 @@ Chapter 4.
 
 ]
 Chapter 5.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [10
 
 ] [11]
@@ -403,6 +400,6 @@ Here is how much of TeX's memory you used:
  32113 multiletter control sequences out of 15000+600000
  558955 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 79i,10n,93p,417b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,417b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on stat2_cqbank.pdf (20 pages).

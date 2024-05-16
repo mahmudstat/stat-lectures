@@ -1,0 +1,70 @@
+---
+title: "Statistics Practical"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: false
+  word_document:
+    toc: true
+    toc_depth: '3'
+documentclass: report
+geometry: margin=2cm
+---
+
+\newpage
+
+# Time Series
+
+## Concept of time series
+
+A time series is a collection of observations arranged chronologically (belonging to different time period, e.g., week, month, year etc.)
+
+According to the Australian Bureau of Statistics, 
+
+"A time series is a collection of observations of well-defined data items obtained through repeated measurements over time."
+
+Mathematically, a time series is $Y_t = f(t); t = t_1, t_2, \cdots, t_n$
+
+**Examples**
+
+i. No. of accidents by day
+ii. Tea production in Bangladesh by year
+
+## Components of time series
+
+a. Trend
+b. Seasonal variation
+c. Cyclic variation
+d. Irregular/random variation
+
+### Elaboration on the concepts
+
+#### Trend
+
+Increase of decrease in the values over time. There are two types of trends.
+
+i. Upward trend
+ii. Downward trend
+
+![](../slide/img/trend.png)
+
+Both types can be further divided into two kinds of trends.
+
+i. Linear trend
+ii. Non-linear trend
+
+### Seasonal variation
+
+Changes in values due to season within a year, due to climate or festival. 
+
+**Examples**
+
+i. The increase of demand of dates during Ramadan
+ii. The increase of demand of umbrella during the rainy season
+
+### Cyclic variation
+
+Recurrent upward or downward movements, when the period of cycle is greater than a year, but the period is not fixed. 
