@@ -16,6 +16,34 @@ geometry: margin=2cm
 
 \newpage
 
+## Measures of Central Tendency
+
+### Important Formulae
+
+- $M_o = 3Me - 2 \bar X$
+
+## Moments, SKewness, and Kurtosis
+
+### Problems
+
+####  Moment Conversion: -1, 5, 20, 90. 
+
+The first four moments around 2 of a data set are -1, 5, 20, 90. Determine $\mu_3$ and kurtosis. 
+
+**Solution**
+
+$\displaystyle \mu_1' = \frac {\sum_{i=1}^{n}}{n} -1$
+
+$displaystyle \Rightarrow \frac{\sum x_i}{n}-a=-1$
+
+$\Rightarrow \bar x - a = a-1$
+
+Thus, $b = a-k = a-a+1=1$
+
+Without knowing the initial origin, we can compute central moments, but not other raw moments. 
+
+
+
 # Time Series
 
 ## Concept of time series
