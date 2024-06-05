@@ -1,0 +1,27 @@
+---
+title: "Statistics Notes (II)"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: false
+  word_document:
+    toc: true
+    toc_depth: '3'
+documentclass: report
+geometry: margin=2cm
+---
+
+\newpage
+
+# Probbility
+
+## Important Terms
+
+Trial
+: A single performance of well-defined experiment 
+
+Experiment
+: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something.

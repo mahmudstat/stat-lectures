@@ -16,6 +16,19 @@ geometry: margin=2cm
 
 \newpage
 
+## Introduction
+
+### Important Terms
+
+Population
+: A collection of similar items of interest.
+
+Sample
+: Any subset of a population
+
+Good sample
+: A sample which is representative of the population 
+
 ## Measures of Central Tendency
 
 ### Important Formulae
@@ -96,3 +109,9 @@ ii. The increase of demand of umbrella during the rainy season
 ### Cyclic variation
 
 Recurrent upward or downward movements, when the period of cycle is greater than a year, but the period is not fixed. 
+
+
+# Extra Resources
+
+P-value
+: 

@@ -167,6 +167,10 @@ Frequency & 5 & 8 & 10 & 9 & 4
 \end{tabular}
 \end{table}
 
+a. Estimate skewness and kurtosis of the data and interpret. 
+
+\newpage
+
 ## Solution
 
 ### Theory
@@ -177,7 +181,42 @@ Coefficient of kurtosis, $\gamma_2 = \beta_2 - 3 =  \frac{\mu_4}{\mu_2^2}-3$
 
 # Construction of Box \& Whisker Plot and Five Numbers Summary And Analysis of Their Properties
 
+## Problem
+
+In the asteroid belt in the Solar System, there are estimated to be between 1.1 and 1.9 million objects with a radius above 500 m. The radii of the 25 largest bodies are given below.
+
+\begin{center}
+990, 980, 975, 924, 831, 824, 820, 780, 750, 731 \\
+700, 700, 675, 658, 653, 609, 570, 515, 500, 466 \\
+450, 432, 409, 400, 390
+\end{center}
+
+a. Display the data on a box and whisker plot and explain.
+b. Determine the five number summary and explain.
+
+## Solution
+
+### Theory
+
+To construct the Box and Whisker plot, we need to find the following values. 
+
+$Median = \frac{n+1}{2}th$ term [since n is odd]
+
+First quartile, $Q_1 = \frac{n+1}{4}th$ term 
+
+Third quartile, $Q_3 = \frac{3(n+1)}{4}th$ term 
+
+We also need to find the inner and outer fences using the Interquartile range (IQR)
+
+$IQR = Q_3 - Q_1$
+
+Inner fence: $Q_1 - 1.5 \times IQR$ and $Q_3 + 1.5 \times IQR$
+
+Outer fence: $Q_1 - 3 \times IQR$ and $Q_3 + 3 \times IQR$
+
 # Determination of General Trend of Time Series and Prediction 
+
+# Exercises
 
 
 \endgroup
