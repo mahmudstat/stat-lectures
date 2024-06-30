@@ -1,0 +1,80 @@
+---
+title: "Statistics Notes (II)"
+format:
+  pdf:
+    toc: true
+    toc-title: Contents
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+---
+
+\newpage
+
+# Probbility
+
+## Important Terms
+
+Trial
+: A single performance of well-defined experiment 
+
+Experiment
+: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something.
+
+## Permutaion and Combination
+
+Permutaion is all about arranging items, while combination is used to find the ways to to select items. 
+
+If we have 3 items A, B, and C; we can arrange them in the following way. 
+
+- ABC
+- ACB
+- BAC
+- BCA
+- CAB
+- CBA
+
+There are 6 possible ways to arrange 3 items in 3 positions. 
+
+Thinking another way, there are 3 positions and 3 items. The first position can be filled up in 3 ways (A or B or C), the second in 2 ways (after one item is fixed in the first position, be it A or B, or C), and the third in 1 way. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Position & 1 & 2 & 3 \\ \hline
+Possible options & 3 & 2 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+Mathematically, this is also written as 3! (3 factorial), which is nothing but $3 \times 2 \times 1 = 6$
+
+Similarly, if we have 4 items to arrange in 4 places, we can write:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|l|}
+\hline
+Position & 1 & 2 & 3 & 4 \\ \hline
+Possible options & 4 & 3 & 2 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+Thus we can arrange this in $4 \times 3 \times 2 \times 1 = 4! = 24$ ways. 
+
+Now, what if want to arrange 2 items out of 4 items. In this case we have 2 places, but 4 items. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Position & 1 & 2 \\ \hline
+Possible options & 4 & 3 \\ \hline
+\end{tabular}
+\end{table}
+
+We get $4 \times 3 = 12$ ways. 
+
+This is also written as $^4P_2 = 12$ (shown below)
+
+$^nP_r = \frac{n!}{(n-p)!}$
