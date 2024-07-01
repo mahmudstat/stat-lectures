@@ -21,75 +21,9 @@ Trial
 : A single performance of well-defined experiment 
 
 Experiment
-: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something. or *An act that can be repeated under some specific condition.*
-
-Random variable
-: A variable whose values are associated with probability.
-
-Sample space
-: Set of all possible outcomes of a random experiment
-
-Sample point
-: Each outcome of a sample space
-
-Event
-: Any subset of a sample space
-
-Simple event
-: An event having a single outcome
-
-Compound/Composite event
-: An event having more than one outcome
-
-Impossible event
-: An event which cannot happen (If P(A) = 0, then A is an impossible event)
-
-Certain event
-: An event which surely will or will not happen. (P(A) = 0 or 1)
-
-Uncertain event
-: An event which may or may not happen ($0 < P(A) < 1$)
-
-Mutually Exclusive Event
-: Events that cannot occur together. If $S = {1,2,3,4}, A = {1,3} \& C = {4}$ then A \& B are mutually exclusive. 
-
-Independent Event
-: Events that do not affect each other. 
-
-Complementary event
-: Non-occurence of an event. $P(\bar A) = 1 - P(A)$, where $\bar A$ or $A'$ or $A^c$ is called complement of A. 
-
-Exhaustive event
-: Events whose union is equal to the sample space of the experiment (all outcomes are considered)
-
-Equally likely events
-: Events having same probability. If $S = {1,2,3}, P(1) = P(2) = P(3) = 1/3$, here 1, 2, and 3 are equally likely. One way for them not to be equally likely is: $P(1) = 1/2, P(2) = 1/5, P(3) = 1/4$
+: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something.
 
 ### Set Theory
-
-NB: This is far from a comprehensive discussion of the set theory. 
-
-#### Set Operations
-
-Suppose, $A = {1,3,4}$ and $B = {3,4,5}$
-
-- Union: A or B $\Rightarrow A\cup B = {1,3,4,5}$
-- Intersection: A \& B $\Rightarrow A \cap B = {3,4}$
-- Difference: $A - B = {1}$
-
-#### Laws of Set
-
-a. Cumulative law: $A \cup B = B \cup A$ and $A \cap B = B \cap A$
-b. Associative law: $A \cup (B \cup C) = (A \cup B) \cup C$
-c. Distribution law: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ and $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
-d. De Morgan's law: 
-
-    i. $(A \cup B)' = A' \cap B'$
-    ii. $(A \cap B)' = A' \cup B'$
-
-**Verify De Morgan's law**
-
-S = {1, 2, 6, 8}; A = {1,4}; B = {2,6}
 
 ### Permutaion
 
@@ -150,7 +84,7 @@ We get $4 \times 3 = 12$ ways.
 
 This is also written as $^4P_2 = 12$ (shown below)
 
-$$^nP_r = \frac{n!}{(n-r)!}$$
+$$^nP_r = \frac{n!}{(n-p)!}$$
 
 #### Repeating Items 
 
@@ -231,33 +165,60 @@ Say, S is sample space and $A_i$ is an event
 
 ## Probability Theorems
 
-1. If A and B are mutually exclusive, $P(A \cup B) = P(A) + P(B)$. The law holds for more than 2 events as well, so $P(A \cup B \cup C) = P(A) + P(B) + P(C)$ and so on. 
-
-**Example:** $S = {1, 2, 3}; P(1 or 2) = P(1 \cup 2)$
-
-2. If A and B are not mutually exclusive, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
-3. If A and B are dependent events, $P(A \cap B) = P(A) \times P(B|A) = P(B) \times P(A|B)$
-4. If A and B are independent events, $P(A \cap B) = P(A) \times P(B)$
-
-
 - $P(A) + P(\bar A) =1$ (prove)
 - $\sum_{i=1}^k P(A_i) = 1$
 - $P(\bar A\cap \bar B) = P(\overline{A \cup B}) = 1- P(A \cup B)$ (Venn)
 - If A & B are independent, are $\bar A$ & $\bar B$ independent? (Prove by an example)
 
-## Miscellaneous Problems
+### Miscellaneous Problems
 
-#### 
+#### Leap year friday
+
+What is the probability that there are 53 Fridays in a leap year? 
+
+**Solution**
+
+In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. 
+
+The remaining two days could be:
+
+(Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7
+
+$P = \frac{2}{7}$
+
+#### Numbers 10 through 30
+
+Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is-
+
+i. a prime number
+ii. a prime number or multiple of 5
+iii. a prime number or an odd number
+iv. not a perfect square
+
+#### Product of three positive integers
+
+What is the probability that the product of three positive integers chosen from 1 through 100 is an even number?
+
+**Solution**
+
+There ar three possible cases: 
+i. All three are even
+ii. Two odd and one even number
+iii. Two even and one odd
+
+**Answer:** $P=\frac{^{50}C_3}{^{100}C_3}+2 \times \frac{^{50}C_2 \times ^{50}C_1}{^{100}C_3}$
 
 ## Coin and Die Problems
 
 ### Tree Method
 
-The sample space of a coin tossed thrice (or 3 coins tossed together) 
+The sample space if a coin is tossed thrice (or 3 coins tossed together) 
 
 ![](../img/stat/prob_tree.png)
 
-What is the general formula? [^2]
+In total, we have 8 outcomes. 
+
+**Think:** What is the general formula? [^2]
 
 ### Table of Sample Space
 
@@ -335,10 +296,9 @@ T T H T T T T H T H
 
 \end{center}
 
-If there 3 coins, then 1 head can appear in the following ways. 
+If there are 3 tosses/coins, then 1 head can appear in the following ways. 
 
-HTT THT TTH ($^3C_1= 3$)
-
+HTT THT TTH (also $^3C_1= 3$)
 
 ## Set Theory Problems 
 
