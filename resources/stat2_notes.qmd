@@ -21,7 +21,34 @@ Trial
 : A single performance of well-defined experiment 
 
 Experiment
-: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something.
+: a scientific test in which you perform a series of actions and carefully observe their effects in order to learn about something. or *An act that can be repeated under some specific condition.*
+
+Random variable
+: A variable whose values are associated with probability.
+
+Sample space
+: Set of all possible outcomes of a random experiment
+
+Sample point
+: Each outcome of a sample space
+
+Event
+: Any subset of a sample space
+
+Simple event
+: An event having a single outcome
+
+Compound/Composite event
+: An event having more than one outcome
+
+Impossible event
+: An event which cannot happen (If P(A) = 0, then A is an impossible event)
+
+Certain event
+: An event which surely will or will not happen. (P(A) = 0 or 1)
+
+Uncertain event
+: An event which may or may not happen ($0 < P(A) < 1$)
 
 ### Set Theory
 
@@ -174,7 +201,7 @@ Say, S is sample space and $A_i$ is an event
 
 ### Tree Method
 
-The sample space if a coin is tossed thrice (or 3 coins tossed together) 
+The sample space of a coin tossed thrice (or 3 coins tossed together) 
 
 ![](../img/stat/prob_tree.png)
 
@@ -184,17 +211,19 @@ What is the general formula? [^2]
 
 **A coin is tossed twice**
 
-| First Toss → Second Toss ↓ | H | T |
-|:---:|:---:|:---:|
-| H | HH | HT |
-| T | TH | TT |
+|  | First Toss →  | H | T |
+|---|---|---|---|
+| Second Toss ↓ | H | HH | HT |
+|  | T | TH | TT |
 
 **A coin is tossed thrice**
 
-| First 2 Toss → Third Toss ↓ | HH | HT | TH | TT |
-|:---:|:---:|:---:|:---:|:---:|
-| H | HHH | HHT | HTH | HTT |
-| T | THH | THT | TTH | TTT |
+|  | First 2 Toss → | HH | HT | TH | TT |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Third Toss ↓ | H | HHH | HHT | HTH | HTT |
+|  | T | THH | THT | TTH | TTT |
+
+Tables of higher order are similarly created using the combination of smaller tables. For example, the outcome of five tosses can be obtained by combining outcome of 3 tosses and that of 2 tosses. 
 
 #### DIY
 
@@ -244,13 +273,17 @@ a. there $^{10}C_3$ ways to select 3 items out of 10 items (heads)
 
 For example 
 
+\begin{center}
+
 H T H T T T T H T T 
 
 or
 
 T T H T T T T H T H
 
-If there 3 coins, then 1 head can appear as below
+\end{center}
+
+If there 3 coins, then 1 head can appear in the following ways. 
 
 HTT THT TTH ($^3C_1= 3$)
 
