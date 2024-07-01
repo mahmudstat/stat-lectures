@@ -237,12 +237,17 @@ Say, S is sample space and $A_i$ is an event
 
 2. If A and B are not mutually exclusive, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 3. If A and B are dependent events, $P(A \cap B) = P(A) \times P(B|A) = P(B) \times P(A|B)$
+4. If A and B are independent events, $P(A \cap B) = P(A) \times P(B)$
 
 
 - $P(A) + P(\bar A) =1$ (prove)
 - $\sum_{i=1}^k P(A_i) = 1$
 - $P(\bar A\cap \bar B) = P(\overline{A \cup B}) = 1- P(A \cup B)$ (Venn)
 - If A & B are independent, are $\bar A$ & $\bar B$ independent? (Prove by an example)
+
+## Miscellaneous Problems
+
+#### 
 
 ## Coin and Die Problems
 
