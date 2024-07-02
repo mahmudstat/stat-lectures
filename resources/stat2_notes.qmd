@@ -112,27 +112,27 @@ There are 6 possible ways to arrange 3 items in 3 positions.
 
 Thinking another way, there are 3 positions and 3 items. The first position can be filled up in 3 ways (A or B or C), the second in 2 ways (after one item is fixed in the first position, be it A or B, or C), and the third in 1 way. 
 
-\begin\{table\}[h]
+\begin{table}[h]
 \centering
-\begin\{tabular\}\{|c|c|c|c|\}
+\begin{tabular}{|c|c|c|c|}
 \hline
 Position & 1 & 2 & 3 \\ \hline
 Possible options & 3 & 2 & 1 \\ \hline
-\end\{tabular\}
-\end\{table\}
+\end{tabular}
+\end{table}
 
 Mathematically, this is also written as 3! (3 factorial), which is nothing but $3 \times 2 \times 1 = 6$
 
 Similarly, if we have 4 items to arrange in 4 places, we can write:
 
-\begin\{table\}[h]
+\begin{table}[h]
 \centering
-\begin\{tabular\}\{|c|c|c|c|l|\}
+\begin{tabular}{|c|c|c|c|l|}
 \hline
 Position & 1 & 2 & 3 & 4 \\ \hline
 Possible options & 4 & 3 & 2 & 1 \\ \hline
-\end\{tabular\}
-\end\{table\}
+\end{tabular}
+\end{table}
 
 Thus we can arrange this in $4 \times 3 \times 2 \times 1 = 4! = 24$ ways. 
 
@@ -141,20 +141,20 @@ Thus we can arrange this in $4 \times 3 \times 2 \times 1 = 4! = 24$ ways.
 
 Now, what if want to arrange 2 items out of 4 items. In this case we have 2 places, but 4 items. 
 
-\begin\{table\}[H]
+\begin{table}[H]
 \centering
-\begin\{tabular\}\{|c|c|c|\}
+\begin{tabular}{|c|c|c|}
 \hline
 Position & 1 & 2 \\ \hline
 Possible options & 4 & 3 \\ \hline
-\end\{tabular\}
-\end\{table\}
+\end{tabular}
+\end{table}
 
 We get $4 \times 3 = 12$ ways. 
 
 This is also written as $^4P_2 = 12$ (shown below)
 
-$$^nP_r = \frac\{n!\}\{(n-p)!\}$$
+$$^nP_r = \frac{n!}{(n-p)!}$$
 
 #### Repeating Items 
 
@@ -162,14 +162,14 @@ In the above examples, items cannot be repeated in places. In some scenario, thi
 
 However, consider using digits to make up telephone numbers. 
 
-\begin\{table\}[h]
+\begin{table}[h]
 \centering
-\begin\{tabular\}\{|c|c|c|c|c|c|c|c|\}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
 Position & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
 Possible options & 10 & 10 & 10 & 10 & 10 & 10 & 10 \\ \hline
-\end\{tabular\}
-\end\{table\}
+\end{tabular}
+\end{table}
 
 All 10 digits can be used in each position. 
 
@@ -196,7 +196,7 @@ In permutation, we had 6 ways. The reason is obvious.
 
 #### Not Using All Items
 
-$$^nC_r = \frac\{n!\}\{r!(n-r)!\}$$ 
+$$^nC_r = \frac{n!}{r!(n-r)!}$$ 
 
 
 #### Think
@@ -215,11 +215,11 @@ $$^nC_r = \frac\{n!\}\{r!(n-r)!\}$$
 
 #### Classical
 
-$$P (A) = \frac\{n(A)\}\{n(S)\}$$
+$$P (A) = \frac{n(A)}{n(S)}$$
 
 #### Relative frequency
 
-$$\lim_\{n(S) \to \infty\} \frac\{n(A)\}\{n(S)\}$$
+$$\lim_{n(S) \to \infty} \frac{n(A)}{n(S)}$$
 
 #### Axiomatic
 
@@ -230,7 +230,7 @@ Say, S is sample space and $A_i$ is an event
 - $0 \le P (A) \le 1$ <span style="color: red;">(NOT $P(A) \ge 0$)</span>
 - At least one of S will occur. P (S) = 1; Certain event. 
 - $P(A_1 U A_2 U ... U A_n)=P(A_1) + P(A_2) + ... + P(A_n)$ or  
-- $$P\left(\cup _\{i=1\}^\{\infty \}E_\{i\}\right)=\sum _\{i=1\}^\{\infty \}P(E_\{i\})$$
+- $$P\left(\cup _{i=1}^{\infty}E_{i}\right)=\sum _{i=1}^{\infty }P(E_{i})$$
 
 
 ## Probability Theorems
@@ -244,8 +244,8 @@ Say, S is sample space and $A_i$ is an event
 
 
 - $P(A) + P(\bar A) =1$ (prove)
-- $\sum_\{i=1\}^k P(A_i) = 1$
-- $P(\bar A\cap \bar B) = P(\overline\{A \cup B\}) = 1- P(A \cup B)$ (Venn)
+- $\sum_{i=1}^k P(A_i) = 1$
+- $P(\bar A\cap \bar B) = P(\overline{A \cup B}) = 1- P(A \cup B)$ (Venn)
 - If A & B are independent, are $\bar A$ & $\bar B$ independent? (Prove by an example)
 
 
@@ -263,7 +263,7 @@ The remaining two days could be:
 
 (Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7
 
-$P = \frac\{2\}\{7\}$
+$P = \frac{2}{7}$
 
 #### Numbers 10 through 30
 
@@ -285,7 +285,7 @@ i. All three are even
 ii. Two odd and one even number
 iii. Two even and one odd
 
-**Answer:** $P=\frac\{^\{50\}C_3\}\{^\{100\}C_3\}+2 \times \frac\{^\{50\}C_2 \times ^\{50\}C_1\}\{^\{100\}C_3\}$
+**Answer:** $P=\frac{^{50}C_3}{^{100}C_3}+2 \times \frac{^{50}C_2 \times ^{50}C_1}{^{100}C_3}$
 
 ## Coin and Die Problems
 
@@ -361,11 +361,11 @@ Find the probability that
 
 $$n(S) = 2^10$$   
 
-a. there $^\{10\}C_3$ ways to select 3 items out of 10 items (heads)
+a. there $^{10}C_3$ ways to select 3 items out of 10 items (heads)
 
 For example 
 
-\begin\{center\}
+\begin{center}
 
 H T H T T T T H T T 
 
@@ -373,7 +373,7 @@ or
 
 T T H T T T T H T H
 
-\end\{center\}
+\end{center}
 
 If there are 3 tosses/coins, then 1 head can appear in the following ways. 
 
