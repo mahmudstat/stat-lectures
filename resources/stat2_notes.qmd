@@ -406,6 +406,73 @@ HTT THT TTH (also $^3C_1= 3$)
 
 ## Set Theory Problems 
 
+### Newspaper reading
+
+Out of 200 People, 50 read The Observer, 40 read the Inqilab, and 10 read both. If one person is selected, what is the probability that he
+
+i. reads at least one paper
+ii. reads the Observer or the Inqilab
+i. read the Observer but not the Inqilab
+i. read the Inqilab but not the Observer
+i. reads none
+i. reads only one newspaper
+
+### Subject Selection
+
+Among 800 students, 160 fail in English, 80 in Math, and 40 in both. A student is elected at random. Find the probability that s/he
+
+i. failed in English but passed in Math
+i. passed in only one subject
+i. failed in none
+i. passed in at best one subject
+
+### Examinee
+
+An examinee answer three MCQ questions randomly. There are 4 options in each question, and the options are equally likely to be correctly answered. 
+
+Find the probability that
+
+i. The first or the third questions are correctly answered.
+i. The second and the third questions are correctly answered.
+i. All questions are correctly answered. 
+
+## When to Add or Multiply
+
+### Union-Intersection
+
+- Or $\rightarrow$ Add 
+- And $\rightarrow$ Multiply
+
+$P(A \cup B) = P(A) + P(B)$ (mutually exclusive)
+$P(A \cap B) = P(A) \times P(B)$
+
+### Complete-Incomplete
+
+- Completed events are added
+- Incomplete events are multiplied
+
+**Example**
+
+An urn contains 5 white, 4 black, and 6 red balls. Two balls are randomly drawn. What is the probability that
+
+i. the balls have same color
+ii. the balls have different color
+iii. none is black
+
+What if the balls are drawn without replacement?
+
+## With or Without Replacement
+
+If the process (with or without replacement) is not mentioned, we assume the items are drawn together, otherwise one-by-one. 
+
+**Think**
+
+a. In how many ways can we select 2 items out of 4?
+b. In how many ways can we select 2 items out of 4 
+    i. with replacement?
+    ii. without replacement?
+
+
 ## Problems: Drawing Items at Once
 
 ## Problems: Drawing Items One by One
@@ -423,6 +490,7 @@ HTT THT TTH (also $^3C_1= 3$)
 [^1]: $n^r$, where n = no. of items and r = no. of places
 [^2]: $2^n$ for a coin and $6^r$ for a die. What would be a more general formula? 
 
-## Further Reads {.appendix}
+# Further Reads {.appendix}
 
+- [Download this file](https://docs.statmania.info/resources/stat2_notes.pdf)
 - https://vrkmathsaid.weebly.com/uploads/5/1/2/1/5121151/probabilityquestionsandsolutions.pdf
