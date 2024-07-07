@@ -384,9 +384,9 @@ Find the probability that
 
 **Solution**
 
-$$n(S) = 2^10$$   
+$$n(S) = 2^{10}$$   
 
-a. there $^{10}C_3$ ways to select 3 items out of 10 items (heads)
+a. there are $^{10}C_3$ ways to select 3 items out of 10 items (heads)
 
 For example 
 
@@ -403,6 +403,22 @@ T T H T T T T H T H
 If there are 3 tosses/coins, then 1 head can appear in the following ways. 
 
 HTT THT TTH (also $^3C_1= 3$)
+
+**More Insight**
+
+Doesn't the above look like permutation, rather than combination?
+
+NO.
+
+Let's say, we have to get 1 H in 3 tosses.
+
+They could be: HTT, THT, or TTH
+
+We may select 1st, 2nd, or the 3rd item. (**consider tosses as individuals**)
+
+**3 tosses means there are 3 items to select from.** We select 1 in $^3C_1 = 3$ ways. 
+
+Similarly, if there are 10 tosses, 2 items can be selected in $^{10}C_2$ ways. 
 
 ## Set Theory Problems 
 
