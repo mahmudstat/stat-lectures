@@ -1,5 +1,6 @@
 ---
 title: "Statistics Notes (II)"
+author: "Mahmud"
 format:
   pdf:
     toc: true
