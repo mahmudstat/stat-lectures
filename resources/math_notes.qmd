@@ -1,0 +1,91 @@
+---
+title: "Math Notes (II)"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+format:
+  pdf:
+    toc: true
+    toc-title: Contents
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+---
+
+\newpage
+
+# GCD-LCM
+
+## GCD or HCF
+
+**Greatest Common Divisor/Highest Common Factor**
+
+GCD of 30 \& 40 
+
+Divisors/factors
+
+$30: 1, 2, 3, \cdots ,15$
+
+$40: 1, 2, \cdots, 20$
+
+Common factors: $1, 2, 5, \cdots$
+
+Greatest Common Factor: 
+
+### GCD of Fractions 
+
+$\frac12$ \& $\frac 13$ 
+
+$\frac12 \rightarrow \frac 12, \frac 14, \cdots$
+
+$\frac13 \rightarrow \frac 13, \frac 16, \cdots$
+
+Which ones are common?
+
+Which one is greatest?
+
+## Which fraction is greater?
+
+\begin{center}
+$$\frac1 {12}, \frac 1 {10}$$
+\end{center}
+
+Logically why?
+
+From the same amount, taking 1 part out of 12 is less than taking 1 part out of 10 parts. 
+
+Each part is less if we divide into 12 parts than into 10 parts. 
+
+### When Common Factors are Rare
+
+Find GCD
+
+$$\frac14 \text{&} \frac 3{11}$$
+
+### Formula of GCD-LCM for fractions
+
+$$GCD = \frac{\text{GCD of Numerators}}{\text{LCM of Denominators}}$$
+
+$$LCM = \frac{\text{LCM of Numerators}}{\text{GCD of Denominators}}$$
+### Difference between mulplier and divisor
+
+$$7 \times 3 = 21$$
+
+$7 \rightarrow Multiplier$
+
+$3 \rightarrow Multiplicand$
+
+$21 \rightarrow Product$
+
+$\frac{20}{4} = 5$
+
+$20 \rightarrow Dividend$
+
+$4 \rightarrow Divisor$
+
+$5 \rightarrow Quotient$ (Remainder 0)
+
+## LCM
+
+Lowest Common Multiple
+
+Find LCM of
