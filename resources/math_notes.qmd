@@ -1,7 +1,7 @@
 ---
-title: "Math Notes (II)"
+title: "Math Notes"
 author: "Abdullah Al Mahmud"
-date: "`r Sys.Date()`"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 format:
   pdf:
     toc: true
@@ -59,14 +59,16 @@ Each part is less if we divide into 12 parts than into 10 parts.
 
 Find GCD
 
-$$\frac14 \text{&} \frac 3{11}$$
+$$\frac14 \text{\&} \frac 3{11}; \frac35 \text{\&} \frac6{13}$$
+
 
 ### Formula of GCD-LCM for fractions
 
 $$GCD = \frac{\text{GCD of Numerators}}{\text{LCM of Denominators}}$$
 
 $$LCM = \frac{\text{LCM of Numerators}}{\text{GCD of Denominators}}$$
-### Difference between mulplier and divisor
+
+### Difference between Mulplier and Divisor
 
 $$7 \times 3 = 21$$
 
@@ -76,7 +78,9 @@ $3 \rightarrow Multiplicand$
 
 $21 \rightarrow Product$
 
-$\frac{20}{4} = 5$
+3 and 7 are multipliers and multiplicands of each other, but not divisors. 
+
+$$\frac{20}{4} = 5$$
 
 $20 \rightarrow Dividend$
 
@@ -88,4 +92,13 @@ $5 \rightarrow Quotient$ (Remainder 0)
 
 Lowest Common Multiple
 
-Find LCM of
+Find LCM/GCD of
+
+a. $$\frac13, \frac15$$
+b. $$\frac15, \frac16$$
+c. $$\frac13, \frac1{10}$$
+d. $$\frac16, \frac18$$
+e. $$\frac14, \frac25$$
+f. $$\frac14, \frac3{11}$$
+g. $$0.2, 0.3$$
+h. $$3, 1.25$$
