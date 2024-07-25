@@ -1,0 +1,23 @@
+---
+title: "Bangla Demo"
+author: "Abdullah Al Mahmud"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    extra_dependencies: ["graphicx", "latexbangla"]
+    latex_engine: xelatex
+    toc: true
+    toc_depth: 3
+    number_sections: false
+  word_document:
+    toc: true
+    toc_depth: '3'
+documentclass: report
+geometry: margin=2cm
+---
+
+\newpage
+
+# বই 
+
+এটা একটা টেস্ট 

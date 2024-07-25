@@ -71,6 +71,14 @@ Equally likely events
 
 ### Set Theory
 
+\begin{problem}
+Problem: Test problem
+\end{problem}
+
+\begin{proof}
+Here goes the proof.
+\end{proof}
+
 NB: This is far from a comprehensive discussion of the set theory. 
 
 #### Set Operations
@@ -507,7 +515,25 @@ b. In how many ways can we select 2 items out of 4
 [^1]: $n^r$, where n = no. of items and r = no. of places
 [^2]: $2^n$ for a coin and $6^r$ for a die. What would be a more general formula? 
 
-# Further Reads {.appendix}
+# Further Reading {.appendix}
 
 - [Download this file](https://docs.statmania.info/resources/stat2_notes.pdf)
 - https://vrkmathsaid.weebly.com/uploads/5/1/2/1/5121151/probabilityquestionsandsolutions.pdf
+
+
+# Random Variable and Probability Distribution 
+
+## Concepts
+
+A **random variable** is variable which is associated with probability.
+
+A probability distribution shows how the probability is distributed among the possible values or outcomes. It gives us a patter of the data. 
+
+- Recall a histogram
+- We could plot relative frequencies instead of frequencies
+- relative frequencies are nothing but probabilities
+
+**Example:**
+
+### Examples of distribution
+
