@@ -4,6 +4,8 @@ author: "Mahmud"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 format:
   pdf:
+    includes:
+            in_header: problem_counter.sty
     toc: true
     toc-title: Contents
     number-sections: true
@@ -15,6 +17,14 @@ format:
 \newpage
 
 # Probbility
+
+
+\Problem This is the problem statement in multiple line. This is the
+problem statement in multiple line. This is the problem statement in
+multiple line.
+
+\TheSolution This is the solution of the problem. When there is only on
+solution, there is no need to numbering.
 
 ## Important Concepts
 
