@@ -230,8 +230,7 @@ In permutation, we had 6 ways. The reason is obvious.
 
 #### Not Using All Items
 
-$$^nC_r = \frac{n!}{r!(n-r)!}$$ 
-
+$^nC_r = \frac{n!}{r!(n-r)!}$
 
 #### Think
 
