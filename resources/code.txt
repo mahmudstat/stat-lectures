@@ -1,0 +1,23 @@
+List
+
+\begin{itemize}
+  \item Item
+  \item Item
+  \item Item
+\end{itemize}
+
+Ordered
+
+\begin{enumerate}
+  \item Item
+  \item Item
+  \item Item
+\end{enumerate}
+
+Definition
+
+\begin{worddefs}
+
+  \item[Term.] Def
+
+\end{worddefs}
