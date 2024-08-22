@@ -21,3 +21,11 @@ Definition
   \item[Term.] Def
 
 \end{worddefs}
+
+
+\Problem This is the problem statement in multiple line. This is the
+problem statement in multiple line. This is the problem statement in
+multiple line.
+
+\TheSolution This is the solution of the problem. When there is only on
+solution, there is no need to numbering.
