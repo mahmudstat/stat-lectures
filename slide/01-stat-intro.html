@@ -450,7 +450,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | docs.statmania.info | </p>
     </div>
-    <script src="libs/header-attrs-2.24/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
     <link href="libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
     <link href="libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 </head>
@@ -696,8 +696,8 @@ href="https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale">here</a
 <li class="fragment"><span class="math inline">\(y_1 = x_1-a \space or
 \space x_1+a\)</span></li>
 <li class="fragment">Scale shift: Multiplying/Division</li>
-<li class="fragment"><span class="math inline">\(y_1 = b \cdot x_1
-\space or \space x_1/b\)</span></li>
+<li class="fragment"><span class="math inline">\(y_1 = b \cdot
+x_1  \space or \space x_1/b\)</span></li>
 <li class="fragment">both: <span class="math inline">\(y_i =
 \frac{x_i-a}{b}\)</span></li>
 </ul>
@@ -768,7 +768,7 @@ x_i)(\prod_{i=1}^k y_i)\]</span></p>
 <h2>Theorem 08: <span class="math inline">\(\Sigma \Sigma
 (x_i+y_j)\)</span></h2>
 <p><small></p>
-<p><span class="math inline">\(\displaystyle \sum_{i=1}^m \sum_{j=1}^n
+<p><span class="math inline">\(\displaystyle  \sum_{i=1}^m \sum_{j=1}^n
 (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(\displaystyle
@@ -798,6 +798,25 @@ x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)\)</span></p>
 \sum_{i=1}^m x_i(y_1+y_2+\cdots+y_n)\)</span></li>
 <li class="fragment"><span class="math inline">\(\displaystyle
 \sum_{i=1}^m x_i \sum_{i=1}^n y_i\)</span></li>
+</ul>
+</section>
+<section id="theorem-sigma-sigma-x_iy_j-1" class="slide level2">
+<h2>Theorem: <span class="math inline">\(\Sigma \Sigma
+(X_i+Y_j)\)</span></h2>
+<p><span class="math inline">\(\displaystyle \sum_{i=1}^n \sum_{j=1}^m
+(x_i + y_j) = m \sum_{i=1}^n x_i + n \sum_{i=1}^m y_j\)</span></p>
+<ul>
+<li class="fragment">L.H.S = <span class="math inline">\(\displaystyle
+\sum_{i=1}^n (x_i + y_1 + x_i + y_2 + \cdots +x_i + y_m)\)</span></li>
+</ul>
+<ul>
+<li class="fragment">= <span class="math inline">\(\displaystyle
+\sum_{i=1}^n mx_i + (y_1 + y_2 + y_m) = \sum_{i=1}^n (mx_i +
+\sum_{j=1}^m y_j)\)</span></li>
+</ul>
+<ul>
+<li class="fragment">Now expand <span
+class="math inline">\(\displaystyle \sum_{i=1}^n mx_i\)</span></li>
 </ul>
 </section>
 <section id="problem--01" class="slide level2">
