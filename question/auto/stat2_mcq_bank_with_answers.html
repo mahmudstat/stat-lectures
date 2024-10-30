@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Question Bank</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        #quiz-container {
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #000;
+        }
+        header {
+            margin-bottom: 10px;
+            text-align: center; /* Center align header */
+        }
+        .instructions {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question-title {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .option-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+        .answer {
+            font-size: 13px;
+            color: #006400;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <header>
+            <h1>Statistics Question Bank</h1>
+            <p>Second Paper</p>
+            <p>Compiled by: Abdullah Al Mahmud</p>
+            <p><a href="https://www.thinkermahmud.com" target="_blank">www.thinkermahmud.com</a></p>
+        </header>
+        <div id="questions-section"></div>
+    </div>
+
+    <script>
+        function parseCSV(data) {
+            const lines = data.split('\n').map(line => {
+                const match = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+                return match ? match.map(cell => cell.replace(/^"|"$/g, '')) : [];
+            });
+            const headers = lines[0];
+            const questions = lines.slice(1).map(line => {
+                const questionObj = {};
+                headers.forEach((header, index) => {
+                    questionObj[header.trim()] = line[index]?.trim();
+                });
+                return questionObj;
+            });
+            return questions.filter(q => q.Question);
+        }
+
+        function displayQuestions(questions) {
+            const container = document.getElementById('questions-section');
+            container.innerHTML = '';
+
+            questions.forEach((q, index) => {
+                const answerOption = q.Answer; // This is the correct option number (1-4)
+                const answerText = q[`Option${answerOption}`]; // Correctly access the answer option text
+
+                console.log(`Q${index + 1}: ${q.Question}`); // Debugging line
+                console.log(`Answer option: ${answerOption}`); // Debugging line
+                console.log(`Answer text: ${answerText}`); // Debugging line
+
+                const questionDiv = document.createElement('div');
+                questionDiv.innerHTML = `
+                    <h3 class="question-title">Q${index + 1}. ${q.Question}</h3>
+                    <div class="option-list">
+                        <span>A) ${q.Option1}</span>
+                        <span>B) ${q.Option2}</span>
+                        <span>C) ${q.Option3}</span>
+                        <span>D) ${q.Option4}</span>
+                    </div>
+                    <div class="answer">Answer: ${answerText || 'Not available'}</div>
+                `;
+                container.appendChild(questionDiv);
+            });
+
+            MathJax.typeset();
+        }
+
+        async function fetchCSV() {
+            const response = await fetch('stat.csv');
+            const text = await response.text();
+            const questions = parseCSV(text);
+            displayQuestions(questions);
+        }
+
+        window.onload = fetchCSV;
+    </script>
+</body>
+</html>
