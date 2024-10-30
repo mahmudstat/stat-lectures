@@ -25,14 +25,13 @@
         }
         header {
             text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #ccc;
+            margin-bottom: 5px;
             padding-bottom: 10px;
         }
         header h1 {
             font-size: 24px;
             margin: 0;
-            color: #333;
+            color: #007bff; /* Same color as the Select button */
         }
         header p {
             margin: 3px 0;
@@ -60,13 +59,21 @@
             font-weight: bold;
             margin-top: 5px;
         }
-        .pagination, .filter-section {
+        .filter-section {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #e8f0fe; /* Non-white background for pagination box */
         }
-        .pagination select, .filter-section select {
+        .pagination {
+            display: flex;
+            align-items: center;
+        }
+        .pagination select {
             margin: 0 10px;
             padding: 5px;
             font-size: 14px;
@@ -88,12 +95,11 @@
         .filter-section label {
             margin-right: 10px;
         }
-        .divider {
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
-        }
         .pagination > * {
             margin-right: 1mm; /* Add gap after Next button */
+        }
+        .select-gap {
+            margin-left: 4mm; /* Set gap between Next button and Select text */
         }
     </style>
 </head>
@@ -117,14 +123,13 @@
                 </select>
                 <button id="next-button" onclick="changePage(1)">Next</button>
             </div>
-            <div>
+            <div class="select-gap">
                 <label for="topic-select">Select Topic:</label>
                 <select id="topic-select">
                     <option value="All">All</option>
                 </select>
             </div>
         </div>
-        <div class="divider"></div>
         <div id="questions-section"></div>
     </div>
 
