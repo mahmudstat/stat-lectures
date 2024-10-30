@@ -14,55 +14,57 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 20px; /* Added padding for small screens */
         }
         #quiz-container {
-            width: 80%;
+            width: 100%;
             max-width: 800px;
             padding: 20px;
             background-color: #f8f8f8;
             border: 1px solid #000;
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better appearance */
         }
         header {
             text-align: center;
             margin-bottom: 5px;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
         header h1 {
-            font-size: 24px;
+            font-size: 25px; /* Increased font size */
             margin: 0;
             color: #007bff; /* Same color as the Select button */
         }
         header p {
             margin: 3px 0;
-            font-size: 14px;
+            font-size: 15px; /* Increased font size */
         }
         .instructions {
-            font-size: 14px;
+            font-size: 15px; /* Increased font size */
             margin-bottom: 20px;
         }
         .question-title {
             text-align: left;
             margin-bottom: 10px;
-            font-size: 13px;
+            font-size: 14px; /* Increased font size */
         }
         .option-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin: 10px 0;
-            font-size: 13px;
+            font-size: 14px; /* Increased font size */
         }
         .answer {
-            font-size: 13px;
+            font-size: 14px; /* Increased font size */
             color: #006400;
             font-weight: bold;
             margin-top: 5px;
         }
         .filter-section {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Changed to column for responsiveness */
+            align-items: center; /* Center align items */
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
@@ -72,34 +74,45 @@
         .pagination {
             display: flex;
             align-items: center;
+            justify-content: center; /* Center align pagination buttons */
+            margin-bottom: 10px; /* Added margin below pagination */
         }
-        .pagination select {
-            margin: 0 10px;
-            padding: 5px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+        .pagination select,
         .pagination button {
             padding: 5px 10px;
-            font-size: 14px;
+            font-size: 15px; /* Increased font size */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 5px; /* Space between elements */
+        }
+        .pagination button {
             background-color: #007bff;
             color: white;
-            border: none;
-            border-radius: 5px;
             cursor: pointer;
         }
         .pagination button:hover {
             background-color: #0056b3;
         }
-        .filter-section label {
-            margin-right: 10px;
+        .select-topic {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center align */
         }
-        .pagination > * {
-            margin-right: 1mm; /* Add gap after Next button */
+        .select-topic select {
+            margin: 0 10px;
         }
-        .select-gap {
-            margin-left: 4mm; /* Set gap between Next button and Select text */
+        .toggle-answer {
+            padding: 5px 10px;
+            font-size: 15px; /* Increased font size */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Added margin for spacing */
+        }
+        .toggle-answer:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -123,12 +136,13 @@
                 </select>
                 <button id="next-button" onclick="changePage(1)">Next</button>
             </div>
-            <div class="select-gap">
+            <div class="select-topic">
                 <label for="topic-select">Select Topic:</label>
                 <select id="topic-select">
                     <option value="All">All</option>
                 </select>
             </div>
+            <button class="toggle-answer" onclick="toggleAnswers()">Show Answers</button> <!-- Moved button here -->
         </div>
         <div id="questions-section"></div>
     </div>
@@ -138,6 +152,7 @@
         let currentPage = 1;
         let questionsPerPage = 10;
         let availableTopics = new Set();
+        let showAnswers = false; // Track answer visibility
 
         function parseCSV(data) {
             const lines = data.split('\n').map(line => {
@@ -177,7 +192,7 @@
                         <span>C) ${q.Option3}</span>
                         <span>D) ${q.Option4}</span>
                     </div>
-                    <div class="answer">Answer: ${q.Answer}</div>
+                    <div class="answer" style="display: ${showAnswers ? 'block' : 'none'};">Answer: ${q.Answer}</div>
                 `;
                 container.appendChild(questionDiv);
             });
@@ -216,11 +231,16 @@
             displayQuestions();
         }
 
+        function toggleAnswers() {
+            showAnswers = !showAnswers;
+            document.querySelector('.toggle-answer').textContent = showAnswers ? 'Hide Answers' : 'Show Answers';
+            displayQuestions(); // Refresh questions to show/hide answers
+        }
+
         async function fetchCSV() {
             const response = await fetch('stat.csv');
-            const text = await response.text();
-            questions = parseCSV(text);
-            // Populate topic dropdown
+            const data = await response.text();
+            questions = parseCSV(data);
             const topicSelect = document.getElementById('topic-select');
             availableTopics.forEach(topic => {
                 const option = document.createElement('option');
@@ -232,8 +252,6 @@
         }
 
         window.onload = fetchCSV;
-
-        document.getElementById('topic-select').addEventListener('change', filterQuestionsByTopic);
     </script>
 </body>
 </html>
