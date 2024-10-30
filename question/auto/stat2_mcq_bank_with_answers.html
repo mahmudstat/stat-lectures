@@ -24,12 +24,7 @@
         }
         header {
             margin-bottom: 10px;
-            text-align: center; /* Center align header */
-        }
-        .instructions {
-            font-size: 14px;
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: center; /* Center align the header */
         }
         .question-title {
             text-align: left;
@@ -84,12 +79,7 @@
             container.innerHTML = '';
 
             questions.forEach((q, index) => {
-                const answerOption = q.Answer; // This is the correct option number (1-4)
-                const answerText = q[`Option${answerOption}`]; // Correctly access the answer option text
-
-                console.log(`Q${index + 1}: ${q.Question}`); // Debugging line
-                console.log(`Answer option: ${answerOption}`); // Debugging line
-                console.log(`Answer text: ${answerText}`); // Debugging line
+                const answerText = q.Answer ? q.Answer : 'Not available'; // Check if Answer exists
 
                 const questionDiv = document.createElement('div');
                 questionDiv.innerHTML = `
@@ -100,7 +90,7 @@
                         <span>C) ${q.Option3}</span>
                         <span>D) ${q.Option4}</span>
                     </div>
-                    <div class="answer">Answer: ${answerText || 'Not available'}</div>
+                    <div class="answer">Answer: ${answerText}</div>
                 `;
                 container.appendChild(questionDiv);
             });
@@ -109,7 +99,7 @@
         }
 
         async function fetchCSV() {
-            const response = await fetch('stat.csv');
+            const response = await fetch('stat.csv'); // Ensure this path is correct
             const text = await response.text();
             const questions = parseCSV(text);
             displayQuestions(questions);
