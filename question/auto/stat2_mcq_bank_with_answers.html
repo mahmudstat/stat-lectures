@@ -7,7 +7,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        body {
+                body {
             font-family: 'Times New Roman', Times, serif;
             display: flex;
             justify-content: center;
@@ -138,11 +138,11 @@
             </div>
             <div class="select-topic">
                 <label for="topic-select">Select Topic:</label>
-                <select id="topic-select">
+                <select id="topic-select" onchange="filterQuestionsByTopic()">
                     <option value="All">All</option>
                 </select>
             </div>
-            <button class="toggle-answer" onclick="toggleAnswers()">Show Answers</button> <!-- Moved button here -->
+            <button class="toggle-answer" onclick="toggleAnswers()">Show Answers</button>
         </div>
         <div id="questions-section"></div>
     </div>
@@ -152,7 +152,7 @@
         let currentPage = 1;
         let questionsPerPage = 10;
         let availableTopics = new Set();
-        let showAnswers = false; // Track answer visibility
+        let showAnswers = false;
 
         function parseCSV(data) {
             const lines = data.split('\n').map(line => {
@@ -164,7 +164,6 @@
                 const questionObj = {};
                 headers.forEach((header, index) => {
                     questionObj[header.trim()] = line[index]?.trim();
-                    // Collect unique topics
                     if (header.trim() === 'Topic') {
                         availableTopics.add(questionObj[header.trim()]);
                     }
@@ -203,10 +202,7 @@
 
         function filterByTopic(questions) {
             const selectedTopic = document.getElementById('topic-select').value;
-            if (selectedTopic === "All") {
-                return questions;
-            }
-            return questions.filter(q => q.Topic === selectedTopic);
+            return selectedTopic === "All" ? questions : questions.filter(q => q.Topic === selectedTopic);
         }
 
         function updatePagination(totalFiltered) {
@@ -222,19 +218,19 @@
 
         function updateQuestionsPerPage() {
             questionsPerPage = document.getElementById('questions-per-page').value;
-            currentPage = 1; // Reset to the first page
+            currentPage = 1;
             displayQuestions();
         }
 
         function filterQuestionsByTopic() {
-            currentPage = 1; // Reset to the first page
+            currentPage = 1;
             displayQuestions();
         }
 
         function toggleAnswers() {
             showAnswers = !showAnswers;
             document.querySelector('.toggle-answer').textContent = showAnswers ? 'Hide Answers' : 'Show Answers';
-            displayQuestions(); // Refresh questions to show/hide answers
+            displayQuestions();
         }
 
         async function fetchCSV() {
