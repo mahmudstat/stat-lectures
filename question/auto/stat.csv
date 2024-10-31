@@ -94,10 +94,17 @@ Serial,Question,Option1,Option2,Option3,Option4,Answer,Topic,Subtopic
 67,"If a variable can only take on whole numbers, such as number of pets, it is known as?", "Continuous variable", "Binary variable", "Discrete variable", "Categorical variable", "Discrete variable", "Random_Variable", "types_of_variable"
 68,"Which of the following represents a continuous variable?", "Number of students", "Shoe size", "Length of a table", "Number of books", "Length of a table", "Random_Variable", "types_of_variable"
 69,"What type of variable is 'temperature in Celsius'?", "Continuous variable", "Discrete variable", "Binary variable", "Categorical variable", "Continuous variable", "Random_Variable", "types_of_variable"
-75,"Which of the following represents the PMF for a fair six-sided die?", "P(X=x) = \( \frac{1}{6} \)", "P(X=x) = \( \frac{1}{2} \)", "P(X=x) = \( x \)", "P(X=x) = \( \frac{x}{6} \)", "P(X=x) = \( \frac{1}{6} \)", "Probability", "pmf_example"
-76,"For a discrete random variable representing the number of heads when flipping a coin twice, what is P(X=2)?", "0", "\( \frac{1}{4} \)", "\( \frac{1}{2} \)", "\( \frac{3}{4} \)", "\( \frac{1}{4} \)", "Probability", "pmf_example"
-77,"In a PMF, what must the sum of all probabilities equal?", "0", "1", "Depends on the variable", "Not defined", "1", "Probability", "pmf_example"
-78,"If a random variable X has a PMF defined as P(X=0) = \( \frac{1}{2} \), P(X=1) = \( \frac{1}{3} \), and P(X=2) = \( \frac{1}{6} \), what is P(X=1)?", "\( \frac{1}{2} \)", "\( \frac{1}{3} \)", "\( \frac{1}{6} \)", "1", "\( \frac{1}{3} \)", "Probability", "pmf_example"
-79,"Which of the following is NOT a requirement of a valid PMF?", "P(X=x) ≥ 0", "Sum of P(X=x) = 1", "P(X=x) ≤ 1", "P(X=x) = 1 for some x", "P(X=x) = 1 for some x", "Probability", "pmf_example"
+75,"Which of the following represents the PMF for a fair six-sided die?", "P(X=x) = \( \frac{1}{6} \)", "P(X=x) = \( \frac{1}{2} \)", "P(X=x) = \( x \)", "P(X=x) = \( \frac{x}{6} \)", "P(X=x) = \( \frac{1}{6} \)", "Random_Variable", "pmf_example"
+76,"For a discrete random variable representing the number of heads when flipping a coin twice, what is P(X=2)?", "0", "\( \frac{1}{4} \)", "\( \frac{1}{2} \)", "\( \frac{3}{4} \)", "\( \frac{1}{4} \)", "Random_Variable", "pmf_example"
+77,"In a PMF, what must the sum of all probabilities equal?", "0", "1", "Depends on the variable", "Not defined", "1", "Random_Variable", "pmf_example"
+78,"If a random variable X has a PMF defined as P(X=0) = \( \frac{1}{2} \), P(X=1) = \( \frac{1}{3} \), and P(X=2) = \( \frac{1}{6} \), what is P(X=1)?", "\( \frac{1}{2} \)", "\( \frac{1}{3} \)", "\( \frac{1}{6} \)", "1", "\( \frac{1}{3} \)", "Random_Variable", "pmf_example"
+79,"Which of the following is NOT a requirement of a valid PMF?", "P(X=x) ≥ 0", "Sum of P(X=x) = 1", "P(X=x) ≤ 1", "P(X=x) = 1 for some x", "P(X=x) = 1 for some x", "Random_Variable", "pmf_example"
+75,"Which of the following represents the PMF for a fair six-sided die?", "P(X=x) = \( \frac{1}{6} \)", "P(X=x) = \( \frac{1}{2} \)", "P(X=x) = \( x \)", "P(X=x) = \( \frac{x}{6} \)", "P(X=x) = \( \frac{1}{6} \)", "Random_Variable", "pmf_example"
+76,"For a discrete random variable representing the number of heads when flipping a coin twice, what is P(X=2)?", "0", "\( \frac{1}{4} \)", "\( \frac{1}{2} \)", "\( \frac{3}{4} \)", "\( \frac{1}{4} \)", "Random_Variable", "pmf_example"
+77,"In a PMF, what must the sum of all probabilities equal?", "0", "1", "Depends on the variable", "Not defined", "1", "Random_Variable", "pmf_example"
+78,"If a random variable X has a PMF defined as P(X=0) = \( \frac{1}{2} \), P(X=1) = \( \frac{1}{3} \), and P(X=2) = \( \frac{1}{6} \), what is P(X=1)?", "\( \frac{1}{2} \)", "\( \frac{1}{3} \)", "\( \frac{1}{6} \)", "1", "\( \frac{1}{3} \)", "Random_Variable", "pmf_example"
+79,"Which of the following is NOT a requirement of a valid PMF?", "P(X=x) ≥ 0", "Sum of P(X=x) = 1", "P(X=x) ≤ 1", "P(X=x) = 1 for some x", "P(X=x) = 1 for some x", "Random_Variable", "pmf_example"
+80,"Limitations of published statistics in Bangladesh are – \ni. Wrong data collection method \nii. Insufficient data \niii. Lack of proper training \nWhich one is correct?", "i and ii", "i and iii", "ii and iii", "i, ii and iii", "i, ii and iii", "Statistics", "Data Collection Limitations"
+
 
 
