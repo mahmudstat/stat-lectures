@@ -7,14 +7,14 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-                body {
+        body {
             font-family: 'Times New Roman', Times, serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Added padding for small screens */
+            padding: 20px;
         }
         #quiz-container {
             width: 100%;
@@ -23,7 +23,7 @@
             background-color: #f8f8f8;
             border: 1px solid #000;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better appearance */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
@@ -31,59 +31,59 @@
             padding-bottom: 5px;
         }
         header h1 {
-            font-size: 25px; /* Increased font size */
+            font-size: 25px;
             margin: 0;
-            color: #007bff; /* Same color as the Select button */
+            color: #007bff;
         }
         header p {
             margin: 3px 0;
-            font-size: 15px; /* Increased font size */
+            font-size: 15px;
         }
         .instructions {
-            font-size: 15px; /* Increased font size */
+            font-size: 15px;
             margin-bottom: 20px;
         }
         .question-title {
             text-align: left;
             margin-bottom: 10px;
-            font-size: 14px; /* Increased font size */
+            font-size: 14px;
         }
         .option-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin: 10px 0;
-            font-size: 14px; /* Increased font size */
+            font-size: 14px;
         }
         .answer {
-            font-size: 14px; /* Increased font size */
+            font-size: 14px;
             color: #006400;
             font-weight: bold;
             margin-top: 5px;
         }
         .filter-section {
             display: flex;
-            flex-direction: column; /* Changed to column for responsiveness */
-            align-items: center; /* Center align items */
+            flex-direction: column;
+            align-items: center;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 20px;
-            background-color: #e8f0fe; /* Non-white background for pagination box */
+            background-color: #e8f0fe;
         }
         .pagination {
             display: flex;
             align-items: center;
-            justify-content: center; /* Center align pagination buttons */
-            margin-bottom: 10px; /* Added margin below pagination */
+            justify-content: center;
+            margin-bottom: 10px;
         }
         .pagination select,
         .pagination button {
             padding: 5px 10px;
-            font-size: 15px; /* Increased font size */
+            font-size: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin: 0 5px; /* Space between elements */
+            margin: 0 5px;
         }
         .pagination button {
             background-color: #007bff;
@@ -96,20 +96,36 @@
         .select-topic {
             display: flex;
             align-items: center;
-            justify-content: center; /* Center align */
+            justify-content: center;
+            gap: 20px;
+        }
+        .select-topic label {
+            font-weight: bold;
         }
         .select-topic select {
-            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 14px;
+            color: #007bff;
+            font-weight: bold;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .select-topic select:hover {
+            background-color: #f0f8ff;
+            cursor: pointer;
         }
         .toggle-answer {
             padding: 5px 10px;
-            font-size: 15px; /* Increased font size */
+            font-size: 15px;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 10px; /* Added margin for spacing */
+            margin-top: 10px;
         }
         .toggle-answer:hover {
             background-color: #0056b3;
@@ -141,6 +157,10 @@
                 <select id="topic-select" onchange="filterQuestionsByTopic()">
                     <option value="All">All</option>
                 </select>
+                <label for="subtopic-select">Select Subtopic:</label>
+                <select id="subtopic-select" onchange="filterQuestionsBySubtopic()">
+                    <option value="All">All</option>
+                </select>
             </div>
             <button class="toggle-answer" onclick="toggleAnswers()">Show Answers</button>
         </div>
@@ -152,6 +172,7 @@
         let currentPage = 1;
         let questionsPerPage = 10;
         let availableTopics = new Set();
+        let availableSubtopics = new Set();
         let showAnswers = false;
 
         function parseCSV(data) {
@@ -164,9 +185,8 @@
                 const questionObj = {};
                 headers.forEach((header, index) => {
                     questionObj[header.trim()] = line[index]?.trim();
-                    if (header.trim() === 'Topic') {
-                        availableTopics.add(questionObj[header.trim()]);
-                    }
+                    if (header.trim() === 'Topic') availableTopics.add(questionObj[header.trim()]);
+                    if (header.trim() === 'Subtopic') availableSubtopics.add(questionObj[header.trim()]);
                 });
                 return questionObj;
             });
@@ -177,7 +197,7 @@
             const container = document.getElementById('questions-section');
             container.innerHTML = '';
 
-            const filteredQuestions = filterByTopic(questions);
+            const filteredQuestions = filterByTopicAndSubtopic(questions);
             const start = (currentPage - 1) * questionsPerPage;
             const end = questionsPerPage === 'All' ? filteredQuestions.length : start + questionsPerPage;
 
@@ -200,9 +220,13 @@
             updatePagination(filteredQuestions.length);
         }
 
-        function filterByTopic(questions) {
+        function filterByTopicAndSubtopic(questions) {
             const selectedTopic = document.getElementById('topic-select').value;
-            return selectedTopic === "All" ? questions : questions.filter(q => q.Topic === selectedTopic);
+            const selectedSubtopic = document.getElementById('subtopic-select').value;
+            return questions.filter(q =>
+                (selectedTopic === "All" || q.Topic === selectedTopic) &&
+                (selectedSubtopic === "All" || q.Subtopic === selectedSubtopic)
+            );
         }
 
         function updatePagination(totalFiltered) {
@@ -224,30 +248,48 @@
 
         function filterQuestionsByTopic() {
             currentPage = 1;
+            populateSubtopics();
+            displayQuestions();
+        }
+
+        function filterQuestionsBySubtopic() {
+            currentPage = 1;
             displayQuestions();
         }
 
         function toggleAnswers() {
             showAnswers = !showAnswers;
-            document.querySelector('.toggle-answer').textContent = showAnswers ? 'Hide Answers' : 'Show Answers';
             displayQuestions();
         }
 
-        async function fetchCSV() {
-            const response = await fetch('stat.csv');
-            const data = await response.text();
-            questions = parseCSV(data);
-            const topicSelect = document.getElementById('topic-select');
-            availableTopics.forEach(topic => {
-                const option = document.createElement('option');
-                option.value = topic;
-                option.textContent = topic;
-                topicSelect.appendChild(option);
+        function populateSubtopics() {
+            const selectedTopic = document.getElementById('topic-select').value;
+            const subtopicSelect = document.getElementById('subtopic-select');
+            subtopicSelect.innerHTML = '<option value="All">All</option>';
+
+            availableSubtopics.forEach(subtopic => {
+                if (selectedTopic === "All" || questions.some(q => q.Topic === selectedTopic && q.Subtopic === subtopic)) {
+                    const option = document.createElement('option');
+                    option.value = subtopic;
+                    option.textContent = subtopic;
+                    subtopicSelect.appendChild(option);
+                }
             });
-            displayQuestions();
         }
 
-        window.onload = fetchCSV;
+        fetch('stat.csv')
+            .then(response => response.text())
+            .then(data => {
+                questions = parseCSV(data);
+                availableTopics.forEach(topic => {
+                    const option = document.createElement('option');
+                    option.value = topic;
+                    option.textContent = topic;
+                    document.getElementById('topic-select').appendChild(option);
+                });
+                populateSubtopics();
+                displayQuestions();
+            });
     </script>
 </body>
 </html>
