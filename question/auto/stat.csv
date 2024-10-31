@@ -105,6 +105,19 @@ Serial,Question,Option1,Option2,Option3,Option4,Answer,Topic,Subtopic
 78,"If a random variable X has a PMF defined as P(X=0) = \( \frac{1}{2} \), P(X=1) = \( \frac{1}{3} \), and P(X=2) = \( \frac{1}{6} \), what is P(X=1)?", "\( \frac{1}{2} \)", "\( \frac{1}{3} \)", "\( \frac{1}{6} \)", "1", "\( \frac{1}{3} \)", "Random_Variable", "pmf_example"
 79,"Which of the following is NOT a requirement of a valid PMF?", "P(X=x) ≥ 0", "Sum of P(X=x) = 1", "P(X=x) ≤ 1", "P(X=x) = 1 for some x", "P(X=x) = 1 for some x", "Random_Variable", "pmf_example"
 80,"Limitations of published statistics in Bangladesh are – \ni. Wrong data collection method \nii. Insufficient data \niii. Lack of proper training \nWhich one is correct?", "i and ii", "i and iii", "ii and iii", "i, ii and iii", "i, ii and iii", "Statistics", "Data Collection Limitations"
+81,"Calculate \( \displaystyle \sum_{x=1}^{5} x_i \) for the values \( x_1 = 2 \), \( x_2 = 4 \), \( x_3 = 6 \), \( x_4 = 8 \), and \( x_5 = 10 \). What is the result?", "20", "30", "25", "35", "30", "Preliminaries", "Summation Symbol"
+82,"What is the value of \( \displaystyle \sum_{k=1}^{3} (3x_k + 1) \) using values \( x_1 = 2 \), \( x_2 = 3 \), and \( x_3 = 5 \)?", "28", "27", "24", "20", "28", "Preliminaries", "Summation Symbol"
+83,"Find \( \displaystyle \sum_{n=1}^{4} x_n^2 \) using values \( x_1 = 2 \), \( x_2 = 3 \), \( x_3 = 5 \), and \( x_4 = 7 \).", "75", "63", "87", "83", "87", "Preliminaries", "Summation Symbol"
+84,"What is the result of \( \displaystyle \sum_{j=1}^{3} (x_j^2 - 2x_j) \) for values \( x_1 = 3 \), \( x_2 = 4 \), and \( x_3 = 6 \)?", "6", "8", "12", "10", "6", "Preliminaries", "Summation Symbol"
+85,"Calculate \( \displaystyle \sum_{m=1}^{4} (2x_m + 3) \) using values \( x_1 = 1 \), \( x_2 = 4 \), \( x_3 = 5 \), and \( x_4 = 7 \).", "48", "47", "46", "45", "47", "Preliminaries", "Summation Symbol"
+91,"Calculate \( \displaystyle \sum_{x=1}^{4} (2x_i + 3) \) for values \( x_1 = 3 \), \( x_2 = 5 \), \( x_3 = 1 \), and \( x_4 = 4 \).", "36", "40", "38", "42", "38", "Preliminaries", "Summation Symbol"
+92,"Find \( \displaystyle \sum_{k=1}^{3} \frac{3x_k}{2} + 1 \) using values \( x_1 = 4 \), \( x_2 = 8 \), and \( x_3 = 6 \).", "25", "27", "28", "26", "27", "Preliminaries", "Summation Symbol"
+93,"What is the value of \( \displaystyle \sum_{n=1}^{5} (x_n^2 - x_n) \) for values \( x_1 = 2 \), \( x_2 = 3 \), \( x_3 = 5 \), \( x_4 = 6 \), and \( x_5 = 4 \)?", "44", "46", "48", "50", "48", "Preliminaries", "Summation Symbol"
+94,"Calculate \( \displaystyle \sum_{j=1}^{4} \left( \frac{x_j}{2} + 3x_j \right) \) for values \( x_1 = 2 \), \( x_2 = 5 \), \( x_3 = 7 \), and \( x_4 = 4 \).", "56", "58", "60", "62", "58", "Preliminaries", "Summation Symbol"
+95,"What is the result of \( \displaystyle \sum_{m=1}^{3} (4x_m^2 - 3x_m) \) using values \( x_1 = 1 \), \( x_2 = 3 \), and \( x_3 = 2 \)?", "20", "30", "26", "24", "26", "Preliminaries", "Summation Symbol"
+
+
+
 
 
 
