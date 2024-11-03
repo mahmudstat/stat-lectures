@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stat Quiz Flashcard Quiz</title>
+    <script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .flashcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 500px;
+            margin: 10px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+        }
+        .options li {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: left;
+        }
+        .options li:hover {
+            background-color: #ddd;
+        }
+        .options li.selected {
+            background-color: #d4edda;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Stat Quiz</h1>
+<div id="quizContainer"></div>
+<div id="summaryContainer" style="display: none;"></div>
+<div style="text-align: center;">
+    <button id="nextSetButton" onclick="nextSet()" class="button" style="display: none;">Next Set</button>
+    <button id="retrySetButton" onclick="retrySet()" class="button" style="display: none;">Retry This Set</button>
+</div>
+
+<script>
+    let questions = [];
+    let currentQuestionIndex = 0;
+    const questionsPerSet = 5;
+    let userAnswers = [];
+    let currentSetIndex = 0;
+
+    function parseCSV(data) {
+        return data.split('\n').map(line => {
+            const match = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+            return match ? match.map(cell => cell.replace(/^"|"$/g, '')) : [];
+        });
+    }
+
+    function loadCSVData(callback) {
+        fetch('stat.csv')
+            .then(response => response.text())
+            .then(data => {
+                const rows = parseCSV(data).slice(1); // Remove header row
+                rows.forEach(row => {
+                    if (row.length >= 6) { // Ensure there are enough columns
+                        const [question, option1, option2, option3, option4, answer, topic, subtopic] = row;
+                        questions.push({ question, options: [option1, option2, option3, option4], answer });
+                    }
+                });
+                callback();
+            });
+    }
+
+    function displayQuestion() {
+        const quizContainer = document.getElementById('quizContainer');
+        quizContainer.innerHTML = '';  // Clear previous question
+
+        // Set number display
+        const setDisplay = document.createElement('div');
+        setDisplay.innerHTML = `<strong>Set ${currentSetIndex + 1}</strong>`;
+        quizContainer.appendChild(setDisplay);
+
+        // Display current question
+        const question = questions[currentSetIndex * questionsPerSet + currentQuestionIndex];
+        const cardElement = document.createElement('div');
+        cardElement.className = 'flashcard';
+
+        const questionElem = document.createElement('div');
+        questionElem.className = 'question';
+        questionElem.innerHTML = `<strong>Q${currentQuestionIndex + 1}:</strong> ${question.question}`;
+        cardElement.appendChild(questionElem);
+
+        // Options
+        const optionsList = document.createElement('ul');
+        optionsList.className = 'options';
+        question.options.forEach((option) => {
+            const optionItem = document.createElement('li');
+            optionItem.innerText = option;
+            optionItem.onclick = () => selectOption(optionItem);  // Set onClick action
+            optionsList.appendChild(optionItem);
+        });
+        cardElement.appendChild(optionsList);
+
+        // Append card to container
+        quizContainer.appendChild(cardElement);
+
+        // Re-render MathJax after adding new content
+        if (window.MathJax) {
+            MathJax.typesetPromise();
+        }
+    }
+
+    function selectOption(optionElement) {
+        userAnswers[currentQuestionIndex] = optionElement.innerText;
+
+        // Highlight the selected option and disable other options
+        const options = optionElement.parentNode.querySelectorAll('li');
+        options.forEach(opt => opt.style.pointerEvents = 'none');  // Disable all options
+        optionElement.classList.add('selected');  // Mark selected option
+
+        // Check if all questions in the set have been answered
+        if (currentQuestionIndex < questionsPerSet - 1) {
+            currentQuestionIndex++;
+            displayQuestion();
+        } else {
+            showSummary();  // All questions answered, show summary
+        }
+    }
+
+    function showSummary() {
+        const summaryContainer = document.getElementById('summaryContainer');
+        summaryContainer.innerHTML = '';  // Clear previous summary
+
+        // Create a flashcard for the summary
+        const summaryCard = document.createElement('div');
+        summaryCard.className = 'flashcard';
+        summaryCard.innerHTML = '<div class="question"><strong>Summary of Answers:</strong></div>';
+
+        for (let i = 0; i < questionsPerSet; i++) {
+            const question = questions[currentSetIndex * questionsPerSet + i];
+            const userAnswer = userAnswers[i] ? userAnswers[i] : 'Not Answered';  // Handle empty answers
+            const correctAnswer = question.answer;
+
+            const result = document.createElement('div');
+            result.innerHTML = `
+                <div><strong>Q${(currentSetIndex * questionsPerSet + i) + 1}:</strong> ${question.question}</div>
+                <div><strong>Your Answer:</strong> ${userAnswer}</div>
+                <div><strong>Correct Answer:</strong> ${correctAnswer}</div>
+                <hr>
+            `;
+            summaryCard.appendChild(result);
+        }
+
+        summaryContainer.appendChild(summaryCard);
+        summaryContainer.style.display = 'block';
+
+        // Re-render MathJax after adding new summary content
+        if (window.MathJax) {
+            MathJax.typesetPromise();
+        }
+
+        // Show buttons
+        document.getElementById('nextSetButton').style.display = 'inline';  // Show next set button
+        document.getElementById('retrySetButton').style.display = 'inline';  // Show retry button
+        document.getElementById('quizContainer').innerHTML = '';  // Clear questions
+    }
+
+    function nextSet() {
+        currentSetIndex++;
+        currentQuestionIndex = 0;
+        userAnswers = [];  // Clear previous answers
+
+        // Clear the summary container
+        document.getElementById('summaryContainer').innerHTML = '';
+
+        if (currentSetIndex * questionsPerSet < questions.length) {
+            displayQuestion();
+            document.getElementById('nextSetButton').style.display = 'none';  // Hide next button
+            document.getElementById('retrySetButton').style.display = 'none';  // Hide retry button
+        } else {
+            document.getElementById('quizContainer').innerHTML = '<div class="summary">You have completed all sets!</div>';
+            document.getElementById('nextSetButton').style.display = 'none';  // Hide next button
+            document.getElementById('retrySetButton').style.display = 'none';  // Hide retry button
+        }
+    }
+
+    function retrySet() {
+        userAnswers = [];  // Clear previous answers for retry
+        currentQuestionIndex = 0;  // Reset question index
+        displayQuestion();
+    }
+
+    // Load data and show first question
+    loadCSVData(displayQuestion);
+</script>
+
+
+</body>
+</html>
