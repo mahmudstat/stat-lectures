@@ -170,43 +170,48 @@
         }
     }
 
-    function showSummary() {
-        const summaryContainer = document.getElementById('summaryContainer');
-        summaryContainer.innerHTML = '';  // Clear previous summary
+function showSummary() {
+    const summaryContainer = document.getElementById('summaryContainer');
+    summaryContainer.innerHTML = '';  // Clear previous summary
 
-        // Create a flashcard for the summary
-        const summaryCard = document.createElement('div');
-        summaryCard.className = 'flashcard';
-        summaryCard.innerHTML = '<div class="question"><strong>Summary of Answers:</strong></div>';
+    // Create a flashcard for the summary
+    const summaryCard = document.createElement('div');
+    summaryCard.className = 'flashcard';
+    summaryCard.innerHTML = '<div class="question"><strong>Summary of Answers:</strong></div>';
 
-        for (let i = 0; i < questionsPerSet; i++) {
-            const question = questions[currentSetIndex * questionsPerSet + i];
-            const userAnswer = userAnswers[i] ? userAnswers[i] : 'Not Answered';  // Handle empty answers
-            const correctAnswer = question.answer;
+    for (let i = 0; i < questionsPerSet; i++) {
+        const question = questions[currentSetIndex * questionsPerSet + i];
+        const userAnswer = userAnswers[i] || '';  // Handle empty answers (show blank instead of 'Not Answered')
+        const correctAnswer = question.answer;
 
-            const result = document.createElement('div');
-            result.innerHTML = `
-                <div><strong>Q${(currentSetIndex * questionsPerSet + i) + 1}:</strong> ${question.question}</div>
-                <div><strong>Your Answer:</strong> ${userAnswer}</div>
-                <div><strong>Correct Answer:</strong> ${correctAnswer}</div>
-                <hr>
-            `;
-            summaryCard.appendChild(result);
-        }
+        // Format user answer for MathJax if it contains LaTeX
+        const formattedUserAnswer = userAnswer ? `\\(${userAnswer}\\)` : '';
 
-        summaryContainer.appendChild(summaryCard);
-        summaryContainer.style.display = 'block';
-
-        // Re-render MathJax after adding new summary content
-        if (window.MathJax) {
-            MathJax.typesetPromise();
-        }
-
-        // Show buttons
-        document.getElementById('nextSetButton').style.display = 'inline';  // Show next set button
-        document.getElementById('retrySetButton').style.display = 'inline';  // Show retry button
-        document.getElementById('quizContainer').innerHTML = '';  // Clear questions
+        const result = document.createElement('div');
+        result.innerHTML = `
+            <div><strong>Q${(currentSetIndex * questionsPerSet + i) + 1}:</strong> ${question.question}</div>
+            <div><strong>Your Answer:</strong> ${formattedUserAnswer}</div>
+            <div><strong>Correct Answer:</strong> ${correctAnswer}</div>
+            <hr>
+        `;
+        summaryCard.appendChild(result);
     }
+
+    summaryContainer.appendChild(summaryCard);
+    summaryContainer.style.display = 'block';
+
+    // Re-render MathJax after adding new summary content
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
+
+    // Show buttons
+    document.getElementById('nextSetButton').style.display = 'inline';  // Show next set button
+    document.getElementById('retrySetButton').style.display = 'inline';  // Show retry button
+    document.getElementById('quizContainer').innerHTML = '';  // Clear questions
+}
+
+
 
     function nextSet() {
         currentSetIndex++;
