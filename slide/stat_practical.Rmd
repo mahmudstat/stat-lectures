@@ -1,5 +1,5 @@
 ---
-title: "Mathematics (VIII)"
+title: "Statistics Practical"
 author: Abdullah Al Mahmud
 date: \today
 output: 
