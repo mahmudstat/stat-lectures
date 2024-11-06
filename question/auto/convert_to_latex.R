@@ -26,12 +26,13 @@ convert_to_latex <- function(question, options, correct_answer) {
   correct_letter <- letters[correct_index + 1]  # letters[1] is 'a', letters[2] is 'b', etc.
   
   # Format the question in LaTeX
-  latex_question <- sprintf("\\question \\textbf{%s}\n", question)
-  latex_choices <- sprintf("\\choice{%s}{%s}{%s}{%s}{%s}\n", 
+  latex_question <- sprintf("\\question \\textbf{%s}", question)
+  latex_choices <- sprintf("\\choice{%s}{%s}{%s}{%s}{%s}", 
                            options[1], options[2], options[3], options[4], correct_letter)
   
   # Combine and return the formatted LaTeX string
   return(paste0(latex_question, latex_choices))
+  
 }
 
 # Example usage
@@ -41,7 +42,7 @@ correct_answer <- "$$ \\frac{7}{8} $$"
 
 # Call the function
 latex_output <- convert_to_latex(question, options, correct_answer)
-cat(latex_output)
+latex_output
 
 question_no = 2
 
@@ -50,6 +51,7 @@ latex_output_csv <- convert_to_latex(question = bank$Question[question_no],
                                      correct_answer = bank$Answer[question_no])
 
 latex_output_all <- c()
+
 for (i in 1:length(bank$Question)){
   latex_output_all[i] <- convert_to_latex(question = bank$Question[i],
                                        options = get_first_values(bank, i),
