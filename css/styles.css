@@ -7,7 +7,7 @@ background-image: conic-gradient(WhiteSmoke, tomato, WhiteSmoke);
 */
 
 body {
-  background-image: conic-gradient(#ffffff, #66ff66, #ffffff);
+  background-image: conic-gradient(#ffffff, green, #ffffff);
   border-radius: 0%;
     }
     
