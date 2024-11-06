@@ -281,11 +281,115 @@ Outer fence: $Q_1 - 3 \times IQR$ and $Q_3 + 3 \times IQR$
 
 # Solution of Real-world Problems Concerning Expectation and Variance
 
+## Problem
+
+A box contains 5 red and 6 white balls. 3 balls are drawn at random from the box. X denotes the number of white balls drawn. Find the probability distribution of white balls drawn, the expected number of white balls drawn and the accompanying variance. 
+
+## Solution
+
+### Theory
+
+To make the probability distribution, we need to find the probability of each outcome (in this case, number of white balls). There are 6 white balls and 11 balls in total.
+
+Thus the probability function is:
+
+$\displaystyle P(x) = \frac{^6C_x \times ?}{?}$
+
+The expectation is computed using the formula
+
+$\displaystyle E(X) = \sum_{i=1}^n x_i . p(x_i)$
+
+ANd the variance is, $\displaystyle V(X) = E(X^2) - \{E(X)\}^2$
+
+### Equipments
+
+### Computation
+
+#### The probability distribution
+
+The possible values of x are 0, 1, 2, 3
+
+| x | p(x)
+|:---:|:---:|
+|x = 0|
+
+#### The Expectation
+
+#### The Variance
+
+
+
 # Fitting Binomial Distribution with the Help of a Frequency Distribution
+
+## Problem
+
+A coin is tossed 7 times and the result obtained is presented as follows:
+
+| Number of head |0|1 |2| 3 | 4 | 5 | 6 | 7 |
+|---------------|-----------|---|--|--|--|--|--|--|
+|Frequency      |15|28|50|62|30|8|5|2|
+
+Fit the above data with the help of Binomial distribution. 
+
+## Solution
+
+### Theory
+
+Fitting a distribution involves finding the associated parameters of the distribution. 
+
+The probability function of the Binomial distribution is $P(x) = ^nC_xp^xq^{n-x}$.
+
+The expectation or mean is $E(X) = np$
+
+The mean from the observed frequency distribution is $\displaystyle \bar X = \frac{\sum f_ix_i}{n}$.
+
+### Tools
+
+### Estimation
+
+| Number of head (X) | Frequency ($f_i$) | $f_ix_i$ |
+|:------------------:|:----------------:|:--------:|
+|          0         |                  |          |
+|          1         |                  |          |
+|          2         |                  |          |
+|          3         |                  |          |
+|          4         |                  |          |
+|          5         |                  |          |
+|          6         |                  |          |
+|          7         |                  |          |
+
+Thus $\bar X =$
+
+p = 
+
+q = 
+
+P(x) = ---
+
+
 
 # Comparison of Expected and Observed Frequency of Binomial Distribution
 
+## Problem
+
+In a diagnostic center, each day 10 people are tested for High Blood Pressure. The result is summarized in the following table. 
+
+| Number of diseased people |0|1 |2| 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---------------|-----------|---|--|--|--|--|--|--|--|--|--|
+|Frequency      |10|8|12|17|19|24|15|12|10|8|5|
+
+Find the expected frequncies according to the Binomial model and compare with the
+observed frequencies with a table and a graph. 
+
 # Fitting Poisson Distribution with the Help of a Frequency Distribution
+
+A frequency distribution is given below
+
+|  Variable(X)  |  0 |  1 |  2 |  3 | 4 | 5 |
+|:-------------:|:--:|:--:|:--:|:--:|:-:|:-:|
+| Frequency (f) | 76 | 74 | 29 | 17 | 3 | 1 |
+
+Fit the above data with the help of Poisson distribution.
 
 # Comparison of Expected and Observed Frequency of Poisson Distribution
 
