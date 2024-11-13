@@ -35,6 +35,12 @@ content: url(logo2.png);
   width: 40px;
 }
 
+/* To reveal on click */
+
+#rev { 
+  cursor:pointer;
+}
+
 
 #thanks {
   padding: 100px 0;
