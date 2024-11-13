@@ -9,7 +9,7 @@ body {
  background:  radial-gradient(circle, white, white, green);
  background-image: conic-gradient(at 85% 55%, #ffff80, #0099ff, #ffff80);
   */
-  background-image: conic-gradient(at 85% 55%, #66c2ff, blue, #66c2ff);
+  background-image: conic-gradient(at 85% 55%, #33ff33, #008ae6, #33ff33);
     }
     
 span {
