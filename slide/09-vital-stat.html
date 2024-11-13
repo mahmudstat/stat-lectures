@@ -562,10 +562,10 @@ there 70 dependents for every 100 working-age people</li>
 </tbody>
 </table>
 <p>Find the Dependency Ratio and explain</p>
-<div onclick="klikaj(&#39;rad1&#39;)">
-<span>Reveal Answer</span>
+<div onclick="klikaj(&#39;drex&#39;)">
+<span style="cursor:pointer;">Reveal Answer</span>
 </div>
-<div id="rad1" style="visibility: hidden">
+<div id="drex" style="visibility: hidden">
 <p><span class="math display">\[
 \text{Dependency Ratio} = \left( \frac{\text{Youth} +
 \text{Elderly}}{\text{Working-age population}} \right) \times 100
@@ -580,9 +580,9 @@ there 70 dependents for every 100 working-age people</li>
 <h2>DR Insight</h2>
 <p>Dependency Ratios of two different cities are</p>
 <p><span class="math inline">\(d_1 = 101\%\)</span> and <span
-class="math inline">\(d_2 = 98/%\)</span></p>
+class="math inline">\(d_2 = 98\%\)</span></p>
 <ol type="i">
-<li>Which city has more dependent people than?</li>
+<li>Which city has more dependent people per 100 working people?</li>
 </ol>
 <ol start="2" type="1">
 <li>Write the interpretation of each value.</li>
@@ -615,25 +615,169 @@ Females}} \right) \times 100
 <section id="population-density" class="slide level2">
 <h2>Population Density</h2>
 <p><span class="math inline">\(D = \frac PA\)</span></p>
-<p>P = Density</p>
+<p>P = Total Population</p>
 <p>A = Area</p>
+</section>
+<section id="density-example" class="slide level2">
+<h2>Density Example</h2>
+<table>
+<thead>
+<tr class="header">
+<th>City</th>
+<th>Total Population</th>
+<th>Total Land Area (km²)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>City A</td>
+<td>1,000,000</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>City B</td>
+<td>2,500,000</td>
+<td>1,250</td>
+</tr>
+</tbody>
+</table>
+<p>Find the densities</p>
+<div onclick="klikaj(&#39;popden&#39;)">
+<span style="cursor:pointer;">Reveal Answer</span>
+</div>
+<div id="popden" style="visibility: hidden">
+<p> <span class="math display">\[
+\text{Population Density} = \frac{1,000,000}{500} = 2,000 \text{
+people/km}^2
+\]</span></p>
+<p> <span class="math display">\[
+\text{Population Density} = \frac{2,500,000}{1,250} = 2,000 \text{
+people/km}^2
+\]</span></p>
+<p>Both cities have the same population density of 2,000 people per
+square kilometer.</p>
+</div>
+</section>
+<section id="density-example-02" class="slide level2">
+<h2>Density Example 02</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">City</th>
+<th style="text-align: center;">Total Population</th>
+<th style="text-align: center;">Total Land Area (km²)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Tokyo, Japan</td>
+<td style="text-align: center;">37,435,191</td>
+<td style="text-align: center;">2,194</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">New York City, USA</td>
+<td style="text-align: center;">8,804,190</td>
+<td style="text-align: center;">783</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Mumbai, India</td>
+<td style="text-align: center;">20,667,656</td>
+<td style="text-align: center;">603</td>
+</tr>
+</tbody>
+</table>
+<div onclick="klikaj(&#39;popd2&#39;)">
+<span style="cursor:pointer;">Reveal Answer</span>
+</div>
+<div id="popd2" style="visibility: hidden">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">City</th>
+<th style="text-align: center;">Population Density (people/km²)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Tokyo, Japan</td>
+<td style="text-align: center;">17,063</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">New York City, USA</td>
+<td style="text-align: center;">11,243</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Mumbai, India</td>
+<td style="text-align: center;">34,285</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 </section>
 <section id="crude-birth-rate" class="slide level2">
 <h2>Crude Birth Rate</h2>
-<p><span class="math inline">\(CBR = \frac BP\times 100\)</span></p>
+<p><span class="math inline">\(CBR = \frac BP\times 1000\)</span></p>
 <p>B = Total no. of alive children in a year</p>
-<p>P = Average population of that region in that time</p>
+<p>P = Average/Mid-year population of that region in that time</p>
+</section>
+<section id="cbr-example" class="slide level2">
+<h2>CBR Example</h2>
+<p>If a country has 500,000 live births in a year and a mid-year
+population of 50,000,000:</p>
+<div onclick="klikaj(&#39;cbrex&#39;)">
+<span style="cursor:pointer;">Reveal Solution</span>
+</div>
+<div id="cbrex" style="visibility: hidden">
+<p><span class="math display">\[
+\text{CBR} = \left( \frac{500,000}{50,000,000} \right) \times 1,000 = 10
+\text{ births per 1,000 people}
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Explanation: There are 10 live births per 1,000
+people in the population per year.</li>
+</ul>
 </section>
 <section id="general-fertility-rate" class="slide level2">
 <h2>General Fertility Rate</h2>
+<p>GFR is used to estimate the number of live births in a year per 1,000
+women of childbearing age (typically ages 15-49)</p>
 <p><span class="math inline">\(\displaystyle GFR =
 \frac{B}{F_{15-49}}\times 1000\)</span></p>
 <p>B = Total number of live births in a year</p>
 <p><span class="math inline">\(F_{15-49}\)</span> = Total number of
 women in reproductive age group (15-49)</p>
 </section>
+<section id="gfr-example" class="slide level2">
+<h2>GFR Example</h2>
+<p>A country has:</p>
+<ul>
+<li>Number of live births in a year: 300,000</li>
+<li>Number of women aged 15-49: 10,000,000</li>
+</ul>
+<div onclick="klikaj(&#39;gfrex&#39;)">
+<span style="cursor:pointer;">Reveal Answer</span>
+</div>
+<div id="gfrex" style="visibility: hidden">
+<p><span class="math display">\[
+\text{GFR} = \left( \frac{300,000}{10,000,000} \right) \times 1,000 = 30
+\text{ births per 1,000 women}
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Therefore, the General Fertility Rate in this
+example is 30 births per 1,000 women of childbearing age.</li>
+</ul>
+</section>
 <section id="age-specific-fertility-rate" class="slide level2">
 <h2>Age-Specific Fertility Rate</h2>
+<p><strong>ASFR</strong> is used to analyze fertility patterns across
+different age groups</p>
 <p><span class="math inline">\(\displaystyle ASFR_i =
 \frac{B_i}{F_i}\times 1000\)</span></p>
 <p><span class="math inline">\(B_i\)</span> = Total number of live
@@ -655,6 +799,47 @@ life.</li>
 = 5 \sum_{i=1}^7 \frac{B_i}{F_i}\times 1000\)</span></p>
 <p>5 for class interval</p>
 </section>
+<section id="uses-of-fertility-rates" class="slide level2">
+<h2>Uses of Fertility Rates</h2>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fertility Rate</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GFR</td>
+<td>Measures fertility of women aged 15-49</td>
+</tr>
+<tr class="even">
+<td>ASFR</td>
+<td>Analyzes fertility rate specific to age groups</td>
+</tr>
+<tr class="odd">
+<td>TFR</td>
+<td>Estimates total children a woman would have</td>
+</tr>
+<tr class="even">
+<td>GRR</td>
+<td>Measures the number of daughters born to women</td>
+</tr>
+<tr class="odd">
+<td>NRR</td>
+<td>Measures net reproduction rate, accounting for mortality</td>
+</tr>
+<tr class="even">
+<td>NFR</td>
+<td>Measures fertility rate in a given population</td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="gross-reproduction-rate" class="slide level2">
 <h2>Gross Reproduction Rate</h2>
 <p><span class="math inline">\(\displaystyle GRR = 5
@@ -673,6 +858,34 @@ reproductive age group (15-49)</p>
 <h2>Net Fertility Rate</h2>
 <p><span class="math inline">\(\displaystyle NFR = 5
 \sum_{i=1}^7\frac{B_i}{F_i}\times S_i\times 1000\)</span></p>
+</section>
+<section id="grr-implications" class="slide level2">
+<h2>GRR Implications</h2>
+<ul>
+<li class="fragment">GRR = 1: Replacement level (each woman has, on
+average, one daughter).</li>
+<li class="fragment">GRR &gt; 1: More than one daughter per woman on
+average, suggesting potential population growth.</li>
+<li class="fragment">GRR &lt; 1: Fewer than one daughter per woman on
+average, indicating a population decline in the long term (if other
+factors remain constant).</li>
+</ul>
+</section>
+<section id="nrr-implications" class="slide level2">
+<h2>NRR Implications</h2>
+<ul>
+<li class="fragment">NRR = 1: The population is at replacement level,
+meaning each woman has, on average, one daughter who survives to
+reproductive age.</li>
+</ul>
+<ul>
+<li class="fragment">NRR &gt; 1: More than one daughter survives per
+woman, indicating the population is growing over time.</li>
+</ul>
+<ul>
+<li class="fragment">NRR &lt; 1: Fewer than one daughter survives per
+woman, suggesting the population is declining in the long term.</li>
+</ul>
 </section>
 <section id="implications" class="slide level2">
 <h2>Implications</h2>
@@ -777,6 +990,7 @@ last potent age</li>
 <tr class="header">
 <th style="text-align: center;">Age Group</th>
 <th style="text-align: center;"># Women <span
+class="math inline">\(\times 1000\)</span> <span
 class="math inline">\(F_i\)</span></th>
 <th style="text-align: center;"># Newborn <span
 class="math inline">\(B_i\)</span></th>
@@ -785,7 +999,7 @@ class="math inline">\(B_i\)</span></th>
 <th style="text-align: center;">Survival probability <span
 class="math inline">\(S_i\)</span></th>
 <th><span class="math inline">\(ASFR_i =\)</span> <span
-class="math inline">\(\frac{B_i}{F_i}\times 100\)</span></th>
+class="math inline">\(\frac{B_i}{F_i}\times 1000\)</span></th>
 <th><span class="math inline">\(\frac{G_i}{F_i}\)</span></th>
 <th><span class="math inline">\(\frac{G_i}{F_i}\times S_i\)</span></th>
 </tr>
