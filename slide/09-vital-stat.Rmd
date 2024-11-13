@@ -19,6 +19,12 @@ output:
 
 # Concept of Vital Statistics
 
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
 That branch of biometry which deals with data and laws of human mortality, morbidity, and demography.
 
 **Arthur Newsholme** $\downarrow$
@@ -52,16 +58,78 @@ the whole study of mankind as affected by heredity or environment in so far as t
 
 ## Dependency Ratio 
 
+<div class="container">
+<div class="col">
 $$d = \frac{P_{0-14}+P_{65+}}{P_{15-64}}\times100$$
 Where
 
 - $P_{0-14}$ = The no. of children aged between 0 & 14
 - $P_{65+}$ = The no. of people aged 65 or older
 - $P_{15-64}$ = The no. of people aged between 15 and 64
+</div>
+<div class="col">
+> - $d = 103\%$ means there are 103 dependents for every 100 working-age people
+
+> - $d = 70\%$ means there 70 dependents for every 100 working-age people
+</div>
+</div>
+
+
+## DR Example
+
+| Age Group           | Population (millions) |
+|---------------------|------------------------|
+| 0-14 (Youth)        | 40                     |
+| 15-64 (Working-Age) | 120                    |
+| 65+ (Elderly)       | 20                     |
+
+Find the Dependency Ratio and explain
+
+<div onclick="klikaj('rad1')"><span>Reveal Answer</span></div>
+<div id="rad1" style="visibility: hidden">
+\[
+\text{Dependency Ratio} = \left( \frac{\text{Youth} + \text{Elderly}}{\text{Working-age population}} \right) \times 100
+\]
+
+\[
+\text{Dependency Ratio} = \left( \frac{40 + 20}{120} \right) \times 100 = \left( \frac{60}{120} \right) \times 100 = 50\%
+\]
+</div>
+
+
+
+## DR Insight
+
+Dependency Ratios of two different cities are 
+
+$d_1 = 101\%$ and $d_2 = 98/%$
+
+i. Which city has more dependent people than?
+2. Write the interpretation of each value.
 
 ## Sex Ratio 
 
 $SR = \frac MF \times 100$
+
+Suppose a town has the following population data:
+
+- **Males**: 52,000
+
+- **Females**: 50,000
+
+\[
+\text{Sex Ratio} = \left( \frac{\text{Number of Males}}{\text{Number of Females}} \right) \times 100
+\]
+
+\[
+\text{Sex Ratio} = \left( \frac{52,000}{50,000} \right) \times 100 = 104
+\]
+
+## SR Explanation
+
+In this example, the sex ratio is 104, which indicates that there are 104 males for every 100 females in the town.
+
+> - IF SR = 95, what does it mean?
 
 ## Population Density
 

@@ -466,6 +466,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="concept-of-vital-statistics"
 class="title-slide slide level1">
 <h1>Concept of Vital Statistics</h1>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 <p>That branch of biometry which deals with data and laws of human
 mortality, morbidity, and demography.</p>
 <p><strong>Arthur Newsholme</strong> <span
@@ -507,6 +512,8 @@ far as the results of this study can be arithmetically stated.
 </section>
 <section id="dependency-ratio" class="slide level2">
 <h2>Dependency Ratio</h2>
+<div class="container">
+<div class="col">
 <p><span class="math display">\[d =
 \frac{P_{0-14}+P_{65+}}{P_{15-64}}\times100\]</span> Where</p>
 <ul>
@@ -517,10 +524,93 @@ aged 65 or older</li>
 <li><span class="math inline">\(P_{15-64}\)</span> = The no. of people
 aged between 15 and 64</li>
 </ul>
+</div>
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\(d = 103\%\)</span>
+means there are 103 dependents for every 100 working-age people</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(d = 70\%\)</span> means
+there 70 dependents for every 100 working-age people</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="dr-example" class="slide level2">
+<h2>DR Example</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Age Group</th>
+<th>Population (millions)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0-14 (Youth)</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>15-64 (Working-Age)</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>65+ (Elderly)</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p>Find the Dependency Ratio and explain</p>
+<div onclick="klikaj(&#39;rad1&#39;)">
+<span>Reveal Answer</span>
+</div>
+<div id="rad1" style="visibility: hidden">
+<p><span class="math display">\[
+\text{Dependency Ratio} = \left( \frac{\text{Youth} +
+\text{Elderly}}{\text{Working-age population}} \right) \times 100
+\]</span></p>
+<p><span class="math display">\[
+\text{Dependency Ratio} = \left( \frac{40 + 20}{120} \right) \times 100
+= \left( \frac{60}{120} \right) \times 100 = 50\%
+\]</span></p>
+</div>
+</section>
+<section id="dr-insight" class="slide level2">
+<h2>DR Insight</h2>
+<p>Dependency Ratios of two different cities are</p>
+<p><span class="math inline">\(d_1 = 101\%\)</span> and <span
+class="math inline">\(d_2 = 98/%\)</span></p>
+<ol type="i">
+<li>Which city has more dependent people than?</li>
+</ol>
+<ol start="2" type="1">
+<li>Write the interpretation of each value.</li>
+</ol>
 </section>
 <section id="sex-ratio" class="slide level2">
 <h2>Sex Ratio</h2>
 <p><span class="math inline">\(SR = \frac MF \times 100\)</span></p>
+<p>Suppose a town has the following population data:</p>
+<ul>
+<li><p><strong>Males</strong>: 52,000</p></li>
+<li><p><strong>Females</strong>: 50,000</p></li>
+</ul>
+<p><span class="math display">\[
+\text{Sex Ratio} = \left( \frac{\text{Number of Males}}{\text{Number of
+Females}} \right) \times 100
+\]</span></p>
+<p><span class="math display">\[
+\text{Sex Ratio} = \left( \frac{52,000}{50,000} \right) \times 100 = 104
+\]</span></p>
+</section>
+<section id="sr-explanation" class="slide level2">
+<h2>SR Explanation</h2>
+<p>In this example, the sex ratio is 104, which indicates that there are
+104 males for every 100 females in the town.</p>
+<ul>
+<li class="fragment">IF SR = 95, what does it mean?</li>
+</ul>
 </section>
 <section id="population-density" class="slide level2">
 <h2>Population Density</h2>
