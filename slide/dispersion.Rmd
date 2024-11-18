@@ -1,0 +1,56 @@
+---
+title: "Measures of Dispersion"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Why?
+
+- To measure variation
+- Needed alongside central tendency
+
+# Measures
+
+> - $\displaystyle \text{Mean Deviation about Mean} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \bar{x}|$
+> - $\displaystyle \text{Mean Deviation about Median} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Med}|$
+> - $\displaystyle \text{Mean Deviation about Mode} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Mo}|$
+> - $\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$
+
+## Variance Simplified
+
+> - $\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$
+> - $\displaystyle \text{Variance} = \frac{1}{N} \left( \sum_{i=1}^{N} x_i^2 - 2\bar{x} \sum_{i=1}^{N} x_i + N\bar{x}^2 \right)$
+
+## Variance Two Formulas
+
+
+> - $\displaystyle \text{Variance} = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2$
+> - $\displaystyle \text{Variance} = \frac {\sum_{i=1}^{n}x_i^2}{n}   - (\bar{x})^2$
+> - Mean of Square - Square of Mean
+
+# Calculation
+
+Suppose we have these values
+
+12, 14, 15, 15, 19
+
+|   x   |  \( x - \bar{x} \)  |  \( x - \text{Median} \)  |  \( x - \text{Mode} \)  |  \( x^2 \)  |  \( (x - \bar{x})^2 \)  |
+|-------|----------------------|---------------------------|-------------------------|-------------|------------------------|
+|  12   |   12 - 15 = -3       |   12 - 15 = -3            |   12 - 15 = -3          |  144        |   9                    |
+|  14   |                      |                           |                         |             |                        |
+|  15   |                      |                           |                         |             |                        |
+|  15   |                      |                           |                         |             |                        |
+|  19   |                      |                           |                         |             |                        |
