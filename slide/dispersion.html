@@ -512,6 +512,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Mean of Square - Square of Mean</li>
 </ul>
 </section></section>
+<section>
 <section id="calculation" class="title-slide slide level1">
 <h1>Calculation</h1>
 <p>Suppose we have these values</p>
@@ -579,6 +580,88 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </tbody>
 </table>
 </section>
+<section id="for-grouped-data" class="slide level2">
+<h2>For Grouped Data</h2>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(f_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calculation-1" class="slide level2">
+<h2>Calculation</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 18%" />
+<col style="width: 33%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x_i\)</span></th>
+<th><span class="math inline">\(f_i\)</span></th>
+<th><span class="math inline">\(f_i \times x_i\)</span></th>
+<th><span class="math inline">\(f_i \times x_i^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment"><span class="math inline">\(\text{Variance} =
+\frac{\sum_{i=1}^{n} f_i (x_i - \bar{x})^2}{\sum_{i=1}^{n}
+f_i}\)</span></li>
+<li class="fragment"><span class="math inline">\(\text{Variance} =
+\frac{\sum_{i=1}^{n} f_i x_i^2}{\sum_{i=1}^{n} f_i} -
+\bar{x}^2\)</span></li>
+</ul>
+</section></section>
     </div>
   </div>
 
