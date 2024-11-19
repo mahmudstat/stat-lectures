@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.3)  6 NOV 2024 10:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.3)  18 NOV 2024 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,76 +345,100 @@ Chapter 1.
 [3]
 
 [4]
-Chapter 2.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[5
-
-]
+[5]
 
 [6]
 
 [7]
-
-[8]
-Chapter 3.
+Chapter 2.
 
 
-[9
+[8
 
 ]
+
+[9]
 
 [10]
-Chapter 4.
 
+[11]
+Chapter 3.
 
-[11
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-]
-Chapter 5.
 
 
 [12
 
 ]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [13]
-Chapter 6.
 
+[14]
 
-[14
-
-]
-Chapter 7.
-
-
-[15
-
-]
-Chapter 8.
+[15]
+Chapter 4.
 
 
 [16
 
 ]
-Chapter 9.
+
+[17]
+Chapter 5.
 
 
-[17
+[18
 
 ]
 
-[18]
+[19]
+
+[20]
+Chapter 6.
+
+
+[21
+
+]
+Chapter 7.
+
+
+[22
+
+]
+Chapter 8.
+
+
+[23
+
+]
+Chapter 9.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[24
+
+]
+
+[25]
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'english' will be used instead.
 
 
 
-[19
+[26
 
 
 ] (./stat2_cqbank.toc)
@@ -423,7 +447,7 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 
 
 
-[20
+[27
 
 ] (./stat2_cqbank.aux)
  ***********
@@ -432,12 +456,12 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 10075 strings out of 476014
- 159165 string characters out of 5779049
+ 10083 strings out of 476014
+ 159395 string characters out of 5779049
  654454 words of memory out of 5000000
- 32738 multiletter control sequences out of 15000+600000
- 558955 words of font info for 48 fonts, out of 8000000 for 9000
+ 32742 multiletter control sequences out of 15000+600000
+ 558971 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 79i,10n,93p,382b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,363b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on stat2_cqbank.pdf (22 pages).
+Output written on stat2_cqbank.pdf (29 pages).
