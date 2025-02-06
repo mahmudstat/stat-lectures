@@ -5,9 +5,10 @@
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{xcolor}
 \usepackage{lipsum}
-
+\usepackage{hyperref}
 
 % Accumulate the answers. Unmodified from Phil Hirschorn's answer
 % https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
@@ -150,6 +151,10 @@
     \end{center}
 \end{titlepage}
 
+\tableofcontents
+
+\newpage
+
  \section{Introduction to Probability}
 
 
@@ -172,6 +177,9 @@
 %-----------------------------------------------------------------
 \subsection {Conceptual Questions}
 %-----------------------------------------------------------------
+
+\question \textbf{What is the probability that at least one item in a sample space will occurr?}
+\choice{0}{0.5}{1}{Undefined}{c}
 
 \question \textbf{The probability of two disjoint sets happening together is:}
 \choice{0.5}{0}{1}{$0  \leq x < 1$}{b}
@@ -230,12 +238,52 @@ iii. 0
 \question \textbf{10 out of each 100 people in a city walk to the office. If one is picked randomly, what is the probability s/he does not walk to the office?}
 \choice{0.95}{0.10}{0.90}{0.01}{c}
 
+\question \textbf{In a school, 15 out of 100 students prefer online classes over in-person classes. If a student is selected randomly, what is the probability that they prefer in-person classes?}  
+\choice{0.15}{0.85}{0.75}{0.25}{b}  
+
+\question \textbf{A factory reports that 8 out of every 100 manufactured items are defective. If an item is chosen at random, what is the probability that it is not defective?}  
+\choice{0.08}{0.92}{0.80}{0.12}{b}  
+
+\question \textbf{A hospital study finds that 12\% of patients do not prefer evening appointments. If a patient is selected at random, what is the probability that they prefer evening appointments?}  
+\choice{0.12}{0.78}{0.88}{0.18}{c}  
+
+\question \textbf{A survey shows that 5 out of every 200 customers in a store pay with cash. If a customer is picked randomly, what is the probability that they pay using another method?}  
+\choice{0.050}{0.500}{0.975}{0.025}{c}  
+
 %-----------------------------------------------------------------
 \subsection {Coin-Die}
 %-----------------------------------------------------------------
 
+\question \textbf{Tossing a die r times generates how many outcomes?}
+\choice{$6\times r$}{$r^6$}{$6^r$}{$2^r$}{c}
+
+\question \textbf{Tossing a coin r times generates how many outcomes?}
+\choice{$2\times r$}{$r^2$}{$2^r$}{$6^r$}{c}
+
 \question \textbf{A coin is thrown thrice. How many outcomes are generated?}
 \choice{3}{4}{8}{9}{c}
+
+\question \textbf{A coin is thrown twice. What is the probability of getting 2 heads?}
+\choice{$\frac14$}{$\frac13$}{$\frac12$}{$\frac24$}{a}
+
+\question \textbf{A fair coin is tossed twice. What is the probability of getting at least one tail?}  
+\choice{$\frac14$}{$\frac12$}{$\frac34$}{$\frac13$}{c}  
+
+\question \textbf{Two fair coins are tossed simultaneously. What is the probability of getting exactly one head?}  
+\choice{$\frac14$}{$\frac12$}{$\frac34$}{$\frac13$}{b}  
+
+\question \textbf{A coin is flipped twice. What is the probability of getting heads first and tails second?}  
+\choice{$\frac14$}{$\frac13$}{$\frac12$}{$\frac24$}{a}  
+
+\question \textbf{If two fair coins are tossed together, what is the probability of getting at least one head?}  
+\choice{$\frac12$}{$\frac13$}{$\frac34$}{$\frac14$}{c}  
+
+\question \textbf{A fair coin is tossed twice. What is the probability of getting two tails?}  
+\choice{$\frac12$}{$\frac13$}{$\frac14$}{$\frac24$}{c}  
+
+\question \textbf{Two fair coins are tossed. What is the probability that at least one of them lands on tails?}  
+\choice{$\frac34$}{$\frac12$}{$\frac14$}{$\frac13$}{a}  
+
 
 \question \textbf{A die is thrown twice. This is called --}
 \choice{An experiment}{sample space}{A random experiment}{A trial}{a}
@@ -256,6 +304,21 @@ iii. 0
 
 \question \textbf{There are 3 red, 4 black, and 5 white balls in an urn. If two balls are randomly taken, what is the probability that both are red?}
 \choice{$\frac{1}{66}$}{$\frac{1}{22}$}{$\frac{2}{22}$}{$\frac{3}{11}$}{b}
+
+\question \textbf{There are 3 red, 4 black, and 5 white balls in an urn. If two balls are randomly taken, what is the probability that neither is red?}  
+\choice{$\frac{5}{11}$}{$\frac{6}{11}$}{$\frac{3}{11}$}{$\frac{5}{22}$}{b}  
+
+\question \textbf{A jar contains 6 blue and 4 green marbles. If two marbles are drawn at random, what is the probability that both are blue?}  
+\choice{$\frac{5}{18}$}{$\frac{1}{3}$}{$\frac{1}{2}$}{$\frac{1}{4}$}{b}  
+
+\question \textbf{A box has 7 black and 5 white balls. If one ball is drawn at random, what is the probability that it is not black?}  
+\choice{$\frac{7}{12}$}{$\frac{5}{12}$}{$\frac{1}{2}$}{$\frac{1}{3}$}{b}  
+
+\question \textbf{A bag contains 8 red and 6 white balls. If two balls are drawn at random, what is the probability that they are of different colors?}  
+\choice{$\frac{24}{91}$}{$\frac{58}{91}$}{$\frac{48}{91}$}{$\frac{72}{91}$}{c}  
+
+\question \textbf{A box contains 9 blue and 3 red balls. If two balls are randomly picked, what is the probability that at least one is red?}  
+\choice{$\frac{3}{11}$}{$\frac{1}{3}$}{$\frac{18}{33}$}{$\frac{5}{11}$}{d}  
 
 \textbf{Answer the next three questions based on the following information.}
 
@@ -284,6 +347,26 @@ An urn contains 5 red, 7 blue, and 8 green balls.
 %-----------------------------------------------------------------
 \subsection {Set-Problems}
 %-----------------------------------------------------------------
+
+\question \textbf{Given \( P(A \cup B) = 0.7 \), \( P(A \cap B) = 0.2 \), what are \( P(A) \) and \( P(B) \)?}  
+\choice{$P(A) = 0.5 \text{ and } P(B) = 0.4
+$}{$P(A) = 0.4 \text{ and } P(B) = 0.6$}{$P(A) = 0.4 \text{ and } P(B) = 0.3$}{$P(A) = 0.7 \text{ and } P(B) = 0.3$}{a}
+
+\question \textbf{If \( P(A) = 0.4 \), \( P(B) = 0.5 \), and \( P(A \cup B) = 0.7 \), what is \( P(A \cap B) \)?}  
+\choice{$0.2$}{$0.1$}{$0.3$}{$0.4$}{a}
+
+\question \textbf{Given \( P(A) = 0.3 \), \( P(A \cup B) = 0.6 \), and \( P(A \cap B) = 0.1 \), what is \( P(B) \)?}  
+\choice{$0.6$}{$0.4$}{$0.3$}{$0.2$}{b}
+
+\question \textbf{If \( P(A) = 0.5 \), \( P(B) = 0.6 \), and \( P(A \cap B) = 0.3 \), what is \( P(A \cup B) \)?}  
+\choice{$0.8$}{$0.9$}{$0.7$}{$1$}{c}
+
+\question \textbf{If \( P(A) = 0.2 \), \( P(B) = 0.3 \), and \( P(A \cup B) = 0.4 \), what is \( P(A \cap B) \)?}  
+\choice{$0.9$}{$0.2$}{$0.3$}{$0.1$}{d}
+
+\question \textbf{Given \( P(A) = 0.7 \), \( P(A \cup B) = 0.9 \), and \( P(A \cap B) = 0.5 \), what is \( P(B) \)?}  
+\choice{$0.8$}{$0.6$}{$0.7$}{$0.5$}{c}
+
 
 \textbf{Answer the next two questions based on the following information}
 
@@ -366,21 +449,6 @@ $P(E) = \frac 1 4, P(F) = \frac 3 5 \space \& \space P(E \cup F) = \frac{11}{20}
 \question \textbf{A coin is tossed twice and no. of heads appeared is denoted by X. How many possible values of X are there?}
 \choice{1}{2}{0}{3}{d}
 
-\textbf{Answer the next two questions based on the following information}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{cccc}
-X & 0 & 1 & 2 \\ \hline
-P(x) & $\frac 12$ & $\frac14$ & $\frac14$
-\end{tabular}
-\end{table}
-
-\question \textbf{What is F(1)}
-\choice{$0.65$}{$0.75$}{$0.5$}{$1$}{b}
-
-\question \textbf{$P(X \le 1 \le 3) =$--}
-\choice{0.75}{0.70}{0.95}{1}{a}
 
 \question \textbf{Which one is a property of marginal probability density function?}
 \choice{$\displaystyle \int_{x} f(x^2) \,dx=1$}{$\displaystyle  \int_{x} f(x^2) \,dx=0.5$}{$\displaystyle  \int_{x} f(x) \,dx=1$}{$P(x \ge 1)$}{c}
@@ -464,8 +532,99 @@ iii. Each probability corresponds to a discrete value.
 \choice{$P(X_i,Y_j)<1$}{$P(X_i,Y_j)=0$}{$P(X_i,Y_j)<0$}{$0 \leq P(X_i,Y_j)\leq 1$}{d}
 
 %-----------------------------------------------------------------------------
-\subsection{Misc} % Random variable
+\subsection{Situation Set} % Random variable
 %-----------------------------------------------------------------------------
+
+\textbf{Answer the next two questions based on the following information}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+X & 0 & 1 & 2 \\ \hline
+P(x) & $\frac 12$ & $\frac14$ & $\frac14$
+\end{tabular}
+\end{table}
+
+\question \textbf{What is F(1)}
+\choice{$0.65$}{$0.75$}{$0.5$}{$1$}{b}
+
+\question \textbf{$P(X \le 1 \le 3) =$--}
+\choice{0.75}{0.70}{0.95}{1}{a}
+
+\textbf{Answer the next three questions based on the following information}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c}
+X & 0 & 1 & 2 & 3 \\ \hline
+P(X) & $\frac 14$ & m & $\frac 13$ & $\frac 16$
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the value of m?}
+\choice{$\frac 1 3$}{$\frac 5 {12}$}{$\frac 1 4$}{$\frac 1 6$}{c}
+
+\question \textbf{Find $F(2)$.}
+\choice{$\frac 1 2$}{$\frac 3 4$}{$\frac 5 6$}{$\frac 2 3$}{c}
+
+\question \textbf{What is $P(X > 1)$?}
+\choice{$\frac 1 2$}{$\frac 5 {12}$}{$\frac 1 3$}{$\frac 7 {12}$}{a}
+
+
+\textbf{Answer the next three questions based on the following information}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c|c|c}
+X & 1 & 2 & 3 & 4 & 5 \\ \hline
+P(X) & $\frac 1 5$ & c & $\frac 1 4$ & $\frac 1 6$ & $\frac 1 3$
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the value of c?}
+\choice{$\frac 1 3$}{$\frac 1 4$}{$\frac 1 {20}$}{$\frac 1 6$}{c}
+
+\question \textbf{Find $P(2 < X \leq 4)$.}
+\choice{$\frac 5 {12}$}{$\frac 1 2$}{$\frac 5 6$}{$\frac 2 3$}{a}
+
+\question \textbf{What is $P(X \leq 3)$?}
+\choice{$\frac 9 {20}$}{$\frac 7 {10}$}{$\frac 1 2$}{$\frac 3 4$}{c}
+
+
+\textbf{Answer the next three questions based on the following information}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c}
+x & 1 & 2 & 3 \\ \hline
+P(x) & $\frac 13$ & a & $\frac16$
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the value of a?}
+\choice{$\frac 23$}{$\frac 56$}{$\frac 12$}{$1$}{c}
+
+\question \textbf{Find $P(2 < X \leq 3)$}
+\choice{$\frac 56$}{$\frac 23$}{$\frac 12$}{$\frac 16$}{d}
+
+\question \textbf{What is P(X<3)?}
+\choice{$\frac 56$}{$\frac 25$}{$\frac 19$}{$\frac 17$}{a}
+
+\textbf{Answer the next two questions based on the following information}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c|c}
+x & 1 & 2 & 3 \\ \hline
+P(x) & $\frac 13$ & $\frac12$ & $\frac16$
+\end{tabular}
+\end{table}
+
+\question \textbf{What is $F(2)$?}
+\choice{$\frac 23$}{$\frac 56$}{$\frac 12$}{$1$}{b}
+
+\question \textbf{$P(1 < X \leq 2)$}
+\choice{$\frac 56$}{$\frac 23$}{$\frac 12$}{$\frac 16$}{c}
 
 \textbf{Answer the next two questions based on the following information}
 
@@ -662,6 +821,44 @@ iii) $\frac14$
 \question \textbf{If $E(X)=2, E(X^2) = 8, V(X)= --$}
 \choice{0}{2}{4}{8}{c}
 
+\question \textbf{If $E(X)=3, E(X^2) = 11, V(X) = --$}
+\choice{2}{5}{6}{4}{a}
+
+\question \textbf{If $E(X) = 4$, what is $E(3X-2)$?}
+\choice{10}{8}{7}{6}{a}
+
+\question \textbf{If $E(X)=5, E(X^2) = 30, V(X) = --$}
+\choice{3}{5}{4}{6}{b}
+
+\question \textbf{If $E(X)=6$, what is $E(\frac{X}{2} + 1)$?}
+\choice{4}{3}{2}{5}{a}
+
+\question \textbf{If $E(X)=2, E(X^2) = 10, V(X) = --$}
+\choice{5}{6}{7}{4}{b}
+
+\question \textbf{If $E(X) = 7$, what is $E(4X+3)$?}
+\choice{28}{30}{31}{29}{c}
+
+\question \textbf{If $E(X) = 3$, what is $E(5 - X)$?}
+\choice{2}{3}{4}{5}{a}
+
+\question \textbf{If $E(X) = 4$ and $V(X) = 5$, what is $E(X^2)$?}  
+\choice{9}{16}{21}{25}{c}
+
+\question \textbf{If $E(X) = 3$ and $V(X) = 7$, what is $E(X^2)$?}  
+\choice{9}{10}{16}{18}{c}
+
+\question \textbf{If $E(X) = 5$ and $E(X^2) = 34$, what is $V(X)$?}  
+\choice{6}{9}{10}{7}{b}
+
+\question \textbf{If $E(X) = 2$ and $E(X^2) = 14$, what is $V(X)$?}  
+\choice{10}{9}{8}{7}{a}
+
+\question \textbf{If $E(X) = 6$ and $V(X) = 12$, what is $E(X^2)$?}  
+\choice{36}{40}{48}{50}{c}
+
+
+
 \question \textbf{If $P(x)= \frac{4-|5-x|}{k}; x=2,3,4, \cdots 8$, what is the value of $E(X)$?}
 \choice{3}{8}{16}{5}{d}
 
@@ -682,6 +879,37 @@ iii) $\frac14$
 
 \question \textbf{If $E(X) = 2$ and $E(X^2)=8$, then the value of the $V(X) = ?$}
 \choice{0}{2}{4}{8}{c}
+
+\question \textbf{If $E(X^2) = 20$ and $V(X) = 11$, what is $E(X)$?}  
+\choice{3}{4}{5}{6}{a}
+
+\question \textbf{If $E(X^2) = 50$ and $V(X) = 14$, what is $E(X)$?}  
+\choice{5}{6}{7}{8}{b}
+
+\question \textbf{If $E(X^2) = 25$ and $V(X) = 9$, what is $E(X)$?}  
+\choice{2}{3}{4}{5}{c}
+
+\question \textbf{If $E(X^2) = 45$ and $V(X) = 21$, what is $E(X)$?}  
+\choice{$4 \sqrt{3}$}{$5 \sqrt{2}$}{$6 \sqrt{2}$}{$7 \sqrt{2}$}{b}
+
+\question \textbf{If $E(X^2) = 13$ and $V(X) = 4$, what is $E(X)$?}  
+\choice{2}{3}{4}{5}{c}
+
+\question \textbf{If $E(X) = 3$, what is $E(2X - 5)$?}  
+\choice{1}{3}{5}{7}{a}  
+
+\question \textbf{If $E(X) = 4$, what is $E(\frac{X}{2} + 3)$?}  
+\choice{4}{5}{6}{7}{b}  
+
+\question \textbf{If $E(X) = -2$, what is $E(3X + 7)$?}  
+\choice{1}{-1}{-2}{4}{a}  
+
+\question \textbf{If $E(X) = 6$, what is $E(5 - X)$?}  
+\choice{1}{0}{-1}{2}{c}  
+
+\question \textbf{If $E(X) = 10$, what is $E(4X - 8)$?}  
+\choice{12}{40}{28}{32}{d}  
+
 
 \question \textbf{If $\displaystyle  P(x) = \frac 1{15}; x = 1,2,3, \cdots 15$, what is the value of the expectation?}
 \choice{8.5}{7.5}{7}{8}{d}
@@ -801,6 +1029,79 @@ In a binomial distribution, $P(x=4) = \frac12 P(x=5); n  = 10$
 \question \textbf{$P(x=2) =$ ---}
 \choice{0.0053}{0.0069}{0.0085}{0.94}{b}
 
+\question \textbf{In a binomial distribution with $p = 0.3$ and $n = 10$, what is $P(2)$?}  
+\choice{0.2335}{0.2668}{0.3828}{0.1211}{c}  
+
+\question \textbf{In a binomial distribution with $p = 0.4$ and $n = 12$, what is $P(3)$?}  
+\choice{0.0896}{0.2131}{0.2253}{0.2942}{c}  
+
+\question \textbf{In a binomial distribution with $p = 0.5$ and $n = 8$, what is $P(4)$?}  
+\choice{0.6367}{0.3125}{0.2070}{0.0898}{a}  
+
+\question \textbf{In a binomial distribution with $p = 0.2$ and $n = 15$, what is $P(5)$?}  
+\choice{0.1789}{0.1887}{0.9389}{0.2413}{c}  
+
+\question \textbf{In a binomial distribution with $p = 0.6$ and $n = 9$, what is $P(6)$?}  
+\choice{0.2007}{0.2508}{0.2311}{0.7682}{d}  
+
+\question \textbf{In a binomial distribution with $p = 0.3$ and $P(x) = 0.3828$, $n=?$}  
+\choice{18}{10}{13}{6}{b}  
+
+\question \textbf{In a binomial distribution with $p = 0.4$ and $P(x) = 0.2253$, $n=?$}  
+\choice{5}{6}{12}{15}{c}  
+
+\question \textbf{In a binomial distribution with $p = 0.5$ and $P(x) = 0.6367$, $n=?$}  
+\choice{15}{1}{8}{0.0898}{c}  
+
+\question \textbf{In a binomial distribution with $p = 0.2$ and $P(x) = 0.9389$, $n=?$}  
+\choice{7}{12}{11}{15}{d}  
+
+\question \textbf{In a binomial distribution with $p = 0.6$ and $P(x) = 0.7682$, $n=?$}  
+\choice{3}{9}{10}{14}{b}  
+
+\subsection{Multiple Completion}
+
+\question \textbf{In a binomial distribution with parameters \( n \) and \( p \):}
+
+i. The expected value is given by \( E(X) = np \). \\
+ii. The variance is given by \( V(X) = np(1 - p) \). \\
+iii. The standard deviation is given by \( \sqrt{np} \).
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a}
+
+\question \textbf{Which of the following statements about a binomial distribution are true?}
+
+i. The probability of success remains constant for each trial. \\
+ii. The trials are dependent on each other. \\
+iii. The number of trials is fixed in advance.
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
+
+\question \textbf{Consider a binomial experiment. Which of the following statements is/are true?}  
+
+i. Each trial results in exactly one of two possible outcomes. \\  
+ii. The expected value is always greater than the variance. \\  
+iii. The probability mass function of a binomial distribution can be computed using the binomial formula.  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}  
+
+\question \textbf{Which of the following is/are correct about the binomial distribution?}  
+
+i. The variance is maximized when \( p = 0.5 \). \\  
+ii. If \( p = 1 \), the distribution becomes degenerate. \\  
+iii. The standard deviation is given by \( \sqrt{np(1-p)} \).  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}  
+
+
 %--------------------------------------------------------------------------
 \section{Poisson Distribution}
 %--------------------------------------------------------------------------
@@ -873,6 +1174,9 @@ What is the parameter?}
 \question \textbf{If the variance of a Poisson distribution is 4, what is \( P(2) \)?}
 \choice{0.1465}{0.1954}{0.1839}{0.2184}{a}
 
+\question \textbf{If the variance of a Poisson distribution is 3.5, what is \( P(1) \)?}
+\choice{0.1465}{0.1358}{0.1839}{0.2184}{b}
+
 \question \textbf{A Poisson distribution has a mean of 7. What is the standard deviation?}
 \choice{3.2}{4.1}{2.65}{1.78}{c}
 
@@ -899,6 +1203,57 @@ standard deviation?}
 what is the variance?}
 \choice{4}{8}{\(\sqrt{8}\)}{16}{b}
 
+\subsection{Multiple Completion}
+
+\question \textbf{For a Poisson-distributed variable with mean $\lambda = 4$, which of the following is true?}
+
+i. $E(X) = 4$ \\  
+ii. $V(X) = 2$ \\  
+iii. $E(X^2) = 18$
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}  
+
+\question \textbf{If $X \sim \text{Poisson}(m = 3)$, which of the following holds?}
+
+i. $E(X) = 3$ \\  
+ii. $V(X) = 3$ \\  
+iii. $E(X^2) = 12$  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}  
+
+\question \textbf{For a Poisson distribution, which of the following statements are true?}
+
+i. The mean and variance are always equal. \\  
+ii. The distribution is always symmetric. \\  
+iii. The probability of zero occurrences is given by $e^{-m}$.  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}  
+
+\question \textbf{If a Poisson-distributed random variable has mean $\lambda = 6$, which of the following statements is true?}
+
+i. $E(X) = 6$ \\  
+ii. $V(X) = 6$ \\  
+iii. $P(X = 0) = e^{-6}$  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}  
+
+\question \textbf{For a Poisson process with $\lambda = 5$, which of the following is true?}
+
+i. The standard deviation is $\sqrt{5}$. \\  
+ii. $P(X \geq 1) = 1 - e^{-5}$. \\  
+iii. $E(X^2) = 30$  
+
+\textbf{Which one is correct?}  
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}  
 
 %--------------------------------------------------------------------------
 \subsection{Problems}
@@ -991,6 +1346,9 @@ iii) NRR
 \question \textbf{Which formula of GFR is accurate?}
 \choice{$GFR = \frac{B}{P}\times 1000$}{$GFR = \frac{B}{F_{15-49}}\times 1000$}{$GFR = \frac{B_i}{F_i}\times 1000$}{$GFR = \frac{G_i}{F{15-49}}\times 1000$}{b}
 
+\question \textbf{Total number of children born to each 1000 people in any country or region is called --}
+\choice{TFR}{GFR}{CBR}{GRR}{c}
+
 \textbf{Answer the next two questions based on the following information}
 
 \begin{table}[h]
@@ -1007,6 +1365,30 @@ Population & 100 & 110 & 120 & 130
 \question \textbf{What is the rate of increase?}
 \choice{1}{0.1}{10}{1\%}{b}
 
+\question \textbf{In exponential growth, when is a population doubled?}
+\choice{$\frac{\log_{10} 2}{r}$}{$\frac{\log_e 2}{r}$}{$\frac{\log_e 2}{r^2}$}{$\frac{\log_e 3}{r}$}{b}
+
+\question \textbf{If a population exponentially declines, when is it reduced to half?}  
+\choice{$\frac{\log_{10} 2}{r}$}{$\frac{\log_e 2}{r}$}{$\frac{\log_e 2}{r^2}$}{$\frac{\log_e 3}{r}$}{b}  
+
+\question \textbf{How long does it take for a population to triple in exponential growth?}  
+\choice{$\frac{\log_{10} 3}{r}$}{$\frac{\log_e 3}{r}$}{$\frac{\log_e 3}{r^2}$}{$\frac{\log_e 2}{r}$}{b}  
+
+\textbf{Answer the next two questions based on the following information}
+
+\begin{center}
+Statement
+\end{center}
+
+\question \textbf{Vital statistics records --}
+
+i. marriage \\
+ii. birth \\
+iii. sickness and death
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{d}
 
 \end{questions}
 
