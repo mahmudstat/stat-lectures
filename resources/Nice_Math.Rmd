@@ -23,7 +23,7 @@ geometry: margin=2cm
 
 ## $0.999 \cdots = 1$
 
-# Concepts
+# Concepts 
 
 ## Indeterminate vs undefined
 
