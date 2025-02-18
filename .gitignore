@@ -3,7 +3,7 @@
 *.gz
 *log
 *aux
-*.toc
+*toc
 stat2_notes.tex
 math_notes.tex
 csv_to_latex.Rmd
