@@ -6,6 +6,27 @@ hist(x, prob = TRUE, main = "Histogram & Density Curve",
      xlab = "") 
 lines(density(x), col = "red")
 
+# Seat belts data
+
+# Number of drivers killed
+
+sb <- as.data.frame(Seatbelts)
+hist(sb$DriversKilled, probability = TRUE, col = "grey", 
+     xlab = "# Killed", ylab = "Probability", 
+     main = "Number of Drivers killed in UK Accidents in 1969-84")
+lines(density(sb$DriversKilled), col = "blue")
+
+
+# Normal distribution
+
+set.seed(100)
+marks <- rnorm(300, mean = 60, sd = 12)
+hist(marks, breaks = 12, probability = TRUE, xlim = c(20,100))
+lines(density(marks))
+
+
+# Plot only the density curve
+plot(density(marks), main = "Density Plot of Marks", col = "black", lwd = 2)
 
 # Skewed Curve
 

@@ -17,6 +17,16 @@ output:
       in_header: css/header.html
 ---
 
+# Why? 
+
+> - Have you heard about moments? 
+
+> - Why are they Used?
+
+# Revisit Histogram
+
+<img class="plain" width="600" src="../img/stat/marks_hist.png">
+
 # Moments
 
 Can uniquely characterize a distribution
