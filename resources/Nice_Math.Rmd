@@ -19,7 +19,11 @@ geometry: margin=2cm
 \begingroup
 \fontfamily{ppl}\fontsize{12}{16}\selectfont
 
-# Notes
+# Paradoxes
+
+## $0.999 \cdots = 1$
+
+# Concepts
 
 ## Indeterminate vs undefined
 
@@ -47,6 +51,24 @@ However, when something in **indeterminate**, this means that there are infinite
 
 Which number is to be multiplied with 0 to get 0. You can multiply any number, including 0.
 There are infinite solutions. So it is indeterminate. 
+
+# Factorials
+
+## Why 0!=1?
+
+### Mathematical Proof
+
+$n! = n(n-1)!$
+
+$\Rightarrow 1!=1(1-1)!$
+
+$\Rightarrow 1 = 1 \times 0!$
+
+$\Rightarrow 1 = 0!$
+
+### Logical Proof
+
+1 is multiplicative identity, so before any multiplication starts, we have 1. Also in multiplication, nothing means 1, not 0. 
 
 # $e^x$
 
