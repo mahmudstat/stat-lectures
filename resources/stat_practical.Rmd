@@ -158,9 +158,53 @@ Frequency & 3 & 5 & 11 & 15 & 20 & 8 & 7 & 5 & 4 & 2
 \end{tabular}
 \end{table}
 
-
-i. Draw an Ogive and therefrom find $Q3, D_4, and \space P_{47}$ and interpret.
+i. Draw an Ogive and therefrom find Median, $Q3, D_4, \text{ and } P_{47}$ and interpret.
 ii. Construct a histogram from the data and find Mode. 
+iii. Find the above measures using direct formulae and compare.
+
+## Solution
+
+### Theory
+
+#### Quartiles 
+
+- Location of First Quartile  = $\frac N4$th item
+- Location of 2nd Quartile  = $\frac {2N}4$th item
+- Location of 2nd Quartile  = $\frac {3N}4$th item
+- Location of 4th Decile  = $\frac {4N}{10}$th item
+
+Other quartiles are computed in the same fashion. 
+
+Steps
+
+- We find the the middle point on the cumulative frequency axis
+- We then draw horizontal line to the ogive 
+- We draw a vertical line down to the x-axis
+- The point on the x-axis where the line touches is the median
+
+Other quartiles are computed in the same fashion.
+
+#### Mode
+
+To find Mode from histogram, we have to identify the tallest bar in the histogram and then draw lines to the top of the bars above and below highest bar. The point where the lines meet, when extended to the x-axis, is the mode.
+
+#### Direct Formula
+
+$Median = L + \frac{\frac N2-F_c}{f_m}\times c$ where
+
+- L = Lower boundary of the median class
+- N = Number of values
+- $F_c =$ Cumulative frequency of the class preceding the median class
+- $f_m$ = Frequency of the median class and
+- c = class width 
+
+Other quantiles are found using similar formuale
+
+$Mode = L + \frac{\Delta_1}{\Delta_1+\Delta_2} \times c$ where
+
+- L = Lower boundary of the median class
+- $\Delta_1$ = The difference between the Modal class and the pre-modal class
+- $\Delta_2$ = The difference between the Modal class and the post-modal class
 
 # Determination of First Four Moments from Data
 
