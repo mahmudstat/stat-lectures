@@ -1,5 +1,6 @@
 \documentclass[a4paper,oneside]{book}
-
+\usepackage{float}
+\usepackage{amsmath}
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage[hidelinks]{hyperref}
@@ -208,6 +209,26 @@ Profit (Y) & 15 & 10 & 17 & 25 & 10
 	Analyze the statement theoretically and empirically:  $\displaystyle \sum_{i=1}^5 (4x_i-6y_j) = 4 \sum_{i=1}^5 x_i - 6 \sum_{i=1}^5 y_j $ \hfill 4
   \end{enumerate}
   
+  \item  
+	  \textbf{The revenue and expenditure (in million BDT) of five companies in Bangladesh are given below:}  
+	  
+	  \begin{table}[h]
+	  \centering
+\begin{tabular}{c|ccccc}
+Company & A & B & C & D & E \\ \hline
+Revenue (X) & 50 & 40 & 60 & 55 & 45 \\ \hline
+Expenditure (Y) & 30 & 25 & 35 & 40 & 28
+\end{tabular}
+\end{table}
+  
+  \begin{enumerate}
+    \item  
+	Compute $\displaystyle \sum_{i=1}^5 (x_i - y_i)$. Interpret the result in terms of net earnings. \hfill 3  
+    \item  
+	Show that $\displaystyle \sum_{i=1}^5 (3x_i - 2y_i) = 3 \sum_{i=1}^5 x_i - 2 \sum_{i=1}^5 y_i$ theoretically and empirically. \hfill 4  
+  \end{enumerate}  
+
+  
   \item
 \textbf{The monthly sales and expenses (in thousand BDT) of five retail stores are given below:}
 
@@ -269,11 +290,12 @@ Games  & 4 & 6 & 5 & 3 & 2
 \end{enumerate}
 
   
-     \item
-	  \textbf{A researcher has collected some data:}
-	  \begin{center}
-	  $x_1=15, x_2=-12, x_3=10, x_4=21, x_5=33$
-  \end{center}
+    \item  
+	  \textbf{A researcher conducting a study on economic indicators has gathered the following data points, representing the net income (in million BDT) of five different companies over a fiscal year:}  
+	  
+	  \begin{center}  
+	  $x_1=15, x_2=-12, x_3=10, x_4=21, x_5=33$  
+	  \end{center} 
   \begin{enumerate}
     \item
 	What is sample? \hfill 1
@@ -925,6 +947,21 @@ Match & Runs & Balls \\ \hline
     \item
 	Does the origin or the scale have greater impact on AM in this example? \hfill 4
   \end{enumerate}
+  
+   \item
+	  \textbf{A statistics teacher gave a test to students worth 50 marks. After publishing the result, it was decided the marks would be converted 100 marks scale. It was also noted that each student should get 2 marks more than the given marks.} 
+  
+  \begin{enumerate}
+    \item
+	In the stem, which concept is revealed? \hfill 1
+    \item
+	Does arithmetic mean depend upon change of scale? \hfill 2
+    \item  
+	Demonstrate the effect of change of origin and scale on arithmetic mean, deriving the formula for conversion between them. \hfill 3
+    \item 
+    If the original arithmetic mean of the marks of the students is 44, what is the changed mean? Does the change of origin and scale always increase the value? Analyze.
+	 \hfill 4
+  \end{enumerate}
 
    \item
 	  \textbf{The arithmetic and geometric means of ages two boys Abir and Abid are 10 and 8.} 
@@ -1075,7 +1112,7 @@ No. of Athlete & 2     & 8     & 10    & 5     & 3
      \item
 	  \textbf{A departmental store records their sales. An analysis of products with prices less than tk. 30 generates the following table.} 
 	  
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{c|c|c|c|c|c|c}
 Price     & 0-5 & 5-10 & 10-15 & 15-20 & 20-25 & 25-30 \\ \hline
@@ -1134,6 +1171,30 @@ Marks & \begin{tabular}[c]{@{}c@{}}Number of Students\\ Group - A\end{tabular} &
     \item
 	Compute the combined mean. Is it greather than the arithmetic mean of Group - B? Explain the possible reason(s). \hfill 4
 \end{enumerate}
+
+\item  
+  \textbf{The following table presents the distribution of monthly salaries (in thousand BDT) of employees in two different departments of a company.}  
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+\hline
+Salary Range (in 1000 BDT) & \begin{tabular}[c]{@{}c@{}}Number of Employees\\ Department - X\end{tabular} & \begin{tabular}[c]{@{}c@{}}Number of Employees\\ Department - Y\end{tabular} \\ \hline
+20-25 & 8 & 6 \\ 
+25-30 & 14 & 12 \\ 
+30-35 & 19 & 21 \\ 
+35-40 & 24 & 26 \\ 
+40-45 & 15 & 10 \\ \hline
+\end{tabular}
+\end{table}
+
+  \begin{enumerate}
+    \item  
+	Determine the arithmetic mean salary of employees in Department - X.  \hfill 3  
+    \item  
+	Compute the combined mean salary. Is it higher than the arithmetic mean of Department - Y? Justify your answer with a statistical explanation.  \hfill 4  
+\end{enumerate}  
+
 
 
     \item
@@ -1421,9 +1482,11 @@ fish found in different water bodies as shown below:}
 
     \item Does Arithmetic Mean depend on change of origin and 
     scale? Prove mathematically and with an example. \hfill 3
-    \item Prove with an example: $\displaystyle \sum_{i=1}^n (x_i-\bar x) = 0$
-    \item Prove mathematically: $\displaystyle \sum_{i=1}^n (x_i-\bar x) = 0$
-    \item Derive the formula of Arithmetic Mean for short-cut method.
+    \item If $\bar{X} = 3 , \text{ and } n = 10$, what is $\sum X_i$?
+    \item Derive the formula of combined mean using logic and an example. \hfill 2
+    \item Prove with an example: $\displaystyle \sum_{i=1}^n (x_i-\bar x) = 0$ \hfill 2
+    \item Prove mathematically: $\displaystyle \sum_{i=1}^n (x_i-\bar x) = 0$ \hfill 2
+    \item Derive the formula of Arithmetic Mean for short-cut method. \hfill 2
     \item Derive the formula of combined Arithmetic Mean for $n$ nnumber of observations.
     \item Find Arithmetic Mean of first n natural numbers.
     \item If $u_i = x_i + y_i$, find $\bar x$ in terms of $u$. \hfill 1
@@ -1745,6 +1808,26 @@ Frequency & 4 & 3 & 3 & 2 & 5 & 2
     \item
 	Obtain coefficient of skewness from data and comment on the life of the spy based on it. \hfill 4
   \end{enumerate}
+  
+  
+  \item  
+  \textbf{A financial analyst is studying the annual returns (in percentage) of a set of investment portfolios. The following table summarizes the data.}  
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|cccccc}
+Annual Return (\%) & -5 to 0 & 1-5 & 6-10 & 11-15 & 16-20 & 21-25 \\ \hline
+Frequency & 3 & 5 & 7 & 6 & 4 & 3
+\end{tabular}
+\end{table}
+
+  \begin{enumerate}
+    \item  
+	Compute the skewness of the data and interpret the nature of the investment returns.  \hfill 3  
+    \item  
+	Determine the kurtosis and explain.  \hfill 4  
+  \end{enumerate}  
+
 
 
    \item
@@ -1779,6 +1862,20 @@ Determine the variance of the data set. \hfill 3
 Assess whether the data distribution appears to be symmetric with the help
 two different methods. \hfill 4
 \end{enumerate}
+
+\item  
+\textbf{A researcher analyzed the daily screen time (in hours) of 12 students over a month. The recorded values are as follows:}  
+
+\begin{center}  
+4.2, 5.1, 3.8, 6.5, 4.7, 5.3, 4.6  
+\end{center}  
+
+\begin{enumerate}  
+\item  
+Compute the five-number summary of the data. \hfill 3  
+\item  
+Analyze the skewness of the dataset using both graphical and numerical approaches. \hfill 4  
+\end{enumerate}  
 
   
    \item
@@ -2132,6 +2229,25 @@ Production & 50   & 55   & 60   & 65   & 70   & 75   & 80
     \item
     Estimate the approximate production for the year 2022 using both graphical and moving average methods. \hfill 4
 \end{enumerate}
+
+\item  
+\textbf{The monthly rainfall (in mm) recorded in a city over seven consecutive months is given below:}  
+
+\begin{table}[h]  
+\centering  
+\begin{tabular}{cccccccc}  
+Month     & Jan  & Feb  & Mar  & Apr  & May  & Jun  & Jul  \\ \hline  
+Rainfall (mm) & 85   & 42   & 78   & 150  & 210  & 95   & 180    
+\end{tabular}  
+\end{table}  
+
+\begin{enumerate}  
+    \item  
+    Determine the trend using the three-month moving average method. \hfill 3  
+    \item  
+    Predict the expected rainfall for August using both graphical and moving average techniques. \hfill 4  
+\end{enumerate}  
+
 
 \item
 \textbf{The annual sales (in million dollars) of a tech company over eight years are provided below:}
