@@ -25,7 +25,7 @@ output:
 
 # Revisit Histogram
 
-<img class="plain" width="600" src="../img/stat/marks_hist.png">
+<img class="plain" width="900" src="../img/stat/marks_hist-.png">
 
 # Moments
 
