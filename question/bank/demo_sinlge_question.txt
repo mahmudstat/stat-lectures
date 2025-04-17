@@ -17,13 +17,16 @@ MCQ
 \question \textbf{Question}
 \choice{Choice}{Choice}{Choice}{Choice}{a}
 
-
+% Situation Set Starts
 \textbf{Answer the next two questions based on the following information}
 
 \begin{center}
 Statement
 \end{center}
+% Situation Set Ends
 
+
+% Multiple Completion Starts
 \question \textbf{Statement}
 
 i. option \\
@@ -33,6 +36,8 @@ iii. option
 \textbf{Which one is correct?}
 
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{b}
+% Multiple Completion Ends
+
 
 
 \displaystyle
