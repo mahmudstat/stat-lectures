@@ -1,0 +1,15 @@
+# Questions
+
+The page contains the question archive as well as specific exam questions.
+
+## Question Bank
+
+| Paper        |  Questions        |          Questions |
+|:------------:|:------------------:|:-------------:|
+|  First Paper  |      [Creative](question/bank/stat1_cqbank.pdf)      |    [MCQ](question/bank/stat1_mcq_bank.pdf)   |
+| Second Paper |      [Creative](question/bank/stat2_cqbank.pdf)      |    [MCQ](question/bank/stat2_mcq_bank.pdf)   |
+
+
+## Exam Questions
+
+{{< include ../pdf_links.md >}}

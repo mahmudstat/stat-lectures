@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: ../
+
+website:
+  title: "Stat Mania Lectures"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - lectures.qmd
+      - qbank.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

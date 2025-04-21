@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Stat Mania Lectures</title>
+<title>lectures – Stat Mania Lectures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,11 +89,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures.html"> 
+    <a class="nav-link active" href="./lectures.html" aria-current="page"> 
 <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
@@ -145,45 +116,53 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link active" data-scroll-target="#how-to-use">How to Use</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a>
+  <ul class="collapse">
+  <li><a href="#first-paper" id="toc-first-paper" class="nav-link" data-scroll-target="#first-paper">First Paper</a></li>
+  <li><a href="#second-paper" id="toc-second-paper" class="nav-link" data-scroll-target="#second-paper">Second Paper</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Stat Mania Lectures</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>This websites contains lectures on statistics.</p>
-<p>All the lectures are made using <a href="https://www.r-project.org/">R programming language</a> inside <a href="https://posit.co/download/rstudio-desktop/">Rstudio IDE</a>. The presentations were made using the <a href="https://revealjs.com/">revealjs</a> package.</p>
-<p>Questions are made using <span class="math inline">\(\LaTeX\)</span> inside Rstudio.</p>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">How to Use</h2>
+<section id="lectures" class="level1">
+<h1>Lectures</h1>
+<p>Statistics lectures are divided into two parts</p>
 <ul>
-<li>Press <code>space</code> or down-arrow (<span class="math inline">\(\downarrow\)</span>) to go the next slide or see hidden contents.</li>
-<li>Press up-arrow (<span class="math inline">\(\uparrow\)</span>) or <code>P</code> to go the previous slide.</li>
-<li>Press right arrow or left arrow to see next/previous chapter</li>
+<li><a href="#/first-paper">First Paper</a></li>
+<li><a href="#/second-paper">Second Paper</a></li>
 </ul>
-<p>See more <a href="https://defkey.com/reveal-js-shortcuts">here</a></p>
+<section id="first-paper" class="level2">
+<h2 class="anchored" data-anchor-id="first-paper">First Paper</h2>
+<ul>
+<li><a href="slide/01-stat-intro.html">Introduction to Statistics</a></li>
+<li><a href="slide/02-data-collection-organization-presentation.html">Data Collection, Organization &amp; Presentation</a></li>
+<li><a href="slide/03-central-tendency.html">Measures of Central Tendency</a></li>
+<li><a href="slide/04-dispersion.html">Measures of Dispersion</a></li>
+<li><a href="slide/05-moments-skewness-kurtosis.html">Moments, Skewness &amp; Kurtosis</a></li>
+<li><a href="slide/06-correlation-regression.html">Correlation &amp; Regression</a></li>
+<li><a href="slide/07-time_series.html">Time Series</a></li>
+</ul>
+</section>
+<section id="second-paper" class="level2">
+<h2 class="anchored" data-anchor-id="second-paper">Second Paper</h2>
+<ul>
+<li><a href="slide/01-probability-intro.html">Introduction to probability</a></li>
+<li><a href="slide/02-random-variable.html">Random variable and Probability Distributions</a></li>
+<li><a href="slide/03-expectation.html">Mathematical Expectation</a></li>
+<li><a href="slide/04-binomial_dist.html">Binomial Distribution</a></li>
+<li><a href="slide/05-poisson_dist.html">Poisson Distribution</a></li>
+<li><a href="slide/09-vital-stat.html">Vital Statistics</a></li>
+</ul>
+<p>More to come…</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

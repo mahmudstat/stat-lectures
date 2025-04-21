@@ -1,0 +1,17 @@
+---
+title: "Stat Mania Lectures"
+---
+
+This websites contains lectures on statistics.
+
+All the lectures are made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE](https://posit.co/download/rstudio-desktop/). The presentations were made using the [revealjs](https://revealjs.com/) package.
+
+Questions are made using $\LaTeX$ inside Rstudio.
+
+## How to Use
+
+- Press `space` or down-arrow ($\downarrow$) to go the next slide or see hidden contents.
+- Press up-arrow ($\uparrow$) or `P` to go the previous slide.
+- Press right arrow or left arrow to see next/previous chapter
+
+See more [here](https://defkey.com/reveal-js-shortcuts)

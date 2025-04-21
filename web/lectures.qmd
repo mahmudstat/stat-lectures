@@ -1,0 +1,27 @@
+# Lectures
+
+Statistics lectures are divided into two parts
+
+- [First Paper](#/first-paper)
+- [Second Paper](#/second-paper)
+
+## First Paper
+
+- [Introduction to Statistics](slide/01-stat-intro.html)
+- [Data Collection, Organization & Presentation](slide/02-data-collection-organization-presentation.html)
+- [Measures of Central Tendency](slide/03-central-tendency.html)
+- [Measures of Dispersion](slide/04-dispersion.html)
+- [Moments, Skewness & Kurtosis](slide/05-moments-skewness-kurtosis.html)
+- [Correlation & Regression](slide/06-correlation-regression.html)
+- [Time Series](slide/07-time_series.html)
+
+## Second Paper
+
+- [ Introduction to probability](slide/01-probability-intro.html)
+- [Random variable and Probability Distributions](slide/02-random-variable.html)
+- [Mathematical Expectation](slide/03-expectation.html)
+- [Binomial Distribution](slide/04-binomial_dist.html)
+- [Poisson Distribution](slide/05-poisson_dist.html)
+- [Vital Statistics](slide/09-vital-stat.html)
+
+More to come...

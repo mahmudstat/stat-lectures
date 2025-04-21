@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "qbank.html",
+    "href": "qbank.html",
+    "title": "Questions",
+    "section": "",
+    "text": "The page contains the question archive as well as specific exam questions.\n\n\n\n\n\nPaper\nQuestions\nQuestions\n\n\n\n\nFirst Paper\nCreative\nMCQ\n\n\nSecond Paper\nCreative\nMCQ\n\n\n\n\n\n\n\n\n\nHsc Model Test2 2022.pdf\nHsc Model Test2 Mcq 2022.pdf\nModel Test Cq 2022.pdf\nModel Test Mcq 2022.pdf\nPretest 2022.pdf\nPretest Mcq 2022.pdf\nT2 F1 2022.pdf\nT2 F2 20222.pdf\nYr Final 2022.pdf\nYr Final Mcq 2022.pdf\nHsc Model Test2 Cq2022.pdf\nModel Test Cq 2022.pdf\nModel Test Mcq 2022.pdf\nPretest Cq 2022.pdf\nPretest Mcq 2022.pdf\nT3 F1 2022.pdf\n\n\n\n\n\nHsc Progress Test Cq 2023.pdf\nHsc Progress Test Mcq 2023.pdf\nHsc Test Cq 2022.pdf\nHsc Test Cq 2023.pdf\nHsc Test Mcq 2023.pdf\nNewxi First Term End Cq 2023.pdf\nNewxi First Term End Mcq 2023.pdf\nT1 F1 2023.pdf\nT1 F2 2023.pdf\nXi First Term End Cq 2023.pdf\nXi First Term End Mcq 2023.pdf\nXi Half Yearly Cq 2023.pdf\nXii Test Cq 2023.pdf\nXii Test Mcq 2023.pdf\nXi Year Final Mcq 2023.pdf\nHsc Progress Test Cq 2023.pdf\nHsc Progress Test Mcq 2023.pdf\nHsc Test Cq 2023.pdf\nHsc Test Mcq 2023.pdf\nXii Test Cq 2023.pdf\nXii Test Mcq 2023.pdf\n\n\n\n\n\nHsc Test Cq 2024.pdf\nHsc Test Mcq 2024.pdf\nXi T1 F1 2024.pdf\nHsc Test Cq 2024.pdf\nHsc Test Mcq 2024.pdf\n\n\n\n\n\n43rd Progress Test Mcq.pdf\n43rd Progress Test.pdf\n43rd Progress Test Cq.pdf\n43rd Progress Test Mcq.pdf\n\n\n\n\n\n44th Pretest Cq 2024.pdf\n44th Pretest Mcq 2024.pdf\n44th Progress Test Cq 2024.pdf\n44th Progress Test Mcq 2025.pdf\n44th Test Cq 2024 Exam2.pdf\n44th Test Cq 2024.pdf\n44th Test Mcq 2024 Exam2.pdf\n44th Test Mcq 2024.pdf\n44th Year Final Cq.pdf\n44th Year Final Mcq.pdf\n44th Pretest Cq 2024.pdf\n44th Pretest Mcq 2024.pdf\n44th Progress Test Mcq 2025.pdf\n44th Prog Test Cq 2025.pdf\n44th T1 2024.pdf\n44th T2 F1 2024.pdf\n44th Test Cq 2024.pdf\n44th Test Mcq 2024.pdf\n\n\n\n\n\n45th 2025t1f1.pdf\n45th F1t1.pdf\n45th Special.pdf\n45th T1 Cq 2024.pdf\n45th T1 Mcq 2024.pdf"
+  },
+  {
+    "objectID": "lectures.html",
+    "href": "lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Statistics lectures are divided into two parts\n\nFirst Paper\nSecond Paper\n\n\n\n\nIntroduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series\n\n\n\n\n\nIntroduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nVital Statistics\n\nMore to come…"
+  },
+  {
+    "objectID": "lectures.html#first-paper",
+    "href": "lectures.html#first-paper",
+    "title": "Lectures",
+    "section": "",
+    "text": "Introduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series"
+  },
+  {
+    "objectID": "lectures.html#second-paper",
+    "href": "lectures.html#second-paper",
+    "title": "Lectures",
+    "section": "",
+    "text": "Introduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nVital Statistics\n\nMore to come…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stat Mania Lectures",
+    "section": "",
+    "text": "This websites contains lectures on statistics.\nAll the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package.\nQuestions are made using \\(\\LaTeX\\) inside Rstudio."
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Stat Mania Lectures",
+    "section": "How to Use",
+    "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "qbank.html#question-bank",
+    "href": "qbank.html#question-bank",
+    "title": "Questions",
+    "section": "",
+    "text": "Paper\nQuestions\nQuestions\n\n\n\n\nFirst Paper\nCreative\nMCQ\n\n\nSecond Paper\nCreative\nMCQ"
+  },
+  {
+    "objectID": "qbank.html#exam-questions",
+    "href": "qbank.html#exam-questions",
+    "title": "Questions",
+    "section": "",
+    "text": "Hsc Model Test2 2022.pdf\nHsc Model Test2 Mcq 2022.pdf\nModel Test Cq 2022.pdf\nModel Test Mcq 2022.pdf\nPretest 2022.pdf\nPretest Mcq 2022.pdf\nT2 F1 2022.pdf\nT2 F2 20222.pdf\nYr Final 2022.pdf\nYr Final Mcq 2022.pdf\nHsc Model Test2 Cq2022.pdf\nModel Test Cq 2022.pdf\nModel Test Mcq 2022.pdf\nPretest Cq 2022.pdf\nPretest Mcq 2022.pdf\nT3 F1 2022.pdf\n\n\n\n\n\nHsc Progress Test Cq 2023.pdf\nHsc Progress Test Mcq 2023.pdf\nHsc Test Cq 2022.pdf\nHsc Test Cq 2023.pdf\nHsc Test Mcq 2023.pdf\nNewxi First Term End Cq 2023.pdf\nNewxi First Term End Mcq 2023.pdf\nT1 F1 2023.pdf\nT1 F2 2023.pdf\nXi First Term End Cq 2023.pdf\nXi First Term End Mcq 2023.pdf\nXi Half Yearly Cq 2023.pdf\nXii Test Cq 2023.pdf\nXii Test Mcq 2023.pdf\nXi Year Final Mcq 2023.pdf\nHsc Progress Test Cq 2023.pdf\nHsc Progress Test Mcq 2023.pdf\nHsc Test Cq 2023.pdf\nHsc Test Mcq 2023.pdf\nXii Test Cq 2023.pdf\nXii Test Mcq 2023.pdf\n\n\n\n\n\nHsc Test Cq 2024.pdf\nHsc Test Mcq 2024.pdf\nXi T1 F1 2024.pdf\nHsc Test Cq 2024.pdf\nHsc Test Mcq 2024.pdf\n\n\n\n\n\n43rd Progress Test Mcq.pdf\n43rd Progress Test.pdf\n43rd Progress Test Cq.pdf\n43rd Progress Test Mcq.pdf\n\n\n\n\n\n44th Pretest Cq 2024.pdf\n44th Pretest Mcq 2024.pdf\n44th Progress Test Cq 2024.pdf\n44th Progress Test Mcq 2025.pdf\n44th Test Cq 2024 Exam2.pdf\n44th Test Cq 2024.pdf\n44th Test Mcq 2024 Exam2.pdf\n44th Test Mcq 2024.pdf\n44th Year Final Cq.pdf\n44th Year Final Mcq.pdf\n44th Pretest Cq 2024.pdf\n44th Pretest Mcq 2024.pdf\n44th Progress Test Mcq 2025.pdf\n44th Prog Test Cq 2025.pdf\n44th T1 2024.pdf\n44th T2 F1 2024.pdf\n44th Test Cq 2024.pdf\n44th Test Mcq 2024.pdf\n\n\n\n\n\n45th 2025t1f1.pdf\n45th F1t1.pdf\n45th Special.pdf\n45th T1 Cq 2024.pdf\n45th T1 Mcq 2024.pdf"
+  }
+]
