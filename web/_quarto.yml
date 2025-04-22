@@ -4,7 +4,11 @@ project:
 
 website:
   title: "Stat Mania Lectures"
+  repo-url: https://github.com/mahmudstat/stat-lectures
   navbar:
+    background: light
+    logo: resources/logo.png
+    logo-alt: "Stat Mania Logo."
     left:
       - href: index.qmd
         text: Home

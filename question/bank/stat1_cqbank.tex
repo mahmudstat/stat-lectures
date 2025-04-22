@@ -7,6 +7,10 @@
 \usepackage[a4paper, total={7.27in, 10.69in}]{geometry}
 \usepackage{titletoc}
 \usepackage{graphicx}
+\usepackage{answers}
+\Newassociation{solution}{Solution}{ans}
+\renewenvironment{Solution}[1]{\par\noindent\textbf{Answer:} }{\medskip}
+
 \titlecontents*{chapter}
   [0pt]% <left>
   {}
@@ -87,7 +91,7 @@
 \section{Creative Questions}
 
 \begin{enumerate}
-
+\Opensolutionfile{ans}[short_answers]
      \item
 	  \textbf{A system analyst collected frequencies of a signal at different times. Then he realized due to some unknown noise, 0.5 units got added to all the values. The recorded values are given below:} 
 	  
@@ -515,6 +519,10 @@ Diameter of trees, Color, Weight, Gender, Jersey Number, Family Size
 Number of vote cast for a particular candidate, Time required to run 100 m, Years of schooling, Number of goals in a soccer match, Body temperature, Gravity of stars, Absolute humidity, Atomic Number
 
 \item What are the functions of statistics? \hfill 1
+
+    \begin{solution}
+    Answer
+    \end{solution}
 
 \item What is the origin of the word statistics? \hfill 1
 
@@ -2699,6 +2707,12 @@ harmful policies.}
 \backmatter
 \chapter{Conclusion}
 \lipsum[8]
+
+
+\section*{Answers}
+
+\input{short_answers.sol}
+
 
 \tableofcontents
 \end{document}
