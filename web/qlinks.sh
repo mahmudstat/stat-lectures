@@ -15,22 +15,24 @@ for folder in "${FOLDERS[@]}"; do
     echo "### $folder" >> "$OUTPUT_FILE"
     echo "" >> "$OUTPUT_FILE"
 
-    # Initialize counter for ordered list
     counter=1
 
     while IFS= read -r filepath; do
       filename=$(basename "$filepath")
       link="$BASE_URL/$folder/$filename"
 
-      # Remove stat1 or stat2 prefix, replace _ with -, and capitalize the first letter of each word
-      display_name=$(echo "$filename" | sed -E 's/^stat[12]_//' | sed 's/_/-/g' | awk 'BEGIN {FS="-"} {for (i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2))}1' )
+      # Replace underscores with spaces and remove .pdf extension
+      name_part=$(echo "$filename" | sed 's/_/ /g' | sed 's/.pdf$//')
 
-      # Add ordered list item with the link
+      # Capitalize the first letter of each word, then append ".pdf"
+      display_name=$(echo "$name_part" | awk '{
+        for (i=1; i<=NF; i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2))
+        print $0 ".pdf"
+      }')
+
+      # Output as an ordered Markdown list
       echo "$counter. [$display_name]($link)" >> "$OUTPUT_FILE"
-
-      # Increment counter for the next item
       ((counter++))
-
     done <<< "$files"
 
     echo "" >> "$OUTPUT_FILE"

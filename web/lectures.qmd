@@ -1,10 +1,5 @@
 # Lectures
 
-Statistics lectures are divided into two parts
-
-- [First Paper](#/first-paper)
-- [Second Paper](#/second-paper)
-
 ## First Paper
 
 - [Introduction to Statistics](slide/01-stat-intro.html)
