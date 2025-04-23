@@ -3,6 +3,21 @@
 \usepackage{amsfonts}
 \usepackage{float}
 
+% HIde Footnotes
+
+\usepackage{letltxmacro}
+
+\LetLtxMacro\Oldfootnote\footnote
+
+\newcommand{\EnableFootNotes}{%
+  \LetLtxMacro\footnote\Oldfootnote%
+}
+
+\newcommand{\DisableFootNotes}{%
+  \renewcommand{\footnote}[2][]{\relax}
+}
+% HIde Footnotes
+
 \geometry{
 legalpaper, total={177.8mm, 290mm},left=20mm,
 top=7mm, bottom=27mm,
@@ -16,7 +31,7 @@ top=7mm, bottom=27mm,
                  &  &  &  &  &  & PROGRESS TEST EXAMINATION - 2025             &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Ques Setter}            & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
                  &  &  &  &  &  & CLASS: XII                          &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Moderator}              & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
                  &  &  &  &  &  & STATISTICS (CREATIVE)               &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{VP}                     & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
-                 &  &  &  &  &  & SECOND PAPER                        &  &                       &                                             &                        &                        &                        \\ \cline{11-13} 
+                 &  &  &  &  &  & FIRST PAPER                        &  &                       &                                             &                        &                        &                        \\ \cline{11-13} 
                  &  &  &  &  &  & [According to the Syllabus of 2025] &  &                       & \multicolumn{1}{r|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{9} \\ \cline{11-13} 
                  &  &  &  &  &  & TIME – 2 hours \& 35 minutes        &  &                       &                                             &                        &                        &                        \\
                  &  &  &  &  &  & FULL MARKS – 50                     &  &                       & \textbf{}                                   &                        &                        &                       
@@ -24,6 +39,8 @@ top=7mm, bottom=27mm,
 \end{table}
 
 \hrule
+
+\DisableFootNotes
 
 \begin{center}
 [\textbf{N.B.} – The figures of the right margin indicate full marks. Read the stems carefully and answer the associated questions. Answer any \textbf{FIVE} questions taking at least two questions from each group]\\
@@ -124,7 +141,7 @@ Expenses (Y) & 30 & 45 & 25 & 50 & 35
 
 \begin{enumerate}
  \item How many types of moments are there?  \hfill 1
-  \item Derive the value of the first central moment. \hfill 2
+  \item 	Derive the value of thew first central moment. \footnote{$\frac{\sum(x_i-\bar x}{n} = \bar x - \bar x) = 0$} \hfill 2
 \item
 Calculate the first four moments about 3. \hfill 3
 \item

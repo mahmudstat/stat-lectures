@@ -7,9 +7,8 @@
 \usepackage[a4paper, total={7.27in, 10.69in}]{geometry}
 \usepackage{titletoc}
 \usepackage{graphicx}
-\usepackage{answers}
-\Newassociation{solution}{Solution}{ans}
-\renewenvironment{Solution}[1]{\par\noindent\textbf{Answer:} }{\medskip}
+
+
 
 \titlecontents*{chapter}
   [0pt]% <left>
@@ -91,7 +90,7 @@
 \section{Creative Questions}
 
 \begin{enumerate}
-\Opensolutionfile{ans}[short_answers]
+
      \item
 	  \textbf{A system analyst collected frequencies of a signal at different times. Then he realized due to some unknown noise, 0.5 units got added to all the values. The recorded values are given below:} 
 	  
@@ -519,10 +518,6 @@ Diameter of trees, Color, Weight, Gender, Jersey Number, Family Size
 Number of vote cast for a particular candidate, Time required to run 100 m, Years of schooling, Number of goals in a soccer match, Body temperature, Gravity of stars, Absolute humidity, Atomic Number
 
 \item What are the functions of statistics? \hfill 1
-
-    \begin{solution}
-    Answer
-    \end{solution}
 
 \item What is the origin of the word statistics? \hfill 1
 
@@ -2024,7 +2019,7 @@ Analyze the skewness of the dataset using both graphical and numerical approache
 	\item 
 	Draw the shape of a left-skewed distribution. \hfill 1
 	\item 
-	Derive the value of thew first central moment. \hfill 2 \hfill 2
+	Derive the value of thew first central moment. \footnote{$\frac{\sum(x_i-\bar x}{n} = \bar x - \bar x) = 0$} \hfill 2
     \item
     Obtain the first four central moments. \hfill 3
     \item
@@ -2040,7 +2035,7 @@ Analyze the skewness of the dataset using both graphical and numerical approache
 
 \begin{enumerate}
 \item
-Calculate the first four moments about 3. \hfill 3
+Calculate the first four moments \footnote{62.5, 3934.5, 249407.5, 15915069} about 3. \hfill 3
 \item
 Compute the variance and kurtosis of the data using converted central moments. 
 Explain what the kurtosis indicates about the distribution. \hfill 4
@@ -2201,7 +2196,7 @@ Maximum         & 89        & 86        \\  \hline
     \item What is the pattern of in a left-skewed didstribution?\hfill 2
     \item What is the pattern of in a right-skewed didstribution?\hfill 2
     \item In a left-skewed distribution, what is the relationship between Mean, Median, and Mode? \hfill 2
-    \item In a right-skewed distribution, how are Mean, Median, and Mode related?  \hfill 2
+    \item In a right-skewed distribution, how \footnote{$Mo < Me < \bar X$} are Mean, Median, and Mode related?  \hfill 2
     \item Draw the shape of a left-skewed distribution and show locations of mean, median, and mode.  \hfill 2
     \item Draw the shape of a right-skewed distribution and show locations of mean, median, and mode.  \hfill 2
     \item Draw a symmetrical distribution.   \hfill 1
@@ -2708,10 +2703,6 @@ harmful policies.}
 \chapter{Conclusion}
 \lipsum[8]
 
-
-\section*{Answers}
-
-\input{short_answers.sol}
 
 
 \tableofcontents
