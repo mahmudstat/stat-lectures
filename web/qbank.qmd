@@ -12,9 +12,7 @@ The page contains the question archive as well as specific exam questions.
 
 ## Exam Questions
 
-Intentionally down for a while.
+<!-- Intentionally down for a while. -->
 
-<!---
 {{< include ../pdf_links.md >}}
 
--->
