@@ -13,7 +13,7 @@ output:
       in_header: css/header.html
 ---
 
-# Correlation-Regression
+## Scatter Plot Examples
 
 ## Why This Chapter is Important
 
@@ -30,6 +30,14 @@ We learn in this chapter
 - 
 </div>
 </div>
+
+## Focus of This Chapter
+
+**Prediction**
+
+## Which is Better for Prediction
+
+<img class="plain" src="img/scatter_corr.png" width="650"> 
 
 ## Scatter Plot
 
