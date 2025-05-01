@@ -1,0 +1,9 @@
+# Resources
+
+## Moment Conversion
+
+For statistical analysis, see our guide on:
+[Converting Raw ↔ Central Moments](resources/moments_conv.html)
+
+- Formulas with derivations
+- Worked examples
