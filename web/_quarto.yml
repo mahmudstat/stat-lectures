@@ -14,6 +14,7 @@ website:
         text: Home
       - lectures.qmd
       - qbank.qmd
+      - resources.qmd
 
 format:
   html:
