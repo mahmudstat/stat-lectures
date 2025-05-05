@@ -15,9 +15,31 @@ Changing
 - R function to convert
 - Changing from function 
 
-### Problem
+## Introduction
 
-#### First three moments about 2 are -1, 7 & 39. Find them about 5. 
+We are going to employ the new method in four types of distribution.
+
+- Raw data, for example ($20, 25, 29, \cdots$)
+- Tabular distribution (value and corresponding probability)
+- PMF
+- PDF
+
+
+### The Traditional Approach of Converting Moments
+
+Let us revisit the traditiona method with the help of an example. 
+
+**Problem:** Let us suppose first three moments about 2 are -1, 7 & 39. We have to find them about 5.
+
+**Traditional Solution:**
+
+Given
+
+- $\mu_1'(2) = -1$
+- $\mu_2'(2) = 7$ \&
+- $\mu_3'(2) = 39$
+
+Now we have to find $\mu_1'(5), \mu_3'(5), \text{ and } \mu_3'(5)$
 
 $\displaystyle \mu_1'(2) = \frac{\sum_{i=1}^n (x_i-2)}{n} = -1$
 
@@ -53,7 +75,7 @@ Thus
  & =\frac{\sum_{i=1}^n (x_i-2-3)^3}{n}\\
  & =\frac{\sum_{i=1}^n \{(x_i-2)^3-9(x_i-2)^2+27(x_i-2)-27n\}}{n}\\
  & = \frac{\sum_{i=1}^n (x_i-2)^3}{n}-9\frac{\sum_{i=1}^n (x_i-2)^2}{n}+27 \frac{\sum_{i=1}^n (x_i-2)}{n}-27\\
- & = \mu_3'-9mu_2'+27mu_1'-27\\
+ & = \mu_3'-9\mu_2'+27 \mu_1'-27\\
  & = 39 - 9 \times 7 + 27 \times (-1) + 27 \\
  & = -78
 \end{split}
@@ -149,8 +171,106 @@ The central moments ($\mu_r$) can be derived from the raw moments. The conventio
 
 But we can derive them quickly and easily by means of binomial theorem, and we can get the coefficient from Pascal's triangle. 
 
-## Conversion with Moment-generating function
+### Moments of Binomial Distribution
 
+Let \( X \sim \text{Bin}(n, p) \). The moment generating function (MGF) is defined as:
+
+\[
+M_X(t) = \mathbb{E}[e^{tX}] = \sum_{x=0}^{n} e^{tx} \binom{n}{x} p^x (1-p)^{n-x}
+\]
+
+Factor out \( e^{tx} \):
+
+\[
+M_X(t) = \sum_{x=0}^{n} \binom{n}{x} (p e^t)^x (1-p)^{n-x}
+\]
+
+This is a binomial expansion of:
+
+\[
+M_X(t) = \left( (1 - p) + p e^t \right)^n
+\]
+
+#### First Moment from MGF
+
+Differentiate the MGF with respect to \( t \):
+
+\[
+M'_X(t) = \frac{d}{dt} \left[ (1 - p + p e^t)^n \right]
+= n (1 - p + p e^t)^{n-1} \cdot p e^t
+\]
+
+Evaluate at \( t = 0 \) to get the first moment (mean):
+
+\[
+M'_X(0) = n (1 - p + p)^{n - 1} \cdot p = n p
+\]
+
+**Therefore, the first moment (mean) is:**
+
+\[
+\boxed{\mathbb{E}[X] = n p}
+\]
+
+#### First Central Moment of Binomial Distribution
+
+\[
+M_{X - \mu}(t) = e^{- \mu t} \cdot M_X(t)
+\]
+
+Substituting \( \mu = np \):
+
+\[
+M_{X - \mu}(t) = e^{-np t} \cdot \left( (1 - p) + p e^t \right)^n
+\]
+
+To find the **first central moment**, we differentiate this and evaluate at \( t = 0 \):
+
+\[
+\mu_1 = \left. \frac{d}{dt} M_{X - \mu}(t) \right|_{t = 0}
+\]
+
+Let:
+
+\[
+A(t) = e^{-np t}, \quad B(t) = \left( (1 - p) + p e^t \right)^n
+\]
+
+Then:
+
+\[
+M_{X - \mu}(t) = A(t) \cdot B(t)
+\]
+
+Differentiate using the product rule:
+
+\[
+\frac{d}{dt}(A(t)B(t)) = A'(t)B(t) + A(t)B'(t)
+\]
+
+Now evaluate each part at \( t = 0 \):
+
+- \( A(0) = 1 \),  
+- \( A'(t) = -np e^{-np t} \Rightarrow A'(0) = -np \),  
+- \( B(0) = \left( (1 - p) + p \cdot 1 \right)^n = 1 \),  
+- \( B'(t) = n \left( (1 - p) + p e^t \right)^{n - 1} \cdot p e^t \Rightarrow B'(0) = n p \)
+
+So:
+
+\[
+\left. \frac{d}{dt}(A(t)B(t)) \right|_{t = 0}
+= A'(0) B(0) + A(0) B'(0) = (-np)(1) + (1)(np) = 0
+\]
+
+---
+
+### ✅ Final Answer:
+
+\[
+\boxed{\mu_1 = 0}
+\]
+
+The **first central moment** of the Binomial distribution is **zero**, as expected.
 
 
 

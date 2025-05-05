@@ -367,11 +367,32 @@ display: none;
 <li>R function to convert</li>
 <li>Changing from function</li>
 </ul>
-<div id="problem" class="section level3">
-<h3>Problem</h3>
-<div id="first-three-moments-about-2-are--1-7-39.-find-them-about-5." class="section level4">
-<h4>First three moments about 2 are -1, 7 &amp; 39. Find them about
-5.</h4>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>We are going to employ the new method in four types of
+distribution.</p>
+<ul>
+<li>Raw data, for example (<span class="math inline">\(20, 25, 29,
+\cdots\)</span>)</li>
+<li>Tabular distribution (value and corresponding probability)</li>
+<li>PMF</li>
+<li>PDF</li>
+</ul>
+<div id="the-traditional-approach-of-converting-moments" class="section level3">
+<h3>The Traditional Approach of Converting Moments</h3>
+<p>Let us revisit the traditiona method with the help of an example.</p>
+<p><strong>Problem:</strong> Let us suppose first three moments about 2
+are -1, 7 &amp; 39. We have to find them about 5.</p>
+<p><strong>Traditional Solution:</strong></p>
+<p>Given</p>
+<ul>
+<li><span class="math inline">\(\mu_1&#39;(2) = -1\)</span></li>
+<li><span class="math inline">\(\mu_2&#39;(2) = 7\)</span> &amp;</li>
+<li><span class="math inline">\(\mu_3&#39;(2) = 39\)</span></li>
+</ul>
+<p>Now we have to find <span class="math inline">\(\mu_1&#39;(5),
+\mu_3&#39;(5), \text{ and } \mu_3&#39;(5)\)</span></p>
 <p><span class="math inline">\(\displaystyle \mu_1&#39;(2) =
 \frac{\sum_{i=1}^n (x_i-2)}{n} = -1\)</span></p>
 <p><span class="math inline">\(\displaystyle \mu_1&#39;(5) =
@@ -404,7 +425,7 @@ display: none;
 &amp; =\frac{\sum_{i=1}^n \{(x_i-2)^3-9(x_i-2)^2+27(x_i-2)-27n\}}{n}\\
 &amp; = \frac{\sum_{i=1}^n (x_i-2)^3}{n}-9\frac{\sum_{i=1}^n
 (x_i-2)^2}{n}+27 \frac{\sum_{i=1}^n (x_i-2)}{n}-27\\
-&amp; = \mu_3&#39;-9mu_2&#39;+27mu_1&#39;-27\\
+&amp; = \mu_3&#39;-9\mu_2&#39;+27 \mu_1&#39;-27\\
 &amp; = 39 - 9 \times 7 + 27 \times (-1) + 27 \\
 &amp; = -78
 \end{split}
@@ -412,7 +433,6 @@ display: none;
 \end{equation}\]</span></p>
 <p>Other higher order moments have to converted in the same fashion, and
 the calculation keeps getting more difficult.</p>
-</div>
 </div>
 <div id="on-the-way-to-generalization" class="section level3">
 <h3>On the way to Generalization</h3>
@@ -538,6 +558,95 @@ theorem, and we can get the coefficient from Pascal’s triangle.</p>
 </div>
 <div id="conversion-with-moment-generating-function" class="section level2">
 <h2>Conversion with Moment-generating function</h2>
+<div id="mgf-and-first-moment-of-binomial-distribution" class="section level3">
+<h3>MGF and First Moment of Binomial Distribution</h3>
+<p>Let <span class="math inline">\(X \sim \text{Bin}(n, p)\)</span>. The
+moment generating function (MGF) is defined as:</p>
+<p><span class="math display">\[
+M_X(t) = \mathbb{E}[e^{tX}] = \sum_{x=0}^{n} e^{tx} \binom{n}{x} p^x
+(1-p)^{n-x}
+\]</span></p>
+<p>Factor out <span class="math inline">\(e^{tx}\)</span>:</p>
+<p><span class="math display">\[
+M_X(t) = \sum_{x=0}^{n} \binom{n}{x} (p e^t)^x (1-p)^{n-x}
+\]</span></p>
+<p>This is a binomial expansion of:</p>
+<p><span class="math display">\[
+M_X(t) = \left( (1 - p) + p e^t \right)^n
+\]</span></p>
+<div id="first-moment-from-mgf" class="section level4">
+<h4>First Moment from MGF</h4>
+<p>Differentiate the MGF with respect to <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+M&#39;_X(t) = \frac{d}{dt} \left[ (1 - p + p e^t)^n \right]
+= n (1 - p + p e^t)^{n-1} \cdot p e^t
+\]</span></p>
+<p>Evaluate at <span class="math inline">\(t = 0\)</span> to get the
+first moment (mean):</p>
+<p><span class="math display">\[
+M&#39;_X(0) = n (1 - p + p)^{n - 1} \cdot p = n p
+\]</span></p>
+<p><strong>Therefore, the first moment (mean) is:</strong></p>
+<p><span class="math display">\[
+\boxed{\mathbb{E}[X] = n p}
+\]</span></p>
+</div>
+<div id="first-central-moment-of-binomial-distribution" class="section level4">
+<h4>First Central Moment of Binomial Distribution</h4>
+<p><span class="math display">\[
+M_{X - \mu}(t) = e^{- \mu t} \cdot M_X(t)
+\]</span></p>
+<p>Substituting <span class="math inline">\(\mu = np\)</span>:</p>
+<p><span class="math display">\[
+M_{X - \mu}(t) = e^{-np t} \cdot \left( (1 - p) + p e^t \right)^n
+\]</span></p>
+<p>To find the <strong>first central moment</strong>, we differentiate
+this and evaluate at <span class="math inline">\(t = 0\)</span>:</p>
+<p><span class="math display">\[
+\mu_1 = \left. \frac{d}{dt} M_{X - \mu}(t) \right|_{t = 0}
+\]</span></p>
+<p>Let:</p>
+<p><span class="math display">\[
+A(t) = e^{-np t}, \quad B(t) = \left( (1 - p) + p e^t \right)^n
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+M_{X - \mu}(t) = A(t) \cdot B(t)
+\]</span></p>
+<p>Differentiate using the product rule:</p>
+<p><span class="math display">\[
+\frac{d}{dt}(A(t)B(t)) = A&#39;(t)B(t) + A(t)B&#39;(t)
+\]</span></p>
+<p>Now evaluate each part at <span class="math inline">\(t =
+0\)</span>:</p>
+<ul>
+<li><span class="math inline">\(A(0) = 1\)</span>,<br />
+</li>
+<li><span class="math inline">\(A&#39;(t) = -np e^{-np t} \Rightarrow
+A&#39;(0) = -np\)</span>,<br />
+</li>
+<li><span class="math inline">\(B(0) = \left( (1 - p) + p \cdot 1
+\right)^n = 1\)</span>,<br />
+</li>
+<li><span class="math inline">\(B&#39;(t) = n \left( (1 - p) + p e^t
+\right)^{n - 1} \cdot p e^t \Rightarrow B&#39;(0) = n p\)</span></li>
+</ul>
+<p>So:</p>
+<p><span class="math display">\[
+\left. \frac{d}{dt}(A(t)B(t)) \right|_{t = 0}
+= A&#39;(0) B(0) + A(0) B&#39;(0) = (-np)(1) + (1)(np) = 0
+\]</span></p>
+<hr />
+</div>
+</div>
+<div id="final-answer" class="section level3">
+<h3>✅ Final Answer:</h3>
+<p><span class="math display">\[
+\boxed{\mu_1 = 0}
+\]</span></p>
+<p>The <strong>first central moment</strong> of the Binomial
+distribution is <strong>zero</strong>, as expected.</p>
+</div>
 </div>
 
 
