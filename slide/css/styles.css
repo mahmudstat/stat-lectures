@@ -1,6 +1,28 @@
 /********** Customise logo, and footer disclaimer **********/
 /* Position the corporate logo in the top right of the page */
 
+.reveal {
+  background-image: conic-gradient(at 85% 45%, #1aff66, #00b386, #1aff66);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Inline math */
+.reveal .mjx-math {
+  color: #ffe6ff; /* or your preferred color */
+}
+
+/* Display math */
+.reveal .mjx-container {
+  color: #ffe6ff; /* same color for block equations */
+}
+
+
+span {
+  color: #a31aff;
+}
+
 
 body {
   /* 
@@ -12,9 +34,6 @@ body {
   background-image: conic-gradient(at 85% 55%, #33ff33, #008ae6, #33ff33);
     }
     
-span {
-color:  #008ae6;
-}
 
 /*
 body:after {

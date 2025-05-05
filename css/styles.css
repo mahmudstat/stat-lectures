@@ -6,11 +6,13 @@ background-image: conic-gradient(at 85% 45%, #ffffff, #66ff66, #ffffff);
 background-image: conic-gradient(WhiteSmoke, tomato, WhiteSmoke);
 */
 
-body {
+.reveal {
   background-image: conic-gradient(#ffffff, green, #ffffff);
-  border-radius: 0%;
-    }
-    
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 span {
 color:  #ffe6ff;
 }

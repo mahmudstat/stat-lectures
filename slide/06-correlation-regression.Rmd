@@ -6,6 +6,7 @@ output:
   revealjs::revealjs_presentation:
     theme: sky
     reveal_plugins: ["chalkboard", "zoom", "menu"]
+    navigation-mode: vertical
     self_contained: false
     lib_dir: libs
     css: css/styles.css
@@ -13,7 +14,7 @@ output:
       in_header: css/header.html
 ---
 
-## Scatter Plot Examples
+## Scatter Plot Examples {data-background-color="green"}
 
 ## Why This Chapter is Important
 
