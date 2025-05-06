@@ -14,7 +14,7 @@ output:
       in_header: css/header.html
 ---
 
-## Scatter Plot Examples {data-background-color="green"}
+## Scatter Plot Examples
 
 ## Why This Chapter is Important
 

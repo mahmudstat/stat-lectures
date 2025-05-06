@@ -2,11 +2,26 @@
 \usepackage{geometry}
 \usepackage{amsfonts}
 \usepackage{float}
+\usepackage{amsmath}
 
 \geometry{
-legalpaper, total={177.8mm, 290mm},left=20mm,
-top=7mm, bottom=27mm,
+legalpaper, total={177.8mm, 290mm},left=10mm, right=10mm,
+top=7mm, bottom=10mm,
 }
+
+\usepackage{letltxmacro}
+
+\LetLtxMacro\Oldfootnote\footnote
+
+\newcommand{\EnableFootNotes}{%
+  \LetLtxMacro\footnote\Oldfootnote%
+}
+
+\newcommand{\DisableFootNotes}{%
+  \renewcommand{\footnote}[2][]{\relax}
+}
+
+\DisableFootNotes
 
 \begin{document}
 
