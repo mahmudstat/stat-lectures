@@ -317,6 +317,55 @@ Inner fence: $Q_1 - 1.5 \times IQR$ and $Q_3 + 1.5 \times IQR$
 
 Outer fence: $Q_1 - 3 \times IQR$ and $Q_3 + 3 \times IQR$
 
+## Determination of Correlation Coefficient from Ungrouped Data
+
+### Problem 
+
+The following table describes the number of daily active users (in millions) for two social media platforms over ten consecutive days.
+
+| Platform    | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 | Day 8 | Day 9 | Day 10 |
+|-------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|--------|
+| SocialA     | 12    | 15    | 11    | 8     | 14    | 9     | 13    | 10    | 15    | 12     |
+| SocialB     | 7     | 9     | 10    | 13    | 6     | 11    | 8     | 14    | 12    | 15     |
+
+Find the Pearson's coefficient of correlation and explain.
+
+### Solution
+
+#### Theory
+
+The Pearson's coefficient of correlation between two variables x and y is estimated as follows:
+
+$\displaystyle r = \frac{\sum xy - \frac{(\sum x)(\sum y)}{n}}{\sqrt{(\sum x^2 - \frac{(\sum x)^2}{n})(\sum y^2 - \frac{(\sum y)^2}{n})}}$
+
+## Determination of Simple Rank Correlation
+
+### Problem 
+
+The following table shows the ranks assigned by two judges to ten different cakes in a baking competition. A rank of 1 indicates the best cake, and a rank of 10 indicates the worst.
+
+|             | Cake 1 | Cake 2 | Cake 3 | Cake 4 | Cake 5 | Cake 6 | Cake 7 | Cake 8 | Cake 9 | Cake 10 |
+|-------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|
+| Judge A's Rank ($R_A$) | 3      | 7      | 1      | 9      | 5      | 2      | 10     | 4      | 8      | 6       |
+| Judge B's Rank ($R_B$) | 2      | 8      | 3      | 7      | 6      | 1      | 9      | 5      | 10     | 4       |
+
+Estimate the correlation and explain. 
+
+### Solution
+
+#### Theory
+
+Let $R_x$ be the rank by Judge A and $R_y$ be the rank by the Judge B. 
+
+The Rank Correlation Coefficient is
+
+$\displaystyle \rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
+
+## Estimation of The Regression Line
+
+
+
+
 # Determination of General Trend of Time Series and Prediction 
 
 # Exercises
