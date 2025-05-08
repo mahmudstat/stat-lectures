@@ -15,12 +15,15 @@ website:
       - lectures.qmd
       - qbank.qmd
       - resources.qmd
+      - href: snippets.qmd
+        text: Code Snippet
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    code-copy: true
 
 
 

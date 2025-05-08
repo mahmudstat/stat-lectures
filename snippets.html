@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>resources – Stat Mania Lectures</title>
+<title>snippets – Stat Mania Lectures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,11 +104,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Questions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+    <a class="nav-link" href="./resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./snippets.html"> 
+    <a class="nav-link active" href="./snippets.html" aria-current="page"> 
 <span class="menu-text">Code Snippet</span></a>
   </li>  
 </ul>
@@ -127,9 +127,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#resources" id="toc-resources" class="nav-link active" data-scroll-target="#resources">Resources</a>
+  <li><a href="#coden-snippets" id="toc-coden-snippets" class="nav-link active" data-scroll-target="#coden-snippets">Coden Snippets</a>
   <ul class="collapse">
-  <li><a href="#moment-conversion" id="toc-moment-conversion" class="nav-link" data-scroll-target="#moment-conversion">Moment Conversion</a></li>
+  <li><a href="#nux" id="toc-nux" class="nav-link" data-scroll-target="#nux">Nux</a></li>
+  <li><a href="#excel-google-sheet" id="toc-excel-google-sheet" class="nav-link" data-scroll-target="#excel-google-sheet">Excel / Google Sheet</a>
+  <ul class="collapse">
+  <li><a href="#mode-for-ordinal-data" id="toc-mode-for-ordinal-data" class="nav-link" data-scroll-target="#mode-for-ordinal-data">Mode for ordinal data</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -140,17 +144,63 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="resources" class="level1">
-<h1>Resources</h1>
-<section id="moment-conversion" class="level2">
-<h2 class="anchored" data-anchor-id="moment-conversion">Moment Conversion</h2>
-<p>For statistical analysis, see our guide on: <a href="resources/moments_conv.html">Converting Raw ↔︎ Central Moments</a></p>
-<ul>
-<li>Formulas with derivations</li>
-<li>Worked examples</li>
-</ul>
+<section id="coden-snippets" class="level1">
+<h1>Coden Snippets</h1>
+<section id="nux" class="level2">
+<h2 class="anchored" data-anchor-id="nux">Nux</h2>
+</section>
+<section id="excel-google-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="excel-google-sheet">Excel / Google Sheet</h2>
+<section id="mode-for-ordinal-data" class="level3">
+<h3 class="anchored" data-anchor-id="mode-for-ordinal-data">Mode for ordinal data</h3>
+<pre class="text"><code>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</code></pre>
+<style>
+/* Target the copy button more specifically */
+pre code .copy-button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.7;
+  z-index: 10;  /* Make sure the button stays above other elements */
+}
+
+pre code .copy-button:hover {
+  opacity: 1;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("pre > code").forEach(function (codeBlock) {
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerText = "Copy";
+
+    button.addEventListener("click", function () {
+      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 1500);
+      });
+    });
+
+    const pre = codeBlock.parentNode;
+    pre.style.position = "relative";
+    button.style.position = "absolute";
+    button.style.top = "0.5em";
+    button.style.right = "0.5em";
+    pre.appendChild(button);
+  });
+});
+</script>
 
 
+</section>
 </section>
 </section>
 

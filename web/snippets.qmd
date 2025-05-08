@@ -1,0 +1,61 @@
+# Coden Snippets
+
+## Nux
+
+## Excel / Google Sheet
+
+### Mode for ordinal data
+
+```text
+=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))
+```
+
+### Median for ordinal data
+
+```text
+=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))
+```
+
+<style>
+.copy-button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+.copy-button:hover {
+  opacity: 1;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("pre > code").forEach(function (codeBlock) {
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.type = "button";
+    button.innerText = "Copy";
+
+    button.addEventListener("click", function () {
+      navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 1500);
+      });
+    });
+
+    const pre = codeBlock.parentNode;
+    pre.style.position = "relative";
+    button.style.position = "absolute";
+    button.style.top = "0.5em";
+    button.style.right = "0.5em";
+    pre.appendChild(button);
+  });
+});
+</script>
+
