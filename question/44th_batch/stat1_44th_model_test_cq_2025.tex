@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{amsmath}
+
+\geometry{
+legalpaper, total={177.8mm, 290mm},left=10mm, right=10mm,
+top=7mm, bottom=12mm,
+}
+
+\usepackage{letltxmacro}
+
+\LetLtxMacro\Oldfootnote\footnote
+
+\newcommand{\EnableFootNotes}{%
+  \LetLtxMacro\footnote\Oldfootnote%
+}
+
+\newcommand{\DisableFootNotes}{%
+  \renewcommand{\footnote}[2][]{\relax}
+}
+
+\DisableFootNotes
+
+\begin{document}
+
+\begin{table}[]
+\begin{tabular}{llllllcllrlll}
+\textit{Spica} &  &  &  &  &  & \textbf{SYLHET CADET COLLEGE}       &  &                       & \multicolumn{1}{l}{}                        &                        &                        &                        \\ \cline{10-13} 
+                 &  &  &  &  &  & MODEL TEST EXAMINATION - 2025             &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Ques Setter}            & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
+                 &  &  &  &  &  & CLASS: HSC                          &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Moderator}              & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
+                 &  &  &  &  &  & STATISTICS (CREATIVE)               &  & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{VP}                     & \multicolumn{3}{l|}{}                                                    \\ \cline{10-13} 
+                 &  &  &  &  &  & SECOND PAPER                        &  &                       &                                             &                        &                        &                        \\ \cline{11-13} 
+                 &  &  &  &  &  & [According to the Syllabus of 2025] &  &                       & \multicolumn{1}{r|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{0} \\ \cline{11-13} 
+                 &  &  &  &  &  & TIME –  45 minutes        &  &                       &                                             &                        &                        &                        \\
+                 &  &  &  &  &  & FULL MARKS – 35                     &  &                       & \textbf{}                                   &                        &                        &                       
+\end{tabular}
+\end{table}
+
+\hrule
+
+\begin{center}
+[\textbf{N.B.} – The figures of the right margin indicate full marks. Read the stems carefully and answer the associated questions. Answer any \textbf{FIVE} questions taking at least two questions from each group]\\
+\end{center}
+
+\begin{center}
+\textbf{Group  - A}
+\end{center}
+
+  \begin{enumerate}
+  
+   \item
+	  \textbf{The manager of Future Shopping Center analyzed the usage of card-based payment. He observed that most buyers use either Visa cards (25 \%) or Master cards (60 \%), or both (15 \%). On a certain day, 1000 buyers showed up.} 
+  
+  \begin{enumerate}
+    \item  
+	Are the events of using Visa cards and Master cards independent? \hfill 3
+    \item
+	Analyze the statement: \textbf{The probability that no buyer used cards today is 0.3}. \hfill 4
+  \end{enumerate}
+
+% Questions here
+
+\begin{center}
+\textbf{Group  - B}
+\end{center}
+  
+\end{enumerate}
+
+ \vspace{2.5cm}
+
+\begin{center}
+ “Quote” \\ -- Author
+\end{center}
+
+\end{document}
