@@ -457,8 +457,8 @@ are -1, 7 &amp; 39. We have to find them about 5.</p>
 \end{aligned}
 \end{equation}\]</span></p>
 <p>Therefore, the third moment about 5 is <span class="math inline">\(\mu_3&#39;(5) = -78\)</span>.</p>
-<p>Other higher order moments have to converted in the same fashion, and
-the calculation keeps getting more difficult.</p>
+<p>Other higher order moments are converted in the same fashion, and the
+calculation keeps getting more difficult.</p>
 </div>
 <div id="raw-to-central-moments" class="section level3">
 <h3>Raw to Central Moments</h3>
@@ -466,19 +466,38 @@ the calculation keeps getting more difficult.</p>
 <p><span class="math display">\[
 \begin{aligned}
 \mu_1 &amp;= 0 \\[6pt]
-\mu_2 &amp;= \mu_2&#39; - (\mu_1&#39;)^2 \\[6pt]
-\mu_3 &amp;= \mu_3&#39; - 3\mu_2&#39;\mu_1&#39; + 2(\mu_1&#39;)^3
-\\[6pt]
-\mu_4 &amp;= \mu_4&#39; - 4\mu_3&#39;\mu_1&#39; +
-6\mu_2&#39;(\mu_1&#39;)^2 - 3(\mu_1&#39;)^4
+\mu_2 &amp;= \mu_2&#39;(a) - \left[\mu_1&#39;(a)\right]^2 \\[6pt]
+\mu_3 &amp;= \mu_3&#39;(a) - 3\mu_2&#39;(a)\mu_1&#39;(a) +
+2\left[\mu_1&#39;(a)\right]^3 \\[6pt]
+\mu_4 &amp;= \mu_4&#39;(a) - 4\mu_3&#39;(a)\mu_1&#39;(a) +
+6\mu_2&#39;(a)\left[\mu_1&#39;(a)\right]^2 -
+3\left[\mu_1&#39;(a)\right]^4 \\[6pt]
+\mu_5 &amp;= \mu_5&#39;(a) - 5\mu_4&#39;(a)\mu_1&#39;(a) +
+10\mu_3&#39;(a)\left[\mu_1&#39;(a)\right]^2
+        - 10\mu_2&#39;(a)\left[\mu_1&#39;(a)\right]^3 +
+4\left[\mu_1&#39;(a)\right]^5
 \end{aligned}
 \]</span></p>
+<p> Here, <span class="math inline">\(\mu_r&#39;(a)\)</span> denotes the
+<span class="math inline">\(r^{\text{th}}\)</span> raw moment about
+point <span class="math inline">\(a\)</span> (an arbitrary number), and
+<span class="math inline">\(\mu_r\)</span> denotes the <span class="math inline">\(r^{\text{th}}\)</span> central moment.</p>
+<p>The traditional methods for transforming moments—either from one
+arbitrary origin to another, or from raw to central moments—are often
+tedious and procedurally distinct. While central moments can, in
+principle, be derived by treating the arithmetic mean as a new origin,
+this approach is computationally intensive, while computing central
+moments using these formulas also poses a significant challenge, as it
+requires careful handling of various combinations of raw moments of
+differing orders.</p>
 </div>
-<div id="on-the-way-to-generalization" class="section level3">
-<h3>On the way to Generalization</h3>
+<div id="derivation-of-the-novel-approach" class="section level3">
+<h3>Derivation of the novel approach</h3>
 <p>Let,</p>
 <p>Initial origin = <span class="math inline">\(a\)</span></p>
 <p>Final origin = <span class="math inline">\(k\)</span></p>
+<div id="first-moment" class="section level4">
+<h4>First moment</h4>
 <p>First moment around <span class="math inline">\(a =
 \mu_1&#39;(a)\)</span></p>
 <p>First moment around <span class="math inline">\(k =
@@ -491,9 +510,10 @@ the calculation keeps getting more difficult.</p>
           &amp; = \frac{x_i-a}{n} + a - k\\
           &amp; = \mu_1&#39;(a) + (a - k)
 \end{split}
-(\#eq:mu1conv)
 \end{equation}\]</span></p>
-<p>Then,</p>
+</div>
+<div id="second-moment" class="section level4">
+<h4>Second moment</h4>
 <p>Second moment around <span class="math inline">\(a =
 \mu_2&#39;(a)\)</span></p>
 <p>Second moment around <span class="math inline">\(k =
@@ -508,10 +528,16 @@ the calculation keeps getting more difficult.</p>
 k)\frac{\sum(x_i-a)}{n}+(a-k)^2\\
           &amp; = \mu_2&#39;(a) + 2(a - k)\mu_1&#39;(a)+(a-k)^2
 \end{split}
-(\#eq:mu1conv)
 \end{equation}\]</span></p>
-<p>If we let <span class="math inline">\(a-k=b\)</span>, and rth raw
-moment around <span class="math inline">\(a\)</span> is <span class="math inline">\(\mu_r&#39;\)</span> and central moments <span class="math inline">\(\mu_r\)</span>, then we have</p>
+<p>Other moments are dealt with in the same fashion.</p>
+<p>To generalize the process, let</p>
+<ul>
+<li><span class="math inline">\(b = a - k\)</span> (for a reason to be
+obvious soon),</li>
+<li><span class="math inline">\(\mu_r&#39;(a) =\)</span> <span class="math inline">\(r^{\text{th}}\)</span> raw moment about <span class="math inline">\(a\)</span> and</li>
+<li><span class="math inline">\(\mu_r&#39;(k) =\)</span> <span class="math inline">\(r^{\text{th}}\)</span> raw moment about <span class="math inline">\(k\)</span></li>
+</ul>
+<p>So we have:</p>
 <ul>
 <li><span class="math inline">\(\mu_1&#39;(k) =
 \mu_1&#39;(a)+b\)</span></li>
@@ -523,11 +549,17 @@ moment around <span class="math inline">\(a\)</span> is <span class="math inline
 \space \mu_3&#39;(a) + 6b^2 \space \mu_2&#39;(a)  +4b^3 \space
 \mu_1&#39;(a) + b^4\)</span></li>
 </ul>
-<p>The formuluae are nothing but binomial expansions. If we let the
-terms of binomial expanison <span class="math inline">\(a\)</span> and
-<span class="math inline">\(b\)</span>, then for converting the first
-moment, we use the formula of $(a+b)^1 = a + b $. The table below shows
-the formulae required to convert the first four moments:</p>
+<p>The formulae look a lot like binomial expansions (which is natural
+due to the formula of the moments themselves). One modification will
+make them look (also serving our purpose) perfectly like binomial
+expansions.</p>
+<p>We let <span class="math inline">\(\mu_r&#39;(a) = a^r\)</span></p>
+<p>Which simply means whatever the power of <span class="math inline">\(a\)</span>, we are dealing with that particular
+moment.</p>
+<p>Thus letting the terms of binomial expansion <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, then for converting the first moment,
+we use the formula of <span class="math inline">\((a+b)^1 = a +
+b\)</span>. The table below shows the formulae required to convert the
+first four moments:</p>
 <table>
 <thead>
 <tr class="header">
@@ -538,7 +570,7 @@ the formulae required to convert the first four moments:</p>
 <tbody>
 <tr class="odd">
 <td align="center">First</td>
-<td align="center">a+b</td>
+<td align="center"><span class="math inline">\(a+b\)</span></td>
 </tr>
 <tr class="even">
 <td align="center">Second</td>
@@ -557,16 +589,12 @@ the formulae required to convert the first four moments:</p>
 <p>Observe the coefficients. They are essentially the binomial
 coefficients. The coefficients can be obtained from the Pascal’s
 triangle, which is a triangular array of the binomial coefficients.</p>
-<p><span class="math inline">\({\displaystyle {\begin{array}{c}1\\1\quad
-1\\1\quad 2\quad 1\\1\quad 3\quad 3\quad 1\\1\quad 4\quad 6\quad 4\quad
-1\\1\quad 5\quad 10\quad 10\quad 5\quad 1\\1\quad 6\quad 15\quad 20\quad
-15\quad 6\quad 1\\1\quad 7\quad 21\quad 35\quad 35\quad 21\quad 7\quad
-1\\\end{array}}}\)</span></p>
 <p>The first row is 1. Each entry of each subsequent row is constructed
 by adding the number above and to the left with the number above and to
 the right, treating blank entries as 0. For example, the initial number
 of row 1 (or any other row) is 1 (the sum of 0 and 1), whereas the
 numbers 1 and 3 in row 3 are added to produce the number 4 in row 4.</p>
+</div>
 <div id="testing-a-conversion" class="section level4">
 <h4>Testing a conversion</h4>
 <p>From the previous problem,</p>

@@ -109,7 +109,7 @@ To compute the third moment about 5, we use the binomial expansion:
 Therefore, the third moment about 5 is \( \mu_3'(5) = -78 \).
 
 
-Other higher order moments have to converted in the same fashion, and the calculation keeps getting more difficult. 
+Other higher order moments are converted in the same fashion, and the calculation keeps getting more difficult. 
 
 ### Raw to Central Moments
 
@@ -118,20 +118,30 @@ The following formulas are used:
 \[
 \begin{aligned}
 \mu_1 &= 0 \\[6pt]
-\mu_2 &= \mu_2' - (\mu_1')^2 \\[6pt]
-\mu_3 &= \mu_3' - 3\mu_2'\mu_1' + 2(\mu_1')^3 \\[6pt]
-\mu_4 &= \mu_4' - 4\mu_3'\mu_1' + 6\mu_2'(\mu_1')^2 - 3(\mu_1')^4
+\mu_2 &= \mu_2'(a) - \left[\mu_1'(a)\right]^2 \\[6pt]
+\mu_3 &= \mu_3'(a) - 3\mu_2'(a)\mu_1'(a) + 2\left[\mu_1'(a)\right]^3 \\[6pt]
+\mu_4 &= \mu_4'(a) - 4\mu_3'(a)\mu_1'(a) + 6\mu_2'(a)\left[\mu_1'(a)\right]^2 - 3\left[\mu_1'(a)\right]^4 \\[6pt]
+\mu_5 &= \mu_5'(a) - 5\mu_4'(a)\mu_1'(a) + 10\mu_3'(a)\left[\mu_1'(a)\right]^2
+        - 10\mu_2'(a)\left[\mu_1'(a)\right]^3 + 4\left[\mu_1'(a)\right]^5
 \end{aligned}
 \]
 
+\noindent
+Here, \(\mu_r'(a)\) denotes the \(r^{\text{th}}\) raw moment about point \(a\) (an arbitrary number), and \(\mu_r\) denotes the \(r^{\text{th}}\) central moment.
 
-### On the way to Generalization
+
+The traditional methods for transforming moments—either from one arbitrary origin to another, or from raw to central moments—are often tedious and procedurally distinct. While central moments can, in principle, be derived by treating the arithmetic mean as a new origin, this approach is computationally intensive, while computing central moments using these formulas also poses a significant challenge, as it requires careful handling of various combinations of raw moments of differing orders.
+
+
+### Derivation of the novel approach
 
 Let,
 
 Initial origin = $a$
 
 Final origin = $k$
+
+#### First moment
 
 First moment around $a = \mu_1'(a)$
 
@@ -145,10 +155,9 @@ First moment around $k = \mu_1'(k)$
           & = \frac{x_i-a}{n} + a - k\\
           & = \mu_1'(a) + (a - k)
 \end{split}
-(\#eq:mu1conv)
 \end{equation}
 
-Then,
+#### Second moment
 
 Second moment around $a = \mu_2'(a)$
 
@@ -162,28 +171,44 @@ Second moment around $k = \mu_2'(k)$
           & = \frac{(x_i-a)^2}{n} + 2(a - k)\frac{\sum(x_i-a)}{n}+(a-k)^2\\
           & = \mu_2'(a) + 2(a - k)\mu_1'(a)+(a-k)^2
 \end{split}
-(\#eq:mu1conv)
 \end{equation}
 
-If we let $a-k=b$, and rth raw moment around $a$ is $\mu_r'$ and central moments $\mu_r$, then we have
+Other moments are dealt with in the same fashion. 
+
+To generalize the process, let 
+
+- $b = a - k$ (for a reason to be obvious soon), 
+- $\mu_r'(a) =$ \(r^{\text{th}}\) raw moment about $a$ and 
+- $\mu_r'(k) =$ \(r^{\text{th}}\) raw moment about $k$
+
+So we have:
 
 - $\mu_1'(k) = \mu_1'(a)+b$
 - $\mu_2(k)= \mu_2'(a) + 2b \space \mu_1'(a)+b^2$
 - $\mu_3'(k) = \mu_3'(a) + 3b \space \mu_2'(a) + 3b^2 \space \mu_1'(a)  + b^3$
 - $\mu_4'(k) = \mu_4'(a) + 4b \space \mu_3'(a) + 6b^2 \space \mu_2'(a)  +4b^3 \space \mu_1'(a) + b^4$
 
-The formuluae are nothing but binomial expansions. If we let the terms of binomial expanison $a$ and $b$, then for converting the first moment, we use the formula of $(a+b)^1 = a + b $. The table below shows the formulae required to convert the first four moments: 
+The formulae look a lot like binomial expansions (which is natural due to the formula of the moments themselves). One modification will make them look (also serving our purpose) perfectly like binomial expansions.  
+
+We let $\mu_r'(a) = a^r$
+
+Which simply means whatever the power of $a$, we are dealing with that particular moment. 
+
+Thus letting the terms of binomial expansion $a$ and $b$, then for converting the first moment, we use the formula of $(a+b)^1 = a + b$. The table below shows the formulae required to convert the first four moments: 
 
 | Moment |            Formula            |
 |:------:|:-----------------------------:|
-|  First | a+b                           |
+|  First | $a+b$                           |
 | Second | $a^2+2ab+b^2$                 |
 |  Third | $a^3+3a^2b+3ab^2+b^3$         |
 |  Forth | $a^4+4a^3b+6a^2b^2+4ab^3+b^4$ |
 
 Observe the coefficients. They are essentially the binomial coefficients. The coefficients can be obtained from the Pascal's triangle, which is a triangular array of the binomial coefficients. 
 
+
+\begin{center}
 ${\displaystyle {\begin{array}{c}1\\1\quad 1\\1\quad 2\quad 1\\1\quad 3\quad 3\quad 1\\1\quad 4\quad 6\quad 4\quad 1\\1\quad 5\quad 10\quad 10\quad 5\quad 1\\1\quad 6\quad 15\quad 20\quad 15\quad 6\quad 1\\1\quad 7\quad 21\quad 35\quad 35\quad 21\quad 7\quad 1\\\end{array}}}$
+\end{center}
 
 The first row is 1. Each entry of each subsequent row is constructed by adding the number above and to the left with the number above and to the right, treating blank entries as 0. For example, the initial number of row 1 (or any other row) is 1 (the sum of 0 and 1), whereas the numbers 1 and 3 in row 3 are added to produce the number 4 in row 4.
 
