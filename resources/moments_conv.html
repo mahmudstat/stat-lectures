@@ -379,8 +379,11 @@ distribution.</p>
 <li>PMF</li>
 <li>PDF</li>
 </ul>
-<div id="the-traditional-approach-of-converting-moments" class="section level3">
-<h3>The Traditional Approach of Converting Moments</h3>
+</div>
+<div id="the-traditional-approach-of-converting-moments" class="section level2">
+<h2>The Traditional Approach of Converting Moments</h2>
+<div id="raw-moments-to-other-raw-moments" class="section level3">
+<h3>Raw Moments to Other Raw Moments</h3>
 <p>Let us revisit the traditiona method with the help of an example.</p>
 <p><strong>Problem:</strong> Let us suppose first three moments about 2
 are -1, 7 &amp; 39. We have to find them about 5.</p>
@@ -393,46 +396,83 @@ are -1, 7 &amp; 39. We have to find them about 5.</p>
 </ul>
 <p>Now we have to find <span class="math inline">\(\mu_1&#39;(5),
 \mu_3&#39;(5), \text{ and } \mu_3&#39;(5)\)</span></p>
-<p><span class="math inline">\(\displaystyle \mu_1&#39;(2) =
-\frac{\sum_{i=1}^n (x_i-2)}{n} = -1\)</span></p>
-<p><span class="math inline">\(\displaystyle \mu_1&#39;(5) =
-\frac{\sum_{i=1}^n (x_i-5)}{n} = \frac{\sum_{i=1}^n (x_i-2-3)}{n} =
-\frac{\sum_{i=1}^n (x_i-2) - 3n}{n}=\mu_1&#39;(2)-3=-4\)</span></p>
-<p>Similarly,</p>
-<p><span class="math inline">\(\displaystyle \mu_2&#39;(2) =
-\frac{\sum_{i=1}^n (x_i-2)^2}{n} = 7\)</span></p>
-<p><span class="math display">\[\begin{equation}
-\begin{split}
-\mu_2&#39;(5) &amp; =\frac{\sum_{i=1}^n (x_i-5)^2}{n}\\
-&amp; =\frac{\sum_{i=1}^n (x_i-2-3)^2}{n}\\
-&amp; =\frac{\sum_{i=1}^n \{(x_i-2)^2-6(x_i-2)+9n\}}{n}\\
-&amp; = \frac{\sum_{i=1}^n (x_i-2)^2}{n}-6\frac{\sum_{i=1}^n
-(x_i-2)}{n}+9 \\
-&amp; = \mu_2&#39;-6\mu_1&#39;+ 9
-&amp; = 7 - 6 \times (-1) +9
-&amp; = 22
-\end{split}
-(\#eq:secmom)
+<div id="conversion-of-first-moment" class="section level4">
+<h4>Conversion of First Moment</h4>
+<p>We have: <span class="math display">\[
+\mu_1&#39;(2) = \frac{1}{n} \sum_{i=1}^n (x_i - 2) = -1
+\]</span></p>
+<p>To find the first moment about 5, we rewrite the expression as: <span class="math display">\[
+\begin{aligned}
+\mu_1&#39;(5) &amp;= \frac{1}{n} \sum_{i=1}^n (x_i - 5) \\
+         &amp;= \frac{1}{n} \sum_{i=1}^n \left[(x_i - 2) - 3\right] \\
+         &amp;= \frac{1}{n} \left( \sum_{i=1}^n (x_i - 2) - 3n \right)
+\\
+         &amp;= \mu_1&#39;(2) - 3 = -1 - 3 = -4
+\end{aligned}
+\]</span></p>
+<p>Thus, the first moment about 5 is <span class="math inline">\(\mu_1&#39;(5) = -4\)</span>.</p>
+</div>
+</div>
+<div id="conversion-of-second-moment" class="section level3">
+<h3>Conversion of Second Moment</h3>
+<p>We are given: <span class="math display">\[
+\mu_2&#39;(2) = \frac{1}{n} \sum_{i=1}^n (x_i - 2)^2 = 7
+\]</span></p>
+<p>To find the second moment about 5, we proceed as follows: <span class="math display">\[\begin{equation}
+\begin{aligned}
+\mu_2&#39;(5) &amp;= \frac{1}{n} \sum_{i=1}^n (x_i - 5)^2 \\
+          &amp;= \frac{1}{n} \sum_{i=1}^n \left[(x_i - 2) - 3\right]^2
+\\
+          &amp;= \frac{1}{n} \sum_{i=1}^n \left[(x_i - 2)^2 - 6(x_i - 2)
++ 9\right] \\
+          &amp;= \frac{1}{n} \sum_{i=1}^n (x_i - 2)^2 - 6 \cdot
+\frac{1}{n} \sum_{i=1}^n (x_i - 2) + 9 \\
+          &amp;= \mu_2&#39;(2) - 6\mu_1&#39;(2) + 9 \\
+          &amp;= 7 - 6(-1) + 9 = 22
+\end{aligned}
 \end{equation}\]</span></p>
-<p>Finally, given</p>
-<p><span class="math inline">\(\displaystyle \mu_3&#39;(2) =
-\frac{\sum_{i=1}^n (x_i-2)^3}{n} = 39\)</span></p>
-<p>Thus</p>
-<p><span class="math display">\[\begin{equation}
-\begin{split}
-\mu_3&#39;(5) &amp; =\frac{\sum_{i=1}^n (x_i-5)^3}{n}\\
-&amp; =\frac{\sum_{i=1}^n (x_i-2-3)^3}{n}\\
-&amp; =\frac{\sum_{i=1}^n \{(x_i-2)^3-9(x_i-2)^2+27(x_i-2)-27n\}}{n}\\
-&amp; = \frac{\sum_{i=1}^n (x_i-2)^3}{n}-9\frac{\sum_{i=1}^n
-(x_i-2)^2}{n}+27 \frac{\sum_{i=1}^n (x_i-2)}{n}-27\\
-&amp; = \mu_3&#39;-9\mu_2&#39;+27 \mu_1&#39;-27\\
-&amp; = 39 - 9 \times 7 + 27 \times (-1) + 27 \\
-&amp; = -78
-\end{split}
-(\#eq:thrdmom)
+<p>Thus, the second moment about 5 is <span class="math inline">\(\mu_2&#39;(5) = 22\)</span>.</p>
+</div>
+<div id="conversion-of-third-moment" class="section level3">
+<h3>Conversion of Third Moment</h3>
+<p>We are given: <span class="math display">\[
+\mu_3&#39;(2) = \frac{1}{n} \sum_{i=1}^n (x_i - 2)^3 = 39
+\]</span></p>
+<p>To compute the third moment about 5, we use the binomial expansion:
+<span class="math display">\[\begin{equation}
+\begin{aligned}
+\mu_3&#39;(5) &amp;= \frac{1}{n} \sum_{i=1}^n (x_i - 5)^3 \\
+          &amp;= \frac{1}{n} \sum_{i=1}^n \left[(x_i - 2) - 3\right]^3
+\\
+          &amp;= \frac{1}{n} \sum_{i=1}^n \left[(x_i - 2)^3 - 9(x_i -
+2)^2 + 27(x_i - 2) - 27\right] \\
+          &amp;= \frac{1}{n} \sum_{i=1}^n (x_i - 2)^3
+             - 9 \cdot \frac{1}{n} \sum_{i=1}^n (x_i - 2)^2
+             + 27 \cdot \frac{1}{n} \sum_{i=1}^n (x_i - 2)
+             - 27 \\
+          &amp;= \mu_3&#39;(2) - 9\mu_2&#39;(2) + 27\mu_1&#39;(2) - 27
+\\
+          &amp;= 39 - 9 \cdot 7 + 27 \cdot (-1) - 27 \\
+          &amp;= -78
+\end{aligned}
 \end{equation}\]</span></p>
+<p>Therefore, the third moment about 5 is <span class="math inline">\(\mu_3&#39;(5) = -78\)</span>.</p>
 <p>Other higher order moments have to converted in the same fashion, and
 the calculation keeps getting more difficult.</p>
+</div>
+<div id="raw-to-central-moments" class="section level3">
+<h3>Raw to Central Moments</h3>
+<p>The following formulas are used:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mu_1 &amp;= 0 \\[6pt]
+\mu_2 &amp;= \mu_2&#39; - (\mu_1&#39;)^2 \\[6pt]
+\mu_3 &amp;= \mu_3&#39; - 3\mu_2&#39;\mu_1&#39; + 2(\mu_1&#39;)^3
+\\[6pt]
+\mu_4 &amp;= \mu_4&#39; - 4\mu_3&#39;\mu_1&#39; +
+6\mu_2&#39;(\mu_1&#39;)^2 - 3(\mu_1&#39;)^4
+\end{aligned}
+\]</span></p>
 </div>
 <div id="on-the-way-to-generalization" class="section level3">
 <h3>On the way to Generalization</h3>
@@ -555,11 +595,8 @@ look esoteric and difficult to remember.</p>
 <p>But we can derive them quickly and easily by means of binomial
 theorem, and we can get the coefficient from Pascal’s triangle.</p>
 </div>
-</div>
-<div id="conversion-with-moment-generating-function" class="section level2">
-<h2>Conversion with Moment-generating function</h2>
-<div id="mgf-and-first-moment-of-binomial-distribution" class="section level3">
-<h3>MGF and First Moment of Binomial Distribution</h3>
+<div id="moments-of-binomial-distribution" class="section level3">
+<h3>Moments of Binomial Distribution</h3>
 <p>Let <span class="math inline">\(X \sim \text{Bin}(n, p)\)</span>. The
 moment generating function (MGF) is defined as:</p>
 <p><span class="math display">\[
