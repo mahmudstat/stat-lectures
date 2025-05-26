@@ -6,7 +6,7 @@ OUTPUT_FILE="pdf_links.md"
 > "$OUTPUT_FILE"
 
 BASE_URL="https://docs.statmania.info/question"
-FOLDERS=("2022" "2023" "2024" "43rd_batch" "44th_batch" "45th")
+FOLDERS=("mgcc42" "45th" "44th_batch" "43rd_batch" "2024" "2023" "2022")
 
 for folder in "${FOLDERS[@]}"; do
   files=$(find "question/$folder" -maxdepth 1 -type f -iname "*.pdf" | sort)
