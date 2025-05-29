@@ -1,5 +1,11 @@
 # Resources
 
+## Lecture Notes
+
+- [Interesting Math Notes](resources/Nice_Math.pdf)
+- [All notes in one place (still under development)](resources/notes/stat_prob.pdf)
+
+
 ## Moment Conversion
 
 For statistical analysis, see our guide on:

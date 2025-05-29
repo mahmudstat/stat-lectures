@@ -17,9 +17,13 @@ output:
 
 > - Trial 
 > - Experiment 
-> - Random experiment
 > - Sample space
 > - event
+> - 
+
+## Trial vs Experiment
+
+
 
 # Three Definitions 
 

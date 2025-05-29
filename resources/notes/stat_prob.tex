@@ -2,7 +2,8 @@
 \usepackage{problem_counter}
 \usepackage{lipsum}
 \usepackage[hidelinks]{hyperref}
-\usepackage{multirow}
+%\usepackage{chngcntr} % Required for \counterwithin
+% \usepackage{multirow}
 \usepackage{titletoc}
 \usepackage{amsmath}
 \usepackage{geometry}
@@ -49,7 +50,8 @@
 }
 
 \title{My document}
-
+% This line tells LaTeX to reset the 'chapter' counter whenever 'part' is incremented.
+% \counterwithin{chapter}{part}
 \begin{document}
 \frontmatter
 
@@ -79,7 +81,7 @@
             
         \vspace{0.8cm}
             
-\includegraphics[width=1cm]{logo.png}
+\includegraphics[width=1cm]{../logo.png}
             
         \Large
         www.statmania.info\\
@@ -197,7 +199,6 @@ This is one of the simplest kind of probability distribution.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
-
 \iffalse
 
 \begin{table}[h]
@@ -211,7 +212,6 @@ This is one of the simplest kind of probability distribution.
 \end{table}
 
 \fi
-
 
 If we now define
 
@@ -261,7 +261,29 @@ $P(x) = \frac{x+k}{14}; x= 1,2,3,4$
 
 \[f(x) = x+ \frac32 y^2; 0\le x \le 1\, 0\le y \le 1\]
 
+\chapter{Binomial Distribution}
 
+\section{Properties}
+
+\begin{enumerate}
+
+\item Skewness: $\displaystyle \gamma_1 = \sqrt{\beta_1} = \frac{q-p}{\sqrt{npq}}$
+
+\item Kurtosis: $\displaystyle \frac{1-6pq}{npq}$
+
+\end{enumerate}
+
+\chapter{Poisson Distribution}
+
+\section{Properties}
+
+\begin{enumerate}
+
+\item Skewness: $\displaystyle \gamma_1 = \frac{1}{\sqrt{m}}, \beta_1 = \frac 1m$
+
+\item Kurtosis: $\displaystyle \gamma_1 = \frac{1}{m}, \beta_2 = 3 + \frac 1m$
+
+\end{enumerate}
 
 \backmatter
 \chapter{Conclusion}
