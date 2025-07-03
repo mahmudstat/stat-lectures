@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Abdullah Al Mahmud" />
+  <title>Normal Distribution</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="libs/reveal.js-4.2.1/dist/theme/sky.css" id="theme">
+
+  <link rel="stylesheet" href="libs/reveal.js-4.2.1/plugin/chalkboard/style.css">
+  <link rel="stylesheet" href="libs/reveal.js-4.2.1/plugin/customcontrols/style.css">
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <div id="header-footer">
+      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | docs.statmania.info | </p>
+    </div>
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Normal Distribution</h1>
+  <h2 class="author">Abdullah Al Mahmud</h2>
+</section>
+
+<section>
+<section id="most-important" class="title-slide slide level1">
+<h1>Most Important</h1>
+<p>It’s the</p>
+<ul>
+<li>most important distribution</li>
+<li>most common distribution</li>
+<li>most widely-used distribution</li>
+</ul>
+</section>
+<section id="shape" class="slide level2">
+<h2>Shape</h2>
+<p><img src="6-normal-distribution_files/figure-revealjs/normal-density-1.png" width="672" /></p>
+</section>
+<section id="pdf" class="slide level2">
+<h2>PDF</h2>
+<p>The normal PDF is given by</p>
+<p><span class="math display">\[
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}
+e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}; -\infty
+&lt;x&lt;\infty
+\]</span></p>
+<ul>
+<li class="fragment">First discovered by Abraham De Moivre</li>
+</ul>
+</section>
+<section id="binomial-to-normal" class="slide level2">
+<h2>Binomial to Normal</h2>
+<ul>
+<li class="fragment">Number of trial (n) is large (<span
+class="math inline">\(n \rightarrow \infty\)</span>)</li>
+<li class="fragment"><span class="math inline">\(P(S) \approx P(\bar
+S\)</span>), where <span class="math inline">\(S =\)</span> Success</li>
+</ul>
+</section>
+<section id="empirical-rule" class="slide level2">
+<h2>Empirical Rule</h2>
+<p>68‑95‑99.7 Rule</p>
+<p><img src="6-normal-distribution_files/figure-revealjs/empirical-rule-base-1.png" width="576" /></p>
+</section>
+<section id="properties" class="slide level2">
+<h2>Properties</h2>
+<ul>
+<li class="fragment">Bell-shaped</li>
+<li class="fragment">Symmetrical about mean</li>
+<li class="fragment"><span class="math inline">\(\beta_1 = 0, \beta_2 =
+3\)</span></li>
+<li class="fragment"><span class="math inline">\(\mu = Me =
+Mo\)</span></li>
+<li class="fragment">Area under whole curve is 1</li>
+<li class="fragment">The curve on either side of mean extends up to
+infinity.</li>
+</ul>
+</section>
+<section id="more-properties" class="slide level2">
+<h2>More Properties</h2>
+<ul>
+<li class="fragment">Empirical rule</li>
+<li class="fragment">Linear combination of Normal <span
+class="math inline">\(\rightarrow\)</span> normal</li>
+<li class="fragment"><span class="math inline">\(MD(\bar X) \frac
+45\sigma\)</span></li>
+<li class="fragment"><span class="math inline">\(QD = \frac
+23\sigma\)</span></li>
+<li class="fragment"><span class="math inline">\(M_X(t) =
+\mathbb{E}[e^{tX}] = \exp\left(\mu t + \frac{1}{2} \sigma^2 t^2\right)
+-\infty \le t \le \infty\)</span></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  <script src="libs/reveal.js-4.2.1/plugin/zoom/zoom.js"></script>
+  <script src="libs/reveal.js-4.2.1/plugin/menu/menu.js"></script>
+  <script src="libs/reveal.js-4.2.1/plugin/chalkboard/plugin.js"></script>
+  <script src="libs/reveal.js-4.2.1/plugin/customcontrols/plugin.js"></script>
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: true,
+        // Can be used to limit the contexts in which the slide number appears
+        showSlideNumber: 'all',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        menu: {
+          // Configuration from
+          // https://github.com/denehyg/reveal.js-menu#configuration
+   
+   
+    
+    
+    
+    
+    
+    
+    
+ 
+ 
+ 
+ 
+ 
+          // option not supported for change
+          loadIcons: false, // using rmarkdown provided own.
+          custom: false,
+          themes: false,
+          // themesPath: 'dist/theme/',
+          transitions: false
+        },
+
+
+        chalkboard: {
+        },
+        customcontrols: {
+            controls: [
+            ]
+        },
+
+        // Optional reveal.js plugins
+        plugins: [
+          RevealZoom,
+          RevealMenu,
+          RevealChalkboard,
+          RevealCustomControls,
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

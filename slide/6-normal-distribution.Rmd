@@ -1,0 +1,132 @@
+---
+title: "Normal Distribution"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Most Important
+
+It's the 
+
+- most important distribution
+- most common distribution
+- most widely-used distribution
+
+## Shape
+
+```{r normal-density, echo=FALSE, fig.width=7, fig.height=5, fig.cap=""}
+set.seed(123)         # for reproducibility
+n <- 1000             # number of samples
+mu <- 75               # mean
+sigma <- 10            # standard deviation
+
+# simulate data
+x <- rnorm(n, mean = mu, sd = sigma)
+
+# plot histogram scaled to density
+hist(x,
+     breaks = 30,
+     probability = TRUE,
+     col = "lightblue",
+     border = "white",
+     main = "Histogram with Normal Density Curve",
+     xlab = "Value",
+     ylim = c(0, max(density(x)$y, dnorm(mu, mu, sigma)) * 1.1))
+
+# add theoretical normal density
+curve(dnorm(x, mean = mu, sd = sigma),
+      from = min(x) - 1,
+      to = max(x) + 1,
+      col = "red",
+      lwd = 2,
+      add = TRUE)
+
+# add kernel density of the sample
+lines(density(x), col = "darkgreen", lwd = 2, lty = 2)
+
+# legend
+legend("topright",
+       legend = c("Theoretical normal", "Sample density"),
+       col = c("red", "darkgreen"),
+       lwd = 2, lty = c(1, 2))
+``` 
+
+## PDF
+
+The normal PDF is given by
+
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}; -\infty <x<\infty
+$$
+
+> - First discovered by Abraham De Moivre
+
+## Binomial to Normal
+
+> - Number of trial (n) is large ($n \rightarrow \infty$)
+> - $P(S) \approx P(\bar S$), where $S =$ Success
+
+## Empirical Rule
+
+68‑95‑99.7 Rule
+
+```{r empirical-rule-base, echo=FALSE, fig.width=6, fig.height=5, fig.cap=""}
+# 1. Numeric verification
+p1 <- pnorm(1) - pnorm(-1)
+p2 <- pnorm(2) - pnorm(-2)
+p3 <- pnorm(3) - pnorm(-3)
+
+
+# 2. Visual plot
+x <- seq(-4, 4, length = 400)
+y <- dnorm(x)
+plot(x, y, type="l", lwd=2, col="blue",
+     ylab="Density", xlab="Z",
+     main="Standard Normal with ±1,2,3σ Shading")
+
+# Function to shade region between -n and +n
+shade_region <- function(n, col) {
+  ix <- x >= -n & x <= n
+  polygon(c(-n, x[ix], n), c(0, y[ix], 0),
+          col = col, border = NA)
+}
+
+# Shade ±1, ±2, ±3
+shade_region(3, rgb(0,0,1,0.1))
+shade_region(2, rgb(0,0,1,0.2))
+shade_region(1, rgb(0,0,1,0.3))
+
+# Add legend
+legend("topright",
+       legend = c("±1σ ~68%", "±2σ ~95%", "±3σ ~99.7%"),
+       fill = c(rgb(0,0,1,0.3), rgb(0,0,1,0.2), rgb(0,0,1,0.1)),
+       border = NA)
+```
+
+## Properties
+
+> - Bell-shaped 
+> - Symmetrical about mean
+> - $\beta_1 = 0, \beta_2 = 3$
+> - $\mu = Me = Mo$
+> - Area under whole curve is 1
+> - The curve on either side of mean extends up to infinity.
+
+## More Properties
+
+> - Empirical rule
+> - Linear combination of Normal $\rightarrow$ normal
+> -  $MD(\bar X) \frac 45\sigma$
+> - $QD = \frac 23\sigma$
+> - $M_X(t) = \mathbb{E}[e^{tX}] = \exp\left(\mu t + \frac{1}{2} \sigma^2 t^2\right) -\infty \le t \le \infty$
+
+

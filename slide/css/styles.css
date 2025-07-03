@@ -2,7 +2,7 @@
 /* Position the corporate logo in the top right of the page */
 
 .reveal {
-  background-image: conic-gradient(at 85% 45%, #b3f0ff, #248f24, #b3f0ff);
+  background-image: conic-gradient(at 85% 45%, #ccffff, #ffff1a, #ccffff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
