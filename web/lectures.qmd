@@ -16,8 +16,8 @@
 - [Random variable and Probability Distributions](slide/02-random-variable.html)
 - [Mathematical Expectation](slide/03-expectation.html)
 - [Binomial Distribution](slide/04-binomial_dist.html)
-- [Poisson Distribution](slide/6-normal-distribution.html)
-- [Normal Distribution](slide/05-poisson_dist.html)
+- [Poisson Distribution](slide/05-poisson_dist.html)
+- [Normal Distribution](slide/6-normal-distribution.html)
 - [Vital Statistics](slide/09-vital-stat.html)
 
 More to come...

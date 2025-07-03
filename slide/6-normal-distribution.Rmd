@@ -112,6 +112,10 @@ legend("topright",
        border = NA)
 ```
 
+## Empirical Rule Area
+
+> - $$
+
 ## Properties
 
 > - Bell-shaped 
