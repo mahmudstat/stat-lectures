@@ -7,7 +7,7 @@
 
 ## Quiz
 
-- [The Great Quiz Book](https://raw.githubusercontent.com/mahmudstat/articles/main/books/quiz/The_Great_Quiz_Book.pdf)
+- [The Great Quiz Book](https://raw.githubusercontent.com/mahmudstat/articles/main/books/quiz/The_Great_Quiz_Book.pdf){.no-download}
 
 ## Moment Conversion
 

@@ -23,6 +23,32 @@ geometry: margin=2cm
 
 ## $0.999 \cdots = 1$
 
+### Proof 01
+
+Let $X = 0.999 \cdots$ 
+
+- $10X = 10 \times 0.999 \cdots = 9.999 \cdots$
+- $9X = 9.000 \cdots$
+- $X = 1$
+
+### Proof 02
+
+- $\frac19 = 0.111 \cdots$
+- $9 \times \frac19 = 9 \times 0.111 \cdots$
+- $1 = 0.999 \cdots$
+
+### Proof 03
+
+- $0.999 \cdots = 0.9 + 0.09 + 0.009 + \cdots$
+- $\frac {9}{10} + \frac {9}{100} + \frac {9}{1000} + \cdots$ 
+ 
+Here, common ratio $r= \frac{1}{10} < 1$
+
+Thus, summation $S = \frac{a}{1-r} = \frac{\frac{9}{10}}{1-\frac{1}{10}} = \frac{9}{10} \times \frac{10}{9} =1$
+
+### Proof 04
+
+If they are not equal, what is the number between them (in a continuous scale, there has to, if they are not equal)?
 # Concepts 
 
 ## Indeterminate vs undefined
