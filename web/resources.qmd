@@ -5,6 +5,9 @@
 - [Interesting Math Notes](resources/Nice_Math.pdf)
 - [All notes in one place (still under development)](resources/notes/stat_prob.pdf)
 
+## Quiz
+
+- [The Great Quiz Book](https://raw.githubusercontent.com/mahmudstat/articles/main/books/quiz/The_Great_Quiz_Book.pdf)
 
 ## Moment Conversion
 

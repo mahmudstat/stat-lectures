@@ -39,7 +39,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Interesting Math Notes\nAll notes in one place (still under development)\n\n\n\n\nFor statistical analysis, see our guide on: Converting Raw ↔︎ Central Moments\n\nFormulas with derivations\nWorked examples"
+    "text": "Interesting Math Notes\nAll notes in one place (still under development)\n\n\n\n\n\nThe Great Quiz Book\n\n\n\n\nFor statistical analysis, see our guide on: Converting Raw ↔︎ Central Moments\n\nFormulas with derivations\nWorked examples"
   },
   {
     "objectID": "resources.html#lecture-notes",
@@ -89,5 +89,12 @@
     "title": "Stat Mania Lectures",
     "section": "How to Use",
     "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "resources.html#quiz",
+    "href": "resources.html#quiz",
+    "title": "Resources",
+    "section": "",
+    "text": "The Great Quiz Book"
   }
 ]
