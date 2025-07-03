@@ -42,6 +42,13 @@
     "text": "Interesting Math Notes\nAll notes in one place (still under development)\n\n\n\n\nFor statistical analysis, see our guide on: Converting Raw ↔︎ Central Moments\n\nFormulas with derivations\nWorked examples"
   },
   {
+    "objectID": "resources.html#lecture-notes",
+    "href": "resources.html#lecture-notes",
+    "title": "Resources",
+    "section": "",
+    "text": "Interesting Math Notes\nAll notes in one place (still under development)"
+  },
+  {
     "objectID": "resources.html#moment-conversion",
     "href": "resources.html#moment-conversion",
     "title": "Resources",
@@ -53,7 +60,7 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Introduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series\n\n\n\n\n\nIntroduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nVital Statistics\n\nMore to come…"
+    "text": "Introduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series\n\n\n\n\n\nIntroduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nNormal Distribution\nVital Statistics\n\nMore to come…"
   },
   {
     "objectID": "lectures.html#first-paper",
@@ -67,7 +74,7 @@
     "href": "lectures.html#second-paper",
     "title": "Lectures",
     "section": "",
-    "text": "Introduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nVital Statistics\n\nMore to come…"
+    "text": "Introduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nNormal Distribution\nVital Statistics\n\nMore to come…"
   },
   {
     "objectID": "index.html",
@@ -82,12 +89,5 @@
     "title": "Stat Mania Lectures",
     "section": "How to Use",
     "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
-  },
-  {
-    "objectID": "resources.html#lecture-notes",
-    "href": "resources.html#lecture-notes",
-    "title": "Resources",
-    "section": "",
-    "text": "Interesting Math Notes\nAll notes in one place (still under development)"
   }
 ]
