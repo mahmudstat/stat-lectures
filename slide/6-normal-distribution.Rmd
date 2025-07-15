@@ -376,8 +376,26 @@ text(x = 3.8, y = dnorm(3.8) + 0.02, labels = expression(+infinity), pos = 2, co
 
 ## GMAT Question
 
-Scores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?
+Scores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[[source](https://www.stat.colostate.edu/inmem/gumina/st201/recitation8/downloads/Normal%20Probabilites%20Practice.pdf?ref=docs.statmania.info)]
 
 > - $\mu = 527, \sigma = 112$ 
 > - $P(X > 500)$
 
+## Gestation
+
+<div style="font-size:30px;">
+The length of human pregnancies from conception to birth approximates a normal distribution with a mean of 266 days and a standard deviation of 16 days. 
+
+> - What proportion of all pregnancies will last between 240 and 270 days (roughly between 8 and 9 months)?
+> - What length of time marks the shortest 70% of all pregnancies? 
+</div>
+
+## Forest burn
+
+<div style="font-size:30px;">
+
+The average number of acres burned by forest and range fires in a large New Mexico county is 4,300 acres per year, with a standard deviation of 750 acres. The distribution of the number of acres burned is normal. 
+
+> - What is the probability that between 2,500 and 4,200 acres will be burned in any given year?
+
+</div>
