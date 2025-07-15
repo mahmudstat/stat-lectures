@@ -114,7 +114,9 @@ legend("topright",
 
 ## Empirical Rule Area
 
-> - $$
+> - $P(\mu - \sigma \le \mu + \sigma) = 0.6826$
+> - $P(\mu - 2 \sigma \le \mu + 2 \sigma) = 0.9544$
+> - $P(\mu - 3 \sigma \le \mu + 3 \sigma) = 0.9973$
 
 ## Properties
 
@@ -134,3 +136,34 @@ legend("topright",
 > - $M_X(t) = \mathbb{E}[e^{tX}] = \exp\left(\mu t + \frac{1}{2} \sigma^2 t^2\right) -\infty \le t \le \infty$
 
 
+## Application or Normal Distribution
+
+> - Quality Control in industry
+> - Most distributions tend to be normal under some assumptions
+> - Sometimes transformation makes normal
+> - Used in hypothesis testing (many samples are normally distributed)
+
+## Standard Normal
+
+If $X \sim N(\mu, \sigma ^2), z = \frac{x-\mu}{\sigma} \sim N(0,1)$
+
+> - $\displaystyle f(z) = \frac{1}{\sqrt{2 \pi}}e^{\frac{-z^2}{2}}$ 
+> - $E(Z) = 0$
+> - $V(Z) = S(Z) = 0$
+
+## Standard Normal Mean
+
+Let $X \sim N(\mu, \sigma ^2)$
+
+> - Now let $\displaystyle Z = \frac{X-\mu}{\sigma}$
+> - $E(Z) = E(\frac{X-Z}{\mu})$
+> - = $\frac{1}{\sigma} E(X-\mu)$
+> - = $\frac{1}{\sigma} [E(X) - E(\mu)]$
+> - = $\frac{1}{\sigma} (\mu - \mu)$
+> - 0
+
+## Standard Normal Variance
+
+$V(Z) = V(\frac{X-Z}{\mu})$
+
+> - = $\frac{}{}$ 

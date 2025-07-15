@@ -8,6 +8,15 @@
   background-position: center;
 }
 
+/* UL Style  */
+
+.reveal ul li {
+  list-style-type: disc !important; /* Or circle, none, etc. */
+}
+
+/* UL Style ends  */
+
+
 /* Inline math */
 .reveal .mjx-math {
   color: #ffe6ff; /* or your preferred color */

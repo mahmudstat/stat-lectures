@@ -49,6 +49,7 @@ Thus, summation $S = \frac{a}{1-r} = \frac{\frac{9}{10}}{1-\frac{1}{10}} = \frac
 ### Proof 04
 
 If they are not equal, what is the number between them (in a continuous scale, there has to, if they are not equal)?
+
 # Concepts 
 
 ## Indeterminate vs undefined
