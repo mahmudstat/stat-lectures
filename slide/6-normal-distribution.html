@@ -115,6 +115,18 @@ class="math inline">\(n \rightarrow \infty\)</span>)</li>
 <li class="fragment"><span class="math inline">\(P(S) \approx P(\bar
 S\)</span>), where <span class="math inline">\(S =\)</span> Success</li>
 </ul>
+<p><a
+href="https://portal.statmania.info/ds/analysis/viz-dist.html">Check out
+here</a></p>
+</section>
+<section id="poisson-to-normal" class="slide level2">
+<h2>Poisson to Normal</h2>
+<p><span class="math inline">\(m \rightarrow \infty\)</span></p>
+<p><span class="math display">\[
+\lim_{m \to \infty} \text{Pois}(m) \approx \mathcal{N}(m, m)
+\]</span> <a
+href="https://portal.statmania.info/ds/analysis/viz-dist.html">Check out
+here</a></p>
 </section>
 <section id="empirical-rule" class="slide level2">
 <h2>Empirical Rule</h2>
@@ -144,6 +156,7 @@ Mo\)</span></li>
 <li class="fragment">Area under whole curve is 1</li>
 <li class="fragment">The curve on either side of mean extends up to
 infinity.</li>
+<li class="fragment">All odd central moments are zero</li>
 </ul>
 </section>
 <section id="more-properties" class="slide level2">
@@ -160,6 +173,12 @@ class="math inline">\(\rightarrow\)</span> normal</li>
 \mathbb{E}[e^{tX}] = \exp\left(\mu t + \frac{1}{2} \sigma^2 t^2\right)
 -\infty \le t \le \infty\)</span></li>
 </ul>
+</section>
+<section id="odd-central-moments" class="slide level2">
+<h2>Odd Central Moments</h2>
+<p><span class="math inline">\(\mu_1 = \mu_3 = \cdots = \mu_{2n+1} =
+0\)</span></p>
+<p>Mathematically Why? &gt; -</p>
 </section>
 <section id="application-or-normal-distribution" class="slide level2">
 <h2>Application or Normal Distribution</h2>
@@ -207,6 +226,146 @@ E(X-\mu)\)</span></li>
 <ul>
 <li class="fragment">= <span
 class="math inline">\(\frac{}{}\)</span></li>
+</ul>
+</section></section>
+<section>
+<section id="normal-problems" class="title-slide slide level1">
+<h1>Normal Problems</h1>
+
+</section>
+<section id="find-skewness" class="slide level2">
+<h2>Find Skewness</h2>
+<p>Find the coefficient of skewness of normal distribution with variance
+4.</p>
+<div class="container">
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\(\mu_3 = 0\)</span></li>
+<li class="fragment"><span class="math inline">\(\sigma^2 =\mu_2 =
+4\)</span></li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\(\gamma_1 =
+\sqrt{\beta_1} = \frac{\mu_3}{\sqrt{\mu_2^3}}\)</span></li>
+<li class="fragment"><span class="math inline">\(\gamma_1 =
+\frac{0}{\sqrt{4^3}} = 0\)</span></li>
+<li class="fragment">So no skew (symmetric)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="probablity-of-z--1-1" class="slide level2">
+<h2>Probablity of Z [-1, 1]</h2>
+<p>Find <span class="math inline">\(P(-1 \le z \le 1)\)</span></p>
+<div class="container">
+<div class="col">
+<p><small></p>
+<ul>
+<li class="fragment"><span class="math inline">\(P(-1 \le z \le
+1)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(-1 \le z \le 0) + P(0
+\le z \le 1)\)</span></li>
+<li class="fragment"><span class="math inline">\(0.3413 +
+0.3413\)</span></li>
+<li class="fragment">0.6826</li>
+</ul>
+<p></small></p>
+</div>
+<div class="col">
+<p><img src="6-normal-distribution_files/figure-revealjs/normal_plot_base_R-1.png" width="672" /></p>
+</div>
+</div>
+</section>
+<section id="method-2" class="slide level2">
+<h2>Method 2</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(P(-1 \le z \le 1) =
+P(z\le1) - P(z \le -1)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(z \le -1) = 1- P(z
+\le 1)\)</span> (since symmetric)</li>
+<li class="fragment"><span class="math inline">\(P(-1 \le z \le 1)
+=  P(z\le1) - [1- P(z \le 1)]\)</span></li>
+<li class="fragment"><span class="math inline">\(2 P(z \le 1) -
+1\)</span></li>
+<li class="fragment"><span class="math inline">\(2 \times 8413-1 =
+0.6826\)</span></li>
+</ul>
+</section>
+<section id="find-md-of-n20-25" class="slide level2">
+<h2>Find MD of N(20, 25)</h2>
+<div class="container">
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\(\mu = 20 , \sigma^2 =
+25\)</span></li>
+<li class="fragment"><span class="math inline">\(\sigma =
+5\)</span></li>
+</ul>
+</div>
+<div class="col">
+<p>Mean Deviation about Mean</p>
+<ul>
+<li class="fragment"><span class="math inline">\(MD(\bar X) = \frac45
+\sigma\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="find-varinace" class="slide level2">
+<h2>Find Varinace</h2>
+<p>Find the variance of normal distribution when <span
+class="math inline">\(\mu_4 = 2\)</span></p>
+<ul>
+<li class="fragment">Kurtosis, <span class="math inline">\(\beta_2 =
+\frac{\mu_4}{\mu_2}\)</span></li>
+<li class="fragment">Mesokortic <span class="math inline">\(\rightarrow
+\beta_2 = 3\)</span></li>
+<li class="fragment"><span class="math inline">\(3 =
+\frac{2}{\mu_2^2}\)</span></li>
+<li class="fragment"><span class="math inline">\(\mu_2^2 =
+0.67\)</span></li>
+<li class="fragment"><span class="math inline">\(\sigma^2 =
+?\)</span></li>
+<li class="fragment"><span
+class="math inline">\(\sqrt{0.67}\)</span></li>
+</ul>
+</section>
+<section id="px-20" class="slide level2">
+<h2>P(X &gt; 20)</h2>
+<p><span class="math inline">\(\mu = 15, \sigma = 4, P(X &gt; 20)=
+?\)</span></p>
+<div class="container">
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\(P(X &gt;
+20)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(\frac{x-\mu}{\sigma}
+&gt; \frac{20-15}{4})\)</span></li>
+<li class="fragment"><span
+class="math inline">\(P(z&gt;1.25)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(0\le z \le \infty) -
+P(0\le z \le 1.25)\)</span></li>
+<li class="fragment"><span class="math inline">\(0.5 - 0.3944 =
+0.1056\)</span></li>
+</ul>
+</div>
+<div class="col">
+<p><img src="6-normal-distribution_files/figure-revealjs/normal_plot_base_R_right_tail_1.25-1.png" width="672" /></p>
+</div>
+</div>
+</section>
+<section id="gmat-question" class="slide level2">
+<h2>GMAT Question</h2>
+<p>Scores on the GMAT are roughly normally distributed with a mean of
+527 and a standard deviation of 112. What is the probability of an
+individual scoring above 500 on the GMAT?</p>
+<ul>
+<li class="fragment"><span class="math inline">\(\mu = 527, \sigma =
+112\)</span></li>
+<li class="fragment"><span class="math inline">\(P(X &gt;
+500)\)</span></li>
 </ul>
 </section></section>
     </div>
