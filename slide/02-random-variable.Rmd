@@ -74,18 +74,65 @@ Biased
 
 ## Number of Heads in Coin Toss
 
-Two coins are tossed successively. 
+A coin is tossed twice
 
-**N:B: X is variable & x is value**
-
-X = number of heads in the coin toss
+X = number of heads in the tosses
 
 x = 0, 1, 2 
 
-> - P(x=0) = ?
-> - P(x=1)=?, P(x=2)=?
+Fill the probabilities
 
-## Probability Function
+|   x  | 0 | 1 | 2 |
+|:----:|:-:|:-:|:-:|
+| p(x) |   |   |   |
+
+> - **N:B: X is variable & x is value**
+
+## PDF vs PMF Curve
+
+<div class="container">
+<div class="col">
+PDF 
+
+<img class="plain" src="img/pdf.png" height="320">
+
+Continuous
+</div>
+<div class="col">
+PMF
+
+<img class="plain" src="img/pmf.png" height="350">
+
+Discrete
+</div>
+</div>
+
+## PDF and PMF Conditions
+
+
+<div class="container">
+<div class="col">
+PDF 
+
+<img class="plain" src="img/pdf_area.webp" height="200">
+<small> Source: [upgrad.com](https://www.upgrad.com/blog/introduction-to-probability-density-function/?source=docs.statmania.info) </small>
+
+> - $0 \le f(x) \le 1$
+> - $\displaystyle \int_{-\infty}^\infty f(x)dx = 1$
+
+</div>
+<div class="col">
+PMF
+
+> - $0 \le P(X=x) \le 1$
+> - $\sum P(x_i) = 1$
+> - Thus the sum of all possible outcomes is zero
+</div>
+</div>
+
+
+
+## PMF Problem
 
 Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
 
@@ -120,7 +167,6 @@ Probability Mass Function (discrete)
 </div>
 </div>
 
-## pdf vs pmf curves
 
 ## Pdf problem 01
 

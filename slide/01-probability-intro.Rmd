@@ -944,10 +944,10 @@ P(Even) = ?
 > - $1st \rightarrow 3P_1$
 > - Others: $3! \rightarrow 3P_1 \times 3! \times 2P_1$
 > - 0 in 5th $\rightarrow 4!$
-> - Final $3P_1 \times 3! \times 2P_1 + 4!$
+> - Final $\frac{3P_1 \times 3! \times 2P_1 + 4!}{6!-5!}$
 > - Or $\rightarrow 2 (1 \times 4!-3!)+4!$ (using 2, 6 separately)
 </div>
-</div>
+</div> 
 
 ## Real Number from (0,10) &  (0,100)
 
