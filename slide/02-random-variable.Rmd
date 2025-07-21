@@ -146,13 +146,12 @@ Clue: If $S=\{H,T\}, P(H) + P(T) = 1$,
 
 i.e. $\sum$ P(All possible values) = 1
 
-## pdf and pmf
+## PDF and PMF Properties
 
 <div class="container">
 <div class="col">
 Probability Density Function (continuous)
 
-> - $f\left( x \right) \ge 0$ for all x
 > - $\displaystyle \int_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
 > - $P\left( {a \le X \le b} \right) = \int_{{\,a}}^{{\,b}}{{f\left( x \right)\,dx}}$
 > - $P(X=x)=0$ (theoretically, why?)
@@ -161,7 +160,6 @@ Probability Density Function (continuous)
 <div class="col">
 Probability Mass Function (discrete)
 
-> - $P\left( x \right) \ge 0$ for all x
 > - $\displaystyle \sum_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
 > - $P_x(X) = P(X=x)$
 </div>
