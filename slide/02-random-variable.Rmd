@@ -76,9 +76,11 @@ Biased
 
 A coin is tossed twice
 
-X = number of heads in the tosses
+S = {HH, HT, TH, TT}
 
-x = 0, 1, 2 
+> - X = number of heads in the tosses
+> - What are the possible values of x?
+> - x = 0, 1, 2 
 
 Fill the probabilities
 
@@ -124,27 +126,43 @@ PDF
 <div class="col">
 PMF
 
+```{r, echo=FALSE, fig.height=3, fig.width=4}
+# Define your data
+x = 0:6
+px = c(0.1, 0.02, 0.3, 0.4, 0.13, 0.03, 0.02)
+
+par(mar = c(3, 3, 2, 1) + 0.1) # Reduced margins, +0.1 is a common small adjustment
+
+# Create the initial plot
+plot(x, px,
+     type = "h",      # "h" for histogram-like vertical lines
+     xlab = "Value (x)",
+     ylab = 'Probability',
+     ylim = c(0, 0.5), # Ensure enough space above the highest point for labels
+     lwd = 2,         # Line width
+     col = "darkblue" # Line color (optional)
+     )
+
+# Add the probability values as text labels above the lines
+text(x = x,             # X-coordinates for the text (same as line x)
+     y = px + 0.02,     # Y-coordinates for the text (px value + a small offset)
+     labels = px,       # The actual text to display (your px values)
+     cex = 0.8,         # Character expansion: makes the text 80% of default size
+     col = "red",       # Color of the text (optional, but good for visibility)
+     pos = 3            # Position: 3 means above the coordinate (optional, but good practice)
+     )
+par(mar = c(5.1, 4.1, 4.1, 2.1))
+```
+<small>
+
 > - $0 \le P(X=x) \le 1$
 > - $\sum P(x_i) = 1$
 > - Thus the sum of all possible outcomes is zero
+
+</small>
 </div>
 </div>
 
-
-
-## PMF Problem
-
-Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
-
-Discrete or Continuous?
-
-a. k = ?
-b. Find probability of each value of x
-c. Find $P(-2 \le x \le 2)$
-
-Clue: If $S=\{H,T\}, P(H) + P(T) = 1$, 
-
-i.e. $\sum$ P(All possible values) = 1
 
 ## PDF and PMF Properties
 
@@ -164,6 +182,16 @@ Probability Mass Function (discrete)
 > - $P_x(X) = P(X=x)$
 </div>
 </div>
+
+## PMF Problem 01
+
+Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
+
+Discrete or Continuous?
+
+> - k = ?
+> - Find probability of each value of x
+> - Find $P(-2 \le x \le 2)$
 
 
 ## Pdf problem 01
