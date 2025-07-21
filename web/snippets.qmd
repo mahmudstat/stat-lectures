@@ -1,13 +1,11 @@
 ---
-title: "Coden Snippets"
+title: "Code Snippets"
 format: html
 css: styles.css # Link to your external CSS file
 include-in-header: # Use include-in-header for scripts
   - text: | # Use 'text' to insert raw HTML
-      <script src="copy_button.js"></script>
+      <script src="script.js"></script>
 ---
-
-# Coden Snippets
 
 ## Nux
 

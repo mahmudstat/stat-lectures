@@ -23,16 +23,16 @@
   {
     "objectID": "snippets.html",
     "href": "snippets.html",
-    "title": "Coden Snippets",
+    "title": "Code Snippets",
     "section": "",
     "text": "=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))\n\n\n\n=INDEX({\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, MEDIAN(FILTER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0), ISNUMBER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0)))))"
   },
   {
     "objectID": "snippets.html#excel-google-sheet",
     "href": "snippets.html#excel-google-sheet",
-    "title": "Coden Snippets",
-    "section": "",
-    "text": "=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))\n\n\n\n=INDEX({\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, MEDIAN(FILTER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0), ISNUMBER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0)))))"
+    "title": "Code Snippets",
+    "section": "Excel / Google Sheet",
+    "text": "Excel / Google Sheet\n\nMode for ordinal data\n=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))\n\n\nMedian for ordinal data\n=INDEX({\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, MEDIAN(FILTER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0), ISNUMBER(MATCH(I1:I106, {\"Strongly Disagree\",\"Disagree\",\"Neither Agree nor Disagree\",\"Agree\",\"Strongly Agree\"}, 0)))))"
   },
   {
     "objectID": "resources.html",

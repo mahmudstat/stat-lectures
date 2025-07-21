@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coden Snippets – Stat Mania Lectures</title>
+<title>Code Snippets – Stat Mania Lectures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="copy_button.js"></script>
+<script src="script.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -128,14 +128,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#coden-snippets" id="toc-coden-snippets" class="nav-link active" data-scroll-target="#coden-snippets">Coden Snippets</a>
-  <ul class="collapse">
-  <li><a href="#nux" id="toc-nux" class="nav-link" data-scroll-target="#nux">Nux</a></li>
+  <li><a href="#nux" id="toc-nux" class="nav-link active" data-scroll-target="#nux">Nux</a></li>
   <li><a href="#excel-google-sheet" id="toc-excel-google-sheet" class="nav-link" data-scroll-target="#excel-google-sheet">Excel / Google Sheet</a>
   <ul class="collapse">
   <li><a href="#mode-for-ordinal-data" id="toc-mode-for-ordinal-data" class="nav-link" data-scroll-target="#mode-for-ordinal-data">Mode for ordinal data</a></li>
   <li><a href="#median-for-ordinal-data" id="toc-median-for-ordinal-data" class="nav-link" data-scroll-target="#median-for-ordinal-data">Median for ordinal data</a></li>
-  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -145,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coden Snippets</h1>
+<h1 class="title">Code Snippets</h1>
 </div>
 
 
@@ -162,8 +159,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="coden-snippets" class="level1">
-<h1>Coden Snippets</h1>
 <section id="nux" class="level2">
 <h2 class="anchored" data-anchor-id="nux">Nux</h2>
 </section>
@@ -178,7 +173,6 @@ ul.task-list li input[type="checkbox"] {
 <pre class="text"><code>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</code></pre>
 
 
-</section>
 </section>
 </section>
 
