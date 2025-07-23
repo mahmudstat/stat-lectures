@@ -1,41 +1,113 @@
 ---
 title: "Code Snippets"
 format: html
-css: styles.css # Link to your external CSS file
-include-in-header: # Use include-in-header for scripts
-  - text: | # Use 'text' to insert raw HTML
-      <script src="script.js"></script>
+# css: styles.css # Link to your external CSS file
+# include-in-header: # Use include-in-header for scripts
+#  - text: | # Use 'text' to insert raw HTML
+#      <script src="script.js"></script>
 ---
 
 ## Nux
 
+### Rename all files sequentially
+
+The example renames `.jpg` files. Modify as per your need.
+
+```{.bash code-line-numbers="true"}
+ls -v | cat -n | while read n f; do mv -n "$f" "$n.jpg"; done
+```
+
+**To start numbering at certain number** use the following code
+
+```{.bash code-line-numbers="true"}
+num=0; for i in *; do mv "$i" "$(printf '%04d' $num).${i#*.}"; ((num++)); done
+```
+
+For more on this, [look here](https://stackoverflow.com/questions/3211595/renaming-files-in-a-folder-to-sequential-numbers)
+
+### Rename file names ("_" to "-"
+
+Modify as per need
+
+```{.bash code-line-numbers="true"}
+rename 's/\_/-/' *
+```
+
+#### Replace space with hyphen
+
+```{.bash code-line-numbers="true"}
+for file in *' '*
+do
+  mv -- "$file" "${file// /-}"
+done
+```
+
+### Rename to lowercase
+
+```{.bash code-line-numbers="true"}
+rename 'y/A-Z/a-z/' *
+```
+
+### Count files
+
+```{.bash code-line-numbers="true"}
+find . -type f | wc -l
+```
+
 ### Replace new line with double new line
 
+```{.bash code-line-numbers="true"}
 `sed -i 's/$/\n/' file.txt`
+
+### Convert all mp4 to mp3
+
+
+```{.bash code-line-numbers="true"}
+#!/bin/bash
+local o=$IFS
+IFS=$(echo -en "\n\b")
+
+MP4FILE=$(ls . |grep .mp4)
+for filename in $MP4FILE
+do
+name="${filename%.*}"
+ffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3
+done
+
+IFS=o
+```
 
 ## Git
 
 ### Repository-specific confiuguration
 
-`git config --local user.name 'Your Name'`
+```{.git code-line-numbers="true"}
+git config --local user.name 'Your Name'
+```
 
-`git config --local user.email 'your.work.email@company.com'`
+```{.git code-line-numbers="true"}
+git config --local user.email 'your.work.email@company.com'
+```
 
 ### Global confiuguration
 
+```{.git code-line-numbers="true"}
 `git config --global user.name 'Your Name'`
+```
 
-`git config --global user.email 'your.work.email@company.com'`
+```{.git code-line-numbers="true"}
+git config --global user.email 'your.work.email@company.com'
+```
 
 ## Excel / Google Sheet
 
 ### Mode for ordinal data
 
-```text
+```{.excel code-line-numbers="true"}
 =INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))
 ```
 
 ### Median for ordinal data
-```text
+```{.excel code-line-numbers="true"}
 =INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))
 ```

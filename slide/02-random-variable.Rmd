@@ -1,26 +1,25 @@
 ---
 title: "Random Variable"
-# subtitle: "Discrete and Cntinuous Probability Distributions"
 author: Abdullah Al Mahmud
 date: \today
-output: 
+output:
   revealjs::revealjs_presentation:
+    footer: "Footer"
     theme: sky
-    transition: zoom
     reveal_plugins: ["chalkboard", "zoom", "menu"]
-    reveal_options:
-      chalkboard:
-        theme: whiteboard
     self_contained: false
     lib_dir: libs
-    css: css/styles.css
+    css:
+      - css/styles.css
     includes:
-      in_header: css/header.html
+      # We no longer include header.html directly here.
+      # Instead, we inject it via JavaScript.
+      after_body: css/inject_footer.js # Inject JavaScript after body for best practice
 ---
 
 ## Previous Chapter 
 
-[Introduction to Probability](prob_ch1_intro.html)
+[Introduction to Probability](01-probability-intro)
 
 # Concepts
 
@@ -224,7 +223,7 @@ Discrete or Continuous?
 
 An unbiased coin is tossed four times and the number of times the heads are obtained is denoted by x. Determine the probability mass function. 
 
-> - $S = {HHHH, HHHT, \cdots}$
+> - $S = \{HHHH, HHHT, \cdots\}$
 > - $x = 0, 1, 2, 3, 4$
 > - $P(X = 2) = \frac{4C_2}{2^4}$
 > - $P(x) = \frac{4C_X}{2^4}$

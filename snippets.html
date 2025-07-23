@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -66,7 +100,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="script.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -128,7 +161,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#nux" id="toc-nux" class="nav-link active" data-scroll-target="#nux">Nux</a></li>
+  <li><a href="#nux" id="toc-nux" class="nav-link active" data-scroll-target="#nux">Nux</a>
+  <ul class="collapse">
+  <li><a href="#rename-all-files-sequentially" id="toc-rename-all-files-sequentially" class="nav-link" data-scroll-target="#rename-all-files-sequentially">Rename all files sequentially</a></li>
+  <li><a href="#rename-file-names-_-to--" id="toc-rename-file-names-_-to--" class="nav-link" data-scroll-target="#rename-file-names-_-to--">Rename file names (“_” to “-”</a></li>
+  <li><a href="#rename-to-lowercase" id="toc-rename-to-lowercase" class="nav-link" data-scroll-target="#rename-to-lowercase">Rename to lowercase</a></li>
+  <li><a href="#count-files" id="toc-count-files" class="nav-link" data-scroll-target="#count-files">Count files</a></li>
+  <li><a href="#replace-new-line-with-double-new-line" id="toc-replace-new-line-with-double-new-line" class="nav-link" data-scroll-target="#replace-new-line-with-double-new-line">Replace new line with double new line</a></li>
+  </ul></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
   <ul class="collapse">
   <li><a href="#repository-specific-confiuguration" id="toc-repository-specific-confiuguration" class="nav-link" data-scroll-target="#repository-specific-confiuguration">Repository-specific confiuguration</a></li>
@@ -166,29 +206,78 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="nux" class="level2">
 <h2 class="anchored" data-anchor-id="nux">Nux</h2>
+<section id="rename-all-files-sequentially" class="level3">
+<h3 class="anchored" data-anchor-id="rename-all-files-sequentially">Rename all files sequentially</h3>
+<p>The example renames <code>.jpg</code> files. Modify as per your need.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ls</span> <span class="at">-v</span> <span class="kw">|</span> <span class="fu">cat</span> <span class="at">-n</span> <span class="kw">|</span> <span class="cf">while</span> <span class="bu">read</span> <span class="va">n</span> <span class="va">f</span><span class="kw">;</span> <span class="cf">do</span> <span class="fu">mv</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$f</span><span class="st">"</span> <span class="st">"</span><span class="va">$n</span><span class="st">.jpg"</span><span class="kw">;</span> <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>To start numbering at certain number</strong> use the following code</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="va">num</span><span class="op">=</span>0<span class="kw">;</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="pp">*</span><span class="kw">;</span> <span class="cf">do</span> <span class="fu">mv</span> <span class="st">"</span><span class="va">$i</span><span class="st">"</span> <span class="st">"</span><span class="va">$(</span><span class="bu">printf</span> <span class="st">'%04d'</span> <span class="va">$num)</span><span class="st">.</span><span class="va">${i</span><span class="op">#</span><span class="pp">*</span>.<span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="kw">((</span><span class="va">num</span><span class="op">++</span><span class="kw">));</span> <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For more on this, <a href="https://stackoverflow.com/questions/3211595/renaming-files-in-a-folder-to-sequential-numbers">look here</a></p>
+</section>
+<section id="rename-file-names-_-to--" class="level3">
+<h3 class="anchored" data-anchor-id="rename-file-names-_-to--">Rename file names (“_” to “-”</h3>
+<p>Modify as per need</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">rename</span> <span class="st">'s/\_/-/'</span> <span class="pp">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="replace-space-with-hyphen" class="level4">
+<h4 class="anchored" data-anchor-id="replace-space-with-hyphen">Replace space with hyphen</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span><span class="st">' '</span><span class="pp">*</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="cf">do</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">mv</span> <span class="at">--</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="st">"</span><span class="va">${file</span><span class="op">//</span><span class="ss"> </span><span class="op">/</span>-<span class="va">}</span><span class="st">"</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="rename-to-lowercase" class="level3">
+<h3 class="anchored" data-anchor-id="rename-to-lowercase">Rename to lowercase</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">rename</span> <span class="st">'y/A-Z/a-z/'</span> <span class="pp">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="count-files" class="level3">
+<h3 class="anchored" data-anchor-id="count-files">Count files</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">find</span> . <span class="at">-type</span> f <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="replace-new-line-with-double-new-line" class="level3">
+<h3 class="anchored" data-anchor-id="replace-new-line-with-double-new-line">Replace new line with double new line</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">`</span><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/$/\n/'</span> file.txt<span class="kw">`</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co">### Convert all mp4 to mp3</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a></span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="kw">```</span><span class="ex">{.bash</span> code-line-numbers=<span class="st">"true"</span>}</span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="bu">local</span> <span class="va">o</span><span class="op">=</span><span class="va">$IFS</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="va">IFS</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="at">-en</span> <span class="st">"\n\b"</span><span class="va">)</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="va">MP4FILE</span><span class="op">=</span><span class="va">$(</span><span class="fu">ls</span> . <span class="kw">|</span><span class="fu">grep</span> .mp4<span class="va">)</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="cf">for</span> filename <span class="kw">in</span> <span class="va">$MP4FILE</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="cf">do</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a><span class="va">name</span><span class="op">=</span><span class="st">"</span><span class="va">${filename</span><span class="op">%</span>.<span class="pp">*</span><span class="va">}</span><span class="st">"</span></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="ex">ffmpeg</span> <span class="at">-i</span> ./<span class="va">$filename</span> <span class="at">-b:a</span> 192K <span class="at">-vn</span> ./<span class="va">$name</span>.mp3</span>
+<span id="cb7-16"><a href="#cb7-16"></a><span class="cf">done</span></span>
+<span id="cb7-17"><a href="#cb7-17"></a></span>
+<span id="cb7-18"><a href="#cb7-18"></a><span class="va">IFS</span><span class="op">=</span>o</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="git" class="level2">
 <h2 class="anchored" data-anchor-id="git">Git</h2>
 <section id="repository-specific-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="repository-specific-confiuguration">Repository-specific confiuguration</h3>
-<p><code>git config --local user.name 'Your Name'</code></p>
-<p><code>git config --local user.email 'your.work.email@company.com'</code></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>git config --local user.name 'Your Name'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="#cb9-1"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="global-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="global-confiuguration">Global confiuguration</h3>
-<p><code>git config --global user.name 'Your Name'</code></p>
-<p><code>git config --global user.email 'your.work.email@company.com'</code></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>`git config --global user.name 'Your Name'`</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="excel-google-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="excel-google-sheet">Excel / Google Sheet</h2>
 <section id="mode-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="mode-for-ordinal-data">Mode for ordinal data</h3>
-<pre class="text"><code>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="median-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="median-for-ordinal-data">Median for ordinal data</h3>
-<pre class="text"><code>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

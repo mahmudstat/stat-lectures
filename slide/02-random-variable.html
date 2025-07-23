@@ -65,9 +65,6 @@
   </style>
 
     <link rel="stylesheet" href="css/styles.css"/>
-    <div id="header-footer">
-      <p class="slide-footer"> <marquee direction= left scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> | Abdullah Al Mahmud | docs.statmania.info | </p>
-    </div>
     <script src="libs/header-attrs-2.29/header-attrs.js"></script>
     <link href="libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
     <link href="libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
@@ -83,7 +80,7 @@
 
 <section id="previous-chapter" class="slide level2">
 <h2>Previous Chapter</h2>
-<p><a href="prob_ch1_intro.html">Introduction to Probability</a></p>
+<p><a href="01-probability-intro">Introduction to Probability</a></p>
 </section>
 <section>
 <section id="concepts" class="title-slide slide level1">
@@ -376,8 +373,8 @@ x=0,1,2,3,4\)</span></li>
 heads are obtained is denoted by x. Determine the probability mass
 function.</p>
 <ul>
-<li class="fragment"><span class="math inline">\(S = {HHHH, HHHT,
-\cdots}\)</span></li>
+<li class="fragment"><span class="math inline">\(S = \{HHHH, HHHT,
+\cdots\}\)</span></li>
 <li class="fragment"><span class="math inline">\(x = 0, 1, 2, 3,
 4\)</span></li>
 <li class="fragment"><span class="math inline">\(P(X = 2) =
@@ -902,7 +899,7 @@ class="math inline">\(P(Y|X)\)</span></p>
         defaultTiming: null,
 
         // Transition style
-        transition: 'zoom', // none/fade/slide/convex/concave/zoom
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
         // Transition speed
         transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
@@ -947,7 +944,6 @@ class="math inline">\(P(Y|X)\)</span></p>
 
 
         chalkboard: {
-          theme: 'whiteboard',
         },
         customcontrols: {
             controls: [
@@ -985,6 +981,51 @@ class="math inline">\(P(Y|X)\)</span></p>
   })();
 </script>
 
+// js/inject_footer.js
+console.log("inject_footer.js is loading!"); // Add this line
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... rest of your code ...
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for reveal.js to be ready before injecting content
+    // This ensures reveal.js has finished its DOM manipulation
+    Reveal.on('ready', function() {
+        // Create the footer element
+        const footerDiv = document.createElement('div');
+        footerDiv.id = 'custom-footer'; // Give it a unique ID for styling
+
+        // Fetch the content from the external HTML file
+        fetch('css/header.html') // Make sure this path is correct relative to your HTML output
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(htmlContent => {
+                // Set the fetched content inside the footer div
+                footerDiv.innerHTML = `<p class="slide-footer">${htmlContent}</p>`;
+
+                // Append the footer to the .reveal container
+                // This places it within the reveal.js managed area
+                const revealContainer = document.querySelector('.reveal');
+                if (revealContainer) {
+                    revealContainer.appendChild(footerDiv);
+                }
+
+                // Initialize marquee-like effect using CSS animation (optional)
+                const marqueeSpan = footerDiv.querySelector('.slide-footer span');
+                if (marqueeSpan) {
+                    // Add a class for the CSS animation
+                    marqueeSpan.classList.add('marquee-effect');
+                }
+
+            })
+            .catch(e => console.error("Error loading footer content:", e));
+    });
+});
 
   </body>
 </html>

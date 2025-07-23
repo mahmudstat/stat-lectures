@@ -1,8 +1,8 @@
 ---
-title: "Stat Mania Lectures"
+title: "Stat Mania Docs"
 ---
 
-This websites contains lectures on statistics.
+This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.
 
 All the lectures are made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE](https://posit.co/download/rstudio-desktop/). The presentations were made using the [revealjs](https://revealjs.com/) package.
 

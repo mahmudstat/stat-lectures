@@ -2,6 +2,7 @@
 
 1. [Stat1 Year Final 2025 Cq.pdf](https://docs.statmania.info/question/mgcc42/stat1_year_final_2025_cq.pdf)
 2. [Stat1 Year Final 2025 Mcq.pdf](https://docs.statmania.info/question/mgcc42/stat1_year_final_2025_mcq.pdf)
+3. [Stat2 Mgcc42 T2f 2025.pdf](https://docs.statmania.info/question/mgcc42/stat2_mgcc42_t2f_2025.pdf)
 
 ### 45th
 
