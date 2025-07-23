@@ -287,8 +287,6 @@ Find the probability that
 
 ## Joint-Marginal-Conditional
 
-<small>
-
 Let, $I = Infected$, and $V = Vaccinated$
 
 |          | $I$ | $\bar I$ | Total |
@@ -298,43 +296,16 @@ Let, $I = Infected$, and $V = Vaccinated$
 |   Total  |  69 |    749   |  818  |
 
 Find the probabilities that
-<div class="container">
-<div class="col">
 
-<div onclick="klikaj('jmc1')"> 1. a vaccinated person is infected</div>
-<div onclick="klikaj('jmc2')"> 2. a non-vaccinated person is uninfected</div>
-<div onclick="klikaj('jmc3')">  3. vaccinated if infected</div>
-<div onclick="klikaj('jmc4')"> 4. infected if not vaccinated</div>
-<div onclick="klikaj('jmc5')">  5. vaccinated</div>
-<div onclick="klikaj('jmc6')"> 6. uninfected</div>
-</div>
-<div class="col">
-<u>Answers</u>
+> - a vaccinated person is infected
+> - a non-vaccinated person is uninfected
+> - vaccinated if infected
+> - infected if not vaccinated
+> - vaccinated
+> - uninfected
 
-<div id="jmc1" style="visibility: hidden">
-1. Joint $\to P(V\cap I)$
-</div>
-<div id="jmc2" style="visibility: hidden">
-2. Joint $\to P(\bar V\cap \bar I)$
-</div>
-<div id="jmc3" style="visibility: hidden">
-3. Conditional $\to P(V | I)=\frac{P(V \cap I)}{P(I)}$
-</div>
-<div id="jmc4" style="visibility: hidden">
-4. Conditional
-</div>
-<div id="jmc5" style="visibility: hidden">
-5. Marginal $\to P(V)$
-</div>
-<div id="jmc6" style="visibility: hidden">
-6. Marginal $\to P(\bar I)$
-</div>
-</div>
-</div>
 
-</small>
-
-## Joind PF Properties
+## Joint PF Properties
 
 - $P(x,y) \ge 0$
 - $\Sigma\Sigma P(x,y)=1$ 

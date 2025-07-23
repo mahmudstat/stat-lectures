@@ -96,5 +96,12 @@
     "title": "Resources",
     "section": "",
     "text": "The Great Quiz Book"
+  },
+  {
+    "objectID": "snippets.html#git",
+    "href": "snippets.html#git",
+    "title": "Code Snippets",
+    "section": "Git",
+    "text": "Git\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\ngit config --global user.name 'Your Name'\ngit config --global user.email 'your.work.email@company.com'"
   }
 ]

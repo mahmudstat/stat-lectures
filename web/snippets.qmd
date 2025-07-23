@@ -9,6 +9,24 @@ include-in-header: # Use include-in-header for scripts
 
 ## Nux
 
+### Replace new line with double new line
+
+`sed -i 's/$/\n/' file.txt`
+
+## Git
+
+### Repository-specific confiuguration
+
+`git config --local user.name 'Your Name'`
+
+`git config --local user.email 'your.work.email@company.com'`
+
+### Global confiuguration
+
+`git config --global user.name 'Your Name'`
+
+`git config --global user.email 'your.work.email@company.com'`
+
 ## Excel / Google Sheet
 
 ### Mode for ordinal data
