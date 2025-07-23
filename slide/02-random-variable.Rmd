@@ -1,5 +1,6 @@
 ---
-title: "Probability (Random Variable)"
+title: "Random Variable"
+# subtitle: "Discrete and Cntinuous Probability Distributions"
 author: Abdullah Al Mahmud
 date: \today
 output: 
@@ -109,6 +110,15 @@ Discrete
 </div>
 </div>
 
+## Integration and Area
+
+
+<img class="plain" src="img/intarea.gif" height="350">
+<small> Source: [hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html/?source=docs.statmania.info) </small>
+
+> - Area = Integration = Probability (if [0,1])
+> - $Area = height \times width = \int f(x) \times dx$
+
 ## PDF and PMF Conditions
 
 
@@ -185,6 +195,15 @@ Probability Mass Function (discrete)
 
 ## PMF Problem 01
 
+$\displaystyle P(x) = \frac{x+1}{k}; x= 1,2,3,4$
+
+> - k = ?
+> - $P(X \ge2)$
+> - $P(X \le 3)$
+> - $P(2 < X \le 5$
+
+## PMF Problem 02
+
 Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
 
 Discrete or Continuous?
@@ -193,26 +212,55 @@ Discrete or Continuous?
 > - Find probability of each value of x
 > - Find $P(-2 \le x \le 2)$
 
+## More PMF
 
-## Pdf problem 01
+> - $P(x) = \frac{1}{14} (a+2x); x = -3, -2, -1, 0, 1, 2, 3$
+> - $P(x) = k(x-2); x = 3, 4,5,6,7,8$
+> - $P(x) = \frac{x-1}{k}; x=2,3,4,5$
+> - $P(x) = \frac{3-|4-x|}{k}; x=2,3,4,5,6$
+> - $p(x) = \frac{x+4}{30}; x=0,1,2,3,4$
 
-$f\left( x \right) = \frac{{{x^3}}}{{5000}}\left( {10 - x} \right)$ $for 0 \le x \le 10$ and $f\left( x \right) = 0$ for all other values. 
+## PMF problem from coin
 
-a. Show that $f\left( x \right)$ is a probability density function.
-b. Find $P\left( {1 \le X \le 4} \right)$
-c. Find $P\left( {x \ge 6} \right)$ 
+An unbiased coin is tossed four times and the number of times the heads are obtained is denoted by x. Determine the probability mass function. 
 
-> - is it $\displaystyle \int_{7}^{10} f(x) dx$?
+> - $S = {HHHH, HHHT, \cdots}$
+> - $x = 0, 1, 2, 3, 4$
+> - $P(X = 2) = \frac{4C_2}{2^4}$
+> - $P(x) = \frac{4C_X}{2^4}$
 
-## Pdf problem 02
+## PDF Problem 01
+
+$\displaystyle f(x) = kx(x-1); 1\le x \le 5$
+
+> - Find k
+> - $P(X>1)$
+> - $P(X \le 3)$
+> - $P(2 \le x < 4)$ 
+
+## PDF Problem 02
 
 $f(x) = k(x+1); 0\lt x \lt 1$
 
-i. $P(X=2)=?$
-ii. $k=?$
-iii. $P(0.4 \lt X \lt 2)=?$
-
+>- $P(X=2)=?$
+>-  $k=?$
+> - $P(0.4 \lt X \lt 2)=?$
 > - $\int_{0.4}^1 f(x) + \int_{1}^2 f(x) \to 0$
+
+## More PDF
+
+> - $f(x) = 2x; 0 < x < 1$
+> - $f(x) = \frac{1}{30} (3+2x); 2 < x < 5$
+> - $f(x) = ax^2; 0 < x < 4$
+> - $f(x) = kx^2 + kx + \frac 18; 0 < x < 8$
+> - $f(x) = kx; 0 < x < 4$
+> - $f(x) = 3x^2; 0 \le x \le 1$
+> - $f(y) = k(3y+5); 1 < y < 5$
+> - $f(z) = \frac29 (3z-z^2); 0 \le x \le 3$
+
+## Problems Archive
+
+[Look here](../question/bank/stat2_cqbank.pdf)
 
 ## Cumuluative Distribution Function 
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Probability (Random Variable)</title>
+  <title>Random Variable</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -77,7 +77,7 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Probability (Random Variable)</h1>
+  <h1 class="title">Random Variable</h1>
   <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
@@ -262,6 +262,18 @@ value</strong></li>
 </div>
 </div>
 </section>
+<section id="integration-and-area" class="slide level2">
+<h2>Integration and Area</h2>
+<p><img class="plain" src="img/intarea.gif" height="350"> <small>
+Source: <a
+href="http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html/?source=docs.statmania.info">hyperphysics</a>
+</small></p>
+<ul>
+<li class="fragment">Area = Integration = Probability (if [0,1])</li>
+<li class="fragment"><span class="math inline">\(Area = height \times
+width = \int f(x) \times dx\)</span></li>
+</ul>
+</section>
 <section id="pdf-and-pmf-conditions" class="slide level2">
 <h2>PDF and PMF Conditions</h2>
 <div class="container">
@@ -320,6 +332,19 @@ P(X=x)\)</span></li>
 </section>
 <section id="pmf-problem-01" class="slide level2">
 <h2>PMF Problem 01</h2>
+<p><span class="math inline">\(\displaystyle P(x) = \frac{x+1}{k}; x=
+1,2,3,4\)</span></p>
+<ul>
+<li class="fragment">k = ?</li>
+<li class="fragment"><span class="math inline">\(P(X \ge2)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(X \le
+3)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(2 &lt; X \le
+5\)</span></li>
+</ul>
+</section>
+<section id="pmf-problem-02" class="slide level2">
+<h2>PMF Problem 02</h2>
 <p>Given, <span class="math inline">\(P(x) = \frac{2x+k}{56}; x = -3,
 -2, -1, 0, 1, 2, 3\)</span></p>
 <p>Discrete or Continuous?</p>
@@ -330,38 +355,86 @@ P(X=x)\)</span></li>
 2)\)</span></li>
 </ul>
 </section>
-<section id="pdf-problem-01" class="slide level2">
-<h2>Pdf problem 01</h2>
-<p><span class="math inline">\(f\left( x \right) =
-\frac{{{x^3}}}{{5000}}\left( {10 - x} \right)\)</span> <span
-class="math inline">\(for 0 \le x \le 10\)</span> and <span
-class="math inline">\(f\left( x \right) = 0\)</span> for all other
-values.</p>
-<ol type="a">
-<li>Show that <span class="math inline">\(f\left( x \right)\)</span> is
-a probability density function.</li>
-<li>Find <span class="math inline">\(P\left( {1 \le X \le 4}
-\right)\)</span></li>
-<li>Find <span class="math inline">\(P\left( {x \ge 6}
-\right)\)</span></li>
-</ol>
+<section id="more-pmf" class="slide level2">
+<h2>More PMF</h2>
 <ul>
-<li class="fragment">is it <span class="math inline">\(\displaystyle
-\int_{7}^{10} f(x) dx\)</span>?</li>
+<li class="fragment"><span class="math inline">\(P(x) = \frac{1}{14}
+(a+2x); x = -3, -2, -1, 0, 1, 2, 3\)</span></li>
+<li class="fragment"><span class="math inline">\(P(x) = k(x-2); x = 3,
+4,5,6,7,8\)</span></li>
+<li class="fragment"><span class="math inline">\(P(x) = \frac{x-1}{k};
+x=2,3,4,5\)</span></li>
+<li class="fragment"><span class="math inline">\(P(x) =
+\frac{3-|4-x|}{k}; x=2,3,4,5,6\)</span></li>
+<li class="fragment"><span class="math inline">\(p(x) = \frac{x+4}{30};
+x=0,1,2,3,4\)</span></li>
+</ul>
+</section>
+<section id="pmf-problem-from-coin" class="slide level2">
+<h2>PMF problem from coin</h2>
+<p>An unbiased coin is tossed four times and the number of times the
+heads are obtained is denoted by x. Determine the probability mass
+function.</p>
+<ul>
+<li class="fragment"><span class="math inline">\(S = {HHHH, HHHT,
+\cdots}\)</span></li>
+<li class="fragment"><span class="math inline">\(x = 0, 1, 2, 3,
+4\)</span></li>
+<li class="fragment"><span class="math inline">\(P(X = 2) =
+\frac{4C_2}{2^4}\)</span></li>
+<li class="fragment"><span class="math inline">\(P(x) =
+\frac{4C_X}{2^4}\)</span></li>
+</ul>
+</section>
+<section id="pdf-problem-01" class="slide level2">
+<h2>PDF Problem 01</h2>
+<p><span class="math inline">\(\displaystyle f(x) = kx(x-1); 1\le x \le
+5\)</span></p>
+<ul>
+<li class="fragment">Find k</li>
+<li class="fragment"><span class="math inline">\(P(X&gt;1)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(X \le
+3)\)</span></li>
+<li class="fragment"><span class="math inline">\(P(2 \le x &lt;
+4)\)</span></li>
 </ul>
 </section>
 <section id="pdf-problem-02" class="slide level2">
-<h2>Pdf problem 02</h2>
+<h2>PDF Problem 02</h2>
 <p><span class="math inline">\(f(x) = k(x+1); 0\lt x \lt 1\)</span></p>
-<ol type="i">
-<li><span class="math inline">\(P(X=2)=?\)</span></li>
-<li><span class="math inline">\(k=?\)</span></li>
-<li><span class="math inline">\(P(0.4 \lt X \lt 2)=?\)</span></li>
-</ol>
 <ul>
+<li class="fragment"><span class="math inline">\(P(X=2)=?\)</span></li>
+<li class="fragment"><span class="math inline">\(k=?\)</span></li>
+<li class="fragment"><span class="math inline">\(P(0.4 \lt X \lt
+2)=?\)</span></li>
 <li class="fragment"><span class="math inline">\(\int_{0.4}^1 f(x) +
 \int_{1}^2 f(x) \to 0\)</span></li>
 </ul>
+</section>
+<section id="more-pdf" class="slide level2">
+<h2>More PDF</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(f(x) = 2x; 0 &lt; x
+&lt; 1\)</span></li>
+<li class="fragment"><span class="math inline">\(f(x) = \frac{1}{30}
+(3+2x); 2 &lt; x &lt; 5\)</span></li>
+<li class="fragment"><span class="math inline">\(f(x) = ax^2; 0 &lt; x
+&lt; 4\)</span></li>
+<li class="fragment"><span class="math inline">\(f(x) = kx^2 + kx +
+\frac 18; 0 &lt; x &lt; 8\)</span></li>
+<li class="fragment"><span class="math inline">\(f(x) = kx; 0 &lt; x
+&lt; 4\)</span></li>
+<li class="fragment"><span class="math inline">\(f(x) = 3x^2; 0 \le x
+\le 1\)</span></li>
+<li class="fragment"><span class="math inline">\(f(y) = k(3y+5); 1 &lt;
+y &lt; 5\)</span></li>
+<li class="fragment"><span class="math inline">\(f(z) = \frac29
+(3z-z^2); 0 \le x \le 3\)</span></li>
+</ul>
+</section>
+<section id="problems-archive" class="slide level2">
+<h2>Problems Archive</h2>
+<p><a href="../question/bank/stat2_cqbank.pdf">Look here</a></p>
 </section>
 <section id="cumuluative-distribution-function" class="slide level2">
 <h2>Cumuluative Distribution Function</h2>
