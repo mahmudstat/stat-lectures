@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "sample.html#random-variable",
+    "href": "sample.html#random-variable",
+    "title": "Random Variable",
+    "section": "Random Variable",
+    "text": "Random Variable\nAre these correct?\n\nDiscrete\n\nNo. of people dying each day\nNumber of heads in successive tosses.\nHeights of people in Bangladesh\n\n\n\nContinuous\n\nGPA of students\nGrade of students in individual subjects\nIncome tax paid by people"
+  },
+  {
+    "objectID": "sample.html#integration",
+    "href": "sample.html#integration",
+    "title": "Random Variable",
+    "section": "Integration",
+    "text": "Integration\n\n\\(\\int x^3+2x\\)\n\\(\\int_2^3 x^2+x\\)\nRelationship between integration (I) and differentiation(D).\n\n\nAnswer\n\n\n\\(f(x) \\to I \\to D \\to f(x)\\)\nTest with \\(f(x) = x^2\\)"
+  },
+  {
+    "objectID": "sample.html#number-of-heads-in-coin-toss",
+    "href": "sample.html#number-of-heads-in-coin-toss",
+    "title": "Random Variable",
+    "section": "Number of Heads in Coin Toss",
+    "text": "Number of Heads in Coin Toss\nA coin is tossed twice\nS = {HH, HT, TH, TT}\n\nX = number of heads in the tosses\nWhat are the possible values of x?\nx = 0, 1, 2\n\nFill the probabilities\n\n\n\nx\n0\n1\n2\n\n\n\n\np(x)\n\n\n\n\n\n\n\nN:B: X is variable & x is value"
+  },
+  {
+    "objectID": "sample.html#pdf-vs-pmf-curve",
+    "href": "sample.html#pdf-vs-pmf-curve",
+    "title": "Random Variable",
+    "section": "PDF vs PMF Curve",
+    "text": "PDF vs PMF Curve\n\n\nPDF\n\nContinuous\n\n\nPMF\n\nDiscrete"
+  },
+  {
+    "objectID": "sample.html#integration-and-area",
+    "href": "sample.html#integration-and-area",
+    "title": "Random Variable",
+    "section": "Integration and Area",
+    "text": "Integration and Area\n  Source: hyperphysics \n\nArea = Integration = Probability (if [0,1])\n\\(Area = height \\times width = \\int f(x) \\times dx\\)"
+  },
+  {
+    "objectID": "sample.html#pdf-and-pmf-conditions",
+    "href": "sample.html#pdf-and-pmf-conditions",
+    "title": "Random Variable",
+    "section": "PDF and PMF Conditions",
+    "text": "PDF and PMF Conditions\n\n\nPDF\n  Source: upgrad.com \n\n\\(0 \\le f(x) \\le 1\\)\n\\(\\displaystyle \\int_{-\\infty}^\\infty f(x)dx = 1\\)\n\n\n\nPMF\n\n\n\n\n\n\n\n\n\n\n\n\\(0 \\le P(X=x) \\le 1\\)\n\\(\\sum P(x_i) = 1\\)\nThus the sum of all possible outcomes is zero"
+  },
+  {
+    "objectID": "sample.html#pdf-and-pmf-properties",
+    "href": "sample.html#pdf-and-pmf-properties",
+    "title": "Random Variable",
+    "section": "PDF and PMF Properties",
+    "text": "PDF and PMF Properties\n\n\nProbability Density Function (continuous)\n\n\\(\\displaystyle \\int_{{\\, - \\infty }}^{{\\,\\infty }}{{f\\left( x \\right)\\,dx}} = 1\\)\n\\(P\\left( {a \\le X \\le b} \\right) = \\int_{{\\,a}}^{{\\,b}}{{f\\left( x \\right)\\,dx}}\\)\n\\(P(X=x)=0\\) (theoretically, why?)\n\n\n\nProbability Mass Function (discrete)\n\n\\(\\displaystyle \\sum_{{\\, - \\infty }}^{{\\,\\infty }}{{f\\left( x \\right)\\,dx}} = 1\\)\n\\(P_x(X) = P(X=x)\\)"
+  },
+  {
+    "objectID": "sample.html#pmf-problem-01",
+    "href": "sample.html#pmf-problem-01",
+    "title": "Random Variable",
+    "section": "PMF Problem 01",
+    "text": "PMF Problem 01\n\\(\\displaystyle P(x) = \\frac{x+1}{k}; x= 1,2,3,4\\)\n\nk = ?\n\\(P(X \\ge2)\\)\n\\(P(X \\le 3)\\)\n\\(P(2 &lt; X \\le 5\\)"
+  },
+  {
+    "objectID": "sample.html#pmf-problem-02",
+    "href": "sample.html#pmf-problem-02",
+    "title": "Random Variable",
+    "section": "PMF Problem 02",
+    "text": "PMF Problem 02\nGiven, \\(P(x) = \\frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3\\)\nDiscrete or Continuous?\n\nk = ?\nFind probability of each value of x\nFind \\(P(-2 \\le x \\le 2)\\)"
+  },
+  {
+    "objectID": "sample.html#more-pmf",
+    "href": "sample.html#more-pmf",
+    "title": "Random Variable",
+    "section": "More PMF",
+    "text": "More PMF\n\n\\(P(x) = \\frac{1}{14} (a+2x); x = -3, -2, -1, 0, 1, 2, 3\\)\n\\(P(x) = k(x-2); x = 3, 4,5,6,7,8\\)\n\\(P(x) = \\frac{x-1}{k}; x=2,3,4,5\\)\n\\(P(x) = \\frac{3-|4-x|}{k}; x=2,3,4,5,6\\)\n\\(p(x) = \\frac{x+4}{30}; x=0,1,2,3,4\\)"
+  },
+  {
+    "objectID": "sample.html#pmf-problem-from-coin",
+    "href": "sample.html#pmf-problem-from-coin",
+    "title": "Random Variable",
+    "section": "PMF problem from coin",
+    "text": "PMF problem from coin\nAn unbiased coin is tossed four times and the number of times the heads are obtained is denoted by x. Determine the probability mass function.\n\n\\(S = \\{HHHH, HHHT, \\cdots\\}\\)\n\\(x = 0, 1, 2, 3, 4\\)\n\\(P(X = 2) = \\frac{4C_2}{2^4}\\)\n\\(P(x) = \\frac{4C_X}{2^4}\\)"
+  },
+  {
+    "objectID": "sample.html#pdf-problem-01",
+    "href": "sample.html#pdf-problem-01",
+    "title": "Random Variable",
+    "section": "PDF Problem 01",
+    "text": "PDF Problem 01\n\\(\\displaystyle f(x) = kx(x-1); 1\\le x \\le 5\\)\n\nFind k\n\\(P(X&gt;1)\\)\n\\(P(X \\le 3)\\)\n\\(P(2 \\le x &lt; 4)\\)"
+  },
+  {
+    "objectID": "sample.html#pdf-problem-02",
+    "href": "sample.html#pdf-problem-02",
+    "title": "Random Variable",
+    "section": "PDF Problem 02",
+    "text": "PDF Problem 02\n\\(f(x) = k(x+1); 0\\lt x \\lt 1\\)\n\n\\(P(X=2)=?\\)\n\\(k=?\\)\n\\(P(0.4 \\lt X \\lt 2)=?\\)\n\\(\\int_{0.4}^1 f(x) + \\int_{1}^2 f(x) \\to 0\\)"
+  },
+  {
+    "objectID": "sample.html#more-pdf",
+    "href": "sample.html#more-pdf",
+    "title": "Random Variable",
+    "section": "More PDF",
+    "text": "More PDF\n\n\\(f(x) = 2x; 0 &lt; x &lt; 1\\)\n\\(f(x) = \\frac{1}{30} (3+2x); 2 &lt; x &lt; 5\\)\n\\(f(x) = ax^2; 0 &lt; x &lt; 4\\)\n\\(f(x) = kx^2 + kx + \\frac 18; 0 &lt; x &lt; 8\\)\n\\(f(x) = kx; 0 &lt; x &lt; 4\\)\n\\(f(x) = 3x^2; 0 \\le x \\le 1\\)\n\\(f(y) = k(3y+5); 1 &lt; y &lt; 5\\)\n\\(f(z) = \\frac29 (3z-z^2); 0 \\le x \\le 3\\)"
+  },
+  {
+    "objectID": "sample.html#problems-archive",
+    "href": "sample.html#problems-archive",
+    "title": "Random Variable",
+    "section": "Problems Archive",
+    "text": "Problems Archive\nLook here"
+  },
+  {
+    "objectID": "sample.html#cumuluative-distribution-function",
+    "href": "sample.html#cumuluative-distribution-function",
+    "title": "Random Variable",
+    "section": "Cumuluative Distribution Function",
+    "text": "Cumuluative Distribution Function\nF(x) or cdf accumulates all of the probability less than or equal to.\n\n\n\n\n\n\n\n\n\n\n\n\nx\n1\n2\n3\n4\n5\n6\n\n\n\n\nP (x)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 2\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\n\nF (x)\n\\(\\frac 1 7\\)\n\\(\\frac 2 7\\)\n\\(\\frac 4 7\\)\n\\(\\frac 5 7\\)\n\\(\\frac 6 7\\)\n\\(1\\)\n\n\n\nFind\n\n\\(P(X&lt;4)\\)\n\\(P(3&lt;X&lt;6)\\)"
+  },
+  {
+    "objectID": "sample.html#cdf-definition",
+    "href": "sample.html#cdf-definition",
+    "title": "Random Variable",
+    "section": "cdf definition",
+    "text": "cdf definition\n\\(F_X(x) = P(X\\le x)\\)\n\n\nDiscrete\n\\[F(x) = \\sum_{X\\le x} P(x)\\]\n\n\nContinuous \n\n\\[F_{X}(x) = \\int_{-\\infty}^x f_X(t)dt\\]\nFind cdf for \\(f(x) = 2x; 0\\le x \\le 1\\)\n\\(\\int \\to x^2\\)\n\n\nAnswer\n\n\n\\[\\begin{eqnarray}\nF(x) =\n\\begin{cases}\nx^2/2,  & 0\\le x \\le 1 \\\\\n0, & \\text{otherwise}\n\\end{cases}\n\\end{eqnarray}\\]"
+  },
+  {
+    "objectID": "sample.html#cdf-properties",
+    "href": "sample.html#cdf-properties",
+    "title": "Random Variable",
+    "section": "cdf properties",
+    "text": "cdf properties\n\n\\(P(a\\le x \\le b) = F(b)-F(a)\\)for \\(a\\lt b\\); what if \\(a \\lt x \\lt b?\\)\nFor continuous x, \\(f(x) = \\frac{d}{dx}[F(x)]\\)\n\\(F(-\\infty) =0 , F(+\\infty) = 1\\)"
+  },
+  {
+    "objectID": "sample.html#joint-probability-function",
+    "href": "sample.html#joint-probability-function",
+    "title": "Random Variable",
+    "section": "Joint Probability Function",
+    "text": "Joint Probability Function\nLet, \\(I = Infected\\), and \\(V = Vaccinated\\)\n\n\n\n\n\\(I\\)\n\\(\\bar I\\)\nTotal\n\n\n\n\n\\(V\\)\n3\n276\n279\n\n\n\\(\\bar V\\)\n66\n473\n539\n\n\nTotal\n69\n749\n818\n\n\n\nFind the probability that\n\na vaccinated person is infected\na non-vaccinated person is uninfected\n\n\nThese are joint probabilities \\(\\to\\) P(x,y)\n\\(P(x,y) =P(x) \\cdot P(y)\\) if \\(x\\) and \\(y\\) are independent."
+  },
+  {
+    "objectID": "sample.html#joint-marginal-conditional",
+    "href": "sample.html#joint-marginal-conditional",
+    "title": "Random Variable",
+    "section": "Joint-Marginal-Conditional",
+    "text": "Joint-Marginal-Conditional\nLet, \\(I = Infected\\), and \\(V = Vaccinated\\)\n\n\n\n\n\\(I\\)\n\\(\\bar I\\)\nTotal\n\n\n\n\n\\(V\\)\n3\n276\n279\n\n\n\\(\\bar V\\)\n66\n473\n539\n\n\nTotal\n69\n749\n818\n\n\n\nFind the probabilities that\n\na vaccinated person is infected\na non-vaccinated person is uninfected\nvaccinated if infected\ninfected if not vaccinated\nvaccinated\nuninfected"
+  },
+  {
+    "objectID": "sample.html#joint-pf-properties",
+    "href": "sample.html#joint-pf-properties",
+    "title": "Random Variable",
+    "section": "Joint PF Properties",
+    "text": "Joint PF Properties\n\n\\(P(x,y) \\ge 0\\)\n\\(\\Sigma\\Sigma P(x,y)=1\\)"
+  },
+  {
+    "objectID": "sample.html#coin-die",
+    "href": "sample.html#coin-die",
+    "title": "Random Variable",
+    "section": "Coin-Die",
+    "text": "Coin-Die\n\n\n\nDie/Coin\n1\n2\n3\n4\n5\n6\n\n\n\n\nH (1)\nH1\nH2\nH3\nH4\nH5\nH6\n\n\nT (0)\nT1\nT2\nT3\nT4\nT5\nT6\n\n\n\nX = Outcome of coin toss\nY = Outcome of die throw\nx = 0, 1; y = 1, 2, 3, 4, 5, 6\nConstruct the distribution."
+  },
+  {
+    "objectID": "sample.html#joint-marginal-conditional-revisited",
+    "href": "sample.html#joint-marginal-conditional-revisited",
+    "title": "Random Variable",
+    "section": "Joint-Marginal-Conditional Revisited",
+    "text": "Joint-Marginal-Conditional Revisited\n\n\n\n\n\n\n\n\n\n\n\nExam (X) \\(\\to\\)Result (Y) \\(\\downarrow\\)\nPSC\nJSC\nSSC\nHSC\nTotal\n\n\n\n\nPassed\n30\n26\n23\n25\n104\n\n\nFailed\n12\n13\n10\n14\n49\n\n\nAbsent\n5\n2\n3\n4\n14\n\n\nTotal\n47\n41\n36\n43\n167\n\n\n\n\nMarginal: \\(P(Pass) = P(x_1)=P(x_1,y_1)+P(x_1,y_2)+P(x_1,y_3)\\)\n\\(P(Absent) = P(x_3) = P(x_3,y_1)+P(x_3,y_2)+P(x_3,y_3)\\)"
+  },
+  {
+    "objectID": "sample.html#marginal-probability",
+    "href": "sample.html#marginal-probability",
+    "title": "Random Variable",
+    "section": "Marginal Probability",
+    "text": "Marginal Probability\nConsider the previous table\nJoint probability: \\(P(x_i, y_j); i = 1,2, \\cdots m; j = 1,2, \\cdots n\\)\nMarginal probability \\(\\to P(x_i) \\leftarrow P(x_i, y_j)\\)\n\nFor x: \\(\\displaystyle P(x_i) = \\sum_{j=1}^n P(x_i, y_j); i = 1,2, \\cdots m\\)\nFor y: \\(\\displaystyle P(y_i) = \\sum_{i=1}^m P(x_i, y_j); j = 1,2, \\cdots n\\)\nWhat about continuous x?"
+  },
+  {
+    "objectID": "sample.html#marginal-probability-properties",
+    "href": "sample.html#marginal-probability-properties",
+    "title": "Random Variable",
+    "section": "Marginal Probability Properties",
+    "text": "Marginal Probability Properties\n\n\\(P(x_i) \\ge 0\\) and \\(P(y_i) \\ge 0\\)\n\\[\\sum_{i=1}^m P(x_i)=\\sum_{j=1}^n P(y_j)=1\\]\n\nSumming marginal probabilities will give 1."
+  },
+  {
+    "objectID": "sample.html#joint-marginal-example",
+    "href": "sample.html#joint-marginal-example",
+    "title": "Random Variable",
+    "section": "Joint-Marginal Example",
+    "text": "Joint-Marginal Example\n\\(P(x,y) = \\frac{x+y}{9}; x=0,1,2; y = 0, 1\\)\n\nFind marginal probabilities\nCheck properties (sum)\n\n\n\\(P(x) = \\frac{2x+1}{9}\\)"
+  },
+  {
+    "objectID": "sample.html#conditional-probability-function",
+    "href": "sample.html#conditional-probability-function",
+    "title": "Random Variable",
+    "section": "Conditional Probability Function",
+    "text": "Conditional Probability Function\nLike Bayes Theorem\n\\(P(X_i|y_j) = \\frac{P(x_i,y_j)}{P(y_j)}; P(y_j) \\gt 0\\)\nProperties\n\n\\(\\sum_{j=1}^m P(x_i|y_j)=\\sum_{i=1}^m P(y_j|x_i)=1\\)"
+  },
+  {
+    "objectID": "sample.html#conditional-probability-example",
+    "href": "sample.html#conditional-probability-example",
+    "title": "Random Variable",
+    "section": "Conditional Probability Example",
+    "text": "Conditional Probability Example\n\\(P(x,y) = \\frac{x+y}{9}; x=0,1,2; y = 0, 1\\)\nFind \\(P(X|Y)\\) and \\(P(Y|X)\\)\nFind for continuous X as well."
+  },
+  {
+    "objectID": "sample.html#find-k-for-pdf",
+    "href": "sample.html#find-k-for-pdf",
+    "title": "Random Variable",
+    "section": "Find k for pdf",
+    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  },
+  {
+    "objectID": "02-random-variable.html#random-variable",
+    "href": "02-random-variable.html#random-variable",
+    "title": "Random Variable",
+    "section": "Random Variable",
+    "text": "Random Variable\nAre these correct?\n\nDiscrete\n\nNo. of people dying each day\nNumber of heads in successive tosses.\nHeights of people in Bangladesh\n\n\n\nContinuous\n\nGPA of students\nGrade of students in individual subjects\nIncome tax paid by people"
+  },
+  {
+    "objectID": "02-random-variable.html#integration",
+    "href": "02-random-variable.html#integration",
+    "title": "Random Variable",
+    "section": "Integration",
+    "text": "Integration\n\n\\(\\int x^3+2x\\)\n\\(\\int_2^3 x^2+x\\)\nRelationship between integration (I) and differentiation(D).\n\n\nAnswer\n\n\n\\(f(x) \\to I \\to D \\to f(x)\\)\nTest with \\(f(x) = x^2\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#number-of-heads-in-coin-toss",
+    "href": "02-random-variable.html#number-of-heads-in-coin-toss",
+    "title": "Random Variable",
+    "section": "Number of Heads in Coin Toss",
+    "text": "Number of Heads in Coin Toss\nA coin is tossed twice\nS = {HH, HT, TH, TT}\n\nX = number of heads in the tosses\nWhat are the possible values of x?\nx = 0, 1, 2\n\nFill the probabilities\n\n\n\nx\n0\n1\n2\n\n\n\n\np(x)\n\n\n\n\n\n\n\nN:B: X is variable & x is value"
+  },
+  {
+    "objectID": "02-random-variable.html#pdf-vs-pmf-curve",
+    "href": "02-random-variable.html#pdf-vs-pmf-curve",
+    "title": "Random Variable",
+    "section": "PDF vs PMF Curve",
+    "text": "PDF vs PMF Curve\n\n\nPDF\n\nContinuous\n\n\nPMF\n\nDiscrete"
+  },
+  {
+    "objectID": "02-random-variable.html#integration-and-area",
+    "href": "02-random-variable.html#integration-and-area",
+    "title": "Random Variable",
+    "section": "Integration and Area",
+    "text": "Integration and Area\n  Source: hyperphysics \n\nArea = Integration = Probability (if [0,1])\n\\(Area = height \\times width = \\int f(x) \\times dx\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pdf-and-pmf-conditions",
+    "href": "02-random-variable.html#pdf-and-pmf-conditions",
+    "title": "Random Variable",
+    "section": "PDF and PMF Conditions",
+    "text": "PDF and PMF Conditions\n\n\nPDF\n  Source: upgrad.com \n\n\\(0 \\le f(x) \\le 1\\)\n\\(\\displaystyle \\int_{-\\infty}^\\infty f(x)dx = 1\\)\n\n\n\nPMF\n\n\n\n\n\n\n\n\n\n\n\n\\(0 \\le P(X=x) \\le 1\\)\n\\(\\sum P(x_i) = 1\\)\nThus the sum of all possible outcomes is zero"
+  },
+  {
+    "objectID": "02-random-variable.html#pdf-and-pmf-properties",
+    "href": "02-random-variable.html#pdf-and-pmf-properties",
+    "title": "Random Variable",
+    "section": "PDF and PMF Properties",
+    "text": "PDF and PMF Properties\n\n\nProbability Density Function (continuous)\n\n\\(\\displaystyle \\int_{{\\, - \\infty }}^{{\\,\\infty }}{{f\\left( x \\right)\\,dx}} = 1\\)\n\\(P\\left( {a \\le X \\le b} \\right) = \\int_{{\\,a}}^{{\\,b}}{{f\\left( x \\right)\\,dx}}\\)\n\\(P(X=x)=0\\) (theoretically, why?)\n\n\n\nProbability Mass Function (discrete)\n\n\\(\\displaystyle \\sum_{{\\, - \\infty }}^{{\\,\\infty }}{{f\\left( x \\right)\\,dx}} = 1\\)\n\\(P_x(X) = P(X=x)\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pmf-problem-01",
+    "href": "02-random-variable.html#pmf-problem-01",
+    "title": "Random Variable",
+    "section": "PMF Problem 01",
+    "text": "PMF Problem 01\n\\(\\displaystyle P(x) = \\frac{x+1}{k}; x= 1,2,3,4\\)\n\nk = ?\n\\(P(X \\ge2)\\)\n\\(P(X \\le 3)\\)\n\\(P(2 &lt; X \\le 5\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pmf-problem-02",
+    "href": "02-random-variable.html#pmf-problem-02",
+    "title": "Random Variable",
+    "section": "PMF Problem 02",
+    "text": "PMF Problem 02\nGiven, \\(P(x) = \\frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3\\)\nDiscrete or Continuous?\n\nk = ?\nFind probability of each value of x\nFind \\(P(-2 \\le x \\le 2)\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#more-pmf",
+    "href": "02-random-variable.html#more-pmf",
+    "title": "Random Variable",
+    "section": "More PMF",
+    "text": "More PMF\n\n\\(P(x) = \\frac{1}{14} (a+2x); x = -3, -2, -1, 0, 1, 2, 3\\)\n\\(P(x) = k(x-2); x = 3, 4,5,6,7,8\\)\n\\(P(x) = \\frac{x-1}{k}; x=2,3,4,5\\)\n\\(P(x) = \\frac{3-|4-x|}{k}; x=2,3,4,5,6\\)\n\\(p(x) = \\frac{x+4}{30}; x=0,1,2,3,4\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pmf-problem-from-coin",
+    "href": "02-random-variable.html#pmf-problem-from-coin",
+    "title": "Random Variable",
+    "section": "PMF problem from coin",
+    "text": "PMF problem from coin\nAn unbiased coin is tossed four times and the number of times the heads are obtained is denoted by x. Determine the probability mass function.\n\n\\(S = \\{HHHH, HHHT, \\cdots\\}\\)\n\\(x = 0, 1, 2, 3, 4\\)\n\\(P(X = 2) = \\frac{4C_2}{2^4}\\)\n\\(P(x) = \\frac{4C_X}{2^4}\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pdf-problem-01",
+    "href": "02-random-variable.html#pdf-problem-01",
+    "title": "Random Variable",
+    "section": "PDF Problem 01",
+    "text": "PDF Problem 01\n\\(\\displaystyle f(x) = kx(x-1); 1\\le x \\le 5\\)\n\nFind k\n\\(P(X&gt;1)\\)\n\\(P(X \\le 3)\\)\n\\(P(2 \\le x &lt; 4)\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#pdf-problem-02",
+    "href": "02-random-variable.html#pdf-problem-02",
+    "title": "Random Variable",
+    "section": "PDF Problem 02",
+    "text": "PDF Problem 02\n\\(f(x) = k(x+1); 0\\lt x \\lt 1\\)\n\n\\(P(X=2)=?\\)\n\\(k=?\\)\n\\(P(0.4 \\lt X \\lt 2)=?\\)\n\\(\\int_{0.4}^1 f(x) + \\int_{1}^2 f(x) \\to 0\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#more-pdf",
+    "href": "02-random-variable.html#more-pdf",
+    "title": "Random Variable",
+    "section": "More PDF",
+    "text": "More PDF\n\n\\(f(x) = 2x; 0 &lt; x &lt; 1\\)\n\\(f(x) = \\frac{1}{30} (3+2x); 2 &lt; x &lt; 5\\)\n\\(f(x) = ax^2; 0 &lt; x &lt; 4\\)\n\\(f(x) = kx^2 + kx + \\frac 18; 0 &lt; x &lt; 8\\)\n\\(f(x) = kx; 0 &lt; x &lt; 4\\)\n\\(f(x) = 3x^2; 0 \\le x \\le 1\\)\n\\(f(y) = k(3y+5); 1 &lt; y &lt; 5\\)\n\\(f(z) = \\frac29 (3z-z^2); 0 \\le x \\le 3\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#problems-archive",
+    "href": "02-random-variable.html#problems-archive",
+    "title": "Random Variable",
+    "section": "Problems Archive",
+    "text": "Problems Archive\nLook here"
+  },
+  {
+    "objectID": "02-random-variable.html#cumuluative-distribution-function",
+    "href": "02-random-variable.html#cumuluative-distribution-function",
+    "title": "Random Variable",
+    "section": "Cumuluative Distribution Function",
+    "text": "Cumuluative Distribution Function\nF(x) or cdf accumulates all of the probability less than or equal to.\n\n\n\n\n\n\n\n\n\n\n\n\nx\n1\n2\n3\n4\n5\n6\n\n\n\n\nP (x)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 2\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\\(\\frac 1 7\\)\n\n\nF (x)\n\\(\\frac 1 7\\)\n\\(\\frac 2 7\\)\n\\(\\frac 4 7\\)\n\\(\\frac 5 7\\)\n\\(\\frac 6 7\\)\n\\(1\\)\n\n\n\nFind\n\n\\(P(X&lt;4)\\)\n\\(P(3&lt;X&lt;6)\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#cdf-definition",
+    "href": "02-random-variable.html#cdf-definition",
+    "title": "Random Variable",
+    "section": "cdf definition",
+    "text": "cdf definition\n\\(F_X(x) = P(X\\le x)\\)\n\n\nDiscrete\n\\[F(x) = \\sum_{X\\le x} P(x)\\]\n\n\nContinuous \n\n\\[F_{X}(x) = \\int_{-\\infty}^x f_X(t)dt\\]\nFind cdf for \\(f(x) = 2x; 0\\le x \\le 1\\)\n\\(\\int \\to x^2\\)\n\n\nAnswer\n\n\n\\[\\begin{eqnarray}\nF(x) =\n\\begin{cases}\nx^2/2,  & 0\\le x \\le 1 \\\\\n0, & \\text{otherwise}\n\\end{cases}\n\\end{eqnarray}\\]"
+  },
+  {
+    "objectID": "02-random-variable.html#cdf-properties",
+    "href": "02-random-variable.html#cdf-properties",
+    "title": "Random Variable",
+    "section": "cdf properties",
+    "text": "cdf properties\n\n\\(P(a\\le x \\le b) = F(b)-F(a)\\)for \\(a\\lt b\\); what if \\(a \\lt x \\lt b?\\)\nFor continuous x, \\(f(x) = \\frac{d}{dx}[F(x)]\\)\n\\(F(-\\infty) =0 , F(+\\infty) = 1\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#joint-probability-function",
+    "href": "02-random-variable.html#joint-probability-function",
+    "title": "Random Variable",
+    "section": "Joint Probability Function",
+    "text": "Joint Probability Function\nLet, \\(I = Infected\\), and \\(V = Vaccinated\\)\n\n\n\n\n\\(I\\)\n\\(\\bar I\\)\nTotal\n\n\n\n\n\\(V\\)\n3\n276\n279\n\n\n\\(\\bar V\\)\n66\n473\n539\n\n\nTotal\n69\n749\n818\n\n\n\nFind the probability that\n\na vaccinated person is infected\na non-vaccinated person is uninfected\n\n\nThese are joint probabilities \\(\\to\\) P(x,y)\n\\(P(x,y) =P(x) \\cdot P(y)\\) if \\(x\\) and \\(y\\) are independent."
+  },
+  {
+    "objectID": "02-random-variable.html#joint-marginal-conditional",
+    "href": "02-random-variable.html#joint-marginal-conditional",
+    "title": "Random Variable",
+    "section": "Joint-Marginal-Conditional",
+    "text": "Joint-Marginal-Conditional\nLet, \\(I = Infected\\), and \\(V = Vaccinated\\)\n\n\n\n\n\\(I\\)\n\\(\\bar I\\)\nTotal\n\n\n\n\n\\(V\\)\n3\n276\n279\n\n\n\\(\\bar V\\)\n66\n473\n539\n\n\nTotal\n69\n749\n818\n\n\n\nFind the probabilities that\n\na vaccinated person is infected\na non-vaccinated person is uninfected\nvaccinated if infected\ninfected if not vaccinated\nvaccinated\nuninfected"
+  },
+  {
+    "objectID": "02-random-variable.html#joint-pf-properties",
+    "href": "02-random-variable.html#joint-pf-properties",
+    "title": "Random Variable",
+    "section": "Joint PF Properties",
+    "text": "Joint PF Properties\n\n\\(P(x,y) \\ge 0\\)\n\\(\\Sigma\\Sigma P(x,y)=1\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#coin-die",
+    "href": "02-random-variable.html#coin-die",
+    "title": "Random Variable",
+    "section": "Coin-Die",
+    "text": "Coin-Die\n\n\n\nDie/Coin\n1\n2\n3\n4\n5\n6\n\n\n\n\nH (1)\nH1\nH2\nH3\nH4\nH5\nH6\n\n\nT (0)\nT1\nT2\nT3\nT4\nT5\nT6\n\n\n\nX = Outcome of coin toss\nY = Outcome of die throw\nx = 0, 1; y = 1, 2, 3, 4, 5, 6\nConstruct the distribution."
+  },
+  {
+    "objectID": "02-random-variable.html#joint-marginal-conditional-revisited",
+    "href": "02-random-variable.html#joint-marginal-conditional-revisited",
+    "title": "Random Variable",
+    "section": "Joint-Marginal-Conditional Revisited",
+    "text": "Joint-Marginal-Conditional Revisited\n\n\n\n\n\n\n\n\n\n\n\nExam (X) \\(\\to\\)Result (Y) \\(\\downarrow\\)\nPSC\nJSC\nSSC\nHSC\nTotal\n\n\n\n\nPassed\n30\n26\n23\n25\n104\n\n\nFailed\n12\n13\n10\n14\n49\n\n\nAbsent\n5\n2\n3\n4\n14\n\n\nTotal\n47\n41\n36\n43\n167\n\n\n\n\nMarginal: \\(P(Pass) = P(x_1)=P(x_1,y_1)+P(x_1,y_2)+P(x_1,y_3)\\)\n\\(P(Absent) = P(x_3) = P(x_3,y_1)+P(x_3,y_2)+P(x_3,y_3)\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#marginal-probability",
+    "href": "02-random-variable.html#marginal-probability",
+    "title": "Random Variable",
+    "section": "Marginal Probability",
+    "text": "Marginal Probability\nConsider the previous table\nJoint probability: \\(P(x_i, y_j); i = 1,2, \\cdots m; j = 1,2, \\cdots n\\)\nMarginal probability \\(\\to P(x_i) \\leftarrow P(x_i, y_j)\\)\n\nFor x: \\(P(x_i) = \\sum_{j=1}^n P(x_i, y_j); i = 1,2, \\cdots m\\)\nFor y: \\(P(y_i) = \\sum_{i=1}^m P(x_i, y_j); j = 1,2, \\cdots n\\)\nWhat about continuous x?"
+  },
+  {
+    "objectID": "02-random-variable.html#marginal-probability-properties",
+    "href": "02-random-variable.html#marginal-probability-properties",
+    "title": "Random Variable",
+    "section": "Marginal Probability Properties",
+    "text": "Marginal Probability Properties\n\n\\(P(x_i) \\ge 0\\) and \\(P(y_i) \\ge 0\\)\n\\[\\sum_{i=1}^m P(x_i)=\\sum_{j=1}^n P(y_j)=1\\]\n\nSumming marginal probabilities will give 1."
+  },
+  {
+    "objectID": "02-random-variable.html#joint-marginal-example",
+    "href": "02-random-variable.html#joint-marginal-example",
+    "title": "Random Variable",
+    "section": "Joint-Marginal Example",
+    "text": "Joint-Marginal Example\n\\(P(x,y) = \\frac{x+y}{9}; x=0,1,2; y = 0, 1\\)\n\nFind marginal probabilities\nCheck properties (sum)\n\n\n\\(P(x) = \\frac{2x+1}{9}\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#conditional-probability-function",
+    "href": "02-random-variable.html#conditional-probability-function",
+    "title": "Random Variable",
+    "section": "Conditional Probability Function",
+    "text": "Conditional Probability Function\nLike Bayes Theorem\n\\(P(X_i|y_j) = \\frac{P(x_i,y_j)}{P(y_j)}; P(y_j) \\gt 0\\)\nProperties\n\n\\(\\sum_{j=1}^m P(x_i|y_j)=\\sum_{i=1}^m P(y_j|x_i)=1\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#conditional-probability-example",
+    "href": "02-random-variable.html#conditional-probability-example",
+    "title": "Random Variable",
+    "section": "Conditional Probability Example",
+    "text": "Conditional Probability Example\n\\(P(x,y) = \\frac{x+y}{9}; x=0,1,2; y = 0, 1\\)\nFind \\(P(X|Y)\\) and \\(P(Y|X)\\)\nFind for continuous X as well."
+  },
+  {
+    "objectID": "02-random-variable.html#find-k-for-pdf",
+    "href": "02-random-variable.html#find-k-for-pdf",
+    "title": "Random Variable",
+    "section": "Find k for pdf",
+    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  }
+]

@@ -189,94 +189,84 @@ list-style-type: none;
 
 /* Menu colors
 
-/* custom_menu_styles.css */
-
-/* Background color of the menu sidebar */
-.reveal .slide-menu {
-    background-color: #333; /* Dark gray background */
-    color: #f0f0f0; /* Light text color for contrast */
+/* Styling for the common footer */
+#common-project-footer {
+    position: fixed; /* Keep it fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark, semi-transparent background */
+    color: white; /* White text */
+    padding: 5px 10px;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure it's on top of other content */
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 1px solid #555;
 }
 
-/* Color of the menu items (chapters/slides) */
-.reveal .slide-menu .slide-menu-item a {
-    color: #f0f0f0; /* Light text color for links */
-    font-weight: normal; /* Adjust font weight if needed */
+/* Ensure reveal.js slides have space for the footer */
+.reveal .slides {
+    padding-bottom: 40px; /* Adjust this value based on your footer's height */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
-/* Color of the menu item on hover */
-.reveal .slide-menu .slide-menu-item a:hover {
-    color: #007bff; /* Blue on hover */
-    background-color: #444; /* Slightly lighter background on hover */
-}
-
-/* Color of the currently active menu item */
-.reveal .slide-menu .slide-menu-item.active a {
-    color: #007bff; /* Blue for active item */
-    font-weight: bold; /* Bold for active item */
-    background-color: #555; /* Darker background for active item */
-}
-
-/* Style for the menu header/title (if present) */
-.reveal .slide-menu .slide-menu-title {
-    color: #fff; /* White title */
-    border-bottom: 1px solid #666; /* Separator line */
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-/* Adjust scrollbar color (optional, browser-specific) */
-.reveal .slide-menu::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
-}
-.reveal .slide-menu::-webkit-scrollbar-track {
-    background-color: #555;
-}
-
-
-/* Custom styles for the footer */
-#custom-footer {
-    position: fixed; /* Fixed position relative to the viewport */
-    bottom: 0;       /* Align to the bottom */
-    left: 0;         /* Align to the left */
-    width: 100%;     /* Full width */
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    padding: 5px 10px; /* Padding inside the footer */
-    box-sizing: border-box; /* Include padding in width */
-    z-index: 1000;   /* Ensure it's above other content */
-    font-size: 0.8em; /* Smaller font size */
-    text-align: center; /* Center text */
-    border-top: 1px solid #ccc; /* Optional: a top border */
-}
-
-#custom-footer .slide-footer {
-    margin: 0; /* Remove default paragraph margin */
-    display: flex; /* Use flexbox for alignment of items within the footer */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    overflow: hidden; /* Hide overflowing text for marquee effect */
-    white-space: nowrap; /* Prevent text from wrapping */
-}
-
-/* Marquee effect using CSS animation */
+/* Optional: If you want a marquee effect for the footer text */
 .marquee-effect {
-    display: inline-block; /* Essential for animation */
+    display: inline-block;
     padding-left: 100%; /* Start off-screen to the right */
     animation: marquee 15s linear infinite; /* Adjust duration as needed */
 }
 
 @keyframes marquee {
     0% { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); } /* Move completely off-screen to the left */
+    100% { transform: translate(-100%, 0); } /* Move to the left */
 }
 
-/* Optional: Adjust for specific reveal.js themes if needed */
-.reveal .slides {
-    /* Add padding to the bottom of slides to prevent content from being hidden by the footer */
-    padding-bottom: 40px; /* Adjust based on your footer's height */
+/* General body background (for ordinary HTML pages) */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  color: #333;
 }
 
+/* Background for reveal.js slides (overrides body for slides) */
+.reveal {
+  background-color: #ffffff;
+  /* background-image: url('images/my_background_pattern.png'); */
+  /* background-repeat: repeat; */
+  /* background-size: 100px; */
+}
 
 /* layout ends  */
 
 /* layout ends  */
+
+/* qmd table border  */
+
+/* Make sure borders are shown for all table cells */
+/* Stronger selector with !important to override RevealJS theme */
+.reveal table,
+.reveal table th,
+.reveal table td {
+  border-collapse: collapse !important;
+  border: 1px solid black !important;
+}
+
+.reveal th,
+.reveal td {
+  padding: 6px !important;
+  text-align: center !important;
+}
+
+.reveal thead tr th {
+  border-bottom: 2px solid black !important;
+}
+
+.reveal tbody tr:last-child td {
+  border-bottom: 1px solid black !important;
+}
+
+.reveal thead tr th {
+  background-color: #f0f0f0 !important;
+}

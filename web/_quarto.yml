@@ -25,5 +25,12 @@ format:
     toc: true
     code-copy: true
 
-
+  revealjs:
+    theme: sky
+    css:
+    - slide/css/styles.css
+    - styles.css
+    chalkboard: true
+    logo: slide/css/logo.png
+    footer: "docs.statmania.info | Abdullah Al Mahmud"
 
