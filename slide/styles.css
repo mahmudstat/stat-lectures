@@ -71,19 +71,10 @@
 }
 
 
-/* Optional: Basic styling for the entire page for better presentation
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+.reveal .slides section.scrollable {
+  touch-action: pan-y pan-x !important;
+  overscroll-behavior: contain; /* optional, to avoid page scroll conflicts */
 }
 
-h1, h2, h3 {
-    color: #0056b3;
-}
-
-*/
 
 
