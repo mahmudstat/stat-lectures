@@ -404,5 +404,19 @@
     "title": "Random Variable",
     "section": "Find k for pdf",
     "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  },
+  {
+    "objectID": "02-random-variable.html#joint-pmf-example",
+    "href": "02-random-variable.html#joint-pmf-example",
+    "title": "Random Variable",
+    "section": "Joint PMF Example",
+    "text": "Joint PMF Example\n\\(P(x,y) = \\frac{x+y}{9}; x=0,1,2; y = 0, 1\\)\n\nFind marginal probabilities\nCheck properties (sum)\n\\(P(x) = \\frac{2x+1}{9}\\)"
+  },
+  {
+    "objectID": "02-random-variable.html#joint-pdf-example",
+    "href": "02-random-variable.html#joint-pdf-example",
+    "title": "Random Variable",
+    "section": "Joint PDF Example",
+    "text": "Joint PDF Example\n\\(P(x,y) = \\frac{2x+y}{3}; 0 \\le x \\le 1.5\\) and \\(0 \\le y \\le 1\\)"
   }
 ]

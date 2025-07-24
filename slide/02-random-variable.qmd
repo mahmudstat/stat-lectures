@@ -7,6 +7,8 @@ format: revealjs
 
 # Concepts
 
+Equation $x^2$
+
 <script>
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
@@ -388,13 +390,17 @@ Marginal probability $\to P(x_i) \leftarrow P(x_i, y_j)$
 
 Summing marginal probabilities will give 1.
 
-## Joint-Marginal Example
+## Joint PMF Example
 
 $P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1$
 
 > - Find marginal probabilities
 > - Check properties (sum)
 > - $P(x) = \frac{2x+1}{9}$
+
+## Joint PDF Example
+
+$P(x,y) = \frac{2x+y}{3}; 0 \le x \le 1.5$ and $0 \le y \le 1$
 
 ## Conditional Probability Function
 

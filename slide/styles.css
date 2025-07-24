@@ -77,4 +77,23 @@
 }
 
 
+/* Menu */
+
+/* Change menu background color */
+.reveal .slide-menu {
+  background-color: #222;  /* Dark background */
+  color: #fff;             /* Default text color */
+}
+
+/* Change menu item hover color */
+.reveal .slide-menu li a:hover {
+  background-color: #444;  /* Hover background */
+  color: #ffd700;          /* Hover text color */
+}
+
+/* Active (current) menu item */
+.reveal .slide-menu li.active a {
+  background-color: #666;
+  color: #ffffff;
+}
 

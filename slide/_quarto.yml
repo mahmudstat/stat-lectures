@@ -27,9 +27,10 @@ format:
 
   revealjs:
     theme: sky
-    background-transition: zoom
-    slide-number: true
-    navigation-mode: grid
+    transition: convex
+    slide-number:  c/t
+    navigation-mode: vertical
+    controls-layout: bottom-right
     css:
     - css/styles.css
     - styles.css

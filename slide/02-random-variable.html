@@ -345,6 +345,7 @@ Abdullah Al Mahmud
 <section>
 <section id="concepts" class="title-slide slide level1 center">
 <h1>Concepts</h1>
+<p>Equation <span class="math inline">\(x^2\)</span></p>
 <script>
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
@@ -869,7 +870,7 @@ x^2/2,  &amp; 0\le x \le 1 \\
 <p>x = 0, 1; y = 1, 2, 3, 4, 5, 6</p>
 <p>Construct the distribution.</p>
 </section>
-<section id="joint-marginal-conditional-revisited" class="slide level2">
+<section id="joint-marginal-conditional-revisited" class="slide level2 smaller">
 <h2>Joint-Marginal-Conditional Revisited</h2>
 <table class="caption-top" style="width:100%;">
 <colgroup>
@@ -944,21 +945,23 @@ x^2/2,  &amp; 0\le x \le 1 \\
 <section id="marginal-probability-properties" class="slide level2">
 <h2>Marginal Probability Properties</h2>
 <ul>
-<li><span class="math inline">\(P(x_i) \ge 0\)</span> and <span class="math inline">\(P(y_i) \ge 0\)</span></li>
-<li><span class="math display">\[\sum_{i=1}^m P(x_i)=\sum_{j=1}^n P(y_j)=1\]</span></li>
+<li class="fragment"><span class="math inline">\(P(x_i) \ge 0\)</span> and <span class="math inline">\(P(y_i) \ge 0\)</span></li>
+<li class="fragment"><span class="math display">\[\sum_{i=1}^m P(x_i)=\sum_{j=1}^n P(y_j)=1\]</span></li>
 </ul>
 <p>Summing marginal probabilities will give 1.</p>
 </section>
-<section id="joint-marginal-example" class="slide level2">
-<h2>Joint-Marginal Example</h2>
+<section id="joint-pmf-example" class="slide level2">
+<h2>Joint PMF Example</h2>
 <p><span class="math inline">\(P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1\)</span></p>
 <ul>
-<li>Find marginal probabilities</li>
-<li>Check properties (sum)</li>
-</ul>
-<ul>
+<li class="fragment">Find marginal probabilities</li>
+<li class="fragment">Check properties (sum)</li>
 <li class="fragment"><span class="math inline">\(P(x) = \frac{2x+1}{9}\)</span></li>
 </ul>
+</section>
+<section id="joint-pdf-example" class="slide level2">
+<h2>Joint PDF Example</h2>
+<p><span class="math inline">\(P(x,y) = \frac{2x+y}{3}; 0 \le x \le 1.5\)</span> and <span class="math inline">\(0 \le y \le 1\)</span></p>
 </section>
 <section id="conditional-probability-function" class="slide level2">
 <h2>Conditional Probability Function</h2>
@@ -1033,7 +1036,7 @@ x^2/2,  &amp; 0\le x \le 1 \\
         controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
+        controlsLayout: 'bottom-right',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"
@@ -1043,7 +1046,7 @@ x^2/2,  &amp; 0\le x \le 1 \\
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'h.v',
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1084,7 +1087,7 @@ x^2/2,  &amp; 0\le x \le 1 \\
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'grid',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
@@ -1148,14 +1151,14 @@ x^2/2,  &amp; 0\le x \le 1 \\
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'convex',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'zoom',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
