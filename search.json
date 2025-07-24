@@ -39,7 +39,7 @@
     "href": "snippets.html#git",
     "title": "Code Snippets",
     "section": "Git",
-    "text": "Git\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
+    "text": "Git\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
   },
   {
     "objectID": "snippets.html#excel-google-sheet",

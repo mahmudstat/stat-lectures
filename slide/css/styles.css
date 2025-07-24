@@ -27,12 +27,6 @@
   color: #ffe6ff; /* same color for block equations */
 }
 
-
-span {
-  color: #a31aff;
-}
-
-
 body {
   /* 
  background:  conic-gradient(at 85% 45%, pink, tomato, pink);
@@ -270,3 +264,5 @@ body {
 .reveal thead tr th {
   background-color: #f0f0f0 !important;
 }
+
+

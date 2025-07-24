@@ -79,6 +79,20 @@ IFS=o
 
 ## Git
 
+### Revert all tracked files in the working directory
+
+```{.git code-line-numbers="true"}
+git checkout .
+```
+
+**To clean untracked files as well:**
+
+```{.git code-line-numbers="true"}
+git checkout .
+git clean -fd
+```
+
+
 ### Repository-specific confiuguration
 
 ```{.git code-line-numbers="true"}

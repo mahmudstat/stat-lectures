@@ -97,3 +97,29 @@
   color: #ffffff;
 }
 
+/* 1. General span color */
+span {
+  color: #ff;
+}
+
+/* 1.a Override for inline math equations */
+span.math.inline {
+  color: #0000cc;  !important;  /* distinct math color */
+  background: none;  /* reset background if needed */
+}
+
+/* 2. Full background color for menu panel */
+.slide-menu-wrapper .slide-menu {
+  background-image: linear-gradient(#004080, #0080ff); !important;  /* full menu background */
+  color: #fff !important;             /* menu text color */
+}
+
+/* Optional: Style menu links and hover */
+.slide-menu-wrapper .slide-menu a {
+  color: #ddd !important;
+  text-decoration: none;
+}
+.slide-menu-wrapper .slide-menu a:hover {
+  background-color: #444 !important;
+  color: #ffd700 !important;
+}
