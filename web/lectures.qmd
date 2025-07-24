@@ -1,4 +1,7 @@
-# Lectures
+---
+format: html
+title: Lectures
+---
 
 ## First Paper
 

@@ -1,4 +1,7 @@
-# Questions
+---
+format: html
+title: Questions
+---
 
 The page contains the question archive as well as specific exam questions.
 

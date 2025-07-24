@@ -1,4 +1,7 @@
-# Resources
+---
+format: html
+title: Resources
+---
 
 ## Lecture Notes
 
