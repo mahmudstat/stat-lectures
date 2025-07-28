@@ -17,6 +17,14 @@ website:
       - resources.qmd
       - href: snippets.qmd
         text: Code Snippet
+      - text: "Help"
+        menu:
+          - text: "Report a Bug"
+            icon: "bug"
+            href: "https://github.com/mahmudstat/stat-lectures/issues"
+          - text: "Ask a Question"
+            icon: "chat-right-text"
+            href: "https://github.com/mahmudstat/stat-lectures/discussions"
 
 format:
   html:

@@ -7,8 +7,6 @@ format: revealjs
 
 # Concepts
 
-Equation $x^2$
-
 <script>
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';

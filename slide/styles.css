@@ -110,8 +110,8 @@ span.math.inline {
 
 /* 2. Full background color for menu panel */
 .slide-menu-wrapper .slide-menu {
-  background-image: linear-gradient(#004080, #0080ff); !important;  /* full menu background */
-  color: #fff !important;             /* menu text color */
+  background-image: linear-gradient(#004080, #0080ff); !important;  !important;  /* full menu background */
+  color: red; !important;             /* menu text color */
 }
 
 /* Optional: Style menu links and hover */
@@ -123,3 +123,5 @@ span.math.inline {
   background-color: #444 !important;
   color: #ffd700 !important;
 }
+
+

@@ -58,6 +58,7 @@ find . -type f | wc -l
 
 ```{.bash code-line-numbers="true"}
 `sed -i 's/$/\n/' file.txt`
+```
 
 ### Convert all mp4 to mp3
 
@@ -76,6 +77,17 @@ done
 
 IFS=o
 ```
+
+## R
+
+### Quit R from terminal in one go
+
+```{.r code-line-numbers="true"}
+q("no")
+```
+
+or `quit(save = "no")`
+
 
 ## Git
 
@@ -97,9 +109,6 @@ git clean -fd
 
 ```{.git code-line-numbers="true"}
 git config --local user.name 'Your Name'
-```
-
-```{.git code-line-numbers="true"}
 git config --local user.email 'your.work.email@company.com'
 ```
 
@@ -107,11 +116,9 @@ git config --local user.email 'your.work.email@company.com'
 
 ```{.git code-line-numbers="true"}
 `git config --global user.name 'Your Name'`
-```
-
-```{.git code-line-numbers="true"}
 git config --global user.email 'your.work.email@company.com'
 ```
+
 
 ## Excel / Google Sheet
 

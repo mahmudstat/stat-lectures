@@ -25,14 +25,21 @@
     "href": "snippets.html",
     "title": "Code Snippets",
     "section": "",
-    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n### Convert all mp4 to mp3\n\n\n```{.bash code-line-numbers=\"true\"}\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
+    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n\n\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
   },
   {
     "objectID": "snippets.html#nux",
     "href": "snippets.html#nux",
     "title": "Code Snippets",
     "section": "",
-    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n### Convert all mp4 to mp3\n\n\n```{.bash code-line-numbers=\"true\"}\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
+    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n\n\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
+  },
+  {
+    "objectID": "snippets.html#r",
+    "href": "snippets.html#r",
+    "title": "Code Snippets",
+    "section": "R",
+    "text": "R\n\nQuit R from terminal in one go\nq(\"no\")\nor quit(save = \"no\")"
   },
   {
     "objectID": "snippets.html#git",
@@ -95,7 +102,7 @@
     "href": "lectures.html#second-paper",
     "title": "Lectures",
     "section": "Second Paper",
-    "text": "Second Paper\n\nIntroduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nNormal Distribution\nVital Statistics\n\nMore to come…"
+    "text": "Second Paper\n\nIntroduction to probability\nRandom variable and Probability Distributions\nMathematical Expectation\nBinomial Distribution\nPoisson Distribution\nNormal Distribution\nVital Statistics"
   },
   {
     "objectID": "index.html",
@@ -110,5 +117,12 @@
     "title": "Stat Mania Docs",
     "section": "How to Use",
     "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "lectures.html#elementary-statistics",
+    "href": "lectures.html#elementary-statistics",
+    "title": "Lectures",
+    "section": "Elementary Statistics",
+    "text": "Elementary Statistics\n\nVII-X Statistics and Probability\n\nMore to come…"
   }
 ]

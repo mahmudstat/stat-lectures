@@ -145,6 +145,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link active" href="./snippets.html" aria-current="page"> 
 <span class="menu-text">Code Snippet</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/quarto-dev/quarto-cli/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report a Bug</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/quarto-dev/quarto-cli/discussions"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Ask a Question</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -168,6 +185,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#rename-to-lowercase" id="toc-rename-to-lowercase" class="nav-link" data-scroll-target="#rename-to-lowercase">Rename to lowercase</a></li>
   <li><a href="#count-files" id="toc-count-files" class="nav-link" data-scroll-target="#count-files">Count files</a></li>
   <li><a href="#replace-new-line-with-double-new-line" id="toc-replace-new-line-with-double-new-line" class="nav-link" data-scroll-target="#replace-new-line-with-double-new-line">Replace new line with double new line</a></li>
+  <li><a href="#convert-all-mp4-to-mp3" id="toc-convert-all-mp4-to-mp3" class="nav-link" data-scroll-target="#convert-all-mp4-to-mp3">Convert all mp4 to mp3</a></li>
+  </ul></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a>
+  <ul class="collapse">
+  <li><a href="#quit-r-from-terminal-in-one-go" id="toc-quit-r-from-terminal-in-one-go" class="nav-link" data-scroll-target="#quit-r-from-terminal-in-one-go">Quit R from terminal in one go</a></li>
   </ul></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
   <ul class="collapse">
@@ -237,44 +259,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="replace-new-line-with-double-new-line" class="level3">
 <h3 class="anchored" data-anchor-id="replace-new-line-with-double-new-line">Replace new line with double new line</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">`</span><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/$/\n/'</span> file.txt<span class="kw">`</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="co">### Convert all mp4 to mp3</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a></span>
-<span id="cb7-5"><a href="#cb7-5"></a></span>
-<span id="cb7-6"><a href="#cb7-6"></a><span class="kw">```</span><span class="ex">{.bash</span> code-line-numbers=<span class="st">"true"</span>}</span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="bu">local</span> <span class="va">o</span><span class="op">=</span><span class="va">$IFS</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a><span class="va">IFS</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="at">-en</span> <span class="st">"\n\b"</span><span class="va">)</span></span>
-<span id="cb7-10"><a href="#cb7-10"></a></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="va">MP4FILE</span><span class="op">=</span><span class="va">$(</span><span class="fu">ls</span> . <span class="kw">|</span><span class="fu">grep</span> .mp4<span class="va">)</span></span>
-<span id="cb7-12"><a href="#cb7-12"></a><span class="cf">for</span> filename <span class="kw">in</span> <span class="va">$MP4FILE</span></span>
-<span id="cb7-13"><a href="#cb7-13"></a><span class="cf">do</span></span>
-<span id="cb7-14"><a href="#cb7-14"></a><span class="va">name</span><span class="op">=</span><span class="st">"</span><span class="va">${filename</span><span class="op">%</span>.<span class="pp">*</span><span class="va">}</span><span class="st">"</span></span>
-<span id="cb7-15"><a href="#cb7-15"></a><span class="ex">ffmpeg</span> <span class="at">-i</span> ./<span class="va">$filename</span> <span class="at">-b:a</span> 192K <span class="at">-vn</span> ./<span class="va">$name</span>.mp3</span>
-<span id="cb7-16"><a href="#cb7-16"></a><span class="cf">done</span></span>
-<span id="cb7-17"><a href="#cb7-17"></a></span>
-<span id="cb7-18"><a href="#cb7-18"></a><span class="va">IFS</span><span class="op">=</span>o</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">`</span><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/$/\n/'</span> file.txt<span class="kw">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="convert-all-mp4-to-mp3" class="level3">
+<h3 class="anchored" data-anchor-id="convert-all-mp4-to-mp3">Convert all mp4 to mp3</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="bu">local</span> <span class="va">o</span><span class="op">=</span><span class="va">$IFS</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="va">IFS</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="at">-en</span> <span class="st">"\n\b"</span><span class="va">)</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="va">MP4FILE</span><span class="op">=</span><span class="va">$(</span><span class="fu">ls</span> . <span class="kw">|</span><span class="fu">grep</span> .mp4<span class="va">)</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="cf">for</span> filename <span class="kw">in</span> <span class="va">$MP4FILE</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="cf">do</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="va">name</span><span class="op">=</span><span class="st">"</span><span class="va">${filename</span><span class="op">%</span>.<span class="pp">*</span><span class="va">}</span><span class="st">"</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="ex">ffmpeg</span> <span class="at">-i</span> ./<span class="va">$filename</span> <span class="at">-b:a</span> 192K <span class="at">-vn</span> ./<span class="va">$name</span>.mp3</span>
+<span id="cb8-10"><a href="#cb8-10"></a><span class="cf">done</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a></span>
+<span id="cb8-12"><a href="#cb8-12"></a><span class="va">IFS</span><span class="op">=</span>o</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r">R</h2>
+<section id="quit-r-from-terminal-in-one-go" class="level3">
+<h3 class="anchored" data-anchor-id="quit-r-from-terminal-in-one-go">Quit R from terminal in one go</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">q</span>(<span class="st">"no"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or <code>quit(save = "no")</code></p>
 </section>
 </section>
 <section id="git" class="level2">
 <h2 class="anchored" data-anchor-id="git">Git</h2>
 <section id="revert-all-tracked-files-in-the-working-directory" class="level3">
 <h3 class="anchored" data-anchor-id="revert-all-tracked-files-in-the-working-directory">Revert all tracked files in the working directory</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>To clean untracked files as well:</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="#cb9-1"></a>git checkout .</span>
-<span id="cb9-2"><a href="#cb9-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git checkout .</span>
+<span id="cb11-2"><a href="#cb11-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="repository-specific-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="repository-specific-confiuguration">Repository-specific confiuguration</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>git config --local user.name 'Your Name'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>git config --local user.name 'Your Name'</span>
+<span id="cb12-2"><a href="#cb12-2"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="global-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="global-confiuguration">Global confiuguration</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>`git config --global user.name 'Your Name'`</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>`git config --global user.name 'Your Name'`</span>
+<span id="cb13-2"><a href="#cb13-2"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="excel-google-sheet" class="level2">

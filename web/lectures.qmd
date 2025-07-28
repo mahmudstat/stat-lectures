@@ -15,12 +15,16 @@ title: Lectures
 
 ## Second Paper
 
-- [ Introduction to probability](slide/01-probability-intro.html)
+- [Introduction to probability](slide/01-probability-intro.html)
 - [Random variable and Probability Distributions](slide/02-random-variable.html)
 - [Mathematical Expectation](slide/03-expectation.html)
 - [Binomial Distribution](slide/04-binomial_dist.html)
 - [Poisson Distribution](slide/05-poisson_dist.html)
 - [Normal Distribution](slide/6-normal-distribution.html)
 - [Vital Statistics](slide/09-vital-stat.html)
+
+## Elementary Statistics
+
+- [VII-X Statistics and Probability](slide/elementary_stat_prob.html)
 
 More to come...
