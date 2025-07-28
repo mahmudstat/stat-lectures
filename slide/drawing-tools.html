@@ -41,7 +41,7 @@
     <input type="range" id="penSize" min="1" max="20" value="5" />
 
     <button id="eraserTool">🩹</button>
-    <input type="range" id="eraserSize" min="20" max="120" value="40" />
+    <input type="range" id="eraserSize" min="20" max="100" value="40" />
 
     <button id="undo">↩️</button>
     <button id="clear">🗑️</button>
@@ -107,17 +107,39 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   canvas.addEventListener('pointerdown', start);
-  canvas.addEventListener('pointermove', draw);
-  canvas.addEventListener('pointerup', end);
-  canvas.addEventListener('pointerout', end);
+canvas.addEventListener('pointermove', draw);
+canvas.addEventListener('pointerup', end);
+canvas.addEventListener('pointercancel', end);
 
-  penTool.onclick = () => { erasing=false; eraserCursor.style.display='none'; };
-  eraserTool.onclick = () => { erasing=true; eraserCursor.style.display='block'; };
-  undo.onclick = () => {
-    if (history.length) ctx.putImageData(history.pop(),0,0);
-  };
-  clear.onclick = () => { ctx.clearRect(0,0,canvas.width,canvas.height); history.length=0; };
-  toggleControls.onclick = () => {
+// Remove pointerout to avoid premature end on mobile
+// canvas.addEventListener('pointerout', end);
+
+penTool.onclick = () => { erasing=false; eraserCursor.style.display='none'; };
+eraserTool.onclick = () => { erasing=true; eraserCursor.style.display='block'; };
+undo.onclick = () => {
+  if (history.length) ctx.putImageData(history.pop(),0,0);
+};
+clear.onclick = () => { ctx.clearRect(0,0,canvas.width,canvas.height); history.length=0; };
+toggleControls.onclick = () => {
+  const v = controls.style.display==='flex';
+  controls.style.display=v?'none':'flex';
+  canvas.style.pointerEvents=v?'none':'auto';
+  if (erasing&&!v) eraserCursor.style.display='block';
+  else eraserCursor.style.display='none';
+};
+
+// Ensure pointer capture for continuous drawing on mobile
+document.getElementById('drawingCanvas').addEventListener('pointerdown', function(e) {
+  this.setPointerCapture(e.pointerId);
+});
+
+// Release capture on pointerup
+canvas.addEventListener('pointerup', function(e) {
+  this.releasePointerCapture(e.pointerId);
+});
+
+// End replacements
+toggleControls.onclick = () => {
     const v = controls.style.display==='flex';
     controls.style.display=v?'none':'flex';
     canvas.style.pointerEvents=v?'none':'auto';
