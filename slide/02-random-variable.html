@@ -364,10 +364,10 @@
     <div id="controls">
       <button id="penTool">🖉</button>
       <input type="color" id="penColor" value="#339966">
-      <input type="range" id="penSize" min="1" max="20" value="3">
+      <input type="range" id="penSize" min="1" max="20" value="5">
 
       <button id="eraserTool">🩹</button>
-      <input type="range" id="eraserSize" min="10" max="100" value="40">
+      <input type="range" id="eraserSize" min="10" max="100" value="20">
 
       <button id="undo">↩️</button>
       <button id="clear">🗑️</button>
@@ -382,6 +382,15 @@
     const canvas = document.getElementById('drawingCanvas');
     const ctx = canvas.getContext('2d');
     const eraserCursor = document.getElementById('eraserCursor');
+    const controls = document.getElementById('controls');
+    const penTool = document.getElementById('penTool');
+    const eraserTool = document.getElementById('eraserTool');
+    const undoBtn = document.getElementById('undo');
+    const clearBtn = document.getElementById('clear');
+    const toggleBtn = document.getElementById('toggleControls');
+    const penColor = document.getElementById('penColor');
+    const penSizeInput = document.getElementById('penSize');
+    const eraserSizeInput = document.getElementById('eraserSize');
 
     let drawing = false, erasing = false;
     let lastX = 0, lastY = 0;
@@ -398,59 +407,59 @@
       if (e.touches) e = e.touches[0];
       return { x: e.clientX, y: e.clientY };
     }
-    function updateEraser(x,y) {
-      const size = Number(document.getElementById('eraserSize').value);
-      eraserCursor.style.width = size+'px';
-      eraserCursor.style.height = size+'px';
-      eraserCursor.style.left = x-size/2+'px';
-      eraserCursor.style.top = y-size/2+'px';
+
+    function updateEraser(x, y) {
+      const size = Number(eraserSizeInput.value);
+      eraserCursor.style.width = size + 'px';
+      eraserCursor.style.height = size + 'px';
+      eraserCursor.style.left = x - size/2 + 'px';
+      eraserCursor.style.top = y - size/2 + 'px';
     }
 
-    function start(e) {
+    function startStroke(e) {
+      const p = pos(e);
+      history.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
       drawing = true;
-      history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
-      const p = pos(e); lastX=p.x; lastY=p.y;
-      canvas.style.pointerEvents='auto';
+      lastX = p.x; lastY = p.y;
     }
-    function end() {
-      drawing = false;
-      ctx.globalCompositeOperation = 'source-over';
-      canvas.style.pointerEvents='none';
-      eraserCursor.style.display = 'none';
-    }
-    function draw(e) {
+
+    function drawStroke(e) {
       if (!drawing) return;
       const p = pos(e);
-      const size = erasing ? Number(document.getElementById('eraserSize').value) : Number(document.getElementById('penSize').value);
+      const size = erasing ? Number(eraserSizeInput.value) : Number(penSizeInput.value);
       ctx.lineWidth = size;
       ctx.lineCap = 'round';
       ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over';
-      ctx.strokeStyle = document.getElementById('penColor').value;
-      if (erasing) updateEraser(p.x,p.y);
+      ctx.strokeStyle = penColor.value;
+      if (erasing) updateEraser(p.x, p.y);
       ctx.beginPath();
-      ctx.moveTo(lastX,lastY);
-      ctx.lineTo(p.x,p.y);
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(p.x, p.y);
       ctx.stroke();
-      lastX=p.x; lastY=p.y;
+      lastX = p.x; lastY = p.y;
     }
 
-    // Use document for pointer events to avoid losing on mobile
-    document.addEventListener('pointerdown', start);
-    document.addEventListener('pointermove', draw);
-    document.addEventListener('pointerup', end);
-    document.addEventListener('pointercancel', end);
+    function endStroke() {
+      drawing = false;
+      eraserCursor.style.display = 'none';
+    }
 
-    document.getElementById('penTool').onclick = () => { erasing=false; };
-    document.getElementById('eraserTool').onclick = () => { erasing=true; };
-    document.getElementById('undo').onclick = () => {
-      if (history.length) ctx.putImageData(history.pop(),0,0);
+    // Attach pointer events to canvas
+    canvas.addEventListener('pointerdown', startStroke);
+    canvas.addEventListener('pointermove', drawStroke);
+    canvas.addEventListener('pointerup', endStroke);
+    canvas.addEventListener('pointercancel', endStroke);
+
+    penTool.onclick = () => { erasing = false; eraserCursor.style.display = 'none'; };
+    eraserTool.onclick = () => { erasing = true; eraserCursor.style.display = 'block'; };
+    undoBtn.onclick = () => { if (history.length) ctx.putImageData(history.pop(), 0, 0); };
+    clearBtn.onclick = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); history.length = 0; };
+    toggleBtn.onclick = () => {
+      const v = controls.style.display === 'flex';
+      controls.style.display = v ? 'none' : 'flex';
+      canvas.style.pointerEvents = v ? 'none' : 'auto';
     };
-    document.getElementById('clear').onclick = () => { ctx.clearRect(0,0,canvas.width,canvas.height); history.length=0; };
-    document.getElementById('toggleControls').onclick = () => {
-      const controls = document.getElementById('controls');
-      const visible = controls.style.display==='flex';
-      controls.style.display = visible?'none':'flex';
-    };
+
   });
   </script>
 
