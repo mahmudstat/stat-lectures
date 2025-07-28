@@ -1,0 +1,150 @@
+<style>
+#drawingCanvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 1000;
+  pointer-events: none; /* default to off */
+}
+
+#controlsWrapper {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+}
+
+#controls {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffffcc;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+#controls input[type="color"],
+#controls input[type="range"],
+#controls button {
+  width: 40px;
+  height: 40px;
+}
+
+#toggleControls {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+</style>
+
+<div id="controlsWrapper">
+  <button id="toggleControls">☰</button>
+  <div id="controls">
+    <span title="Pen Color">🎨</span>
+    <input type="color" id="penColor" value="#000000" />
+
+    <span title="Pen Size">✏️</span>
+    <input type="range" id="penSize" min="1" max="20" value="5" />
+
+    <button id="penTool" title="Pen">🖉</button>
+    <button id="eraserTool" title="Eraser">🩹</button>
+
+    <button id="undo" title="Undo">↩️</button>
+    <button id="clear" title="Clear">🗑️</button>
+  </div>
+</div>
+
+<canvas id="drawingCanvas"></canvas>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const canvas = document.getElementById('drawingCanvas');
+  const ctx = canvas.getContext('2d');
+  let drawing = false;
+  let erasing = false;
+  let lastX = 0;
+  let lastY = 0;
+  let history = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  function getPosition(e) {
+    if (e.touches && e.touches[0]) e = e.touches[0];
+    return { x: e.clientX, y: e.clientY };
+  }
+
+  function startDrawing(e) {
+    drawing = true;
+    const { x, y } = getPosition(e);
+    lastX = x;
+    lastY = y;
+    canvas.style.pointerEvents = 'auto';
+  }
+  function stopDrawing() {
+    if (drawing) {
+      history.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
+    }
+    drawing = false;
+  }
+  function draw(e) {
+    if (!drawing) return;
+    const { x, y } = getPosition(e);
+    ctx.lineWidth = document.getElementById('penSize').value;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = erasing ? '#ffffff' : document.getElementById('penColor').value;
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    lastX = x;
+    lastY = y;
+  }
+
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', stopDrawing);
+
+  canvas.addEventListener('touchstart', startDrawing);
+  canvas.addEventListener('touchmove', draw);
+  canvas.addEventListener('touchend', stopDrawing);
+
+  const penTool = document.getElementById('penTool');
+  const eraserTool = document.getElementById('eraserTool');
+  const undoBtn = document.getElementById('undo');
+  const clearBtn = document.getElementById('clear');
+  const toggleControls = document.getElementById('toggleControls');
+  const controls = document.getElementById('controls');
+
+  penTool.addEventListener('click', () => {
+    erasing = false;
+  });
+
+  eraserTool.addEventListener('click', () => {
+    erasing = true;
+  });
+
+  undoBtn.addEventListener('click', () => {
+    if (history.length > 0) {
+      const prev = history.pop();
+      ctx.putImageData(prev, 0, 0);
+    }
+  });
+
+  clearBtn.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
+  toggleControls.addEventListener('click', () => {
+    const visible = controls.style.display === 'flex';
+    controls.style.display = visible ? 'none' : 'flex';
+    canvas.style.pointerEvents = visible ? 'none' : 'auto';
+  });
+});
+</script>

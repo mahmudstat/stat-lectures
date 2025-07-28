@@ -309,4 +309,158 @@ Weighetd mean: $\displaystyle \bar{X}_w =  \frac{\sum_{i=1}^{n} w_i X_i}{\sum_{i
 
 # IX-X Probability
 
+Contents
 
+::: {.drawing-overlay}
+```{=html}
+<style>
+/* Overlay Canvas + Controls */
+#drawboard {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+#controls {
+  position: fixed;
+  top: 10px; right: 10px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+  pointer-events: auto;
+}
+#toggleBtn {
+  position: fixed;
+  top: 10px; left: 10px;
+  font-size: 1.5em;
+  z-index: 1002;
+  cursor: pointer;
+}
+button.tool.active { background: yellow; }
+button.tool { padding: 5px 10px; cursor: pointer; }
+</style>
+
+<canvas id="drawboard"></canvas>
+
+<div id="toggleBtn">🖉</div>
+
+<div id="controls">
+  <div>
+    <button class="tool active" data-tool="pen">✏️ Pen</button>
+    <button class="tool" data-tool="eraser">🧽 Erase</button>
+  </div>
+  <div>
+    <label>Pen Size</label>
+    <input type="range" id="penSize" min="1" max="20" value="5">
+  </div>
+  <div>
+    <label>Eraser Size</label>
+    <input type="range" id="eraserSize" min="5" max="100" value="30">
+  </div>
+  <div>
+    <label>Color</label>
+    <input type="color" id="penColor" value="#000000">
+  </div>
+  <div>
+    <button id="undoBtn">↩ Undo</button>
+    <button id="clearBtn">🗑 Clear</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const board = document.getElementById('drawboard');
+  const ctx = board.getContext('2d');
+  const controls = document.getElementById('controls');
+  const toggleBtn = document.getElementById('toggleBtn');
+
+  let drawing = false, tool = 'pen', penColor = '#000000';
+  let penSize = 5, eraserSize = 30;
+  let lastX, lastY;
+  let history = [], historyStep = -1;
+
+  board.width = window.innerWidth;
+  board.height = window.innerHeight;
+  window.addEventListener('resize', () => {
+    const temp = ctx.getImageData(0, 0, board.width, board.height);
+    board.width = window.innerWidth;
+    board.height = window.innerHeight;
+    ctx.putImageData(temp, 0, 0);
+  });
+
+  function pushHistory() {
+    if (historyStep < history.length - 1) history = history.slice(0, historyStep + 1);
+    history.push(board.toDataURL());
+    historyStep++;
+  }
+
+  function startDraw(e) {
+    drawing = true;
+    const rect = board.getBoundingClientRect();
+    lastX = e.clientX - rect.left;
+    lastY = e.clientY - rect.top;
+    pushHistory();
+  }
+
+  function draw(e) {
+    if (!drawing) return;
+    const rect = board.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(x, y);
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = tool === 'pen' ? penColor : '#ffffff';
+    ctx.lineWidth = tool === 'pen' ? penSize : eraserSize;
+    ctx.stroke();
+    lastX = x;
+    lastY = y;
+  }
+
+  function endDraw() { drawing = false; }
+
+  board.addEventListener('pointerdown', startDraw);
+  board.addEventListener('pointermove', draw);
+  board.addEventListener('pointerup', endDraw);
+  board.addEventListener('pointerleave', endDraw);
+
+  toggleBtn.addEventListener('click', () => {
+    controls.style.display = controls.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  document.querySelectorAll('button.tool').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('button.tool').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      tool = btn.dataset.tool;
+    });
+  });
+
+  document.getElementById('penColor').addEventListener('change', e => penColor = e.target.value);
+  document.getElementById('penSize').addEventListener('input', e => penSize = e.target.value);
+  document.getElementById('eraserSize').addEventListener('input', e => eraserSize = e.target.value);
+  document.getElementById('undoBtn').addEventListener('click', () => {
+    if (historyStep > 0) {
+      historyStep--;
+      const img = new Image();
+      img.onload = () => {
+        ctx.clearRect(0, 0, board.width, board.height);
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = history[historyStep];
+    }
+  });
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    ctx.clearRect(0, 0, board.width, board.height);
+    pushHistory();
+  });
+
+  pushHistory();
+})();
+</script>

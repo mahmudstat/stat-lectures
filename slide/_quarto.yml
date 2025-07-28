@@ -5,29 +5,12 @@ project:
 website:
   title: "Stat Mania Lectures"
   repo-url: https://github.com/mahmudstat/stat-lectures
-  navbar:
-    background: light
-    logo: ../resources/logo.png
-    logo-alt: "Stat Mania Logo."
-    left:
-      - href: index.qmd
-        text: Home
-      - lectures.qmd
-      - qbank.qmd
-      - resources.qmd
-      - href: snippets.qmd
-        text: Code Snippet
 
 format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-    code-copy: true
-
   revealjs:
     theme: sky
     transition: convex
+    include-in-header: drawing-tools.html
     slide-number:  c/t
     navigation-mode: vertical
     controls-layout: bottom-right
@@ -37,5 +20,8 @@ format:
     chalkboard: true
     logo: css/logo.png
     footer: "<a href='https://docs.statmania.info' target='_blank'>docs.statmania.info</a> | <b>Abdullah Al Mahmud</b>"
+    plugins:
+      - drawing
+
 
 
