@@ -48,6 +48,8 @@ content: url(pcc2.png);
   width: 55px;
 }
 */
+
+/*
 body:before {
 content: url(logo2.png);
   position: fixed;
@@ -57,7 +59,7 @@ content: url(logo2.png);
   width: 40px;
 }
 
-/* To reveal on click */
+ To reveal on click */
 
 #rev { 
   cursor:pointer;
