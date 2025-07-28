@@ -367,7 +367,7 @@
       <input type="range" id="penSize" min="1" max="20" value="5">
 
       <button id="eraserTool">🩹</button>
-      <input type="range" id="eraserSize" min="10" max="100" value="20">
+      <input type="range" id="eraserSize" min="20" max="100" value="40">
 
       <button id="undo">↩️</button>
       <button id="clear">🗑️</button>
@@ -382,15 +382,6 @@
     const canvas = document.getElementById('drawingCanvas');
     const ctx = canvas.getContext('2d');
     const eraserCursor = document.getElementById('eraserCursor');
-    const controls = document.getElementById('controls');
-    const penTool = document.getElementById('penTool');
-    const eraserTool = document.getElementById('eraserTool');
-    const undoBtn = document.getElementById('undo');
-    const clearBtn = document.getElementById('clear');
-    const toggleBtn = document.getElementById('toggleControls');
-    const penColor = document.getElementById('penColor');
-    const penSizeInput = document.getElementById('penSize');
-    const eraserSizeInput = document.getElementById('eraserSize');
 
     let drawing = false, erasing = false;
     let lastX = 0, lastY = 0;
@@ -407,57 +398,79 @@
       if (e.touches) e = e.touches[0];
       return { x: e.clientX, y: e.clientY };
     }
-
-    function updateEraser(x, y) {
-      const size = Number(eraserSizeInput.value);
-      eraserCursor.style.width = size + 'px';
-      eraserCursor.style.height = size + 'px';
-      eraserCursor.style.left = x - size/2 + 'px';
-      eraserCursor.style.top = y - size/2 + 'px';
+    function updateEraser(x,y) {
+      const size = Number(eraserSize.value);
+      eraserCursor.style.width = size+'px';
+      eraserCursor.style.height = size+'px';
+      eraserCursor.style.left = x-size/2+'px';
+      eraserCursor.style.top = y-size/2+'px';
     }
 
-    function startStroke(e) {
-      const p = pos(e);
-      history.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
+    function start(e) {
       drawing = true;
-      lastX = p.x; lastY = p.y;
+      history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+      const p = pos(e); lastX=p.x; lastY=p.y;
+      canvas.style.pointerEvents='auto';
     }
-
-    function drawStroke(e) {
+    function end() {
+      drawing = false;
+      ctx.globalCompositeOperation = 'source-over';
+    }
+    function draw(e) {
       if (!drawing) return;
       const p = pos(e);
-      const size = erasing ? Number(eraserSizeInput.value) : Number(penSizeInput.value);
+      const size = erasing ? Number(eraserSize.value) : Number(penSize.value);
       ctx.lineWidth = size;
       ctx.lineCap = 'round';
       ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over';
       ctx.strokeStyle = penColor.value;
-      if (erasing) updateEraser(p.x, p.y);
+      if (erasing) updateEraser(p.x,p.y);
       ctx.beginPath();
-      ctx.moveTo(lastX, lastY);
-      ctx.lineTo(p.x, p.y);
+      ctx.moveTo(lastX,lastY);
+      ctx.lineTo(p.x,p.y);
       ctx.stroke();
-      lastX = p.x; lastY = p.y;
+      lastX=p.x; lastY=p.y;
     }
 
-    function endStroke() {
-      drawing = false;
-      eraserCursor.style.display = 'none';
-    }
+    canvas.addEventListener('pointerdown', start);
+  canvas.addEventListener('pointermove', draw);
+  canvas.addEventListener('pointerup', end);
+  canvas.addEventListener('pointercancel', end);
 
-    // Attach pointer events to canvas
-    canvas.addEventListener('pointerdown', startStroke);
-    canvas.addEventListener('pointermove', drawStroke);
-    canvas.addEventListener('pointerup', endStroke);
-    canvas.addEventListener('pointercancel', endStroke);
+  // Remove pointerout to avoid premature end on mobile
+  // canvas.addEventListener('pointerout', end);
 
-    penTool.onclick = () => { erasing = false; eraserCursor.style.display = 'none'; };
-    eraserTool.onclick = () => { erasing = true; eraserCursor.style.display = 'block'; };
-    undoBtn.onclick = () => { if (history.length) ctx.putImageData(history.pop(), 0, 0); };
-    clearBtn.onclick = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); history.length = 0; };
-    toggleBtn.onclick = () => {
-      const v = controls.style.display === 'flex';
-      controls.style.display = v ? 'none' : 'flex';
-      canvas.style.pointerEvents = v ? 'none' : 'auto';
+  penTool.onclick = () => { erasing=false; eraserCursor.style.display='none'; };
+  eraserTool.onclick = () => { erasing=true; eraserCursor.style.display='block'; };
+  undo.onclick = () => {
+    if (history.length) ctx.putImageData(history.pop(),0,0);
+  };
+  clear.onclick = () => { ctx.clearRect(0,0,canvas.width,canvas.height); history.length=0; };
+  toggleControls.onclick = () => {
+    const v = controls.style.display==='flex';
+    controls.style.display=v?'none':'flex';
+    canvas.style.pointerEvents=v?'none':'auto';
+    if (erasing&&!v) eraserCursor.style.display='block';
+    else eraserCursor.style.display='none';
+  };
+
+  // Ensure pointer capture for continuous drawing on mobile
+  document.getElementById('drawingCanvas').addEventListener('pointerdown', function(e) {
+    this.setPointerCapture(e.pointerId);
+  });
+
+  // Release capture on pointerup
+  canvas.addEventListener('pointerup', function(e) {
+    this.releasePointerCapture(e.pointerId);
+  });
+
+  // End replacements
+  toggleControls.onclick = () => {
+      const v = controls.style.display==='flex';
+      controls.style.display=v?'none':'flex';
+      canvas.style.pointerEvents=v?'none':'auto';
+      if (erasing&&!v) eraserCursor.style.display='block';
+      else eraserCursor.style.display='none';
     };
 
   });
