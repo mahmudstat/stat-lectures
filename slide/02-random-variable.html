@@ -370,7 +370,7 @@
       <input type="range" id="eraserSize" min="20" max="100" value="40">
 
       <button id="undo">↩️</button>
-      <button id="clear">🗑️</button>
+      <button id="clear" type="button">🗑️</button>
     </div>
   </div>
 
@@ -451,10 +451,11 @@
     undo.onclick = () => {
       if (history.length) ctx.putImageData(history.pop(),0,0);
     };
-    clear.onclick = () => {
-      ctx.clearRect(0,0,canvas.width,canvas.height);
-      history.length=0;
-    };
+    document.getElementById('clear').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      history.length = 0;
+    });
+
     toggleControls.onclick = () => {
       const v = controls.style.display==='flex';
       controls.style.display=v?'none':'flex';
@@ -1107,7 +1108,7 @@ x^2/2,  &amp; 0\le x \le 1 \\
 </section>
 <section id="joint-pdf-example" class="slide level2">
 <h2>Joint PDF Example</h2>
-<p><span class="math inline">\(P(x,y) = \frac{2x+y}{3}; 0 \le x \le 1.5\)</span> and <span class="math inline">\(0 \le y \le 1\)</span></p>
+<p><span class="math inline">\(f(x,y) = \frac{2x+y}{3}; 0 \le x \le 1.5\)</span> and <span class="math inline">\(0 \le y \le 1\)</span></p>
 </section>
 <section id="conditional-probability-function" class="slide level2">
 <h2>Conditional Probability Function</h2>

@@ -44,7 +44,7 @@
     <input type="range" id="eraserSize" min="20" max="100" value="40" />
 
     <button id="undo">↩️</button>
-    <button id="clear">🗑️</button>
+    <button id="clear" type="button">🗑️</button>
   </div>
 </div>
 
@@ -125,10 +125,11 @@ document.addEventListener("DOMContentLoaded", () => {
   undo.onclick = () => {
     if (history.length) ctx.putImageData(history.pop(),0,0);
   };
-  clear.onclick = () => {
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    history.length=0;
-  };
+  document.getElementById('clear').addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    history.length = 0;
+  });
+
   toggleControls.onclick = () => {
     const v = controls.style.display==='flex';
     controls.style.display=v?'none':'flex';

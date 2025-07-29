@@ -417,7 +417,7 @@
     "href": "02-random-variable.html#joint-pdf-example",
     "title": "Random Variable",
     "section": "Joint PDF Example",
-    "text": "Joint PDF Example\n\\(P(x,y) = \\frac{2x+y}{3}; 0 \\le x \\le 1.5\\) and \\(0 \\le y \\le 1\\)"
+    "text": "Joint PDF Example\n\\(f(x,y) = \\frac{2x+y}{3}; 0 \\le x \\le 1.5\\) and \\(0 \\le y \\le 1\\)"
   },
   {
     "objectID": "03-expectation.html#weighted-mean-revisited",
