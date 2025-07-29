@@ -648,7 +648,7 @@
     "href": "elementary_stat_prob.html#arithmetic-mean",
     "title": "Elementary Statistics",
     "section": "Arithmetic Mean",
-    "text": "Arithmetic Mean\n\n\\(\\bar{X} = \\displaystyle \\frac{\\sum_{i=1}^{n} X_i}{n}\\)\nGrouped data: \\(\\displaystyle \\bar{X} = \\frac{\\sum_{i=1}^{k} f_i x_i}{\\sum_{i=1}^{k} f_i} = \\frac{\\sum_{i=1}^{k} f_i x_i}{N}\\)"
+    "text": "Arithmetic Mean\n\n\\(\\bar{X} = \\displaystyle \\frac{\\sum_{i=1}^{n} X_i}{n}\\)\nGrouped/Classified data: \\(\\displaystyle \\bar{X} = \\frac{\\sum_{i=1}^{k} f_i x_i}{\\sum_{i=1}^{k} f_i} = \\frac{\\sum_{i=1}^{k} f_i x_i}{N}\\)"
   },
   {
     "objectID": "elementary_stat_prob.html#grouped-data",
@@ -670,5 +670,19 @@
     "title": "Random Variable",
     "section": "Contents",
     "text": "Contents\n\n\n\n\n🖉\n\n\n  🎨\n  \n\n  🖉\n  🩹\n  \n\n  \n    ⚪\n    \n      ⚪\n      ⬛\n      📏\n      🔷\n    \n  \n\n  ↩️\n  🗑️\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  },
+  {
+    "objectID": "elementary_stat_prob.html#find-bar-x",
+    "href": "elementary_stat_prob.html#find-bar-x",
+    "title": "Elementary Statistics",
+    "section": "Find \\(\\bar X\\)",
+    "text": "Find \\(\\bar X\\)\n\n\n\nInterval\nFrequency\n\n\n\n\n1 - 10\n7\n\n\n11 - 20\n14\n\n\n21 - 30\n21\n\n\n31 - 40\n17\n\n\n41 - 50\n9\n\n\n51 - 60\n4\n\n\n\n\nUSe mid-values as \\(x_i\\)"
+  },
+  {
+    "objectID": "elementary_stat_prob.html#concept",
+    "href": "elementary_stat_prob.html#concept",
+    "title": "Elementary Statistics",
+    "section": "Concept",
+    "text": "Concept\nFind \\(\\bar x\\)\n1000, 1010, 1020, 1030, 1040\nBe Smart!\n\nSubtract 1000 \\(\\rightarrow\\)\n\\(\\bar X = a + \\frac{\\sum f_i x_i}{n} \\times h\\)\nFind it from previous table\nDoes the value of a matter?"
   }
 ]

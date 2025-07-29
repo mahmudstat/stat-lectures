@@ -20,7 +20,7 @@
   border-radius: 10px;
   gap: 5px;
 }
-#controls input, #controls button {
+#controls input, #controls button, #shapeSelect {
   width: 40px; height: 40px;
 }
 #toggleControls {
@@ -38,10 +38,18 @@
   <div id="controls">
     <button id="penTool">🖉</button>
     <input type="color" id="penColor" value="#339966" />
-    <input type="range" id="penSize" min="1" max="20" value="5" />
+    <input type="range" id="penSize" min="1" max="20" value="4" />
+
+    <select id="shapeSelect">
+      <option value="free">✏️</option>
+      <option value="line">📏</option>
+      <option value="circle">⚪</option>
+      <option value="rectangle">▭</option>
+      <option value="pentagon">⬠</option>
+    </select>
 
     <button id="eraserTool">🩹</button>
-    <input type="range" id="eraserSize" min="20" max="100" value="40" />
+    <input type="range" id="eraserSize" min="20" max="250" value="60" />
 
     <button id="undo">↩️</button>
     <button id="clear" type="button">🗑️</button>
@@ -58,8 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const eraserCursor = document.getElementById('eraserCursor');
 
   let drawing = false, erasing = false;
-  let lastX = 0, lastY = 0;
+  let lastX = 0, lastY = 0, startX = 0, startY = 0;
   const history = [];
+  let shape = 'free';
+
+  const shapeSelect = document.getElementById('shapeSelect');
+  shapeSelect.addEventListener('change', () => shape = shapeSelect.value);
 
   function resize() {
     canvas.width = window.innerWidth;
@@ -80,19 +92,53 @@ document.addEventListener("DOMContentLoaded", () => {
     eraserCursor.style.top = y-size/2+'px';
   }
 
+  function drawShape(x1, y1, x2, y2) {
+    ctx.strokeStyle = penColor.value;
+    ctx.lineWidth = Number(penSize.value);
+    ctx.beginPath();
+    switch (shape) {
+      case 'line':
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        break;
+      case 'circle': {
+        const r = Math.hypot(x2 - x1, y2 - y1);
+        ctx.arc(x1, y1, r, 0, 2 * Math.PI);
+        break;
+      }
+      case 'rectangle':
+        ctx.rect(x1, y1, x2 - x1, y2 - y1);
+        break;
+      case 'pentagon': {
+        const r = Math.hypot(x2 - x1, y2 - y1);
+        const angle = (2 * Math.PI) / 5;
+        ctx.moveTo(x1 + r * Math.cos(0), y1 + r * Math.sin(0));
+        for (let i = 1; i <= 5; i++) {
+          ctx.lineTo(x1 + r * Math.cos(i * angle), y1 + r * Math.sin(i * angle));
+        }
+        break;
+      }
+    }
+    ctx.stroke();
+  }
+
   function start(e) {
     drawing = true;
+    const p = pos(e); startX = lastX = p.x; startY = lastY = p.y;
     history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
-    const p = pos(e); lastX=p.x; lastY=p.y;
-    canvas.style.pointerEvents='auto';
-    draw(e);
+    if (shape === 'free') draw(e);
   }
-  function end() {
+  function end(e) {
+    if (!drawing) return;
     drawing = false;
     ctx.globalCompositeOperation = 'source-over';
+    if (shape !== 'free' && !erasing) {
+      const p = pos(e);
+      drawShape(startX, startY, p.x, p.y);
+    }
   }
   function draw(e) {
-    if (!drawing) return;
+    if (!drawing || shape !== 'free') return;
     const p = pos(e);
     const size = erasing ? Number(eraserSize.value) : Number(penSize.value);
     ctx.lineWidth = size;

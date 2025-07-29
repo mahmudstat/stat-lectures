@@ -324,8 +324,202 @@
       margin-right: 0; 
     }
   </style>
-</head>
-<body class="quarto-light">
+  <style>
+  #drawingCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 1000;
+    touch-action: none;
+  }
+  #controlsWrapper {
+    position: fixed;
+    top: 10px; left: 10px;
+    z-index: 1001;
+  }
+  #controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #b3b3ff;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 5px;
+  }
+  #controls input, #controls button, #shapeSelect {
+    width: 40px; height: 40px;
+  }
+  #toggleControls {
+    background: none; border: none; width: 40px; height: 40px; font-size: 20px;
+  }
+  #eraserCursor {
+    position: fixed; pointer-events: none;
+    border: 1px solid red; border-radius: 50%;
+    display: none; z-index: 1002;
+  }
+  </style>
+
+  </head><body class="quarto-light"><div id="controlsWrapper">
+    <button id="toggleControls">🎨</button>
+    <div id="controls">
+      <button id="penTool">🖉</button>
+      <input type="color" id="penColor" value="#339966">
+      <input type="range" id="penSize" min="1" max="20" value="4">
+
+      <select id="shapeSelect">
+        <option value="free">✏️</option>
+        <option value="line">📏</option>
+        <option value="circle">⚪</option>
+        <option value="rectangle">▭</option>
+        <option value="pentagon">⬠</option>
+      </select>
+
+      <button id="eraserTool">🩹</button>
+      <input type="range" id="eraserSize" min="20" max="250" value="60">
+
+      <button id="undo">↩️</button>
+      <button id="clear" type="button">🗑️</button>
+    </div>
+  </div>
+
+  <div id="eraserCursor"></div>
+  <canvas id="drawingCanvas"></canvas>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
+    const eraserCursor = document.getElementById('eraserCursor');
+
+    let drawing = false, erasing = false;
+    let lastX = 0, lastY = 0, startX = 0, startY = 0;
+    const history = [];
+    let shape = 'free';
+
+    const shapeSelect = document.getElementById('shapeSelect');
+    shapeSelect.addEventListener('change', () => shape = shapeSelect.value);
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function pos(e) {
+      if (e.touches) e = e.touches[0];
+      return { x: e.clientX, y: e.clientY };
+    }
+    function updateEraser(x,y) {
+      const size = Number(eraserSize.value);
+      eraserCursor.style.width = size+'px';
+      eraserCursor.style.height = size+'px';
+      eraserCursor.style.left = x-size/2+'px';
+      eraserCursor.style.top = y-size/2+'px';
+    }
+
+    function drawShape(x1, y1, x2, y2) {
+      ctx.strokeStyle = penColor.value;
+      ctx.lineWidth = Number(penSize.value);
+      ctx.beginPath();
+      switch (shape) {
+        case 'line':
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          break;
+        case 'circle': {
+          const r = Math.hypot(x2 - x1, y2 - y1);
+          ctx.arc(x1, y1, r, 0, 2 * Math.PI);
+          break;
+        }
+        case 'rectangle':
+          ctx.rect(x1, y1, x2 - x1, y2 - y1);
+          break;
+        case 'pentagon': {
+          const r = Math.hypot(x2 - x1, y2 - y1);
+          const angle = (2 * Math.PI) / 5;
+          ctx.moveTo(x1 + r * Math.cos(0), y1 + r * Math.sin(0));
+          for (let i = 1; i <= 5; i++) {
+            ctx.lineTo(x1 + r * Math.cos(i * angle), y1 + r * Math.sin(i * angle));
+          }
+          break;
+        }
+      }
+      ctx.stroke();
+    }
+
+    function start(e) {
+      drawing = true;
+      const p = pos(e); startX = lastX = p.x; startY = lastY = p.y;
+      history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+      if (shape === 'free') draw(e);
+    }
+    function end(e) {
+      if (!drawing) return;
+      drawing = false;
+      ctx.globalCompositeOperation = 'source-over';
+      if (shape !== 'free' && !erasing) {
+        const p = pos(e);
+        drawShape(startX, startY, p.x, p.y);
+      }
+    }
+    function draw(e) {
+      if (!drawing || shape !== 'free') return;
+      const p = pos(e);
+      const size = erasing ? Number(eraserSize.value) : Number(penSize.value);
+      ctx.lineWidth = size;
+      ctx.lineCap = 'round';
+      ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over';
+      ctx.strokeStyle = penColor.value;
+      if (erasing) updateEraser(p.x,p.y);
+      ctx.beginPath();
+      ctx.moveTo(lastX,lastY);
+      ctx.lineTo(p.x,p.y);
+      ctx.stroke();
+      lastX=p.x; lastY=p.y;
+    }
+
+    canvas.addEventListener('pointerdown', start);
+    canvas.addEventListener('pointermove', draw);
+    canvas.addEventListener('pointerup', end);
+    canvas.addEventListener('pointercancel', end);
+
+    penTool.onclick = () => {
+      erasing = false;
+      eraserCursor.style.display='none';
+      canvas.style.pointerEvents = 'auto';
+    };
+    eraserTool.onclick = () => {
+      erasing = true;
+      eraserCursor.style.display='block';
+      canvas.style.pointerEvents = 'auto';
+    };
+    undo.onclick = () => {
+      if (history.length) ctx.putImageData(history.pop(),0,0);
+    };
+    document.getElementById('clear').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      history.length = 0;
+    });
+
+    toggleControls.onclick = () => {
+      const v = controls.style.display==='flex';
+      controls.style.display=v?'none':'flex';
+      canvas.style.pointerEvents=v?'none':'auto';
+      if (erasing&&!v) eraserCursor.style.display='block';
+      else eraserCursor.style.display='none';
+    };
+
+    canvas.addEventListener('pointerdown', function(e) {
+      this.setPointerCapture(e.pointerId);
+    });
+    canvas.addEventListener('pointerup', function(e) {
+      this.releasePointerCapture(e.pointerId);
+    });
+  });
+  </script>
+
+
   <div class="reveal">
     <div class="slides">
 
@@ -478,7 +672,7 @@ Abdullah Al Mahmud
 <h2>Arithmetic Mean</h2>
 <ul>
 <li class="fragment"><span class="math inline">\(\bar{X} = \displaystyle \frac{\sum_{i=1}^{n} X_i}{n}\)</span></li>
-<li class="fragment">Grouped data: <span class="math inline">\(\displaystyle \bar{X} = \frac{\sum_{i=1}^{k} f_i x_i}{\sum_{i=1}^{k} f_i} = \frac{\sum_{i=1}^{k} f_i x_i}{N}\)</span></li>
+<li class="fragment">Grouped/Classified data: <span class="math inline">\(\displaystyle \bar{X} = \frac{\sum_{i=1}^{k} f_i x_i}{\sum_{i=1}^{k} f_i} = \frac{\sum_{i=1}^{k} f_i x_i}{N}\)</span></li>
 </ul>
 </section>
 <section id="grouped-data" class="slide level2">
@@ -524,167 +718,71 @@ Abdullah Al Mahmud
 </tbody>
 </table>
 <p>*Credit is weight</p>
+</section>
+<section id="find-bar-x" class="slide level2">
+<h2>Find <span class="math inline">\(\bar X\)</span></h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Interval</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1 - 10</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">11 - 20</td>
+<td style="text-align: center;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21 - 30</td>
+<td style="text-align: center;">21</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">31 - 40</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">41 - 50</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">51 - 60</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">USe mid-values as <span class="math inline">\(x_i\)</span></li>
+</ul>
+</section></section>
+<section>
+<section id="am-short-cut-method" class="title-slide slide level1 center">
+<h1>AM Short-cut Method</h1>
+
+</section>
+<section id="concept" class="slide level2">
+<h2>Concept</h2>
+<p>Find <span class="math inline">\(\bar x\)</span></p>
+<p>1000, 1010, 1020, 1030, 1040</p>
+<p>Be Smart!</p>
+<ul>
+<li class="fragment">Subtract 1000 <span class="math inline">\(\rightarrow\)</span></li>
+<li class="fragment"><span class="math inline">\(\bar X = a + \frac{\sum f_i x_i}{n} \times h\)</span></li>
+<li class="fragment">Find it from previous table</li>
+<li class="fragment">Does the value of a matter?</li>
+</ul>
 </section></section>
 <section id="ix-x-probability" class="title-slide slide level1 center">
 <h1>IX-X Probability</h1>
-<p>Contents</p>
-<div class="drawing-overlay">
-<style>
-/* Overlay Canvas + Controls */
-#drawboard {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  z-index: 1000;
-  pointer-events: none;
-}
-#controls {
-  position: fixed;
-  top: 10px; right: 10px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 10px;
-  padding: 10px;
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  z-index: 1001;
-  pointer-events: auto;
-}
-#toggleBtn {
-  position: fixed;
-  top: 10px; left: 10px;
-  font-size: 1.5em;
-  z-index: 1002;
-  cursor: pointer;
-}
-button.tool.active { background: yellow; }
-button.tool { padding: 5px 10px; cursor: pointer; }
-</style>
-<canvas id="drawboard">
-</canvas>
-<div id="toggleBtn">
-🖉
-</div>
-<div id="controls">
-<div>
-<pre><code>&lt;button class="tool active" data-tool="pen"&gt;✏️ Pen&lt;/button&gt;
-&lt;button class="tool" data-tool="eraser"&gt;🧽 Erase&lt;/button&gt;</code></pre>
-</div>
-<div>
-<pre><code>&lt;label&gt;Pen Size&lt;/label&gt;
-&lt;input type="range" id="penSize" min="1" max="20" value="5"&gt;</code></pre>
-</div>
-<div>
-<pre><code>&lt;label&gt;Eraser Size&lt;/label&gt;
-&lt;input type="range" id="eraserSize" min="5" max="100" value="30"&gt;</code></pre>
-</div>
-<div>
-<pre><code>&lt;label&gt;Color&lt;/label&gt;
-&lt;input type="color" id="penColor" value="#000000"&gt;</code></pre>
-</div>
-<div>
-<pre><code>&lt;button id="undoBtn"&gt;↩ Undo&lt;/button&gt;
-&lt;button id="clearBtn"&gt;🗑 Clear&lt;/button&gt;</code></pre>
-</div>
-</div>
-<script>
-(() => {
-  const board = document.getElementById('drawboard');
-  const ctx = board.getContext('2d');
-  const controls = document.getElementById('controls');
-  const toggleBtn = document.getElementById('toggleBtn');
-
-  let drawing = false, tool = 'pen', penColor = '#000000';
-  let penSize = 5, eraserSize = 30;
-  let lastX, lastY;
-  let history = [], historyStep = -1;
-
-  board.width = window.innerWidth;
-  board.height = window.innerHeight;
-  window.addEventListener('resize', () => {
-    const temp = ctx.getImageData(0, 0, board.width, board.height);
-    board.width = window.innerWidth;
-    board.height = window.innerHeight;
-    ctx.putImageData(temp, 0, 0);
-  });
-
-  function pushHistory() {
-    if (historyStep < history.length - 1) history = history.slice(0, historyStep + 1);
-    history.push(board.toDataURL());
-    historyStep++;
-  }
-
-  function startDraw(e) {
-    drawing = true;
-    const rect = board.getBoundingClientRect();
-    lastX = e.clientX - rect.left;
-    lastY = e.clientY - rect.top;
-    pushHistory();
-  }
-
-  function draw(e) {
-    if (!drawing) return;
-    const rect = board.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    ctx.beginPath();
-    ctx.moveTo(lastX, lastY);
-    ctx.lineTo(x, y);
-    ctx.lineCap = 'round';
-    ctx.strokeStyle = tool === 'pen' ? penColor : '#ffffff';
-    ctx.lineWidth = tool === 'pen' ? penSize : eraserSize;
-    ctx.stroke();
-    lastX = x;
-    lastY = y;
-  }
-
-  function endDraw() { drawing = false; }
-
-  board.addEventListener('pointerdown', startDraw);
-  board.addEventListener('pointermove', draw);
-  board.addEventListener('pointerup', endDraw);
-  board.addEventListener('pointerleave', endDraw);
-
-  toggleBtn.addEventListener('click', () => {
-    controls.style.display = controls.style.display === 'flex' ? 'none' : 'flex';
-  });
-
-  document.querySelectorAll('button.tool').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('button.tool').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      tool = btn.dataset.tool;
-    });
-  });
-
-  document.getElementById('penColor').addEventListener('change', e => penColor = e.target.value);
-  document.getElementById('penSize').addEventListener('input', e => penSize = e.target.value);
-  document.getElementById('eraserSize').addEventListener('input', e => eraserSize = e.target.value);
-  document.getElementById('undoBtn').addEventListener('click', () => {
-    if (historyStep > 0) {
-      historyStep--;
-      const img = new Image();
-      img.onload = () => {
-        ctx.clearRect(0, 0, board.width, board.height);
-        ctx.drawImage(img, 0, 0);
-      };
-      img.src = history[historyStep];
-    }
-  });
-  document.getElementById('clearBtn').addEventListener('click', () => {
-    ctx.clearRect(0, 0, board.width, board.height);
-    pushHistory();
-  });
-
-  pushHistory();
-})();
-</script>
 
 <div class="quarto-auto-generated-content">
 <p><img src="css/logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://docs.statmania.info" target="_blank">docs.statmania.info</a> | <b>Abdullah Al Mahmud</b></p>
-</div>
 </div>
 </div>
 </section>
