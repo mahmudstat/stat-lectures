@@ -683,6 +683,20 @@
     "href": "elementary_stat_prob.html#concept",
     "title": "Elementary Statistics",
     "section": "Concept",
-    "text": "Concept\nFind \\(\\bar x\\)\n1000, 1010, 1020, 1030, 1040\nBe Smart!\n\nSubtract 1000 \\(\\rightarrow\\)\n\\(\\bar X = a + \\frac{\\sum f_i x_i}{n} \\times h\\)\nFind it from previous table\nDoes the value of a matter?"
+    "text": "Concept\nFind \\(\\bar x\\)\n1000, 1010, 1020, 1030, 1040\nBe Smart!\n\nSubtract 1000 \\(\\rightarrow\\)\n\\(\\bar X = a + \\frac{\\sum f_i u_i}{n} \\times h\\)\nFind it from previous table\nDoes the value of a matter?"
+  },
+  {
+    "objectID": "elementary_stat_prob.html#shor-cut-am-example",
+    "href": "elementary_stat_prob.html#shor-cut-am-example",
+    "title": "Elementary Statistics",
+    "section": "Shor-cut AM Example",
+    "text": "Shor-cut AM Example\n\n\n\n\n\n\n\n\n\n\nInterval\nmid-value (\\(x_i\\))\nfrequency (\\(f_i\\))\n\\(u_i = \\frac{x_i-a}{h}\\)\n\\(f_iu_i\\)\n\n\n\n\n1 - 10\n5.5\n7\n\n\n\n\n11 - 20\n15.5\n14\n\n\n\n\n21 - 30\n25.5\n21\n\n\n\n\n31 - 40\n35.5\n17\n\n\n\n\n41 - 50\n45.5\n9\n\n\n\n\n51 - 60\n55.5\n4"
+  },
+  {
+    "objectID": "elementary_stat_prob.html#median",
+    "href": "elementary_stat_prob.html#median",
+    "title": "Elementary Statistics",
+    "section": "Median",
+    "text": "Median\nWhat is the median?\n2, 3, 5, 8, 10\n\nExplain median\nWhat now: 5, 4, 3, 9\n\\(\\frac{n+1}{2}\\) for odd n\n\\(\\frac{nth + (n+1)th}{2}\\) for even n"
   }
 ]

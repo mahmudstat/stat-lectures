@@ -331,9 +331,31 @@ Find $\bar x$
 Be Smart!
 
 > - Subtract 1000 $\rightarrow$
-> - $\bar X = a + \frac{\sum f_i x_i}{n} \times h$
+> - $\bar X = a + \frac{\sum f_i u_i}{n} \times h$
 > - Find it from previous table
 > - Does the value of a matter?
+
+## Shor-cut AM Example
+
+|  Interval  | mid-value ($x_i$) | frequency ($f_i$) | $u_i = \frac{x_i-a}{h}$ | $f_iu_i$ |
+|:----------:|:-------------------:|:-------------------:|:------------------------:|:---------:|
+|   1 - 10   |        5.5        |         7          |                          |           |
+|  11 - 20   |        15.5       |         14         |                          |           |
+|  21 - 30   |        25.5       |         21         |                          |           |
+|  31 - 40   |        35.5       |         17         |                          |           |
+|  41 - 50   |        45.5       |         9          |                          |           |
+|  51 - 60   |        55.5       |         4          |                          |           |
+
+## Median
+
+What is the median?
+
+2, 3, 5, 8, 10
+
+> - Explain median
+> - What now: 5, 4, 3, 9
+> - $\frac{n+1}{2}$ for odd n
+> - $\frac{nth + (n+1)th}{2}$ for even n
 
 # IX-X Probability
 
