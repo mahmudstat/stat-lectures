@@ -331,6 +331,7 @@
     width: 100vw; height: 100vh;
     z-index: 1000;
     touch-action: none;
+    pointer-events: none; /* disable drawing initially */
   }
   #controlsWrapper {
     position: fixed;
@@ -364,10 +365,10 @@
     <div id="controls">
       <button id="penTool">🖉</button>
       <input type="color" id="penColor" value="#339966">
-      <input type="range" id="penSize" min="1" max="20" value="5">
+      <input type="range" id="penSize" min="1" max="20" value="4">
 
       <button id="eraserTool">🩹</button>
-      <input type="range" id="eraserSize" min="20" max="100" value="40">
+      <input type="range" id="eraserSize" min="20" max="250" value="60">
 
       <button id="undo">↩️</button>
       <button id="clear" type="button">🗑️</button>
@@ -384,6 +385,7 @@
     const eraserCursor = document.getElementById('eraserCursor');
 
     let drawing = false, erasing = false;
+    let controlsEnabled = false;
     let lastX = 0, lastY = 0;
     const history = [];
 
@@ -407,10 +409,10 @@
     }
 
     function start(e) {
+      if (!controlsEnabled) return;
       drawing = true;
       history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
       const p = pos(e); lastX=p.x; lastY=p.y;
-      canvas.style.pointerEvents='auto';
       draw(e);
     }
     function end() {
@@ -457,11 +459,12 @@
     });
 
     toggleControls.onclick = () => {
-      const v = controls.style.display==='flex';
-      controls.style.display=v?'none':'flex';
-      canvas.style.pointerEvents=v?'none':'auto';
-      if (erasing&&!v) eraserCursor.style.display='block';
-      else eraserCursor.style.display='none';
+      const isVisible = controls.style.display === 'flex';
+      controls.style.display = isVisible ? 'none' : 'flex';
+      controlsEnabled = !isVisible;
+      canvas.style.pointerEvents = controlsEnabled ? 'auto' : 'none';
+      if (erasing && controlsEnabled) eraserCursor.style.display = 'block';
+      else eraserCursor.style.display = 'none';
     };
 
     canvas.addEventListener('pointerdown', function(e) {
