@@ -753,7 +753,8 @@ Abdullah Al Mahmud
 <h2>E(X<sup>2</sup>) ≥ {E(X)}<sup>2</sup></h2>
 <p><span class="math inline">\(V(X)\ge 0\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\therefore E(X^2) - \{E(X)\}^2 \ge 0\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X^2) - \{E(X)\}^2 \ge 0\)</span></li>
+<li class="fragment">E(X<sup>2</sup>) ≥ {E(X)}<sup>2</sup></li>
 </ul>
 </section>
 <section id="am-hm" class="slide level2">
@@ -763,7 +764,7 @@ Abdullah Al Mahmud
 <li class="fragment"><span class="math inline">\(AM \ge HM\)</span></li>
 <li class="fragment"><span class="math inline">\(HM =\)</span> opposite of mean of opposite <span class="math inline">\(\to \frac{1}{\frac{\sum \frac 1 {x_i}}{n}} = \frac 1 {E(\frac 1 x)}\)</span></li>
 <li class="fragment"><span class="math inline">\(E(X) \ge \frac{1}{E(\frac 1 x)}\)</span></li>
-<li class="fragment">If <span class="math inline">\(0.5 \gt \frac 1 3 \to 3 \gt  \frac 1 {0.5}\)</span></li>
+<li class="fragment">If <span class="math inline">\(a \gt b \to \frac 1a \lt  \frac 1b\)</span></li>
 </ul>
 </section>
 <section id="variance-of-constant-a" class="slide level2">
@@ -773,6 +774,7 @@ Abdullah Al Mahmud
 <li class="fragment"><span class="math inline">\(V(a) = E\{a-E(a)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(E(a-a)^2\)</span></li>
 <li class="fragment"><span class="math inline">\(E(0)=0\)</span></li>
+<li class="fragment">Logically why?</li>
 </ul>
 </section>
 <section id="vaxb" class="slide level2">
@@ -786,7 +788,18 @@ Abdullah Al Mahmud
 <li class="fragment"><span class="math inline">\(a^2E\{X-E(X)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(a^2V(X)\)</span></li>
 <li class="fragment">Does variance depend on origin and scale?</li>
-<li class="fragment"><span class="math inline">\(V(X+Y)=?\)</span></li>
+</ul>
+</section>
+<section id="vxy" class="slide level2">
+<h2>V(X+Y)</h2>
+<p>For independent variables</p>
+<ul>
+<li class="fragment"><span class="math inline">\(V(X+Y) = E\{(X+Y) - E(X+Y)\}^2\)</span></li>
+<li class="fragment"><span class="math inline">\(E\{(X+Y - E(X) - E(Y) \}^2\)</span></li>
+<li class="fragment"><span class="math inline">\(E[\{X-E(X)\} + \{ Y- E(Y)\}]^2\)</span></li>
+<li class="fragment">Expand <span class="math inline">\((a+b)^2\)</span> formula</li>
+<li class="fragment">V(X) + 2Cov(X,Y) + V(Y)</li>
+<li class="fragment">V(X) + V(Y)</li>
 </ul>
 </section>
 <section id="covxy-properties" class="slide level2">
@@ -848,11 +861,13 @@ Abdullah Al Mahmud
 <p>Find</p>
 <ol type="i">
 <li>k</li>
-<li>V(2x-1)</li>
+<li>E(2X-3)</li>
+<li>V(5x+6)</li>
 </ol>
 </section>
-<section id="example-05-y-3x5.-find-v3y-2" class="slide level2">
-<h2>Example 05: y = 3x+5. Find V(3y-2)</h2>
+<section id="y-3x-5" class="slide level2">
+<h2>Y = 3X + 5</h2>
+<p>Find V(3y-2)</p>
 <table class="caption-top">
 <thead>
 <tr class="header">

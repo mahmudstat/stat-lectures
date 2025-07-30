@@ -226,9 +226,12 @@ $V(aX+b)=$
 
 For independent variables
 
-> - $V(X+Y) = E\{(X+Y) - E(X+Y)\}^2 $
-> - $\{ E(X+Y - E(X) - E(Y) \}^2$
+> - $V(X+Y) = E\{(X+Y) - E(X+Y)\}^2$
+> - $E\{(X+Y - E(X) - E(Y) \}^2$
 > - $E[\{X-E(X)\} + \{ Y- E(Y)\}]^2$
+> - Expand $(a+b)^2$ formula
+> - V(X) + 2Cov(X,Y) + V(Y)
+> - V(X) + V(Y)
 
 ## Cov(X,Y) Properties
 
@@ -267,9 +270,12 @@ $P(x) = \frac{3-|4-x|}{k}; x = 2, 3, 4, 5, 6$
 Find
 
 i. k
-ii. V(2x-1)
+ii. E(2X-3)
+ii. V(5x+6)
 
-## Example 05: y = 3x+5. Find V(3y-2)
+## Y = 3X + 5
+
+Find V(3y-2)
 
 | x    | -2   | -1   | 0    | 1    | 2    |
 |------|------|------|------|------|------|
