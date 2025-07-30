@@ -322,6 +322,7 @@
       margin-right: 0; 
     }
   </style>
+  
   <style>
   #drawingCanvas {
     position: fixed;
@@ -345,6 +346,7 @@
     border-radius: 10px;
     gap: 5px;
   }
+
   #controls input, #controls button {
     width: 40px; height: 40px;
   }
@@ -358,21 +360,24 @@
   }
   </style>
 
-  </head><body class="quarto-light"><div id="controlsWrapper">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body class="quarto-light"><div id="controlsWrapper">
     <button id="toggleControls">🎨</button>
     <div id="controls">
-      <button id="penTool">🖉</button>
+      <button style="color: #8f246b;" id="penTool" title="Pen Tool"><i class="fas fa-pen"></i></button>
       <input type="color" id="penColor" value="#339966">
       <input type="range" id="penSize" min="1" max="20" value="4">
 
-      <button id="eraserTool">🩹</button>
+      <button style="color: red;" id="eraserTool"><i class="fas fa-eraser"></i></button>
       <input type="range" id="eraserSize" min="20" max="250" value="60">
 
       <input type="color" id="bgColor" title="Canvas Background">
-      <button id="resetBg" title="Reset background color">🔄</button>
+      <button style="color: #3333cc;" id="resetBg" title="Reset background color"><i class="fas fa-refresh"></i></button>
 
-      <button id="undo">↩️</button>
-      <button id="clear" type="button">🗑️</button>
+      <button style="color: #408000;" id="undo"><i class="fas fa-undo"></i></button>
+      <button style="color: red;" id="clear" type="button"><i class="fas fa-trash"></i></button>
     </div>
   </div>
 
@@ -391,7 +396,7 @@
     let controlsEnabled = false;
     let lastX = 0, lastY = 0;
     const history = [];
-    const defaultBgColor = ""; // Transparent or set to a specific default if desired
+    const defaultBgColor = "#c2c2a3"; // Transparent or set to a specific default if desired
 
     function resize() {
       canvas.width = window.innerWidth;
