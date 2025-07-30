@@ -74,6 +74,7 @@ The number of daily customer visits to a supershop over 25 consecutive days:
 ```{r, echo = FALSE, fig.width=7, fig.height=5, fig.align = 'center'}
 x = c(32, 28, 35, 41, 29, 30, 38, 45, 27, 25, 33, 40, 31, 29, 36, 42, 26, 24, 34, 39, 30, 28, 37, 33, 29)
 hist(x, main = "Histogram of customer visit", ylim = c(0,10))
+grid()
 ```
 
 Explain the histogram
