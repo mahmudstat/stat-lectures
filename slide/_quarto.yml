@@ -17,7 +17,6 @@ format:
     css:
     - css/styles.css
     - styles.css
-    chalkboard: true
     logo: css/logo.png
     footer: "<a href='https://docs.statmania.info' target='_blank'>docs.statmania.info</a> | <b>Abdullah Al Mahmud</b>"
     plugins:

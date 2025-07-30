@@ -36,8 +36,6 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -331,6 +329,7 @@
     width: 100vw; height: 100vh;
     z-index: 1000;
     touch-action: none;
+    pointer-events: none; /* disable drawing initially */
   }
   #controlsWrapper {
     position: fixed;
@@ -346,7 +345,7 @@
     border-radius: 10px;
     gap: 5px;
   }
-  #controls input, #controls button, #shapeSelect {
+  #controls input, #controls button {
     width: 40px; height: 40px;
   }
   #toggleControls {
@@ -366,14 +365,6 @@
       <input type="color" id="penColor" value="#339966">
       <input type="range" id="penSize" min="1" max="20" value="4">
 
-      <select id="shapeSelect">
-        <option value="free">✏️</option>
-        <option value="line">📏</option>
-        <option value="circle">⚪</option>
-        <option value="rectangle">▭</option>
-        <option value="pentagon">⬠</option>
-      </select>
-
       <button id="eraserTool">🩹</button>
       <input type="range" id="eraserSize" min="20" max="250" value="60">
 
@@ -392,12 +383,9 @@
     const eraserCursor = document.getElementById('eraserCursor');
 
     let drawing = false, erasing = false;
-    let lastX = 0, lastY = 0, startX = 0, startY = 0;
+    let controlsEnabled = false;
+    let lastX = 0, lastY = 0;
     const history = [];
-    let shape = 'free';
-
-    const shapeSelect = document.getElementById('shapeSelect');
-    shapeSelect.addEventListener('change', () => shape = shapeSelect.value);
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -418,53 +406,19 @@
       eraserCursor.style.top = y-size/2+'px';
     }
 
-    function drawShape(x1, y1, x2, y2) {
-      ctx.strokeStyle = penColor.value;
-      ctx.lineWidth = Number(penSize.value);
-      ctx.beginPath();
-      switch (shape) {
-        case 'line':
-          ctx.moveTo(x1, y1);
-          ctx.lineTo(x2, y2);
-          break;
-        case 'circle': {
-          const r = Math.hypot(x2 - x1, y2 - y1);
-          ctx.arc(x1, y1, r, 0, 2 * Math.PI);
-          break;
-        }
-        case 'rectangle':
-          ctx.rect(x1, y1, x2 - x1, y2 - y1);
-          break;
-        case 'pentagon': {
-          const r = Math.hypot(x2 - x1, y2 - y1);
-          const angle = (2 * Math.PI) / 5;
-          ctx.moveTo(x1 + r * Math.cos(0), y1 + r * Math.sin(0));
-          for (let i = 1; i <= 5; i++) {
-            ctx.lineTo(x1 + r * Math.cos(i * angle), y1 + r * Math.sin(i * angle));
-          }
-          break;
-        }
-      }
-      ctx.stroke();
-    }
-
     function start(e) {
+      if (!controlsEnabled) return;
       drawing = true;
-      const p = pos(e); startX = lastX = p.x; startY = lastY = p.y;
       history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
-      if (shape === 'free') draw(e);
+      const p = pos(e); lastX=p.x; lastY=p.y;
+      draw(e);
     }
-    function end(e) {
-      if (!drawing) return;
+    function end() {
       drawing = false;
       ctx.globalCompositeOperation = 'source-over';
-      if (shape !== 'free' && !erasing) {
-        const p = pos(e);
-        drawShape(startX, startY, p.x, p.y);
-      }
     }
     function draw(e) {
-      if (!drawing || shape !== 'free') return;
+      if (!drawing) return;
       const p = pos(e);
       const size = erasing ? Number(eraserSize.value) : Number(penSize.value);
       ctx.lineWidth = size;
@@ -503,11 +457,12 @@
     });
 
     toggleControls.onclick = () => {
-      const v = controls.style.display==='flex';
-      controls.style.display=v?'none':'flex';
-      canvas.style.pointerEvents=v?'none':'auto';
-      if (erasing&&!v) eraserCursor.style.display='block';
-      else eraserCursor.style.display='none';
+      const isVisible = controls.style.display === 'flex';
+      controls.style.display = isVisible ? 'none' : 'flex';
+      controlsEnabled = !isVisible;
+      canvas.style.pointerEvents = controlsEnabled ? 'auto' : 'none';
+      if (erasing && controlsEnabled) eraserCursor.style.display = 'block';
+      else eraserCursor.style.display = 'none';
     };
 
     canvas.addEventListener('pointerdown', function(e) {
@@ -536,11 +491,101 @@ Abdullah Al Mahmud
 </div>
 
 </section>
+<section>
 <section id="vii" class="title-slide slide level1 center">
 <h1>VII</h1>
 
 </section>
+<section id="topics" class="slide level2">
+<h2>Topics</h2>
+<ul>
+<li class="fragment">Frequency Distribution</li>
+<li class="fragment">Histogram</li>
+<li class="fragment">Mode</li>
+</ul>
+</section>
+<section id="information-and-data" class="slide level2">
+<h2>Information and Data</h2>
+<ul>
+<li class="fragment">Data: Raw, unstructured</li>
+<li class="fragment">Information: Processed, organized, and structured data</li>
+<li class="fragment">Temperature at various cities: 30, 31, 30, 29, 28, 27, 28, 29, 30, 31, 32, 33, 32, 31, 30, 29, 28, 27, 26, 26, 25, 25, 24, 24</li>
+<li class="fragment">Lowest: 24, Highest: 33, <span class="math inline">\(\bar X = 28.7\)</span></li>
+<li class="fragment">Which data and which information?</li>
+</ul>
+</section>
+<section id="sources-of-data" class="slide level2">
+<h2>Sources of Data</h2>
+<ul>
+<li class="fragment">Primary: Obtained directly (not collected from someone else)</li>
+<li class="fragment">Secondary: Using pre-collected data from someone else/some organization</li>
+<li class="fragment">A researcher buys data from BMD to build a model of rainfall behavior</li>
+<li class="fragment">A researcher runs an experiment to measure speed of light using a novel technique.</li>
+<li class="fragment">A researcher makes use of the data generated by the one in example 2</li>
+</ul>
+</section>
+<section id="organized-vs-unorganized-data" class="slide level2">
+<h2>Organized vs Unorganized data</h2>
+<ul>
+<li class="fragment">Unorganized: Messy, chaotic, raw</li>
+<li class="fragment">Organized: Formatted, easy to understand (sorted/tabluated)</li>
+</ul>
+</section>
+<section id="frequency-distribution" class="slide level2">
+<h2>Frequency Distribution</h2>
+<p>Three things required</p>
+<ul>
+<li class="fragment">Range <span class="math inline">\(R=X_H-X_L+1\)</span></li>
+<li class="fragment">Class Interval (CI)</li>
+<li class="fragment">No.&nbsp;of class, <span class="math inline">\(k = \frac{R}{CI}\)</span></li>
+<li class="fragment">CI=?</li>
+</ul>
+</section>
+<section id="table-example" class="slide level2">
+<h2>Table Example</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Class Interval</th>
+<th style="text-align: center;">Tally</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">16-20</td>
+<td style="text-align: center;">|||</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">21-25</td>
+<td style="text-align: center;">||||</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="make-a-frequency-distribution" class="slide level2">
+<h2>Make a frequency distribution</h2>
+<p>The number of daily customer visits to a supershop over 25 consecutive days:</p>
+<p>32, 28, 35, 41, 29, 30, 38, 45, 27, 25</p>
+<p>33, 40, 31, 29, 36, 42, 26, 24, 34, 39,</p>
+<p>30, 28, 37, 33, 29</p>
+</section>
+<section id="discrete-vs-continuous-intervals" class="slide level2">
+<h2>Discrete vs Continuous Intervals</h2>
+<ul>
+<li class="fragment">(11-15), (16-20), (21-25)</li>
+<li class="fragment">(10-20), (20-30), (30-40)</li>
+<li class="fragment">What is the problem with discrete intervals?</li>
+<li class="fragment">What about interval width in each case?</li>
+</ul>
+</section>
+<section id="histogram" class="slide level2">
+<h2>Histogram</h2>
 
+<img data-src="elementary_stat_prob_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" width="672"><p>Explain the histogram</p>
+</section></section>
 <section>
 <section id="ix-x-statistics" class="title-slide slide level1 center">
 <h1>IX-X Statistics</h1>
@@ -617,7 +662,7 @@ Abdullah Al Mahmud
 </tbody>
 </table>
 </section>
-<section id="frequency-distribution" class="slide level2">
+<section id="frequency-distribution-1" class="slide level2">
 <h2>Frequency Distribution</h2>
 <p>Three things required</p>
 <ul>
@@ -872,7 +917,6 @@ Abdullah Al Mahmud
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -893,8 +937,7 @@ Abdullah Al Mahmud
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1065,7 +1108,7 @@ Abdullah Al Mahmud
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
