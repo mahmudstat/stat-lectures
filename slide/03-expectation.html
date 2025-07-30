@@ -36,8 +36,6 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -324,8 +322,174 @@
       margin-right: 0; 
     }
   </style>
-</head>
-<body class="quarto-light">
+  <style>
+  #drawingCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 1000;
+    touch-action: none;
+    pointer-events: none;
+  }
+  #controlsWrapper {
+    position: fixed;
+    top: 10px; left: 10px;
+    z-index: 1001;
+  }
+  #controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #b3b3ff;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 5px;
+  }
+  #controls input, #controls button {
+    width: 40px; height: 40px;
+  }
+  #toggleControls {
+    background: none; border: none; width: 40px; height: 40px; font-size: 20px;
+  }
+  #eraserCursor {
+    position: fixed; pointer-events: none;
+    border: 1px solid red; border-radius: 50%;
+    display: none; z-index: 1002;
+  }
+  </style>
+
+  </head><body class="quarto-light"><div id="controlsWrapper">
+    <button id="toggleControls">🎨</button>
+    <div id="controls">
+      <button id="penTool">🖉</button>
+      <input type="color" id="penColor" value="#339966">
+      <input type="range" id="penSize" min="1" max="20" value="4">
+
+      <button id="eraserTool">🩹</button>
+      <input type="range" id="eraserSize" min="20" max="250" value="60">
+
+      <input type="color" id="bgColor" title="Canvas Background">
+      <button id="resetBg" title="Reset background color">🔄</button>
+
+      <button id="undo">↩️</button>
+      <button id="clear" type="button">🗑️</button>
+    </div>
+  </div>
+
+  <div id="eraserCursor"></div>
+  <canvas id="drawingCanvas"></canvas>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
+    const eraserCursor = document.getElementById('eraserCursor');
+    const bgColorPicker = document.getElementById('bgColor');
+    const resetBgBtn = document.getElementById('resetBg');
+
+    let drawing = false, erasing = false;
+    let controlsEnabled = false;
+    let lastX = 0, lastY = 0;
+    const history = [];
+    const defaultBgColor = ""; // Transparent or set to a specific default if desired
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function pos(e) {
+      if (e.touches) e = e.touches[0];
+      return { x: e.clientX, y: e.clientY };
+    }
+    function updateEraser(x,y) {
+      const size = Number(eraserSize.value);
+      eraserCursor.style.width = size+'px';
+      eraserCursor.style.height = size+'px';
+      eraserCursor.style.left = x-size/2+'px';
+      eraserCursor.style.top = y-size/2+'px';
+    }
+
+    function start(e) {
+      if (!controlsEnabled) return;
+      drawing = true;
+      history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+      const p = pos(e); lastX=p.x; lastY=p.y;
+      draw(e);
+    }
+    function end() {
+      drawing = false;
+      ctx.globalCompositeOperation = 'source-over';
+    }
+    function draw(e) {
+      if (!drawing) return;
+      const p = pos(e);
+      const size = erasing ? Number(eraserSize.value) : Number(penSize.value);
+      ctx.lineWidth = size;
+      ctx.lineCap = 'round';
+      ctx.globalCompositeOperation = erasing ? 'destination-out' : 'source-over';
+      ctx.strokeStyle = penColor.value;
+      if (erasing) updateEraser(p.x,p.y);
+      ctx.beginPath();
+      ctx.moveTo(lastX,lastY);
+      ctx.lineTo(p.x,p.y);
+      ctx.stroke();
+      lastX=p.x; lastY=p.y;
+    }
+
+    canvas.addEventListener('pointerdown', start);
+    canvas.addEventListener('pointermove', draw);
+    canvas.addEventListener('pointerup', end);
+    canvas.addEventListener('pointercancel', end);
+
+    penTool.onclick = () => {
+      erasing = false;
+      eraserCursor.style.display='none';
+      canvas.style.pointerEvents = 'auto';
+    };
+    eraserTool.onclick = () => {
+      erasing = true;
+      eraserCursor.style.display='block';
+      canvas.style.pointerEvents = 'auto';
+    };
+    undo.onclick = () => {
+      if (history.length) ctx.putImageData(history.pop(),0,0);
+    };
+    document.getElementById('clear').addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      history.length = 0;
+    });
+
+    bgColorPicker.addEventListener('input', () => {
+      canvas.style.backgroundColor = bgColorPicker.value;
+    });
+
+    resetBgBtn.addEventListener('click', () => {
+      canvas.style.backgroundColor = defaultBgColor;
+      bgColorPicker.value = "#ffffff";
+    });
+
+    toggleControls.onclick = () => {
+      const isVisible = controls.style.display === 'flex';
+      controls.style.display = isVisible ? 'none' : 'flex';
+      controlsEnabled = !isVisible;
+      canvas.style.pointerEvents = controlsEnabled ? 'auto' : 'none';
+      if (erasing && controlsEnabled) eraserCursor.style.display = 'block';
+      else eraserCursor.style.display = 'none';
+    };
+
+    canvas.addEventListener('pointerdown', function(e) {
+      this.setPointerCapture(e.pointerId);
+    });
+    canvas.addEventListener('pointerup', function(e) {
+      this.releasePointerCapture(e.pointerId);
+    });
+  });
+  </script>
+
+
   <div class="reveal">
     <div class="slides">
 
@@ -380,62 +544,7 @@ Abdullah Al Mahmud
 <li class="fragment">What is the probability that an accident is ocurred in a Bus service?</li>
 </ul>
 </section>
-<section id="weighted-mean-revisited" class="slide level2">
-<h2>Weighted Mean Revisited</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 24%">
-<col style="width: 18%">
-<col style="width: 30%">
-<col style="width: 12%">
-<col style="width: 13%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Daily<br>Income<br>(<span class="math inline">\(x\)</span>)</th>
-<th style="text-align: center;">Frequency<br>(<span class="math inline">\(f\)</span>)</th>
-<th style="text-align: center;">Relative<br>Frequency<br>(<span class="math inline">\(rf\)</span>)</th>
-<th style="text-align: center;"><span class="math inline">\(x \times f\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(x \times rf\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">400</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">0.56</td>
-<td style="text-align: center;">28000</td>
-<td style="text-align: center;">224</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">500</td>
-<td style="text-align: center;">35</td>
-<td style="text-align: center;">0.28</td>
-<td style="text-align: center;">17500</td>
-<td style="text-align: center;">140</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">800</td>
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">0.16</td>
-<td style="text-align: center;">16000</td>
-<td style="text-align: center;">128</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>125</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;">61500</td>
-<td style="text-align: center;">492</td>
-</tr>
-</tbody>
-</table>
-<p>If a man is randomly selected, what is the probability that his daily income is 400 BDT?</p>
-<ul>
-<li class="fragment"><span class="math inline">\(AM = \frac{61500}{125}=492\)</span></li>
-<li class="fragment">In expectation, <span class="math inline">\(rf\)</span> is the weight (Total weight = 1)</li>
-</ul>
-</section>
+
 <section id="expectation-from-mean" class="slide level2">
 <h2>Expectation from Mean</h2>
 <p><span class="math inline">\(\displaystyle \bar X=\frac{\Sigma x_if_i}{\Sigma f_i}\)</span></p>
@@ -446,26 +555,15 @@ Abdullah Al Mahmud
 <li class="fragment"><span class="math inline">\(= \sum x_i\cdot p(x_i)\)</span></li>
 </ul>
 </section>
-<section id="expectation" class="slide level2">
-<h2>Expectation</h2>
-<p>Probabilities are weights</p>
-<p><span class="math display">\[\begin{eqnarray}
-E(X) &amp;=&amp; x_1 \times P(x_1) + x_2 \times P(x_2)+ \cdots +x_n \times P(x_n)      \nonumber \\
-&amp;=&amp; \displaystyle \sum_{i=1}^n x_i \times P(x_i) \nonumber \\
-\end{eqnarray}\]</span></p>
-<div onclick="klikaj('expcont')">
-<span>For continuous X</span>
-</div>
-<div id="expcont" style="visibility: hidden">
-<p><span class="math inline">\(\displaystyle E(X) = \int_{-\infty}^{\infty} f(x)dx\)</span></p>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
+
+<section id="ex2" class="slide level2">
+<h2><span class="math inline">\(E(X^2)\)</span></h2>
 <ul>
 <li class="fragment"><span class="math inline">\(E(X^2) = \sum x^2 \times p(x)\)</span></li>
+<li class="fragment">Why not <span class="math inline">\(\sum x^2 \times p(x^2)\)</span></li>
+<li class="fragment">Say x = 0, 1 and P(x) = 1/2, 1/2</li>
+<li class="fragment">What are <span class="math inline">\(P(x^2)\)</span></li>
+<li class="fragment">Make a table to feel</li>
 </ul>
 </section>
 <section id="expectation-example" class="slide level2">
@@ -496,17 +594,19 @@ function klikaj(i) {
 </section>
 <section id="properties-of-expectation" class="slide level2">
 <h2>Properties of Expectation</h2>
-<p><a href="ch3_xi_stat.html#/properties-of-am" target="_blank">Aslo refer to the properties of AM</a> (<span class="math inline">\(E(X)=\bar X\)</span>)</p>
 <ul>
 <li class="fragment">Expectation of a constant, <span class="math inline">\(E(c)=c\)</span></li>
 <li class="fragment"><span class="math inline">\(E(aX)=aE(X)\)</span></li>
-<li class="fragment"><span class="math inline">\(E(X-a) = E(X) - E(a)\)</span></li>
-<li class="fragment"><span class="math inline">\(E(aX+b) = aE(X)+b\)</span></li>
-<li class="fragment"><span class="math inline">\(E(X+Y) = E(X)+E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X \pm a) = E(X) \pm E(a)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(aX \pm b) = aE(X) \pm b\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X \pm Y) = E(X) \pm E(Y)\)</span></li>
 <li class="fragment"><span class="math inline">\(E(XY) = E(X) E(Y)\)</span> (if independent, relate with probability)</li>
 <li class="fragment"><span class="math inline">\(E(X^2)\ge \{E(X)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(E\left(\frac 1 X \right) \ge \frac 1 {E(X)}\)</span></li>
 </ul>
+<div class="footer">
+<p><a href="ch3_xi_stat.html#/properties-of-am" target="_blank">Aslo refer to the properties of AM</a> (<span class="math inline">\(E(X)=\bar X\)</span>)</p>
+</div>
 </section>
 <section id="variance" class="slide level2">
 <h2>Variance</h2>
@@ -522,9 +622,10 @@ function klikaj(i) {
 <h2>Variance Properties</h2>
 <ul>
 <li class="fragment"><span class="math inline">\(V(c)=0\)</span> ponder, why?</li>
-<li class="fragment"><span class="math inline">\(V(X+a)=V(X)\)</span></li>
-<li class="fragment"><span class="math inline">\(V(aX+c) = a^2V(X)\)</span> (depends only on scale, recall)</li>
-<li class="fragment"><span class="math inline">\(V(X+Y) = V(X)+V(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(V(X \pm a)=V(X)\)</span></li>
+<li class="fragment"><span class="math inline">\(V(aX \pm c) = a^2V(X)\)</span> (depends only on scale, recall)</li>
+<li class="fragment"><span class="math inline">\(V(X \pm Y) = V(X) \pm V(Y)\)</span> (if independent)</li>
+<li class="fragment"><span class="math inline">\(V(X \pm Y) = V(X) \pm V(Y) + 2 Cov(X,Y)\)</span> (if not independent)</li>
 </ul>
 </section>
 <section id="covariance" class="slide level2">
@@ -536,6 +637,11 @@ function klikaj(i) {
 <li class="fragment"><span class="math inline">\(E(XY)-E(X)E(Y)\)</span></li>
 </ul>
 </section>
+<section id="covariance-for-independent-x-y" class="slide level2">
+<h2>Covariance for Independent (X, Y)</h2>
+<p><span class="math inline">\(Cov(X,Y) = E(XY)-E(X)E(Y)\)</span> = 0</p>
+<p>So what do we get?</p>
+</section>
 <section id="prove-ex-properties" class="slide level2">
 <h2>Prove E(X) Properties</h2>
 <p><a href="#//properties-of-expectation">Go back to see the properties</a></p>
@@ -546,6 +652,15 @@ function klikaj(i) {
 <ul>
 <li class="fragment"><span class="math inline">\(=a \cdot \sum p(x_i)\)</span></li>
 <li class="fragment"><span class="math inline">\(=a \times 1 = a\)</span></li>
+<li class="fragment">Others can be proven similarly</li>
+</ul>
+</section>
+<section id="eax" class="slide level2">
+<h2>E(aX)</h2>
+<p><span class="math inline">\(E(aX) = \sum a x_i \cdot p(x_i)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(=a \sum x_i \cdot p(x_i)\)</span></li>
+<li class="fragment"><span class="math inline">\(=a \times E(X) = a E(X)\)</span></li>
 <li class="fragment">Others can be proven similarly</li>
 </ul>
 </section>
@@ -624,6 +739,15 @@ function klikaj(i) {
 <li class="fragment"><span class="math inline">\(=E(X)+E(Y)\)</span></li>
 </ul>
 </small><p><small></small></p>
+</section>
+<section id="exy" class="slide level2">
+<h2>E(XY)</h2>
+<p><span class="math inline">\(\displaystyle E(XY) = \sum_{i=1}^m \sum_{j=1}^n (x_iy_j)P(x_i,y_j)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\displaystyle \sum_{i=1}^m \sum_{j=1}^n (x_iy_j)P(x_i) P(y_j)\)</span> (independent)</li>
+<li class="fragment"><span class="math inline">\(\displaystyle \{\sum_{i=1}^m x_i P(x_i) \}\{\sum_{j=1}^n y_j P(y_j)\}\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X) E(Y)\)</span></li>
+</ul>
 </section>
 <section id="ex2-ex2" class="slide level2">
 <h2>E(X<sup>2</sup>) ≥ {E(X)}<sup>2</sup></h2>
@@ -784,7 +908,6 @@ function klikaj(i) {
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -805,8 +928,7 @@ function klikaj(i) {
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -977,7 +1099,7 @@ function klikaj(i) {
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
