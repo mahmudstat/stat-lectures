@@ -329,7 +329,7 @@
     width: 100vw; height: 100vh;
     z-index: 1000;
     touch-action: none;
-    pointer-events: none; /* disable drawing initially */
+    pointer-events: none;
   }
   #controlsWrapper {
     position: fixed;
@@ -368,6 +368,9 @@
       <button id="eraserTool">🩹</button>
       <input type="range" id="eraserSize" min="20" max="250" value="60">
 
+      <input type="color" id="bgColor" title="Canvas Background">
+      <button id="resetBg" title="Reset background color">🔄</button>
+
       <button id="undo">↩️</button>
       <button id="clear" type="button">🗑️</button>
     </div>
@@ -381,11 +384,14 @@
     const canvas = document.getElementById('drawingCanvas');
     const ctx = canvas.getContext('2d');
     const eraserCursor = document.getElementById('eraserCursor');
+    const bgColorPicker = document.getElementById('bgColor');
+    const resetBgBtn = document.getElementById('resetBg');
 
     let drawing = false, erasing = false;
     let controlsEnabled = false;
     let lastX = 0, lastY = 0;
     const history = [];
+    const defaultBgColor = ""; // Transparent or set to a specific default if desired
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -454,6 +460,15 @@
     document.getElementById('clear').addEventListener('click', () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       history.length = 0;
+    });
+
+    bgColorPicker.addEventListener('input', () => {
+      canvas.style.backgroundColor = bgColorPicker.value;
+    });
+
+    resetBgBtn.addEventListener('click', () => {
+      canvas.style.backgroundColor = defaultBgColor;
+      bgColorPicker.value = "#ffffff";
     });
 
     toggleControls.onclick = () => {
