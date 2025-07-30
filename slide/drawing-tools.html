@@ -1,3 +1,4 @@
+<head>
 <style>
 #drawingCanvas {
   position: fixed;
@@ -21,6 +22,7 @@
   border-radius: 10px;
   gap: 5px;
 }
+
 #controls input, #controls button {
   width: 40px; height: 40px;
 }
@@ -34,10 +36,13 @@
 }
 </style>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
 <div id="controlsWrapper">
   <button id="toggleControls">🎨</button>
   <div id="controls">
-    <button id="penTool">🖉</button>
+    <button id="penTool" title="Pen Tool"><i class="fas fa-pen"></i></button>
     <input type="color" id="penColor" value="#339966" />
     <input type="range" id="penSize" min="1" max="20" value="4" />
 
@@ -67,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let controlsEnabled = false;
   let lastX = 0, lastY = 0;
   const history = [];
-  const defaultBgColor = ""; // Transparent or set to a specific default if desired
+  const defaultBgColor = "#c2c2a3"; // Transparent or set to a specific default if desired
 
   function resize() {
     canvas.width = window.innerWidth;
