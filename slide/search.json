@@ -816,6 +816,13 @@
     "href": "03-expectation.html#ball-selection",
     "title": "Mathematical Expectation",
     "section": "Ball Selection",
-    "text": "Ball Selection\nA pot contains 5 white and 8 black balls. If x denotes the number of black balls drawn, find E(x) and V(x).\n\n\\(P(2 Black 1 White) = \\frac{8C_3 \\times 5C_1}{13C_3}\\)\nIn the problem, x = 0, 1, 2, 3\n\\(P(x) = \\frac{8c_y \\times ?}{13C_3}\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Ball Selection\nA pot contains 5 white and 8 black balls. If x denotes the number of black balls drawn, find E(x) and V(x).\n\n\\(P(2 Black, 1 White) = \\frac{8C_3 \\times 5C_1}{13C_3}\\)\nIn the problem, x = 0, 1, 2, 3\n\\(P(x) = \\frac{8c_x \\times ?}{13C_3}\\)"
+  },
+  {
+    "objectID": "03-expectation.html#rain-coat-expectation",
+    "href": "03-expectation.html#rain-coat-expectation",
+    "title": "Mathematical Expectation",
+    "section": "Rain Coat Expectation",
+    "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
   }
 ]

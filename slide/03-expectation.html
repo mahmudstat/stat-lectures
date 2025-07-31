@@ -359,7 +359,7 @@
     display: none; z-index: 1002;
   }
 
-  #bgColorLabel, #penColorLabel, #penTool, #eraserTool, #resetBg, #undo, #clear {
+  #bgColorLabel, #penColorLabel, #penTool, #eraserTool, #resetBg, #undo, #clear, #downloadCanvas {
     cursor: pointer;
     font-size: 1.4em;
     padding: 6px;
@@ -406,6 +406,12 @@
 
 
       <label style="font-weight: bold; color: red;" id="resetBg" title="Reset background color"><i class="fas fa-fill-drip"></i></label>
+
+      <label style="font-weight: bold; color: green;" id="downloadCanvas" title="Download Drawing" class="icon-button">
+    <i class="fas fa-download"></i>
+  </label>
+
+
     </div>
   </div>
 
@@ -530,6 +536,17 @@
       this.releasePointerCapture(e.pointerId);
     });
   });
+
+  const canvas = document.getElementById('drawingCanvas');
+    const downloadButton = document.getElementById('downloadCanvas');
+
+    downloadButton.addEventListener('click', function () {
+      if (!canvas) return;
+      const link = document.createElement('a');
+      link.href = canvas.toDataURL('image/png');
+      link.download = 'drawing.png';
+      link.click();
+    });
   </script>
 
 
@@ -958,9 +975,16 @@ Abdullah Al Mahmud
 <h2>Ball Selection</h2>
 <p>A pot contains 5 white and 8 black balls. If <code>x</code> denotes the number of black balls drawn, find <code>E(x)</code> and <code>V(x)</code>.</p>
 <ul>
-<li class="fragment"><span class="math inline">\(P(2 Black 1 White) = \frac{8C_3 \times 5C_1}{13C_3}\)</span></li>
+<li class="fragment"><span class="math inline">\(P(2 Black, 1 White) = \frac{8C_3 \times 5C_1}{13C_3}\)</span></li>
 <li class="fragment">In the problem, <code>x = 0, 1, 2, 3</code></li>
-<li class="fragment"><span class="math inline">\(P(x) = \frac{8c_y \times ?}{13C_3}\)</span></li>
+<li class="fragment"><span class="math inline">\(P(x) = \frac{8c_x \times ?}{13C_3}\)</span></li>
+</ul>
+</section>
+<section id="rain-coat-expectation" class="slide level2">
+<h2>Rain Coat Expectation</h2>
+<p>If it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.</p>
+<ul>
+<li class="fragment"></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
