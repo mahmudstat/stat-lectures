@@ -351,20 +351,20 @@
     width: 40px; height: 40px;
   }
   #toggleControls {
-    background: none; border: none; width: 40px; height: 40px; font-size: 20px;
+    background: none; border: none; width: 40px; height: 40px; font-size: 23px;
   }
   #eraserCursor {
     position: fixed; pointer-events: none;
-    border: 1px solid red; border-radius: 50%;
+    border: 2px solid red; border-radius: 50%;
     display: none; z-index: 1002;
   }
 
-  #bgColorLabel, #penColorLabel {
+  #bgColorLabel, #penColorLabel, #penTool, #eraserTool, #resetBg, #undo, #clear {
     cursor: pointer;
     font-size: 1.4em;
     padding: 6px;
     border-radius: 6px;
-    background-color: #eee;
+    background-color: #ccccff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   }
 
@@ -380,32 +380,32 @@
   </head>
 
   <body class="quarto-light"><div id="controlsWrapper">
-    <button style="color: red;" id="toggleControls" title="Toggle Drawing Controls">
-    <i class="fas fa-palette"></i>
+    <button id="toggleControls" title="Toggle Drawing Controls" style="font-size: 1.9em; color: red;">
+    <i class="fas fa-pen-nib"></i>
   </button>
     <div id="controls">
-      <button style="font-weight: value; color: #8f246b;" id="penTool" title="Pen Tool"><i class="fas fa-pen"></i></button>
+      <label style="font-weight: bold; color: #8f246b;" id="penTool" title="Pen Tool"><i class="fas fa-marker"></i></label>
       <input type="color" id="penColor" value="#339966" style="display: none;">
   <label for="penColor" id="penColorLabel" title="Pen Color">
     <i class="fas fa-eye-dropper"></i>
   </label>
 
-
       <input type="range" id="penSize" min="1" max="20" value="4">
 
-      <button style="font-weight: value; color: red;" id="eraserTool" title="Eraser Tool"><i class="fas fa-eraser"></i></button>
+      <label style="font-weight: bold; color: #408000;" id="undo" title="Undo drawing"><i class="fas fa-undo"></i></label>
+
+      <label style="font-weight: bold; color: red;" id="eraserTool" title="Eraser Tool"><i class="fas fa-eraser"></i></label>
       <input type="range" id="eraserSize" min="20" max="250" value="60">
 
-      <label style="font-weight: value; color: green;" for="bgColor" id="bgColorLabel" title="Canvas Background">
+       <label style="font-weight: bold; color: red;" id="clear" type="button" title="Delete All drawing"><i class="fas fa-trash"></i></label>
+
+      <label style="font-weight: bold; color: green;" for="bgColor" id="bgColorLabel" title="Canvas Background">
     <i class="fas fa-fill-drip"></i>
   </label>
   <input type="color" id="bgColor" style="display: none;">
 
 
-      <button style="font-weight: value; color: #3333cc;" id="resetBg" title="Reset background color"><i class="fas fa-refresh"></i></button>
-
-      <button style="font-weight: value; color: #408000;" id="undo" title="Undo drawing"><i class="fas fa-undo"></i></button>
-      <button style="font-weight: value; color: red;" id="clear" type="button" title="Delete All drawing"><i class="fas fa-trash"></i></button>
+      <label style="font-weight: bold; color: red;" id="resetBg" title="Reset background color"><i class="fas fa-fill-drip"></i></label>
     </div>
   </div>
 
@@ -589,6 +589,47 @@ Abdullah Al Mahmud
 <li class="fragment">Organized: Formatted, easy to understand (sorted/tabluated)</li>
 </ul>
 </section>
+<section id="frequency-distribution-example" class="slide level2">
+<h2>Frequency Distribution Example</h2>
+<p>Marks of students in a class</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Class Interval</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">41 - 50</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">51 - 60</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">61 - 70</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">71 - 80</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">81 - 90</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">91 - 100</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">How does it help us?</li>
+</ul>
+</section>
 <section id="frequency-distribution" class="slide level2">
 <h2>Frequency Distribution</h2>
 <p>Three things required</p>
@@ -598,30 +639,6 @@ Abdullah Al Mahmud
 <li class="fragment">No.&nbsp;of class, <span class="math inline">\(k = \frac{R}{CI}\)</span></li>
 <li class="fragment">CI=?</li>
 </ul>
-</section>
-<section id="table-example" class="slide level2">
-<h2>Table Example</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Class Interval</th>
-<th style="text-align: center;">Tally</th>
-<th style="text-align: center;">Frequency</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">16-20</td>
-<td style="text-align: center;">|||</td>
-<td style="text-align: center;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">21-25</td>
-<td style="text-align: center;">||||</td>
-<td style="text-align: center;">4</td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="make-a-frequency-distribution" class="slide level2">
 <h2>Make a frequency distribution</h2>

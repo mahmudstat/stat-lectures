@@ -291,6 +291,23 @@ $f(x) = \frac x 8; 0 <x<4$
 
 Find 
 
-- E(X), 
-- E(2x^2+3)
-- V(X)
+- $E(X)$
+- $E(2x^2+3)$
+- $V(X)$
+
+# Word problems
+
+## Ball Selection
+
+A pot contains 5 white and 8 black balls. If `x` denotes the number of black balls drawn, find `E(x)` and `V(x)`.
+
+> - $P(2 Black, 1 White) = \frac{8C_3 \times 5C_1}{13C_3}$
+> - In the problem, `x = 0, 1, 2, 3`
+> - $P(x) = \frac{8c_x \times ?}{13C_3}$
+
+## Rain Coat Expectation
+
+If it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.
+
+> -
+

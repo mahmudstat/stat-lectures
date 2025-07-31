@@ -36,6 +36,21 @@ format: revealjs
 > - Unorganized: Messy, chaotic, raw
 > - Organized: Formatted, easy to understand (sorted/tabluated)
 
+## Frequency Distribution Example
+
+Marks of students in a class
+
+|  Class Interval    | Frequency |
+|:------------------:|:---------:|
+|       41 - 50      |     5     |
+|       51 - 60      |    10     |
+|       61 - 70      |    18     |
+|       71 - 80      |    12     |
+|       81 - 90      |     8     |
+|      91 - 100      |     3     |
+
+> - How does it help us?
+
 ## Frequency Distribution
 
 Three things required
@@ -44,13 +59,6 @@ Three things required
 > - Class Interval (CI)
 > - No. of class, $k = \frac{R}{CI}$
 > - CI=?
-
-## Table Example
-
-| Class Interval |   Tally  | Frequency |
-|:--------------:|:--------:|:---------:|
-|      16-20     |  \|\|\|  |     3     |
-|      21-25     | \|\|\|\| |     4     |
 
 ## Make a frequency distribution
 

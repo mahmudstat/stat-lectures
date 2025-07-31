@@ -578,7 +578,7 @@
     "href": "03-expectation.html#example-06-fx-frac-x-8",
     "title": "Mathematical Expectation",
     "section": "Example 06: \\(f(x) = \\frac x 8\\)",
-    "text": "Example 06: \\(f(x) = \\frac x 8\\)\n\\(f(x) = \\frac x 8; 0 &lt;x&lt;4\\)\nFind\n\nE(X),\nE(2x^2+3)\nV(X)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Example 06: \\(f(x) = \\frac x 8\\)\n\\(f(x) = \\frac x 8; 0 &lt;x&lt;4\\)\nFind\n\n\\(E(X)\\)\n\\(E(2x^2+3)\\)\n\\(V(X)\\)"
   },
   {
     "objectID": "elementary_stat_prob.html#chapter-overview",
@@ -803,5 +803,19 @@
     "title": "Mathematical Expectation",
     "section": "Y = 3X + 5",
     "text": "Y = 3X + 5\nFind V(3y-2)\n\n\n\nx\n-2\n-1\n0\n1\n2\n\n\n\n\nP(x)\n0.20\n0.15\n0.10\n0.15\n0.40\n\n\n\n\nV(3y-2) = \\(3^2V(y)\\)\n\\(9V(3x+5)\\)\n\\(9 \\cdot 3^2 \\cdot V(x)\\)"
+  },
+  {
+    "objectID": "elementary_stat_prob.html#frequency-distribution-example",
+    "href": "elementary_stat_prob.html#frequency-distribution-example",
+    "title": "Elementary Statistics",
+    "section": "Frequency Distribution Example",
+    "text": "Frequency Distribution Example\nMarks of students in a class\n\n\n\nClass Interval\nFrequency\n\n\n\n\n41 - 50\n5\n\n\n51 - 60\n10\n\n\n61 - 70\n18\n\n\n71 - 80\n12\n\n\n81 - 90\n8\n\n\n91 - 100\n3\n\n\n\n\nHow does it help us?"
+  },
+  {
+    "objectID": "03-expectation.html#ball-selection",
+    "href": "03-expectation.html#ball-selection",
+    "title": "Mathematical Expectation",
+    "section": "Ball Selection",
+    "text": "Ball Selection\nA pot contains 5 white and 8 black balls. If x denotes the number of black balls drawn, find E(x) and V(x).\n\n\\(P(2 Black 1 White) = \\frac{8C_3 \\times 5C_1}{13C_3}\\)\nIn the problem, x = 0, 1, 2, 3\n\\(P(x) = \\frac{8c_y \\times ?}{13C_3}\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
   }
 ]
