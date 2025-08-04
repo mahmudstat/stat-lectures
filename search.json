@@ -124,5 +124,12 @@
     "title": "Lectures",
     "section": "Elementary Statistics",
     "text": "Elementary Statistics\n\nVII-X Statistics and Probability\n\nMore to come…"
+  },
+  {
+    "objectID": "features.html",
+    "href": "features.html",
+    "title": "Data Science Hub",
+    "section": "",
+    "text": "Welcome to Data Science Hub\nExplore essential tools and visualizations for your data journey.\n\n\n\n\nMake a Bar Chart\n\n\nVisualize categorical data\n\n\nCompare across groups\n\n\n\n\n\nPlot a Line Chart\n\n\nTrack trends over time\n\n\nInteractive options available\n\n\n\n\n\nCreate a Pie Chart\n\n\nShow proportions clearly\n\n\nCustomize colors and labels\n\n\n\n\n\nExplore a Dataset\n\n\nUpload your own CSV\n\n\nClean and filter with ease\n\n\n\n\n\nRun a Model\n\n\nUse regression or trees\n\n\nSee predictive accuracy\n\n\n\n\n\nWrite R or Python\n\n\nEmbed code with output\n\n\nLearn by doing"
   }
 ]

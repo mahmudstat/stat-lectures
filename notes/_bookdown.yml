@@ -1,0 +1,9 @@
+book_filename: "Stat-Prob-Notes"
+language:
+  ui:
+    chapter_name: "Chapter "
+delete_merged_file: true
+output_dir: "."
+chapter_name: "Chapter "
+repo: https://github.com/mahmudstat/lecures
+new_session: yes

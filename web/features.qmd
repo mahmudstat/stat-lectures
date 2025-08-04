@@ -1,0 +1,64 @@
+---
+title: "Data Science Hub"
+format:
+  html:
+    page-layout: full
+    css: styles.css
+    theme: cosmo
+    toc: false
+    grid:
+      margin-width: 200px
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+---
+
+# Welcome to Data Science Hub
+
+Explore essential tools and visualizations for your data journey.
+
+<div class="feature-grid">
+
+<div class="feature-box">
+  <i class="fas fa-chart-column fa-3x"></i>
+  <h3>Make a Bar Chart</h3>
+  <p>Visualize categorical data</p>
+  <p>Compare across groups</p>
+</div>
+
+<div class="feature-box">
+  <i class="fas fa-chart-line fa-3x"></i>
+  <h3>Plot a Line Chart</h3>
+  <p>Track trends over time</p>
+  <p>Interactive options available</p>
+</div>
+
+<div class="feature-box">
+  <i class="fas fa-chart-pie fa-3x"></i>
+  <h3>Create a Pie Chart</h3>
+  <p>Show proportions clearly</p>
+  <p>Customize colors and labels</p>
+</div>
+
+<div class="feature-box">
+  <i class="fas fa-database fa-3x"></i>
+  <h3>Explore a Dataset</h3>
+  <p>Upload your own CSV</p>
+  <p>Clean and filter with ease</p>
+</div>
+
+<div class="feature-box">
+  <i class="fas fa-brain fa-3x"></i>
+  <h3>Run a Model</h3>
+  <p>Use regression or trees</p>
+  <p>See predictive accuracy</p>
+</div>
+
+<div class="feature-box">
+  <i class="fas fa-code fa-3x"></i>
+  <h3>Write R or Python</h3>
+  <p>Embed code with output</p>
+  <p>Learn by doing</p>
+</div>
+
+</div>

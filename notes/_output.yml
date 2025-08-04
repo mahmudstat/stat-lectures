@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  toc_depth: 2
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: true
+      before: |
+        <li><a href="./">
+          <img src="img/statmania_logo.png" alt="Stat Mania" style="height: 30px; vertical-align: middle; margin-right: 10px;"> <!-- Add your image here -->
+          Notes ~ Stat Mania
+        </a></li>
+      after: |
+        <li><a href="https://github.com/mahmudstat/stat-lectures/edit/master/%s" target="blank">Notes ~ Stat Mania</a></li>
+  split_by: "section"
+  download: ["pdf", "epub"] # <-- Corrected indentation
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+bookdown::epub_book: default
