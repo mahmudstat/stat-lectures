@@ -40,5 +40,5 @@ format:
     - styles.css
     chalkboard: true
     logo: slide/css/logo.png
-    footer: "docs.statmania.info | Abdullah Al Mahmud"
+    footer: docs.statmania.info | Abdullah Al Mahmud | Use space key or arrows to move slides
 
