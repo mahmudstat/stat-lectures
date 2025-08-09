@@ -1,16 +1,8 @@
 ---
 title: "Introduction to Statistics"
+subtitle: ""
 author: Abdullah Al Mahmud
-date: \today
-output: 
-  revealjs::revealjs_presentation:
-    theme: sky
-    reveal_plugins: ["chalkboard", "zoom", "menu"]
-    self_contained: false
-    lib_dir: libs
-    css: css/styles.css
-    includes:
-      in_header: css/header.html
+format: revealjs
 ---
 
 # Statistics: What & How
@@ -49,21 +41,15 @@ There are many sampling techniques.
 
 <img src = "img/2250-02.jpg" width="650"/>
 
-## Examples{.la}
+## Examples
+
 > - Identification of unwanted spam messages in e-mail
-
 > - Segmentation of customer behavior for targeted advertising
-
 > - Forecasts of weather behavior and long-term climate changes
-
 > - Prediction of popular election outcomes
-
 > - Development of algorithms for auto-piloting drones and self-driving cars
-
 > - Optimization of energy use in homes and office buildings
-
 > - Projection of areas where criminal activity is most likely
-
 > - Discovery of genetic sequences linked to diseases
 
 ## End of This Segment{#thanks}
@@ -73,12 +59,14 @@ THANK YOU!
 # Chapter 01: Basic Concepts
 
 ## Chapter Overview
-- Definition
-- Population and sample
-- Variable and its types
-- Scale of measurement
-- Use of summation sign
-- Main Discussion
+
+> - Definition
+> - Population and sample
+> - Variable and its types
+> - Scale of measurement
+> - Use of summation sign
+> - Summation theorems
+> - Mathematical Problems
 
 ## Definition
 
@@ -101,9 +89,21 @@ THANK YOU!
 
 <img src="img/Simple_random_sampling.png" alt="drawing" width="400"/>
 
+## Population Types
 
-> - Finite
-> - Infinite
+- Finite
+- Infinite
+
+Examples
+
+Group/collection of --
+
+> - students in a classroom
+> - stars in the sky
+> - possible outcomes when flipping a coin repeatedly
+> - books in a library
+> - water molecules in the ocean
+> - employees in a company
 
 ## Variable and Constant
 
@@ -111,7 +111,11 @@ THANK YOU!
 - Random Variable
 - Constant
 
-**Examples**
+> - $\pi$
+> - Name of students
+> - Result of a die throw
+
+## Variable Examples
 
 > - Income of a regular employee
 > - Income of a freelancer
@@ -123,8 +127,8 @@ THANK YOU!
 
 ## Types of Variable{#bluetext}
 
->- Qualitative
->- Quantitative
+>- Qualitative $\rightarrow$ numeric
+>- Quantitative $\rightarrow$ non-numeric
 >- Discrete: Limited and pre-specified 
 >- Continuous: Can take on any values between any two given number
 
@@ -136,7 +140,7 @@ Describes nature of information within the values.
 
 > - Nominal: Name of Insignificant number, e.g., color, Street no., 
 > - Ordinal: Order matters, e.g., rating
-> - Interval: Zero may not be zero, like temperature
+> - Interval: Zero may not be zero, like temperature, IQ
 > - Ratio: Zero is 0; most variables fall in this category
 
 ## Examples
@@ -152,6 +156,7 @@ Describes nature of information within the values.
 - Room no. 
 
 ## Another Example
+
 Match as per suitable scale
 
 |Movie Rating        | Scale           | 
@@ -171,10 +176,10 @@ Multiplication/division cannot be carried out
 > - Direction measured in degrees
 
 
-
 For more see [here](https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale)
 
 ## Operation with scales
+
 <img src="img/scale.png" alt="drawing" width="600"/>
 
 ## Shifting origin and scale
@@ -186,15 +191,13 @@ Say we have values, $x_1, x_2, \cdot \cdot \cdot , x_n$
 > - Scale shift: Multiplying/Division
 > - $y_1 = b \cdot x_1  \space or \space x_1/b$
 > - both: $y_i = \frac{x_i-a}{b}$
+> - Why might we need it?
 
 ## Use of Summation sign
 
-$$x_1 + x_2 + x_3 + x_4 = \sum_{i=1}^4 x_i$$
-
-$$x_1 + x_2 + ... x_n = \sum_{i=1}^n x_i$$
-
-
-$$x_1 + x_2 + ... x_{10} = ?$$
+> - $$x_1 + x_2 + x_3 + x_4 = \sum_{i=1}^4 x_i$$
+> - $$x_1 + x_2 + ... x_n = \sum_{i=1}^n x_i$$
+> - $$x_1 + x_2 + ... x_{10} = ?$$
 
 
 ## Theorem 01: $\Sigma bx_i$
@@ -247,6 +250,13 @@ $\displaystyle  \sum_{i=1}^m \sum_{j=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{
 
 </small>
 
+## Double Summation Example
+
+| X | 20 | 25 | 15 |
+|:-:|:--:|:--:|:--:|
+| Y | 15 | 30 | 20 |
+
+
 ## Theorem: $\Sigma \Sigma x_iy_j$
 
 $\displaystyle \sum_{i=1}^m \sum_{i=1}^n x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)$
@@ -255,16 +265,6 @@ $\displaystyle \sum_{i=1}^m \sum_{i=1}^n x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n
 > - $\displaystyle \sum_{i=1}^m x_i(y_1+y_2+\cdots+y_n)$
 > - $\displaystyle \sum_{i=1}^m x_i \sum_{i=1}^n y_i$
 
-
-## Theorem: $\Sigma \Sigma (X_i+Y_j)$
-
-$\displaystyle \sum_{i=1}^n \sum_{j=1}^m (x_i + y_j) = m \sum_{i=1}^n x_i + n \sum_{i=1}^m y_j$
-
-> - L.H.S = $\displaystyle \sum_{i=1}^n (x_i + y_1 + x_i + y_2 + \cdots +x_i + y_m)$
-
-> - = $\displaystyle \sum_{i=1}^n mx_i + (y_1 + y_2 + y_m) = \sum_{i=1}^n (mx_i + \sum_{j=1}^m y_j)$
-
-> - Now expand $\displaystyle \sum_{i=1}^n mx_i$
 
 ## Problem -01
 
@@ -321,76 +321,21 @@ Find the value of $\displaystyle \sum_{i=1}^{10} (x_i^2+5x_i+10)$
 i. Prove Sum of Square $\ne$ Square of Sum
 ii. Prove $\displaystyle \sum X_iY_i \ne \sum \sum X_iY_i$
 
-## Creative Question - 01
+## Creative Questions
 
-<small>
-Given below are the daily income and expense of ten workers.
+[Look here](../question/bank/stat1_cqbank.pdf)
 
-  <table>
-      <thead><tr>
-            <th>Income (x)</th>
-            <th>120</th>
-            <th>130</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>Expense (y)</td>
-            <td>80</td>
-            <td>120</td>
-        </tr>
-</tbody>
-    </table>
+## Creative Question - 02  {.smaller}
 
-From above data, prove 
+| Income (x) | 120 | 130 | 88 | 150 | 175 | 144 | 180 | 200 | 160 | 155 |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Expense (y) | 80 | 120 | 70 | 100 | 160 | 114 | 170 | 195 | 140 | 131 |
 
-> - $$\sum_{i=1}^{2}x_iy_i \ne (\sum_{i=1}^{2}x_i)(\sum_{i=1}^{2}y_j)$$
-<br/>
-> - $$\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j=(\sum_{i=1}^{2}x_i)(\sum_{j=1}^{2}y_j)$$
-<br/>
-> - $$\sum_{i=1}^{2} \sum_{j=1}^{2}(x_i-y_j)=2 \times \sum_{i=1}^{2}x_i- 2 \times \sum_{j=1}^{2}y_j$$
+Prove
 
-</small>
+> - $\displaystyle \sum_{i=1}^{10} \sum_{j=1}^{10}x_iy_j=(\sum_{i=1}^{10}x_i)(\sum_{j=1}^{10}y_j)$$
+> - $\displaystyle \sum_{i=1}^{10} \sum_{j=1}^{10}(x_i-y_j)=10 \times \sum_{i=1}^{10}x_i- 10 \times \sum_{j=1}^{10}y_j$
+> - $\displaystyle \sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$
 
-## Creative Question - 02
-
-<small>
-Given below are the daily income and expense of ten workers.
-
-  <table>
-      <thead><tr>
-            <th>Income (x)</th>
-            <th>120</th>
-            <th>130</th>
-            <th>88</th>
-            <th>150</th>
-            <th>175</th>
-            <th>144</th>
-            <th>180</th>
-            <th>200</th>
-            <th>160</th>
-            <th>155</th>
-        </tr></thead>
-        <tbody><tr>
-            <td>Expense (y)</td>
-            <td>80</td>
-            <td>120</td>
-            <td>70</td>
-            <td>100</td>
-            <td>160</td>
-            <td>114</td>
-            <td>170</td>
-            <td>195</td>
-            <td>140</td>
-            <td>131</td>
-        </tr>
-</tbody>
-    </table>
-
-a. What do you mean by bivariate data?
-b. From above data, prove 
-
-$$\sum_{i=1}^{10} \sum_{j=1}^{10}x_iy_j=(\sum_{i=1}^{10}x_i)(\sum_{j=1}^{10}y_j)$$
-c. $$\sum_{i=1}^{10} \sum_{j=1}^{10}(x_i-y_j)=10 \times \sum_{i=1}^{10}x_i- 10 \times \sum_{j=1}^{10}y_j$$
-d. Prove $$\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$$
-</small>
 
 ## End of Chapter 01!

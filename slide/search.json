@@ -824,5 +824,334 @@
     "title": "Mathematical Expectation",
     "section": "Rain Coat Expectation",
     "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  },
+  {
+    "objectID": "01-stat-intro.html#topics",
+    "href": "01-stat-intro.html#topics",
+    "title": "Introduction to Statistics",
+    "section": "Topics",
+    "text": "Topics\n\nWhat is statistics?\nHow Statistics works?\nProbability and Statistics\nApplication of Statistics\nExample Problem"
+  },
+  {
+    "objectID": "01-stat-intro.html#what-is-statistics",
+    "href": "01-stat-intro.html#what-is-statistics",
+    "title": "Introduction to Statistics",
+    "section": "What is statistics?",
+    "text": "What is statistics?\nThree Meanings\n\nPlural of statistic\nTable of data\nMethodology"
+  },
+  {
+    "objectID": "01-stat-intro.html#how-statistics-works",
+    "href": "01-stat-intro.html#how-statistics-works",
+    "title": "Introduction to Statistics",
+    "section": "How Statistics works?",
+    "text": "How Statistics works?\nTakes a sample from a population.\n\nThere are many sampling techniques."
+  },
+  {
+    "objectID": "01-stat-intro.html#probability-and-statistics",
+    "href": "01-stat-intro.html#probability-and-statistics",
+    "title": "Introduction to Statistics",
+    "section": "Probability and Statistics",
+    "text": "Probability and Statistics"
+  },
+  {
+    "objectID": "01-stat-intro.html#application-of-statistics",
+    "href": "01-stat-intro.html#application-of-statistics",
+    "title": "Introduction to Statistics",
+    "section": "Application of Statistics",
+    "text": "Application of Statistics"
+  },
+  {
+    "objectID": "01-stat-intro.html#examples",
+    "href": "01-stat-intro.html#examples",
+    "title": "Introduction to Statistics",
+    "section": "Examples",
+    "text": "Examples\n\nIdentification of unwanted spam messages in e-mail\nSegmentation of customer behavior for targeted advertising\nForecasts of weather behavior and long-term climate changes\nPrediction of popular election outcomes\nDevelopment of algorithms for auto-piloting drones and self-driving cars\nOptimization of energy use in homes and office buildings\nProjection of areas where criminal activity is most likely\nDiscovery of genetic sequences linked to diseases"
+  },
+  {
+    "objectID": "01-stat-intro.html#thanks",
+    "href": "01-stat-intro.html#thanks",
+    "title": "Introduction to Statistics",
+    "section": "End of This Segment",
+    "text": "End of This Segment\nTHANK YOU!"
+  },
+  {
+    "objectID": "01-stat-intro.html#chapter-overview",
+    "href": "01-stat-intro.html#chapter-overview",
+    "title": "Introduction to Statistics",
+    "section": "Chapter Overview",
+    "text": "Chapter Overview\n\nDefinition\nPopulation and sample\nVariable and its types\nScale of measurement\nUse of summation sign\nSummation theorems\nMathematical Problems"
+  },
+  {
+    "objectID": "01-stat-intro.html#definition",
+    "href": "01-stat-intro.html#definition",
+    "title": "Introduction to Statistics",
+    "section": "Definition",
+    "text": "Definition\nCoxton and Crowden\nStatistics may be defined as the science of collection, presentation, analysis and interpretation of numerical data."
+  },
+  {
+    "objectID": "01-stat-intro.html#mechanism",
+    "href": "01-stat-intro.html#mechanism",
+    "title": "Introduction to Statistics",
+    "section": "Mechanism",
+    "text": "Mechanism\n\nData Collection\nOrganization\nAnalysis\nInterpretation\nPresentation"
+  },
+  {
+    "objectID": "01-stat-intro.html#population-and-sample",
+    "href": "01-stat-intro.html#population-and-sample",
+    "title": "Introduction to Statistics",
+    "section": "Population and Sample",
+    "text": "Population and Sample\nPopulation: A set of similar items or events which is of interest Sample: Any subset of population"
+  },
+  {
+    "objectID": "01-stat-intro.html#variable-and-constant",
+    "href": "01-stat-intro.html#variable-and-constant",
+    "title": "Introduction to Statistics",
+    "section": "Variable and Constant",
+    "text": "Variable and Constant\n\nVariable\nRandom Variable\nConstant\n\n\n\\(\\pi\\)\nName of students\nResult of a die throw"
+  },
+  {
+    "objectID": "01-stat-intro.html#bluetext",
+    "href": "01-stat-intro.html#bluetext",
+    "title": "Introduction to Statistics",
+    "section": "Types of Variable",
+    "text": "Types of Variable\n\nQualitative \\(\\rightarrow\\) numeric\nQuantitative \\(\\rightarrow\\) non-numeric\nDiscrete: Limited and pre-specified\nContinuous: Can take on any values between any two given number"
+  },
+  {
+    "objectID": "01-stat-intro.html#univariate-multivariate",
+    "href": "01-stat-intro.html#univariate-multivariate",
+    "title": "Introduction to Statistics",
+    "section": "Univariate, Multivariate",
+    "text": "Univariate, Multivariate"
+  },
+  {
+    "objectID": "01-stat-intro.html#scale-of-measurement",
+    "href": "01-stat-intro.html#scale-of-measurement",
+    "title": "Introduction to Statistics",
+    "section": "Scale of Measurement",
+    "text": "Scale of Measurement\nDescribes nature of information within the values.\n\nNominal: Name of Insignificant number, e.g., color, Street no.,\nOrdinal: Order matters, e.g., rating\nInterval: Zero may not be zero, like temperature, IQ\nRatio: Zero is 0; most variables fall in this category"
+  },
+  {
+    "objectID": "01-stat-intro.html#examples-1",
+    "href": "01-stat-intro.html#examples-1",
+    "title": "Introduction to Statistics",
+    "section": "Examples",
+    "text": "Examples\n\nGender\nReligion\nTemperature\nIncome group (Lower class, Low, Middle, High)\nIncome\nDistance of stars\nRadius of screws\nDiameter of trees\nRoom no."
+  },
+  {
+    "objectID": "01-stat-intro.html#another-example",
+    "href": "01-stat-intro.html#another-example",
+    "title": "Introduction to Statistics",
+    "section": "Another Example",
+    "text": "Another Example\nMatch as per suitable scale\n\n\n\nMovie Rating\nScale\n\n\n\n\nPoor, bad, good, excellent\nratio\n\n\nIn a scale of -10 to 10: -10, -2, 0, 5, 10\ninterval\n\n\nAwesome, Amazing, Mind-blowing, Stunning\nnominal\n\n\nIn a scale of 0 to 10: 0, 5, 8, 10\nordinal"
+  },
+  {
+    "objectID": "01-stat-intro.html#examples-of-interval-scale",
+    "href": "01-stat-intro.html#examples-of-interval-scale",
+    "title": "Introduction to Statistics",
+    "section": "Examples of Interval Scale",
+    "text": "Examples of Interval Scale\nMultiplication/division cannot be carried out\n\nTemperature (Celsius scale)\nDates (AD)\nLocation in Cartesian coordinates\nDirection measured in degrees\n\nFor more see here"
+  },
+  {
+    "objectID": "01-stat-intro.html#operation-with-scales",
+    "href": "01-stat-intro.html#operation-with-scales",
+    "title": "Introduction to Statistics",
+    "section": "Operation with scales",
+    "text": "Operation with scales"
+  },
+  {
+    "objectID": "01-stat-intro.html#shifting-origin-and-scale",
+    "href": "01-stat-intro.html#shifting-origin-and-scale",
+    "title": "Introduction to Statistics",
+    "section": "Shifting origin and scale",
+    "text": "Shifting origin and scale\nSay we have values, \\(x_1, x_2, \\cdot \\cdot \\cdot , x_n\\)\n\nOrigin shift: Adding/Subtracting\n\\(y_1 = x_1-a \\space or \\space x_1+a\\)\nScale shift: Multiplying/Division\n\\(y_1 = b \\cdot x_1  \\space or \\space x_1/b\\)\nboth: \\(y_i = \\frac{x_i-a}{b}\\)\nWhy might we need it?"
+  },
+  {
+    "objectID": "01-stat-intro.html#use-of-summation-sign",
+    "href": "01-stat-intro.html#use-of-summation-sign",
+    "title": "Introduction to Statistics",
+    "section": "Use of Summation sign",
+    "text": "Use of Summation sign\n\n\\[x_1 + x_2 + x_3 + x_4 = \\sum_{i=1}^4 x_i\\]\n\\[x_1 + x_2 + ... x_n = \\sum_{i=1}^n x_i\\]\n\\[x_1 + x_2 + ... x_{10} = ?\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-01-sigma-bx_i",
+    "href": "01-stat-intro.html#theorem-01-sigma-bx_i",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 01: \\(\\Sigma bx_i\\)",
+    "text": "Theorem 01: \\(\\Sigma bx_i\\)\n\\[\\sum_{i=1}^n bx_i=b \\sum_{i=1}^n x_i\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-02-sigma-ax_i-b",
+    "href": "01-stat-intro.html#theorem-02-sigma-ax_i-b",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 02: \\(\\Sigma (ax_i-b)\\)",
+    "text": "Theorem 02: \\(\\Sigma (ax_i-b)\\)\n\\[\\sum_{i=1}^n (ax_i-b)=a \\sum_{i=1}^n x_i-nb\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#quick-tips",
+    "href": "01-stat-intro.html#quick-tips",
+    "title": "Introduction to Statistics",
+    "section": "Quick tips",
+    "text": "Quick tips\n\n\\(\\sum_{i=1}^n a = na\\)\nCan you prove it?"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-03-sigma-ax_i2-bx_ic",
+    "href": "01-stat-intro.html#theorem-03-sigma-ax_i2-bx_ic",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 03: \\(\\Sigma (ax_i^2-bx_i+c\\)",
+    "text": "Theorem 03: \\(\\Sigma (ax_i^2-bx_i+c\\)\n\\[\\sum_{i=1}^n (ax_i^2-bx_i+c)=a\\sum_{i=1}^n x_i^2-b\\sum_{i=1}^n x_i + nc\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-04-sigma-ax_i-by_i",
+    "href": "01-stat-intro.html#theorem-04-sigma-ax_i-by_i",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 04: \\(\\Sigma (ax_i-by_i)\\)",
+    "text": "Theorem 04: \\(\\Sigma (ax_i-by_i)\\)\n\\[\\sum_{i=1}^n (ax_i-by_i)=a\\sum_{i=1}^n x_i - b \\sum_{i=1}^n y_i\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-05-sigma-ax_i-b2",
+    "href": "01-stat-intro.html#theorem-05-sigma-ax_i-b2",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 05: \\(\\Sigma (ax_i-b)^2\\)",
+    "text": "Theorem 05: \\(\\Sigma (ax_i-b)^2\\)\n\\[\\sum_{i=1}^n (ax_i-b)^2=a^2 \\sum_{i=1}^n x_i^2 - 2ab \\sum_{i=1}^n x_i + nb^2\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-06-sum_i1n-x_i2",
+    "href": "01-stat-intro.html#theorem-06-sum_i1n-x_i2",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 06: \\((\\sum_{i=1}^n x_i)^2\\)",
+    "text": "Theorem 06: \\((\\sum_{i=1}^n x_i)^2\\)\n\\[(\\sum_{i=1}^n x_i)^2=\\sum_{i=1}^n x_i^2 + \\sum_{i \\ne j}^n\\sum x_ix_j\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#quick-tip",
+    "href": "01-stat-intro.html#quick-tip",
+    "title": "Introduction to Statistics",
+    "section": "Quick Tip",
+    "text": "Quick Tip\n\\[\\prod_{i=1}^k x_i = x_1 \\times x_2 \\times \\cdot \\cdot \\cdot \\times x_n\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-07-prod_i1k-x_iy_i",
+    "href": "01-stat-intro.html#theorem-07-prod_i1k-x_iy_i",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 07: \\(\\prod_{i=1}^k x_iy_i\\)",
+    "text": "Theorem 07: \\(\\prod_{i=1}^k x_iy_i\\)\n\\[\\prod_{i=1}^k x_iy_i = (\\prod_{i=1}^k x_i)(\\prod_{i=1}^k y_i)\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-08-sigma-sigma-x_iy_j",
+    "href": "01-stat-intro.html#theorem-08-sigma-sigma-x_iy_j",
+    "title": "Introduction to Statistics",
+    "section": "Theorem 08: \\(\\Sigma \\Sigma (x_i+y_j)\\)",
+    "text": "Theorem 08: \\(\\Sigma \\Sigma (x_i+y_j)\\)\n\n\\(\\displaystyle  \\sum_{i=1}^m \\sum_{j=1}^n (x_i+y_j)=n\\sum_{i=1}^m x_i + m \\sum_{i=1}^n y_j\\)\n\n\\(\\displaystyle \\sum_{i=1}^m (x_i+y_1+x_i+y_2+\\cdots+x_i+y_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m \\{(x_i+x_i+\\cdots \\text{up to n})+(y_1+y_2+\\cdots+y_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m(nx_i+\\sum_{j=1}^ny_j)\\)\n\\(\\displaystyle (nx_1+\\sum_{j=1}^ny_j+nx_2+ \\sum_{j=1}^ny_j)+\\cdots+nx_m+\\sum_{j=1}^ny_j))\\)\n\\(\\displaystyle n\\sum_{i=1}^m x_i+m\\sum_{j=1}^ny_j\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j",
+    "href": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j",
+    "title": "Introduction to Statistics",
+    "section": "Theorem: \\(\\Sigma \\Sigma x_iy_j\\)",
+    "text": "Theorem: \\(\\Sigma \\Sigma x_iy_j\\)\n\\(\\displaystyle \\sum_{i=1}^m \\sum_{i=1}^n x_iy_j=(\\sum_{i=1}^n x_i) (\\sum_{i=1}^n y_j)\\)\n\n\\(\\displaystyle \\sum_{i=1}^m (x_iy_1+x_iy_2+\\cdots+x_iy_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m x_i(y_1+y_2+\\cdots+y_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m x_i \\sum_{i=1}^n y_i\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j-1",
+    "href": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j-1",
+    "title": "Introduction to Statistics",
+    "section": "Theorem: \\(\\Sigma \\Sigma (X_i+Y_j)\\)",
+    "text": "Theorem: \\(\\Sigma \\Sigma (X_i+Y_j)\\)\n\\(\\displaystyle \\sum_{i=1}^n \\sum_{j=1}^m (x_i + y_j) = m \\sum_{i=1}^n x_i + n \\sum_{i=1}^m y_j\\)\n\nL.H.S = \\(\\displaystyle \\sum_{i=1}^n (x_i + y_1 + x_i + y_2 + \\cdots +x_i + y_m)\\)\n\n\n= \\(\\displaystyle \\sum_{i=1}^n mx_i + (y_1 + y_2 + y_m) = \\sum_{i=1}^n (mx_i + \\sum_{j=1}^m y_j)\\)\n\n\nNow expand \\(\\displaystyle \\sum_{i=1}^n mx_i\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem--01",
+    "href": "01-stat-intro.html#problem--01",
+    "title": "Introduction to Statistics",
+    "section": "Problem -01",
+    "text": "Problem -01\nGiven\n\\(f_1=2, f_2 = 4, f_3 = 6\\)\n\\(x_1 = -3, x_2 =7, x_3 = 4\\)\nFind the values of\n\n\\(\\sum f_ix_i\\)\n\\(\\sum f_ix_i^2\\)\n\\(\\sum f_i(x_i-5)^2\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---02",
+    "href": "01-stat-intro.html#problem---02",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 02",
+    "text": "Problem - 02\n\nFind the value of \\(\\sum_{i=1}^{10} (x_i-4)\\)\n\nwhere \\(\\sum_{i=1}^{10} x_i = 20\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---03",
+    "href": "01-stat-intro.html#problem---03",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 03",
+    "text": "Problem - 03\n\nDiscrete vs continuous variable\nProve \\[\\sum_{i=1}^k abx_i = ab \\sum_{i=1}^k x_i\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---04",
+    "href": "01-stat-intro.html#problem---04",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 04",
+    "text": "Problem - 04\nProve \\[\\prod_{i=1}^n c =c^n\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---05",
+    "href": "01-stat-intro.html#problem---05",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 05",
+    "text": "Problem - 05\n\nFind the value of\n\n\\[\\sum_{i=1}^{10} (x_i-4)\\] where \\[\\sum_{i=1}^{10}=20\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---06",
+    "href": "01-stat-intro.html#problem---06",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 06",
+    "text": "Problem - 06\n\\(\\displaystyle \\sum_{i=1}^{10} x_i = 20, \\sum_{i=1}^{10} x_i^2 = 400\\)\nFind the value of \\(\\displaystyle \\sum_{i=1}^{10} (x_i^2+5x_i+10)\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#problem---07",
+    "href": "01-stat-intro.html#problem---07",
+    "title": "Introduction to Statistics",
+    "section": "Problem - 07",
+    "text": "Problem - 07\n\n\n\nX\n20\n25\n\n\n\n\nY\n15\n30\n\n\n\n\nProve Sum of Square \\(\\ne\\) Square of Sum\nProve \\(\\displaystyle \\sum X_iY_i \\ne \\sum \\sum X_iY_i\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#creative-question---01",
+    "href": "01-stat-intro.html#creative-question---01",
+    "title": "Introduction to Statistics",
+    "section": "Creative Question - 01",
+    "text": "Creative Question - 01\n Given below are the daily income and expense of ten workers.\n\n\n\n\nIncome (x)\n\n\n120\n\n\n130\n\n\n\n\n\n\nExpense (y)\n\n\n80\n\n\n120\n\n\n\n\nFrom above data, prove\n\n\\[\\sum_{i=1}^{2}x_iy_i \\ne (\\sum_{i=1}^{2}x_i)(\\sum_{i=1}^{2}y_j)\\] \n\\[\\sum_{i=1}^{2} \\sum_{j=1}^{2}x_iy_j=(\\sum_{i=1}^{2}x_i)(\\sum_{j=1}^{2}y_j)\\] \n\\[\\sum_{i=1}^{2} \\sum_{j=1}^{2}(x_i-y_j)=2 \\times \\sum_{i=1}^{2}x_i- 2 \\times \\sum_{j=1}^{2}y_j\\]"
+  },
+  {
+    "objectID": "01-stat-intro.html#creative-question---02",
+    "href": "01-stat-intro.html#creative-question---02",
+    "title": "Introduction to Statistics",
+    "section": "Creative Question - 02",
+    "text": "Creative Question - 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIncome (x)\n120\n130\n88\n150\n175\n144\n180\n200\n160\n155\n\n\n\n\nExpense (y)\n80\n120\n70\n100\n160\n114\n170\n195\n140\n131\n\n\n\nProve\n\n\\(\\displaystyle \\sum_{i=1}^{10} \\sum_{j=1}^{10}x_iy_j=(\\sum_{i=1}^{10}x_i)(\\sum_{j=1}^{10}y_j)\\)$\n\\(\\displaystyle \\sum_{i=1}^{10} \\sum_{j=1}^{10}(x_i-y_j)=10 \\times \\sum_{i=1}^{10}x_i- 10 \\times \\sum_{j=1}^{10}y_j\\)\n\\(\\displaystyle \\sum_{i=1}^{10}x_iy_i \\ne (\\sum_{i=1}^{10}x_i)(\\sum_{i=1}^{10}y_j)\\)"
+  },
+  {
+    "objectID": "01-stat-intro.html#end-of-chapter-01",
+    "href": "01-stat-intro.html#end-of-chapter-01",
+    "title": "Introduction to Statistics",
+    "section": "End of Chapter 01!",
+    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+  },
+  {
+    "objectID": "01-stat-intro.html#population-types",
+    "href": "01-stat-intro.html#population-types",
+    "title": "Introduction to Statistics",
+    "section": "Population Types",
+    "text": "Population Types\n\nFinite\nInfinite\n\nExamples\nGroup/collection of –\n\nstudents in a classroom\nstars in the sky\npossible outcomes when flipping a coin repeatedly\nbooks in a library\nwater molecules in the ocean\nemployees in a company"
+  },
+  {
+    "objectID": "01-stat-intro.html#variable-examples",
+    "href": "01-stat-intro.html#variable-examples",
+    "title": "Introduction to Statistics",
+    "section": "Variable Examples",
+    "text": "Variable Examples\n\nIncome of a regular employee\nIncome of a freelancer\nAny unchanging number, e.g, \\(\\pi\\)\n\nResult of a die throw\nFather’s name\nMark of a subject\nGPA of a student"
+  },
+  {
+    "objectID": "01-stat-intro.html#double-summation-example",
+    "href": "01-stat-intro.html#double-summation-example",
+    "title": "Introduction to Statistics",
+    "section": "Double Summation Example",
+    "text": "Double Summation Example\n\n\n\nX\n20\n25\n15\n\n\n\n\nY\n15\n30\n20"
+  },
+  {
+    "objectID": "01-stat-intro.html#creative-questions",
+    "href": "01-stat-intro.html#creative-questions",
+    "title": "Introduction to Statistics",
+    "section": "Creative Questions",
+    "text": "Creative Questions\nLook here"
   }
 ]

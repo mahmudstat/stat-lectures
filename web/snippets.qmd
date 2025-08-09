@@ -91,6 +91,13 @@ or `quit(save = "no")`
 
 ## Git
 
+### Pull if remote is ahead
+
+```{.git code-line-numbers="true"}
+git pull --rebase
+```
+
+
 ### Revert all tracked files in the working directory
 
 ```{.git code-line-numbers="true"}
