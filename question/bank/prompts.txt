@@ -1,8 +1,8 @@
-Switch to project directory, then run
-
-python3 fetch_questions.py
-pdflatex all_questions.tex
-
+Steps
+1. Sort sheet by field (Z to A), chapter, topic, qcat
+2. Switch to project directory
+3. python3 fetch_questions.py
+4. pdflatex all_questions.tex
 
 I have some question on a google sheet, where there latex expressions. sl question type noq (no of questions) field chapter topic qcat (Question Category) are the columns.
 
