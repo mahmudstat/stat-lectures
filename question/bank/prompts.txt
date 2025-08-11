@@ -1,0 +1,15 @@
+python3 fetch_questions.py
+pdflatex all_questions.tex
+
+
+I have some question on a google sheet, where there latex expressions. sl question type noq (no of questions) field chapter topic qcat (Question Category) are the columns.
+
+A sample row
+
+1\question \textbf{Three objects can be placed in 2 positions in -- ways.}
+
+\choice{3}{4}{6}{8}{c}, mcq,1,probability,probability,permutation,single
+
+I want to make a pdf using them in latex. Filed would become PART, chapter \section, topic \subsection, qcat \subsubsection.
+
+How can I do it?
