@@ -1,3 +1,5 @@
+Switch to project directory, then run
+
 python3 fetch_questions.py
 pdflatex all_questions.tex
 

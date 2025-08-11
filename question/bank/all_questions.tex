@@ -3,15 +3,28 @@
 \usepackage{float}
 \usepackage{ifthen}
 \usepackage{array}
+\usepackage{graphicx}
+\iffalse
 \usepackage{geometry}
 \geometry{
 legalpaper, total={177.8mm, 290mm},left=10mm, right=10mm,
 top=7mm, bottom=10mm,
 }
+\fi
+\usepackage[a4paper,
+    left=10mm, right=10mm,
+    top=7mm, bottom=10mm,
+    total={170mm, 297mm}]{geometry}
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
-\usepackage{multicol} %as questions will be in a single column
 \usepackage{hhline}
+\usepackage{multicol}
 \usepackage[table]{xcolor}
+
+% Added hyperref package for clickable links and bookmarks
+\usepackage[hidelinks,bookmarks=true,linktoc=all]{hyperref}
+% hidelinks: makes links invisible (no colored box)
+% bookmarks=true: creates bookmarks in the PDF viewer
+% linktoc=all: makes the entire TOC entry (not just page number) clickable
 
 % Accumulate the answers. Unmodified from Phil Hirschorn's answer
 % https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
@@ -112,12 +125,41 @@ top=7mm, bottom=10mm,
 \fi\fi\fi}
 
 \begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
 
-\begin{center}
-\textbf{\Huge Statistics Question Bank}
-\end{center}
-\hrule
-\vspace{1cm} % Add some space after the header
+        \Huge
+        \textbf{Statistics Question Bank} \\
+
+
+
+        \vspace{0.5cm}
+
+
+
+        \vspace{1.5cm}
+
+        \textbf{Abdullah Al Mahmud}
+
+        \vspace{1.5cm}
+
+        \includegraphics[width=19cm]{data}
+
+        \vfill
+
+            \textbf{Last updated: \today}
+        \vspace{0.8cm}
+
+             \includegraphics[width=1cm]{logo}
+
+        \Large
+        portal.statmania.info\\
+
+    \end{center}
+\end{titlepage}
+
+\newpage
 
 \tableofcontents % Automatically generates the table of contents
 
@@ -127,24 +169,24 @@ top=7mm, bottom=10mm,
 
 \part{Probability}\begin{questions}
 \section{Probability}
-\subsection{Permutation}
-\subsubsection{Single}
-\question \textbf{Three objects can be placed in 2 positions in -- ways.}
-\choice{3}{4}{6}{8}{c}
 \subsection{Combination}
-\subsubsection{Single}
+\subsubsection{Simple}
 \question \textbf{In how many ways can a team of 2 be formed from 4 people?}
 \choice{4}{6}{8}{12}{b}
-\subsection{Permutation}
-\subsubsection{Single}
-\question \textbf{$\displaystyle ^np_r=$}
-\choice{$\displaystyle \frac {n!}{(n-r)!}$}{$\displaystyle \frac {n!}{(n+r)!}$}{$\displaystyle \frac {n!}{r!}$}{$\displaystyle \frac {n!}{(r-n)!}$}{a}
-\subsection{Combination}
-\subsubsection{Single}
 \question \textbf{$\displaystyle ^nC_r=$}
 \choice{$\displaystyle \frac {n!}{(n-1)!(n+r)!}$}{$\displaystyle \frac {r!}{n!(n-r)!}$}{$\displaystyle \frac {n!(n-1)!}{r!}$}{$\displaystyle \frac {n!}{(r-n)!}$}{a}
 \subsection{Conceptual}
-\subsubsection{Single}
+\subsubsection{Multiple Completion}
+\question \textbf{Possible value of probability}
+
+i. -1 \quad
+ii. 0.5 \quad
+iii. 0
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}
+\subsubsection{Simple}
 \question \textbf{What is the probability that at least one item in a sample space will occurr?}
 \choice{0}{0.5}{1}{Undefined}{c}
 \question \textbf{The probability of two disjoint sets happening together is:}
@@ -164,17 +206,6 @@ top=7mm, bottom=10mm,
 \question \textbf{The third axiom of probability is --}
 \choice{$0 \le P(A) \le 1$}{$P(S) = 1$}{$\displaystyle P(A_1 U A_2 U \cdots U
 A_n) = \sum_{i=1}^{\infty}P(A_i)$}{$P(A) = 1 - P(A)$}{c}
-\subsubsection{Multiple Completion}
-\question \textbf{Possible value of probability}
-
-i. -1 \quad
-ii. 0.5 \quad
-iii. 0
-
-\textbf{Which one is correct?}
-
-\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}
-\subsubsection{Single}
 \question \textbf{An act repeated under some specific conditions is called --}
 \choice{Event}{Experiment}{Sample}{Sample space}{b}
 \question \textbf{$P(0)$ implies -- }
@@ -201,20 +232,19 @@ iii. $A$: Number is less than 5, \quad $B$: Number is greater than 6
 
 \textbf{Which one is correct?}
 
-\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}\end{questions}
-\vspace{.3cm}
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{c}
+\subsection{Permutation}
+\subsubsection{Simple}
+\question \textbf{Three objects can be placed in 2 positions in -- ways.}
+\choice{3}{4}{6}{8}{c}
+\question \textbf{$\displaystyle ^np_r=$}
+\choice{$\displaystyle \frac {n!}{(n-r)!}$}{$\displaystyle \frac {n!}{(n+r)!}$}{$\displaystyle \frac {n!}{r!}$}{$\displaystyle \frac {n!}{(r-n)!}$}{a}\end{questions}
 
-\begin{center}
-
-“The only thing that’s certain is uncertainty.” --- John Allen Paulos
-
-  --- Abdullah Al Mahmud ---
-\end{center}
 
 \pagebreak
 \bigskip
 
-\begin{multicols}{3}
+\begin{multicols}{2}
 [
 Answer Key
 ]

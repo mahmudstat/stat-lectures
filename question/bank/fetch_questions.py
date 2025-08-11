@@ -27,15 +27,28 @@ def generate_latex_exam(csv_file_path, output_latex_file):
 \usepackage{float}
 \usepackage{ifthen}
 \usepackage{array}
+\usepackage{graphicx}
+\iffalse
 \usepackage{geometry}
 \geometry{
 legalpaper, total={177.8mm, 290mm},left=10mm, right=10mm,
 top=7mm, bottom=10mm,
 }
+\fi
+\usepackage[a4paper,
+    left=10mm, right=10mm,
+    top=7mm, bottom=10mm,
+    total={170mm, 297mm}]{geometry}
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
-\usepackage{multicol} %as questions will be in a single column
 \usepackage{hhline}
+\usepackage{multicol}
 \usepackage[table]{xcolor}
+
+% Added hyperref package for clickable links and bookmarks
+\usepackage[hidelinks,bookmarks=true,linktoc=all]{hyperref}
+% hidelinks: makes links invisible (no colored box)
+% bookmarks=true: creates bookmarks in the PDF viewer
+% linktoc=all: makes the entire TOC entry (not just page number) clickable
 
 % Accumulate the answers. Unmodified from Phil Hirschorn's answer
 % https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
@@ -138,12 +151,41 @@ top=7mm, bottom=10mm,
     # --- Document Start and Header (from your previous prompt) ---
     latex_content += r"""
 \begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
 
-\begin{center}
-\textbf{\Huge Statistics Question Bank}
-\end{center}
-\hrule
-\vspace{1cm} % Add some space after the header
+        \Huge
+        \textbf{Statistics Question Bank} \\
+
+
+
+        \vspace{0.5cm}
+
+
+
+        \vspace{1.5cm}
+
+        \textbf{Abdullah Al Mahmud}
+
+        \vspace{1.5cm}
+
+        \includegraphics[width=19cm]{data}
+
+        \vfill
+
+            \textbf{Last updated: \today}
+        \vspace{0.8cm}
+
+             \includegraphics[width=1cm]{logo}
+
+        \Large
+        portal.statmania.info\\
+
+    \end{center}
+\end{titlepage}
+
+\newpage
 
 \tableofcontents % Automatically generates the table of contents
 
@@ -160,8 +202,6 @@ top=7mm, bottom=10mm,
 
     # Flag to indicate if questions environment is currently open
     questions_env_open = False
-    # multicolumn_env_open is no longer needed as we're not using multicolumns for questions
-    # multicolumn_env_open = False
 
     # --- Iterate through each row of the DataFrame and build LaTeX content ---
     for index, row in df.iterrows():
@@ -177,7 +217,6 @@ top=7mm, bottom=10mm,
             if questions_env_open:
                 latex_content += r"\end{questions}"
                 questions_env_open = False
-            # Removed multicolumn_env_open check and closure here
 
             # Start a new part
             latex_content += f"\n\\part{{{field}}}"
@@ -216,24 +255,16 @@ top=7mm, bottom=10mm,
     # --- End the questions environment at the very end of the document ---
     if questions_env_open:
         latex_content += r"\end{questions}"
-    # Removed multicolumn_env_open check and closure here
 
     # --- LaTeX Postamble ---
     # This includes the motivational quote and author from your previous LaTeX file.
     latex_content += r"""
-\vspace{.3cm}
 
-\begin{center}
-
-“The only thing that’s certain is uncertainty.” --- John Allen Paulos
-
-  --- Abdullah Al Mahmud ---
-\end{center}
 
 \pagebreak
 \bigskip
 
-\begin{multicols}{3}
+\begin{multicols}{2}
 [
 Answer Key
 ]
