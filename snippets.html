@@ -151,12 +151,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
         <li>
-    <a class="dropdown-item" href="https://github.com/quarto-dev/quarto-cli/issues"><i class="bi bi-bug" role="img">
+    <a class="dropdown-item" href="https://github.com/mahmudstat/stat-lectures/issues"><i class="bi bi-bug" role="img">
 </i> 
  <span class="dropdown-text">Report a Bug</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/quarto-dev/quarto-cli/discussions"><i class="bi bi-chat-right-text" role="img">
+    <a class="dropdown-item" href="https://github.com/mahmudstat/stat-lectures/discussions"><i class="bi bi-chat-right-text" role="img">
 </i> 
  <span class="dropdown-text">Ask a Question</span></a>
   </li>  
@@ -187,12 +187,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#replace-new-line-with-double-new-line" id="toc-replace-new-line-with-double-new-line" class="nav-link" data-scroll-target="#replace-new-line-with-double-new-line">Replace new line with double new line</a></li>
   <li><a href="#convert-all-mp4-to-mp3" id="toc-convert-all-mp4-to-mp3" class="nav-link" data-scroll-target="#convert-all-mp4-to-mp3">Convert all mp4 to mp3</a></li>
   </ul></li>
+  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex">Latex</a>
+  <ul class="collapse">
+  <li><a href="#long-comment" id="toc-long-comment" class="nav-link" data-scroll-target="#long-comment">Long Comment</a></li>
+  </ul></li>
   <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a>
   <ul class="collapse">
   <li><a href="#quit-r-from-terminal-in-one-go" id="toc-quit-r-from-terminal-in-one-go" class="nav-link" data-scroll-target="#quit-r-from-terminal-in-one-go">Quit R from terminal in one go</a></li>
   </ul></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
   <ul class="collapse">
+  <li><a href="#pull-if-remote-is-ahead" id="toc-pull-if-remote-is-ahead" class="nav-link" data-scroll-target="#pull-if-remote-is-ahead">Pull if remote is ahead</a></li>
   <li><a href="#revert-all-tracked-files-in-the-working-directory" id="toc-revert-all-tracked-files-in-the-working-directory" class="nav-link" data-scroll-target="#revert-all-tracked-files-in-the-working-directory">Revert all tracked files in the working directory</a></li>
   <li><a href="#repository-specific-confiuguration" id="toc-repository-specific-confiuguration" class="nav-link" data-scroll-target="#repository-specific-confiuguration">Repository-specific confiuguration</a></li>
   <li><a href="#global-confiuguration" id="toc-global-confiuguration" class="nav-link" data-scroll-target="#global-confiuguration">Global confiuguration</a></li>
@@ -277,43 +282,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-12"><a href="#cb8-12"></a><span class="va">IFS</span><span class="op">=</span>o</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
+<section id="latex" class="level2">
+<h2 class="anchored" data-anchor-id="latex">Latex</h2>
+<section id="long-comment" class="level3">
+<h3 class="anchored" data-anchor-id="long-comment">Long Comment</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">\iffalse</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co">This is a long block of text that serves as a comment. It will be completely ignored by the LaTeX compiler and will not appear in the final output. You can write as many paragraphs as you like here. This is an excellent alternative to using the `comment` package.</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="co">\fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
 <section id="r" class="level2">
 <h2 class="anchored" data-anchor-id="r">R</h2>
 <section id="quit-r-from-terminal-in-one-go" class="level3">
 <h3 class="anchored" data-anchor-id="quit-r-from-terminal-in-one-go">Quit R from terminal in one go</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">q</span>(<span class="st">"no"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">q</span>(<span class="st">"no"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>or <code>quit(save = "no")</code></p>
 </section>
 </section>
 <section id="git" class="level2">
 <h2 class="anchored" data-anchor-id="git">Git</h2>
+<section id="pull-if-remote-is-ahead" class="level3">
+<h3 class="anchored" data-anchor-id="pull-if-remote-is-ahead">Pull if remote is ahead</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git pull --rebase</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 <section id="revert-all-tracked-files-in-the-working-directory" class="level3">
 <h3 class="anchored" data-anchor-id="revert-all-tracked-files-in-the-working-directory">Revert all tracked files in the working directory</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>To clean untracked files as well:</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git checkout .</span>
-<span id="cb11-2"><a href="#cb11-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>git checkout .</span>
+<span id="cb13-2"><a href="#cb13-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="repository-specific-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="repository-specific-confiuguration">Repository-specific confiuguration</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>git config --local user.name 'Your Name'</span>
-<span id="cb12-2"><a href="#cb12-2"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="#cb14-1"></a>git config --local user.name 'Your Name'</span>
+<span id="cb14-2"><a href="#cb14-2"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="global-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="global-confiuguration">Global confiuguration</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>`git config --global user.name 'Your Name'`</span>
-<span id="cb13-2"><a href="#cb13-2"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="#cb15-1"></a>`git config --global user.name 'Your Name'`</span>
+<span id="cb15-2"><a href="#cb15-2"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="excel-google-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="excel-google-sheet">Excel / Google Sheet</h2>
 <section id="mode-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="mode-for-ordinal-data">Mode for ordinal data</h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="#cb14-1"></a>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="#cb16-1"></a>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="median-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="median-for-ordinal-data">Median for ordinal data</h3>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="#cb15-1"></a>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb17-1"><a href="#cb17-1"></a>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

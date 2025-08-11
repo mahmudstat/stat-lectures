@@ -78,6 +78,17 @@ done
 IFS=o
 ```
 
+## Latex
+
+### Long Comment
+
+```{.latex code-line-numbers="true"}
+\iffalse
+This is a long block of text that serves as a comment. It will be completely ignored by the LaTeX compiler and will not appear in the final output. You can write as many paragraphs as you like here. This is an excellent alternative to using the `comment` package.
+\fi
+```
+
+
 ## R
 
 ### Quit R from terminal in one go

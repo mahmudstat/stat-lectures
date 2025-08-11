@@ -46,7 +46,7 @@
     "href": "snippets.html#git",
     "title": "Code Snippets",
     "section": "Git",
-    "text": "Git\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
+    "text": "Git\n\nPull if remote is ahead\ngit pull --rebase\n\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
   },
   {
     "objectID": "snippets.html#excel-google-sheet",
@@ -131,5 +131,12 @@
     "title": "Data Science Hub",
     "section": "",
     "text": "Welcome to Data Science Hub\nExplore essential tools and visualizations for your data journey.\n\n\n\n\nMake a Bar Chart\n\n\nVisualize categorical data\n\n\nCompare across groups\n\n\n\n\n\nPlot a Line Chart\n\n\nTrack trends over time\n\n\nInteractive options available\n\n\n\n\n\nCreate a Pie Chart\n\n\nShow proportions clearly\n\n\nCustomize colors and labels\n\n\n\n\n\nExplore a Dataset\n\n\nUpload your own CSV\n\n\nClean and filter with ease\n\n\n\n\n\nRun a Model\n\n\nUse regression or trees\n\n\nSee predictive accuracy\n\n\n\n\n\nWrite R or Python\n\n\nEmbed code with output\n\n\nLearn by doing"
+  },
+  {
+    "objectID": "snippets.html#latex",
+    "href": "snippets.html#latex",
+    "title": "Code Snippets",
+    "section": "Latex",
+    "text": "Latex\n\nLong Comment\n\\iffalse\nThis is a long block of text that serves as a comment. It will be completely ignored by the LaTeX compiler and will not appear in the final output. You can write as many paragraphs as you like here. This is an excellent alternative to using the `comment` package.\n\\fi"
   }
 ]
