@@ -3,7 +3,8 @@ project:
   output-dir: ../
 
 website:
-  title: "Stat Mania Lectures"
+  title: "Stat Mania Docs"
+  favicon: resources/logo.png
   repo-url: https://github.com/mahmudstat/stat-lectures
   navbar:
     background: light
@@ -12,19 +13,30 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - lectures.qmd
-      - qbank.qmd
-      - resources.qmd
-      - href: snippets.qmd
-        text: Code Snippet
-      - text: "Help"
+      - text: "Learn"
         menu:
-          - text: "Report a Bug"
-            icon: "bug"
-            href: "https://github.com/mahmudstat/stat-lectures/issues"
-          - text: "Ask a Question"
-            icon: "chat-right-text"
-            href: "https://github.com/mahmudstat/stat-lectures/discussions"
+          - text: "Lectures"
+            icon: "book"
+            href: "lectures.qmd"
+          - text: "Questions"
+            icon: "archive-fill"
+            href: "qbank.qmd"
+      - text: "Resources"
+        menu:
+          - text: "Code Snippet"
+            icon: "code-slash"
+            href: "snippets.qmd"
+          - text: "Stat Misc"
+            icon: "bar-chart-fill"
+            href: "resources.qmd"
+      - text: "About"
+        menu:
+          - text: "Me"
+            icon: "cursor"
+            href: "https://www.thinkermahmud.com/"
+          - text: "Portal"
+            icon: "collection"
+            href: "https://portal.statmania.info"
 
 format:
   html:

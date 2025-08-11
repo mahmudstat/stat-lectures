@@ -88,6 +88,19 @@ This is a long block of text that serves as a comment. It will be completely ign
 \fi
 ```
 
+### Restart Page-numbering
+
+```{.latex code-line-numbers="true"}
+\newpage
+\setcounter{page}{1}
+```
+
+### Push contents to bottom/right of page
+
+```{.latex code-line-numbers="true"}
+\vfill contents to push to bottom
+\hfill contents to push to right
+```
 
 ## R
 
@@ -101,6 +114,12 @@ or `quit(save = "no")`
 
 
 ## Git
+
+### Rename files with git
+
+```{.git code-line-numbers="true"}
+git mv old_file new_file
+```
 
 ### Pull if remote is ahead
 

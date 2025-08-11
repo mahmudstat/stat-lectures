@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Code Snippets – Stat Mania Lectures</title>
+<title>Code Snippets – Stat Mania Docs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,6 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./resources/logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -116,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <img src="./resources/logo.png" alt="Stat Mania Logo." class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Stat Mania Lectures</span>
+    <span class="navbar-title">Stat Mania Docs</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,36 +130,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./lectures.html"> 
-<span class="menu-text">Lectures</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./qbank.html"> 
-<span class="menu-text">Questions</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
-<span class="menu-text">Resources</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./snippets.html" aria-current="page"> 
-<span class="menu-text">Code Snippet</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Help</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-learn" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Learn</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-learn">    
         <li>
-    <a class="dropdown-item" href="https://github.com/mahmudstat/stat-lectures/issues"><i class="bi bi-bug" role="img">
+    <a class="dropdown-item" href="./lectures.html"><i class="bi bi-book" role="img">
 </i> 
- <span class="dropdown-text">Report a Bug</span></a>
+ <span class="dropdown-text">Lectures</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/mahmudstat/stat-lectures/discussions"><i class="bi bi-chat-right-text" role="img">
+    <a class="dropdown-item" href="./qbank.html"><i class="bi bi-archive-fill" role="img">
 </i> 
- <span class="dropdown-text">Ask a Question</span></a>
+ <span class="dropdown-text">Questions</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./snippets.html"><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="dropdown-text">Code Snippet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./resources.html"><i class="bi bi-bar-chart-fill" role="img">
+</i> 
+ <span class="dropdown-text">Stat Misc</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="https://www.thinkermahmud.com/"><i class="bi bi-cursor" role="img">
+</i> 
+ <span class="dropdown-text">Me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://portal.statmania.info"><i class="bi bi-collection" role="img">
+</i> 
+ <span class="dropdown-text">Portal</span></a>
   </li>  
     </ul>
   </li>
@@ -190,6 +209,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex">Latex</a>
   <ul class="collapse">
   <li><a href="#long-comment" id="toc-long-comment" class="nav-link" data-scroll-target="#long-comment">Long Comment</a></li>
+  <li><a href="#restart-page-numbering" id="toc-restart-page-numbering" class="nav-link" data-scroll-target="#restart-page-numbering">Restart Page-numbering</a></li>
+  <li><a href="#push-contents-to-bottomright-of-page" id="toc-push-contents-to-bottomright-of-page" class="nav-link" data-scroll-target="#push-contents-to-bottomright-of-page">Push contents to bottom/right of page</a></li>
   </ul></li>
   <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a>
   <ul class="collapse">
@@ -290,12 +311,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-2"><a href="#cb9-2"></a><span class="co">This is a long block of text that serves as a comment. It will be completely ignored by the LaTeX compiler and will not appear in the final output. You can write as many paragraphs as you like here. This is an excellent alternative to using the `comment` package.</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="co">\fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="restart-page-numbering" class="level3">
+<h3 class="anchored" data-anchor-id="restart-page-numbering">Restart Page-numbering</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">\newpage</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">\setcounter</span>{page}{1}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="push-contents-to-bottomright-of-page" class="level3">
+<h3 class="anchored" data-anchor-id="push-contents-to-bottomright-of-page">Push contents to bottom/right of page</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">\vfill</span> contents to push to bottom</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">\hfill</span> contents to push to right</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="r" class="level2">
 <h2 class="anchored" data-anchor-id="r">R</h2>
 <section id="quit-r-from-terminal-in-one-go" class="level3">
 <h3 class="anchored" data-anchor-id="quit-r-from-terminal-in-one-go">Quit R from terminal in one go</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">q</span>(<span class="st">"no"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">q</span>(<span class="st">"no"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>or <code>quit(save = "no")</code></p>
 </section>
 </section>
@@ -303,35 +334,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="git">Git</h2>
 <section id="pull-if-remote-is-ahead" class="level3">
 <h3 class="anchored" data-anchor-id="pull-if-remote-is-ahead">Pull if remote is ahead</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href="#cb11-1"></a>git pull --rebase</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>git pull --rebase</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="revert-all-tracked-files-in-the-working-directory" class="level3">
 <h3 class="anchored" data-anchor-id="revert-all-tracked-files-in-the-working-directory">Revert all tracked files in the working directory</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a href="#cb12-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="#cb14-1"></a>git checkout .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>To clean untracked files as well:</strong></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a href="#cb13-1"></a>git checkout .</span>
-<span id="cb13-2"><a href="#cb13-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="#cb15-1"></a>git checkout .</span>
+<span id="cb15-2"><a href="#cb15-2"></a>git clean -fd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="repository-specific-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="repository-specific-confiuguration">Repository-specific confiuguration</h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="#cb14-1"></a>git config --local user.name 'Your Name'</span>
-<span id="cb14-2"><a href="#cb14-2"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="#cb16-1"></a>git config --local user.name 'Your Name'</span>
+<span id="cb16-2"><a href="#cb16-2"></a>git config --local user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="global-confiuguration" class="level3">
 <h3 class="anchored" data-anchor-id="global-confiuguration">Global confiuguration</h3>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="#cb15-1"></a>`git config --global user.name 'Your Name'`</span>
-<span id="cb15-2"><a href="#cb15-2"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb17-1"><a href="#cb17-1"></a>`git config --global user.name 'Your Name'`</span>
+<span id="cb17-2"><a href="#cb17-2"></a>git config --global user.email 'your.work.email@company.com'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="excel-google-sheet" class="level2">
 <h2 class="anchored" data-anchor-id="excel-google-sheet">Excel / Google Sheet</h2>
 <section id="mode-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="mode-for-ordinal-data">Mode for ordinal data</h3>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="#cb16-1"></a>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb18-1"><a href="#cb18-1"></a>=INDEX(UNIQUE(I2:I107), MATCH(MAX(COUNTIF(I2:I107, UNIQUE(I2:I107))), COUNTIF(I2:I107, UNIQUE(I2:I107)), 0))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="median-for-ordinal-data" class="level3">
 <h3 class="anchored" data-anchor-id="median-for-ordinal-data">Median for ordinal data</h3>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb17-1"><a href="#cb17-1"></a>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource excel number-lines code-with-copy"><code class="sourceCode"><span id="cb19-1"><a href="#cb19-1"></a>=INDEX({"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, MEDIAN(FILTER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0), ISNUMBER(MATCH(I1:I106, {"Strongly Disagree","Disagree","Neither Agree nor Disagree","Agree","Strongly Agree"}, 0)))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
