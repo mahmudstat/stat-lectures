@@ -359,7 +359,7 @@
     display: none; z-index: 1002;
   }
 
-  #bgColorLabel, #penColorLabel, #penTool, #eraserTool, #resetBg, #undo, #clear {
+  #bgColorLabel, #penColorLabel, #penTool, #eraserTool, #resetBg, #undo, #clear, #downloadCanvas {
     cursor: pointer;
     font-size: 1.4em;
     padding: 6px;
@@ -406,6 +406,12 @@
 
 
       <label style="font-weight: bold; color: red;" id="resetBg" title="Reset background color"><i class="fas fa-fill-drip"></i></label>
+
+      <label style="font-weight: bold; color: green;" id="downloadCanvas" title="Download Drawing" class="icon-button">
+    <i class="fas fa-download"></i>
+  </label>
+
+
     </div>
   </div>
 
@@ -530,6 +536,17 @@
       this.releasePointerCapture(e.pointerId);
     });
   });
+
+  const canvas = document.getElementById('drawingCanvas');
+    const downloadButton = document.getElementById('downloadCanvas');
+
+    downloadButton.addEventListener('click', function () {
+      if (!canvas) return;
+      const link = document.createElement('a');
+      link.href = canvas.toDataURL('image/png');
+      link.download = 'drawing.png';
+      link.click();
+    });
   </script>
 
 
