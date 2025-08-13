@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Stat Mania Docs",
     "section": "",
-    "text": "This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.\nAll the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package.\nQuestions are made using \\(\\LaTeX\\) inside Rstudio."
+    "text": "This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.\nAll the lectures were initially made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. Right now, the files are rendred using Quarto.\nThe following programming/markup languages or frameworks have been used in presentation generation:"
   },
   {
     "objectID": "index.html#how-to-use",
@@ -138,5 +138,12 @@
     "title": "Stat Mania Docs",
     "section": "How to Use",
     "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "index.html#how-to-use-the-presentations",
+    "href": "index.html#how-to-use-the-presentations",
+    "title": "Stat Mania Docs",
+    "section": "How to Use the presentations",
+    "text": "How to Use the presentations\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
   }
 ]

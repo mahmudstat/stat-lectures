@@ -1,7 +1,7 @@
 --- 
 title: "Statistics and Mathematics Notes"
 author: "Abdullah Al Mahmud"
-date: "2025-08-05"
+date: "2025-08-13"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:

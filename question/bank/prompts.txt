@@ -15,3 +15,25 @@ A sample row
 I want to make a pdf using them in latex. Filed would become PART, chapter \section, topic \subsection, qcat \subsubsection.
 
 How can I do it?
+
+## Latex to csv
+
+I have some questions like
+
+\question \textbf{Which cannot be performed using Univariate data?}
+\choice{Central tendency}{Dispersion}{Skewness}{Regression}{d}
+
+or
+
+\question \textbf{A researcher collected data on age and income of the
+people in a city. The variables are --}
+
+i. bi-variate \\
+ii. quantitative \\
+iii. qualitative
+
+\textbf{Which one is correct?}
+
+\choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a}
+
+or

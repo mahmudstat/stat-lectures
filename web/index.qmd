@@ -5,11 +5,26 @@ title: "Stat Mania Docs"
 
 This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.
 
-All the lectures are made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE](https://posit.co/download/rstudio-desktop/). The presentations were made using the [revealjs](https://revealjs.com/) package.
+<center>
+<i style="color:gold; font-size:8.5em; float: right; padding: 10px;" class="fa-solid fa-signal"></i>
+</center>
 
-Questions are made using $\LaTeX$ inside Rstudio.
+All the lectures were initially made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE](https://posit.co/download/rstudio-desktop/). The presentations were made using the [revealjs](https://revealjs.com/) package. Right now, the files are rendred using [Quarto](https://quarto.org/docs/presentations/revealjs/).
 
-## How to Use
+The following programming/markup languages or frameworks have been used in presentation generation:
+
+* **HTML** (HyperText Markup Language): The standard markup language for creating web pages.
+* **CSS** (Cascading Style Sheets): A stylesheet language used for designing web pages.
+* **JavaScript**: A programming language enabling interactive web pages.
+* **R**: A statistical programming language.
+* **LaTeX**: A technical document preparation system.
+* **Markdown**: A lightweight markup language for creating documents.
+* **Git**: A distributed version control system for tracking changes in source code.
+* **Bash**: A programming language and a command-line interpreter to interact with an operating system and run programs.
+* **YAML** (YAML Ain't Markup Language): A human-readable data serialization language used for configuration files.
+* **Quarto**: A technical publishing system.
+
+## How to Use the presentations
 
 - Press `space` or down-arrow ($\downarrow$) to go the next slide or see hidden contents.
 - Press up-arrow ($\uparrow$) or `P` to go the previous slide.

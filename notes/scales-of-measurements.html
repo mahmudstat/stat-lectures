@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1.2 Discrete distributions | Statistics and Mathematics Notes</title>
+  <title>0.1 Scales of Measurements | Statistics and Mathematics Notes</title>
   <meta name="description" content="Notes on Statistics And Mathematics" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1.2 Discrete distributions | Statistics and Mathematics Notes" />
+  <meta property="og:title" content="0.1 Scales of Measurements | Statistics and Mathematics Notes" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Notes on Statistics And Mathematics" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1.2 Discrete distributions | Statistics and Mathematics Notes" />
+  <meta name="twitter:title" content="0.1 Scales of Measurements | Statistics and Mathematics Notes" />
   
   <meta name="twitter:description" content="Notes on Statistics And Mathematics" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="list-of-probability-distributions.html"/>
-
+<link rel="prev" href="statistics.html"/>
+<link rel="next" href="random-variable.html"/>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -111,51 +111,71 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="discrete-distributions" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Discrete distributions<a href="discrete-distributions.html#discrete-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Probability Mass Functions (PMF)</p>
+<div id="scales-of-measurements" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Scales of Measurements<a href="scales-of-measurements.html#scales-of-measurements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="interval-scales" class="section level3 hasAnchor" number="0.1.1">
+<h3><span class="header-section-number">0.1.1</span> Interval Scales<a href="scales-of-measurements.html#interval-scales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="examples" class="section level4 hasAnchor" number="0.1.1.1">
+<h4><span class="header-section-number">0.1.1.1</span> Examples<a href="scales-of-measurements.html#examples" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Temperature (Celsius scale)</li>
+<li>Dates (AD)</li>
+<li>Location in Cartesian coordinates</li>
+<li>Direction measured in degrees</li>
+</ul>
+</div>
+<div id="why-locations-in-cartesian-coordinates-are-interval-data" class="section level4 hasAnchor" number="0.1.1.2">
+<h4><span class="header-section-number">0.1.1.2</span> Why Locations in Cartesian coordinates are <strong>interval data</strong><a href="scales-of-measurements.html#why-locations-in-cartesian-coordinates-are-interval-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Locations in Cartesian coordinates are <strong>interval data</strong> because:</p>
+<p>In short, <strong><em>— <span class="math inline">\(x=10\)</span> is not “twice as far to the right” as <span class="math inline">\(x=5\)</span></em></strong></p>
+<p><strong>Detailed</strong></p>
 <ol style="list-style-type: decimal">
-<li><span class="math inline">\(P(x) = \frac{1}{14} (a+2x); x = -3, -2, -1, 0, 1, 2, 3\)</span></li>
-<li><span class="math inline">\(P(x) = k(x-2); x = 3, 4,5,6,7,8\)</span></li>
-<li><span class="math inline">\(P(x) = \frac{x-1}{k}; x=2,3,4,5\)</span></li>
-<li><span class="math inline">\(P(x) = \frac{3-|4-x|}{k}; x=2,3,4,5,6\)</span></li>
-<li><span class="math inline">\(p(x) = \frac{x+4}{30}; x=0,1,2,3,4\)</span></li>
-<li><span class="math inline">\(P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3\)</span></li>
-<li><span class="math inline">\(P(x) = \frac{x+1}{k}; x= 1,2,3,4\)</span></li>
+<li><p><strong>Equal intervals have equal meaning</strong></p>
+<ul>
+<li>In the Cartesian system, the difference between two <span class="math inline">\(x\)</span>-coordinates (or two <span class="math inline">\(y\)</span>-coordinates) represents the same physical distance, regardless of where it is measured.</li>
+<li>For example, moving from <span class="math inline">\(x = 2\)</span> to <span class="math inline">\(x = 5\)</span> is a change of <span class="math inline">\(3\)</span> units, which is the same “amount of movement” as going from <span class="math inline">\(x = 20\)</span> to <span class="math inline">\(x = 23\)</span>.</li>
+</ul></li>
+<li><p><strong>Arbitrary origin</strong></p>
+<ul>
+<li>The <span class="math inline">\((0,0)\)</span> origin is chosen for convenience, not because it represents an absolute “zero” location.</li>
+<li>A point at <span class="math inline">\(x = 0\)</span> does not mean “no position” — it’s just the reference point we picked.</li>
+<li>Because the zero is arbitrary, coordinates behave like interval data, not ratio data.</li>
+</ul></li>
+<li><p><strong>Meaningful differences, not meaningful ratios</strong></p>
+<ul>
+<li>You can meaningfully talk about differences (<span class="math inline">\(\Delta x\)</span> or <span class="math inline">\(\Delta y\)</span>) to measure displacement.</li>
+<li>But a ratio like “this point’s <span class="math inline">\(x\)</span>-coordinate is twice that of another” is meaningless — <span class="math inline">\(x=10\)</span> is not “twice as far to the right” as <span class="math inline">\(x=5\)</span> in an absolute sense, because the zero point is arbitrary.</li>
+</ul></li>
 </ol>
-<div id="continuous" class="section level3 hasAnchor" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Continuous<a href="discrete-distributions.html#continuous" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Probability Density Functions (PDF)</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(f(x) = 2x; 0 &lt; x &lt; 1\)</span></li>
-<li><span class="math inline">\(f(x) = \frac{1}{30} (3+2x); 2 &lt; x &lt; 5\)</span></li>
-<li><span class="math inline">\(f(x) = ax^2; 0 &lt; x &lt; 4\)</span></li>
-<li><span class="math inline">\(f(x) = kx^2 + kx + \frac 18; 0 &lt; x &lt; 8\)</span></li>
-<li><span class="math inline">\(f(x) = kx; 0 &lt; x &lt; 4\)</span></li>
-<li><span class="math inline">\(f(x) = 3x^2; 0 \le x \le 1\)</span></li>
-<li><span class="math inline">\(f(y) = k(3y+5); 1 &lt; y &lt; 5\)</span></li>
-<li><span class="math inline">\(f(z) = \frac29 (3z-z^2); 0 \le x \le 3\)</span></li>
-</ol>
-<div id="joint-pdf" class="section level4 hasAnchor" number="1.2.1.1">
-<h4><span class="header-section-number">1.2.1.1</span> Joint PDF<a href="discrete-distributions.html#joint-pdf" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li><span class="math display">\[f(x,y) = 8xy; 0 &lt; x, y &lt;1\]</span></li>
-<li><span class="math display">\[f(x,y) = \frac 3 2 (x+y); 0 &lt; x, y &lt;1\]</span></li>
-<li><span class="math display">\[f(x,y) = 4x(1-y); 0 &lt; x, y &lt;1\]</span></li>
-<li><span class="math display">\[f(x,y) = 6xy^2); 0 &lt; x, y &lt;1\]</span></li>
-</ol>
+<p>So, <strong>Cartesian coordinates</strong> → <strong>interval scale</strong>
+<strong>Distances between points</strong> (via Euclidean distance) → <strong>ratio scale</strong> (because distance has a true zero).</p>
+</div>
+<div id="why-date-is-an-interval-scale" class="section level4 hasAnchor" number="0.1.1.3">
+<h4><span class="header-section-number">0.1.1.3</span> Why Date is an <strong>interval scale</strong><a href="scales-of-measurements.html#why-date-is-an-interval-scale" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In short, <strong><em>A person born in 1940 doesn’t always have double age of a person born in 1950. It’s so only in 1960.</em></strong></p>
+<p><strong>Detailed</strong></p>
+<p>Date is an <strong>interval scale</strong> because it has a meaningful order and equal intervals between measurements, but it lacks a true zero point.</p>
+<ul>
+<li><strong>Order:</strong> Dates can be placed in a specific order (e.g., January 1, 2024, comes before January 2, 2024).</li>
+<li><strong>Equal Intervals:</strong> The duration between any two dates is consistent and measurable. The interval between May 1st and May 10th is exactly 9 days, just as the interval between November 1st and November 10th is 9 days. This allows for meaningful subtraction (e.g., “how many days have passed?”).</li>
+<li><strong>No True Zero:</strong> The starting point of a calendar system (e.g., the year 0 in the Gregorian calendar) is an arbitrary convention, not an absolute absence of time. You can’t say that a year in the 2nd century A.D. is “twice as old” as a year in the 1st century A.D. in a meaningful ratio sense, because the scale doesn’t start from a true zero.</li>
+<li><strong>Meaningful Subtraction, Not Division:</strong> You can meaningfully subtract dates. For example, a person born in 1940 is 10 years older than a person born in 1950 in any given year (<span class="math inline">\(1950 - 1940 = 10\)</span>). However, you cannot meaningfully divide them. The statement “1940 is double 1950” is only true in an arbitrary mathematical sense on a single date, not as a fundamental property of the ages.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <!-- </div> -->
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="list-of-probability-distributions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="random-variable.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

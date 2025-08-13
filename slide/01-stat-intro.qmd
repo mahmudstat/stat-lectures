@@ -176,7 +176,7 @@ Multiplication/division cannot be carried out
 > - Direction measured in degrees
 
 
-For more see [here](https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale)
+For more see [here](https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale) and [Interval Scale discussion on Stat Mania](../notes/scales-of-measurements.html)
 
 ## Operation with scales
 
