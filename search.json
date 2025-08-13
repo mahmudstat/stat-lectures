@@ -53,7 +53,7 @@
     "href": "snippets.html#git",
     "title": "Code Snippets",
     "section": "Git",
-    "text": "Git\n\nPull if remote is ahead\ngit pull --rebase\n\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
+    "text": "Git\n\nRename files with git\ngit mv old_file new_file\n\n\nPull if remote is ahead\ngit pull --rebase\n\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
   },
   {
     "objectID": "snippets.html#excel-google-sheet",
@@ -131,13 +131,6 @@
     "title": "Stat Mania Docs",
     "section": "",
     "text": "This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.\nAll the lectures were initially made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. Right now, the files are rendred using Quarto.\nThe following programming/markup languages or frameworks have been used in presentation generation:"
-  },
-  {
-    "objectID": "index.html#how-to-use",
-    "href": "index.html#how-to-use",
-    "title": "Stat Mania Docs",
-    "section": "How to Use",
-    "text": "How to Use\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
   },
   {
     "objectID": "index.html#how-to-use-the-presentations",

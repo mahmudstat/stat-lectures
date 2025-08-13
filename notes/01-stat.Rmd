@@ -7,18 +7,18 @@ output:
 
 # Statistics {-} 
 
-## Scales of Measurements
+## Scales of Measurements {-}
 
-### Interval Scales
+### Interval Scales {-}
 
-#### Examples
+#### Examples {-}
 
 - Temperature (Celsius scale)
 - Dates (AD)
 - Location in Cartesian coordinates
 - Direction measured in degrees
 
-#### Why Locations in Cartesian coordinates are **interval data**
+#### Why Locations in Cartesian coordinates are **interval data** {-}
 
 Locations in Cartesian coordinates are **interval data** because:
 
@@ -46,7 +46,7 @@ So, **Cartesian coordinates** → **interval scale**
 **Distances between points** (via Euclidean distance) → **ratio scale** (because distance has a true zero).
 
 
-#### Why Date is an **interval scale**
+#### Why Date is an **interval scale** {-}
 
 In short, ***A person born in 1940 doesn't always have double age of a person born in 1950. It's so only in 1960.***
 
@@ -58,6 +58,4 @@ Date is an **interval scale** because it has a meaningful order and equal interv
 * **Equal Intervals:** The duration between any two dates is consistent and measurable. The interval between May 1st and May 10th is exactly 9 days, just as the interval between November 1st and November 10th is 9 days. This allows for meaningful subtraction (e.g., "how many days have passed?").
 * **No True Zero:** The starting point of a calendar system (e.g., the year 0 in the Gregorian calendar) is an arbitrary convention, not an absolute absence of time. You can't say that a year in the 2nd century A.D. is "twice as old" as a year in the 1st century A.D. in a meaningful ratio sense, because the scale doesn't start from a true zero.
 * **Meaningful Subtraction, Not Division:** You can meaningfully subtract dates. For example, a person born in 1940 is 10 years older than a person born in 1950 in any given year ($1950 - 1940 = 10$). However, you cannot meaningfully divide them. The statement "1940 is double 1950" is only true in an arbitrary mathematical sense on a single date, not as a fundamental property of the ages.
-
-
 

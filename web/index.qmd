@@ -6,7 +6,7 @@ title: "Stat Mania Docs"
 This websites mainly contains lectures slides and questions on statistics. It also contains some useful code snippets, covering linux command line, git, spreadsheet, among others.
 
 <center>
-<i style="color:gold; font-size:8.5em; float: right; padding: 10px;" class="fa-solid fa-signal"></i>
+<i style="font-size:10.5em; float: right; padding: 10px;" class="fa-solid fa-dice"></i>
 </center>
 
 All the lectures were initially made using [R programming language](https://www.r-project.org/) inside [Rstudio IDE](https://posit.co/download/rstudio-desktop/). The presentations were made using the [revealjs](https://revealjs.com/) package. Right now, the files are rendred using [Quarto](https://quarto.org/docs/presentations/revealjs/).
