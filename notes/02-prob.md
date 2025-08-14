@@ -10,7 +10,7 @@ output:
 
 ## List of probability distributions
 
-## Discrete distributions
+### Discrete distributions
 
 Probability Mass Functions (PMF)
 
@@ -52,9 +52,11 @@ A bag has 4 green and 6 black balls. 3 balls are drawn randomly. Choosing a gree
 
 **Solution**
 
-| Green Balls | Black Balls |            Gain $x$ (Tk)           |       Probability $p(x)$      |
+| Green Balls | Black Balls |            Gain ($x$) Tk)           |       Probability $p(x)$      |
 |:-----------:|:-----------:|:----------------------------------:|:-----------------------------:|
 |      3      |      0      | $3 \times 10 + 0 \times (-5) = 30$ | $\frac{1}{30} \approx 0.0333$ |
 |      2      |      1      |                 15                 |      $\frac{9}{30} = 0.3$     |
 |      1      |      2      |                  0                 |     $\frac{15}{30} = 0.5$     |
 |      0      |      3      |                 -15                | $\frac{5}{30} \approx 0.1667$ |
+
+

@@ -83,14 +83,26 @@
 <li class="part"><span><b>I Statistics</b></span></li>
 <li class="chapter" data-level="1" data-path="basic-statistics.html"><a href="basic-statistics.html"><i class="fa fa-check"></i><b>1</b> Basic Statistics</a>
 <ul>
-<li class="chapter" data-level="" data-path="scales-of-measurements.html"><a href="scales-of-measurements.html"><i class="fa fa-check"></i>Scales of Measurements</a></li>
+<li class="chapter" data-level="" data-path="scales-of-measurements.html"><a href="scales-of-measurements.html"><i class="fa fa-check"></i>Scales of Measurements</a>
+<ul>
+<li class="chapter" data-level="" data-path="scales-of-measurements.html"><a href="scales-of-measurements.html#interval-scales"><i class="fa fa-check"></i>Interval Scales</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>II Probability</b></span></li>
 <li class="chapter" data-level="2" data-path="random-variable.html"><a href="random-variable.html"><i class="fa fa-check"></i><b>2</b> Random variable</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="list-of-probability-distributions.html"><a href="list-of-probability-distributions.html"><i class="fa fa-check"></i><b>2.1</b> List of probability distributions</a></li>
-<li class="chapter" data-level="2.2" data-path="discrete-distributions.html"><a href="discrete-distributions.html"><i class="fa fa-check"></i><b>2.2</b> Discrete distributions</a></li>
-<li class="chapter" data-level="2.3" data-path="problems.html"><a href="problems.html"><i class="fa fa-check"></i><b>2.3</b> Problems</a></li>
+<li class="chapter" data-level="2.1" data-path="list-of-probability-distributions.html"><a href="list-of-probability-distributions.html"><i class="fa fa-check"></i><b>2.1</b> List of probability distributions</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="list-of-probability-distributions.html"><a href="list-of-probability-distributions.html#discrete-distributions"><i class="fa fa-check"></i><b>2.1.1</b> Discrete distributions</a></li>
+<li class="chapter" data-level="2.1.2" data-path="list-of-probability-distributions.html"><a href="list-of-probability-distributions.html#continuous"><i class="fa fa-check"></i><b>2.1.2</b> Continuous</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="mathematical-expectation.html"><a href="mathematical-expectation.html"><i class="fa fa-check"></i><b>3</b> Mathematical Expectation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="problems.html"><a href="problems.html"><i class="fa fa-check"></i><b>3.1</b> Problems</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="problems.html"><a href="problems.html#gain-loss"><i class="fa fa-check"></i><b>3.1.1</b> Gain-loss</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/mahmudstat/stat-lectures/edit/master/%s" target="blank">Notes ~ Stat Mania</a></li>
@@ -259,22 +271,16 @@ Velocity is a <strong>vector-valued ratio-scale variable</strong>. Speed (its ma
 <p>Rather than saying “velocity is a ratio scale” or “velocity is an interval scale,” a more precise classification is to say that it’s a <strong>vector-valued variable with a ratio-scaled magnitude and a nominal-scaled direction</strong>.</p>
 <p>You are correct that in practice, physicists treat it as a ratio scale because they are often dealing with the magnitude and the underlying principles of multiplication. However, from a strict statistical measurement theory perspective, a variable that requires a categorical label (direction) to make sense of its signed values fails the core test of a pure ratio scale.</p>
 <p><strong>GPT</strong></p>
-<p>Your rebuttal is very strong and brings up an excellent point about how physicists and engineers treat these concepts. I concede that my claim about ratio scales needing to be strictly “unidirectional” is too simplistic when faced with quantities like electric current and signed displacement.</p>
-<p>However, your argument reinforces my point in a different way. You’re effectively arguing that velocity is not a single, simple ratio-scale variable, but a more complex construct.</p>
-</div>
-<div id="the-problem-with-signed-ratios-1" class="section level5 unnumbered hasAnchor">
-<h5>The Problem with “Signed Ratios”<a href="scales-of-measurements.html#the-problem-with-signed-ratios-1" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<p>The core issue remains: while the ratio of <span class="math inline">\(+20 \text{ m/s}\)</span> to <span class="math inline">\(-10 \text{ m/s}\)</span> is mathematically <span class="math inline">\(-2\)</span>, the physical interpretation is more complex than a simple ratio. The statement “A is twice B” implies a direct, one-dimensional scaling. With velocity, the ratio of <span class="math inline">\(-2\)</span> signifies “twice the magnitude and a 180-degree phase shift.”</p>
-<p>This suggests that velocity is actually a combination of two different scale types:</p>
-<ol style="list-style-type: decimal">
-<li><strong>A Ratio-Scale Component:</strong> The <strong>magnitude</strong> of the velocity vector (which we call speed) is a perfect ratio-scale variable. This is where your argument “20 m/s is twice as fast as 10 m/s” is fully correct.</li>
-<li><strong>A Nominal-Scale Component:</strong> The <strong>direction</strong> of the vector (e.g., forward/backward, left/right) is a nominal scale. A positive sign is a label for one direction, and a negative sign is a label for the opposite.</li>
-</ol>
-</div>
-<div id="a-new-conclusion-1" class="section level5 unnumbered hasAnchor">
-<h5>A New Conclusion<a href="scales-of-measurements.html#a-new-conclusion-1" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<p>Rather than saying “velocity is a ratio scale” or “velocity is an interval scale,” a more precise classification is to say that it’s a <strong>vector-valued variable with a ratio-scaled magnitude and a nominal-scaled direction</strong>.</p>
-<p>You are correct that in practice, physicists treat it as a ratio scale because they are often dealing with the magnitude and the underlying principles of multiplication. However, from a strict statistical measurement theory perspective, a variable that requires a categorical label (direction) to make sense of its signed values fails the core test of a pure ratio scale.</p>
+<p>Yes — that’s exactly where I’d land in this “debate.”</p>
+<p>From a <strong>measurement theory</strong> standpoint, velocity <em>on its own</em> isn’t a pure ratio-scale variable because:</p>
+<ul>
+<li><strong>Magnitude</strong> (speed) is ratio-scale: 0 m/s means complete absence of motion; ratios like “twice as fast” are meaningful.</li>
+<li><strong>Direction</strong> is categorical (nominal), even if encoded numerically as +/– or in degrees/radians.</li>
+</ul>
+<p>So, velocity is <strong>really a composite</strong>: a <em>ratio-scale</em> magnitude plus a <em>nominal-scale</em> direction.</p>
+<p>This is why in physics, velocity is treated as a <strong>vector</strong> (ratio-scale magnitude + nominal direction), while in statistics or psychometrics, it wouldn’t be classified as “ratio” unless you stripped away the sign/direction and just measured speed.</p>
+<p>The trap Gemini might be falling into is assuming “velocity” and “speed” are interchangeable for scale-type purposes — but they’re not. They’re <em>interrelated but distinct constructs</em>.</p>
+<p>If you like, I can lay out a <strong>side-by-side table</strong> showing the “physics” vs “measurement theory” perspectives so you could moderate the debate more cleanly.</p>
 <p><strong>Gemini</strong></p>
 <p>You’re absolutely right. From a measurement theory standpoint, velocity isn’t a pure ratio-scale variable. Your analysis is spot-on. It’s a common point of confusion because people often conflate velocity with speed. The key distinction lies in the inclusion of direction.</p>
 </div>
