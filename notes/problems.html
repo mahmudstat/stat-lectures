@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Random variable | Statistics and Mathematics Notes</title>
+  <title>2.1 Problems | Statistics and Mathematics Notes</title>
   <meta name="description" content="Notes on Statistics And Mathematics" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Random variable | Statistics and Mathematics Notes" />
+  <meta property="og:title" content="2.1 Problems | Statistics and Mathematics Notes" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Notes on Statistics And Mathematics" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Random variable | Statistics and Mathematics Notes" />
+  <meta name="twitter:title" content="2.1 Problems | Statistics and Mathematics Notes" />
   
   <meta name="twitter:description" content="Notes on Statistics And Mathematics" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="scales-of-measurements.html"/>
-<link rel="next" href="list-of-probability-distributions.html"/>
+<link rel="prev" href="mathematical-expectation.html"/>
+
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -114,16 +114,65 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="random-variable" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Random variable<a href="random-variable.html#random-variable" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="problems" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Problems<a href="problems.html#problems" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="gain-loss" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Gain-loss<a href="problems.html#gain-loss" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A bag has 4 green and 6 black balls. 3 balls are drawn randomly. Choosing a green ball brings 10 tk gain, while a black one takes away 5 tk. What is the expected gain?</p>
+<p><strong>Solution</strong></p>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="38%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Green Balls</th>
+<th align="center">Black Balls</th>
+<th align="center">Gain <span class="math inline">\(x\)</span> (Tk)</th>
+<th align="center">Probability <span class="math inline">\(p(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">0</td>
+<td align="center"><span class="math inline">\(3 \times 10 + 0 \times (-5) = 30\)</span></td>
+<td align="center"><span class="math inline">\(\frac{1}{30} \approx 0.0333\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">15</td>
+<td align="center"><span class="math inline">\(\frac{9}{30} = 0.3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center"><span class="math inline">\(\frac{15}{30} = 0.5\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">-15</td>
+<td align="center"><span class="math inline">\(\frac{5}{30} \approx 0.1667\)</span></td>
+</tr>
+</tbody>
+</table>
+
 </div>
+</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="scales-of-measurements.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="list-of-probability-distributions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="mathematical-expectation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

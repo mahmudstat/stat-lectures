@@ -41,3 +41,20 @@ Probability Density Functions (PDF)
 2. $$f(x,y) = \frac 3 2 (x+y); 0 < x, y <1$$
 3. $$f(x,y) = 4x(1-y); 0 < x, y <1$$
 3. $$f(x,y) = 6xy^2); 0 < x, y <1$$
+
+# Mathematical Expectation 
+
+## Problems
+
+### Gain-loss
+
+A bag has 4 green and 6 black balls. 3 balls are drawn randomly. Choosing a green ball brings 10 tk gain, while a black one takes away 5 tk. What is the expected gain?
+
+**Solution**
+
+| Green Balls | Black Balls |            Gain $x$ (Tk)           |       Probability $p(x)$      |
+|:-----------:|:-----------:|:----------------------------------:|:-----------------------------:|
+|      3      |      0      | $3 \times 10 + 0 \times (-5) = 30$ | $\frac{1}{30} \approx 0.0333$ |
+|      2      |      1      |                 15                 |      $\frac{9}{30} = 0.3$     |
+|      1      |      2      |                  0                 |     $\frac{15}{30} = 0.5$     |
+|      0      |      3      |                 -15                | $\frac{5}{30} \approx 0.1667$ |
