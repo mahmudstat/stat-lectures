@@ -37,3 +37,9 @@ iii. qualitative
 \choice{i and ii}{i and iii}{ii and iii}{i, ii and iii}{a}
 
 or
+
+Drawing tools prompt
+
+This is my current tool (I pasted here). Customize it as follow
+
+On cliking  <label style="font-weight: bold; color: #8f246b;"  id="penTool" title="Pen Tool"><i class="fas fa-marker"></i></label>, the user will see a horizontal list of 4 pen sizes: very thin, thin, thick, thiker, followed by 4 colors for  id="penColor", followed by custom color picker.
