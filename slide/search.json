@@ -459,7 +459,7 @@
     "href": "01-probability-intro.html#real-number-from-010-0100",
     "title": "Probability",
     "section": "Real Number from (0,10) & (0,100)",
-    "text": "Real Number from (0,10) & (0,100)\n\n\n\nA real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?\n\n\nA real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?\n\n\nWhat is the probability that the square of a random number from (0, 10) is greater than 25?\n\n\nWhat is the probability that the square root of a random number from (0, 100) is greater than 5?\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Real Number from (0,10) & (0,100)\n\n\n\nA real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?\n\n\nA real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?\n\n\nWhat is the probability that the square of a random number from (0, 10) is greater than 25?\n\n\nWhat is the probability that the square root of a random number from (0, 100) is greater than 5?\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "06-correlation-regression.html#scatter-plot-examples",
@@ -578,7 +578,7 @@
     "href": "06-correlation-regression.html#purity-of-coefficients",
     "title": "Correlation-Regression",
     "section": "Purity of Coefficients",
-    "text": "Purity of Coefficients\n\n\\(r = \\frac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sqrt{\\frac{\\sum(x_i - \\bar x)^2}{n}\\frac{\\sum(y_i - \\bar y)^2}{n}}}\\)\n\\(\\rho = 1- \\frac{6 \\sum d_i^2}{n(n^2-1)}\\)\nb or \\(\\beta\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Purity of Coefficients\n\n\\(r = \\frac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sqrt{\\frac{\\sum(x_i - \\bar x)^2}{n}\\frac{\\sum(y_i - \\bar y)^2}{n}}}\\)\n\\(\\rho = 1- \\frac{6 \\sum d_i^2}{n(n^2-1)}\\)\nb or \\(\\beta\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "02-data-collection-organization-presentation.html#types-of-data",
@@ -739,7 +739,7 @@
     "href": "02-data-collection-organization-presentation.html#rose-plot",
     "title": "Statistics I: Collection, Organization & Presentation of Data",
     "section": "Rose Plot",
-    "text": "Rose Plot\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Rose Plot\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "03-expectation.html#expectation-from-mean",
@@ -935,7 +935,7 @@
     "href": "03-expectation.html#rain-coat-expectation",
     "title": "Mathematical Expectation",
     "section": "Rain Coat Expectation",
-    "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "07-time_series.html#what-is-time-series-data",
@@ -998,7 +998,7 @@
     "href": "07-time_series.html#moving-average",
     "title": "Time Series",
     "section": "Moving Average",
-    "text": "Moving Average\n\n\n\nYear\nProduction\n3-Yearly Moving Average\n\n\n\n\n2001\n412\nNA\n\n\n2002\n438\n\\({412+438+446}\\over{3}=432\\)\n\n\n2003\n446\n\\(\\frac{438+446+454}3=446\\)\n\n\n2004\n454\n457\n\n\n2005\n470\n469\n\n\n2006\n483\n\\(\\frac{470+483+490}3=481\\)\n\n\n2007\n490\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Moving Average\n\n\n\nYear\nProduction\n3-Yearly Moving Average\n\n\n\n\n2001\n412\nNA\n\n\n2002\n438\n\\({412+438+446}\\over{3}=432\\)\n\n\n2003\n446\n\\(\\frac{438+446+454}3=446\\)\n\n\n2004\n454\n457\n\n\n2005\n470\n469\n\n\n2006\n483\n\\(\\frac{470+483+490}3=481\\)\n\n\n2007\n490\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "dispersion.html#variance-simplified",
@@ -1026,7 +1026,7 @@
     "href": "dispersion.html#calculation-1",
     "title": "Measures of Dispersion",
     "section": "Calculation",
-    "text": "Calculation\n\n\n\n\n\n\n\n\n\n(x_i)\n( f_i )\n( f_i x_i )\n( f_i x_i^2 )\n\n\n\n\n12\n1\n\n\n\n\n14\n1\n\n\n\n\n15\n2\n\n\n\n\n19\n1\n\n\n\n\n\n\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i (x_i - \\bar{x})^2}{\\sum_{i=1}^{n} f_i}\\)\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i x_i^2}{\\sum_{i=1}^{n} f_i} - \\bar{x}^2\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Calculation\n\n\n\n\n\n\n\n\n\n(x_i)\n( f_i )\n( f_i x_i )\n( f_i x_i^2 )\n\n\n\n\n12\n1\n\n\n\n\n14\n1\n\n\n\n\n15\n2\n\n\n\n\n19\n1\n\n\n\n\n\n\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i (x_i - \\bar{x})^2}{\\sum_{i=1}^{n} f_i}\\)\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i x_i^2}{\\sum_{i=1}^{n} f_i} - \\bar{x}^2\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "stat_practical.html#solution-part",
@@ -1068,7 +1068,7 @@
     "href": "stat_practical.html#freq-distr",
     "title": "Statistics Practical",
     "section": "Freq Distr",
-    "text": "Freq Distr\nWaiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below.\nr set.seed(10) sample(40:60, 15)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Freq Distr\nWaiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below.\nr set.seed(10) sample(40:60, 15)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.1",
@@ -1103,7 +1103,7 @@
     "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.2",
     "title": "Stat Mania Lectures",
     "section": "External 3.2",
-    "text": "External 3.2\nContent 3.2\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "External 3.2\nContent 3.2\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "03-central-tendency.html#what-is-central-tendency",
@@ -1439,7 +1439,7 @@
     "href": "03-central-tendency.html#example-problem-22",
     "title": "Statistics-Chapter 3: Central Tendency",
     "section": "Example Problem 22",
-    "text": "Example Problem 22\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Example Problem 22\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "stat2_tips.html#chapter-01-introduction-to-probability",
@@ -1467,7 +1467,7 @@
     "href": "stat2_tips.html#binomial-distribution",
     "title": "Statistics II: Tips",
     "section": "Binomial Distribution",
-    "text": "Binomial Distribution\n\n\nTo find \\(P(X\\ge 3); n=15\\), use \\(1-P(X \\lt3)\\) or calculator (if you don’t have computer with you)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Binomial Distribution\n\n\nTo find \\(P(X\\ge 3); n=15\\), use \\(1-P(X \\lt3)\\) or calculator (if you don’t have computer with you)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "05-moments-skewness-kurtosis.html#central-moments",
@@ -1656,14 +1656,14 @@
     "href": "05-moments-skewness-kurtosis.html#study",
     "title": "Moments, Skewness & Kurtosis",
     "section": "Study",
-    "text": "Study\n\nSample: 13634 Female individuals\nMean duration: 280 days\n\nHighest Duraion: 360 Days\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Study\n\nSample: 13634 Female individuals\nMean duration: 280 days\n\nHighest Duraion: 360 Days\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
     "href": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
     "title": "Stat Mania Lectures",
     "section": "Contributing",
-    "text": "Contributing\nPlease keep the issue tracker limited to bug reports, feature requests and pull requests.\nPersonal Support\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\nBug Reports\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\nPull Requests\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\nPlugins\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Contributing\nPlease keep the issue tracker limited to bug reports, feature requests and pull requests.\nPersonal Support\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\nBug Reports\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\nPull Requests\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\nPlugins\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "6-normal-distribution.html#shape",
@@ -1817,7 +1817,7 @@
     "href": "6-normal-distribution.html#forest-burn",
     "title": "Normal Distribution",
     "section": "Forest burn",
-    "text": "Forest burn\n\nThe average number of acres burned by forest and range fires in a large New Mexico county is 4,300 acres per year, with a standard deviation of 750 acres. The distribution of the number of acres burned is normal.\n\nWhat is the probability that between 2,500 and 4,200 acres will be burned in any given year?\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Forest burn\n\nThe average number of acres burned by forest and range fires in a large New Mexico county is 4,300 acres per year, with a standard deviation of 750 acres. The distribution of the number of acres burned is normal.\n\nWhat is the probability that between 2,500 and 4,200 acres will be burned in any given year?\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "04-dispersion.html#what-is-dispersion",
@@ -2076,7 +2076,7 @@
     "href": "04-dispersion.html#thanks",
     "title": "Measures of Dispersion",
     "section": "Thanks",
-    "text": "Thanks\n\nVisit\nhttps://lecture.statmania.info\nto see all lecture slides.\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Thanks\n\nVisit\nhttps://lecture.statmania.info\nto see all lecture slides.\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "05-poisson_dist.html#concept",
@@ -2202,7 +2202,7 @@
     "href": "05-poisson_dist.html#problem-05",
     "title": "Poisson Distribution",
     "section": "problem 05",
-    "text": "problem 05\nUgarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "problem 05\nUgarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "09-vital-stat.html#rate-vs-ratio",
@@ -2391,7 +2391,7 @@
     "href": "09-vital-stat.html#exponential-growth",
     "title": "Vital Statistics",
     "section": "Exponential Growth",
-    "text": "Exponential Growth\nGeometric: \\(P_n = P_o(1+r)^n\\)\nIf n is fragmented in smaller periods\nLike 100 % in 1 year \\(\\rightarrow\\) 50 % in each half-year\n\\(P_n = P_o(1+\\frac{r}{n})^n\\)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Exponential Growth\nGeometric: \\(P_n = P_o(1+r)^n\\)\nIf n is fragmented in smaller periods\nLike 100 % in 1 year \\(\\rightarrow\\) 50 % in each half-year\n\\(P_n = P_o(1+\\frac{r}{n})^n\\)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "02-random-variable.html#random-variable",
@@ -2601,7 +2601,7 @@
     "href": "02-random-variable.html#find-k-for-pdf",
     "title": "Random Variable",
     "section": "Find k for pdf",
-    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "04-binomial_dist.html#example",
@@ -2699,7 +2699,7 @@
     "href": "04-binomial_dist.html#problem-04",
     "title": "Binomial Distribution",
     "section": "Problem 04",
-    "text": "Problem 04\nIn El Clasico, the probability that Barcelona wins is 0.39 and that Real Madrid wins is 0.42. In the next 5 matches, what is the probability that\n\nBarcelona wins all the matches?\nReal wins all the matches\nBarcelona wins at least 2 matches\n2 matches are drawn\nmore than 3 matches are drawn\n\n\n\\(p_1=\\)Barca wins, \\(p_2 =\\) Real wins, \\(p_3 =\\)Match drawn\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Problem 04\nIn El Clasico, the probability that Barcelona wins is 0.39 and that Real Madrid wins is 0.42. In the next 5 matches, what is the probability that\n\nBarcelona wins all the matches?\nReal wins all the matches\nBarcelona wins at least 2 matches\n2 matches are drawn\nmore than 3 matches are drawn\n\n\n\\(p_1=\\)Barca wins, \\(p_2 =\\) Real wins, \\(p_3 =\\)Match drawn\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "vii_math.html#topics",
@@ -2996,18 +2996,18 @@
     "text": "Theorem 07: \\(\\prod_{i=1}^k x_iy_i\\)\n\\[\\prod_{i=1}^k x_iy_i = (\\prod_{i=1}^k x_i)(\\prod_{i=1}^k y_i)\\]"
   },
   {
+    "objectID": "01-stat-intro.html#double-summation-example",
+    "href": "01-stat-intro.html#double-summation-example",
+    "title": "Introduction to Statistics",
+    "section": "Double Summation Example",
+    "text": "Double Summation Example\n\n\n\nX\n20\n25\n15\n\n\n\n\nY\n15\n30\n20\n\n\n\n\n\\(20 \\times 15 + 20 \\times 30 + 20 \\times 20 \\rightarrow x_1 \\times y_j\\)\n\\(25 \\times 15 + 25 \\times 30 + 25 \\times 20 \\rightarrow x_2 \\times y_j\\)\n\\(15 \\times 15 + 15 \\times 30 + 15 \\times 20 \\rightarrow x_3 \\times y_j\\)\nRow to row \\(rightarrow x\\) varies but \\(y_j\\) is constant"
+  },
+  {
     "objectID": "01-stat-intro.html#theorem-08-sigma-sigma-x_iy_j",
     "href": "01-stat-intro.html#theorem-08-sigma-sigma-x_iy_j",
     "title": "Introduction to Statistics",
     "section": "Theorem 08: \\(\\Sigma \\Sigma (x_i+y_j)\\)",
     "text": "Theorem 08: \\(\\Sigma \\Sigma (x_i+y_j)\\)\n\n\\(\\displaystyle  \\sum_{i=1}^m \\sum_{j=1}^n (x_i+y_j)=n\\sum_{i=1}^m x_i + m \\sum_{i=1}^n y_j\\)\n\n\\(\\displaystyle \\sum_{i=1}^m (x_i+y_1+x_i+y_2+\\cdots+x_i+y_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m \\{(x_i+x_i+\\cdots \\text{up to n})+(y_1+y_2+\\cdots+y_n)\\)\n\\(\\displaystyle \\sum_{i=1}^m(nx_i+\\sum_{j=1}^ny_j)\\)\n\\(\\displaystyle (nx_1+\\sum_{j=1}^ny_j+nx_2+ \\sum_{j=1}^ny_j)+\\cdots+nx_m+\\sum_{j=1}^ny_j))\\)\n\\(\\displaystyle n\\sum_{i=1}^m x_i+m\\sum_{j=1}^ny_j\\)"
-  },
-  {
-    "objectID": "01-stat-intro.html#double-summation-example",
-    "href": "01-stat-intro.html#double-summation-example",
-    "title": "Introduction to Statistics",
-    "section": "Double Summation Example",
-    "text": "Double Summation Example\n\n\n\nX\n20\n25\n15\n\n\n\n\nY\n15\n30\n20\n\n\n\n\n\\(20 \\times 15 + 20 \\times 30 + 20 \\times 20 \\rightarrow x_1 \\times y_j\\)\n\\(25 \\times 15 + 25 \\times 30 + 25 \\times 20 \\rightarrow x_2 \\times y_j\\)\n\\(15 \\times 15 + 15 \\times 30 + 15 \\times 20 \\rightarrow x_3 \\times y_j\\)"
   },
   {
     "objectID": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j",
@@ -3084,7 +3084,7 @@
     "href": "01-stat-intro.html#end-of-chapter-01",
     "title": "Introduction to Statistics",
     "section": "End of Chapter 01!",
-    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides."
+    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "elementary_stat_prob.html#topics",
@@ -3420,6 +3420,6 @@
     "href": "viii_math_2024.html#additon-of-fraction",
     "title": "Mathematics (VIII)",
     "section": "Additon of Fraction",
-    "text": "Additon of Fraction\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "Additon of Fraction\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]

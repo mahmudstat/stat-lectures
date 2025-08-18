@@ -53,7 +53,7 @@
     "href": "snippets.html#git",
     "title": "Code Snippets",
     "section": "Git",
-    "text": "Git\n\nRename files with git\ngit mv old_file new_file\n\n\nPull if remote is ahead\ngit pull --rebase\n\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
+    "text": "Git\n\nUndoing commit\ngit reset --soft HEAD~N\nUndoes the last N commits, but keeps the changes in the staging area.\ngit reset --mixed HEAD~N\nUndoes the last N commits, and unstages the changes, leaving them in the working directory.\ngit reset --hard HEAD~N\nUndoes the last N commits and discards all changes made in those commits from the working directory. Use with caution as this is a destructive operation.\n\n\nRename files with git\ngit mv old_file new_file\n\n\nPull if remote is ahead\ngit pull --rebase\n\n\nRevert all tracked files in the working directory\ngit checkout .\nTo clean untracked files as well:\ngit checkout .\ngit clean -fd\n\n\nRepository-specific confiuguration\ngit config --local user.name 'Your Name'\ngit config --local user.email 'your.work.email@company.com'\n\n\nGlobal confiuguration\n`git config --global user.name 'Your Name'`\ngit config --global user.email 'your.work.email@company.com'"
   },
   {
     "objectID": "snippets.html#excel-google-sheet",
@@ -138,5 +138,12 @@
     "title": "Stat Mania Docs",
     "section": "How to Use the presentations",
     "text": "How to Use the presentations\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "snippets.html#quarto",
+    "href": "snippets.html#quarto",
+    "title": "Code Snippets",
+    "section": "Quarto",
+    "text": "Quarto\n\nRender all qmd files in the directory\nquarto render"
   }
 ]

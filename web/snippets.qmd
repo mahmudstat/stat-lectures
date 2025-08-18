@@ -115,6 +115,27 @@ or `quit(save = "no")`
 
 ## Git
 
+### Undoing commit
+
+
+```{.git code-line-numbers="true"}
+git reset --soft HEAD~N
+```
+
+**Undoes the last N commits, but keeps the changes in the staging area.**
+
+```{.git code-line-numbers="true"}
+git reset --mixed HEAD~N
+```
+
+**Undoes the last N commits, and unstages the changes, leaving them in the working directory.**
+
+```{.git code-line-numbers="true"}
+git reset --hard HEAD~N
+```
+
+**Undoes the last N commits and discards all changes made in those commits from the working directory. Use with caution as this is a destructive operation.**
+
 ### Rename files with git
 
 ```{.git code-line-numbers="true"}
@@ -154,6 +175,14 @@ git config --local user.email 'your.work.email@company.com'
 ```{.git code-line-numbers="true"}
 `git config --global user.name 'Your Name'`
 git config --global user.email 'your.work.email@company.com'
+```
+
+## Quarto
+
+### Render all `qmd` files in the directory
+
+```{.bash code-line-numbers="true"}
+quarto render
 ```
 
 
