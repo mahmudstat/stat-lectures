@@ -236,6 +236,17 @@ $$\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n$$
 
 $$\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)$$
 
+## Double Summation Example
+
+| X | 20 | 25 | 15 |
+|:-:|:--:|:--:|:--:|
+| Y | 15 | 30 | 20 |
+
+> - $20 \times 15 + 20 \times 30 + 20 \times 20 \rightarrow x_1 \times y_j$
+> - $25 \times 15 + 25 \times 30 + 25 \times 20 \rightarrow x_2 \times y_j$
+> - $15 \times 15 + 15 \times 30 + 15 \times 20 \rightarrow x_3 \times y_j$
+> - Row to row $rightarrow x$ varies but $y_j$ is constant
+
 ## Theorem 08: $\Sigma \Sigma (x_i+y_j)$
 
 <small>
@@ -249,12 +260,6 @@ $\displaystyle  \sum_{i=1}^m \sum_{j=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{
 > - $\displaystyle n\sum_{i=1}^m x_i+m\sum_{j=1}^ny_j$
 
 </small>
-
-## Double Summation Example
-
-| X | 20 | 25 | 15 |
-|:-:|:--:|:--:|:--:|
-| Y | 15 | 30 | 20 |
 
 
 ## Theorem: $\Sigma \Sigma x_iy_j$

@@ -3007,7 +3007,7 @@
     "href": "01-stat-intro.html#double-summation-example",
     "title": "Introduction to Statistics",
     "section": "Double Summation Example",
-    "text": "Double Summation Example\n\n\n\nX\n20\n25\n15\n\n\n\n\nY\n15\n30\n20"
+    "text": "Double Summation Example\n\n\n\nX\n20\n25\n15\n\n\n\n\nY\n15\n30\n20\n\n\n\n\n\\(20 \\times 15 + 20 \\times 30 + 20 \\times 20 \\rightarrow x_1 \\times y_j\\)\n\\(25 \\times 15 + 25 \\times 30 + 25 \\times 20 \\rightarrow x_2 \\times y_j\\)\n\\(15 \\times 15 + 15 \\times 30 + 15 \\times 20 \\rightarrow x_3 \\times y_j\\)"
   },
   {
     "objectID": "01-stat-intro.html#theorem-sigma-sigma-x_iy_j",
@@ -3084,7 +3084,7 @@
     "href": "01-stat-intro.html#end-of-chapter-01",
     "title": "Introduction to Statistics",
     "section": "End of Chapter 01!",
-    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud"
+    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides."
   },
   {
     "objectID": "elementary_stat_prob.html#topics",

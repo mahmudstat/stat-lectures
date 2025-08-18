@@ -1,8 +1,13 @@
 /********** Customise logo, and footer disclaimer **********/
 /* Position the corporate logo in the top right of the page */
 
+/* BG Archive
+ * conic-gradient(at 85% 45%, #ffe6f0, #cc33ff, #ffe6f0);
+*/
+
+
 .reveal {
-  background-image: conic-gradient(at 85% 45%, #ffe6f0, #cc33ff, #ffe6f0);
+  background-image: linear-gradient(to right, #79d2a6 , white);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

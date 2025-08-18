@@ -123,3 +123,19 @@ span.math.inline {
   background-color: #444 !important;
   color: #ffd700 !important;
 }
+
+.footer-default {
+  background-color: transparent;
+  color: white; /* This will style the paragraph text */
+  padding: 10px 0;
+}
+
+.footer-default p {
+  color: black; /* This will style the link text */
+  text-decoration: none;
+}
+
+.footer.footer-default a {
+  color: black;
+  text-decoration: underline;
+}

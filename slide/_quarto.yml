@@ -18,7 +18,7 @@ format:
     - css/styles.css
     - styles.css
     logo: css/logo.png
-    footer: "<a href='https://docs.statmania.info' target='_blank'>docs.statmania.info</a> | <b>Abdullah Al Mahmud</b>"
+    footer: '<a href="https://docs.statmania.info" target="_blank">docs.statmania.info</a> | <a href="https://www.thinkermahmud.com">Abdullah Al Mahmud</a> | Press space or arrow to change slides'
     plugins:
       - drawing
 
