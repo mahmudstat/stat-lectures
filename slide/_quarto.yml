@@ -10,7 +10,6 @@ format:
   revealjs:
     theme: sky
     transition: convex
-    include-in-header: drawing-tools.html
     slide-number:  c/t
     navigation-mode: vertical
     controls-layout: bottom-right
@@ -19,8 +18,8 @@ format:
     - styles.css
     logo: css/logo.png
     footer: '<a href="https://docs.statmania.info" target="_blank">docs.statmania.info</a> | <a href="https://www.thinkermahmud.com">Abdullah Al Mahmud</a> | Press space or arrow to change slides'
-    plugins:
-      - drawing
+revealjs-plugins:
+  - qdraw
 
 
 

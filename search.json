@@ -25,14 +25,14 @@
     "href": "snippets.html",
     "title": "Code Snippets",
     "section": "",
-    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n\n\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
+    "text": "CREATE DATABASE dashboard_db;\n\n\n\n\nCREATE TABLE stats (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(50),\n    value INT\n);\n\n\n\nINSERT INTO stats (name, value) VALUES\n('Users', 120),\n('Sales', 75),\n('Visitors', 300);\n\n\n\nUSE dashboard_db;\nSHOW TABLES;\nDESCRIBE stats; -- Shows stats table summary\nEXIT"
   },
   {
     "objectID": "snippets.html#nux",
     "href": "snippets.html#nux",
     "title": "Code Snippets",
-    "section": "",
-    "text": "The example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\n\nModify as per need\nrename 's/\\_/-/' *\n\n\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\n\nrename 'y/A-Z/a-z/' *\n\n\n\nfind . -type f | wc -l\n\n\n\n`sed -i 's/$/\\n/' file.txt`\n\n\n\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
+    "section": "Nux",
+    "text": "Nux\n\nRename all files sequentially\nThe example renames .jpg files. Modify as per your need.\nls -v | cat -n | while read n f; do mv -n \"$f\" \"$n.jpg\"; done\nTo start numbering at certain number use the following code\nnum=0; for i in *; do mv \"$i\" \"$(printf '%04d' $num).${i#*.}\"; ((num++)); done\nFor more on this, look here\n\n\nRename file names (“_” to “-”\nModify as per need\nrename 's/\\_/-/' *\n\nReplace space with hyphen\nfor file in *' '*\ndo\n  mv -- \"$file\" \"${file// /-}\"\ndone\n\n\n\nRename to lowercase\nrename 'y/A-Z/a-z/' *\n\n\nCount files\nfind . -type f | wc -l\n\n\nReplace new line with double new line\n`sed -i 's/$/\\n/' file.txt`\n\n\nConvert all mp4 to mp3\n#!/bin/bash\nlocal o=$IFS\nIFS=$(echo -en \"\\n\\b\")\n\nMP4FILE=$(ls . |grep .mp4)\nfor filename in $MP4FILE\ndo\nname=\"${filename%.*}\"\nffmpeg -i ./$filename -b:a 192K -vn ./$name.mp3\ndone\n\nIFS=o"
   },
   {
     "objectID": "snippets.html#latex",
@@ -145,5 +145,15 @@
     "title": "Code Snippets",
     "section": "Quarto",
     "text": "Quarto\n\nRender all qmd files in the directory\nquarto render"
+<<<<<<< HEAD
+=======
+  },
+  {
+    "objectID": "snippets.html#sql",
+    "href": "snippets.html#sql",
+    "title": "Code Snippets",
+    "section": "",
+    "text": "CREATE DATABASE dashboard_db;\n\n\n\n\nCREATE TABLE stats (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(50),\n    value INT\n);\n\n\n\nINSERT INTO stats (name, value) VALUES\n('Users', 120),\n('Sales', 75),\n('Visitors', 300);\n\n\n\nUSE dashboard_db;\nSHOW TABLES;\nDESCRIBE stats; -- Shows stats table summary\nEXIT"
+>>>>>>> 15853c9 (fix mismatch)
   }
 ]

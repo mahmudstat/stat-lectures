@@ -6,6 +6,22 @@ output:
 
 # (PART) Probability {-}
 
+# Basic Probability
+
+## Set Theory
+
+### Problems
+
+#### Pass-Fail Inverted
+
+Out of 40 students, 23 pass in Mathematics, 25 pass in English, while 10 fail in both the subjects.  How many pass in at least one subject? How many pass in both the subjects?
+
+**Solution**
+
+$n(S) = 40, n(M) = 23, n(E) = 25, n(\bar M \cap \bar E) = 10$
+
+Therefore n(At least one) = n(All) - n(Failed in both)= $n(MUE) = n(S) -n(\bar M \cap \bar E)$
+
 # Random variable
 
 ## List of probability distributions
