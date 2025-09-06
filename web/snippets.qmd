@@ -47,6 +47,24 @@ EXIT
 
 ## Nux
 
+### Watch protected system directories
+
+```bash
+sudo nautilus # or dolphin, thunar
+```
+
+### Open in the preferred application for file
+
+```bash
+xdg-open filename
+```
+
+### Current wokring directory
+
+```bash
+pwd
+```
+
 ### Rename all files sequentially
 
 The example renames `.jpg` files. Modify as per your need.

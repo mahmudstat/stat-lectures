@@ -35,6 +35,9 @@ website:
           - text: "Stat Misc"
             icon: "dice-5"
             href: "resources.qmd"
+          - text: "Stat Practical"
+            icon: "dice-5"
+            href: "resources/stat_practical.pdf"
       - text: "About"
         menu:
           - text: "Me"
