@@ -140,6 +140,40 @@ Let k or CI & find the other
 </div>
 </div>
 
+## Frequency Distribution Example
+<small>
+
+| No. of Surviving Plants | Frequency | Cumulative Frequency | Percentage | Cumulative Percentage |
+|-------------------------|-----------|----------------------|------------|----------------------|
+| 20–29                   | 3         | 3                    | 3%         | 3%                   |
+| 30–39                   | 14        | 17                   | 14%        | 17%                  |
+| 40–49                   | 12        | 29                   | 12%        | 29%                  |
+| 50–59                   | 8         | 37                   | 8%         | 37%                  |
+| 60–69                   | 18        | 55                   | 18%        | 55%                  |
+| 70–79                   | 10        | 65                   | 10%        | 65%                  |
+| 80–89                   | 23        | 88                   | 23%        | 88%                  |
+| 90–99                   | 12        | 100                  | 12%        | 100%                 |
+| **Total**               | **100**   |                      | **100%**   |                      |
+
+</small>
+
+## Key Insights
+
+<small>
+
+> - In most schools (**23**), the number of surviving plants is between **80 to 89**.
+> - Very few schools (**3**) have surviving plants in the **20–29** range.
+> - More than half of the schools (**55%**) have **up to 69 surviving plants**.
+>- A significant portion of schools (**35%**) report **70 or more surviving plants**, with the 80–89 range alone accounting for 23%.
+>- The **50–59** range has relatively few schools (**8%**), creating a noticeable dip between the lower and higher survival groups.
+</small>
+
+## Normal Distribution
+
+| Height in cm) | 157 - 162 | 162 - 167 | 167 - 172 | 172 - 177 | 177 - 182 | 182 - 187 | 187 - 192 |
+|:----------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| Frequency ($f_i$) | 20 | 120 | 250 | 320 | 200 | 70 | 20 |
+
 # Graphs
 
 ## Histogram

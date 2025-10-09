@@ -3421,5 +3421,26 @@
     "title": "Mathematics (VIII)",
     "section": "Additon of Fraction",
     "text": "Additon of Fraction\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#frequency-distribution-example",
+    "href": "02-data-collection-organization-presentation.html#frequency-distribution-example",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Frequency Distribution Example",
+    "text": "Frequency Distribution Example\n\n\n\n\n\n\n\n\n\n\n\nNo. of Surviving Plants\nFrequency\nCumulative Frequency\nPercentage\nCumulative Percentage\n\n\n\n\n20–29\n3\n3\n3%\n3%\n\n\n30–39\n14\n17\n14%\n17%\n\n\n40–49\n12\n29\n12%\n29%\n\n\n50–59\n8\n37\n8%\n37%\n\n\n60–69\n18\n55\n18%\n55%\n\n\n70–79\n10\n65\n10%\n65%\n\n\n80–89\n23\n88\n23%\n88%\n\n\n90–99\n12\n100\n12%\n100%\n\n\nTotal\n100\n\n100%"
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#key-insights",
+    "href": "02-data-collection-organization-presentation.html#key-insights",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Key Insights",
+    "text": "Key Insights\n\n\nIn most schools (23), the number of surviving plants is between 80 to 89.\nVery few schools (3) have surviving plants in the 20–29 range.\nMore than half of the schools (55%) have up to 69 surviving plants.\nA significant portion of schools (35%) report 70 or more surviving plants, with the 80–89 range alone accounting for 23%.\nThe 50–59 range has relatively few schools (8%), creating a noticeable dip between the lower and higher survival groups."
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#normal-distribution",
+    "href": "02-data-collection-organization-presentation.html#normal-distribution",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeight in cm)\n157 - 162\n162 - 167\n167 - 172\n172 - 177\n177 - 182\n182 - 187\n187 - 192\n\n\n\n\nFrequency (\\(f_i\\))\n20\n120\n250\n320\n200\n70\n20"
   }
 ]
