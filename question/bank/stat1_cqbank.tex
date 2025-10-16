@@ -7,6 +7,8 @@
 \usepackage[a4paper, total={7.27in, 10.69in}]{geometry}
 \usepackage{titletoc}
 \usepackage{graphicx}
+\usepackage{tikz} % for drawing labeled lines
+\usetikzlibrary{calc} % for drawing labeled lines
 
 \titlecontents*{chapter}
   [0pt]% <left>
@@ -902,6 +904,58 @@ Frequency & 5     & 8     & 10    & 13    & 11    & 7     & 3
 \chapter{Measures of Central Tendency} 
 \section{Creative Questions}
 \begin{enumerate}
+
+ \item
+  \textbf{A vehicle moves along the path ABCD, covering each segment at a uniform velocity.}
+
+\begin{center}
+
+\begin{tikzpicture}
+% Define the total length and segment lengths
+\def\totalLength{12}
+\def\segmentOne{6}   % 15s segment
+\def\segmentTwo{2}   % 5s segment  
+\def\segmentThree{4} % 10s segment
+
+% Draw the main line
+\draw[thick] (0,0) -- (\totalLength,0);
+
+% Define the points
+\coordinate (A) at (0,0);
+\coordinate (B) at (\segmentOne,0);
+\coordinate (C) at (\segmentOne+\segmentTwo,0);
+\coordinate (D) at (\totalLength,0);
+
+% Draw solid points at A, B, C, D
+\foreach \point/\label in {A/A, B/B, C/C, D/D} {
+    \filldraw[black] (\point) circle (2pt);
+    \node[above] at (\point) {$\label$};
+}
+
+% Add time labels above the segments
+\node[above] at ($(A)!0.5!(B)$) {15s};
+\node[above] at ($(B)!0.5!(C)$) {15s};
+\node[above] at ($(C)!0.5!(D)$) {15s};
+
+% Optional: Add distance markers below the line
+\node[below] at ($(A)!0.5!(B)$) {60 meters};
+\node[below] at ($(B)!0.5!(C)$) {30 meters};
+\node[below] at ($(C)!0.5!(D)$) {45 meters};
+
+
+\end{tikzpicture}
+  \end{center}
+  \begin{enumerate}
+    \item
+	What is the formula of harmonic mean? \hfill 1
+    \item
+	When should we use the harmonic mean? \hfill 2
+    \item  
+	Find the average velocity of the vehicle. \hfill 3
+    \item
+	Compare the average speed estimated using the arithmetic and harmonic mean and \\ verify their suitability in the given situation. \hfill 4
+  \end{enumerate}
+
 
  \item
 	  \textbf{While driving from city A to city B, a car got 22 miles per gallon and

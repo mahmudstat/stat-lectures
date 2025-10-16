@@ -1,13 +1,6 @@
  \item
-  \textbf{The probability density function of a continuous random variable is}
-  
-	  $$
-  f(x) =
-\begin{cases}
-k(x+1),  & 0 \le x \le 1 \\
-0, & otherwise
-\end{cases}
-$$
+  \textbf{STATEMENT}
+
   
   \begin{enumerate}
     \item
