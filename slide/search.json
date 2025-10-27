@@ -1740,7 +1740,7 @@
     "href": "6-normal-distribution.html#standard-normal",
     "title": "Normal Distribution",
     "section": "Standard Normal",
-    "text": "Standard Normal\nIf \\(X \\sim N(\\mu, \\sigma ^2), z = \\frac{x-\\mu}{\\sigma} \\sim N(0,1)\\)\n\n\\(\\displaystyle f(z) = \\frac{1}{\\sqrt{2 \\pi}}e^{\\frac{-z^2}{2}}\\)\n\\(E(Z) = 0\\)\n\\(V(Z) = S(Z) = 0\\)"
+    "text": "Standard Normal\nIf \\(X \\sim N(\\mu, \\sigma ^2), z = \\frac{x-\\mu}{\\sigma} \\sim N(0,1)\\)\n\n\\(\\displaystyle f(z) = \\frac{1}{\\sqrt{2 \\pi}}e^{\\frac{-z^2}{2}}\\)\n\\(E(Z) = 0\\)\n\\(V(Z) = SD(Z) = 1\\)"
   },
   {
     "objectID": "6-normal-distribution.html#standard-normal-mean",
@@ -3442,5 +3442,12 @@
     "title": "Statistics I: Collection, Organization & Presentation of Data",
     "section": "Normal Distribution",
     "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeight in cm)\n157 - 162\n162 - 167\n167 - 172\n172 - 177\n177 - 182\n182 - 187\n187 - 192\n\n\n\n\nFrequency (\\(f_i\\))\n20\n120\n250\n320\n200\n70\n20"
+  },
+  {
+    "objectID": "6-normal-distribution.html#exam-score",
+    "href": "6-normal-distribution.html#exam-score",
+    "title": "Normal Distribution",
+    "section": "Exam Score",
+    "text": "Exam Score\nScores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[source]\n\n\\(\\mu = 527, \\sigma = 112\\)\n\\(P(X &gt; 500)\\)"
   }
 ]

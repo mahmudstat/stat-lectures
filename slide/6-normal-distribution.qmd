@@ -167,7 +167,7 @@ If $X \sim N(\mu, \sigma ^2), z = \frac{x-\mu}{\sigma} \sim N(0,1)$
 
 > - $\displaystyle f(z) = \frac{1}{\sqrt{2 \pi}}e^{\frac{-z^2}{2}}$ 
 > - $E(Z) = 0$
-> - $V(Z) = S(Z) = 0$
+> - $V(Z) = SD(Z) = 1$
 
 ## Standard Normal Mean
 
@@ -374,7 +374,7 @@ text(x = 3.8, y = dnorm(3.8) + 0.02, labels = expression(+infinity), pos = 2, co
 </div>
 </div>
 
-## GMAT Question
+## Exam Score
 
 Scores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[[source](https://www.stat.colostate.edu/inmem/gumina/st201/recitation8/downloads/Normal%20Probabilites%20Practice.pdf?ref=docs.statmania.info)]
 
