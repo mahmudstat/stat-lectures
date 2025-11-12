@@ -3449,5 +3449,54 @@
     "title": "Normal Distribution",
     "section": "Exam Score",
     "text": "Exam Score\nScores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[source]\n\n\\(\\mu = 527, \\sigma = 112\\)\n\\(P(X &gt; 500)\\)"
+  },
+  {
+    "objectID": "08-sampling.html#population",
+    "href": "08-sampling.html#population",
+    "title": "Sampling",
+    "section": "Population",
+    "text": "Population\n\nFinite: people in Dhaka\nInfinite: hairs in head, fish in pacific ocean, stars"
+  },
+  {
+    "objectID": "08-sampling.html#terms",
+    "href": "08-sampling.html#terms",
+    "title": "Sampling",
+    "section": "Terms",
+    "text": "Terms\n\nSample size\nParameter: Population characteristic (such as \\(\\sigma\\))\nStatistics: Sample characteristic (\\(\\bar x, sd\\))"
+  },
+  {
+    "objectID": "08-sampling.html#census-vs-sample-survey",
+    "href": "08-sampling.html#census-vs-sample-survey",
+    "title": "Sampling",
+    "section": "Census vs Sample Survey",
+    "text": "Census vs Sample Survey\nDisadvantages of census:\n\nTime\nCost\nQuality\nAccuracy\nMulti-purpose"
+  },
+  {
+    "objectID": "08-sampling.html#steps-of-sample-survey",
+    "href": "08-sampling.html#steps-of-sample-survey",
+    "title": "Sampling",
+    "section": "Steps of sample survey",
+    "text": "Steps of sample survey\n\n\n\nAim\nPopulation\nSampling frame + unit\nType of data\nQuestionnaire\n\n\n\nMethod of data collection\nSampling method\nPilot survey\nField work\nData analysis"
+  },
+  {
+    "objectID": "08-sampling.html#random-sampling",
+    "href": "08-sampling.html#random-sampling",
+    "title": "Sampling",
+    "section": "Random sampling",
+    "text": "Random sampling\n\nSimple Random (SRS)\nSystematic Sampling\nStratified Sampling\nCluster Sampling"
+  },
+  {
+    "objectID": "08-sampling.html#srs",
+    "href": "08-sampling.html#srs",
+    "title": "Sampling",
+    "section": "SRS",
+    "text": "SRS\n\nLottery method\nRemainder approach\nQuitient approach"
+  },
+  {
+    "objectID": "08-sampling.html#remainder-approach",
+    "href": "08-sampling.html#remainder-approach",
+    "title": "Sampling",
+    "section": "Remainder approach",
+    "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’\n\n\nDivide by N (30) and select the Rth item (R = Remainder)\n\n\nRepeat (3-4)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]
