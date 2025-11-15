@@ -40,26 +40,21 @@ Disadvantages of census:
 
 ## Steps of sample survey
 
-<div class="row">
-  <div class="column" style="background-color:#4dc3ff;">
-
+<div class="container">
+<div class="col">
 > - Aim
 > - Population
 > - Sampling frame + unit
 > - Type of data
 > - Questionnaire
-
-  </div>
-
-  <div class="column" style="background-color:#80bfff;">
-
+</div>
+<div class="col">
 > - Method of data collection
 > - Sampling method
 > - Pilot survey
 > - Field work
 > - Data analysis
-
-  </div>
+</div>
 </div>
 
 
@@ -85,6 +80,6 @@ Disadvantages of census:
 
 > - 1. N = 30 (digit d =2)
 > - 2. N' = Highest d-digit number = 90
-> - 3. Choose a random number between 1 and N'
-> - 4. Divide by N (30) and select the Rth item (R = Remainder)
+> - 3. Choose a random number between 1 and N' (90), say 65
+> - 4. Divide by N (30) and select the Rth item (R = Remainder = 25)
 > - 5. Repeat (3-4)

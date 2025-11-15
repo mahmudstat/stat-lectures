@@ -3476,7 +3476,7 @@
     "href": "08-sampling.html#steps-of-sample-survey",
     "title": "Sampling",
     "section": "Steps of sample survey",
-    "text": "Steps of sample survey\n\n\n\nAim\nPopulation\nSampling frame + unit\nType of data\nQuestionnaire\n\n\n\nMethod of data collection\nSampling method\nPilot survey\nField work\nData analysis"
+    "text": "Steps of sample survey\n\n\n\nAim\nPopulation\nSampling frame + unit\nType of data\nQuestionnaire\n\n\n\n\nMethod of data collection\nSampling method\nPilot survey\nField work\nData analysis"
   },
   {
     "objectID": "08-sampling.html#random-sampling",
@@ -3497,6 +3497,6 @@
     "href": "08-sampling.html#remainder-approach",
     "title": "Sampling",
     "section": "Remainder approach",
-    "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’\n\n\nDivide by N (30) and select the Rth item (R = Remainder)\n\n\nRepeat (3-4)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’ (90), say 65\n\n\nDivide by N (30) and select the Rth item (R = Remainder = 25)\n\n\nRepeat (3-4)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]
