@@ -3498,5 +3498,33 @@
     "title": "Sampling",
     "section": "Remainder approach",
     "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’ (90), say 65\n\n\nDivide by N (30) and select the Rth item (R = Remainder = 25)\n\n\nRepeat (3-4)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "03-central-tendency.html#sumx_i-bar-x",
+    "href": "03-central-tendency.html#sumx_i-bar-x",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "\\(\\sum(x_i-\\bar x)\\)",
+    "text": "\\(\\sum(x_i-\\bar x)\\)\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#square-of-deviation-from-mean",
+    "href": "03-central-tendency.html#square-of-deviation-from-mean",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Square of deviation from mean",
+    "text": "Square of deviation from mean\n\\[\\sum_{i=1}^n (x_i-\\bar x)^2 \\lt \\sum_{i=1}^n (x_i-a)^2; a\\ne\\bar x\\]\n\\[\\sum_{i=1}^n f_i(x_i-\\bar x)^2 \\lt \\sum_{i=1}^n f_i(x_i-a)^2; a\\ne\\bar x\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#sum-x---mean",
+    "href": "03-central-tendency.html#sum-x---mean",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Sum (x - mean)",
+    "text": "Sum (x - mean)\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#am---change-of-origin-scale",
+    "href": "03-central-tendency.html#am---change-of-origin-scale",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "AM - Change of origin & scale",
+    "text": "AM - Change of origin & scale\n\n\nProve that AM depends on origin and scale Use frequency as well i.e,\n\n\\[\\bar x=\\frac {\\sum_{i=1}^nx_i}{n}\\]\n\n\n\n\nLet \\(u_i = \\frac{x_i-a}{c}\\)\n\\(x_i = cu_i + a\\)\n\\(\\sum x_i =\\)\n\\(\\bar x = c \\bar u + a\\)"
   }
 ]
