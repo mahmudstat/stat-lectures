@@ -3,6 +3,17 @@ format: html
 title: Lectures
 ---
 
+The lectures slides have been made using [10 computer languages](index.html), including R, Bash, Latex, JavaScript, and markdown, among others.
+
+## How to Use the presentations
+
+- Press `space` or down-arrow ($\downarrow$) to go the next slide or see hidden contents.
+- Press up-arrow ($\uparrow$) or `P` to go the previous slide.
+- Press right arrow or left arrow to see next/previous chapter
+- See more [here](https://defkey.com/reveal-js-shortcuts).
+
+The `qdraw` plugin by [Abdullah Al Mahmud](https://www.thinkermahmud.com/qdraw/) is also available for all the slides, for annotation.
+
 ## First Paper
 
 - [Introduction to Statistics](slide/01-stat-intro.html)

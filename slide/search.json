@@ -3532,7 +3532,7 @@
     "href": "03-central-tendency.html#am-gm-hm",
     "title": "Statistics-Chapter 3: Central Tendency",
     "section": "AM ≥ GM ≥ HM",
-    "text": "AM ≥ GM ≥ HM\n\n\nFor two non-zero positive numbers, prove \\(AM \\ge GM \\ge HM\\)\nLet, the numbers be a, b\n\\(\\therefore AM = \\frac{a+b}{2}\\)\n\\(GM = (ab)^{\\frac12}\\)\n\\(HM = \\frac{2}{\\frac 1 a +\\frac 1 b}\\)\n\n\n\n\\((a-b)^2  \\ge 0\\)\n\\((a+b)^2 - 4ab \\ge 0\\)\n\n\n\n\n$(-)^2 $"
+    "text": "AM ≥ GM ≥ HM\n\n\n\n\\((a-b)^2  \\ge 0\\)\n\\((a+b)^2 - 4ab \\ge 0\\)\n\n\n\n\n\\((\\frac{1}{a}-\\frac{1}{b})^2 \\ge 0\\)"
   },
   {
     "objectID": "03-central-tendency.html#full-proof",
@@ -3567,7 +3567,7 @@
     "href": "03-central-tendency.html#mean-of-u-x-y",
     "title": "Statistics-Chapter 3: Central Tendency",
     "section": "Mean of U = X + Y",
-    "text": "Mean of U = X + Y\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\\[\\begin{eqnarray}\n\\bar u &=&  \\frac{\\sum u}{n}   \\nonumber \\\\\n&=& \\frac{\\sum (x+y)}{n}   \\nonumber \\\\\n&=& \\frac{\\sum x}{n}+  \\frac{\\sum y}{n}   \\nonumber \\\\\n&=& \\bar x + \\bar y   \\nonumber \\\\\n\\end{eqnarray}\\]"
+    "text": "Mean of U = X + Y\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\n\\(\\bar u =  \\frac{\\sum u}{n}\\)\n\\(\\frac{\\sum (x+y)}{n}\\)\n\\(\\frac{\\sum x}{n}+  \\frac{\\sum y}{n}\\)\n\\(\\bar x + \\bar y\\)"
   },
   {
     "objectID": "03-central-tendency.html#gm-of-two-variables",

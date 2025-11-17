@@ -81,14 +81,14 @@
     "href": "lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Introduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series"
+    "text": "The lectures slides have been made using 10 computer languages, including R, Bash, Latex, JavaScript, and markdown, among others."
   },
   {
     "objectID": "lectures.html#first-paper",
     "href": "lectures.html#first-paper",
     "title": "Lectures",
-    "section": "",
-    "text": "Introduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series"
+    "section": "First Paper",
+    "text": "First Paper\n\nIntroduction to Statistics\nData Collection, Organization & Presentation\nMeasures of Central Tendency\nMeasures of Dispersion\nMoments, Skewness & Kurtosis\nCorrelation & Regression\nTime Series"
   },
   {
     "objectID": "lectures.html#second-paper",
@@ -152,5 +152,12 @@
     "title": "Stat Mania Docs",
     "section": "How to Use the presentations",
     "text": "How to Use the presentations\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\n\nSee more here"
+  },
+  {
+    "objectID": "lectures.html#how-to-use-the-presentations",
+    "href": "lectures.html#how-to-use-the-presentations",
+    "title": "Lectures",
+    "section": "How to Use the presentations",
+    "text": "How to Use the presentations\n\nPress space or down-arrow (\\(\\downarrow\\)) to go the next slide or see hidden contents.\nPress up-arrow (\\(\\uparrow\\)) or P to go the previous slide.\nPress right arrow or left arrow to see next/previous chapter\nSee more here.\n\nThe qdraw plugin by Abdullah Al Mahmud is also available for all the slides, for annotation."
   }
 ]
