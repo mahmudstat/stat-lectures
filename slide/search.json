@@ -3526,5 +3526,89 @@
     "title": "Statistics-Chapter 3: Central Tendency",
     "section": "AM - Change of origin & scale",
     "text": "AM - Change of origin & scale\n\n\nProve that AM depends on origin and scale Use frequency as well i.e,\n\n\\[\\bar x=\\frac {\\sum_{i=1}^nx_i}{n}\\]\n\n\n\n\nLet \\(u_i = \\frac{x_i-a}{c}\\)\n\\(x_i = cu_i + a\\)\n\\(\\sum x_i =\\)\n\\(\\bar x = c \\bar u + a\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#am-gm-hm",
+    "href": "03-central-tendency.html#am-gm-hm",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "AM ≥ GM ≥ HM",
+    "text": "AM ≥ GM ≥ HM\n\n\nFor two non-zero positive numbers, prove \\(AM \\ge GM \\ge HM\\)\nLet, the numbers be a, b\n\\(\\therefore AM = \\frac{a+b}{2}\\)\n\\(GM = (ab)^{\\frac12}\\)\n\\(HM = \\frac{2}{\\frac 1 a +\\frac 1 b}\\)\n\n\n\n\\((a-b)^2  \\ge 0\\)\n\\((a+b)^2 - 4ab \\ge 0\\)\n\n\n\n\n$(-)^2 $"
+  },
+  {
+    "objectID": "03-central-tendency.html#full-proof",
+    "href": "03-central-tendency.html#full-proof",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Full Proof",
+    "text": "Full Proof\n\n\n\nWe know, \\[\\begin{eqnarray}\n&  &(a-b)^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2-4ab \\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2 \\ge 4ab   \\nonumber \\\\\n& \\Rightarrow & (a+b) \\ge 2 \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & \\frac{a+b} 2 \\ge \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & AM \\ge GM   \\nonumber \\\\\n\\end{eqnarray}\\]\n\n\nSimilarly, \\[\\begin{eqnarray}\n&  &(\\frac{1}{a}-\\frac{1}{b})^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2 -4 \\cdot \\frac 1 a \\cdot \\frac 1 b\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2\\ge \\frac 4 {ab}   \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b}) \\ge \\frac 2 {\\sqrt{ab}}  \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab}(\\frac{1}{a}+\\frac{1}{b}) \\ge 2   \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab} \\ge \\frac{2}{(\\frac{1}{a}+\\frac{1}{b})}   \\nonumber \\\\\n& \\Rightarrow & GM \\ge HM   \\nonumber \\\\\n\\end{eqnarray}\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#am-hm-gm²",
+    "href": "03-central-tendency.html#am-hm-gm²",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "AM × HM = GM²",
+    "text": "AM × HM = GM²\nProve using formulae\nFor two non-zero positive numbers, \\(AM \\times HM =(GM)^2\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#mean-median-of-natural-numbers",
+    "href": "03-central-tendency.html#mean-median-of-natural-numbers",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Mean-Median of Natural Numbers",
+    "text": "Mean-Median of Natural Numbers\nMean and Median of first n natural numbers are \\(\\frac {n+1} 2\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#combined-mean",
+    "href": "03-central-tendency.html#combined-mean",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Combined mean",
+    "text": "Combined mean\n\n\n\nForm\nA\nB\n\n\n\n\n# Cadets\n24\n25\n\n\nMean Score\n75\n70\n\n\n\nWhat’s the combined mean?\n\n\\[\\bar x_c=\\frac{n_1 \\bar x_1+n_2 \\bar x_2}{n_1+n_2}\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#mean-of-u-x-y",
+    "href": "03-central-tendency.html#mean-of-u-x-y",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Mean of U = X + Y",
+    "text": "Mean of U = X + Y\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\\[\\begin{eqnarray}\n\\bar u &=&  \\frac{\\sum u}{n}   \\nonumber \\\\\n&=& \\frac{\\sum (x+y)}{n}   \\nonumber \\\\\n&=& \\frac{\\sum x}{n}+  \\frac{\\sum y}{n}   \\nonumber \\\\\n&=& \\bar x + \\bar y   \\nonumber \\\\\n\\end{eqnarray}\\]"
+  },
+  {
+    "objectID": "03-central-tendency.html#gm-of-two-variables",
+    "href": "03-central-tendency.html#gm-of-two-variables",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "GM of two variables",
+    "text": "GM of two variables\nFor equal number of observations, GM of two variables is equal to the product of their individual means.\n\n\\(G_1 = (x_1 x_2 x_3)^{1/3}\\)\n\\(G_2 = (y_1 y_2 y_3)^{1/3}\\)\nCOmbined, G = \\((x_1 y_1 \\cdot x_2 y_2 \\cdot x_3 y_3)^{1/3}\\)\nThus \\(G = G_1 \\times G_2\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#gm-with-log",
+    "href": "03-central-tendency.html#gm-with-log",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "GM with Log",
+    "text": "GM with Log\n\\(GM=Antilog(\\frac{\\sum \\log x_i}{n})\\)\nor\n\\(Antilog(\\frac{\\sum f_i \\log x_i}{\\sum f_i})\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#mean-of-variables",
+    "href": "03-central-tendency.html#mean-of-variables",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Mean of Variables",
+    "text": "Mean of Variables\n\nIf \\(y = a + bx, \\bar y = a + b \\bar x\\)\nIf \\(z_i=ax_i+by_i, \\bar z=a \\bar x + b \\bar y\\)"
+  },
+  {
+    "objectID": "03-central-tendency.html#am-gm",
+    "href": "03-central-tendency.html#am-gm",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "AM-GM",
+    "text": "AM-GM\nAM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. (click to see)\n\n\n\nSolution (i)\n\n\nWe know, \\(AM \\times HM=(GM)^2\\)\n\nThus, \\(HM=\\) 9\n\n\n\n\n\n\nSolution (ii)\n\n\nIf the numbers are \\(a, b; a&gt;b\\) \\(\\frac{a+b}{2}=25\\) and \\(\\sqrt{ab}=15\\)\nThus, \\(a+b=50\\), and \\(ab=15^2=225\\)\n\\(\\therefore (a-b)^2=(a+b)^2-4ab\\) \\(\\Rightarrow a-b =\\) 40\n\nThus, a = 45, b = 5"
+  },
+  {
+    "objectID": "03-central-tendency.html#input-correction",
+    "href": "03-central-tendency.html#input-correction",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Input Correction",
+    "text": "Input Correction\nThe mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.\n\nSolution\n\n\n\\(n=200, \\bar x = 200\\)\n\\(\\therefore\\) Incorrect total, \\(\\sum x = n \\times \\bar x=\\) 10000\nCorrect total, \\(\\sum x'=10,000-92-8+192+88=\\) 10180\nCorrect mean, \\(\\bar x'=\\frac{10180}{200}=\\) 50.9"
+  },
+  {
+    "objectID": "03-central-tendency.html#sum-of-fx-k0",
+    "href": "03-central-tendency.html#sum-of-fx-k0",
+    "title": "Statistics-Chapter 3: Central Tendency",
+    "section": "Sum of f(x-k)=0",
+    "text": "Sum of f(x-k)=0\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]

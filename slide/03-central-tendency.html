@@ -1177,17 +1177,33 @@ function klikaj(i) {
 <h2>Theorem 07</h2>
 <p>If the GM of <span class="math inline">\(n_1\)</span> va;ues is <span class="math inline">\(G_1\)</span>, and of <span class="math inline">\(n_2\)</span> values is <span class="math inline">\(G_2\)</span>, show GM of <span class="math inline">\(n_1+n_2\)</span> values is <span class="math inline">\(G=\sqrt{G_1G_2}\)</span></p>
 </section>
-<section id="theorem-08" class="slide level2">
-<h2>Theorem 08</h2>
-<p><small></small></p><small>
+<section id="am-gm-hm" class="slide level2">
+<h2>AM ≥ GM ≥ HM</h2>
 <div class="container">
 <section id="for-two-non-zero-positive-numbers-prove-am-ge-gm-ge-hm" class="col">
 <h3>For two non-zero positive numbers, prove <span class="math inline">\(AM \ge GM \ge HM\)</span></h3>
 <p>Let, the numbers be a, b</p>
 <p><span class="math inline">\(\therefore AM = \frac{a+b}{2}\)</span></p>
-<p><span class="math inline">\(GM = \sqrt{ab}\)</span></p>
+<p><span class="math inline">\(GM = (ab)^{\frac12}\)</span></p>
 <p><span class="math inline">\(HM = \frac{2}{\frac 1 a +\frac 1 b}\)</span></p>
 </section>
+<div class="col">
+<ul>
+<li class="fragment"><span class="math inline">\((a-b)^2  \ge 0\)</span></li>
+<li class="fragment"><span class="math inline">\((a+b)^2 - 4ab \ge 0\)</span></li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li class="fragment">$(-)^2 $</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="full-proof" class="slide level2">
+<h2>Full Proof</h2>
+<small>
+<div class="container">
 <div class="col">
 <p>We know, <span class="math display">\[\begin{eqnarray}
 &amp;  &amp;(a-b)^2\ge 0    \nonumber \\
@@ -1212,20 +1228,45 @@ function klikaj(i) {
 </div>
 </small><p><small></small></p>
 </section>
-<section id="theorem-09" class="slide level2">
-<h2>Theorem 09</h2>
+<section id="am-hm-gm²" class="slide level2">
+<h2>AM × HM = GM²</h2>
+<p>Prove using formulae</p>
 <p>For two non-zero positive numbers, <span class="math inline">\(AM \times HM =(GM)^2\)</span></p>
 </section>
-<section id="theorem-10" class="slide level2">
-<h2>Theorem 10</h2>
+<section id="mean-median-of-natural-numbers" class="slide level2">
+<h2>Mean-Median of Natural Numbers</h2>
 <p>Mean and Median of first n natural numbers are <span class="math inline">\(\frac {n+1} 2\)</span></p>
 </section>
-<section id="theorem-11" class="slide level2">
-<h2>Theorem 11</h2>
-<p>If <span class="math inline">\(\bar x_1\)</span> and <span class="math inline">\(\bar x_2\)</span> are means of 2 data sets of sizes <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span>, respectively, the combined mean is <span class="math inline">\(\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}\)</span></p>
+<section id="combined-mean" class="slide level2">
+<h2>Combined mean</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Form</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"># Cadets</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Mean Score</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">70</td>
+</tr>
+</tbody>
+</table>
+<p>What’s the combined mean?</p>
+<ul>
+<li class="fragment"><span class="math display">\[\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}\]</span></li>
+</ul>
 </section>
-<section id="theorem-12" class="slide level2">
-<h2>Theorem 12</h2>
+<section id="mean-of-u-x-y" class="slide level2">
+<h2>Mean of U = X + Y</h2>
 <p>If <span class="math inline">\(u=x+y, \bar u=\bar x + \bar y\)</span>; if <span class="math inline">\(n_1=n_2=n\)</span></p>
 <p>Given <span class="math inline">\(u=x+y\)</span></p>
 <p><span class="math display">\[\begin{eqnarray}
@@ -1235,30 +1276,37 @@ function klikaj(i) {
 &amp;=&amp; \bar x + \bar y   \nonumber \\
 \end{eqnarray}\]</span></p>
 </section>
-<section id="theorem-13" class="slide level2">
-<h2>Theorem 13</h2>
+<section id="gm-of-two-variables" class="slide level2">
+<h2>GM of two variables</h2>
 <p>For equal number of observations, GM of two variables is equal to the product of their individual means.</p>
+<ul>
+<li class="fragment"><span class="math inline">\(G_1 = (x_1 x_2 x_3)^{1/3}\)</span></li>
+<li class="fragment"><span class="math inline">\(G_2 = (y_1 y_2 y_3)^{1/3}\)</span></li>
+<li class="fragment">COmbined, G = <span class="math inline">\((x_1 y_1 \cdot x_2 y_2 \cdot x_3 y_3)^{1/3}\)</span></li>
+<li class="fragment">Thus <span class="math inline">\(G = G_1 \times G_2\)</span></li>
+</ul>
 </section>
-<section id="theorem-14" class="slide level2">
-<h2>Theorem 14</h2>
-<p><span class="math inline">\(GM=Antilog(\frac{\sum \log x_i}{n})\)</span> or <span class="math inline">\(Antilog(\frac{\sum f_i \log x_i}{\sum f_i})\)</span></p>
+<section id="gm-with-log" class="slide level2">
+<h2>GM with Log</h2>
+<p><span class="math inline">\(GM=Antilog(\frac{\sum \log x_i}{n})\)</span></p>
+<p>or</p>
+<p><span class="math inline">\(Antilog(\frac{\sum f_i \log x_i}{\sum f_i})\)</span></p>
 </section>
-<section id="theorem-15" class="slide level2">
-<h2>Theorem 15</h2>
-<p>If <span class="math inline">\(y = a + bx, \bar y = a + b \bar x\)</span></p>
-</section>
-<section id="theorem-16" class="slide level2">
-<h2>Theorem 16</h2>
-<p>If <span class="math inline">\(z_i=ax_i+by_i, \bar z=a \bar x + b \bar y\)</span></p>
+<section id="mean-of-variables" class="slide level2">
+<h2>Mean of Variables</h2>
+<ul>
+<li class="fragment">If <span class="math inline">\(y = a + bx, \bar y = a + b \bar x\)</span></li>
+<li class="fragment">If <span class="math inline">\(z_i=ax_i+by_i, \bar z=a \bar x + b \bar y\)</span></li>
+</ul>
 </section></section>
 <section>
 <section id="example-problems" class="title-slide slide level1 center">
 <h1>Example Problems</h1>
 
 </section>
-<section id="example-problem-01" class="slide level2">
-<h2>Example Problem 01</h2>
-AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers.
+<section id="am-gm" class="slide level2">
+<h2>AM-GM</h2>
+AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. (click to see)
 <div class="container">
 <div class="col">
 <div onclick="klikaj('ep1.1')">
@@ -1296,8 +1344,8 @@ function klikaj(i) {
 </div>
 </div>
 </section>
-<section id="example-problem-15" class="slide level2">
-<h2>Example Problem 15</h2>
+<section id="input-correction" class="slide level2">
+<h2>Input Correction</h2>
 <p>The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.</p>
 <div onclick="klikaj('ep15')">
 <span>Solution</span>
@@ -1314,8 +1362,8 @@ function klikaj(i) {
 }
 </script>
 </section>
-<section id="example-problem-22" class="slide level2">
-<h2>Example Problem 22</h2>
+<section id="sum-of-fx-k0" class="slide level2">
+<h2>Sum of f(x-k)=0</h2>
 <p>If <span class="math inline">\(\sum f_i(x_i-k)=0\)</span>, what is the value of <code>k</code>?</p>
 <div onclick="klikaj('ep22')">
 <span>Answer</span>

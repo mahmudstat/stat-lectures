@@ -620,13 +620,8 @@ Use frequency as well i.e,
 </div>
 </div>
 
-## Theorem 07
 
-If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
-
-
-## Theorem 08
-<small>
+## AM ≥ GM ≥ HM
 
 <div class="container">
 <div class="col">
@@ -636,11 +631,25 @@ Let, the numbers be a, b
 
 $\therefore AM = \frac{a+b}{2}$ 
 
-$GM = \sqrt{ab}$ 
+$GM = (ab)^{\frac12}$
 
 $HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
 </div>
 
+<div class="col">
+> - $(a-b)^2  \ge 0$
+> - $(a+b)^2 - 4ab \ge 0$
+</div>
+
+<div class="col">
+> - $(\frac{1}{a}-\frac{1}{b})^2\ge 0 $
+</div>
+</div>
+
+## Full Proof
+
+<small>
+<div class="container">
 <div class="col">
 We know, 
 \begin{eqnarray}
@@ -667,18 +676,28 @@ Similarly,
 </div>
 </small>
 
-## Theorem 09
+## AM × HM = GM²
+
+Prove using formulae
 
 For two non-zero positive numbers, $AM \times HM =(GM)^2$
 
-## Theorem 10
+## Mean-Median of Natural Numbers
+
 Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
 
-## Theorem 11
+## Combined mean
 
-If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
+|    Form    |  A |  B |
+|:----------:|:--:|:--:|
+|  # Cadets  | 24 | 25 |
+| Mean Score | 75 | 70 |
 
-## Theorem 12
+What's the combined mean?
+
+> - $$\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$$
+
+## Mean of U = X + Y
 
 If $u=x+y, \bar u=\bar x + \bar y$; if $n_1=n_2=n$
 
@@ -691,27 +710,33 @@ Given $u=x+y$
 &=& \bar x + \bar y   \nonumber \\
 \end{eqnarray}
 
-## Theorem 13
+## GM of two variables
 
 For equal number of observations, GM of two variables is equal to the product of their individual means. 
 
-## Theorem 14
+> - $G_1 = (x_1 x_2 x_3)^{1/3}$
+> - $G_2 = (y_1 y_2 y_3)^{1/3}$
+> - COmbined, G = $(x_1 y_1 \cdot x_2 y_2 \cdot x_3 y_3)^{1/3}$
+> - Thus $G = G_1 \times G_2$
 
-$GM=Antilog(\frac{\sum \log x_i}{n})$ or $Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$ 
+## GM with Log
 
-## Theorem 15
+$GM=Antilog(\frac{\sum \log x_i}{n})$
 
-If $y = a + bx, \bar y = a + b \bar x$
+or
 
-## Theorem 16
+$Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$
 
-If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
+## Mean of Variables
+
+> - If $y = a + bx, \bar y = a + b \bar x$
+> - If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
 
 # Example Problems
 
-## Example Problem 01
+## AM-GM
 
-AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. 
+AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. (click to see)
 <div class="container">
 <div class="col">
 <div onclick="klikaj('ep1.1')"><span>Solution (i)</span></div>
@@ -747,7 +772,7 @@ function klikaj(i) {
 </div>
 </div>
 
-## Example Problem 15
+## Input Correction
 
 The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean. 
 
@@ -768,7 +793,7 @@ function klikaj(i) {
 </script>
 
 
-## Example Problem 22 
+## Sum of f(x-k)=0
 
 If $\sum f_i(x_i-k)=0$, what is the value of `k`?
 
