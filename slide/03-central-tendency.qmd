@@ -626,19 +626,6 @@ Use frequency as well i.e,
 <div class="container">
 <div class="col">
 
-For two non-zero positive numbers, prove $AM \ge GM \ge HM$
-
-Let, the numbers be a, b
-
-$\therefore AM = \frac{a+b}{2}$ 
-
-$GM = (ab)^{\frac12}$
-
-$HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
-</div>
-
-<div class="col">
-
 > - $(a-b)^2  \ge 0$
 > - $(a+b)^2 - 4ab \ge 0$
 
