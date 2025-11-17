@@ -645,7 +645,7 @@ $HM = \frac{2}{\frac 1 a +\frac 1 b}$
 
 <div class="col">
 
-> - $(\frac{1}{a}-\frac{1}{b})^2\ge 0 $
+> - $(\frac{1}{a}-\frac{1}{b})^2\ge 0$
 
 </div>
 </div>
