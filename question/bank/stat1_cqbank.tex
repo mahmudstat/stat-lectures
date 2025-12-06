@@ -1470,7 +1470,7 @@ College & Students & Passed \\ \hline
     \item  
 	Compute the 8th Decile from the data and explain. \hfill 3
     \item
-	Find and compare arithmetic and geometric mean from the data. \hfill 4
+	What is the value below which 75\% observations lie? Find in two distinct ways. \hfill 4
   \end{enumerate}
   
    \item
@@ -1934,7 +1934,7 @@ Store Q  & 60 & 58 & 65 & 63 & 61
 	  \begin{table}[h]
 	  \centering
 \begin{tabular}{c|ccc}
-Factory & Wage (BDT) & Standard Deviation & Number of workers \\ \hline
+Factory & Mean Wage (BDT) & Standard Deviation & Number of workers \\ \hline
 A       & 1560       & 90                 & 200               \\ 
 B       & 1580       & 70                 & 160              
 \end{tabular}
@@ -1948,7 +1948,7 @@ B       & 1580       & 70                 & 160
     \item  
 	Which company is more consistent with their wages? \hfill 3
     \item
-	Find the combined Coefficient of Variance (CV) and compare with individual companies. \hfill 4
+	Compare the wages with variance alone. Does it produce the same conclusion. Justify the finding. \hfill 4
   \end{enumerate}
   
 
@@ -1965,6 +1965,27 @@ B       & 1580       & 70                 & 160
     \item
 	Find the correct standard deviation. \hfill 4
   \end{enumerate}
+  
+        \item
+  \textbf{  A company recorded the monthly sales (in lakhs of ₹) of two salespersons X and Y for the first half of the year:}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|cccccc}
+Month & Jan & Feb & Mar & Apr & May & Jun \\ \hline
+Salesperson X & 42 & 38 & 45 & 40 & 43 & 41 \\
+Salesperson Y & 50 & 28 & 60 & 35 & 55 & 30
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Calculate the \textbf{mean deviation about median} for salesperson X. \hfill 3
+    
+    \item Which salesperson has \textbf{more consistent sales}? Justify using an appropriate relative measure of dispersion. \hfill 4
+\end{enumerate}
+
+
       \item
   \textbf{The table below presents the number of goals scored by two footballers, A and B, over five consecutive seasons}
 
@@ -1995,7 +2016,7 @@ Footballer B & 25 & 5  & 10 & 15 & 6
  \item What are the absolute measures of dispersion?
  \item What are the relative measures of dispersion?
  \item What is the formula of Range? \hfill 1
- \item Does Range consider all values?
+ \item Does Range consider all values? \hfill 1
  \item Is Range influenced by extreme values or outliers? \hfill 1
  \item Write down the formula of Mean Deviation ($MD(\bar x)$.
  \item Write down the formula of Mean Deviation around median ($MD(Me)$.
@@ -2479,6 +2500,20 @@ Maximum         & 89        & 86        \\  \hline
     \end{enumerate}
 
 \chapter{Correlation and Regression} 
+
+\section{Short Questions}
+
+
+\begin{enumerate}
+\item What is the difference between regression and correlation? \hfill 2
+\item What is the range of correlation coefficient ($r$)? \hfill 1
+\item $Y= a +bX;$ What does each notation mean in regression context? \hfill 2
+\item What can we learn from the scatter plot? \hfill 2
+\hfill What is correlation? \hfill 1
+\item Write two purposes of regression analysis. \hfill 2
+
+\end{enumerate}
+
 \section{Creative Questions}
 
  \begin{enumerate}
@@ -2517,6 +2552,44 @@ Exam Score (Y) & 65 & 70 & 72 & 78 & 80 & 85 & 88 & 92 & 95 & 98 \\
     \item
 	Using data, show $r = \sqrt{b_{yx} \times b_{xy}}$; How much variation is explained by the obtained model? \hfill 4
   \end{enumerate}
+  
+  \item
+  \textbf{The following table shows the monthly sales (in thousand ₹) of 8 salespeople and their years of experience. It is hypothesized that sales performance depends on experience.}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+Experience (X, years) & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+Sales (Y, thousand ₹) & 25 & 32 & 38 & 45 & 50 & 58 & 63 & 70 \\
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item
+    Estimate and interpret the regression coefficient of y on x. \hfill 3
+    
+    \item
+    Estimate the regression coefficient of x on y. Is this model realistic? Explain. \hfill 4
+\end{enumerate}
+
+\item
+  \textbf{The table below displays the weekly hours of practice and corresponding tournament scores of 9 competitive tennis players. It is theorized that tournament score depends on practice hours.}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+Practice Hours (X) & 5 & 7 & 9 & 10 & 12 & 14 & 16 & 18 & 20 \\ \hline
+Tournament Score (Y) & 45 & 52 & 60 & 68 & 75 & 82 & 88 & 93 & 98 \\
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item
+    Estimate and interpret the regression coefficient of y on x. \hfill 3
+    
+    \item
+    Estimate the regression coefficient of x on y. Is this model realistic? Explain. \hfill 4
+\end{enumerate}
 \end{enumerate}
 
 \section{Short Questions}
@@ -2647,6 +2720,44 @@ Sales    & 120  & 150  & 140  & 160  & 180  & 200  & 220  & 240
     Calculate the trend using the three-yearly moving average method. \hfill 3
     \item
     Predict the approximate sales for the year 2022 using both graphical and moving average methods. \hfill 4
+\end{enumerate}
+
+\item
+\textbf{The monthly website traffic (in thousands of visits) for an online platform over the past 7 months is provided below:}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccccccc}
+Month & Jan & Feb & Mar & Apr & May & Jun & Jul \\ \hline
+Visits & 42 & 48 & 55 & 52 & 60 & 65 & 70 \\
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+\item
+Determine the trend using the three-month moving average method. \hfill 3
+\item
+Plot the trend and forecast traffic for August using two methods 
+and compare. \hfill 4
+\end{enumerate}
+
+\item
+\textbf{The quarterly revenue (in million ₹) of a retail chain is given below:}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccccccc}
+Quarter & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 \\ \hline
+Revenue & 85 & 92 & 88 & 95 & 102 & 98 & 110 \\
+\end{tabular}
+\end{table}
+
+\begin{enumerate}
+\item
+Calculate the trend using the moving average method for a 3-quarter period. \hfill 3
+\item
+Plot the trend line and predict the revenue for Q8 using two methods 
+and compare. \hfill 4
 \end{enumerate}
   
   \item
