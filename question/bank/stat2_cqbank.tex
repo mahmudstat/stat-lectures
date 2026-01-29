@@ -678,7 +678,7 @@ In how many different ways can 4 red balls and 3 blue balls be arranged in a row
 
 \item What is the range of probability? \hfill 1
 
-\item Briefly explain empirical probability with an example. \hfill 2
+\item Briefly explain the empirical probability with an example. \hfill 2
 
 \item How does the classical definition of probability differ from the empirical definition? \hfill 2
 
@@ -785,7 +785,19 @@ P(E) = \lim_{n \to \infty} \frac{\text{n(A)}}{n(S)}
 	Examine the statement: $P(1 \le x \le 3) = F(3)-F(1)$ \hfill 4
   \end{enumerate}
   
-\begin{enumerate}
+  \item
+  \textbf{The joint probability function of two random variables \( X \) and \( Y \) is given by:}
+  
+  \begin{center}
+  \( \displaystyle P(X,Y) = \frac{x + 2y}{16}; \quad x = 0, 1; \quad y = 0, 1, 2, 3 \)
+  \end{center}
+ 
+  \begin{enumerate}
+    \item
+    	Find \( P(X | Y) \). \hfill 3
+    \item
+     	Analyze whether x and y are independent. \hfill 4
+  \end{enumerate}  
 
   \item
   \textbf{The joint probability function of two random variables \( X \) and \( Y \) is given by:}
@@ -822,8 +834,6 @@ P(E) = \lim_{n \to \infty} \frac{\text{n(A)}}{n(S)}
     \item
      	Find \( P(X \vert Y) \) and \( P(X \vert Y = 0) \). \hfill 4
   \end{enumerate}
-
-\end{enumerate}
 
   
   \item
@@ -1119,7 +1129,7 @@ $$
 
   \begin{enumerate}
 
-
+\item What is a probability distribution \hfill 1
 \item What is a discrete random variable? \hfill 1
 
 \item What is a continuous random variable? \hfill 1
@@ -1139,7 +1149,7 @@ $$
 \item Is the weight of a person an example of a discrete or continuous random variable? \hfill 1
 
 \item What is the integral of \( x^n \), where \( n \neq -1 \)? \hfill 1
-
+\item Compute the integral of \( x^2y \) with respect to \( y \). \hfill 2
 \item Compute the integral of \( x^3 \) with respect to \( x \). \hfill 1
 
 \item Find the integral of \( x^5 \) with respect to \( x \). \hfill 1
@@ -1422,15 +1432,14 @@ P(Y)          & 0.2  & 0.3  & 0.3  & 0.1  & 0.1
   \end{enumerate}
   
    \item
-	  \textbf{A professor showed a probability distribution in a class:}
+	  \textbf{A professor showed a probability distribution in a class. The distribution is given below. He informed that the value of the arithmetic mean of the distribution is 3.}
 	  
 	  \begin{table}[h]
 	  \begin{center}
-\begin{tabular}{llllll}
+\begin{tabular}{c|c|c|c|c|c}
 x    & 1   & 2 & 3   & 4 & 5   \\ \hline
 p(x) & 0.1 & a & 0.3 & b & 0.2 
 \end{tabular} \\
-\textbf{The value of the arithmetic mean of the distribution is 3.}
 \end{center}	
 \end{table}
     
@@ -1601,6 +1610,19 @@ No of family & 10 & 75 & 10 & 5
   \begin{enumerate}
   
    \item
+  \textbf{In a binomial distribution, the mean and standard deviations are 3 and $\sqrt{\frac{3}{2}}$. An analysis revealed that the distribution is symmetric.} 
+
+  
+  \begin{enumerate}
+     \item How many outcomes are there in a Bernoulli trial?  \hfill 1
+    \item Explain the relationship between the mean and variance of the binomial distribution. \hfill 2
+    \item  
+	Find the value of $P(X=2)$. \hfill 3
+    \item
+	Assess the finding of the analysis. \hfill 4
+  \end{enumerate}
+  
+   \item
 	  \textbf{For a Binomial distribution, arithmetic mean = 4 and the variance is 3.} 
   
   \begin{enumerate}
@@ -1755,6 +1777,8 @@ No of family & 10 & 75 & 10 & 5
  
  \item What is a Bernoulli trial?  \hfill 1
  
+ \item Explain the relationship between the mean and variance of the binomial distribution. \hfill 2
+ 
  \item How many outcomes are there in a Bernoulli trial?  \hfill 1
  
  \item How does n, p, and q affect the shape of binomial distribution? \hfill 2
@@ -1822,6 +1846,16 @@ No of family & 10 & 75 & 10 & 5
     \item  
       If $P(a) = P(a+2)$, what is the value of $a$? Does it hold for Poisson distribution?  \hfill 4  
   \end{enumerate}  
+  
+    \item  
+  \textbf{The number of device failures within a certain period in a tech industry follows a Poisson distribution with a standard deviation of 2.5.}  
+
+  \begin{enumerate}  
+    \item  
+      Find $P(X \geq 3)$. \hfill 3  
+    \item  
+      What is the probabiility that there no more than 2 device failures within the given period?  \hfill 4  
+  \end{enumerate}   
 
 \item  
   \textbf{A call center records the number of customer complaints per day, which follows a Poisson distribution with a standard deviation of 3.}  
@@ -2172,7 +2206,40 @@ Frequency & 60 & 80 & 50 & 20 & 6 & 2
 \chapter{Index Number} 
 \section{Creative Questions}
   \begin{enumerate}
+  
  \item
+  \textbf{Price and Quantity Data for Rice, Pulse, and Oil in the years 2013 and 2015 are given below.}
+  
+  \begin{table}[h]
+\centering
+\begin{tabular}{ccccccc}
+\hline
+Commodity & \multicolumn{2}{c}{(2010)} & \multicolumn{2}{c}{(2011)}  \\
+& Price & Quantity & Price & Quantity\\
+\hline
+A & 45 & 30 & 50 & 40  \\
+B & 105 & 5 & 110 & 8  \\
+C & 85 & 2 & 80 & 5 \\
+\hline
+\end{tabular}
+\caption{Price and Quantity Data for Three Commodities}
+\label{tab:price_quantity}
+\end{table}
+
+  
+  \begin{enumerate}
+    \item
+	What is an ideal index number? \hfill 1
+    \item
+	Is index number unit-free? \hfill 2
+    \item  
+	Compute the price index number, considering 2013 as the base year, using simple aggregate method. \hfill 3
+    \item
+	Sift the time reversal test for the Laspeyres' price index number.  \hfill 4
+  \end{enumerate}  
+  
+ \item
+ 
   \textbf{Price and Quantity Data for Three Commodities in the year 2010 and 2011 are given below.}
   
   \begin{table}[h]
@@ -2237,6 +2304,23 @@ Sugar & \$1.8 & 80 & \$2.2 & 85 \\
 \chapter{Sampling} 
 \section{Creative Questions}
   \begin{enumerate}
+  
+   \item
+  \textbf{The scores of 4 students in an IELTS Test are 7.5, 7.0, 8.5, and 6.0. An instructor said, if samples of size 2 are selected from these score without replacement, the sample mean will be an unbiased estimate of the population mean.}
+
+  
+  \begin{enumerate}
+    \item
+	What is a sample? \hfill 1
+    \item
+	What are the disadvantages of a census? \hfill 2
+    \item  
+	Estimate the population variance from the data. \hfill 3
+    \item
+	Evaluate the statement of the instructor. \hfill 4
+  \end{enumerate}
+  
+  
  \item
   \textbf{Sampling is one of the essential steps in the analysis of observational studies. It eliminates the necessity of working with the entire population, thereby minimizing cost and time required to draw conclusions.}
 
@@ -2282,6 +2366,21 @@ Sugar & \$1.8 & 80 & \$2.2 & 85 \\
 \section{Creative Questions}
 
   \begin{enumerate}
+  
+   \item
+  \textbf{STATEMENT}
+
+  
+  \begin{enumerate}
+    \item
+	Question \hfill 1
+    \item
+	Question \hfill 2
+    \item  
+	Question \hfill 3
+    \item
+	Question \hfill 4
+  \end{enumerate}
   
    \item
 	  \textbf{A reseracher uses the following data to know about some demographic characterisics.} 
@@ -2390,7 +2489,7 @@ No. of live births & 109 & 198 & 86 & 90 & 65 & 76 & 60
 \centering
 \begin{tabular}{c|c|c|c|c|c|c|c}
 Age Group & 15-19 & 20-24 & 25-29 & 30-34 & 35-39 & 40-44 & 45-49 \\ \hline
-No. of Women & 540 & 760 & 530 & 495 & 450 & 505 & 430 \\
+No. of Women & 540 & 760 & 530 & 495 & 450 & 505 & 430 \\  \hline
 No. of Live Births & 109 & 198 & 86 & 90 & 65 & 76 & 60
 \end{tabular}
 \end{table}
@@ -2409,9 +2508,9 @@ No. of Live Births & 109 & 198 & 86 & 90 & 65 & 76 & 60
 
 \begin{table}[H]
 \centering
-\begin{tabular}{c|ccccccc}
+\begin{tabular}{c|c|c|c|c|c|c|c}
 Age Group & 15--19 & 20--24 & 25--29 & 30--34 & 35--39 & 40--44 & 45--49 \\ \hline
-No. of Women & 540 & 760 & 530 & 495 & 450 & 505 & 430 \\
+No. of Women & 540 & 760 & 530 & 495 & 450 & 505 & 430 \\  \hline
 No. of Live Births & 109 & 198 & 86 & 90 & 65 & 76 & 60
 \end{tabular}
 \caption{Number of Women and Live Births by Age Group}
@@ -2452,6 +2551,8 @@ B & 15,000 & 2.15 million & 1.1 million
 \section{Short Questions}
 
   \begin{enumerate}
+  \item Write down the formula of GRR. \hfill 1
+  \item Differentiate between GRR and NRR. \hfill 2
   
   \item What does vital statistics deal with? \hfill 1
   
