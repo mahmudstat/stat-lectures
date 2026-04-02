@@ -35,6 +35,10 @@ The `qdraw` plugin by [Abdullah Al Mahmud](https://www.thinkermahmud.com/qdraw/)
 - [Sampling](slide/08-sampling.html)
 - [Vital Statistics](slide/09-vital-stat.html)
 
+## Mathematics
+
+- [Dispersion](slide/dispersion.html)
+
 ## Elementary Statistics
 
 - [VII-X Statistics and Probability](slide/elementary_stat_prob.html)
