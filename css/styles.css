@@ -4,10 +4,11 @@
 /*
 background-image: conic-gradient(at 85% 45%, #ffffff, #66ff66, #ffffff);
 background-image: conic-gradient(WhiteSmoke, tomato, WhiteSmoke);
+background-image: conic-gradient(#ffffff, green, #ffffff);
 */
 
 .reveal {
-  background-image: conic-gradient(#ffffff, green, #ffffff);
+  background-image: conic-gradient(at 85% 45%, #ffffff, #66ff66, #ffffff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

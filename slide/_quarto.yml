@@ -17,7 +17,7 @@ format:
     - css/styles.css
     - styles.css
     logo: css/logo.png
-    footer: '<a href="https://docs.statmania.info" target="_blank">docs.statmania.info</a> | <a href="https://www.thinkermahmud.com">Abdullah Al Mahmud</a> | Press space or arrow to change slides'
+    footer: '<a href="https://www.statmania.info" target="_blank">www.statmania.info</a> | <a href="https://www.thinkermahmud.com">Abdullah Al Mahmud</a> | Press space or arrow to change slides'
 revealjs-plugins:
   - qdraw
 

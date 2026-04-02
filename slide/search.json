@@ -459,7 +459,7 @@
     "href": "01-probability-intro.html#real-number-from-010-0100",
     "title": "Probability",
     "section": "Real Number from (0,10) & (0,100)",
-    "text": "Real Number from (0,10) & (0,100)\n\n\n\nA real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?\n\n\nA real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?\n\n\nWhat is the probability that the square of a random number from (0, 10) is greater than 25?\n\n\nWhat is the probability that the square root of a random number from (0, 100) is greater than 5?\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Real Number from (0,10) & (0,100)\n\n\n\nA real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?\n\n\nA real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?\n\n\nWhat is the probability that the square of a random number from (0, 10) is greater than 25?\n\n\nWhat is the probability that the square root of a random number from (0, 100) is greater than 5?\n\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "06-correlation-regression.html#scatter-plot-examples",
@@ -578,7 +578,7 @@
     "href": "06-correlation-regression.html#purity-of-coefficients",
     "title": "Correlation-Regression",
     "section": "Purity of Coefficients",
-    "text": "Purity of Coefficients\n\n\\(r = \\frac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sqrt{\\frac{\\sum(x_i - \\bar x)^2}{n}\\frac{\\sum(y_i - \\bar y)^2}{n}}}\\)\n\\(\\rho = 1- \\frac{6 \\sum d_i^2}{n(n^2-1)}\\)\nb or \\(\\beta\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Purity of Coefficients\n\n\\(r = \\frac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sqrt{\\frac{\\sum(x_i - \\bar x)^2}{n}\\frac{\\sum(y_i - \\bar y)^2}{n}}}\\)\n\\(\\rho = 1- \\frac{6 \\sum d_i^2}{n(n^2-1)}\\)\nb or \\(\\beta\\)\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "02-data-collection-organization-presentation.html#types-of-data",
@@ -642,6 +642,27 @@
     "title": "Statistics I: Collection, Organization & Presentation of Data",
     "section": "Frequency Distribution",
     "text": "Frequency Distribution\n\n\nThree things required\n\nRange\nNo. of classes (k) &\nClass Interval (CI)\n\nLet k or CI & find the other\n\n\n\n\\(CI  = \\frac{Range}{\\text{Number of classes (k)}}\\)\n\\(\\text{Number of classes, k}= \\frac{Range}{\\text{CI}}\\)\nSturges Method: \\(k = 1 + 3.322 \\space logN\\); where N = no. of observations"
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#frequency-distribution-example",
+    "href": "02-data-collection-organization-presentation.html#frequency-distribution-example",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Frequency Distribution Example",
+    "text": "Frequency Distribution Example\n\n\n\n\n\n\n\n\n\n\n\nNo. of Surviving Plants\nFrequency\nCumulative Frequency\nPercentage\nCumulative Percentage\n\n\n\n\n20–29\n3\n3\n3%\n3%\n\n\n30–39\n14\n17\n14%\n17%\n\n\n40–49\n12\n29\n12%\n29%\n\n\n50–59\n8\n37\n8%\n37%\n\n\n60–69\n18\n55\n18%\n55%\n\n\n70–79\n10\n65\n10%\n65%\n\n\n80–89\n23\n88\n23%\n88%\n\n\n90–99\n12\n100\n12%\n100%\n\n\nTotal\n100\n\n100%"
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#key-insights",
+    "href": "02-data-collection-organization-presentation.html#key-insights",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Key Insights",
+    "text": "Key Insights\n\n\nIn most schools (23), the number of surviving plants is between 80 to 89.\nVery few schools (3) have surviving plants in the 20–29 range.\nMore than half of the schools (55%) have up to 69 surviving plants.\nA significant portion of schools (35%) report 70 or more surviving plants, with the 80–89 range alone accounting for 23%.\nThe 50–59 range has relatively few schools (8%), creating a noticeable dip between the lower and higher survival groups."
+  },
+  {
+    "objectID": "02-data-collection-organization-presentation.html#normal-distribution",
+    "href": "02-data-collection-organization-presentation.html#normal-distribution",
+    "title": "Statistics I: Collection, Organization & Presentation of Data",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeight in cm)\n157 - 162\n162 - 167\n167 - 172\n172 - 177\n177 - 182\n182 - 187\n187 - 192\n\n\n\n\nFrequency (\\(f_i\\))\n20\n120\n250\n320\n200\n70\n20"
   },
   {
     "objectID": "02-data-collection-organization-presentation.html#histogram",
@@ -739,7 +760,7 @@
     "href": "02-data-collection-organization-presentation.html#rose-plot",
     "title": "Statistics I: Collection, Organization & Presentation of Data",
     "section": "Rose Plot",
-    "text": "Rose Plot\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Rose Plot\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "03-expectation.html#expectation-from-mean",
@@ -935,7 +956,7 @@
     "href": "03-expectation.html#rain-coat-expectation",
     "title": "Mathematical Expectation",
     "section": "Rain Coat Expectation",
-    "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Rain Coat Expectation\nIf it rains, a dealer earns 5,000 tk a day, and if it does not, he loses 1000 tk a day. Find his expected earning.\n\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "07-time_series.html#what-is-time-series-data",
@@ -998,7 +1019,56 @@
     "href": "07-time_series.html#moving-average",
     "title": "Time Series",
     "section": "Moving Average",
-    "text": "Moving Average\n\n\n\nYear\nProduction\n3-Yearly Moving Average\n\n\n\n\n2001\n412\nNA\n\n\n2002\n438\n\\({412+438+446}\\over{3}=432\\)\n\n\n2003\n446\n\\(\\frac{438+446+454}3=446\\)\n\n\n2004\n454\n457\n\n\n2005\n470\n469\n\n\n2006\n483\n\\(\\frac{470+483+490}3=481\\)\n\n\n2007\n490\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Moving Average\n\n\n\nYear\nProduction\n3-Yearly Moving Average\n\n\n\n\n2001\n412\nNA\n\n\n2002\n438\n\\({412+438+446}\\over{3}=432\\)\n\n\n2003\n446\n\\(\\frac{438+446+454}3=446\\)\n\n\n2004\n454\n457\n\n\n2005\n470\n469\n\n\n2006\n483\n\\(\\frac{470+483+490}3=481\\)\n\n\n2007\n490\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "dispersion.html#absolute-measures",
+    "href": "dispersion.html#absolute-measures",
+    "title": "Measures of Dispersion",
+    "section": "Absolute Measures",
+    "text": "Absolute Measures\n\nRange\nMean Deviation\nQuartile Deviation\nVariance/Standard Deviation (Best)"
+  },
+  {
+    "objectID": "dispersion.html#relative-measures",
+    "href": "dispersion.html#relative-measures",
+    "title": "Measures of Dispersion",
+    "section": "Relative Measures",
+    "text": "Relative Measures\n\nCoefficient of Range\nCoefficient of Mean Deviation\nCoefficient of Quartile Deviation\nCoefficient of Variance (Best)"
+  },
+  {
+    "objectID": "dispersion.html#range",
+    "href": "dispersion.html#range",
+    "title": "Measures of Dispersion",
+    "section": "Range",
+    "text": "Range\n\\(R = X_H - X_L\\)"
+  },
+  {
+    "objectID": "dispersion.html#mean-deviation-md",
+    "href": "dispersion.html#mean-deviation-md",
+    "title": "Measures of Dispersion",
+    "section": "Mean Deviation (MD)",
+    "text": "Mean Deviation (MD)\nAround mean, \\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} |x_i - \\bar{x}|}\\)\n\nFor grouped data, \\(\\displaystyle MD(\\bar x) = \\frac{1}{n}{\\sum_{i=1}^{n} f_i|x_i - \\bar{x}|}\\)\nSimilarly around median and mode (Me and Mo)"
+  },
+  {
+    "objectID": "dispersion.html#grouped-data",
+    "href": "dispersion.html#grouped-data",
+    "title": "Measures of Dispersion",
+    "section": "Grouped Data",
+    "text": "Grouped Data\n“Classified” is not a proper term\n\n\n\nClass Interval\nFrequency\n\n\n\n\n10–19\n5\n\n\n20–29\n12\n\n\n30–39\n18\n\n\n40–49\n10\n\n\n50–59\n6"
+  },
+  {
+    "objectID": "dispersion.html#variance-and-standard-deviation",
+    "href": "dispersion.html#variance-and-standard-deviation",
+    "title": "Measures of Dispersion",
+    "section": "Variance and Standard Deviation",
+    "text": "Variance and Standard Deviation\nVariance, \\(\\displaystyle \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\n\\(\\displaystyle \\sigma^2 = \\frac{\\sum x_i^2}{n} - \\left(\\frac{\\sum x_i}{n}\\right)^2\\)\nMean of square - square of mean\n\\(\\bar {x^2} - (\\bar x)^2\\)\nSD = \\(\\sqrt{Variance}\\)"
+  },
+  {
+    "objectID": "dispersion.html#coefficients",
+    "href": "dispersion.html#coefficients",
+    "title": "Measures of Dispersion",
+    "section": "Coefficients",
+    "text": "Coefficients\n\nCoefficient of Range, \\(CR=\\frac{X_H-X_L}{X_H+X_L}\\times 100\\)\nCoefficient of Mean Deviation, \\(CMD(\\bar x) = \\frac{MD(\\bar x)}{\\bar x}\\)\nCoefficient of Quartile Deviation, \\(QD = \\frac{Q_3-Q_1}{Q_3+Q_1} \\times 100\\)\nCoefficient of Variance (Best), \\(CV = \\frac{\\sigma}{\\bar x} \\times 100\\)"
   },
   {
     "objectID": "dispersion.html#variance-simplified",
@@ -1026,7 +1096,7 @@
     "href": "dispersion.html#calculation-1",
     "title": "Measures of Dispersion",
     "section": "Calculation",
-    "text": "Calculation\n\n\n\n\n\n\n\n\n\n(x_i)\n( f_i )\n( f_i x_i )\n( f_i x_i^2 )\n\n\n\n\n12\n1\n\n\n\n\n14\n1\n\n\n\n\n15\n2\n\n\n\n\n19\n1\n\n\n\n\n\n\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i (x_i - \\bar{x})^2}{\\sum_{i=1}^{n} f_i}\\)\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i x_i^2}{\\sum_{i=1}^{n} f_i} - \\bar{x}^2\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Calculation\n\n\n\n\n\n\n\n\n\n(x_i)\n( f_i )\n( f_i x_i )\n( f_i x_i^2 )\n\n\n\n\n12\n1\n\n\n\n\n14\n1\n\n\n\n\n15\n2\n\n\n\n\n19\n1\n\n\n\n\n\n\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i (x_i - \\bar{x})^2}{\\sum_{i=1}^{n} f_i}\\)\n\\(\\text{Variance} = \\frac{\\sum_{i=1}^{n} f_i x_i^2}{\\sum_{i=1}^{n} f_i} - \\bar{x}^2\\)\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "stat_practical.html#solution-part",
@@ -1068,42 +1138,280 @@
     "href": "stat_practical.html#freq-distr",
     "title": "Statistics Practical",
     "section": "Freq Distr",
-    "text": "Freq Distr\nWaiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below.\nr set.seed(10) sample(40:60, 15)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Freq Distr\nWaiting times before a passenger can get a CNG auto-rickshaw from an intersection are given below.\nr set.seed(10) sample(40:60, 15)\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
-    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.1",
-    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.1",
-    "title": "Stat Mania Lectures",
-    "section": "External 1.1",
-    "text": "External 1.1\nContent 1.1\nNote: This will only appear in the speaker notes window."
+    "objectID": "08-sampling.html#population",
+    "href": "08-sampling.html#population",
+    "title": "Sampling",
+    "section": "Population",
+    "text": "Population\n\nFinite: people in Dhaka\nInfinite: hairs in head, fish in pacific ocean, stars"
   },
   {
-    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.2",
-    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.2",
-    "title": "Stat Mania Lectures",
-    "section": "External 1.2",
-    "text": "External 1.2\nContent 1.2"
+    "objectID": "08-sampling.html#terms",
+    "href": "08-sampling.html#terms",
+    "title": "Sampling",
+    "section": "Terms",
+    "text": "Terms\n\nSample size\nParameter: Population characteristic (such as \\(\\sigma\\))\nStatistics: Sample characteristic (\\(\\bar x, sd\\))"
   },
   {
-    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-2",
-    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-2",
-    "title": "Stat Mania Lectures",
-    "section": "External 2",
-    "text": "External 2\nContent 2.1"
+    "objectID": "08-sampling.html#census-vs-sample-survey",
+    "href": "08-sampling.html#census-vs-sample-survey",
+    "title": "Sampling",
+    "section": "Census vs Sample Survey",
+    "text": "Census vs Sample Survey\nDisadvantages of census:\n\nTime\nCost\nQuality\nAccuracy\nMulti-purpose"
   },
   {
-    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.1",
-    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.1",
-    "title": "Stat Mania Lectures",
-    "section": "External 3.1",
-    "text": "External 3.1\nContent 3.1"
+    "objectID": "08-sampling.html#steps-of-sample-survey",
+    "href": "08-sampling.html#steps-of-sample-survey",
+    "title": "Sampling",
+    "section": "Steps of sample survey",
+    "text": "Steps of sample survey\n\n\n\nAim\nPopulation\nSampling frame + unit\nType of data\nQuestionnaire\n\n\n\n\nMethod of data collection\nSampling method\nPilot survey\nField work\nData analysis"
   },
   {
-    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.2",
-    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.2",
+    "objectID": "08-sampling.html#random-sampling",
+    "href": "08-sampling.html#random-sampling",
+    "title": "Sampling",
+    "section": "Random sampling",
+    "text": "Random sampling\n\nSimple Random (SRS)\nSystematic Sampling\nStratified Sampling\nCluster Sampling"
+  },
+  {
+    "objectID": "08-sampling.html#srs",
+    "href": "08-sampling.html#srs",
+    "title": "Sampling",
+    "section": "SRS",
+    "text": "SRS\n\nLottery method\nRemainder approach\nQuitient approach"
+  },
+  {
+    "objectID": "08-sampling.html#remainder-approach",
+    "href": "08-sampling.html#remainder-approach",
+    "title": "Sampling",
+    "section": "Remainder approach",
+    "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’ (90), say 65\n\n\nDivide by N (30) and select the Rth item (R = Remainder = 25)\n\n\nRepeat (3-4)\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
+    "href": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
     "title": "Stat Mania Lectures",
-    "section": "External 3.2",
-    "text": "External 3.2\nContent 3.2\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "section": "Contributing",
+    "text": "Contributing\nPlease keep the issue tracker limited to bug reports, feature requests and pull requests.\nPersonal Support\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\nBug Reports\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\nPull Requests\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\nPlugins\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#central-moments",
+    "href": "05-moments-skewness-kurtosis.html#central-moments",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Central Moments",
+    "text": "Central Moments\nCentral Moments: \\(\\mu_r=\\frac{\\sum(x_i-\\bar x)^r}{n}\\)\n\n\\(\\mu_1=\\frac{\\sum(x_i-\\bar x)}{n}=\\frac{\\sum x_i}{n}-\\frac{n \\bar x}{n}=\\frac{n \\bar x}{n}-\\frac{n \\bar x}{n}=0\\)\n\n\n\\(\\mu_2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\sigma^2\\)\n\\(\\mu_3=\\frac{\\sum(x_i-\\bar x)^3}{n}\\)\n\\(\\mu_4=\\frac{\\sum(x_i-\\bar x)^4}{n}\\)\nFor grouped data: \\(\\mu_r=\\frac{\\sum f_i(x_i-\\bar x)^r}{n}\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#raw-moments",
+    "href": "05-moments-skewness-kurtosis.html#raw-moments",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Raw Moments",
+    "text": "Raw Moments\n\\(\\mu_r'=\\frac{\\sum(x_i-a)^r}{n}\\); a is arbitrary number\n\\(\\mu_1'=\\frac{\\sum(x_i-a)}{n}=\\frac{\\sum x_i}{n}-\\frac{na}{n}=\\bar x-a\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#value-of-1st-central-moment",
+    "href": "05-moments-skewness-kurtosis.html#value-of-1st-central-moment",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Value of 1st Central Moment",
+    "text": "Value of 1st Central Moment\n\\(\\displaystyle \\mu_1=\\frac{\\sum (x_i-\\bar x)}{n}=\\frac{\\sum x_i}{n}=\\bar x - \\bar x = 0\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#binomial-formula-from-pascal-triangle",
+    "href": "05-moments-skewness-kurtosis.html#binomial-formula-from-pascal-triangle",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Binomial Formula from Pascal Triangle",
+    "text": "Binomial Formula from Pascal Triangle\n\nCoefficients using the triangle\n\n\\((a+b)^1 = a + b\\)\n\\((a+b)^2 = a^2 + 2ab + b^2\\)\n\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\)\n\\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#changing-origin-of-moments",
+    "href": "05-moments-skewness-kurtosis.html#changing-origin-of-moments",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Changing Origin of Moments",
+    "text": "Changing Origin of Moments\nFrom \\(\\mu_r'(a)\\) to \\(\\mu_r'(k)\\)\nAssume, \\(a^r = \\mu_r'(a)\\), \\(b = a - k\\)\n\n\n\nBinomial Formulae\n\n\\((a+b)^1 = a + b\\)\n\\((a+b)^2 = a^2 + 2ab + b^2\\)\n\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\)\n\\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\\)\n\n\n\n\n\n\\(\\mu_1'(k) = \\mu_1'(a) + b\\)\n\n\n\\(\\mu_2'(k) = \\mu_2'(a) + 2 \\mu_1'(a)b + b^2\\)\n\n\n?\n\n\n?\n\n\n\n\n\nSee Examples"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#central-moments-from-raws",
+    "href": "05-moments-skewness-kurtosis.html#central-moments-from-raws",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Central Moments from Raws",
+    "text": "Central Moments from Raws\nUse \\(k = \\bar x\\)\nThat’s it! DO NOT MEMORIZE!"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#nd-central-moment",
+    "href": "05-moments-skewness-kurtosis.html#nd-central-moment",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "2nd Central Moment",
+    "text": "2nd Central Moment\n\\(\\mu_2=\\mu_2' - \\mu_1'^2\\)\n\n\\(\\mu_2=\\mu_2'(a)+2\\mu_1'(a)(a-\\bar x)+(a-\\bar x)^2\\) [From here]\n\\(\\mu_2'-2(a-\\bar x)^2+(a-\\bar x)^2\\) [since \\(\\mu_1'(a) = \\bar x-a\\)]\n\\(\\mu_2'-(a-\\bar x)^2\\)\n\\(\\mu_2' - \\mu_1'^2\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#chracteristics-of-moments",
+    "href": "05-moments-skewness-kurtosis.html#chracteristics-of-moments",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Chracteristics of Moments",
+    "text": "Chracteristics of Moments\n\n\nUsed for testing for symmetry, normality, and skewness\nFirst raw moment around zero is Arithmetic Mean (\\(\\mu_1'=\\frac{\\sum (x_i)}{n}=\\bar x\\))\nSecond central moment is equal to variance (\\(\\sigma^2 = \\frac{\\sum (x_i-\\bar x)^2 )}{n}\\))\n2nd and 3rd central moments are used to measure skewness (detailed later)\n2nd and 4th central moments are used to measure kurtosis"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#can-moments-be-negative",
+    "href": "05-moments-skewness-kurtosis.html#can-moments-be-negative",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Can Moments Be Negative?",
+    "text": "Can Moments Be Negative?\n\\(\\displaystyle \\mu_r = \\frac{\\sum(x_i-\\bar x)^r )}{n}; r=1,2,3, \\cdots\\)\n\n0 if all values are equal to origin\nNegative if r is an Odd number\nPositive if r is Even number"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#skewness",
+    "href": "05-moments-skewness-kurtosis.html#skewness",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Skewness",
+    "text": "Skewness\nLack of symmetry\n\n\n+Ve Skew \\(\\rightarrow \\bar X \\gt Me \\gt Mode\\)\n-Ve Skew \\(\\rightarrow \\bar X \\lt Me \\lt Mode\\)\nNo Skew \\(\\rightarrow \\bar X = Me = Mode\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#positive-skewness",
+    "href": "05-moments-skewness-kurtosis.html#positive-skewness",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Positive Skewness",
+    "text": "Positive Skewness\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLow values have high frequency\nHigh values have low frequency\nAs the value increases, the frequency decreases\n\n\n\nMost students score low, very few get good scores."
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#negative-skewness",
+    "href": "05-moments-skewness-kurtosis.html#negative-skewness",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Negative Skewness",
+    "text": "Negative Skewness\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLow values have low frequency\nHigh values have high frequency\nAs the value increases, so does the frequency\n\nVery few students get low marks, most get high marks."
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#symmetric",
+    "href": "05-moments-skewness-kurtosis.html#symmetric",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Symmetric",
+    "text": "Symmetric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAverage values have maximum frequency\nLow values have low frequency and high values have high frequency\nAs the value go farther from mean, their frequency gradually decreases."
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#kurtosis",
+    "href": "05-moments-skewness-kurtosis.html#kurtosis",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Kurtosis",
+    "text": "Kurtosis\n\nNormal distribution \\(\\rightarrow\\)\n\nMost students get average marks\nHigher and lower marks are obtained by lesser number of students"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#kurtosis-misconception",
+    "href": "05-moments-skewness-kurtosis.html#kurtosis-misconception",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Kurtosis Misconception",
+    "text": "Kurtosis Misconception\nKurtosis is NOT a degree of peakedness. Learn more"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#measures-of-skewness",
+    "href": "05-moments-skewness-kurtosis.html#measures-of-skewness",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Measures of SKewness",
+    "text": "Measures of SKewness\n\n\n\n\nPearson’s Coefficient: \\(SK_P=\\frac{Mean-Mode}{\\sigma}=\\frac{3(Mean-Median)}{\\sigma} ;(-3,3)\\)\n(\\(Mode=3Me-2\\bar X\\))\n\n\nBowley’s Coefficient: \\(SK_B=\\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\\)\nKelly’s Coefficient: \\(SK_k=\\frac{D_1+D_9-2Me}{D_9-D1}\\)\nMethod of Moments: \\(\\beta_1=\\frac{\\mu_3^2}{\\mu_2^3}\\)\n\n\n\n\nEstimate Skewness\n4, 23, 55, 70, 74, 78, 86, 89"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#skewness-working-formula",
+    "href": "05-moments-skewness-kurtosis.html#skewness-working-formula",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Skewness Working Formula",
+    "text": "Skewness Working Formula\nCoefficient of skewness, \\(\\gamma_1 = \\sqrt{\\beta_1} = \\sqrt{\\frac{\\mu_3^2}{\\mu_2^3}} = \\frac{\\mu_3}{\\sqrt{\\mu_2^3}}\\)\nIf \\(\\gamma_1 &lt; 0 \\rightarrow\\) Negative Skew\nIf \\(\\gamma_1 &gt; 0 \\rightarrow\\) Positive Skew\nIf \\(\\gamma_1 = 0 \\rightarrow\\) No Skew (Symmetric Distribution)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#measures-of-kurtosis",
+    "href": "05-moments-skewness-kurtosis.html#measures-of-kurtosis",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Measures of Kurtosis",
+    "text": "Measures of Kurtosis\n\nPearsons’s Coefficient of Moments, \\(\\beta_2 = \\frac{\\mu_4}{\\mu_2^2}\\)\nPercentile Coefficient, \\(K=\\frac{\\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}\\)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#kurtosis-working-formula",
+    "href": "05-moments-skewness-kurtosis.html#kurtosis-working-formula",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Kurtosis Working Formula",
+    "text": "Kurtosis Working Formula\n\\(\\gamma_2=\\beta_2-3\\)\n\\(\\gamma_2=0 \\space or \\space \\beta_2=3) \\rightarrow\\) Mesokurtik \\(\\gamma_2\\gt0 \\space or \\space \\beta_2 \\gt 3) \\rightarrow\\) Leptokurtik \\(\\gamma_2\\lt0 \\space or \\space \\beta_2\\lt3) \\rightarrow\\) Platykurtik\n9, 7, 8, 6 \\(\\rightarrow\\) Find kurtosis"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#five-number-summary",
+    "href": "05-moments-skewness-kurtosis.html#five-number-summary",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Five Number Summary",
+    "text": "Five Number Summary\n\n\n\nMinimum\nMaximum\nQuartiles: \\(Q_1, Q_2, Q_3\\)\n\n\n\n\n\\(Q_1 - X_L&lt;X_H-Q_3 \\rightarrow\\) Positive Skew\n\\(Q_1 - X_L&gt;X_H-Q_3 \\rightarrow\\) Negative Skew"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#example-of-five-number-summary",
+    "href": "05-moments-skewness-kurtosis.html#example-of-five-number-summary",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Example of Five Number Summary",
+    "text": "Example of Five Number Summary\n2, 1, 0, 5, -6, 7, -4\nSolution\n\n\n\nMinimum\n\\(Q_1\\)\n\\(Q_2\\)\n\\(Q_3\\)\nMaximum\n\n\n\n\n-6\n-4\n1\n5\n7"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#box-and-whisker-plot",
+    "href": "05-moments-skewness-kurtosis.html#box-and-whisker-plot",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Box and Whisker Plot",
+    "text": "Box and Whisker Plot"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#misc",
+    "href": "05-moments-skewness-kurtosis.html#misc",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Misc",
+    "text": "Misc\n\n\n\\(\\bar X = 65, Me = 70, SK_P = -0.5\\); Mod = ? CV = ?\n\n\nGM & HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.\n\n\nMean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, & median.\n\n\nVariance of a mesokurtik distribution is 4. Find \\(\\mu_4\\)."
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#skewness-problems",
+    "href": "05-moments-skewness-kurtosis.html#skewness-problems",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Skewness Problems",
+    "text": "Skewness Problems\n\\(\\bar X = 400, CV = 8\\%\\), and \\(SK_P = 0.40\\).\nFind Mode and Median."
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#moments-conversion-problems",
+    "href": "05-moments-skewness-kurtosis.html#moments-conversion-problems",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Moments Conversion Problems",
+    "text": "Moments Conversion Problems\n\n\n\nFirst three moments about 2 are 1, 16, and -40, , respectively. Find them about 0.\nFirst four moments about 5 are 2, 20,40, and 50, respectively. Find the central moments.\nFirst three moments about 2 are -1, 6, and 30, respectively. Find them about 5.\n\n\n\n\n3, 24, 76\n0, 16, -64, 162\n-4, 21, -78"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#background",
+    "href": "05-moments-skewness-kurtosis.html#background",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Background",
+    "text": "Background\nYear: 1946\nMaj Hadlam (British Army)\n\nSon born 349 Days after departure\nUsual gestational period: 9 Months 10 Days = 280 Days\nSued\nVerdict: He is the Father!\nOther instances: 340 (Father Lost), 331 (Father Won)"
+  },
+  {
+    "objectID": "05-moments-skewness-kurtosis.html#study",
+    "href": "05-moments-skewness-kurtosis.html#study",
+    "title": "Moments, Skewness & Kurtosis",
+    "section": "Study",
+    "text": "Study\n\nSample: 13634 Female individuals\nMean duration: 280 days\n\nHighest Duraion: 360 Days\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "stat2_tips.html#chapter-01-introduction-to-probability",
+    "href": "stat2_tips.html#chapter-01-introduction-to-probability",
+    "title": "Statistics II: Tips",
+    "section": "Chapter 01: Introduction to Probability",
+    "text": "Chapter 01: Introduction to Probability\n\n\\(^6C_3 = \\frac{6!}{3!(6-3)!}\\); use calculator to save time"
+  },
+  {
+    "objectID": "stat2_tips.html#random-variable",
+    "href": "stat2_tips.html#random-variable",
+    "title": "Statistics II: Tips",
+    "section": "Random Variable",
+    "text": "Random Variable\n\nRandom variable: a variable whose outcomes are associated with probability (having no sure-fire outcome)\nMarginal vs joint events (see here)\nMarginals probabilities (P(X)) are obtained by adding joint probabilities (P(x,y))\nIf conditional probability is \\(P(X|Y), P(X|0) = P(X|y=0)\\)\n\\(P(X|0)\\) means if y = 0, what is probability of x?"
+  },
+  {
+    "objectID": "stat2_tips.html#expetation",
+    "href": "stat2_tips.html#expetation",
+    "title": "Statistics II: Tips",
+    "section": "Expetation",
+    "text": "Expetation\n\n\\(V(X) &lt; SD(X)\\) if \\(0 \\lt V(X) \\lt 1\\) or \\(V(X)\\) is greater"
+  },
+  {
+    "objectID": "stat2_tips.html#binomial-distribution",
+    "href": "stat2_tips.html#binomial-distribution",
+    "title": "Statistics II: Tips",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\n\n\nTo find \\(P(X\\ge 3); n=15\\), use \\(1-P(X \\lt3)\\) or calculator (if you don’t have computer with you)\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "03-central-tendency.html#what-is-central-tendency",
@@ -1330,340 +1638,144 @@
     "text": "When AM = GM = HM\nIf \\(x_1=x_2=x_3\\); prove it"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-01",
-    "href": "03-central-tendency.html#theorem-01",
+    "objectID": "03-central-tendency.html#sum-x---mean",
+    "href": "03-central-tendency.html#sum-x---mean",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 01",
-    "text": "Theorem 01\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]"
+    "section": "Sum (x - mean)",
+    "text": "Sum (x - mean)\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\]"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-02",
-    "href": "03-central-tendency.html#theorem-02",
+    "objectID": "03-central-tendency.html#square-of-deviation-from-mean",
+    "href": "03-central-tendency.html#square-of-deviation-from-mean",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 02",
-    "text": "Theorem 02\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\] ## Theorem 03\n\\[\\sum_{i=1}^n (x_i-\\bar x)^2 \\lt \\sum_{i=1}^n (x_i-a)^2; a\\ne\\bar x\\]\n\\[\\sum_{i=1}^n f_i(x_i-\\bar x)^2 \\lt \\sum_{i=1}^n f_i(x_i-a)^2; a\\ne\\bar x\\]"
+    "section": "Square of deviation from mean",
+    "text": "Square of deviation from mean\n\\[\\sum_{i=1}^n (x_i-\\bar x)^2 \\lt \\sum_{i=1}^n (x_i-a)^2; a\\ne\\bar x\\]\n\\[\\sum_{i=1}^n f_i(x_i-\\bar x)^2 \\lt \\sum_{i=1}^n f_i(x_i-a)^2; a\\ne\\bar x\\]"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-04-amorigin-scale",
-    "href": "03-central-tendency.html#theorem-04-amorigin-scale",
+    "objectID": "03-central-tendency.html#am---change-of-origin-scale",
+    "href": "03-central-tendency.html#am---change-of-origin-scale",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 04 (AM~origin & scale)",
-    "text": "Theorem 04 (AM~origin & scale)\nProve that AM depends on origin and scale Use frequency as well i.e,\n\n\\[\\bar x=\\frac {\\sum_{i=1}^nx_i}{n}\\]\n\\[\\bar x=\\frac {\\sum_{i=1}^n f_ix_i}{n}\\]"
+    "section": "AM - Change of origin & scale",
+    "text": "AM - Change of origin & scale\n\n\nProve that AM depends on origin and scale Use frequency as well i.e,\n\n\\[\\bar x=\\frac {\\sum_{i=1}^nx_i}{n}\\]\n\n\n\n\nLet \\(u_i = \\frac{x_i-a}{c}\\)\n\\(x_i = cu_i + a\\)\n\\(\\sum x_i =\\)\n\\(\\bar x = c \\bar u + a\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-07",
-    "href": "03-central-tendency.html#theorem-07",
+    "objectID": "03-central-tendency.html#am-gm-hm",
+    "href": "03-central-tendency.html#am-gm-hm",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 07",
-    "text": "Theorem 07\nIf the GM of \\(n_1\\) va;ues is \\(G_1\\), and of \\(n_2\\) values is \\(G_2\\), show GM of \\(n_1+n_2\\) values is \\(G=\\sqrt{G_1G_2}\\)"
+    "section": "AM ≥ GM ≥ HM",
+    "text": "AM ≥ GM ≥ HM\n\n\n\n\\((a-b)^2  \\ge 0\\)\n\\((a+b)^2 - 4ab \\ge 0\\)\n\n\n\n\n\\((\\frac{1}{a}-\\frac{1}{b})^2 \\ge 0\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-08",
-    "href": "03-central-tendency.html#theorem-08",
+    "objectID": "03-central-tendency.html#full-proof",
+    "href": "03-central-tendency.html#full-proof",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 08",
-    "text": "Theorem 08\n\n\n\nFor two non-zero positive numbers, prove \\(AM \\ge GM \\ge HM\\)\nLet, the numbers be a, b\n\\(\\therefore AM = \\frac{a+b}{2}\\)\n\\(GM = \\sqrt{ab}\\)\n\\(HM = \\frac{2}{\\frac 1 a +\\frac 1 b}\\)\n\n\nWe know, \\[\\begin{eqnarray}\n&  &(a-b)^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2-4ab \\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2 \\ge 4ab   \\nonumber \\\\\n& \\Rightarrow & (a+b) \\ge 2 \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & \\frac{a+b} 2 \\ge \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & AM \\ge GM   \\nonumber \\\\\n\\end{eqnarray}\\]\n\n\nSimilarly, \\[\\begin{eqnarray}\n&  &(\\frac{1}{a}-\\frac{1}{b})^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2 -4 \\cdot \\frac 1 a \\cdot \\frac 1 b\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2\\ge \\frac 4 {ab}   \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b}) \\ge \\frac 2 {\\sqrt{ab}}  \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab}(\\frac{1}{a}+\\frac{1}{b}) \\ge 2   \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab} \\ge \\frac{2}{(\\frac{1}{a}+\\frac{1}{b})}   \\nonumber \\\\\n& \\Rightarrow & GM \\ge HM   \\nonumber \\\\\n\\end{eqnarray}\\]"
+    "section": "Full Proof",
+    "text": "Full Proof\n\n\n\nWe know, \\[\\begin{eqnarray}\n&  &(a-b)^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2-4ab \\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2 \\ge 4ab   \\nonumber \\\\\n& \\Rightarrow & (a+b) \\ge 2 \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & \\frac{a+b} 2 \\ge \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & AM \\ge GM   \\nonumber \\\\\n\\end{eqnarray}\\]\n\n\nSimilarly, \\[\\begin{eqnarray}\n&  &(\\frac{1}{a}-\\frac{1}{b})^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2 -4 \\cdot \\frac 1 a \\cdot \\frac 1 b\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2\\ge \\frac 4 {ab}   \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b}) \\ge \\frac 2 {\\sqrt{ab}}  \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab}(\\frac{1}{a}+\\frac{1}{b}) \\ge 2   \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab} \\ge \\frac{2}{(\\frac{1}{a}+\\frac{1}{b})}   \\nonumber \\\\\n& \\Rightarrow & GM \\ge HM   \\nonumber \\\\\n\\end{eqnarray}\\]"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-09",
-    "href": "03-central-tendency.html#theorem-09",
+    "objectID": "03-central-tendency.html#am-hm-gm²",
+    "href": "03-central-tendency.html#am-hm-gm²",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 09",
-    "text": "Theorem 09\nFor two non-zero positive numbers, \\(AM \\times HM =(GM)^2\\)"
+    "section": "AM × HM = GM²",
+    "text": "AM × HM = GM²\nProve using formulae\nFor two non-zero positive numbers, \\(AM \\times HM =(GM)^2\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-10",
-    "href": "03-central-tendency.html#theorem-10",
+    "objectID": "03-central-tendency.html#mean-median-of-natural-numbers",
+    "href": "03-central-tendency.html#mean-median-of-natural-numbers",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 10",
-    "text": "Theorem 10\nMean and Median of first n natural numbers are \\(\\frac {n+1} 2\\)"
+    "section": "Mean-Median of Natural Numbers",
+    "text": "Mean-Median of Natural Numbers\nMean and Median of first n natural numbers are \\(\\frac {n+1} 2\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-11",
-    "href": "03-central-tendency.html#theorem-11",
+    "objectID": "03-central-tendency.html#combined-mean",
+    "href": "03-central-tendency.html#combined-mean",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 11",
-    "text": "Theorem 11\nIf \\(\\bar x_1\\) and \\(\\bar x_2\\) are means of 2 data sets of sizes \\(n_1\\) and \\(n_2\\), respectively, the combined mean is \\(\\bar x_c=\\frac{n_1 \\bar x_1+n_2 \\bar x_2}{n_1+n_2}\\)"
+    "section": "Combined mean",
+    "text": "Combined mean\n\n\n\nForm\nA\nB\n\n\n\n\n# Cadets\n24\n25\n\n\nMean Score\n75\n70\n\n\n\nWhat’s the combined mean?\n\n\\[\\bar x_c=\\frac{n_1 \\bar x_1+n_2 \\bar x_2}{n_1+n_2}\\]"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-12",
-    "href": "03-central-tendency.html#theorem-12",
+    "objectID": "03-central-tendency.html#mean-of-u-x-y",
+    "href": "03-central-tendency.html#mean-of-u-x-y",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 12",
-    "text": "Theorem 12\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\\[\\begin{eqnarray}\n\\bar u &=&  \\frac{\\sum u}{n}   \\nonumber \\\\\n&=& \\frac{\\sum (x+y)}{n}   \\nonumber \\\\\n&=& \\frac{\\sum x}{n}+  \\frac{\\sum y}{n}   \\nonumber \\\\\n&=& \\bar x + \\bar y   \\nonumber \\\\\n\\end{eqnarray}\\]"
+    "section": "Mean of U = X + Y",
+    "text": "Mean of U = X + Y\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\n\\(\\bar u =  \\frac{\\sum u}{n}\\)\n\\(\\frac{\\sum (x+y)}{n}\\)\n\\(\\frac{\\sum x}{n}+  \\frac{\\sum y}{n}\\)\n\\(\\bar x + \\bar y\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-13",
-    "href": "03-central-tendency.html#theorem-13",
+    "objectID": "03-central-tendency.html#gm-of-two-variables",
+    "href": "03-central-tendency.html#gm-of-two-variables",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 13",
-    "text": "Theorem 13\nFor equal number of observations, GM of two variables is equal to the product of their individual means."
+    "section": "GM of two variables",
+    "text": "GM of two variables\nFor equal number of observations, GM of product of two variables is equal to the product of their individual means.\n\n\\(G_1 = (x_1 x_2 x_3)^{1/3}\\)\n\\(G_2 = (y_1 y_2 y_3)^{1/3}\\)\nCOmbined, G = \\((x_1 y_1 \\cdot x_2 y_2 \\cdot x_3 y_3)^{1/3}\\)\nThus \\(G = G_1 \\times G_2\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-14",
-    "href": "03-central-tendency.html#theorem-14",
+    "objectID": "03-central-tendency.html#gm-with-log",
+    "href": "03-central-tendency.html#gm-with-log",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 14",
-    "text": "Theorem 14\n\\(GM=Antilog(\\frac{\\sum \\log x_i}{n})\\) or \\(Antilog(\\frac{\\sum f_i \\log x_i}{\\sum f_i})\\)"
+    "section": "GM with Log",
+    "text": "GM with Log\n\\(GM=Antilog(\\frac{\\sum \\log x_i}{n})\\)\nor\n\\(Antilog(\\frac{\\sum f_i \\log x_i}{\\sum f_i})\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-15",
-    "href": "03-central-tendency.html#theorem-15",
+    "objectID": "03-central-tendency.html#mean-of-variables",
+    "href": "03-central-tendency.html#mean-of-variables",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 15",
-    "text": "Theorem 15\nIf \\(y = a + bx, \\bar y = a + b \\bar x\\)"
+    "section": "Mean of Variables",
+    "text": "Mean of Variables\n\nIf \\(y = a + bx, \\bar y = a + b \\bar x\\)\nIf \\(z_i=ax_i+by_i, \\bar z=a \\bar x + b \\bar y\\)"
   },
   {
-    "objectID": "03-central-tendency.html#theorem-16",
-    "href": "03-central-tendency.html#theorem-16",
+    "objectID": "03-central-tendency.html#am-gm",
+    "href": "03-central-tendency.html#am-gm",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Theorem 16",
-    "text": "Theorem 16\nIf \\(z_i=ax_i+by_i, \\bar z=a \\bar x + b \\bar y\\)"
+    "section": "AM-GM",
+    "text": "AM-GM\nAM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. (click to see)\n\n\n\nSolution (i)\n\n\nWe know, \\(AM \\times HM=(GM)^2\\)\n\nThus, \\(HM=\\) 9\n\n\n\n\n\n\nSolution (ii)\n\n\nIf the numbers are \\(a, b; a&gt;b\\) \\(\\frac{a+b}{2}=25\\) and \\(\\sqrt{ab}=15\\)\nThus, \\(a+b=50\\), and \\(ab=15^2=225\\)\n\\(\\therefore (a-b)^2=(a+b)^2-4ab\\) \\(\\Rightarrow a-b =\\) 40\n\nThus, a = 45, b = 5"
   },
   {
-    "objectID": "03-central-tendency.html#example-problem-01",
-    "href": "03-central-tendency.html#example-problem-01",
+    "objectID": "03-central-tendency.html#input-correction",
+    "href": "03-central-tendency.html#input-correction",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Example Problem 01",
-    "text": "Example Problem 01\nAM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers.\n\n\n\nSolution (i)\n\n\nWe know, \\(AM \\times HM=(GM)^2\\)\n\nThus, \\(HM=\\) 9\n\n\n\n\n\n\nSolution (ii)\n\n\nIf the numbers are \\(a, b; a&gt;b\\) \\(\\frac{a+b}{2}=25\\) and \\(\\sqrt{ab}=15\\)\nThus, \\(a+b=50\\), and \\(ab=15^2=225\\)\n\\(\\therefore (a-b)^2=(a+b)^2-4ab\\) \\(\\Rightarrow a-b =\\) 40\n\nThus, a = 45, b = 5"
+    "section": "Input Correction",
+    "text": "Input Correction\nThe mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.\n\nSolution\n\n\n\\(n=200, \\bar x = 200\\)\n\\(\\therefore\\) Incorrect total, \\(\\sum x = n \\times \\bar x=\\) 10000\nCorrect total, \\(\\sum x'=10,000-92-8+192+88=\\) 10180\nCorrect mean, \\(\\bar x'=\\frac{10180}{200}=\\) 50.9"
   },
   {
-    "objectID": "03-central-tendency.html#example-problem-15",
-    "href": "03-central-tendency.html#example-problem-15",
+    "objectID": "03-central-tendency.html#sum-of-fx-k0",
+    "href": "03-central-tendency.html#sum-of-fx-k0",
     "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Example Problem 15",
-    "text": "Example Problem 15\nThe mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.\n\nSolution\n\n\n\\(n=200, \\bar x = 200\\)\n\\(\\therefore\\) Incorrect total, \\(\\sum x = n \\times \\bar x=\\) 10000\nCorrect total, \\(\\sum x'=10,000-92-8+192+88=\\) 10180\nCorrect mean, \\(\\bar x'=\\frac{10180}{200}=\\) 50.9"
+    "section": "Sum of f(x-k)=0",
+    "text": "Sum of f(x-k)=0\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
-    "objectID": "03-central-tendency.html#example-problem-22",
-    "href": "03-central-tendency.html#example-problem-22",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Example Problem 22",
-    "text": "Example Problem 22\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "stat2_tips.html#chapter-01-introduction-to-probability",
-    "href": "stat2_tips.html#chapter-01-introduction-to-probability",
-    "title": "Statistics II: Tips",
-    "section": "Chapter 01: Introduction to Probability",
-    "text": "Chapter 01: Introduction to Probability\n\n\\(^6C_3 = \\frac{6!}{3!(6-3)!}\\); use calculator to save time"
-  },
-  {
-    "objectID": "stat2_tips.html#random-variable",
-    "href": "stat2_tips.html#random-variable",
-    "title": "Statistics II: Tips",
-    "section": "Random Variable",
-    "text": "Random Variable\n\nRandom variable: a variable whose outcomes are associated with probability (having no sure-fire outcome)\nMarginal vs joint events (see here)\nMarginals probabilities (P(X)) are obtained by adding joint probabilities (P(x,y))\nIf conditional probability is \\(P(X|Y), P(X|0) = P(X|y=0)\\)\n\\(P(X|0)\\) means if y = 0, what is probability of x?"
-  },
-  {
-    "objectID": "stat2_tips.html#expetation",
-    "href": "stat2_tips.html#expetation",
-    "title": "Statistics II: Tips",
-    "section": "Expetation",
-    "text": "Expetation\n\n\\(V(X) &lt; SD(X)\\) if \\(0 \\lt V(X) \\lt 1\\) or \\(V(X)\\) is greater"
-  },
-  {
-    "objectID": "stat2_tips.html#binomial-distribution",
-    "href": "stat2_tips.html#binomial-distribution",
-    "title": "Statistics II: Tips",
-    "section": "Binomial Distribution",
-    "text": "Binomial Distribution\n\n\nTo find \\(P(X\\ge 3); n=15\\), use \\(1-P(X \\lt3)\\) or calculator (if you don’t have computer with you)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#central-moments",
-    "href": "05-moments-skewness-kurtosis.html#central-moments",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Central Moments",
-    "text": "Central Moments\nCentral Moments: \\(\\mu_r=\\frac{\\sum(x_i-\\bar x)^r}{n}\\)\n\n\\(\\mu_1=\\frac{\\sum(x_i-\\bar x)}{n}=\\frac{\\sum x_i}{n}-\\frac{n \\bar x}{n}=\\frac{n \\bar x}{n}-\\frac{n \\bar x}{n}=0\\)\n\n\n\\(\\mu_2=\\frac{\\sum(x_i-\\bar x)^2}{n}=\\sigma^2\\)\n\\(\\mu_3=\\frac{\\sum(x_i-\\bar x)^3}{n}\\)\n\\(\\mu_4=\\frac{\\sum(x_i-\\bar x)^4}{n}\\)\nFor grouped data: \\(\\mu_r=\\frac{\\sum f_i(x_i-\\bar x)^r}{n}\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#raw-moments",
-    "href": "05-moments-skewness-kurtosis.html#raw-moments",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Raw Moments",
-    "text": "Raw Moments\n\\(\\mu_r'=\\frac{\\sum(x_i-a)^r}{n}\\); a is arbitrary number\n\\(\\mu_1'=\\frac{\\sum(x_i-a)}{n}=\\frac{\\sum x_i}{n}-\\frac{na}{n}=\\bar x-a\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#value-of-1st-central-moment",
-    "href": "05-moments-skewness-kurtosis.html#value-of-1st-central-moment",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Value of 1st Central Moment",
-    "text": "Value of 1st Central Moment\n\\(\\displaystyle \\mu_1=\\frac{\\sum (x_i-\\bar x)}{n}=\\frac{\\sum x_i}{n}=\\bar x - \\bar x = 0\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#binomial-formula-from-pascal-triangle",
-    "href": "05-moments-skewness-kurtosis.html#binomial-formula-from-pascal-triangle",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Binomial Formula from Pascal Triangle",
-    "text": "Binomial Formula from Pascal Triangle\n\nCoefficients using the triangle\n\n\\((a+b)^1 = a + b\\)\n\\((a+b)^2 = a^2 + 2ab + b^2\\)\n\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\)\n\\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#changing-origin-of-moments",
-    "href": "05-moments-skewness-kurtosis.html#changing-origin-of-moments",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Changing Origin of Moments",
-    "text": "Changing Origin of Moments\nFrom \\(\\mu_r'(a)\\) to \\(\\mu_r'(k)\\)\nAssume, \\(a^r = \\mu_r'(a)\\), \\(b = a - k\\)\n\n\n\nBinomial Formulae\n\n\\((a+b)^1 = a + b\\)\n\\((a+b)^2 = a^2 + 2ab + b^2\\)\n\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\)\n\\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\\)\n\n\n\n\n\n\\(\\mu_1'(k) = \\mu_1'(a) + b\\)\n\n\n\\(\\mu_2'(k) = \\mu_2'(a) + 2 \\mu_1'(a)b + b^2\\)\n\n\n?\n\n\n?\n\n\n\n\n\nSee Examples"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#central-moments-from-raws",
-    "href": "05-moments-skewness-kurtosis.html#central-moments-from-raws",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Central Moments from Raws",
-    "text": "Central Moments from Raws\nUse \\(k = \\bar x\\)\nThat’s it! DO NOT MEMORIZE!"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#nd-central-moment",
-    "href": "05-moments-skewness-kurtosis.html#nd-central-moment",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "2nd Central Moment",
-    "text": "2nd Central Moment\n\\(\\mu_2=\\mu_2' - \\mu_1'^2\\)\n\n\\(\\mu_2=\\mu_2'(a)+2\\mu_1'(a)(a-\\bar x)+(a-\\bar x)^2\\) [From here]\n\\(\\mu_2'-2(a-\\bar x)^2+(a-\\bar x)^2\\) [since \\(\\mu_1'(a) = \\bar x-a\\)]\n\\(\\mu_2'-(a-\\bar x)^2\\)\n\\(\\mu_2' - \\mu_1'^2\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#chracteristics-of-moments",
-    "href": "05-moments-skewness-kurtosis.html#chracteristics-of-moments",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Chracteristics of Moments",
-    "text": "Chracteristics of Moments\n\n\nUsed for testing for symmetry, normality, and skewness\nFirst raw moment around zero is Arithmetic Mean (\\(\\mu_1'=\\frac{\\sum (x_i)}{n}=\\bar x\\))\nSecond central moment is equal to variance (\\(\\sigma^2 = \\frac{\\sum (x_i-\\bar x)^2 )}{n}\\))\n2nd and 3rd central moments are used to measure skewness (detailed later)\n2nd and 4th central moments are used to measure kurtosis"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#can-moments-be-negative",
-    "href": "05-moments-skewness-kurtosis.html#can-moments-be-negative",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Can Moments Be Negative?",
-    "text": "Can Moments Be Negative?\n\\(\\displaystyle \\mu_r = \\frac{\\sum(x_i-\\bar x)^r )}{n}; r=1,2,3, \\cdots\\)\n\n0 if all values are equal to origin\nNegative if r is an Odd number\nPositive if r is Even number"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#skewness",
-    "href": "05-moments-skewness-kurtosis.html#skewness",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Skewness",
-    "text": "Skewness\nLack of symmetry\n\n\n+Ve Skew \\(\\rightarrow \\bar X \\gt Me \\gt Mode\\)\n-Ve Skew \\(\\rightarrow \\bar X \\lt Me \\lt Mode\\)\nNo Skew \\(\\rightarrow \\bar X = Me = Mode\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#positive-skewness",
-    "href": "05-moments-skewness-kurtosis.html#positive-skewness",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Positive Skewness",
-    "text": "Positive Skewness\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLow values have high frequency\nHigh values have low frequency\nAs the value increases, the frequency decreases\n\n\n\nMost students score low, very few get good scores."
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#negative-skewness",
-    "href": "05-moments-skewness-kurtosis.html#negative-skewness",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Negative Skewness",
-    "text": "Negative Skewness\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLow values have low frequency\nHigh values have high frequency\nAs the value increases, so does the frequency\n\nVery few students get low marks, most get high marks."
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#symmetric",
-    "href": "05-moments-skewness-kurtosis.html#symmetric",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Symmetric",
-    "text": "Symmetric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAverage values have maximum frequency\nLow values have low frequency and high values have high frequency\nAs the value go farther from mean, their frequency gradually decreases."
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#kurtosis",
-    "href": "05-moments-skewness-kurtosis.html#kurtosis",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Kurtosis",
-    "text": "Kurtosis\n\nNormal distribution \\(\\rightarrow\\)\n\nMost students get average marks\nHigher and lower marks are obtained by lesser number of students"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#kurtosis-misconception",
-    "href": "05-moments-skewness-kurtosis.html#kurtosis-misconception",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Kurtosis Misconception",
-    "text": "Kurtosis Misconception\nKurtosis is NOT a degree of peakedness. Learn more"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#measures-of-skewness",
-    "href": "05-moments-skewness-kurtosis.html#measures-of-skewness",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Measures of SKewness",
-    "text": "Measures of SKewness\n\n\n\n\nPearson’s Coefficient: \\(SK_P=\\frac{Mean-Mode}{\\sigma}=\\frac{3(Mean-Median)}{\\sigma} ;(-3,3)\\)\n(\\(Mode=3Me-2\\bar X\\))\n\n\nBowley’s Coefficient: \\(SK_B=\\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\\)\nKelly’s Coefficient: \\(SK_k=\\frac{D_1+D_9-2Me}{D_9-D1}\\)\nMethod of Moments: \\(\\beta_1=\\frac{\\mu_3^2}{\\mu_2^3}\\)\n\n\n\n\nEstimate Skewness\n4, 23, 55, 70, 74, 78, 86, 89"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#skewness-working-formula",
-    "href": "05-moments-skewness-kurtosis.html#skewness-working-formula",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Skewness Working Formula",
-    "text": "Skewness Working Formula\nCoefficient of skewness, \\(\\gamma_1 = \\sqrt{\\beta_1} = \\sqrt{\\frac{\\mu_3^2}{\\mu_2^3}} = \\frac{\\mu_3}{\\sqrt{\\mu_2^3}}\\)\nIf \\(\\gamma_1 &lt; 0 \\rightarrow\\) Negative Skew\nIf \\(\\gamma_1 &gt; 0 \\rightarrow\\) Positive Skew\nIf \\(\\gamma_1 = 0 \\rightarrow\\) No Skew (Symmetric Distribution)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#measures-of-kurtosis",
-    "href": "05-moments-skewness-kurtosis.html#measures-of-kurtosis",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Measures of Kurtosis",
-    "text": "Measures of Kurtosis\n\nPearsons’s Coefficient of Moments, \\(\\beta_2 = \\frac{\\mu_4}{\\mu_2^2}\\)\nPercentile Coefficient, \\(K=\\frac{\\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}\\)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#kurtosis-working-formula",
-    "href": "05-moments-skewness-kurtosis.html#kurtosis-working-formula",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Kurtosis Working Formula",
-    "text": "Kurtosis Working Formula\n\\(\\gamma_2=\\beta_2-3\\)\n\\(\\gamma_2=0 \\space or \\space \\beta_2=3) \\rightarrow\\) Mesokurtik \\(\\gamma_2\\gt0 \\space or \\space \\beta_2 \\gt 3) \\rightarrow\\) Leptokurtik \\(\\gamma_2\\lt0 \\space or \\space \\beta_2\\lt3) \\rightarrow\\) Platykurtik\n9, 7, 8, 6 \\(\\rightarrow\\) Find kurtosis"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#five-number-summary",
-    "href": "05-moments-skewness-kurtosis.html#five-number-summary",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Five Number Summary",
-    "text": "Five Number Summary\n\n\n\nMinimum\nMaximum\nQuartiles: \\(Q_1, Q_2, Q_3\\)\n\n\n\n\n\\(Q_1 - X_L&lt;X_H-Q_3 \\rightarrow\\) Positive Skew\n\\(Q_1 - X_L&gt;X_H-Q_3 \\rightarrow\\) Negative Skew"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#example-of-five-number-summary",
-    "href": "05-moments-skewness-kurtosis.html#example-of-five-number-summary",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Example of Five Number Summary",
-    "text": "Example of Five Number Summary\n2, 1, 0, 5, -6, 7, -4\nSolution\n\n\n\nMinimum\n\\(Q_1\\)\n\\(Q_2\\)\n\\(Q_3\\)\nMaximum\n\n\n\n\n-6\n-4\n1\n5\n7"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#box-and-whisker-plot",
-    "href": "05-moments-skewness-kurtosis.html#box-and-whisker-plot",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Box and Whisker Plot",
-    "text": "Box and Whisker Plot"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#misc",
-    "href": "05-moments-skewness-kurtosis.html#misc",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Misc",
-    "text": "Misc\n\n\n\\(\\bar X = 65, Me = 70, SK_P = -0.5\\); Mod = ? CV = ?\n\n\nGM & HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.\n\n\nMean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, & median.\n\n\nVariance of a mesokurtik distribution is 4. Find \\(\\mu_4\\)."
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#skewness-problems",
-    "href": "05-moments-skewness-kurtosis.html#skewness-problems",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Skewness Problems",
-    "text": "Skewness Problems\n\\(\\bar X = 400, CV = 8\\%\\), and \\(SK_P = 0.40\\).\nFind Mode and Median."
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#moments-conversion-problems",
-    "href": "05-moments-skewness-kurtosis.html#moments-conversion-problems",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Moments Conversion Problems",
-    "text": "Moments Conversion Problems\n\n\n\nFirst three moments about 2 are 1, 16, and -40, , respectively. Find them about 0.\nFirst four moments about 5 are 2, 20,40, and 50, respectively. Find the central moments.\nFirst three moments about 2 are -1, 6, and 30, respectively. Find them about 5.\n\n\n\n\n3, 24, 76\n0, 16, -64, 162\n-4, 21, -78"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#background",
-    "href": "05-moments-skewness-kurtosis.html#background",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Background",
-    "text": "Background\nYear: 1946\nMaj Hadlam (British Army)\n\nSon born 349 Days after departure\nUsual gestational period: 9 Months 10 Days = 280 Days\nSued\nVerdict: He is the Father!\nOther instances: 340 (Father Lost), 331 (Father Won)"
-  },
-  {
-    "objectID": "05-moments-skewness-kurtosis.html#study",
-    "href": "05-moments-skewness-kurtosis.html#study",
-    "title": "Moments, Skewness & Kurtosis",
-    "section": "Study",
-    "text": "Study\n\nSample: 13634 Female individuals\nMean duration: 280 days\n\nHighest Duraion: 360 Days\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
-    "href": "libs/reveal.js-3.3.0.1/CONTRIBUTING.html#contributing",
+    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.1",
+    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.1",
     "title": "Stat Mania Lectures",
-    "section": "Contributing",
-    "text": "Contributing\nPlease keep the issue tracker limited to bug reports, feature requests and pull requests.\nPersonal Support\nIf you have personal support or setup questions the best place to ask those are StackOverflow.\nBug Reports\nWhen reporting a bug make sure to include information about which browser and operating system you are on as well as the necessary steps to reproduce the issue. If possible please include a link to a sample presentation where the bug can be tested.\nPull Requests\n\nShould follow the coding style of the file you work in, most importantly:\n\nTabs to indent\nSingle-quoted strings\n\nShould be made towards the dev branch\nShould be submitted from a feature/topic branch (not your master)\n\nPlugins\nPlease do not submit plugins as pull requests. They should be maintained in their own separate repository. More information here: https://github.com/hakimel/reveal.js/wiki/Plugin-Guidelines\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "section": "External 1.1",
+    "text": "External 1.1\nContent 1.1\nNote: This will only appear in the speaker notes window."
+  },
+  {
+    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.2",
+    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-1.2",
+    "title": "Stat Mania Lectures",
+    "section": "External 1.2",
+    "text": "External 1.2\nContent 1.2"
+  },
+  {
+    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-2",
+    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-2",
+    "title": "Stat Mania Lectures",
+    "section": "External 2",
+    "text": "External 2\nContent 2.1"
+  },
+  {
+    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.1",
+    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.1",
+    "title": "Stat Mania Lectures",
+    "section": "External 3.1",
+    "text": "External 3.1\nContent 3.1"
+  },
+  {
+    "objectID": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.2",
+    "href": "libs/reveal.js-3.3.0.1/plugin/markdown/example.html#external-3.2",
+    "title": "Stat Mania Lectures",
+    "section": "External 3.2",
+    "text": "External 3.2\nContent 3.2\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "6-normal-distribution.html#shape",
@@ -1799,11 +1911,11 @@
     "text": "P(X &gt; 20)\n\\(\\mu = 15, \\sigma = 4, P(X &gt; 20)= ?\\)\n\n\n\n\\(P(X &gt; 20)\\)\n\\(P(\\frac{x-\\mu}{\\sigma} &gt; \\frac{20-15}{4})\\)\n\\(P(z&gt;1.25)\\)\n\\(P(0\\le z \\le \\infty) - P(0\\le z \\le 1.25)\\)\n\\(0.5 - 0.3944 = 0.1056\\)"
   },
   {
-    "objectID": "6-normal-distribution.html#gmat-question",
-    "href": "6-normal-distribution.html#gmat-question",
+    "objectID": "6-normal-distribution.html#exam-score",
+    "href": "6-normal-distribution.html#exam-score",
     "title": "Normal Distribution",
-    "section": "GMAT Question",
-    "text": "GMAT Question\nScores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[source]\n\n\\(\\mu = 527, \\sigma = 112\\)\n\\(P(X &gt; 500)\\)"
+    "section": "Exam Score",
+    "text": "Exam Score\nScores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[source]\n\n\\(\\mu = 527, \\sigma = 112\\)\n\\(P(X &gt; 500)\\)"
   },
   {
     "objectID": "6-normal-distribution.html#gestation",
@@ -1817,7 +1929,7 @@
     "href": "6-normal-distribution.html#forest-burn",
     "title": "Normal Distribution",
     "section": "Forest burn",
-    "text": "Forest burn\n\nThe average number of acres burned by forest and range fires in a large New Mexico county is 4,300 acres per year, with a standard deviation of 750 acres. The distribution of the number of acres burned is normal.\n\nWhat is the probability that between 2,500 and 4,200 acres will be burned in any given year?\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Forest burn\n\nThe average number of acres burned by forest and range fires in a large New Mexico county is 4,300 acres per year, with a standard deviation of 750 acres. The distribution of the number of acres burned is normal.\n\nWhat is the probability that between 2,500 and 4,200 acres will be burned in any given year?\n\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "04-dispersion.html#what-is-dispersion",
@@ -2076,7 +2188,7 @@
     "href": "04-dispersion.html#thanks",
     "title": "Measures of Dispersion",
     "section": "Thanks",
-    "text": "Thanks\n\nVisit\nhttps://lecture.statmania.info\nto see all lecture slides.\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Thanks\n\nVisit\nhttps://lecture.statmania.info\nto see all lecture slides.\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "05-poisson_dist.html#concept",
@@ -2202,7 +2314,7 @@
     "href": "05-poisson_dist.html#problem-05",
     "title": "Poisson Distribution",
     "section": "problem 05",
-    "text": "problem 05\nUgarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "problem 05\nUgarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "09-vital-stat.html#rate-vs-ratio",
@@ -2391,7 +2503,7 @@
     "href": "09-vital-stat.html#exponential-growth",
     "title": "Vital Statistics",
     "section": "Exponential Growth",
-    "text": "Exponential Growth\nGeometric: \\(P_n = P_o(1+r)^n\\)\nIf n is fragmented in smaller periods\nLike 100 % in 1 year \\(\\rightarrow\\) 50 % in each half-year\n\\(P_n = P_o(1+\\frac{r}{n})^n\\)\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Exponential Growth\nGeometric: \\(P_n = P_o(1+r)^n\\)\nIf n is fragmented in smaller periods\nLike 100 % in 1 year \\(\\rightarrow\\) 50 % in each half-year\n\\(P_n = P_o(1+\\frac{r}{n})^n\\)\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "02-random-variable.html#random-variable",
@@ -2601,7 +2713,7 @@
     "href": "02-random-variable.html#find-k-for-pdf",
     "title": "Random Variable",
     "section": "Find k for pdf",
-    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Find k for pdf\n\\(f(x) = kx^2+kx+\\frac 1 8; 0 \\lt x \\lt 2\\)\n\nFind k\nFind \\(P(1 \\lt X \\lt 2)\\)\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "04-binomial_dist.html#example",
@@ -2699,7 +2811,7 @@
     "href": "04-binomial_dist.html#problem-04",
     "title": "Binomial Distribution",
     "section": "Problem 04",
-    "text": "Problem 04\nIn El Clasico, the probability that Barcelona wins is 0.39 and that Real Madrid wins is 0.42. In the next 5 matches, what is the probability that\n\nBarcelona wins all the matches?\nReal wins all the matches\nBarcelona wins at least 2 matches\n2 matches are drawn\nmore than 3 matches are drawn\n\n\n\\(p_1=\\)Barca wins, \\(p_2 =\\) Real wins, \\(p_3 =\\)Match drawn\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Problem 04\nIn El Clasico, the probability that Barcelona wins is 0.39 and that Real Madrid wins is 0.42. In the next 5 matches, what is the probability that\n\nBarcelona wins all the matches?\nReal wins all the matches\nBarcelona wins at least 2 matches\n2 matches are drawn\nmore than 3 matches are drawn\n\n\n\\(p_1=\\)Barca wins, \\(p_2 =\\) Real wins, \\(p_3 =\\)Match drawn\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "vii_math.html#topics",
@@ -3084,7 +3196,7 @@
     "href": "01-stat-intro.html#end-of-chapter-01",
     "title": "Introduction to Statistics",
     "section": "End of Chapter 01!",
-    "text": "End of Chapter 01!\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "End of Chapter 01!\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   },
   {
     "objectID": "elementary_stat_prob.html#topics",
@@ -3420,244 +3532,6 @@
     "href": "viii_math_2024.html#additon-of-fraction",
     "title": "Mathematics (VIII)",
     "section": "Additon of Fraction",
-    "text": "Additon of Fraction\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "02-data-collection-organization-presentation.html#frequency-distribution-example",
-    "href": "02-data-collection-organization-presentation.html#frequency-distribution-example",
-    "title": "Statistics I: Collection, Organization & Presentation of Data",
-    "section": "Frequency Distribution Example",
-    "text": "Frequency Distribution Example\n\n\n\n\n\n\n\n\n\n\n\nNo. of Surviving Plants\nFrequency\nCumulative Frequency\nPercentage\nCumulative Percentage\n\n\n\n\n20–29\n3\n3\n3%\n3%\n\n\n30–39\n14\n17\n14%\n17%\n\n\n40–49\n12\n29\n12%\n29%\n\n\n50–59\n8\n37\n8%\n37%\n\n\n60–69\n18\n55\n18%\n55%\n\n\n70–79\n10\n65\n10%\n65%\n\n\n80–89\n23\n88\n23%\n88%\n\n\n90–99\n12\n100\n12%\n100%\n\n\nTotal\n100\n\n100%"
-  },
-  {
-    "objectID": "02-data-collection-organization-presentation.html#key-insights",
-    "href": "02-data-collection-organization-presentation.html#key-insights",
-    "title": "Statistics I: Collection, Organization & Presentation of Data",
-    "section": "Key Insights",
-    "text": "Key Insights\n\n\nIn most schools (23), the number of surviving plants is between 80 to 89.\nVery few schools (3) have surviving plants in the 20–29 range.\nMore than half of the schools (55%) have up to 69 surviving plants.\nA significant portion of schools (35%) report 70 or more surviving plants, with the 80–89 range alone accounting for 23%.\nThe 50–59 range has relatively few schools (8%), creating a noticeable dip between the lower and higher survival groups."
-  },
-  {
-    "objectID": "02-data-collection-organization-presentation.html#normal-distribution",
-    "href": "02-data-collection-organization-presentation.html#normal-distribution",
-    "title": "Statistics I: Collection, Organization & Presentation of Data",
-    "section": "Normal Distribution",
-    "text": "Normal Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeight in cm)\n157 - 162\n162 - 167\n167 - 172\n172 - 177\n177 - 182\n182 - 187\n187 - 192\n\n\n\n\nFrequency (\\(f_i\\))\n20\n120\n250\n320\n200\n70\n20"
-  },
-  {
-    "objectID": "6-normal-distribution.html#exam-score",
-    "href": "6-normal-distribution.html#exam-score",
-    "title": "Normal Distribution",
-    "section": "Exam Score",
-    "text": "Exam Score\nScores on the GMAT are roughly normally distributed with a mean of 527 and a standard deviation of 112. What is the probability of an individual scoring above 500 on the GMAT?[source]\n\n\\(\\mu = 527, \\sigma = 112\\)\n\\(P(X &gt; 500)\\)"
-  },
-  {
-    "objectID": "08-sampling.html#population",
-    "href": "08-sampling.html#population",
-    "title": "Sampling",
-    "section": "Population",
-    "text": "Population\n\nFinite: people in Dhaka\nInfinite: hairs in head, fish in pacific ocean, stars"
-  },
-  {
-    "objectID": "08-sampling.html#terms",
-    "href": "08-sampling.html#terms",
-    "title": "Sampling",
-    "section": "Terms",
-    "text": "Terms\n\nSample size\nParameter: Population characteristic (such as \\(\\sigma\\))\nStatistics: Sample characteristic (\\(\\bar x, sd\\))"
-  },
-  {
-    "objectID": "08-sampling.html#census-vs-sample-survey",
-    "href": "08-sampling.html#census-vs-sample-survey",
-    "title": "Sampling",
-    "section": "Census vs Sample Survey",
-    "text": "Census vs Sample Survey\nDisadvantages of census:\n\nTime\nCost\nQuality\nAccuracy\nMulti-purpose"
-  },
-  {
-    "objectID": "08-sampling.html#steps-of-sample-survey",
-    "href": "08-sampling.html#steps-of-sample-survey",
-    "title": "Sampling",
-    "section": "Steps of sample survey",
-    "text": "Steps of sample survey\n\n\n\nAim\nPopulation\nSampling frame + unit\nType of data\nQuestionnaire\n\n\n\n\nMethod of data collection\nSampling method\nPilot survey\nField work\nData analysis"
-  },
-  {
-    "objectID": "08-sampling.html#random-sampling",
-    "href": "08-sampling.html#random-sampling",
-    "title": "Sampling",
-    "section": "Random sampling",
-    "text": "Random sampling\n\nSimple Random (SRS)\nSystematic Sampling\nStratified Sampling\nCluster Sampling"
-  },
-  {
-    "objectID": "08-sampling.html#srs",
-    "href": "08-sampling.html#srs",
-    "title": "Sampling",
-    "section": "SRS",
-    "text": "SRS\n\nLottery method\nRemainder approach\nQuitient approach"
-  },
-  {
-    "objectID": "08-sampling.html#remainder-approach",
-    "href": "08-sampling.html#remainder-approach",
-    "title": "Sampling",
-    "section": "Remainder approach",
-    "text": "Remainder approach\n\n\nN = 30 (digit d =2)\n\n\nN’ = Highest d-digit number = 90\n\n\nChoose a random number between 1 and N’ (90), say 65\n\n\nDivide by N (30) and select the Rth item (R = Remainder = 25)\n\n\nRepeat (3-4)\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "03-central-tendency.html#sumx_i-bar-x",
-    "href": "03-central-tendency.html#sumx_i-bar-x",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "\\(\\sum(x_i-\\bar x)\\)",
-    "text": "\\(\\sum(x_i-\\bar x)\\)\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\]"
-  },
-  {
-    "objectID": "03-central-tendency.html#square-of-deviation-from-mean",
-    "href": "03-central-tendency.html#square-of-deviation-from-mean",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Square of deviation from mean",
-    "text": "Square of deviation from mean\n\\[\\sum_{i=1}^n (x_i-\\bar x)^2 \\lt \\sum_{i=1}^n (x_i-a)^2; a\\ne\\bar x\\]\n\\[\\sum_{i=1}^n f_i(x_i-\\bar x)^2 \\lt \\sum_{i=1}^n f_i(x_i-a)^2; a\\ne\\bar x\\]"
-  },
-  {
-    "objectID": "03-central-tendency.html#sum-x---mean",
-    "href": "03-central-tendency.html#sum-x---mean",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Sum (x - mean)",
-    "text": "Sum (x - mean)\n\\[\\sum_{i=0}^n (x_i-\\bar x)=0\\]\n\\[\\sum_{i=0}^n f_i(x_i-\\bar x)=0\\]"
-  },
-  {
-    "objectID": "03-central-tendency.html#am---change-of-origin-scale",
-    "href": "03-central-tendency.html#am---change-of-origin-scale",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "AM - Change of origin & scale",
-    "text": "AM - Change of origin & scale\n\n\nProve that AM depends on origin and scale Use frequency as well i.e,\n\n\\[\\bar x=\\frac {\\sum_{i=1}^nx_i}{n}\\]\n\n\n\n\nLet \\(u_i = \\frac{x_i-a}{c}\\)\n\\(x_i = cu_i + a\\)\n\\(\\sum x_i =\\)\n\\(\\bar x = c \\bar u + a\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#am-gm-hm",
-    "href": "03-central-tendency.html#am-gm-hm",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "AM ≥ GM ≥ HM",
-    "text": "AM ≥ GM ≥ HM\n\n\n\n\\((a-b)^2  \\ge 0\\)\n\\((a+b)^2 - 4ab \\ge 0\\)\n\n\n\n\n\\((\\frac{1}{a}-\\frac{1}{b})^2 \\ge 0\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#full-proof",
-    "href": "03-central-tendency.html#full-proof",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Full Proof",
-    "text": "Full Proof\n\n\n\nWe know, \\[\\begin{eqnarray}\n&  &(a-b)^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2-4ab \\ge 0    \\nonumber \\\\\n& \\Rightarrow & (a+b)^2 \\ge 4ab   \\nonumber \\\\\n& \\Rightarrow & (a+b) \\ge 2 \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & \\frac{a+b} 2 \\ge \\sqrt{ab}   \\nonumber \\\\\n& \\Rightarrow & AM \\ge GM   \\nonumber \\\\\n\\end{eqnarray}\\]\n\n\nSimilarly, \\[\\begin{eqnarray}\n&  &(\\frac{1}{a}-\\frac{1}{b})^2\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2 -4 \\cdot \\frac 1 a \\cdot \\frac 1 b\\ge 0    \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b})^2\\ge \\frac 4 {ab}   \\nonumber \\\\\n& \\Rightarrow & (\\frac{1}{a}+\\frac{1}{b}) \\ge \\frac 2 {\\sqrt{ab}}  \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab}(\\frac{1}{a}+\\frac{1}{b}) \\ge 2   \\nonumber \\\\\n& \\Rightarrow & \\sqrt{ab} \\ge \\frac{2}{(\\frac{1}{a}+\\frac{1}{b})}   \\nonumber \\\\\n& \\Rightarrow & GM \\ge HM   \\nonumber \\\\\n\\end{eqnarray}\\]"
-  },
-  {
-    "objectID": "03-central-tendency.html#am-hm-gm²",
-    "href": "03-central-tendency.html#am-hm-gm²",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "AM × HM = GM²",
-    "text": "AM × HM = GM²\nProve using formulae\nFor two non-zero positive numbers, \\(AM \\times HM =(GM)^2\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#mean-median-of-natural-numbers",
-    "href": "03-central-tendency.html#mean-median-of-natural-numbers",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Mean-Median of Natural Numbers",
-    "text": "Mean-Median of Natural Numbers\nMean and Median of first n natural numbers are \\(\\frac {n+1} 2\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#combined-mean",
-    "href": "03-central-tendency.html#combined-mean",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Combined mean",
-    "text": "Combined mean\n\n\n\nForm\nA\nB\n\n\n\n\n# Cadets\n24\n25\n\n\nMean Score\n75\n70\n\n\n\nWhat’s the combined mean?\n\n\\[\\bar x_c=\\frac{n_1 \\bar x_1+n_2 \\bar x_2}{n_1+n_2}\\]"
-  },
-  {
-    "objectID": "03-central-tendency.html#mean-of-u-x-y",
-    "href": "03-central-tendency.html#mean-of-u-x-y",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Mean of U = X + Y",
-    "text": "Mean of U = X + Y\nIf \\(u=x+y, \\bar u=\\bar x + \\bar y\\); if \\(n_1=n_2=n\\)\nGiven \\(u=x+y\\)\n\n\\(\\bar u =  \\frac{\\sum u}{n}\\)\n\\(\\frac{\\sum (x+y)}{n}\\)\n\\(\\frac{\\sum x}{n}+  \\frac{\\sum y}{n}\\)\n\\(\\bar x + \\bar y\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#gm-of-two-variables",
-    "href": "03-central-tendency.html#gm-of-two-variables",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "GM of two variables",
-    "text": "GM of two variables\nFor equal number of observations, GM of two variables is equal to the product of their individual means.\n\n\\(G_1 = (x_1 x_2 x_3)^{1/3}\\)\n\\(G_2 = (y_1 y_2 y_3)^{1/3}\\)\nCOmbined, G = \\((x_1 y_1 \\cdot x_2 y_2 \\cdot x_3 y_3)^{1/3}\\)\nThus \\(G = G_1 \\times G_2\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#gm-with-log",
-    "href": "03-central-tendency.html#gm-with-log",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "GM with Log",
-    "text": "GM with Log\n\\(GM=Antilog(\\frac{\\sum \\log x_i}{n})\\)\nor\n\\(Antilog(\\frac{\\sum f_i \\log x_i}{\\sum f_i})\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#mean-of-variables",
-    "href": "03-central-tendency.html#mean-of-variables",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Mean of Variables",
-    "text": "Mean of Variables\n\nIf \\(y = a + bx, \\bar y = a + b \\bar x\\)\nIf \\(z_i=ax_i+by_i, \\bar z=a \\bar x + b \\bar y\\)"
-  },
-  {
-    "objectID": "03-central-tendency.html#am-gm",
-    "href": "03-central-tendency.html#am-gm",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "AM-GM",
-    "text": "AM-GM\nAM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. (click to see)\n\n\n\nSolution (i)\n\n\nWe know, \\(AM \\times HM=(GM)^2\\)\n\nThus, \\(HM=\\) 9\n\n\n\n\n\n\nSolution (ii)\n\n\nIf the numbers are \\(a, b; a&gt;b\\) \\(\\frac{a+b}{2}=25\\) and \\(\\sqrt{ab}=15\\)\nThus, \\(a+b=50\\), and \\(ab=15^2=225\\)\n\\(\\therefore (a-b)^2=(a+b)^2-4ab\\) \\(\\Rightarrow a-b =\\) 40\n\nThus, a = 45, b = 5"
-  },
-  {
-    "objectID": "03-central-tendency.html#input-correction",
-    "href": "03-central-tendency.html#input-correction",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Input Correction",
-    "text": "Input Correction\nThe mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.\n\nSolution\n\n\n\\(n=200, \\bar x = 200\\)\n\\(\\therefore\\) Incorrect total, \\(\\sum x = n \\times \\bar x=\\) 10000\nCorrect total, \\(\\sum x'=10,000-92-8+192+88=\\) 10180\nCorrect mean, \\(\\bar x'=\\frac{10180}{200}=\\) 50.9"
-  },
-  {
-    "objectID": "03-central-tendency.html#sum-of-fx-k0",
-    "href": "03-central-tendency.html#sum-of-fx-k0",
-    "title": "Statistics-Chapter 3: Central Tendency",
-    "section": "Sum of f(x-k)=0",
-    "text": "Sum of f(x-k)=0\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
-  },
-  {
-    "objectID": "dispersion.html#absolute-measures",
-    "href": "dispersion.html#absolute-measures",
-    "title": "Measures of Dispersion",
-    "section": "Absolute Measures",
-    "text": "Absolute Measures\n\nRange\nMean Deviation\nQuartile Deviation\nVariance/Standard Deviation (Best)"
-  },
-  {
-    "objectID": "dispersion.html#relative-measures",
-    "href": "dispersion.html#relative-measures",
-    "title": "Measures of Dispersion",
-    "section": "Relative Measures",
-    "text": "Relative Measures\n\nCoefficient of Range\nCoefficient of Mean Deviation\nCoefficient of Quartile Deviation\nCoefficient of Variance (Best)"
-  },
-  {
-    "objectID": "dispersion.html#range",
-    "href": "dispersion.html#range",
-    "title": "Measures of Dispersion",
-    "section": "Range",
-    "text": "Range\n\\(R = X_H - X_L\\)"
-  },
-  {
-    "objectID": "dispersion.html#mean-deviation-md",
-    "href": "dispersion.html#mean-deviation-md",
-    "title": "Measures of Dispersion",
-    "section": "Mean Deviation (MD)",
-    "text": "Mean Deviation (MD)\nAround mean, \\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} |x_i - \\bar{x}|}\\)\n\nFor grouped data, \\(\\displaystyle MD(\\bar x) = \\frac{1}{n}{\\sum_{i=1}^{n} f_i|x_i - \\bar{x}|}\\)\nSimilarly around median and mode (Me and Mo)"
-  },
-  {
-    "objectID": "dispersion.html#grouped-data",
-    "href": "dispersion.html#grouped-data",
-    "title": "Measures of Dispersion",
-    "section": "Grouped Data",
-    "text": "Grouped Data\n“Classified” is not a proper term\n\n\n\nClass Interval\nFrequency\n\n\n\n\n10–19\n5\n\n\n20–29\n12\n\n\n30–39\n18\n\n\n40–49\n10\n\n\n50–59\n6"
-  },
-  {
-    "objectID": "dispersion.html#variance-and-standard-deviation",
-    "href": "dispersion.html#variance-and-standard-deviation",
-    "title": "Measures of Dispersion",
-    "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\nVariance, \\(\\displaystyle \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\n\\(\\displaystyle \\sigma^2 = \\frac{\\sum x_i^2}{n} - \\left(\\frac{\\sum x_i}{n}\\right)^2\\)\nMean of square - square of mean\n\\(\\bar {x^2} - (\\bar x)^2\\)\nSD = \\(\\sqrt{Variance}\\)"
-  },
-  {
-    "objectID": "dispersion.html#coefficients",
-    "href": "dispersion.html#coefficients",
-    "title": "Measures of Dispersion",
-    "section": "Coefficients",
-    "text": "Coefficients\n\nCoefficient of Range, \\(CR=\\frac{X_H-X_L}{X_H+X_L}\\times 100\\)\nCoefficient of Mean Deviation, \\(CMD(\\bar x) = \\frac{MD(\\bar x)}{\\bar x}\\)\nCoefficient of Quartile Deviation, \\(QD = \\frac{Q_3-Q_1}{Q_3+Q_1} \\times 100\\)\nCoefficient of Variance (Best), \\(CV = \\frac{\\sigma}{\\bar x} \\times 100\\)"
+    "text": "Additon of Fraction\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]
