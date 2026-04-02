@@ -3610,5 +3610,54 @@
     "title": "Statistics-Chapter 3: Central Tendency",
     "section": "Sum of f(x-k)=0",
     "text": "Sum of f(x-k)=0\nIf \\(\\sum f_i(x_i-k)=0\\), what is the value of k?\n\nAnswer\n\n\nGiven \\(\\sum f_i(x_i-k)=0\\)\n\\(\\Rightarrow \\sum f_i x_i - k \\sum f_i =0\\)\n\\(\\Rightarrow k = \\frac{\\sum f_i x_i}{\\sum f_i}\\)\n\n= \\(\\bar x\\)\n\n\n\n\n\n\n\ndocs.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "dispersion.html#absolute-measures",
+    "href": "dispersion.html#absolute-measures",
+    "title": "Measures of Dispersion",
+    "section": "Absolute Measures",
+    "text": "Absolute Measures\n\nRange\nMean Deviation\nQuartile Deviation\nVariance/Standard Deviation (Best)"
+  },
+  {
+    "objectID": "dispersion.html#relative-measures",
+    "href": "dispersion.html#relative-measures",
+    "title": "Measures of Dispersion",
+    "section": "Relative Measures",
+    "text": "Relative Measures\n\nCoefficient of Range\nCoefficient of Mean Deviation\nCoefficient of Quartile Deviation\nCoefficient of Variance (Best)"
+  },
+  {
+    "objectID": "dispersion.html#range",
+    "href": "dispersion.html#range",
+    "title": "Measures of Dispersion",
+    "section": "Range",
+    "text": "Range\n\\(R = X_H - X_L\\)"
+  },
+  {
+    "objectID": "dispersion.html#mean-deviation-md",
+    "href": "dispersion.html#mean-deviation-md",
+    "title": "Measures of Dispersion",
+    "section": "Mean Deviation (MD)",
+    "text": "Mean Deviation (MD)\nAround mean, \\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} |x_i - \\bar{x}|}\\)\n\nFor grouped data, \\(\\displaystyle MD(\\bar x) = \\frac{1}{n}{\\sum_{i=1}^{n} f_i|x_i - \\bar{x}|}\\)\nSimilarly around median and mode (Me and Mo)"
+  },
+  {
+    "objectID": "dispersion.html#grouped-data",
+    "href": "dispersion.html#grouped-data",
+    "title": "Measures of Dispersion",
+    "section": "Grouped Data",
+    "text": "Grouped Data\n“Classified” is not a proper term\n\n\n\nClass Interval\nFrequency\n\n\n\n\n10–19\n5\n\n\n20–29\n12\n\n\n30–39\n18\n\n\n40–49\n10\n\n\n50–59\n6"
+  },
+  {
+    "objectID": "dispersion.html#variance-and-standard-deviation",
+    "href": "dispersion.html#variance-and-standard-deviation",
+    "title": "Measures of Dispersion",
+    "section": "Variance and Standard Deviation",
+    "text": "Variance and Standard Deviation\nVariance, \\(\\displaystyle \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\n\\(\\displaystyle \\sigma^2 = \\frac{\\sum x_i^2}{n} - \\left(\\frac{\\sum x_i}{n}\\right)^2\\)\nMean of square - square of mean\n\\(\\bar {x^2} - (\\bar x)^2\\)\nSD = \\(\\sqrt{Variance}\\)"
+  },
+  {
+    "objectID": "dispersion.html#coefficients",
+    "href": "dispersion.html#coefficients",
+    "title": "Measures of Dispersion",
+    "section": "Coefficients",
+    "text": "Coefficients\n\nCoefficient of Range, \\(CR=\\frac{X_H-X_L}{X_H+X_L}\\times 100\\)\nCoefficient of Mean Deviation, \\(CMD(\\bar x) = \\frac{MD(\\bar x)}{\\bar x}\\)\nCoefficient of Quartile Deviation, \\(QD = \\frac{Q_3-Q_1}{Q_3+Q_1} \\times 100\\)\nCoefficient of Variance (Best), \\(CV = \\frac{\\sigma}{\\bar x} \\times 100\\)"
   }
 ]
