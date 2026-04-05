@@ -2,6 +2,7 @@
 /* Position the corporate logo in the top right of the page */
 
 /* BG Archive
+ background-image: conic-gradient(at 85% 45%, yellow, #33ff99, yellow);
  background-image: conic-gradient(at 85% 45%, #ffe6f0, #cc33ff, #ffe6f0);
  background-image: linear-gradient(to right, #79d2a6 , white);
  background-image: conic-gradient(at 85% 45%, lightgreen, green, lightgreen);
@@ -14,7 +15,7 @@
 
 
 .reveal {
-   background-image: conic-gradient(at 85% 45%, yellow, green, yellow);
+  background-image: conic-gradient(at 85% 45%, yellow, #00e699, yellow);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

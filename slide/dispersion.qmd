@@ -57,8 +57,6 @@ sketch_circle()
 > - X: 10, 12, 15, 20
 > - Y: 10, 50, 170, 470
 
-# Measures of Dispersion
-
 ## Absolute Measures
 
 > - Range
@@ -79,14 +77,22 @@ Data: 10, 12, 23, 16, 17, 20, 15
 
 ## Range
 
-$R = X_H - X_L$
+> - Ungrouped Data: $R = X_H - X_L$
+> - Grouped Data: $R = L_n - L_1$
 
 ## Mean Deviation (MD)
 
 Around mean, $\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} |x_i - \bar{x}|}$
 
-> - For grouped data, $\displaystyle MD(\bar x) = \frac{1}{n}{\sum_{i=1}^{n} f_i|x_i - \bar{x}|}$
-> - Similarly around median and mode (Me and Mo)
+> - For grouped data, $\displaystyle MD(\bar x) = \frac{1}{N}{\sum_{i=1}^{n} f_i|x_i - \bar{x}|}$
+> - Around Median, $\rightarrow MD (Me) = ?$
+> - Around Mode, $\rightarrow MD (Mo) = ?$
+
+## Think!
+
+What if?
+
+$\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} (x_i - \bar{x})}$
 
 ## Grouped Data
 
@@ -104,7 +110,7 @@ Around mean, $\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} |x_i - \bar{x}
 
 Variance, $\displaystyle \sigma^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2$
 
-> - $\displaystyle \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2$
+> - Also, $\displaystyle \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2$
 > - Mean of square - square of mean
 > - $\bar {x^2} - (\bar x)^2$
 > - SD = $\sqrt{Variance}$
@@ -116,61 +122,12 @@ Variance, $\displaystyle \sigma^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2$
 > - Coefficient of Quartile Deviation, $QD = \frac{Q_3-Q_1}{Q_3+Q_1} \times 100$
 > - Coefficient of Variance (Best), $CV = \frac{\sigma}{\bar x} \times 100$
 
-# Measures
+## Quartiles
 
-> - $\displaystyle \text{Mean Deviation about Mean} = \frac{\sum_{i=1}^{N} |x_i - \bar{x}|}{N}$
-> - $\displaystyle \text{Mean Deviation about Median} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Med}|$
-> - $\displaystyle \text{Mean Deviation about Mode} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Mo}|$
-> - $\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$
+Recall Median Formula
 
-## Variance Simplified
+> - When $n$ is odd, $Me = \frac{n+1}{2}th$ term
+> - When $n$ is even, $Me = \frac{\frac{n}{2}th}+(\frac{n}{2}+1)th {2}$
 
-> - $\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2$
-> - $\displaystyle \text{Variance} = \frac{1}{N} \left( \sum_{i=1}^{N} x_i^2 - 2\bar{x} \sum_{i=1}^{N} x_i + N\bar{x}^2 \right)$
-
-## Variance Two Formulas
-
-
-> - $\displaystyle \text{Variance} = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2$
-> - $\displaystyle \text{Variance} = \frac {\sum_{i=1}^{n}x_i^2}{n}   - (\bar{x})^2$
-> - Mean of Square - Square of Mean
-
-# Calculation
-
-Suppose we have these values
-
-12, 14, 15, 15, 19
-
-Use absolute sign
-
-|   x   |  \( x - \bar{x} \)  |  \( x - \text{Median} \)  |  \( x - \text{Mode} \)  |  \( x^2 \)  |  \( (x - \bar{x})^2 \)  |
-|-------|----------------------|---------------------------|-------------------------|-------------|------------------------|
-|  12   |   12 - 15 = -3       |   12 - 15 = -3            |   12 - 15 = -3          |  144        |   9                    |
-|  14   |                      |                           |                         |             |                        |
-|  15   |                      |                           |                         |             |                        |
-|  15   |                      |                           |                         |             |                        |
-|  19   |                      |                           |                         |             |                        |
-
-
-## For Grouped Data
-
-|    \(x \)  |  \( f_i \)  |
-|-------|-------------|
-|  12   |     1       |
-|  14   |     1       |
-|  15   |     2       |
-|  19   |     1       |
-
-## Calculation
-
-|   \(x_i\)   |  \( f_i \)  |  \( f_i \times x_i \)  |  \( f_i \times x_i^2 \)  |
-|---------|-------------|------------------------|--------------------------|
-|    12   |     1       |                        |                          |
-|    14   |     1       |                        |                          |
-|    15   |     2       |                        |                          |
-|    19   |     1       |                        |                          |
-
-
-> - $\text{Variance} = \frac{\sum_{i=1}^{n} f_i (x_i - \bar{x})^2}{\sum_{i=1}^{n} f_i}$
-> - $\text{Variance} = \frac{\sum_{i=1}^{n} f_i x_i^2}{\sum_{i=1}^{n} f_i} - \bar{x}^2$
+## Quartiles for Grouped Data
 

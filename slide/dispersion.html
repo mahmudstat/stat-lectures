@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.53">
 
   <meta name="author" content="Abdullah Al Mahmud">
-  <meta name="dcterms.date" content="2026-04-02">
+  <meta name="dcterms.date" content="2026-04-05">
   <title>Stat Mania Lectures – Measures of Dispersion</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -341,7 +341,7 @@ Abdullah Al Mahmud
 </div>
 </div>
 
-  <p class="date">2026-04-02</p>
+  <p class="date">2026-04-05</p>
 </section>
 <section id="why-dispersion" class="title-slide slide level1 center">
 <h1>Why Dispersion?</h1>
@@ -388,18 +388,13 @@ Abdullah Al Mahmud
 </div>
 </section>
 
+<section>
 <section id="which-is-more-scattered" class="title-slide slide level1 center">
 <h1>Which is more scattered?</h1>
 <ul>
 <li class="fragment">X: 10, 12, 15, 20</li>
 <li class="fragment">Y: 10, 50, 170, 470</li>
 </ul>
-</section>
-
-<section>
-<section id="measures-of-dispersion" class="title-slide slide level1 center">
-<h1>Measures of Dispersion</h1>
-
 </section>
 <section id="absolute-measures" class="slide level2">
 <h2>Absolute Measures</h2>
@@ -426,15 +421,24 @@ Abdullah Al Mahmud
 </section>
 <section id="range" class="slide level2">
 <h2>Range</h2>
-<p><span class="math inline">\(R = X_H - X_L\)</span></p>
+<ul>
+<li class="fragment">Ungrouped Data: <span class="math inline">\(R = X_H - X_L\)</span></li>
+<li class="fragment">Grouped Data: <span class="math inline">\(R = L_n - L_1\)</span></li>
+</ul>
 </section>
 <section id="mean-deviation-md" class="slide level2">
 <h2>Mean Deviation (MD)</h2>
 <p>Around mean, <span class="math inline">\(\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} |x_i - \bar{x}|}\)</span></p>
 <ul>
-<li class="fragment">For grouped data, <span class="math inline">\(\displaystyle MD(\bar x) = \frac{1}{n}{\sum_{i=1}^{n} f_i|x_i - \bar{x}|}\)</span></li>
-<li class="fragment">Similarly around median and mode (Me and Mo)</li>
+<li class="fragment">For grouped data, <span class="math inline">\(\displaystyle MD(\bar x) = \frac{1}{N}{\sum_{i=1}^{n} f_i|x_i - \bar{x}|}\)</span></li>
+<li class="fragment">Around Median, <span class="math inline">\(\rightarrow MD (Me) = ?\)</span></li>
+<li class="fragment">Around Mode, <span class="math inline">\(\rightarrow MD (Mo) = ?\)</span></li>
 </ul>
+</section>
+<section id="think" class="slide level2">
+<h2>Think!</h2>
+<p>What if?</p>
+<p><span class="math inline">\(\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} (x_i - \bar{x})}\)</span></p>
 </section>
 <section id="grouped-data" class="slide level2">
 <h2>Grouped Data</h2>
@@ -474,7 +478,7 @@ Abdullah Al Mahmud
 <h2>Variance and Standard Deviation</h2>
 <p>Variance, <span class="math inline">\(\displaystyle \sigma^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\displaystyle \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2\)</span></li>
+<li class="fragment">Also, <span class="math inline">\(\displaystyle \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2\)</span></li>
 <li class="fragment">Mean of square - square of mean</li>
 <li class="fragment"><span class="math inline">\(\bar {x^2} - (\bar x)^2\)</span></li>
 <li class="fragment">SD = <span class="math inline">\(\sqrt{Variance}\)</span></li>
@@ -488,178 +492,17 @@ Abdullah Al Mahmud
 <li class="fragment">Coefficient of Quartile Deviation, <span class="math inline">\(QD = \frac{Q_3-Q_1}{Q_3+Q_1} \times 100\)</span></li>
 <li class="fragment">Coefficient of Variance (Best), <span class="math inline">\(CV = \frac{\sigma}{\bar x} \times 100\)</span></li>
 </ul>
-</section></section>
-<section>
-<section id="measures" class="title-slide slide level1 center">
-<h1>Measures</h1>
+</section>
+<section id="quartiles" class="slide level2">
+<h2>Quartiles</h2>
+<p>Recall Median Formula</p>
 <ul>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Mean Deviation about Mean} = \frac{\sum_{i=1}^{N} |x_i - \bar{x}|}{N}\)</span></li>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Mean Deviation about Median} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Med}|\)</span></li>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Mean Deviation about Mode} = \frac{1}{N} \sum_{i=1}^{N} |x_i - \text{Mo}|\)</span></li>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2\)</span></li>
+<li class="fragment">When <span class="math inline">\(n\)</span> is odd, <span class="math inline">\(Me = \frac{n+1}{2}th\)</span> term</li>
+<li class="fragment">When <span class="math inline">\(n\)</span> is even, <span class="math inline">\(Me = \frac{\frac{n}{2}th}+(\frac{n}{2}+1)th {2}\)</span></li>
 </ul>
 </section>
-<section id="variance-simplified" class="slide level2">
-<h2>Variance Simplified</h2>
-<ul>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Variance} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2\)</span></li>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Variance} = \frac{1}{N} \left( \sum_{i=1}^{N} x_i^2 - 2\bar{x} \sum_{i=1}^{N} x_i + N\bar{x}^2 \right)\)</span></li>
-</ul>
-</section>
-<section id="variance-two-formulas" class="slide level2">
-<h2>Variance Two Formulas</h2>
-<ul>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Variance} = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2\)</span></li>
-<li class="fragment"><span class="math inline">\(\displaystyle \text{Variance} = \frac {\sum_{i=1}^{n}x_i^2}{n}   - (\bar{x})^2\)</span></li>
-<li class="fragment">Mean of Square - Square of Mean</li>
-</ul>
-</section></section>
-<section>
-<section id="calculation" class="title-slide slide level1 center">
-<h1>Calculation</h1>
-<p>Suppose we have these values</p>
-<p>12, 14, 15, 15, 19</p>
-<p>Use absolute sign</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 18%">
-<col style="width: 22%">
-<col style="width: 21%">
-<col style="width: 11%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>x</th>
-<th>( x - {x} )</th>
-<th>( x - )</th>
-<th>( x - )</th>
-<th>( x^2 )</th>
-<th>( (x - {x})^2 )</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>12</td>
-<td>12 - 15 = -3</td>
-<td>12 - 15 = -3</td>
-<td>12 - 15 = -3</td>
-<td>144</td>
-<td>9</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>15</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>19</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="for-grouped-data" class="slide level2">
-<h2>For Grouped Data</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>(x )</th>
-<th>( f_i )</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>12</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>19</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="calculation-1" class="slide level2">
-<h2>Calculation</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 18%">
-<col style="width: 33%">
-<col style="width: 36%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>(x_i)</th>
-<th>( f_i )</th>
-<th>( f_i x_i )</th>
-<th>( f_i x_i^2 )</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>12</td>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td>2</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>19</td>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li class="fragment"><span class="math inline">\(\text{Variance} = \frac{\sum_{i=1}^{n} f_i (x_i - \bar{x})^2}{\sum_{i=1}^{n} f_i}\)</span></li>
-<li class="fragment"><span class="math inline">\(\text{Variance} = \frac{\sum_{i=1}^{n} f_i x_i^2}{\sum_{i=1}^{n} f_i} - \bar{x}^2\)</span></li>
-</ul>
+<section id="quartiles-for-grouped-data" class="slide level2">
+<h2>Quartiles for Grouped Data</h2>
 
 <div class="quarto-auto-generated-content">
 <p><img src="css/logo.png" class="slide-logo"></p>

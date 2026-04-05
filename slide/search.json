@@ -1040,14 +1040,14 @@
     "href": "dispersion.html#range",
     "title": "Measures of Dispersion",
     "section": "Range",
-    "text": "Range\n\\(R = X_H - X_L\\)"
+    "text": "Range\n\nUngrouped Data: \\(R = X_H - X_L\\)\nGrouped Data: \\(R = L_n - L_1\\)"
   },
   {
     "objectID": "dispersion.html#mean-deviation-md",
     "href": "dispersion.html#mean-deviation-md",
     "title": "Measures of Dispersion",
     "section": "Mean Deviation (MD)",
-    "text": "Mean Deviation (MD)\nAround mean, \\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} |x_i - \\bar{x}|}\\)\n\nFor grouped data, \\(\\displaystyle MD(\\bar x) = \\frac{1}{n}{\\sum_{i=1}^{n} f_i|x_i - \\bar{x}|}\\)\nSimilarly around median and mode (Me and Mo)"
+    "text": "Mean Deviation (MD)\nAround mean, \\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} |x_i - \\bar{x}|}\\)\n\nFor grouped data, \\(\\displaystyle MD(\\bar x) = \\frac{1}{N}{\\sum_{i=1}^{n} f_i|x_i - \\bar{x}|}\\)\nAround Median, \\(\\rightarrow MD (Me) = ?\\)\nAround Mode, \\(\\rightarrow MD (Mo) = ?\\)"
   },
   {
     "objectID": "dispersion.html#grouped-data",
@@ -1061,7 +1061,7 @@
     "href": "dispersion.html#variance-and-standard-deviation",
     "title": "Measures of Dispersion",
     "section": "Variance and Standard Deviation",
-    "text": "Variance and Standard Deviation\nVariance, \\(\\displaystyle \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\n\\(\\displaystyle \\sigma^2 = \\frac{\\sum x_i^2}{n} - \\left(\\frac{\\sum x_i}{n}\\right)^2\\)\nMean of square - square of mean\n\\(\\bar {x^2} - (\\bar x)^2\\)\nSD = \\(\\sqrt{Variance}\\)"
+    "text": "Variance and Standard Deviation\nVariance, \\(\\displaystyle \\sigma^2 = \\frac{1}{n} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\nAlso, \\(\\displaystyle \\sigma^2 = \\frac{\\sum x_i^2}{n} - \\left(\\frac{\\sum x_i}{n}\\right)^2\\)\nMean of square - square of mean\n\\(\\bar {x^2} - (\\bar x)^2\\)\nSD = \\(\\sqrt{Variance}\\)"
   },
   {
     "objectID": "dispersion.html#coefficients",
@@ -3533,5 +3533,26 @@
     "title": "Mathematics (VIII)",
     "section": "Additon of Fraction",
     "text": "Additon of Fraction\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "dispersion.html#think",
+    "href": "dispersion.html#think",
+    "title": "Measures of Dispersion",
+    "section": "Think!",
+    "text": "Think!\nWhat if?\n\\(\\displaystyle MD(\\bar x)=\\frac{1}{n}{\\sum_{i=1}^{n} (x_i - \\bar{x})}\\)"
+  },
+  {
+    "objectID": "dispersion.html#quartiles",
+    "href": "dispersion.html#quartiles",
+    "title": "Measures of Dispersion",
+    "section": "Quartiles",
+    "text": "Quartiles\nRecall Median Formula\n\nWhen \\(n\\) is odd, \\(Me = \\frac{n+1}{2}th\\) term\nWhen \\(n\\) is even, \\(Me = \\frac{\\frac{n}{2}th}+(\\frac{n}{2}+1)th {2}\\)"
+  },
+  {
+    "objectID": "dispersion.html#quartiles-for-grouped-data",
+    "href": "dispersion.html#quartiles-for-grouped-data",
+    "title": "Measures of Dispersion",
+    "section": "Quartiles for Grouped Data",
+    "text": "Quartiles for Grouped Data\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
   }
 ]
