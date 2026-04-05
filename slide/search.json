@@ -3546,13 +3546,48 @@
     "href": "dispersion.html#quartiles",
     "title": "Measures of Dispersion",
     "section": "Quartiles",
-    "text": "Quartiles\nRecall Median Formula\n\nWhen \\(n\\) is odd, \\(Me = \\frac{n+1}{2}th\\) term\nWhen \\(n\\) is even, \\(Me = \\frac{\\frac{n}{2}th}+(\\frac{n}{2}+1)th {2}\\)"
+    "text": "Quartiles\nRecall Median Formula\n\nWhen \\(n\\) is odd, \\(Me = \\frac{n+1}{2}th\\) term\nWhen \\(n\\) is even, \\(Me = \\frac{\\left(\\frac{n}{2}\\right)^{\\text{th}} \\text{ term} + \\left(\\frac{n}{2} + 1\\right)^{\\text{th}} \\text{ term}}{2}\\)\nMedian score of 50 students is 75; what does it mean?\nQuartiles divide the data into 4 equal parts"
   },
   {
     "objectID": "dispersion.html#quartiles-for-grouped-data",
     "href": "dispersion.html#quartiles-for-grouped-data",
     "title": "Measures of Dispersion",
     "section": "Quartiles for Grouped Data",
-    "text": "Quartiles for Grouped Data\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+    "text": "Quartiles for Grouped Data\nRecall Median\n\\(\\text{Median} = L + \\left( \\frac{\\frac{N}{2} - F_c}{f_m} \\right) \\times h\\)\nWhere\n\n\\(L=\\) Lower boundary of the median class\n\\(N=\\) Total frequency\n\\(F=\\) Cumulative frequency before the median class\n\\(f=\\) Frequency of the median class\n\\(h=\\) Class width\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "probability.html#measures-of-probability",
+    "href": "probability.html#measures-of-probability",
+    "title": "Probability",
+    "section": "Measures of Probability",
+    "text": "Measures of Probability\n\nClassicl/Priori \\(\\rightarrow P(A) = \\frac{n(A)}{n(S)}\\)\nEmprical \\(\\rightarrow P(E) = \\lim_{n \\to \\infty} \\frac{f_n}{n}\\)"
+  },
+  {
+    "objectID": "probability.html#problems",
+    "href": "probability.html#problems",
+    "title": "Probability",
+    "section": "Problems",
+    "text": "Problems"
+  },
+  {
+    "objectID": "probability.html#additive-laws",
+    "href": "probability.html#additive-laws",
+    "title": "Probability",
+    "section": "Additive Laws",
+    "text": "Additive Laws\n\n\n\nMutually Exclusive events\n\\(\\rightarrow P(A \\cup B) = P(A) + P(B)\\)\nNon-Mutually Exclusive events\n\\(\\rightarrow P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)"
+  },
+  {
+    "objectID": "probability.html#multiplicative-laws",
+    "href": "probability.html#multiplicative-laws",
+    "title": "Probability",
+    "section": "Multiplicative Laws",
+    "text": "Multiplicative Laws\n\nIf A & B are independent, \\(P(A \\cap B) = P(A) \\times P(B)\\)\nOtherwise \\(\\uparrow\\)\n\\(P(A \\cap B) = P(B) \\times P(A|B)\\)\n\n\n\n\n\nwww.statmania.info | Abdullah Al Mahmud | Press space or arrow to change slides"
+  },
+  {
+    "objectID": "probability.html#conditional-probability",
+    "href": "probability.html#conditional-probability",
+    "title": "Probability",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\nIf \\(B\\) occurs, what is the probability that A occurs?$\n\\(P(A|B) = \\frac{P(A \\cap B)}{P(B)}\\)"
   }
 ]

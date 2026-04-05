@@ -15,7 +15,7 @@
 
 
 .reveal {
-  background-image: conic-gradient(at 85% 45%, yellow, #00e699, yellow);
+  background-image: conic-gradient(at 85% 45%, yellow, gray, yellow);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

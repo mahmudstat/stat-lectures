@@ -3,6 +3,10 @@ format: html
 title: Lectures
 ---
 
+::: callout-important
+The page has been archived and no longer updated. Visit [this page](https://www.statmania.info/lectures.html) for continuation.
+:::
+
 The lectures slides have been made using [10 computer languages](index.html), including R, Bash, Latex, JavaScript, and markdown, among others.
 
 ## How to Use the presentations

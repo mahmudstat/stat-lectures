@@ -127,7 +127,20 @@ Variance, $\displaystyle \sigma^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2$
 Recall Median Formula
 
 > - When $n$ is odd, $Me = \frac{n+1}{2}th$ term
-> - When $n$ is even, $Me = \frac{\frac{n}{2}th}+(\frac{n}{2}+1)th {2}$
+> - When $n$ is even, $Me = \frac{\left(\frac{n}{2}\right)^{\text{th}} \text{ term} + \left(\frac{n}{2} + 1\right)^{\text{th}} \text{ term}}{2}$
+> - Median score of 50 students is 75; what does it mean?
+> - Quartiles divide the data into 4 equal parts
 
 ## Quartiles for Grouped Data
 
+Recall Median
+
+$\text{Median} = L + \left( \frac{\frac{N}{2} - F_c}{f_m} \right) \times h$
+
+Where
+
+> - $L=$ Lower boundary of the median class
+> - $N=$ Total frequency
+> - $F=$ Cumulative frequency before the median class
+> - $f=$ Frequency of the median class
+> - $h=$ Class width

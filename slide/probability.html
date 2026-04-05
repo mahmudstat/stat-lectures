@@ -12,7 +12,7 @@
 
   <meta name="author" content="Abdullah Al Mahmud">
   <meta name="dcterms.date" content="2026-04-05">
-  <title>Stat Mania Lectures – Measures of Dispersion</title>
+  <title>Stat Mania Lectures – Probability</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -331,7 +331,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Measures of Dispersion</h1>
+  <h1 class="title">Probability</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -343,177 +343,63 @@ Abdullah Al Mahmud
 
   <p class="date">2026-04-05</p>
 </section>
-<section id="why-dispersion" class="title-slide slide level1 center">
-<h1>Why Dispersion?</h1>
-<p>Which batter is better?</p>
-<ul>
-<li class="fragment">Batter A: 0, 100, 10, 10</li>
-<li class="fragment">Batter B: 20, 30, 25, 35</li>
-</ul>
-<ul>
-<li class="fragment">Dispersion measures variation</li>
-<li class="fragment">Needed alongside central tendency for comparison</li>
-</ul>
-</section>
-
-<section id="is-dispersion-alone-good" class="title-slide slide level1 center">
-<h1>Is Dispersion Alone good?</h1>
-<ul>
-<li class="fragment">Batter A: 0, 5, 10, 20, 4</li>
-<li class="fragment">Batter B: 10, 15, 12, 22, 16</li>
-</ul>
-</section>
-
-<section id="graphically" class="title-slide slide level1 center">
-<h1>Graphically</h1>
-<div class="container">
-<div class="col">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="dispersion_files/figure-revealjs/unnamed-chunk-1-1.png" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="col">
-<p><br> <br></p>
-<ul>
-<li>Which plot has the largest dispersion?</li>
-<li>Which plot has the smallest dispersion?</li>
-</ul>
-</div>
-</div>
-</section>
-
 <section>
-<section id="which-is-more-scattered" class="title-slide slide level1 center">
-<h1>Which is more scattered?</h1>
+<section id="terms" class="title-slide slide level1 center">
+<h1>Terms</h1>
 <ul>
-<li class="fragment">X: 10, 12, 15, 20</li>
-<li class="fragment">Y: 10, 50, 170, 470</li>
+<li class="fragment">Experiment: An act repeated under given condition</li>
+<li class="fragment">Trial, sample space, sample point</li>
+<li class="fragment">Event, Mutually Exclusive/</li>
+<li class="fragment">Equally likely</li>
 </ul>
 </section>
-<section id="absolute-measures" class="slide level2">
-<h2>Absolute Measures</h2>
+<section id="measures-of-probability" class="slide level2">
+<h2>Measures of Probability</h2>
 <ul>
-<li class="fragment">Range</li>
-<li class="fragment">Mean Deviation</li>
-<li class="fragment">Quartile Deviation</li>
-<li class="fragment">Variance/Standard Deviation (Best)</li>
+<li class="fragment">Classicl/Priori <span class="math inline">\(\rightarrow P(A) = \frac{n(A)}{n(S)}\)</span></li>
+<li class="fragment">Emprical <span class="math inline">\(\rightarrow P(E) = \lim_{n \to \infty} \frac{f_n}{n}\)</span></li>
 </ul>
 </section>
-<section id="relative-measures" class="slide level2">
-<h2>Relative Measures</h2>
-<ul>
-<li class="fragment">Coefficient of Range</li>
-<li class="fragment">Coefficient of Mean Deviation</li>
-<li class="fragment">Coefficient of Quartile Deviation</li>
-<li class="fragment">Coefficient of Variance (Best)</li>
-</ul>
+<section id="problems" class="slide level2">
+<h2>Problems</h2>
 </section></section>
 <section>
-<section id="estimation" class="title-slide slide level1 center">
-<h1>Estimation</h1>
-<p>Data: 10, 12, 23, 16, 17, 20, 15</p>
-</section>
-<section id="range" class="slide level2">
-<h2>Range</h2>
+<section id="problem-1" class="title-slide slide level1 center">
+<h1>Problem 1</h1>
+<p><span class="math inline">\(1, 2, 3, \cdots\)</span></p>
 <ul>
-<li class="fragment">Ungrouped Data: <span class="math inline">\(R = X_H - X_L\)</span></li>
-<li class="fragment">Grouped Data: <span class="math inline">\(R = L_n - L_1\)</span></li>
+<li class="fragment">P(Even)</li>
+<li class="fragment">P(Even or Multiple of 2)</li>
+<li class="fragment"><span class="math inline">\(P(EUM) = P(E) + P(M)\)</span></li>
 </ul>
 </section>
-<section id="mean-deviation-md" class="slide level2">
-<h2>Mean Deviation (MD)</h2>
-<p>Around mean, <span class="math inline">\(\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} |x_i - \bar{x}|}\)</span></p>
+<section id="additive-laws" class="slide level2">
+<h2>Additive Laws</h2>
+<div class="container">
+<div class="col">
 <ul>
-<li class="fragment">For grouped data, <span class="math inline">\(\displaystyle MD(\bar x) = \frac{1}{N}{\sum_{i=1}^{n} f_i|x_i - \bar{x}|}\)</span></li>
-<li class="fragment">Around Median, <span class="math inline">\(\rightarrow MD (Me) = ?\)</span></li>
-<li class="fragment">Around Mode, <span class="math inline">\(\rightarrow MD (Mo) = ?\)</span></li>
+<li class="fragment">Mutually Exclusive events</li>
+<li class="fragment"><span class="math inline">\(\rightarrow P(A \cup B) = P(A) + P(B)\)</span></li>
+<li class="fragment">Non-Mutually Exclusive events</li>
+<li class="fragment"><span class="math inline">\(\rightarrow P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span></li>
 </ul>
+</div>
+<div class="col">
+<p><img class="plain" src="img/venn.png" width="480"></p>
+</div>
+</div>
 </section>
-<section id="think" class="slide level2">
-<h2>Think!</h2>
-<p>What if?</p>
-<p><span class="math inline">\(\displaystyle MD(\bar x)=\frac{1}{n}{\sum_{i=1}^{n} (x_i - \bar{x})}\)</span></p>
+<section id="conditional-probability" class="slide level2">
+<h2>Conditional Probability</h2>
+<p>If <span class="math inline">\(B\)</span> occurs, what is the probability that A occurs?$</p>
+<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span></p>
 </section>
-<section id="grouped-data" class="slide level2">
-<h2>Grouped Data</h2>
-<p>“Classified” is not a proper term</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Class Interval</th>
-<th>Frequency</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10–19</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>20–29</td>
-<td>12</td>
-</tr>
-<tr class="odd">
-<td>30–39</td>
-<td>18</td>
-</tr>
-<tr class="even">
-<td>40–49</td>
-<td>10</td>
-</tr>
-<tr class="odd">
-<td>50–59</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="variance-and-standard-deviation" class="slide level2">
-<h2>Variance and Standard Deviation</h2>
-<p>Variance, <span class="math inline">\(\displaystyle \sigma^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})^2\)</span></p>
+<section id="multiplicative-laws" class="slide level2">
+<h2>Multiplicative Laws</h2>
 <ul>
-<li class="fragment">Also, <span class="math inline">\(\displaystyle \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2\)</span></li>
-<li class="fragment">Mean of square - square of mean</li>
-<li class="fragment"><span class="math inline">\(\bar {x^2} - (\bar x)^2\)</span></li>
-<li class="fragment">SD = <span class="math inline">\(\sqrt{Variance}\)</span></li>
-</ul>
-</section>
-<section id="coefficients" class="slide level2">
-<h2>Coefficients</h2>
-<ul>
-<li class="fragment">Coefficient of Range, <span class="math inline">\(CR=\frac{X_H-X_L}{X_H+X_L}\times 100\)</span></li>
-<li class="fragment">Coefficient of Mean Deviation, <span class="math inline">\(CMD(\bar x) = \frac{MD(\bar x)}{\bar x}\)</span></li>
-<li class="fragment">Coefficient of Quartile Deviation, <span class="math inline">\(QD = \frac{Q_3-Q_1}{Q_3+Q_1} \times 100\)</span></li>
-<li class="fragment">Coefficient of Variance (Best), <span class="math inline">\(CV = \frac{\sigma}{\bar x} \times 100\)</span></li>
-</ul>
-</section>
-<section id="quartiles" class="slide level2">
-<h2>Quartiles</h2>
-<p>Recall Median Formula</p>
-<ul>
-<li class="fragment">When <span class="math inline">\(n\)</span> is odd, <span class="math inline">\(Me = \frac{n+1}{2}th\)</span> term</li>
-<li class="fragment">When <span class="math inline">\(n\)</span> is even, <span class="math inline">\(Me = \frac{\left(\frac{n}{2}\right)^{\text{th}} \text{ term} + \left(\frac{n}{2} + 1\right)^{\text{th}} \text{ term}}{2}\)</span></li>
-<li class="fragment">Median score of 50 students is 75; what does it mean?</li>
-<li class="fragment">Quartiles divide the data into 4 equal parts</li>
-</ul>
-</section>
-<section id="quartiles-for-grouped-data" class="slide level2">
-<h2>Quartiles for Grouped Data</h2>
-<p>Recall Median</p>
-<p><span class="math inline">\(\text{Median} = L + \left( \frac{\frac{N}{2} - F_c}{f_m} \right) \times h\)</span></p>
-<p>Where</p>
-<ul>
-<li class="fragment"><span class="math inline">\(L=\)</span> Lower boundary of the median class</li>
-<li class="fragment"><span class="math inline">\(N=\)</span> Total frequency</li>
-<li class="fragment"><span class="math inline">\(F=\)</span> Cumulative frequency before the median class</li>
-<li class="fragment"><span class="math inline">\(f=\)</span> Frequency of the median class</li>
-<li class="fragment"><span class="math inline">\(h=\)</span> Class width</li>
+<li class="fragment">If A &amp; B are independent, <span class="math inline">\(P(A \cap B) = P(A) \times P(B)\)</span></li>
+<li class="fragment">Otherwise <span class="math inline">\(\uparrow\)</span></li>
+<li class="fragment"><span class="math inline">\(P(A \cap B) = P(B) \times P(A|B)\)</span></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
@@ -734,44 +620,6 @@ Abdullah Al Mahmud
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
