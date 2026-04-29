@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{amsmath}
+
+\geometry{
+legalpaper, total={177.8mm, 290mm},left=5mm, right=5mm,
+top=7mm, bottom=12mm,
+}
+
+\usepackage{letltxmacro}
+
+\LetLtxMacro\Oldfootnote\footnote
+
+\newcommand{\EnableFootNotes}{%
+  \LetLtxMacro\footnote\Oldfootnote%
+}
+
+\newcommand{\DisableFootNotes}{%
+  \renewcommand{\footnote}[2][]{\relax}
+}
+
+\DisableFootNotes
+
+\begin{document}
+
+\begin{table}[]
+\begin{tabular}{llllllllcllcl}
+\textit{Elnath} &  &  &  &  &  &  &  & \textbf{MYMENSINGH GIRLS’ CADET COLLEGE} &                                             &                                 & \multicolumn{1}{l}{}            &                        \\
+                 &  &  &  &  &  &  &  & PROGRESS TEST EXAMINATION - 2026          &                                             &                                 &                                 &                        \\
+                 &  &  &  &  &  &  &  & CLASS: HSC                               &                                             &                                 &                                 &                        \\
+                 &  &  &  &  &  &  &  & STATISTICS (CREATIVE)                    &                                             &                                 &                                 &                        \\
+                 &  &  &  &  &  &  &  & FIRST PAPER                             &                                             &                                 & \multicolumn{1}{r}{}            &                        \\ \cline{11-13} 
+                 &  &  &  &  &  &  &  & [According to the Syllabus of 2026]      & \multicolumn{1}{r|}{\textbf{Subject Code:}} & \multicolumn{1}{l|}{\textbf{1}} & \multicolumn{1}{l|}{\textbf{2}} & \multicolumn{1}{l|}{9} \\ \cline{11-13} 
+                 &  &  &  &  &  &  &  & TIME – 1 hours \& 25 minutes             &                                             &                                 & \multicolumn{1}{r}{}            &                        \\
+                 &  &  &  &  &  &  &  & FULL MARKS – 30                          &                                             &                                 & \multicolumn{1}{r}{\textbf{}}   &                       
+\end{tabular}
+\end{table}
+
+
+\hrule
+
+\begin{center}
+[\textbf{N.B.} – The figures of the right margin indicate full marks. Read the stems carefully and answer the associated questions. Answer any \textbf{THREE} questions taking at least ONE question from each group]\\
+\end{center}
+
+\begin{center}
+\textbf{Group  - A}
+\end{center}
+ \begin{enumerate}
+ 
+  \item
+     \begin{center}
+  \textbf{$x_1 = 5, x_2 = 10, x_3 = 12, x_4 = 14, x_5 = 20$}
+  \end{center}
+ 
+  \begin{enumerate}
+    \item
+	What is a sample? \hfill 1
+    \item
+    	Find $\displaystyle \sum_{i=1}^5 (x_i-5)$ \hfill 2
+    \item
+    	Determine $\displaystyle \sum_{i=1}^5 3(x_i-c)^2$, where $c$ is the last digit of your cadet number.   \hfill 3
+     \item
+     	Find mean of square and square of mean from the data. When will they be equal?
+  \end{enumerate}
+
+  \begin{center}
+\textbf{Group  - B}
+\end{center}
+
+
+
+\end{enumerate}
+
+ \vspace{2.5cm}
+
+\begin{center}
+
+  \vfill
+  --AAM--
+\end{center}
+
+
+
+\end{document}
