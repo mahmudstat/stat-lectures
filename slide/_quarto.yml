@@ -9,6 +9,7 @@ website:
 format:
   revealjs:
     theme: sky
+    incremental: true
     transition: convex
     slide-number:  c/t
     navigation-mode: vertical
